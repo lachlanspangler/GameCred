@@ -32,6 +32,7 @@ mechanics:
   ascension_ladder: 2
   early_access_dev: 3
   content_updates: 2
+  consumables: 2
 evidence:
   build_archetypes: Character classes and traits push distinct builds (summoner, spell, melee, ranged).
   bullet_hell: Rooms fill with dense projectile patterns to dodge.

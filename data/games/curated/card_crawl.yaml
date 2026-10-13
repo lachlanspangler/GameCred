@@ -16,6 +16,7 @@ mechanics:
   leaderboards: 2
   turn_based: 3
   perfect_information: 1
+  block_shield: 2
 evidence:
   loadout_start: Players assemble a small deck of ability cards before each dungeon.
   inventory_management: Only two hand slots plus a backpack slot to hold dealt cards.

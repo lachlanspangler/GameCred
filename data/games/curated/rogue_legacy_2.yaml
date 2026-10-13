@@ -42,6 +42,7 @@ mechanics:
   steam_deck_friendly: 2
   legacy_inheritance: 3
   traversal_unlocks: 3
+  unlock_items: 2
 evidence:
   hp_as_currency: Relics cost Resolve, which reduces max HP when over budget.
   ascension_ladder: Burdens of NG+ (Thread levels) stack difficulty modifiers after beating the game.

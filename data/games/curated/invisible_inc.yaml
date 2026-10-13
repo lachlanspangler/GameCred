@@ -27,6 +27,10 @@ mechanics:
   modular_difficulty: 2
   turn_escalation: 3
   stealth: 3
+  consumables: 2
+  passive_relics: 2
+  unlock_items: 1
+  block_shield: 1
 evidence:
   push_your_luck: The alarm level rises each turn, so looting extra vaults trades against escalating security.
   second_chance: Limited rewinds per campaign undo a turn.

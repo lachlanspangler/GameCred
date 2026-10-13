@@ -19,6 +19,7 @@ mechanics:
   unlock_characters: 2
   weapons_variety: 2
   vehicle_combat: 3
+  healing_scarcity: 2
 evidence:
   crafting: Weapons and ship parts are combined at a crafting grid into higher-tier items.
   real_time_action: Six-degrees-of-freedom (Descent-style) ship combat in procedural tunnels.

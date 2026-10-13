@@ -29,6 +29,9 @@ mechanics:
   skill_tree_meta: 1
   party_building: 3
   deck_from_equipment: 1
+  pick_one_of_n: 3
+  consumables: 2
+  elites: 2
 evidence:
   level_up_choices: Each hero has a large skill tree; points grant new cards and passives.
   item_rarity: Diablo-style randomized loot with rarity tiers.

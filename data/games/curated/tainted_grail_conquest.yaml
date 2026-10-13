@@ -23,6 +23,7 @@ mechanics:
   status_effects: 2
   block_shield: 2
   node_map: 1
+  pick_one_of_n: 2
 evidence:
   hub_building: The Menhir village is expanded with buildings between runs, unlocking services.
   permanent_stat_upgrades: Meta resources brought back buy persistent upgrades.

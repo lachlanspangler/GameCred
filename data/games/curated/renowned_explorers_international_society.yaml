@@ -15,6 +15,8 @@ mechanics:
   unlock_characters: 2
   shops: 2
   in_run_currency: 2
+  permadeath: 2
+  healing_scarcity: 2
 evidence:
   status_effects: Combat runs on three attitudes (Aggressive, Devious, Friendly) that build party moods.
   loadout_start: Pick a crew of three from 20 explorers with distinct skills.

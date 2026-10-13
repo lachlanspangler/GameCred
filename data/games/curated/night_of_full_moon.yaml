@@ -20,6 +20,7 @@ mechanics:
   passive_relics: 2
   pvp: 1
   content_updates: 2
+  pick_one_of_n: 3
 evidence:
   character_classes: Multiple Red Riding Hood classes (Knight, Sorceress, Witch, etc.) with separate card pools.
   random_events: Each chapter is a board of event, shop and fight nodes with branching story outcomes.

@@ -16,6 +16,7 @@ mechanics:
   boss_gates: 1
   hunger_clock: 2
   weapon_durability: 2
+  consumables: 2
 evidence:
   open_procgen_world: Each chapter's archipelago is procedurally generated and explored by a self-built boat.
   permadeath: Survivalist mode sends the player back to chapter 1 and wipes inventory on death; Storyteller mode keeps progress.

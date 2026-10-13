@@ -31,6 +31,7 @@ mechanics:
   content_updates: 2
   weapon_stance_swap: 3
   parry_counter: 2
+  pick_one_of_n: 2
 evidence:
   synergies: Alterattack - finishing a combo with one weapon triggers the other equipped weapon's special.
   online_coop: Built for 3-player online co-op.

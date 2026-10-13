@@ -97,3 +97,16 @@ Rejected for now (≤2 examples): weapon_auto_swap, dual_deck, limited_play_card
 - shrinking_zone — closing circle forces movement (Nightreign)
 - raid_mechanics — MMO-style co-op boss mechanics (Rabbit and Steel)
 - vr_motion_control — physical movement as input (Until You Fall)
+
+## From round-2 curator C (2026-10-13) — pending
+- spell_programming — ordered spell/modifier slots determine output (Noita, Magicraft)
+- monster_capture — capture/tame enemies as allies or forms (Abyss Odyssey, Patch Quest, Temtem: Swarm)
+- unkillable_pursuer — persistent hunter that must be evaded (Baldi's Basics, Monstrum)
+- shared_world_mmo — persistent massively-multiplayer world (Realm of the Mad God)
+
+## Decision: taxonomy v3 (2026-10-13) — 14 accepted (155 → 169)
+tile_placement_world, minute_spawn_schedule, pickup_magnet_economy, skill_tags, spell_programming, adjacency_placement,
+ship_base_design (from vehicle_or_base_design), automation_logistics, aim_mode_options, time_manipulation, monster_capture,
+destructible_subsystems, unkillable_pursuer, crew_stations (from vehicle_crew_stations).
+Still pending (1–2 examples): health_drain, momentum_movement, realtime_deck_cycling, sacrifice_healing, indirect_control,
+run_carryover_on_win, shrinking_zone, raid_mechanics, vr_motion_control, shared_world_mmo, random_run_traits.

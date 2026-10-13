@@ -12,6 +12,7 @@ mechanics:
   hub_building: 3
   character_classes: 3
   unlock_characters: 2
+  consumables: 2
 evidence:
   hub_building: Sproggi village grows and unlocks shops and upgrades between dungeons.
   short_runs: Bite-sized dungeons designed to be cleared in a few minutes.

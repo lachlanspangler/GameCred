@@ -20,6 +20,7 @@ mechanics:
   shops: 1
   act_structure: 2
   early_access_dev: 2
+  passive_relics: 2
 evidence:
   talent_slots: Fae blessings slot onto attack, special, cast and dash, Hades-style.
   online_coop: Up to four-player online co-op.

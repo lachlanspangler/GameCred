@@ -19,6 +19,8 @@ mechanics:
   time_pressure: 2
   boss_gates: 2
   synergies: 2
+  permadeath: 2
+  unlock_items: 2
 evidence:
   fps: First-person Survivors-like where many guns fire at once around the player's view.
   weapon_evolution: Duplicate weapons merge into higher tiers.

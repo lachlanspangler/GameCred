@@ -21,6 +21,7 @@ mechanics:
   short_runs: 2
   permadeath: 2
   prep_combat_phases: 1
+  unlock_items: 2
 evidence:
   waves: Neon twin-stick arena with discrete waves and upgrade picks between them.
   synergies: Hundreds of abilities and upgrades combine into synergy builds.

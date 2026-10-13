@@ -16,6 +16,7 @@ mechanics:
   boss_gates: 3
   act_structure: 2
   pick_one_of_n: 2
+  permadeath: 2
 evidence:
   melee_combos: 2D beat 'em up combat with juggles and combo strings.
   local_coop: Up to 4-player local co-op.

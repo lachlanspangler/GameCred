@@ -44,6 +44,7 @@ mechanics:
   content_updates: 3
   steam_deck_friendly: 2
   life_sim_hub: 3
+  elites: 2
 evidence:
   hub_building: Between crusades the player manages a cult base - buildings, farming, food, faith and follower needs.
   pick_one_of_n: Tarot cards drawn during a crusade offer run-long buffs.

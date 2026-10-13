@@ -34,6 +34,7 @@ mechanics:
   character_classes: 3
   turn_based: 3
   vehicle_combat: 3
+  pick_one_of_n: 3
 evidence:
   grid_tactics: Ships move laterally; cannons and enemy attacks hit only the columns they align with.
   enemy_intents: Enemy attack intents are shown per cannon column before your turn.

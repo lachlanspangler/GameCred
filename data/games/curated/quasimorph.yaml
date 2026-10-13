@@ -17,6 +17,8 @@ mechanics:
   early_access_dev: 3
   limb_injuries: 3
   turn_escalation: 2
+  consumables: 2
+  healing_scarcity: 2
 evidence:
   extraction: Mercenaries enter missions and must extract with loot; dying loses their gear.
   status_effects: Per-limb wounds, bleeding, infections and amputations.

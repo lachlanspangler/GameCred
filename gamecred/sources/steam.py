@@ -8,7 +8,7 @@ STORE = "https://store.steampowered.com"
 
 def appdetails(appid: int, max_age_days: float = 60) -> dict | None:
     d = get_json("steam_app", str(appid), f"{STORE}/api/appdetails?appids={appid}&cc=us&l=english",
-                 min_interval=1.6, max_age_days=max_age_days)
+                 min_interval=1.8, max_age_days=max_age_days)
     if not d:
         return None
     entry = d.get(str(appid)) or {}

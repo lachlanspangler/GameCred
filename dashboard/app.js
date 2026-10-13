@@ -556,8 +556,8 @@ function labFromHash() {
   lab.from = "shared link"; return true;
 }
 function labScope() { return (AN.subgenres[lab.sub] && AN.subgenres[lab.sub].ridge) ? AN.subgenres[lab.sub] : AN.scopes.all; }
-function predict(vec) {
-  const sc = labScope(), r = sc.ridge; if (!r) return null;
+function predict(vec, scopeOverride) {
+  const sc = scopeOverride || labScope(), r = sc && sc.ridge; if (!r) return null;
   let y = r.intercept;
   r.features.forEach((f, i) => {
     const c = r.coefs[i].coef; let x = 0;
@@ -629,6 +629,10 @@ function viewLab() {
     h("div", { class: "hero" }, h("span", { class: "hero-value" }, pr ? fmt.f1(pr.y) : "–"), pr ? h("span", { class: "muted" }, `± ${fmt.f1(pr.rmse)} (CV RMSE)`) : null),
     pr ? h("div", { class: "meter", title: `percentile ${Math.round(pctile)}` }, h("div", { style: `width:${pctile}%` })) : null,
     pr ? h("div", { class: "tile-note" }, `${Math.round(pctile)}th percentile of ${allGsi.length} ${mname(lab.sub)} games`) : null,
+    (() => { const pq = predict(lab.vec, AN.scopes["all:quality_pct"]), pc = predict(lab.vec, AN.scopes["all:commercial_pct"]);
+      return pq && pc ? h("div", { class: "grid g2", style: "margin-top:10px" },
+        tile("Will players love it?", fmt.f1(pq.y), `predicted review-quality percentile ± ${fmt.f1(pq.rmse)}`),
+        tile("Will it sell?", fmt.f1(pc.y), `predicted revenue percentile ± ${fmt.f1(pc.rmse)}`)) : null; })(),
     risk ? h("div", { class: `status ${risk[0]}`, style: "margin-top:10px" }, h("span", { class: "ico" }, risk[1]), risk[2], h("span", { class: "muted", style: "font-weight:400" }, `P(hit) ${fmt.pct(pHit)} · P(flop) ${fmt.pct(pFlop)} (model)`)) : null,
     h("div", { class: "grid g2", style: "margin-top:12px" },
       tile("Comps hit rate", fmt.pct(compHit), `25 nearest designs, similarity-weighted`),
@@ -686,7 +690,8 @@ function copyReport(x) {
   const lines = [`# GameCred design assessment`, ``, `**Subgenre:** ${mname(lab.sub)} · **Price:** $${lab.price} · **Release:** ${lab.year}${lab.ea ? " · Early Access" : ""}`,
     `**Mechanics (${Object.keys(lab.vec).length}):** ${Object.entries(lab.vec).map(([k, v]) => `${mname(k)}${"·".repeat(v)}`).join(", ")}`, ``,
     `## Score`, `- Predicted Success Index: **${fmt.f1(x.pr && x.pr.y)}** ± ${fmt.f1(x.pr && x.pr.rmse)} (${Math.round(x.pctile)}th percentile in subgenre)`,
-    `- Model P(hit): ${fmt.pct(x.pHit)} · P(flop): ${fmt.pct(x.pFlop)}`, `- Nearest-25 comps: hit rate ${fmt.pct(x.compHit)}, flop rate ${fmt.pct(x.compFlop)}`, ``,
+    `- Model P(hit): ${fmt.pct(x.pHit)} · P(flop): ${fmt.pct(x.pFlop)}`,
+    `- Quality percentile (players): ${fmt.f1((predict(lab.vec, AN.scopes["all:quality_pct"]) || {}).y)} · Commercial percentile (sales): ${fmt.f1((predict(lab.vec, AN.scopes["all:commercial_pct"]) || {}).y)}`, `- Nearest-25 comps: hit rate ${fmt.pct(x.compHit)}, flop rate ${fmt.pct(x.compFlop)}`, ``,
     `## Missing table stakes`, ...(x.missing.length ? x.missing.map(r => `- ${mname(r.mechanic)} (in ${fmt.pct(r.prev_in_hits)} of hits)`) : ["- none"]), ``,
     `## Red flags`, ...(x.flags.length ? x.flags.map(r => `- ${mname(r.mechanic)} (Δ ${fmt.d1(r.diff)})`) : ["- none"]), ``,
     `## Highest-leverage additions`, ...x.adds.map(c => `- ${mname(c.feature)} (+${fmt.f1(c.coef)} pts)`), ``,

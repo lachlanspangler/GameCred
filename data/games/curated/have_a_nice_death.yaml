@@ -29,6 +29,7 @@ mechanics:
   hub_building: 1
   narrative_across_runs: 1
   early_access_dev: 2
+  healing_scarcity: 2
 evidence:
   energy_mana: Spells consume a mana gauge that refills over time.
   talent_slots: Curses picked between floors fill weapon/spell modifier categories.

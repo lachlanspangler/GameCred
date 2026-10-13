@@ -22,6 +22,8 @@ mechanics:
   online_coop: 2
   early_access_dev: 3
   traversal_tools: 2
+  permadeath: 2
+  healing_scarcity: 2
 evidence:
   open_procgen_world: Each cycle generates a 3D open Overgrowth with biomes, towers and Crowns to hunt.
   boss_gates: Defeating the region Crowns unlocks the Abyss King fight that ends the cycle.

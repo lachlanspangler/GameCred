@@ -24,6 +24,7 @@ mechanics:
   stress_sanity: 2
   weapon_durability: 2
   faction_reputation: 1
+  consumables: 2
 evidence:
   hybrid_survival: Hunger, thirst, fatigue and sanity plus per-limb injuries.
   inventory_management: Spatial grid inventory with weight.

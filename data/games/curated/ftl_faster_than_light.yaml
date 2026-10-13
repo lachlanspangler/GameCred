@@ -40,6 +40,8 @@ mechanics:
   vehicle_combat: 3
   hunger_clock: 2
   party_building: 2
+  block_shield: 3
+  passive_relics: 2
 evidence:
   node_map: Each of 8 sectors is a beacon graph; the player picks jumps while the rebel fleet advances.
   item_upgrading: Scrap buys reactor and system power upgrades (shields, weapons, engines) mid-run.

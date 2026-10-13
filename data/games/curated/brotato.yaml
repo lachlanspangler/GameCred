@@ -55,6 +55,8 @@ mechanics:
   early_access_dev: 1
   steam_deck_friendly: 2
   prep_combat_phases: 3
+  passive_relics: 3
+  block_shield: 1
 evidence:
   waves: Runs are 20 timed waves with a shop after every wave and a boss on wave 20.
   interest_economy: The Harvesting stat pays materials at wave end and grows over the run, rewarding early economy investment.

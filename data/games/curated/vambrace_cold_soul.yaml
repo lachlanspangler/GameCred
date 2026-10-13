@@ -15,6 +15,7 @@ mechanics:
   stress_sanity: 3
   party_building: 3
   lanes_ranks: 2
+  consumables: 2
 evidence:
   hybrid_survival: Expeditions are limited by cold/supplies; camping consumes resources.
   permadeath: Recruited companions die permanently on expeditions.

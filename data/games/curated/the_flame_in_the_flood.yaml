@@ -22,6 +22,7 @@ mechanics:
   mid_run_save: 2
   assist_mode: 1
   act_structure: 1
+  consumables: 2
 evidence:
   hunger_clock: Hunger, thirst, temperature and fatigue meters must be managed constantly.
   limb_injuries: Ailments like bites, lacerations, infections and dysentery need specific crafted remedies.

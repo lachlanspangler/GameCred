@@ -24,6 +24,8 @@ mechanics:
   mod_support: 2
   turn_based: 3
   lanes_ranks: 2
+  pick_one_of_n: 3
+  item_upgrading: 2
 evidence:
   online_coop: Up to 3 players share a battlefield in co-op.
   grid_tactics: Enemies occupy near and far range bands; cards have range restrictions.

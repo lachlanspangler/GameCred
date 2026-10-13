@@ -26,6 +26,8 @@ mechanics:
   early_access_dev: 2
   content_updates: 2
   prep_combat_phases: 3
+  block_shield: 3
+  consumables: 1
 evidence:
   inventory_management: Items must physically fit into a grid backpack; adjacency triggers effects.
   weapon_evolution: Specific items placed together combine into recipe items at the start of a round.

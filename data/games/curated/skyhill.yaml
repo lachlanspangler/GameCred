@@ -24,6 +24,7 @@ mechanics:
   act_structure: 1
   boss_gates: 1
   crits: 1
+  consumables: 2
 evidence:
   hunger_clock: Each move between rooms costs hunger; starving drains HP as you descend 100 floors.
   crafting: Base room workshop and kitchen upgrade to craft weapons, medicine and food.

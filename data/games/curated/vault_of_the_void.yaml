@@ -30,6 +30,7 @@ mechanics:
   early_access_dev: 2
   rng_mitigation: 2
   card_mods: 3
+  pick_one_of_n: 2
 evidence:
   deckbuilding: Fixed-size 20-card deck; new cards are swapped in rather than added.
   item_upgrading: Void Stones are socketed into cards for added effects.

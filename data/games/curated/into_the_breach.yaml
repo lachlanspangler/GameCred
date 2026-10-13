@@ -38,6 +38,7 @@ mechanics:
   content_updates: 2
   tutorialized_unlocks: 1
   steam_deck_friendly: 1
+  block_shield: 2
 evidence:
   enemy_intents: Vek telegraph every attack tile before the player moves; the whole turn is solving those telegraphs.
   perfect_information: No hit chance; damage, pushes and spawn points are shown exactly in advance.

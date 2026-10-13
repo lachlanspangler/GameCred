@@ -22,6 +22,8 @@ mechanics:
   online_coop: 3
   vehicle_combat: 3
   turn_escalation: 2
+  unlock_items: 2
+  healing_scarcity: 2
 evidence:
   node_map: Each region is a hex grid of sea tiles; players pick a path to the boss with limited moves.
   local_coop: Two players operate cannons and repair a shared ship; solo play uses a companion.

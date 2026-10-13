@@ -43,6 +43,7 @@ mechanics:
   leaderboards: 1
   early_access_dev: 2
   content_updates: 2
+  passive_relics: 2
 evidence:
   endless_mode: Runs continue island after island with no fixed end; scoring is about how far you get.
   item_stacking: Weapon mods and perks stack repeatedly, producing exponential late-run screen-clearing builds.

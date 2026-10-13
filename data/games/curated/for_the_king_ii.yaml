@@ -29,6 +29,7 @@ mechanics:
   turn_escalation: 2
   day_night_cycle: 1
   lanes_ranks: 2
+  healing_scarcity: 2
 evidence:
   second_chance: Shared life pool continues from the original.
   rng_mitigation: Focus spent on slot rolls; battles add front/back-row positioning.

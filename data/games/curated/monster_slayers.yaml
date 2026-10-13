@@ -22,6 +22,7 @@ mechanics:
   in_run_currency: 2
   healing_scarcity: 2
   turn_based: 3
+  pick_one_of_n: 3
 evidence:
   permanent_stat_upgrades: Guild Hall upgrades bought with gold persist across runs.
   level_up_choices: Heroes choose cards/skills on level-up during the run.

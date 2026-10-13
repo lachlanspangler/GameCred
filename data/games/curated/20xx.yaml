@@ -25,6 +25,8 @@ mechanics:
   local_coop: 2
   leaderboards: 1
   early_access_dev: 2
+  pick_one_of_n: 2
+  unlock_items: 2
 evidence:
   weapons_variety: Defeated bosses grant their Power, Mega Man-style.
   permanent_stat_upgrades: Soul Chips buy permanent augments between runs.

@@ -23,6 +23,7 @@ mechanics:
   status_effects: 2
   party_building: 3
   stress_sanity: 3
+  consumables: 2
 evidence:
   hybrid_survival: Sanity drains with each step on the hex map; food and supplies restore it.
   dice: Combat is resolved by rolling and rerolling each party member's dice faces.

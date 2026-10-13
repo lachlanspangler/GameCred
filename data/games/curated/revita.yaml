@@ -29,6 +29,7 @@ mechanics:
   ascension_ladder: 2
   assist_mode: 2
   early_access_dev: 2
+  healing_scarcity: 2
 evidence:
   hp_as_currency: Hearts are the shop currency - relics and services cost HP, max HP is traded at the Soul Shrine.
   platforming: Precision side-on platforming with mouse-aimed shooting.

@@ -27,6 +27,7 @@ mechanics:
   character_classes: 2
   party_building: 3
   lanes_ranks: 2
+  pick_one_of_n: 2
 evidence:
   permadeath: Individual party members die permanently mid-run along with their cards.
   grid_tactics: Party arranged in front/back formation slots.

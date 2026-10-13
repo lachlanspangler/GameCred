@@ -34,6 +34,7 @@ mechanics:
   early_access_dev: 1
   content_updates: 2
   steam_deck_friendly: 2
+  ascension_ladder: 2
 evidence:
   synergies: Skills carry damage/delivery tags (fire, frost, lightning, projectile, area) that tag-specific upgrades scale.
   attack_patterns: Bosses and elites use large telegraphed area attacks that must be dodged.

@@ -44,6 +44,7 @@ mechanics:
   assist_mode: 1
   rhythm_timing: 3
   combo_meter: 3
+  elites: 2
 evidence:
   real_time_action: Every move must land on the music beat - a tile-based roguelike played in rhythm.
   attack_patterns: Each enemy type has a fixed, learnable movement rhythm tied to the beat.

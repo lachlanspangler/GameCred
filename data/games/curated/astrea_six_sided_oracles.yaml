@@ -28,6 +28,8 @@ mechanics:
   in_run_currency: 2
   synergies: 2
   dice_manipulation: 3
+  pick_one_of_n: 2
+  random_events: 2
 evidence:
   dice: Players build a bag of custom dice instead of a card deck.
   double_edged_items: Corruption faces hurt enemies but fill your own corruption meter, which damages you on overflow.

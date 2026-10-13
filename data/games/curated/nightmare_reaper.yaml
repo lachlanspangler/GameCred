@@ -18,6 +18,7 @@ mechanics:
   in_run_currency: 2
   loadout_start: 1
   early_access_dev: 2
+  permadeath: 2
 evidence:
   skill_tree_meta: Gold collected is spent in minigames (platformer, etc.) that unlock skill-tree upgrades.
   item_rarity: Weapons drop with random rarities and modifiers across 50+ weapon types.

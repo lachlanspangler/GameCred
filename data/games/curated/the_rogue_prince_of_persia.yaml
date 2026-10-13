@@ -33,6 +33,7 @@ mechanics:
   content_updates: 1
   healing_scarcity: 1
   status_effects: 1
+  passive_relics: 2
 evidence:
   talent_slots: Medallions socket into a limited set of slots, with adjacency/level boosts between them.
   narrative_across_runs: 'Time-loop story: each death returns the Prince to the Haven oasis and advances dialogue and plot.'

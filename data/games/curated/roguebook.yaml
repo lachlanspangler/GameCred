@@ -37,6 +37,7 @@ mechanics:
   synergies: 2
   card_mods: 3
   lanes_ranks: 2
+  pick_one_of_n: 2
 evidence:
   open_procgen_world: Hex map is revealed by spending ink and brushes earned in fights.
   loadout_start: Pick 2 of the heroes; they share one deck and swap front/back position.

@@ -19,6 +19,7 @@ mechanics:
   speed_controls: 2
   early_access_dev: 1
   real_time_action: 1
+  item_upgrading: 2
 evidence:
   procgen_levels: The enemy path grows and branches procedurally outward from the central tower every few waves.
   pick_one_of_n: Periodic card draws offer a choice of new towers, buildings or upgrades.

@@ -45,6 +45,7 @@ mechanics:
   enemy_variety: 2
   random_events: 1
   short_runs: 1
+  elites: 1
 evidence:
   hp_as_currency: Devil Rooms trade heart containers for powerful items.
   achievement_unlocks: Secrets (e.g. beating Mom's Heart N times) unlock new items, characters and chapters.

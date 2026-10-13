@@ -21,6 +21,7 @@ mechanics:
   synergies: 1
   push_your_luck: 1
   healing_scarcity: 2
+  passive_relics: 2
 evidence:
   inventory_management: Limited equipment slots; new gear replaces old with stat tradeoffs.
   double_edged_items: Many items trade one stat for another (e.g. attack for defense).

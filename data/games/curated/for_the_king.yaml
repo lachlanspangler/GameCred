@@ -28,6 +28,7 @@ mechanics:
   party_building: 2
   turn_escalation: 2
   day_night_cycle: 1
+  healing_scarcity: 2
 evidence:
   second_chance: A shared life pool lets fallen party members be revived until it runs out.
   rng_mitigation: Focus points guarantee success slots on stat-check rolls.

@@ -20,6 +20,7 @@ mechanics:
   boss_gates: 3
   synergies: 2
   early_access_dev: 2
+  permadeath: 2
 evidence:
   talent_slots: Arcana (spells) occupy fixed slots - basic, dash, standard, signature - swapped from run rewards.
   elemental_interactions: Elemental arcana interact (e.g. water/ice/lightning combinations).

@@ -26,6 +26,7 @@ mechanics:
   prep_combat_phases: 3
   day_night_cycle: 2
   party_building: 3
+  pick_one_of_n: 2
 evidence:
   hybrid_city_builder: Day phase spends gold and materials rebuilding and fortifying the city.
   waves: Night phase holds off huge hordes converging from all sides.

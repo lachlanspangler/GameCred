@@ -24,6 +24,8 @@ mechanics:
   environmental_hazards: 2
   elites: 1
   early_access_dev: 2
+  block_shield: 2
+  healing_scarcity: 2
 evidence:
   level_up_choices: Each level grants a trait pick from class-specific trees (master traits gate builds).
   item_upgrading: Mod packs (power/agility/bulk) upgrade weapons and armor permanently in-run.

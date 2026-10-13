@@ -28,6 +28,7 @@ mechanics:
   synergies: 2
   early_access_dev: 1
   card_mods: 2
+  pick_one_of_n: 2
 evidence:
   grid_tactics: Combat on a single-row line; facing and position matter for every attack.
   enemy_intents: Every enemy shows its next attack and a turn countdown.

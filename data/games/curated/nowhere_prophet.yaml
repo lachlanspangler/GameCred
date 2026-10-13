@@ -27,6 +27,7 @@ mechanics:
   double_edged_items: 1
   hunger_clock: 2
   party_building: 2
+  pick_one_of_n: 2
 evidence:
   healing_scarcity: Convoy food and hope must be managed; followers who die while wounded are lost.
   grid_tactics: Combat on a lane-based board where follower positioning and guards matter.

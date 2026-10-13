@@ -38,6 +38,7 @@ mechanics:
   summons_minions: 3
   lanes_ranks: 2
   card_mods: 2
+  ascension_ladder: 1
 evidence:
   enemy_intents: Every unit shows a counter that ticks down each turn; it acts at zero.
   hub_building: Snowdwell town is rebuilt across runs, unlocking new cards, charms and pets.

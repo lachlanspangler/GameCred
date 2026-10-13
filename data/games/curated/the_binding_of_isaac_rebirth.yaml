@@ -61,6 +61,7 @@ mechanics:
   speedrun_support: 1
   run_history: 1
   summons_minions: 1
+  reroll: 1
 evidence:
   hp_as_currency: Devil Rooms sell items for permanent heart containers.
   transformations: Collecting 3 items of a set (Guppy, Beelzebub, etc.) grants a transformation.

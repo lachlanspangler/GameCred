@@ -23,6 +23,7 @@ mechanics:
   hunger_clock: 3
   item_identification: 3
   card_mods: 2
+  passive_relics: 2
 evidence:
   permadeath: Fainting returns Shiren to level 1 and loses everything carried, Mystery Dungeon style.
   item_upgrading: Weapons/shields absorb seals via Synthesis Pots to build up a single carried kit.
