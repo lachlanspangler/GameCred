@@ -40,7 +40,7 @@ Score = value ÷ effort (each 1–5). Status: `open` · `doing` · `done` · `pa
 | ID | Idea | V | E | Status |
 |---|---|---|---|---|
 | I-030 | Shareable Lab URLs (state encoded in hash) for pitch decks | 4 | 1 | done |
-| I-031 | "Compare two games" side-by-side fingerprint view | 4 | 2 | open |
+| I-031 | "Compare two games" side-by-side fingerprint view | 4 | 2 | done |
 | I-032 | Printable one-page PDF pitch report | 4 | 2 | open |
 | I-033 | Trend tab (from I-023) with small multiples per family | 3 | 2 | open |
 | I-034 | Publisher rubric export: per-subgenre "must have x, y, z" checklist (Markdown/PDF) | 5 | 1 | done (Markdown) |

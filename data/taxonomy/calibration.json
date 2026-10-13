@@ -1,0 +1,1281 @@
+{
+ "generated": "2026-10-13T18:55:52",
+ "n_games": 318,
+ "precision": {
+  "permadeath": {
+   "steam_tag": {
+    "precision": 0.988,
+    "n": 86
+   },
+   "keyword": {
+    "precision": 1.0,
+    "n": 19
+   },
+   "recall": 0.346
+  },
+  "mid_run_save": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 1
+   },
+   "recall": 0.0
+  },
+  "second_chance": {
+   "keyword": {
+    "precision": 0.333,
+    "n": 3
+   },
+   "recall": 0.048
+  },
+  "extraction": {
+   "steam_tag": {
+    "precision": 1.0,
+    "n": 4
+   },
+   "keyword": {
+    "precision": 0.5,
+    "n": 2
+   },
+   "recall": 0.357
+  },
+  "legacy_inheritance": {
+   "keyword": {
+    "precision": 0.667,
+    "n": 3
+   },
+   "recall": 0.286
+  },
+  "breeding_genetics": {
+   "keyword": {
+    "precision": 0.167,
+    "n": 6
+   },
+   "recall": 0.5
+  },
+  "procgen_levels": {
+   "steam_tag": {
+    "precision": 0.669,
+    "n": 148
+   },
+   "keyword": {
+    "precision": 0.722,
+    "n": 36
+   },
+   "recall": 0.731
+  },
+  "node_map": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 3
+   },
+   "recall": 0.0
+  },
+  "room_based_floors": {
+   "keyword": {
+    "precision": 0.333,
+    "n": 3
+   },
+   "recall": 0.018
+  },
+  "tile_placement_world": {
+   "keyword": {
+    "precision": 1.0,
+    "n": 1
+   },
+   "recall": 0.5
+  },
+  "open_procgen_world": {
+   "steam_tag": {
+    "precision": 0.31,
+    "n": 58
+   },
+   "recall": 0.621
+  },
+  "seeded_runs": {
+   "keyword": {
+    "precision": 0.5,
+    "n": 4
+   },
+   "recall": 0.182
+  },
+  "daily_challenge": {
+   "keyword": {
+    "precision": 0.364,
+    "n": 11
+   },
+   "recall": 0.19
+  },
+  "handcrafted_loop_world": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 2
+   },
+   "recall": 0.0
+  },
+  "act_structure": {
+   "keyword": {
+    "precision": 0.5,
+    "n": 18
+   },
+   "recall": 0.052
+  },
+  "boss_gates": {
+   "keyword": {
+    "precision": 1.0,
+    "n": 10
+   },
+   "recall": 0.047
+  },
+  "short_runs": {
+   "keyword": {
+    "precision": 0.667,
+    "n": 3
+   },
+   "recall": 0.029
+  },
+  "long_runs": {
+   "recall": 0.0
+  },
+  "endless_mode": {
+   "keyword": {
+    "precision": 0.375,
+    "n": 8
+   },
+   "recall": 0.1
+  },
+  "time_pressure": {
+   "steam_tag": {
+    "precision": 0.0,
+    "n": 1
+   },
+   "keyword": {
+    "precision": 0.5,
+    "n": 4
+   },
+   "recall": 0.053
+  },
+  "minute_spawn_schedule": {
+   "keyword": {
+    "precision": 0.333,
+    "n": 3
+   },
+   "recall": 0.2
+  },
+  "multiple_endings": {
+   "steam_tag": {
+    "precision": 0.125,
+    "n": 8
+   },
+   "keyword": {
+    "precision": 1.0,
+    "n": 2
+   },
+   "recall": 0.091
+  },
+  "turn_escalation": {
+   "recall": 0.0
+  },
+  "day_night_cycle": {
+   "keyword": {
+    "precision": 0.5,
+    "n": 2
+   },
+   "recall": 0.062
+  },
+  "prep_combat_phases": {
+   "keyword": {
+    "precision": 1.0,
+    "n": 1
+   },
+   "recall": 0.056
+  },
+  "permanent_stat_upgrades": {
+   "keyword": {
+    "precision": 0.714,
+    "n": 21
+   },
+   "recall": 0.167
+  },
+  "skill_tree_meta": {
+   "keyword": {
+    "precision": 0.714,
+    "n": 7
+   },
+   "recall": 0.172
+  },
+  "hub_building": {
+   "steam_tag": {
+    "precision": 0.471,
+    "n": 17
+   },
+   "keyword": {
+    "precision": 1.0,
+    "n": 1
+   },
+   "recall": 0.164
+  },
+  "life_sim_hub": {
+   "steam_tag": {
+    "precision": 1.0,
+    "n": 1
+   },
+   "keyword": {
+    "precision": 0.333,
+    "n": 3
+   },
+   "recall": 0.286
+  },
+  "shop_management": {
+   "keyword": {
+    "precision": 1.0,
+    "n": 1
+   },
+   "recall": 0.5
+  },
+  "unlock_items": {
+   "keyword": {
+    "precision": 0.699,
+    "n": 73
+   },
+   "recall": 0.307
+  },
+  "unlock_characters": {
+   "keyword": {
+    "precision": 0.9,
+    "n": 10
+   },
+   "recall": 0.07
+  },
+  "achievement_unlocks": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 1
+   },
+   "recall": 0.0
+  },
+  "traversal_unlocks": {
+   "keyword": {
+    "precision": 0.067,
+    "n": 15
+   },
+   "recall": 0.143
+  },
+  "weapon_mastery": {
+   "recall": 0.0
+  },
+  "ascension_ladder": {
+   "keyword": {
+    "precision": 0.118,
+    "n": 17
+   },
+   "recall": 0.053
+  },
+  "modular_difficulty": {
+   "keyword": {
+    "precision": 0.095,
+    "n": 21
+   },
+   "recall": 0.105
+  },
+  "narrative_across_runs": {
+   "steam_tag": {
+    "precision": 0.543,
+    "n": 35
+   },
+   "keyword": {
+    "precision": 0.25,
+    "n": 4
+   },
+   "recall": 0.571
+  },
+  "lore_codex": {
+   "keyword": {
+    "precision": 0.333,
+    "n": 3
+   },
+   "recall": 0.038
+  },
+  "npc_relationships": {
+   "keyword": {
+    "precision": 0.5,
+    "n": 8
+   },
+   "recall": 0.286
+  },
+  "pick_one_of_n": {
+   "keyword": {
+    "precision": 0.438,
+    "n": 16
+   },
+   "recall": 0.05
+  },
+  "level_up_choices": {
+   "keyword": {
+    "precision": 0.576,
+    "n": 33
+   },
+   "recall": 0.26
+  },
+  "reroll": {
+   "keyword": {
+    "precision": 0.5,
+    "n": 6
+   },
+   "recall": 0.094
+  },
+  "banish_skip": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 3
+   },
+   "recall": 0.0
+  },
+  "loadout_start": {
+   "keyword": {
+    "precision": 0.455,
+    "n": 11
+   },
+   "recall": 0.069
+  },
+  "flat_stat_scaling": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 3
+   },
+   "recall": 0.0
+  },
+  "multiplicative_scaling": {
+   "keyword": {
+    "precision": 1.0,
+    "n": 1
+   },
+   "recall": 0.037
+  },
+  "item_stacking": {
+   "keyword": {
+    "precision": 0.25,
+    "n": 4
+   },
+   "recall": 0.077
+  },
+  "weapon_evolution": {
+   "keyword": {
+    "precision": 0.185,
+    "n": 27
+   },
+   "recall": 0.385
+  },
+  "synergies": {
+   "keyword": {
+    "precision": 0.865,
+    "n": 37
+   },
+   "recall": 0.237
+  },
+  "transformations": {
+   "recall": 0.0
+  },
+  "build_archetypes": {
+   "keyword": {
+    "precision": 0.549,
+    "n": 51
+   },
+   "recall": 0.326
+  },
+  "item_upgrading": {
+   "keyword": {
+    "precision": 0.259,
+    "n": 27
+   },
+   "recall": 0.086
+  },
+  "cooldown_reduction": {
+   "keyword": {
+    "precision": 0.5,
+    "n": 2
+   },
+   "recall": 0.091
+  },
+  "character_classes": {
+   "steam_tag": {
+    "precision": 0.71,
+    "n": 31
+   },
+   "keyword": {
+    "precision": 0.942,
+    "n": 69
+   },
+   "recall": 0.486
+  },
+  "talent_slots": {
+   "keyword": {
+    "precision": 0.333,
+    "n": 15
+   },
+   "recall": 0.25
+  },
+  "card_mods": {
+   "keyword": {
+    "precision": 0.231,
+    "n": 13
+   },
+   "recall": 0.333
+  },
+  "weapon_stance_swap": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 2
+   },
+   "recall": 0.0
+  },
+  "party_building": {
+   "steam_tag": {
+    "precision": 1.0,
+    "n": 6
+   },
+   "keyword": {
+    "precision": 0.382,
+    "n": 55
+   },
+   "recall": 0.614
+  },
+  "summons_minions": {
+   "keyword": {
+    "precision": 0.273,
+    "n": 22
+   },
+   "recall": 0.286
+  },
+  "monster_capture": {
+   "steam_tag": {
+    "precision": 0.5,
+    "n": 2
+   },
+   "keyword": {
+    "precision": 0.222,
+    "n": 9
+   },
+   "recall": 0.75
+  },
+  "combo_meter": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 1
+   },
+   "recall": 0.0
+  },
+  "pickup_magnet_economy": {
+   "recall": 0.0
+  },
+  "skill_tags": {
+   "recall": 0.0
+  },
+  "spell_programming": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 3
+   },
+   "recall": 0.0
+  },
+  "passive_relics": {
+   "keyword": {
+    "precision": 0.746,
+    "n": 59
+   },
+   "recall": 0.314
+  },
+  "active_items": {
+   "recall": 0.0
+  },
+  "consumables": {
+   "keyword": {
+    "precision": 0.562,
+    "n": 16
+   },
+   "recall": 0.092
+  },
+  "weapons_variety": {
+   "keyword": {
+    "precision": 0.579,
+    "n": 38
+   },
+   "recall": 0.224
+  },
+  "item_rarity": {
+   "steam_tag": {
+    "precision": 0.484,
+    "n": 31
+   },
+   "keyword": {
+    "precision": 0.296,
+    "n": 27
+   },
+   "recall": 0.365
+  },
+  "cursed_items": {
+   "keyword": {
+    "precision": 0.188,
+    "n": 16
+   },
+   "recall": 0.111
+  },
+  "shops": {
+   "keyword": {
+    "precision": 0.714,
+    "n": 28
+   },
+   "recall": 0.122
+  },
+  "in_run_currency": {
+   "keyword": {
+    "precision": 0.769,
+    "n": 26
+   },
+   "recall": 0.11
+  },
+  "interest_economy": {
+   "steam_tag": {
+    "precision": 0.0,
+    "n": 2
+   },
+   "recall": 0.0
+  },
+  "crafting": {
+   "steam_tag": {
+    "precision": 0.842,
+    "n": 19
+   },
+   "keyword": {
+    "precision": 0.5,
+    "n": 20
+   },
+   "recall": 0.542
+  },
+  "inventory_management": {
+   "steam_tag": {
+    "precision": 0.875,
+    "n": 8
+   },
+   "keyword": {
+    "precision": 0.667,
+    "n": 3
+   },
+   "recall": 0.184
+  },
+  "adjacency_placement": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 2
+   },
+   "recall": 0.0
+  },
+  "deck_thinning": {
+   "keyword": {
+    "precision": 0.5,
+    "n": 2
+   },
+   "recall": 0.071
+  },
+  "weapon_durability": {
+   "recall": 0.0
+  },
+  "item_identification": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 1
+   },
+   "recall": 0.0
+  },
+  "deck_from_equipment": {
+   "recall": 0.0
+  },
+  "faction_reputation": {
+   "keyword": {
+    "precision": 0.176,
+    "n": 17
+   },
+   "recall": 1.0
+  },
+  "ship_base_design": {
+   "keyword": {
+    "precision": 1.0,
+    "n": 2
+   },
+   "recall": 0.286
+  },
+  "automation_logistics": {
+   "steam_tag": {
+    "precision": 1.0,
+    "n": 1
+   },
+   "keyword": {
+    "precision": 0.25,
+    "n": 4
+   },
+   "recall": 1.0
+  },
+  "real_time_action": {
+   "steam_tag": {
+    "precision": 0.963,
+    "n": 188
+   },
+   "keyword": {
+    "precision": 0.2,
+    "n": 15
+   },
+   "recall": 0.944
+  },
+  "turn_based": {
+   "steam_tag": {
+    "precision": 0.932,
+    "n": 103
+   },
+   "keyword": {
+    "precision": 1.0,
+    "n": 2
+   },
+   "recall": 0.933
+  },
+  "grid_tactics": {
+   "steam_tag": {
+    "precision": 0.346,
+    "n": 52
+   },
+   "keyword": {
+    "precision": 0.16,
+    "n": 25
+   },
+   "recall": 0.786
+  },
+  "lanes_ranks": {
+   "keyword": {
+    "precision": 0.2,
+    "n": 10
+   },
+   "recall": 0.143
+  },
+  "auto_battler": {
+   "steam_tag": {
+    "precision": 0.286,
+    "n": 7
+   },
+   "keyword": {
+    "precision": 0.333,
+    "n": 3
+   },
+   "recall": 0.5
+  },
+  "auto_attack": {
+   "keyword": {
+    "precision": 0.522,
+    "n": 23
+   },
+   "recall": 0.375
+  },
+  "twin_stick": {
+   "steam_tag": {
+    "precision": 0.404,
+    "n": 57
+   },
+   "recall": 0.793
+  },
+  "bullet_hell": {
+   "steam_tag": {
+    "precision": 0.292,
+    "n": 65
+   },
+   "recall": 0.792
+  },
+  "dodge_iframes": {
+   "steam_tag": {
+    "precision": 0.846,
+    "n": 13
+   },
+   "keyword": {
+    "precision": 0.308,
+    "n": 26
+   },
+   "recall": 0.339
+  },
+  "melee_combos": {
+   "steam_tag": {
+    "precision": 0.522,
+    "n": 46
+   },
+   "keyword": {
+    "precision": 0.103,
+    "n": 29
+   },
+   "recall": 0.794
+  },
+  "platforming": {
+   "steam_tag": {
+    "precision": 0.895,
+    "n": 38
+   },
+   "keyword": {
+    "precision": 1.0,
+    "n": 2
+   },
+   "recall": 0.8
+  },
+  "fps": {
+   "steam_tag": {
+    "precision": 0.409,
+    "n": 66
+   },
+   "keyword": {
+    "precision": 0.0,
+    "n": 1
+   },
+   "recall": 1.0
+  },
+  "vehicle_combat": {
+   "steam_tag": {
+    "precision": 0.444,
+    "n": 27
+   },
+   "keyword": {
+    "precision": 0.312,
+    "n": 16
+   },
+   "recall": 0.895
+  },
+  "traversal_tools": {
+   "keyword": {
+    "precision": 0.5,
+    "n": 6
+   },
+   "recall": 0.188
+  },
+  "parry_counter": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 2
+   },
+   "recall": 0.0
+  },
+  "rhythm_timing": {
+   "steam_tag": {
+    "precision": 1.0,
+    "n": 2
+   },
+   "keyword": {
+    "precision": 0.0,
+    "n": 2
+   },
+   "recall": 1.0
+  },
+  "stealth": {
+   "steam_tag": {
+    "precision": 0.889,
+    "n": 9
+   },
+   "keyword": {
+    "precision": 0.167,
+    "n": 6
+   },
+   "recall": 0.75
+  },
+  "weapon_handling": {
+   "keyword": {
+    "precision": 0.222,
+    "n": 9
+   },
+   "recall": 0.095
+  },
+  "aim_mode_options": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 1
+   },
+   "recall": 0.0
+  },
+  "time_manipulation": {
+   "steam_tag": {
+    "precision": 0.667,
+    "n": 3
+   },
+   "keyword": {
+    "precision": 0.5,
+    "n": 2
+   },
+   "recall": 1.0
+  },
+  "deckbuilding": {
+   "steam_tag": {
+    "precision": 0.689,
+    "n": 61
+   },
+   "keyword": {
+    "precision": 0.667,
+    "n": 3
+   },
+   "recall": 0.978
+  },
+  "energy_mana": {
+   "keyword": {
+    "precision": 0.111,
+    "n": 9
+   },
+   "recall": 0.026
+  },
+  "card_draw": {
+   "keyword": {
+    "precision": 0.667,
+    "n": 3
+   },
+   "recall": 0.071
+  },
+  "dice": {
+   "steam_tag": {
+    "precision": 0.667,
+    "n": 3
+   },
+   "keyword": {
+    "precision": 0.462,
+    "n": 13
+   },
+   "recall": 0.8
+  },
+  "poker_hands": {
+   "steam_tag": {
+    "precision": 0.034,
+    "n": 59
+   },
+   "recall": 0.667
+  },
+  "score_target_rounds": {
+   "keyword": {
+    "precision": 1.0,
+    "n": 1
+   },
+   "recall": 0.167
+  },
+  "dice_manipulation": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 1
+   },
+   "recall": 0.0
+  },
+  "dual_resource": {
+   "keyword": {
+    "precision": 0.333,
+    "n": 3
+   },
+   "recall": 0.5
+  },
+  "status_effects": {
+   "keyword": {
+    "precision": 0.409,
+    "n": 22
+   },
+   "recall": 0.088
+  },
+  "elemental_interactions": {
+   "keyword": {
+    "precision": 0.222,
+    "n": 9
+   },
+   "recall": 0.143
+  },
+  "crits": {
+   "keyword": {
+    "precision": 1.0,
+    "n": 2
+   },
+   "recall": 0.074
+  },
+  "block_shield": {
+   "keyword": {
+    "precision": 0.258,
+    "n": 31
+   },
+   "recall": 0.195
+  },
+  "healing_scarcity": {
+   "recall": 0.0
+  },
+  "limb_injuries": {
+   "keyword": {
+    "precision": 0.3,
+    "n": 10
+   },
+   "recall": 0.429
+  },
+  "environmental_hazards": {
+   "keyword": {
+    "precision": 0.45,
+    "n": 40
+   },
+   "recall": 0.462
+  },
+  "physics_simulation": {
+   "steam_tag": {
+    "precision": 0.116,
+    "n": 43
+   },
+   "keyword": {
+    "precision": 0.429,
+    "n": 7
+   },
+   "recall": 0.615
+  },
+  "enemy_intents": {
+   "keyword": {
+    "precision": 1.0,
+    "n": 1
+   },
+   "recall": 0.037
+  },
+  "attack_patterns": {
+   "steam_tag": {
+    "precision": 0.462,
+    "n": 13
+   },
+   "keyword": {
+    "precision": 0.5,
+    "n": 4
+   },
+   "recall": 0.235
+  },
+  "perfect_information": {
+   "recall": 0.0
+  },
+  "enemy_hp_scaling": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 1
+   },
+   "recall": 0.0
+  },
+  "elites": {
+   "keyword": {
+    "precision": 0.316,
+    "n": 19
+   },
+   "recall": 0.136
+  },
+  "multi_phase_bosses": {
+   "recall": 0.0
+  },
+  "destructible_subsystems": {
+   "recall": 0.0
+  },
+  "unkillable_pursuer": {
+   "keyword": {
+    "precision": 0.053,
+    "n": 19
+   },
+   "recall": 0.2
+  },
+  "horde_density": {
+   "keyword": {
+    "precision": 0.603,
+    "n": 68
+   },
+   "recall": 0.719
+  },
+  "enemy_variety": {
+   "keyword": {
+    "precision": 0.077,
+    "n": 13
+   },
+   "recall": 0.077
+  },
+  "waves": {
+   "steam_tag": {
+    "precision": 0.909,
+    "n": 11
+   },
+   "keyword": {
+    "precision": 0.267,
+    "n": 15
+   },
+   "recall": 0.583
+  },
+  "double_edged_items": {
+   "keyword": {
+    "precision": 0.167,
+    "n": 6
+   },
+   "recall": 0.022
+  },
+  "hp_as_currency": {
+   "keyword": {
+    "precision": 0.444,
+    "n": 9
+   },
+   "recall": 0.308
+  },
+  "gambling": {
+   "steam_tag": {
+    "precision": 0.25,
+    "n": 4
+   },
+   "keyword": {
+    "precision": 1.0,
+    "n": 1
+   },
+   "recall": 0.111
+  },
+  "optional_challenges": {
+   "keyword": {
+    "precision": 0.333,
+    "n": 6
+   },
+   "recall": 0.036
+  },
+  "push_your_luck": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 1
+   },
+   "recall": 0.0
+  },
+  "stress_sanity": {
+   "keyword": {
+    "precision": 0.5,
+    "n": 14
+   },
+   "recall": 0.778
+  },
+  "corruption_meter": {
+   "keyword": {
+    "precision": 0.222,
+    "n": 9
+   },
+   "recall": 0.667
+  },
+  "hunger_clock": {
+   "keyword": {
+    "precision": 0.4,
+    "n": 30
+   },
+   "recall": 0.324
+  },
+  "random_events": {
+   "steam_tag": {
+    "precision": 0.529,
+    "n": 34
+   },
+   "keyword": {
+    "precision": 0.727,
+    "n": 11
+   },
+   "recall": 0.313
+  },
+  "high_variance_loot": {
+   "steam_tag": {
+    "precision": 0.256,
+    "n": 39
+   },
+   "recall": 0.312
+  },
+  "rng_mitigation": {
+   "recall": 0.0
+  },
+  "online_coop": {
+   "steam_tag": {
+    "precision": 0.735,
+    "n": 68
+   },
+   "keyword": {
+    "precision": 0.5,
+    "n": 14
+   },
+   "recall": 0.919
+  },
+  "local_coop": {
+   "steam_tag": {
+    "precision": 0.82,
+    "n": 50
+   },
+   "keyword": {
+    "precision": 0.667,
+    "n": 3
+   },
+   "recall": 0.878
+  },
+  "pvp": {
+   "steam_tag": {
+    "precision": 0.444,
+    "n": 9
+   },
+   "keyword": {
+    "precision": 0.667,
+    "n": 3
+   },
+   "recall": 0.462
+  },
+  "async_multiplayer": {
+   "keyword": {
+    "precision": 1.0,
+    "n": 2
+   },
+   "recall": 0.4
+  },
+  "asymmetric_multiplayer": {
+   "recall": 0.0
+  },
+  "crew_stations": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 1
+   },
+   "recall": 0.0
+  },
+  "leaderboards": {
+   "steam_tag": {
+    "precision": 0.167,
+    "n": 18
+   },
+   "keyword": {
+    "precision": 0.125,
+    "n": 16
+   },
+   "recall": 0.208
+  },
+  "mod_support": {
+   "steam_tag": {
+    "precision": 0.467,
+    "n": 15
+   },
+   "keyword": {
+    "precision": 0.333,
+    "n": 12
+   },
+   "recall": 0.423
+  },
+  "speedrun_support": {
+   "recall": 0.0
+  },
+  "content_updates": {
+   "keyword": {
+    "precision": 0.5,
+    "n": 10
+   },
+   "recall": 0.081
+  },
+  "early_access_dev": {
+   "steam_tag": {
+    "precision": 0.816,
+    "n": 49
+   },
+   "keyword": {
+    "precision": 0.571,
+    "n": 7
+   },
+   "recall": 0.444
+  },
+  "hybrid_deckbuilder": {
+   "steam_tag": {
+    "precision": 0.886,
+    "n": 44
+   },
+   "recall": 0.75
+  },
+  "hybrid_survivors": {
+   "recall": 0.0
+  },
+  "hybrid_action_roguelite": {
+   "steam_tag": {
+    "precision": 0.598,
+    "n": 169
+   },
+   "recall": 0.856
+  },
+  "hybrid_traditional": {
+   "steam_tag": {
+    "precision": 0.917,
+    "n": 24
+   },
+   "recall": 0.786
+  },
+  "hybrid_metroidvania": {
+   "steam_tag": {
+    "precision": 0.438,
+    "n": 16
+   },
+   "recall": 0.875
+  },
+  "hybrid_strategy": {
+   "steam_tag": {
+    "precision": 0.402,
+    "n": 132
+   },
+   "recall": 0.946
+  },
+  "hybrid_puzzle": {
+   "steam_tag": {
+    "precision": 0.462,
+    "n": 13
+   },
+   "recall": 0.316
+  },
+  "hybrid_shooter": {
+   "steam_tag": {
+    "precision": 0.646,
+    "n": 65
+   },
+   "recall": 0.933
+  },
+  "hybrid_autobattler": {
+   "steam_tag": {
+    "precision": 0.286,
+    "n": 7
+   },
+   "recall": 0.286
+  },
+  "hybrid_city_builder": {
+   "steam_tag": {
+    "precision": 1.0,
+    "n": 5
+   },
+   "recall": 0.417
+  },
+  "hybrid_survival": {
+   "steam_tag": {
+    "precision": 0.34,
+    "n": 53
+   },
+   "recall": 0.643
+  },
+  "assist_mode": {
+   "keyword": {
+    "precision": 0.143,
+    "n": 7
+   },
+   "recall": 0.053
+  },
+  "tutorialized_unlocks": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 3
+   },
+   "recall": 0.0
+  },
+  "run_history": {
+   "recall": 0.0
+  },
+  "speed_controls": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 1
+   },
+   "recall": 0.0
+  },
+  "steam_deck_friendly": {
+   "steam_tag": {
+    "precision": 0.14,
+    "n": 43
+   },
+   "keyword": {
+    "precision": 0.111,
+    "n": 9
+   },
+   "recall": 0.304
+  }
+ }
+}

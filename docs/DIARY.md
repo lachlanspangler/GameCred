@@ -28,3 +28,4 @@ Newest entries first. Automated doctor/loop lines are appended to **Automated lo
 **Next:** Finish the fetch (~80 min), calibrate the auto-tagger against curated profiles, first full analysis, then taxonomy v2 (I-010).
 
 ## Automated log
+- 2026-10-13 18:55 · doctor --fix: 0 errors, 16 fixed, 16 warnings

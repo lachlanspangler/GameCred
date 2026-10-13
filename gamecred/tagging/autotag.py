@@ -92,6 +92,9 @@ def tag_game(steam_tags: dict[str, int] | None, text: str, calibrated: bool = Tr
 def infer_subgenre(steam_tags: dict[str, int] | None, mechanics: dict[str, dict]) -> str:
     """Pick the primary hybrid_* subgenre: strongest-ranked hybrid tag, with fallbacks."""
     hy = {k: v for k, v in mechanics.items() if k.startswith("hybrid_")}
+    # SteamSpy's tag vocabulary predates "Survivors-like"; infer it from auto-attack + horde mechanics.
+    if "auto_attack" in mechanics and ("horde_density" in mechanics or "level_up_choices" in mechanics):
+        return "hybrid_survivors"
     if hy:
         return max(hy, key=lambda k: (hy[k]["intensity"], _HYBRID_PRIORITY.get(k, 0)))
     if "turn_based" in mechanics:

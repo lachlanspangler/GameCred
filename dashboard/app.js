@@ -447,7 +447,27 @@ function openGame(id) {
       table([{ key: "n", label: "Game", render: x => x.g.n }, { key: "sim", label: "Similarity", num: true, render: x => fmt.pct(x.sim) },
         { key: "gsi", label: OUT_LABEL[state.out], num: true, render: x => fmt.f1(outcome(x.g)) }, { key: "rv", label: "Reviews", num: true, render: x => fmt.n(x.g.rv) }],
         comps.map(x => ({ ...x, n: x.g.n })), { onRow: x => openGame(x.g.id) })),
-    h("div", { class: "row", style: "margin-top:14px" }, h("button", { class: "btn", onclick: () => { loadTemplate(g); switchView("lab"); $("#drawer-close").click(); } }, "Open in Design Lab")));
+    h("div", { class: "row", style: "margin-top:14px" }, h("button", { class: "btn", onclick: () => { loadTemplate(g); switchView("lab"); $("#drawer-close").click(); } }, "Open in Design Lab"),
+      h("select", { class: "search", onchange: e => e.target.value && openCompare(g.id, +e.target.value) }, h("option", { value: "" }, "Compare with…"),
+        comps.map(c => h("option", { value: c.g.id }, `${c.g.n} (${fmt.pct(c.sim)} similar)`)))));
+}
+
+function openCompare(aId, bId) {
+  const A = BY_ID.get(aId), B = BY_ID.get(bId); if (!A || !B) return;
+  const eff = new Map(impact().rows.map(r => [r.mid, r]));
+  const onlyA = Object.keys(A.m).filter(m => !B.m[m]), onlyB = Object.keys(B.m).filter(m => !A.m[m]), both = Object.keys(A.m).filter(m => B.m[m]);
+  const list = (ms, g) => h("div", {}, ms.sort((x, y) => ((eff.get(y) || {}).diff ?? -99) - ((eff.get(x) || {}).diff ?? -99)).map(mid => {
+    const e = eff.get(mid); return h("span", { class: "mech-pill", onclick: () => openMechanic(mid) }, g ? intenDots(g.m[mid][0]) : null, mname(mid), e && e.diff != null ? h("span", { class: "muted" }, fmt.d1(e.diff)) : null); }));
+  const row = (label, f) => h("tr", {}, h("td", {}, label), h("td", { class: "num" }, f(A)), h("td", { class: "num" }, f(B)));
+  openDrawer(h("h2", {}, `${A.n} vs ${B.n}`),
+    h("div", { class: "card" }, h("table", {}, h("thead", {}, h("tr", {}, h("th", {}, ""), h("th", { class: "num" }, A.n), h("th", { class: "num" }, B.n))),
+      h("tbody", {}, row("Success Index", g => fmt.f1(outcome(g))), row("Positive reviews", g => fmt.pct(g.pr)), row("Reviews", g => fmt.n(g.rv)),
+        row("Est. revenue", g => fmt.usd(g.rev)), row("Critic", g => g.mc || (g.ign ? g.ign * 10 : "–")), row("Price", g => g.p ? "$" + g.p : g.f ? "F2P" : "–"),
+        row("Release", g => g.y || "–"), row("Subgenre", g => mname(g.sg)), row("# mechanics", g => Object.keys(g.m).length)))),
+    h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, `Only in ${A.n} (${onlyA.length})`), list(onlyA, A)),
+    h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, `Only in ${B.n} (${onlyB.length})`), list(onlyB, B)),
+    h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, `Shared (${both.length})`), list(both, A)),
+    h("div", { class: "muted", style: "margin-top:8px" }, "Pills sorted by slice Δ (number). The design difference that best explains an outcome gap is usually among the highest-Δ mechanics only one game has."));
 }
 
 // ---------- views ----------

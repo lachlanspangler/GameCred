@@ -25,7 +25,7 @@ families:
           permadeath:
             name: Permadeath
             desc: Losing ends the run; the run's state is discarded.
-            steam_tags: [Permadeath]
+            steam_tags: [Permadeath, Perma Death]
             keywords: [permadeath, "permanent death", "death is permanent"]
           mid_run_save:
             name: Mid-run Save & Quit
@@ -111,6 +111,7 @@ families:
           time_pressure:
             name: Run Timer / Time Pressure
             desc: Difficulty or failure escalates with real time (RoR2, Survivors timer).
+            steam_tags: [Time Management]
             keywords: ["the longer you", "difficulty increases over time", "survive for", "against the clock"]
           minute_spawn_schedule:
             name: Clock-scripted Spawns
@@ -152,7 +153,7 @@ families:
           hub_building:
             name: Hub / Base Building
             desc: Player builds or upgrades a persistent hub between runs.
-            steam_tags: [Base Building, Building, Town Building]
+            steam_tags: [Base Building, Building, Town Building, "Base-Building"]
             keywords: ["upgrade your base", "build your town", "home base", "your hub"]
           life_sim_hub:
             name: Life-sim Hub Layer
@@ -314,6 +315,7 @@ families:
           monster_capture:
             name: Monster Capture / Possession
             desc: Capture, tame or possess enemies to use as allies or forms (Abyss Odyssey, Patch Quest).
+            steam_tags: [Creature Collector]
             keywords: [capture, tame, possess, "catch monsters"]
           combo_meter:
             name: Combo / Chain Multiplier
@@ -377,11 +379,12 @@ families:
           interest_economy:
             name: Interest / Economy Management
             desc: Saving currency yields returns; economic planning is core (Balatro, auto-battlers).
+            steam_tags: [Economy]
             keywords: ["earn interest", "manage your economy", "economy management"]
           crafting:
             name: Crafting
             desc: Combine resources into items.
-            steam_tags: [Crafting]
+            steam_tags: [Crafting, Open World Survival Craft]
             keywords: [crafting, "craft new"]
           inventory_management:
             name: Inventory / Spatial Inventory
@@ -437,12 +440,12 @@ families:
           turn_based:
             name: Turn-based
             desc: Actions resolve in discrete turns.
-            steam_tags: [Turn-Based, Turn-Based Combat, Turn-Based Strategy, Turn-Based Tactics]
+            steam_tags: [Turn-Based, Turn-Based Combat, Turn-Based Strategy, Turn-Based Tactics, Mystery Dungeon]
             keywords: ["turn-based", "turn based"]
           grid_tactics:
             name: Grid Tactics
             desc: Turn-based positioning on a grid/tiles.
-            steam_tags: [Tactical, Grid-Based Movement, Tactical RPG]
+            steam_tags: [Tactical, Grid-Based Movement, Tactical RPG, Hex Grid]
             keywords: ["grid-based", tactical, positioning]
           lanes_ranks:
             name: Lanes / Ranks Positioning
@@ -464,7 +467,7 @@ families:
           twin_stick:
             name: Twin-stick Shooting
             desc: Independent move and aim.
-            steam_tags: [Twin Stick Shooter, "Shoot 'Em Up", Top-Down Shooter]
+            steam_tags: [Twin Stick Shooter, "Shoot 'Em Up", Top-Down Shooter, Arena Shooter]
             keywords: ["twin-stick", "twin stick"]
           bullet_hell:
             name: Bullet Hell Patterns
@@ -474,11 +477,12 @@ families:
           dodge_iframes:
             name: Dodge / Dash with i-frames
             desc: Evasive move with invulnerability frames.
+            steam_tags: ["Souls-like"]
             keywords: [dodge, dash, "dodge roll"]
           melee_combos:
             name: Melee Combos
             desc: Chained melee attacks / combo system.
-            steam_tags: [Hack and Slash, "Beat 'em up", Character Action Game]
+            steam_tags: [Hack and Slash, "Beat 'em up", Character Action Game, Spectacle fighter]
             keywords: [combos, "melee combat", "combo system"]
           platforming:
             name: Platforming
@@ -488,7 +492,7 @@ families:
           fps:
             name: First-person
             desc: First-person perspective combat.
-            steam_tags: [FPS, First-Person, Shooter]
+            steam_tags: [FPS, First-Person, Shooter, Boomer Shooter]
             keywords: [fps, "first-person", "first person"]
           vehicle_combat:
             name: Vehicle / Ship Avatar
@@ -524,6 +528,7 @@ families:
           time_manipulation:
             name: Time Manipulation
             desc: Time scales with player movement or slow-motion is a core resource (SUPERHOT MCD, OTXO).
+            steam_tags: [Bullet Time]
             keywords: ["time moves only when you move", "bullet time", "slow motion", "slow-mo", "slow down time"]
       card_dice:
         name: Cards & Dice
@@ -531,7 +536,7 @@ families:
           deckbuilding:
             name: Deckbuilding
             desc: The player's action set is a deck built over the run.
-            steam_tags: [Deckbuilding, Card Battler, Roguelike Deckbuilder, Card Game]
+            steam_tags: [Deckbuilding, Card Battler, Roguelike Deckbuilder, Card Game, Trading Card Game]
             keywords: [deckbuilder, deckbuilding, "deck-building", "deck building", "build your deck", "build a deck"]
           energy_mana:
             name: Energy / Mana per Turn
@@ -614,6 +619,7 @@ families:
           attack_patterns:
             name: Learnable Attack Patterns
             desc: Enemies/bosses use readable, learnable patterns.
+            steam_tags: ["Souls-like"]
             keywords: ["attack patterns", "learn their patterns", "boss patterns"]
           perfect_information:
             name: Perfect Information
@@ -675,6 +681,7 @@ families:
           gambling:
             name: Gambling / Chance Rewards
             desc: Slot machines, chests with random payout, wagers.
+            steam_tags: [Gambling]
             keywords: [gamble, gambling, "slot machine"]
           optional_challenges:
             name: Optional Challenge Rooms
@@ -703,6 +710,7 @@ families:
           random_events:
             name: Random Events (? nodes)
             desc: Narrative or mechanical events with branching outcomes.
+            steam_tags: [Choose Your Own Adventure, Choices Matter]
             keywords: ["random events", "unexpected events", "mysterious events", "strange encounters"]
           high_variance_loot:
             name: High-variance Loot
@@ -724,12 +732,12 @@ families:
           online_coop:
             name: Online Co-op
             desc: Co-op play over network.
-            steam_tags: [Online Co-Op, Co-op]
+            steam_tags: [Online Co-Op, Co-op, "Co-op Campaign"]
             keywords: ["online co-op", "co-op", coop, "play with friends"]
           local_coop:
             name: Local Co-op
             desc: Same-screen co-op.
-            steam_tags: [Local Co-Op, Local Multiplayer]
+            steam_tags: [Local Co-Op, Local Multiplayer, 4 Player Local]
             keywords: ["local co-op", "couch co-op", "split-screen"]
           pvp:
             name: PvP
@@ -754,6 +762,7 @@ families:
           leaderboards:
             name: Leaderboards
             desc: Score/time leaderboards.
+            steam_tags: [Score Attack]
             keywords: [leaderboard, leaderboards]
           mod_support:
             name: Mod Support / Workshop
@@ -790,6 +799,7 @@ families:
             name: Survivors-like
             desc: Auto-attack horde survival + level-up choices.
             steam_tags: [Bullet Heaven, Survivors-like]
+            keywords: [survivors-like, "survivor-like", "bullet heaven", "auto-shooter", "horde survival", "survive the horde", "vampire survivors"]
           hybrid_action_roguelite:
             name: Action Roguelite
             desc: Real-time action combat + roguelite structure.
@@ -797,7 +807,7 @@ families:
           hybrid_traditional:
             name: Traditional Roguelike
             desc: Turn-based, tile-based dungeon crawler in the Rogue lineage.
-            steam_tags: [Traditional Roguelike]
+            steam_tags: [Traditional Roguelike, Mystery Dungeon]
           hybrid_metroidvania:
             name: Roguevania
             desc: Metroidvania exploration/abilities + roguelite runs.
@@ -825,7 +835,7 @@ families:
           hybrid_survival:
             name: Survival Roguelite
             desc: Survival resource pressure (hunger, temperature) with runs.
-            steam_tags: [Survival]
+            steam_tags: [Survival, Open World Survival Craft]
 
   qol_accessibility:
     name: Quality of Life & Accessibility
