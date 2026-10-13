@@ -1,0 +1,46 @@
+appid: 1029210
+name: 30XX
+developer: Batterystaple Games
+release_year: 2023
+subgenre: hybrid_action_roguelite
+wiki: https://30xx.fandom.com/wiki/30XX_Wiki
+stats:
+  playable_characters: 2
+  boss_count: 8
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 3
+  permadeath: 2
+  procgen_levels: 3
+  act_structure: 2
+  boss_gates: 3
+  attack_patterns: 3
+  character_classes: 2
+  pick_one_of_n: 2
+  passive_relics: 3
+  item_rarity: 1
+  synergies: 2
+  build_archetypes: 2
+  shops: 2
+  in_run_currency: 2
+  permanent_stat_upgrades: 2
+  modular_difficulty: 2
+  assist_mode: 1
+  online_coop: 2
+  local_coop: 2
+  daily_challenge: 2
+  seeded_runs: 1
+  leaderboards: 1
+  early_access_dev: 2
+  weapons_variety: 2
+  second_chance: 1
+  traversal_tools: 1
+  unlock_items: 2
+evidence:
+  boss_gates: Mega Man-style 8 robot masters each grant their weapon/power on defeat.
+  modular_difficulty: Mega Mode vs Standard Mode plus toggleable difficulty modifiers.
+  permanent_stat_upgrades: Memoria spent between runs on persistent upgrades and Cores.
+  daily_challenge: Daily runs with fixed seed and leaderboard.
+confidence: medium
+curator: agent

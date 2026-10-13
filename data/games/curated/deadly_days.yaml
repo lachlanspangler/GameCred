@@ -1,0 +1,30 @@
+appid: 740080
+name: Deadly Days
+developer: Pixelsplit
+release_year: 2019
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  real_time_action: 2
+  permadeath: 2
+  party_building: 3
+  procgen_levels: 2
+  horde_density: 2
+  character_classes: 2
+  unlock_characters: 2
+  unlock_items: 2
+  permanent_stat_upgrades: 1
+  hub_building: 1
+  inventory_management: 1
+  weapons_variety: 1
+  consumables: 1
+  time_pressure: 2
+  random_events: 1
+  extraction: 1
+  healing_scarcity: 1
+evidence:
+  party_building: Command a squad of 4 survivors with individual perks; dead survivors are lost for good.
+  time_pressure: Zombie pressure escalates the longer you stay in a level, pushing you to finish objectives and leave.
+  unlock_characters: New survivors and items unlock through progress across runs.
+confidence: medium
+curator: agent

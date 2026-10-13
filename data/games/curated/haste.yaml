@@ -1,0 +1,34 @@
+appid: 1796470
+name: Haste
+developer: Landfall
+release_year: 2025
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 2
+  traversal_tools: 3
+  permadeath: 2
+  procgen_levels: 2
+  node_map: 3
+  act_structure: 2
+  boss_gates: 2
+  pick_one_of_n: 3
+  passive_relics: 3
+  item_rarity: 2
+  shops: 2
+  in_run_currency: 2
+  synergies: 2
+  loadout_start: 2
+  unlock_items: 2
+  hub_building: 1
+  narrative_across_runs: 2
+  short_runs: 1
+  speedrun_support: 1
+  healing_scarcity: 1
+evidence:
+  traversal_tools: Momentum-based downhill running with landing timing; abilities like grapple/board/fly chosen before runs.
+  node_map: Each shard is a node map of levels, shops, challenges and a boss.
+  passive_relics: Items with rarities picked between levels modify speed, energy and damage rules.
+confidence: medium
+curator: agent

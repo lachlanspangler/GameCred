@@ -42,11 +42,12 @@
       <option value="1">Curated only</option></select></label>
     <label>Outcome <select id="f-out">
       <option value="gsi">GameCred Success Index</option><option value="q">Player quality (review pct)</option>
-      <option value="c">Commercial (revenue pct)</option><option value="k">Critic (score pct)</option></select></label>
+      <option value="c">Commercial (revenue pct)</option><option value="k">Critic (score pct)</option><option value="e">Community depth (wiki edits pct)</option></select></label>
     <details class="weights"><summary>GSI weights</summary>
       <label>Quality <input type="range" id="w-q" min="0" max="100" value="40"><span></span></label>
       <label>Commercial <input type="range" id="w-c" min="0" max="100" value="45"><span></span></label>
       <label>Critic <input type="range" id="w-k" min="0" max="100" value="15"><span></span></label>
+      <label>Community <input type="range" id="w-e" min="0" max="100" value="0"><span></span></label>
     </details>
     <span class="slice-count" id="slice-count"></span>
   </section>

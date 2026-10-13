@@ -1,0 +1,31 @@
+appid: 1285670
+name: Post Void
+developer: YCJY Games
+release_year: 2020
+subgenre: hybrid_shooter
+stats:
+  run_length_min: 10
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  permadeath: 3
+  procgen_levels: 2
+  short_runs: 3
+  time_pressure: 3
+  pick_one_of_n: 3
+  flat_stat_scaling: 1
+  synergies: 1
+  act_structure: 1
+  speedrun_support: 3
+  leaderboards: 2
+  healing_scarcity: 2
+  unlock_items: 1
+  weapons_variety: 1
+evidence:
+  time_pressure: Your health idol drains constantly; only kills refill it, forcing nonstop forward motion.
+  pick_one_of_n: After each level you choose one of a few upgrades.
+  short_runs: A complete run through all levels takes roughly 10 minutes.
+  speedrun_support: 'Built around speed: in-game timer and leaderboards for run times.'
+confidence: medium
+curator: agent

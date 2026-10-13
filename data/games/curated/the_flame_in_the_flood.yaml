@@ -1,0 +1,31 @@
+appid: 318600
+name: The Flame in the Flood
+developer: The Molasses Flood
+release_year: 2016
+subgenre: hybrid_survival
+mechanics:
+  hybrid_survival: 3
+  real_time_action: 2
+  permadeath: 2
+  open_procgen_world: 2
+  procgen_levels: 2
+  hunger_clock: 3
+  crafting: 3
+  inventory_management: 3
+  healing_scarcity: 2
+  limb_injuries: 2
+  environmental_hazards: 2
+  random_events: 1
+  endless_mode: 2
+  vehicle_combat: 1
+  weapon_durability: 1
+  mid_run_save: 2
+  assist_mode: 1
+  act_structure: 1
+evidence:
+  hunger_clock: Hunger, thirst, temperature and fatigue meters must be managed constantly.
+  limb_injuries: Ailments like bites, lacerations, infections and dysentery need specific crafted remedies.
+  vehicle_combat: Steering the raft through rapids and debris is the travel layer; the raft is upgraded and repaired.
+  endless_mode: Endless mode alongside the campaign; campaign has checkpoints, a harder permadeath setting exists.
+confidence: medium
+curator: agent

@@ -1,0 +1,28 @@
+appid: 2097230
+name: Turnip Boy Robs a Bank
+developer: Snoozy Kazoo
+release_year: 2024
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  permadeath: 1
+  procgen_levels: 2
+  short_runs: 3
+  time_pressure: 3
+  extraction: 3
+  weapons_variety: 2
+  hub_building: 2
+  permanent_stat_upgrades: 2
+  unlock_items: 2
+  narrative_across_runs: 2
+  in_run_currency: 2
+  shops: 1
+  weapon_durability: 1
+  npc_relationships: 1
+evidence:
+  extraction: Each heist you grab cash and loot and must get out before police overwhelm you.
+  time_pressure: A short timer per robbery; the police response escalates as it runs down.
+  hub_building: Stolen money buys upgrades and unlocks at the gang hideout between heists.
+confidence: medium
+curator: agent

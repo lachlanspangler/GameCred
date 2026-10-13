@@ -21,6 +21,7 @@ log = logging.getLogger("gamecred.build")
 DB_PATH = PROCESSED_DIR / "gamecred.sqlite"
 DATASET_PATH = PROCESSED_DIR / "dataset.json"
 ROGUE_TAG_SET = set(ROGUE_TAGS)
+ROGUE_TAG_MAX_RANK = 12
 
 
 def _read(source: str, appid: int):
@@ -48,6 +49,8 @@ def assemble() -> list[dict]:
             continue
         curated[int(p["appid"])] = p
 
+    from .wikis import load as load_wikis
+    wikis = load_wikis()
     games = []
     for appid in target_appids():
         spy = _read("steamspy_app", appid) or {}
@@ -59,7 +62,10 @@ def assemble() -> list[dict]:
         if not (spy or st or cur):
             continue
         tags = spy.get("tags") if isinstance(spy.get("tags"), dict) else {}
-        is_rogue = bool(cur) or any(t in ROGUE_TAG_SET for t in tags)
+        ranked_tags = [t for t, _ in sorted(tags.items(), key=lambda kv: -kv[1])]
+        rogue_rank = next((i for i, t in enumerate(ranked_tags) if t in ROGUE_TAG_SET), None)
+        # A stray low-ranked "Rogue-like" vote doesn't make Hollow Knight a roguelike: require a top-N rogue tag.
+        is_rogue = bool(cur) or (rogue_rank is not None and rogue_rank < ROGUE_TAG_MAX_RANK)
         if not is_rogue:
             continue
         if st and st.get("type") not in (None, "game"):
@@ -93,7 +99,7 @@ def assemble() -> list[dict]:
             "appid": appid, "name": name, "year": year, "price": None if free else price, "free": free,
             "developer": (cur or {}).get("developer") or ", ".join((st or {}).get("developers") or []) or spy.get("developer"),
             "publisher": ", ".join((st or {}).get("publishers") or []) or spy.get("publisher"),
-            "subgenre": subgenre, "source": source, "confidence": (cur or {}).get("confidence", "auto"),
+            "subgenre": subgenre, "source": source, "rogue_tag_rank": rogue_rank, "confidence": (cur or {}).get("confidence", "auto"),
             "wiki": (cur or {}).get("wiki"),
             "reviews": pos + neg, "positive": pos, "negative": neg,
             "pos_ratio": pos / (pos + neg) if pos + neg else None,
@@ -108,9 +114,13 @@ def assemble() -> list[dict]:
             "evidence": (cur or {}).get("evidence") or {},
             "mechanics": mech,
             "header": (st or {}).get("header_image"),
+            **_wiki_fields(wikis.get(str(appid)), (cur or {}).get("wiki")),
         })
 
     # Composite outcome variables (percentiles across the whole universe).
+    wk = np.array([math.log10(g["wiki_edits"] + 1) if g.get("wiki_edits") else np.nan for g in games], dtype=float)
+    for g, e in zip(games, percentile_rank(wk)):
+        g["community_pct"] = None if np.isnan(e) else round(float(e), 2)
     rating = np.array([g["rating"] if g["rating"] is not None else np.nan for g in games], dtype=float)
     # Commercial: log revenue for paid games; F2P falls back to log(units) scaled to same percentile space.
     comm_raw = np.array([math.log10(g["revenue_est"]) if g["revenue_est"] else
@@ -129,6 +139,14 @@ def assemble() -> list[dict]:
     return games
 
 
+def _wiki_fields(w: dict | None, curated_url: str | None) -> dict:
+    if not w or not w.get("found"):
+        return {"wiki_articles": None, "wiki_edits": None, "wiki_content": {}}
+    url = curated_url or w["api"].replace("/api.php", "/")
+    return {"wiki_articles": w.get("articles"), "wiki_edits": w.get("edits"), "wiki_content": w.get("content") or {},
+            "wiki": url}
+
+
 def write_sqlite(games: list[dict], tax) -> None:
     if DB_PATH.exists():
         DB_PATH.unlink()
@@ -142,7 +160,8 @@ def write_sqlite(games: list[dict], tax) -> None:
         publisher TEXT, subgenre TEXT, source TEXT, confidence TEXT, wiki TEXT, reviews INTEGER, positive INTEGER,
         negative INTEGER, pos_ratio REAL, rating REAL, wilson REAL, owners_mid REAL, ccu INTEGER, units_est REAL,
         revenue_est REAL, revenue_low REAL, revenue_high REAL, metacritic REAL, ign REAL, early_access INTEGER,
-        quality_pct REAL, commercial_pct REAL, critic_pct REAL, gsi REAL);
+        quality_pct REAL, commercial_pct REAL, critic_pct REAL, gsi REAL, wiki_articles INTEGER, wiki_edits INTEGER,
+        community_pct REAL);
     CREATE TABLE game_mechanics(appid INTEGER, mechanic TEXT, intensity INTEGER, confidence REAL, source TEXT,
         evidence TEXT, PRIMARY KEY(appid, mechanic));
     CREATE TABLE game_stats(appid INTEGER, stat TEXT, value REAL, PRIMARY KEY(appid, stat));
@@ -157,7 +176,7 @@ def write_sqlite(games: list[dict], tax) -> None:
     cols = ["appid", "name", "year", "price", "free", "developer", "publisher", "subgenre", "source", "confidence", "wiki",
             "reviews", "positive", "negative", "pos_ratio", "rating", "wilson", "owners_mid", "ccu", "units_est",
             "revenue_est", "revenue_low", "revenue_high", "metacritic", "ign", "early_access", "quality_pct",
-            "commercial_pct", "critic_pct", "gsi"]
+            "commercial_pct", "critic_pct", "gsi", "wiki_articles", "wiki_edits", "community_pct"]
     for g in games:
         cur.execute(f"INSERT INTO games VALUES({','.join('?' * len(cols))})", [g.get(c) for c in cols])
         for mid, v in g["mechanics"].items():

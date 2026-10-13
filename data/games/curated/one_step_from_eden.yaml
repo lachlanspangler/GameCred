@@ -1,0 +1,53 @@
+appid: 960690
+name: One Step From Eden
+developer: Thomas Moon Kang
+release_year: 2020
+subgenre: hybrid_deckbuilder
+wiki: https://onestepfromeden.fandom.com/wiki/One_Step_From_Eden_Wiki
+stats:
+  playable_characters: 10
+  run_length_min: 40
+  difficulty_levels: 10
+mechanics:
+  hybrid_deckbuilder: 3
+  hybrid_action_roguelite: 2
+  deckbuilding: 3
+  real_time_action: 3
+  grid_tactics: 2
+  energy_mana: 3
+  card_draw: 2
+  permadeath: 3
+  node_map: 3
+  act_structure: 2
+  boss_gates: 3
+  multiple_endings: 3
+  character_classes: 3
+  unlock_characters: 2
+  unlock_items: 2
+  pick_one_of_n: 3
+  passive_relics: 3
+  item_upgrading: 2
+  deck_thinning: 2
+  synergies: 3
+  build_archetypes: 3
+  shops: 2
+  in_run_currency: 2
+  status_effects: 2
+  block_shield: 1
+  bullet_hell: 2
+  attack_patterns: 2
+  ascension_ladder: 2
+  loadout_start: 1
+  local_coop: 2
+  pvp: 1
+  mod_support: 2
+  elites: 1
+  random_events: 1
+evidence:
+  grid_tactics: Real-time combat on a Mega Man Battle Network-style 4x4 per-side grid.
+  energy_mana: Spells cost mana that regenerates in real time; the deck shuffles continuously.
+  multiple_endings: Boss fights against previous heroes can be won by killing or sparing, leading to Genocide/Pacifist routes.
+  ascension_ladder: Hell Pass difficulty tiers unlock after wins.
+  mod_support: Steam Workshop support for custom spells and artifacts.
+confidence: high
+curator: agent

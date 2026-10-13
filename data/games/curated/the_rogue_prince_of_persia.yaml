@@ -1,0 +1,41 @@
+appid: 2717880
+name: The Rogue Prince of Persia
+developer: Evil Empire
+release_year: 2025
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_metroidvania: 1
+  real_time_action: 3
+  platforming: 3
+  traversal_tools: 2
+  melee_combos: 2
+  dodge_iframes: 2
+  permadeath: 2
+  procgen_levels: 2
+  handcrafted_loop_world: 2
+  boss_gates: 2
+  narrative_across_runs: 3
+  npc_relationships: 1
+  weapons_variety: 2
+  loadout_start: 1
+  talent_slots: 2
+  synergies: 2
+  build_archetypes: 2
+  pick_one_of_n: 2
+  shops: 2
+  in_run_currency: 2
+  permanent_stat_upgrades: 1
+  unlock_items: 2
+  traversal_unlocks: 1
+  attack_patterns: 2
+  early_access_dev: 2
+  content_updates: 1
+  healing_scarcity: 1
+  status_effects: 1
+evidence:
+  talent_slots: Medallions socket into a limited set of slots, with adjacency/level boosts between them.
+  narrative_across_runs: 'Time-loop story: each death returns the Prince to the Haven oasis and advances dialogue and plot.'
+  traversal_tools: Wall-running and vaulting enemies are core to movement and combat.
+confidence: medium
+curator: agent

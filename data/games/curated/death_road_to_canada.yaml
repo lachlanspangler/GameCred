@@ -1,0 +1,41 @@
+appid: 252610
+name: Death Road to Canada
+developer: Rocketcat Games
+release_year: 2016
+subgenre: hybrid_action_roguelite
+wiki: https://deathroadtocanada.fandom.com/wiki/Death_Road_to_Canada_Wiki
+stats:
+  run_length_min: 60
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  permadeath: 3
+  random_events: 3
+  party_building: 3
+  procgen_levels: 2
+  hunger_clock: 3
+  horde_density: 3
+  weapons_variety: 2
+  weapon_durability: 2
+  consumables: 2
+  inventory_management: 1
+  shops: 1
+  turn_escalation: 1
+  day_night_cycle: 1
+  multiple_endings: 1
+  unlock_characters: 2
+  permanent_stat_upgrades: 1
+  local_coop: 2
+  healing_scarcity: 2
+  character_classes: 1
+  high_variance_loot: 2
+  push_your_luck: 2
+  act_structure: 1
+evidence:
+  random_events: Text events on the road branch based on party traits and resources.
+  party_building: Recruit up to 4 survivors (including rare/special characters) with traits and stats.
+  hunger_clock: Food, gas and medical supplies deplete each day of the trip.
+  push_your_luck: Each looting stop lets you push deeper into a building as zombie counts climb before retreating to the car.
+  unlock_characters: Points earned unlock custom/rare characters and traits for future runs.
+confidence: high
+curator: agent

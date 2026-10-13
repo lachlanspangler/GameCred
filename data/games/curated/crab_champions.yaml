@@ -1,0 +1,55 @@
+appid: 774801
+name: Crab Champions
+developer: Noisestorm
+release_year: 2023
+subgenre: hybrid_shooter
+wiki: https://crabchampions.wiki.gg/
+stats:
+  playable_characters: 1
+  run_length_min: 40
+  difficulty_levels: 3
+mechanics:
+  hybrid_shooter: 3
+  real_time_action: 3
+  permadeath: 3
+  procgen_levels: 1
+  room_based_floors: 2
+  short_runs: 1
+  endless_mode: 3
+  time_pressure: 2
+  boss_gates: 2
+  enemy_hp_scaling: 3
+  loadout_start: 2
+  weapons_variety: 3
+  unlock_items: 2
+  pick_one_of_n: 3
+  item_stacking: 3
+  multiplicative_scaling: 3
+  synergies: 3
+  build_archetypes: 3
+  item_rarity: 3
+  shops: 2
+  in_run_currency: 2
+  reroll: 1
+  consumables: 1
+  active_items: 1
+  elites: 1
+  optional_challenges: 2
+  gambling: 1
+  horde_density: 2
+  elemental_interactions: 1
+  status_effects: 2
+  crits: 1
+  traversal_tools: 2
+  online_coop: 3
+  leaderboards: 1
+  early_access_dev: 2
+  content_updates: 2
+evidence:
+  endless_mode: Runs continue island after island with no fixed end; scoring is about how far you get.
+  item_stacking: Weapon mods and perks stack repeatedly, producing exponential late-run screen-clearing builds.
+  time_pressure: Each island has a countdown timer to clear it.
+  optional_challenges: Challenge/elite islands with modifiers offer better rewards, chosen from the island route.
+  online_coop: Up to 4-player online co-op.
+confidence: medium
+curator: agent

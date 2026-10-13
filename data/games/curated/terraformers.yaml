@@ -1,0 +1,27 @@
+appid: 1244800
+name: Terraformers
+developer: Asteroid Lab
+release_year: 2023
+subgenre: hybrid_city_builder
+mechanics:
+  hybrid_city_builder: 3
+  hybrid_strategy: 2
+  turn_based: 3
+  permadeath: 1
+  pick_one_of_n: 3
+  random_events: 2
+  unlock_items: 2
+  loadout_start: 2
+  synergies: 2
+  build_archetypes: 1
+  character_classes: 1
+  score_target_rounds: 1
+  turn_escalation: 2
+  early_access_dev: 1
+  multiple_endings: 1
+evidence:
+  pick_one_of_n: Each turn you draft new projects/buildings from a random selection.
+  turn_escalation: Runs are bounded by a turn limit and growing population demands.
+  loadout_start: Pre-run choice of leader and starting bonuses shapes the colony strategy.
+confidence: medium
+curator: agent

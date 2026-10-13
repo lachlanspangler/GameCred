@@ -1,0 +1,29 @@
+appid: 1963570
+name: Cuisineer
+developer: BattleBrew Productions
+release_year: 2023
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  dodge_iframes: 1
+  procgen_levels: 2
+  room_based_floors: 2
+  life_sim_hub: 3
+  shop_management: 3
+  crafting: 3
+  hub_building: 2
+  weapons_variety: 2
+  consumables: 2
+  npc_relationships: 2
+  inventory_management: 1
+  permanent_stat_upgrades: 1
+  boss_gates: 2
+  extraction: 1
+  act_structure: 1
+evidence:
+  shop_management: Ingredients from dungeons are cooked into dishes served in your own restaurant for profit.
+  life_sim_hub: Town layer with restaurant decoration, requests from townsfolk and relationships.
+  crafting: Weapons and cookware forged/upgraded from dungeon materials; recipes combine ingredients.
+confidence: medium
+curator: agent

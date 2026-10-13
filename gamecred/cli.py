@@ -2,6 +2,7 @@
 
   python -m gamecred discover      build the roguelike universe from SteamSpy tags
   python -m gamecred fetch [N]     fetch store/review/tag data (cached, resumable)
+  python -m gamecred wikis         discover wikis (Fandom/wiki.gg) + article & category stats
   python -m gamecred build         assemble dataset + SQLite
   python -m gamecred export        run analyses, write dashboard/data.js
   python -m gamecred doctor [--fix]  self-healing health check (see gamecred/doctor.py)
@@ -24,6 +25,9 @@ def main(argv: list[str] | None = None) -> int:
     elif cmd == "fetch":
         from .fetch import fetch_all
         fetch_all(int(argv[1]) if len(argv) > 1 else None)
+    elif cmd == "wikis":
+        from .wikis import collect
+        collect()
     elif cmd == "build":
         from .build import assemble
         assemble()

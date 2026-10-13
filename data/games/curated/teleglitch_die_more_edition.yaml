@@ -1,0 +1,30 @@
+appid: 234390
+name: 'Teleglitch: Die More Edition'
+developer: Test3 Projects
+release_year: 2013
+subgenre: hybrid_action_roguelite
+stats:
+  biome_count: 10
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_shooter: 2
+  real_time_action: 3
+  twin_stick: 3
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 2
+  crafting: 3
+  weapon_handling: 2
+  healing_scarcity: 3
+  inventory_management: 2
+  weapons_variety: 2
+  consumables: 2
+  lore_codex: 1
+  environmental_hazards: 1
+  horde_density: 1
+evidence:
+  crafting: Combine junk (cans, tubes, gunpowder) into better weapons and explosives.
+  healing_scarcity: Medkits and ammo are extremely scarce; ammo can be produced by converting junk.
+  act_structure: Ten levels; reaching certain levels unlocks them as later starting points (checkpoint unlocks).
+confidence: medium
+curator: agent

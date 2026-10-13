@@ -1,0 +1,40 @@
+appid: 798490
+name: Othercide
+developer: Lightbulb Crew
+release_year: 2020
+subgenre: hybrid_strategy
+wiki: https://othercide.fandom.com/wiki/Othercide_Wiki
+stats:
+  playable_characters: 4
+  boss_count: 5
+mechanics:
+  hybrid_strategy: 3
+  turn_based: 3
+  grid_tactics: 3
+  permadeath: 2
+  party_building: 3
+  character_classes: 3
+  act_structure: 3
+  boss_gates: 3
+  multi_phase_bosses: 2
+  hp_as_currency: 3
+  healing_scarcity: 3
+  level_up_choices: 2
+  unlock_items: 2
+  permanent_stat_upgrades: 2
+  loadout_start: 1
+  narrative_across_runs: 2
+  turn_escalation: 2
+  attack_patterns: 2
+  status_effects: 1
+  legacy_inheritance: 1
+  long_runs: 2
+  enemy_hp_scaling: 1
+  double_edged_items: 1
+evidence:
+  hp_as_currency: Daughters cannot heal normally; one is healed only by sacrificing another of equal or higher level.
+  turn_escalation: 'Timeline initiative system: abilities cost action points that delay your next turn.'
+  permanent_stat_upgrades: Remembrances unlocked through play give persistent benefits after Recollection resets.
+  narrative_across_runs: Losing triggers a Recollection that rewinds to an earlier era while keeping unlocks and story progress.
+confidence: medium
+curator: agent

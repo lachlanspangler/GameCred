@@ -1,0 +1,27 @@
+appid: 307110
+name: We Need To Go Deeper
+developer: Deli Interactive
+release_year: 2017
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  permadeath: 2
+  procgen_levels: 3
+  act_structure: 2
+  boss_gates: 2
+  online_coop: 3
+  local_coop: 1
+  vehicle_combat: 2
+  shops: 1
+  in_run_currency: 1
+  consumables: 1
+  unlock_items: 1
+  random_events: 1
+  early_access_dev: 1
+evidence:
+  online_coop: 1-4 players crew a submarine, each manning stations (steering, guns, repairs) in real time.
+  vehicle_combat: The submarine is the shared avatar; crew must patch hull breaches and fire turrets.
+  procgen_levels: Generated underwater caverns with side caves explored on foot.
+confidence: medium
+curator: agent

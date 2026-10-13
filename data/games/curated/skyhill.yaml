@@ -1,0 +1,32 @@
+appid: 382140
+name: SKYHILL
+developer: Mandragora
+release_year: 2015
+subgenre: hybrid_survival
+stats:
+  difficulty_levels: 3
+mechanics:
+  hybrid_survival: 3
+  turn_based: 2
+  permadeath: 3
+  procgen_levels: 2
+  hunger_clock: 3
+  crafting: 3
+  inventory_management: 2
+  healing_scarcity: 3
+  weapon_durability: 1
+  flat_stat_scaling: 2
+  level_up_choices: 2
+  skill_tree_meta: 1
+  unlock_items: 1
+  random_events: 1
+  multiple_endings: 2
+  act_structure: 1
+  boss_gates: 1
+  crits: 1
+evidence:
+  hunger_clock: Each move between rooms costs hunger; starving drains HP as you descend 100 floors.
+  crafting: Base room workshop and kitchen upgrade to craft weapons, medicine and food.
+  multiple_endings: Several endings depending on choices on the way down.
+confidence: medium
+curator: agent

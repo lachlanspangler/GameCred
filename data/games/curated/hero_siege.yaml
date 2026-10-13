@@ -1,0 +1,48 @@
+appid: 269210
+name: Hero Siege
+developer: Panic Art Studios
+release_year: 2014
+subgenre: hybrid_action_roguelite
+wiki: https://herosiege.fandom.com/wiki/Hero_Siege_Wiki
+stats:
+  difficulty_levels: 3
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  permadeath: 2
+  procgen_levels: 2
+  act_structure: 3
+  boss_gates: 3
+  character_classes: 3
+  unlock_characters: 2
+  skill_tree_meta: 1
+  level_up_choices: 2
+  flat_stat_scaling: 2
+  item_rarity: 3
+  high_variance_loot: 3
+  passive_relics: 2
+  consumables: 1
+  shops: 1
+  in_run_currency: 2
+  crafting: 1
+  synergies: 2
+  build_archetypes: 2
+  crits: 1
+  status_effects: 2
+  elites: 2
+  enemy_hp_scaling: 2
+  horde_density: 2
+  online_coop: 3
+  pvp: 1
+  leaderboards: 1
+  content_updates: 3
+  long_runs: 1
+  multi_phase_bosses: 1
+evidence:
+  permadeath: Hardcore character mode makes death permanent; softcore characters persist like a Diablo-style ARPG.
+  character_classes: Many classes (Viking, Pyromancer, Samurai, etc.) each with own talent tree, several paid DLC classes.
+  item_rarity: Diablo-style tiered loot (normal to angelic/heroic/set items) with random affixes drives builds.
+  online_coop: Up to 4-player online co-op through the acts.
+  content_updates: Long-running seasonal ladder resets and ongoing act/class additions since 2014.
+confidence: medium
+curator: agent

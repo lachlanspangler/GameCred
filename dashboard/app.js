@@ -66,12 +66,12 @@ function hover(el, fn) {
 }
 
 // ---------- state & slicing ----------
-const state = { sub: "", year: 0, rev: 0, conf: 0, out: "gsi", w: { q: 40, c: 45, k: 15 }, view: "overview" };
-const OUT_LABEL = { gsi: "Success Index", q: "Quality pct", c: "Commercial pct", k: "Critic pct" };
+const state = { sub: "", year: 0, rev: 0, conf: 0, out: "gsi", w: { q: 40, c: 45, k: 15, e: 0 }, view: "overview" };
+const OUT_LABEL = { gsi: "Success Index", q: "Quality pct", c: "Commercial pct", k: "Critic pct", e: "Community pct" };
 
 function outcome(g) {
   if (state.out !== "gsi") return g[state.out];
-  const parts = [[g.q, state.w.q], [g.c, state.w.c], [g.k, state.w.k]].filter(([v, w]) => v != null && w > 0);
+  const parts = [[g.q, state.w.q], [g.c, state.w.c], [g.k, state.w.k], [g.e, state.w.e]].filter(([v, w]) => v != null && w > 0);
   const ws = parts.reduce((a, [, w]) => a + w, 0);
   return ws ? parts.reduce((a, [v, w]) => a + v * w, 0) / ws : null;
 }
@@ -366,6 +366,7 @@ function openMechanic(mid) {
       tile("Δ " + OUT_LABEL[state.out], fmt.d1(r.diff), r.lo != null ? `95% CI ${fmt.d1(r.lo)} to ${fmt.d1(r.hi)}` : ""),
       tile("Partial effect (ridge)", fmt.d1(r.ridge), r.rlo != null ? `CI ${fmt.d1(r.rlo)} to ${fmt.d1(r.rhi)}` : "not in model"),
       tile("Verdict", chip(r.verdict), `hit lift ${fmt.f2(r.lift)} · flop ratio ${fmt.f2(r.flopR)}`)),
+    (() => { const k = AN.irr && AN.irr.mechanics.find(x => x.mechanic === mid); return k && k.kappa != null ? h("div", { class: "muted", style: "margin-top:8px" }, `Tagging reliability κ = ${fmt.f2(k.kappa)} (blind re-tag of ${AN.irr.n_games} games)${k.kappa < 0.4 ? " — low: definition is fuzzy, interpret with caution" : ""}`) : null; })(),
     h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, `${OUT_LABEL[state.out]}: with vs without`), boxCompare(withG.map(x => x.y), without)),
     subRows.length ? h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, "By subgenre (Δ with − without)"),
       hbars(subRows.filter(x => x.diff != null).map(x => ({ label: mname(x.hy), value: x.diff, sub: `${fmt.pct(x.prev)} prevalence · n=${x.nw}/${x.n}` })), { diverging: true, fmtv: fmt.d1, width: 640 })) : null,
@@ -424,6 +425,9 @@ function openGame(id) {
       tile("Steam reviews", fmt.pct(g.pr), `${fmt.n(g.rv)} reviews · ${g.rd || ""}`),
       tile("Est. gross revenue", fmt.usd(g.rev), g.rev ? `band ${fmt.usd(g.revlo)}–${fmt.usd(g.revhi)}` : (g.f ? "free-to-play" : "")),
       tile("Critic", g.mc ? `MC ${g.mc}` : g.ign ? `IGN ${g.ign}` : "–", [g.mc ? `Metacritic ${g.mc}` : "", g.ign ? `IGN ${g.ign}` : ""].filter(Boolean).join(" · "))),
+    g.wa ? h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, "Wiki footprint"),
+      h("div", { class: "row" }, h("span", { class: "chip" }, `${fmt.n(g.wa)} articles`), h("span", { class: "chip" }, `${fmt.n(g.we)} edits`),
+        h("span", { class: "chip" }, `community pct ${fmt.f1(g.e)}`), Object.entries(g.wc || {}).filter(([, v]) => v > 0).map(([k, v]) => h("span", { class: "chip" }, `wiki ${k.replace(/_/g, " ")}: ${v}`)))) : null,
     Object.keys(g.st || {}).length ? h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, "Design stats"),
       h("div", { class: "row" }, Object.entries(g.st).map(([k, v]) => h("span", { class: "chip" }, `${k.replace(/_/g, " ")}: ${v}`)))) : null,
     h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, `Mechanic fingerprint (${Object.keys(g.m).length})`),
@@ -690,6 +694,10 @@ function viewMethod() {
       LI(`Ridge: outcome ~ all mechanics + subgenre + log price + year + EA + F2P; λ by 5-fold CV (λ=${r.lambda}, CV RMSE ${fmt.f1(r.cv_rmse)} vs ${fmt.f1(r.baseline_rmse)} baseline SD). Coefficients = partial effect in points; 200× bootstrap CIs.`),
       LI("Hits/flops = top/bottom quartile of the slice. Hit lift and flop ratio express risk in publisher terms."),
       LI("Verdicts: red flag (effect CI < 0) · table stakes (≥50% of hits have it, Δ ≥ 0, flop ratio ≤ 0.7) · differentiator (≤35% prevalence, CI > 0) · positive · risk reducer · neutral.")),
+    AN.irr ? h("div", {}, h("h3", {}, "Tagging reliability (blind second rater)"),
+      P(`${AN.irr.n_games} curated games were re-tagged blind by an independent rater. Overall Cohen's κ = ${fmt.f2(AN.irr.overall_kappa)}, mean per-game Jaccard = ${fmt.f2(AN.irr.mean_jaccard)}. Mechanics with low κ have fuzzier definitions; treat their effects with extra caution.`),
+      h("div", { class: "card", style: "max-width:760px" }, hbars(AN.irr.mechanics.filter(m => m.kappa != null && m.n_curated + m.n_rater2 >= 6).sort((a, b) => a.kappa - b.kappa).slice(0, 15)
+        .map(m => ({ label: mname(m.mechanic), value: m.kappa, sub: `curated ${m.n_curated} · rater 2 ${m.n_rater2}` })), { width: 720, max: 1, fmtv: fmt.f2 }))) : null,
     h("h3", {}, "Caveats — read before quoting a number"),
     h("ul", {}, LI("Correlation, not causation. Mechanics co-occur with budget, team experience and marketing, which we cannot observe."),
       LI("Survivorship: the universe is games with ≥50 reviews; true flops are under-represented, so downside risk is understated."),
@@ -756,7 +764,7 @@ const subSel = $("#f-sub");
 subSel.append(h("option", { value: "" }, "All subgenres"), ...HYBRIDS.map(hy => h("option", { value: hy }, `${mname(hy)} (${GAMES.filter(g => g.sg === hy).length})`)));
 const bind = (id, key, num) => $(id).addEventListener("change", e => { state[key] = num ? +e.target.value : e.target.value; render(); });
 bind("#f-sub", "sub"); bind("#f-year", "year", 1); bind("#f-rev", "rev", 1); bind("#f-conf", "conf", 1); bind("#f-out", "out");
-for (const k of ["q", "c", "k"]) {
+for (const k of ["q", "c", "k", "e"]) {
   const inp = $("#w-" + k), lab2 = inp.nextElementSibling; lab2.textContent = inp.value;
   inp.addEventListener("input", () => { state.w[k] = +inp.value; lab2.textContent = inp.value; clearTimeout(inp._t); inp._t = setTimeout(render, 120); });
 }

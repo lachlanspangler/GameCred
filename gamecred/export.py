@@ -8,6 +8,7 @@ import logging
 from . import DASHBOARD_DIR, DOCS_DIR, PROCESSED_DIR
 from .analysis.extras import rubric, temporal_holdout, trends
 from .analysis.impact import run_scope, stat_correlations
+from .analysis.irr import compute as irr_compute
 from .build import load_dataset
 from .taxonomy import load_taxonomy
 
@@ -31,7 +32,8 @@ def _slim_game(g: dict) -> dict:
         "tags": g["steam_tags"][:12], "st": g["stats"], "ev": g["evidence"],
         # mechanics: id -> [intensity, confidence*10]
         "m": {k: [v["intensity"], int(round(v["confidence"] * 10))] for k, v in g["mechanics"].items()},
-        "img": g["header"],
+        "img": g["header"], "e": g.get("community_pct"), "wa": g.get("wiki_articles"), "we": g.get("wiki_edits"),
+        "wc": g.get("wiki_content") or {},
     }
 
 
@@ -52,7 +54,7 @@ def export() -> dict:
     for metric in ("quality_pct", "commercial_pct"):
         scopes[f"all:{metric}"] = run_scope(games, outcome=metric, with_synergy=False)
     analysis = {"scopes": scopes, "subgenres": by_sub, "stats": stat_correlations(games),
-                "trends": trends(games), "holdout": temporal_holdout(games)}
+                "trends": trends(games), "holdout": temporal_holdout(games), "irr": irr_compute()}
     rub_dir = DOCS_DIR / "rubrics"
     rub_dir.mkdir(exist_ok=True)
     (rub_dir / "all_roguelikes.md").write_text(rubric(scopes["high_conf"], "All roguelikes (high-confidence tags)"))
