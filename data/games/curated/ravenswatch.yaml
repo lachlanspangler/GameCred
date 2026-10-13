@@ -1,0 +1,48 @@
+appid: 2071280
+name: Ravenswatch
+developer: Passtech Games
+release_year: 2024
+subgenre: hybrid_action_roguelite
+wiki: https://ravenswatch.fandom.com/wiki/Ravenswatch_Wiki
+stats:
+  playable_characters: 12
+  run_length_min: 45
+  biome_count: 4
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  dodge_iframes: 2
+  melee_combos: 1
+  permadeath: 3
+  open_procgen_world: 3
+  procgen_levels: 2
+  act_structure: 3
+  boss_gates: 3
+  time_pressure: 2
+  level_up_choices: 3
+  pick_one_of_n: 3
+  reroll: 2
+  synergies: 2
+  build_archetypes: 2
+  character_classes: 3
+  talent_slots: 2
+  passive_relics: 2
+  item_rarity: 2
+  cursed_items: 1
+  consumables: 1
+  elites: 2
+  optional_challenges: 1
+  second_chance: 2
+  unlock_characters: 2
+  unlock_items: 2
+  ascension_ladder: 2
+  online_coop: 3
+  early_access_dev: 2
+  content_updates: 2
+evidence:
+  time_pressure: Each chapter runs on a day/night clock (several days) before the Nightmare boss is forced.
+  open_procgen_world: Chapters are a single generated open map with points of interest rather than rooms.
+  level_up_choices: XP levels offer a pick of talents that modify the hero's abilities.
+  online_coop: Built around 4-player online co-op with shared revives.
+confidence: medium
+curator: agent

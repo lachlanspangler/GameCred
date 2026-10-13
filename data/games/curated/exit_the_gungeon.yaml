@@ -1,0 +1,38 @@
+appid: 1209490
+name: Exit the Gungeon
+developer: Dodge Roll / Singlecore
+release_year: 2020
+subgenre: hybrid_action_roguelite
+wiki: https://enterthegungeon.fandom.com/wiki/Exit_the_Gungeon
+stats:
+  playable_characters: 5
+  run_length_min: 20
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 2
+  bullet_hell: 3
+  dodge_iframes: 3
+  permadeath: 2
+  procgen_levels: 1
+  room_based_floors: 2
+  short_runs: 2
+  act_structure: 2
+  boss_gates: 3
+  attack_patterns: 3
+  weapons_variety: 3
+  high_variance_loot: 2
+  active_items: 1
+  passive_relics: 1
+  character_classes: 2
+  shops: 2
+  in_run_currency: 2
+  unlock_items: 2
+  unlock_characters: 1
+  hub_building: 1
+evidence:
+  weapons_variety: The equipped gun auto-shifts to a random gun every few seconds (Sorceress's curse).
+  platforming: Rising-elevator vertical arenas replace the top-down rooms of Enter the Gungeon.
+  dodge_iframes: Dodge roll with i-frames retained from the original, now with jumps.
+confidence: medium
+curator: agent

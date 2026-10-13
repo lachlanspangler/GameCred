@@ -1,0 +1,34 @@
+appid: 2427700
+name: Backpack Battles
+developer: PlayWithFurcifer
+release_year: 2025
+subgenre: hybrid_autobattler
+wiki: https://backpackbattles.wiki.gg/
+mechanics:
+  hybrid_autobattler: 3
+  auto_battler: 3
+  inventory_management: 3
+  async_multiplayer: 3
+  shops: 3
+  reroll: 3
+  in_run_currency: 3
+  rng_mitigation: 1
+  weapon_evolution: 3
+  crafting: 2
+  synergies: 3
+  character_classes: 3
+  build_archetypes: 3
+  item_rarity: 3
+  status_effects: 3
+  crits: 2
+  short_runs: 2
+  leaderboards: 2
+  early_access_dev: 2
+  content_updates: 2
+evidence:
+  inventory_management: Items must physically fit into a grid backpack; adjacency triggers effects.
+  weapon_evolution: Specific items placed together combine into recipe items at the start of a round.
+  async_multiplayer: Each round fights another player's recorded backpack.
+  rng_mitigation: Shop items can be reserved (locked) across rerolls.
+confidence: high
+curator: agent

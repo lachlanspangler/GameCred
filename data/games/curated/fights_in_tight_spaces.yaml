@@ -1,0 +1,39 @@
+appid: 1265820
+name: Fights in Tight Spaces
+developer: Ground Shatter
+release_year: 2021
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  hybrid_strategy: 1
+  deckbuilding: 3
+  grid_tactics: 3
+  environmental_hazards: 3
+  enemy_intents: 3
+  perfect_information: 2
+  energy_mana: 3
+  card_draw: 2
+  node_map: 3
+  act_structure: 3
+  boss_gates: 3
+  permadeath: 2
+  unlock_items: 2
+  loadout_start: 2
+  item_upgrading: 2
+  passive_relics: 2
+  shops: 2
+  in_run_currency: 2
+  deck_thinning: 2
+  block_shield: 2
+  status_effects: 1
+  healing_scarcity: 2
+  optional_challenges: 2
+  turn_based: 3
+  content_updates: 1
+evidence:
+  environmental_hazards: Push/pull enemies into each other, off ledges, or into their allies' line of fire.
+  enemy_intents: Every enemy's next attack and target tile is displayed.
+  energy_mana: Momentum plus Combo points earned from attack cards gate finishers.
+  optional_challenges: Fights carry optional objectives for bonus rewards.
+confidence: medium
+curator: agent

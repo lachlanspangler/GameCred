@@ -1,0 +1,26 @@
+appid: 3966890
+name: Dawncaster
+developer: Wanderlost Interactive
+release_year: 2026
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  energy_mana: 3
+  card_draw: 2
+  passive_relics: 2
+  character_classes: 2
+  random_events: 3
+  permadeath: 2
+  act_structure: 2
+  boss_gates: 2
+  turn_based: 3
+  status_effects: 2
+  synergies: 2
+  pick_one_of_n: 2
+evidence:
+  energy_mana: Cards cost one of two resources, Stamina or Mana.
+  random_events: Text-adventure style events with branching choices between fights.
+  passive_relics: Talents chosen during the run act as persistent passive modifiers.
+confidence: medium
+curator: agent

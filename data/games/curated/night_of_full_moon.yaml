@@ -1,0 +1,28 @@
+appid: 769560
+name: Night of Full Moon
+developer: Giant Games
+release_year: 2019
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  character_classes: 3
+  energy_mana: 3
+  card_draw: 2
+  turn_based: 3
+  random_events: 3
+  act_structure: 2
+  boss_gates: 2
+  permadeath: 2
+  unlock_characters: 2
+  shops: 2
+  in_run_currency: 2
+  passive_relics: 2
+  pvp: 1
+  content_updates: 2
+evidence:
+  character_classes: Multiple Red Riding Hood classes (Knight, Sorceress, Witch, etc.) with separate card pools.
+  random_events: Each chapter is a board of event, shop and fight nodes with branching story outcomes.
+  pvp: Separate PvP mode pits player decks against each other.
+confidence: medium
+curator: agent

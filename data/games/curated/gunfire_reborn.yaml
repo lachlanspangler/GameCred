@@ -1,0 +1,52 @@
+appid: 1217060
+name: Gunfire Reborn
+developer: Duoyi Games (Gunfire Reborn Studio)
+release_year: 2021
+subgenre: hybrid_shooter
+wiki: https://gunfire-reborn.fandom.com/wiki/Gunfire_Reborn_Wiki
+stats:
+  run_length_min: 50
+  biome_count: 4
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  permadeath: 3
+  procgen_levels: 2
+  room_based_floors: 2
+  act_structure: 3
+  boss_gates: 3
+  character_classes: 3
+  unlock_characters: 2
+  pick_one_of_n: 3
+  passive_relics: 3
+  weapons_variety: 3
+  item_upgrading: 2
+  item_rarity: 2
+  shops: 2
+  in_run_currency: 2
+  skill_tree_meta: 2
+  permanent_stat_upgrades: 2
+  unlock_items: 2
+  ascension_ladder: 1
+  online_coop: 3
+  elemental_interactions: 2
+  status_effects: 2
+  crits: 3
+  synergies: 2
+  build_archetypes: 2
+  block_shield: 2
+  healing_scarcity: 2
+  enemy_hp_scaling: 1
+  optional_challenges: 1
+  content_updates: 3
+  early_access_dev: 1
+  steam_deck_friendly: 1
+evidence:
+  elemental_interactions: Fire, Shock and Corrosion elements interact (e.g. elemental reactions/combos between status effects) and drive builds.
+  passive_relics: Scrolls are passive run modifiers picked from offers of three, many hero-agnostic.
+  online_coop: Up to 4-player online co-op with shared run progression.
+  skill_tree_meta: Talent tree purchased with Soul Essence persists between runs.
+  crits: Weak-point (head) hits deal crit damage; many scrolls/occult builds scale crit.
+confidence: high
+curator: agent

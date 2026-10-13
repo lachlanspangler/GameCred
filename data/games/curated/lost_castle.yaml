@@ -1,0 +1,33 @@
+appid: 434650
+name: Lost Castle
+developer: Hunter Studio
+release_year: 2016
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  dodge_iframes: 2
+  melee_combos: 2
+  permadeath: 3
+  procgen_levels: 2
+  room_based_floors: 3
+  act_structure: 3
+  boss_gates: 3
+  weapons_variety: 3
+  high_variance_loot: 2
+  item_rarity: 2
+  passive_relics: 1
+  consumables: 2
+  in_run_currency: 2
+  shops: 1
+  skill_tree_meta: 2
+  permanent_stat_upgrades: 3
+  unlock_items: 2
+  local_coop: 3
+  online_coop: 2
+evidence:
+  permanent_stat_upgrades: Souls collected in runs are spent on a persistent upgrade tree of stats and unlocks.
+  local_coop: Up to 4 players brawl through the castle together.
+  weapons_variety: Many weapon types (swords, spears, bows, staves, guns) each with distinct move sets.
+confidence: medium
+curator: agent

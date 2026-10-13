@@ -1,0 +1,33 @@
+appid: 681730
+name: Nowhere Prophet
+developer: Sharkbomb Studios
+release_year: 2019
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 73
+mechanics:
+  hybrid_deckbuilder: 3
+  hybrid_survival: 1
+  deckbuilding: 3
+  healing_scarcity: 3
+  random_events: 3
+  node_map: 3
+  act_structure: 3
+  boss_gates: 2
+  permadeath: 3
+  grid_tactics: 2
+  turn_based: 3
+  energy_mana: 3
+  unlock_items: 2
+  unlock_characters: 2
+  loadout_start: 2
+  shops: 2
+  in_run_currency: 2
+  character_classes: 2
+  double_edged_items: 1
+evidence:
+  healing_scarcity: Convoy food and hope must be managed; followers who die while wounded are lost.
+  grid_tactics: Combat on a lane-based board where follower positioning and guards matter.
+  loadout_start: Choose a Prophet class and a convoy type at run start.
+confidence: medium
+curator: agent

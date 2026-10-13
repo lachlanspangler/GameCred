@@ -1,0 +1,23 @@
+appid: 493080
+name: Card Quest
+developer: WinterSpring Games
+release_year: 2017
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  loadout_start: 2
+  deckbuilding: 2
+  energy_mana: 3
+  card_draw: 2
+  turn_based: 3
+  character_classes: 3
+  unlock_items: 2
+  unlock_characters: 2
+  act_structure: 2
+  boss_gates: 2
+  permadeath: 2
+evidence:
+  loadout_start: Equipped gear determines the cards in the deck before each run.
+  energy_mana: Stamina is spent on cards and regained by skipping/resting.
+confidence: medium
+curator: agent

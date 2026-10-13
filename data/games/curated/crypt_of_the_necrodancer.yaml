@@ -1,0 +1,52 @@
+appid: 247080
+name: Crypt of the NecroDancer
+developer: Brace Yourself Games
+release_year: 2015
+subgenre: hybrid_action_roguelite
+wiki: https://crypt-of-the-necrodancer.fandom.com/wiki/Crypt_of_the_NecroDancer_Wiki
+critic:
+  metacritic: 87
+stats:
+  playable_characters: 14
+  run_length_min: 30
+  biome_count: 5
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_traditional: 2
+  real_time_action: 2
+  grid_tactics: 2
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 3
+  boss_gates: 3
+  short_runs: 2
+  attack_patterns: 3
+  perfect_information: 1
+  seeded_runs: 2
+  daily_challenge: 2
+  leaderboards: 2
+  speedrun_support: 2
+  character_classes: 3
+  unlock_characters: 2
+  weapons_variety: 2
+  passive_relics: 2
+  consumables: 2
+  shops: 2
+  in_run_currency: 2
+  multiplicative_scaling: 1
+  permanent_stat_upgrades: 2
+  unlock_items: 2
+  optional_challenges: 1
+  local_coop: 2
+  online_coop: 1
+  mod_support: 2
+  early_access_dev: 2
+  assist_mode: 1
+evidence:
+  real_time_action: Every move must land on the music beat - a tile-based roguelike played in rhythm.
+  attack_patterns: Each enemy type has a fixed, learnable movement rhythm tied to the beat.
+  multiplicative_scaling: Coin multiplier rises with consecutive on-beat kills and resets on missed beats.
+  permanent_stat_upgrades: Diamonds buy permanent hearts and unlock items in the lobby.
+  character_classes: Characters like Aria (one-hit, dagger-only) and Bard (no rhythm) radically change rules.
+confidence: high
+curator: agent

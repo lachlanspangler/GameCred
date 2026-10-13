@@ -1,0 +1,25 @@
+appid: 686060
+name: Mewgenics
+developer: Edmund McMillen
+release_year: 2026
+subgenre: hybrid_strategy
+critic:
+  metacritic: 88
+mechanics:
+  hybrid_strategy: 3
+  grid_tactics: 3
+  turn_based: 3
+  permadeath: 2
+  hub_building: 2
+  character_classes: 3
+  synergies: 3
+  build_archetypes: 2
+  status_effects: 2
+  environmental_hazards: 2
+  random_events: 2
+evidence:
+  hub_building: Between runs the player manages a house of cats, breeding them to pass on traits.
+  character_classes: Collars assign a class to each cat for the run.
+  grid_tactics: Combat is turn-based on a grid with four cats.
+confidence: medium
+curator: agent

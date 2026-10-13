@@ -1,0 +1,64 @@
+appid: 1145350
+name: Hades II
+developer: Supergiant Games
+release_year: 2025
+subgenre: hybrid_action_roguelite
+wiki: https://hades.fandom.com/wiki/Hades_II
+stats:
+  playable_characters: 1
+  run_length_min: 40
+  weapon_count: 6
+  biome_count: 8
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  permadeath: 2
+  procgen_levels: 2
+  room_based_floors: 3
+  act_structure: 3
+  boss_gates: 3
+  multi_phase_bosses: 2
+  attack_patterns: 3
+  dodge_iframes: 3
+  melee_combos: 2
+  talent_slots: 3
+  pick_one_of_n: 3
+  reroll: 2
+  synergies: 3
+  build_archetypes: 3
+  item_upgrading: 2
+  loadout_start: 3
+  weapons_variety: 2
+  energy_mana: 2
+  passive_relics: 2
+  status_effects: 2
+  item_rarity: 2
+  shops: 2
+  in_run_currency: 2
+  healing_scarcity: 2
+  elites: 2
+  optional_challenges: 2
+  crafting: 2
+  hub_building: 2
+  skill_tree_meta: 1
+  permanent_stat_upgrades: 2
+  unlock_items: 2
+  ascension_ladder: 2
+  modular_difficulty: 3
+  narrative_across_runs: 3
+  npc_relationships: 3
+  lore_codex: 2
+  multiple_endings: 1
+  assist_mode: 2
+  tutorialized_unlocks: 2
+  early_access_dev: 2
+  content_updates: 2
+  steam_deck_friendly: 2
+evidence:
+  energy_mana: Magick bar fuels Omega (charged) attacks and casts, a new resource layer over Hades 1.
+  loadout_start: Arcana cards (grasp-limited) and Nocturnal Arms aspects are chosen pre-run.
+  modular_difficulty: Oath of the Unseen Fear vows act as the toggleable Heat system.
+  crafting: Gathered reagents (herbs, ore, psyche) are spent at the Cauldron for Incantations that expand the Crossroads.
+  act_structure: Two separate routes (Underworld down to Tartarus, Surface up to Olympus) each with 4+ regions.
+confidence: high
+curator: agent

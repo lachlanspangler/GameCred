@@ -1,0 +1,24 @@
+appid: 887450
+name: Tunche
+developer: LEAP Game Studios
+release_year: 2021
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  melee_combos: 3
+  local_coop: 3
+  online_coop: 2
+  character_classes: 2
+  unlock_characters: 2
+  skill_tree_meta: 2
+  room_based_floors: 2
+  boss_gates: 3
+  act_structure: 2
+  pick_one_of_n: 2
+evidence:
+  melee_combos: 2D beat 'em up combat with juggles and combo strings.
+  local_coop: Up to 4-player local co-op.
+  skill_tree_meta: Permanent skills are bought between runs to expand each character's moveset.
+confidence: medium
+curator: agent

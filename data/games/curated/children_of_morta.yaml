@@ -1,0 +1,39 @@
+appid: 330020
+name: Children of Morta
+developer: Dead Mage
+release_year: 2019
+subgenre: hybrid_action_roguelite
+wiki: https://children-of-morta.fandom.com/wiki/Children_of_Morta_Wiki
+stats:
+  playable_characters: 7
+  biome_count: 3
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  dodge_iframes: 2
+  melee_combos: 1
+  permadeath: 1
+  procgen_levels: 3
+  act_structure: 2
+  boss_gates: 3
+  character_classes: 3
+  skill_tree_meta: 3
+  permanent_stat_upgrades: 2
+  unlock_characters: 3
+  narrative_across_runs: 3
+  passive_relics: 2
+  active_items: 2
+  consumables: 1
+  in_run_currency: 2
+  random_events: 2
+  pick_one_of_n: 1
+  local_coop: 2
+  online_coop: 1
+  lore_codex: 1
+  healing_scarcity: 1
+evidence:
+  skill_tree_meta: Each Bergson family member has a skill tree; some unlocks are Family Bonuses shared with all.
+  narrative_across_runs: Story vignettes play in the family house between runs, advancing the plot.
+  unlock_characters: New family members join as story progresses.
+confidence: medium
+curator: agent

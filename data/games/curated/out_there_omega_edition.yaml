@@ -1,0 +1,19 @@
+appid: 334420
+name: 'Out There: Omega Edition'
+developer: Mi-Clos Studio
+release_year: 2015
+subgenre: hybrid_survival
+mechanics:
+  hybrid_survival: 3
+  permadeath: 3
+  node_map: 2
+  random_events: 3
+  inventory_management: 3
+  crafting: 2
+  multiple_endings: 3
+  short_runs: 2
+evidence:
+  hybrid_survival: Fuel, oxygen and hull must be replenished by mining planets on each jump.
+  multiple_endings: Several endings depending on destination and choices.
+confidence: medium
+curator: agent

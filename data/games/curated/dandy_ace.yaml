@@ -1,0 +1,29 @@
+appid: 1037130
+name: Dandy Ace
+developer: Mad Mimic
+release_year: 2021
+subgenre: hybrid_action_roguelite
+stats:
+  playable_characters: 1
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  dodge_iframes: 2
+  permadeath: 2
+  procgen_levels: 2
+  room_based_floors: 3
+  boss_gates: 3
+  talent_slots: 3
+  synergies: 3
+  build_archetypes: 2
+  pick_one_of_n: 2
+  cooldown_reduction: 2
+  passive_relics: 2
+  in_run_currency: 2
+  shops: 1
+  permanent_stat_upgrades: 2
+evidence:
+  synergies: Four ability card slots each pair with a secondary card that modifies the primary (e.g. adds stun or area).
+  talent_slots: Fixed 4 active slots that are filled and overwritten by cards found during runs.
+confidence: medium
+curator: agent

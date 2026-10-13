@@ -1,0 +1,48 @@
+appid: 692890
+name: Roboquest
+developer: RyseUp Studios
+release_year: 2023
+subgenre: hybrid_shooter
+critic:
+  metacritic: 85
+stats:
+  playable_characters: 6
+  run_length_min: 50
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  permadeath: 3
+  procgen_levels: 2
+  act_structure: 3
+  boss_gates: 3
+  character_classes: 3
+  unlock_characters: 2
+  level_up_choices: 3
+  pick_one_of_n: 3
+  hub_building: 3
+  permanent_stat_upgrades: 2
+  unlock_items: 2
+  weapons_variety: 3
+  item_rarity: 2
+  shops: 2
+  in_run_currency: 2
+  synergies: 2
+  build_archetypes: 2
+  crits: 2
+  platforming: 2
+  online_coop: 3
+  elites: 2
+  optional_challenges: 2
+  status_effects: 2
+  healing_scarcity: 2
+  content_updates: 2
+  early_access_dev: 1
+  steam_deck_friendly: 1
+evidence:
+  hub_building: Basecamp is upgraded with Power Cells found in runs, unlocking new workshops and perks.
+  level_up_choices: XP level-ups grant a pick from class-specific perk trees mid-run.
+  platforming: High-mobility movement (double jump, dash, jump pads) is central to combat.
+  online_coop: Full 2-player online co-op campaign.
+confidence: high
+curator: agent

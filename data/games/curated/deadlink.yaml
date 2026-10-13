@@ -1,0 +1,29 @@
+appid: 1676130
+name: Deadlink
+developer: Gruby Entertainment
+release_year: 2023
+subgenre: hybrid_shooter
+critic:
+  metacritic: 80
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  permadeath: 3
+  procgen_levels: 2
+  act_structure: 3
+  boss_gates: 3
+  character_classes: 2
+  unlock_characters: 2
+  permanent_stat_upgrades: 2
+  pick_one_of_n: 2
+  weapons_variety: 2
+  environmental_hazards: 2
+  platforming: 1
+  early_access_dev: 1
+evidence:
+  character_classes: Multiple combat shells (e.g. Soldier, Assassin) with different weapons and abilities.
+  environmental_hazards: Explosive objects and kicks into hazards are a major damage source in arenas.
+  permanent_stat_upgrades: Credits earned in runs buy permanent upgrades at the hub between runs.
+confidence: medium
+curator: agent

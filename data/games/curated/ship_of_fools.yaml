@@ -1,0 +1,27 @@
+appid: 1286580
+name: Ship of Fools
+developer: Fika Productions
+release_year: 2022
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  permadeath: 3
+  node_map: 3
+  act_structure: 3
+  boss_gates: 3
+  character_classes: 2
+  passive_relics: 2
+  weapons_variety: 2
+  item_upgrading: 1
+  shops: 1
+  in_run_currency: 2
+  permanent_stat_upgrades: 2
+  hub_building: 2
+  local_coop: 3
+  online_coop: 3
+evidence:
+  node_map: Each region is a hex grid of sea tiles; players pick a path to the boss with limited moves.
+  local_coop: Two players operate cannons and repair a shared ship; solo play uses a companion.
+confidence: medium
+curator: agent

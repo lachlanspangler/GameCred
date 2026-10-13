@@ -1,0 +1,28 @@
+appid: 506870
+name: Unexplored
+developer: Ludomotion
+release_year: 2017
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  twin_stick: 1
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 2
+  boss_gates: 1
+  long_runs: 1
+  weapons_variety: 2
+  consumables: 2
+  active_items: 1
+  inventory_management: 2
+  shops: 1
+  in_run_currency: 1
+  environmental_hazards: 1
+  healing_scarcity: 2
+  multiple_endings: 1
+evidence:
+  procgen_levels: Cyclic dungeon generation builds Zelda-like lock-and-key loops with puzzles, not just room grids.
+  environmental_hazards: Traps, pits and spreading fire are used against the player and enemies.
+confidence: medium
+curator: agent

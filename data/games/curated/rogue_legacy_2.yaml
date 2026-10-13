@@ -1,0 +1,50 @@
+appid: 1253920
+name: Rogue Legacy 2
+developer: Cellar Door Games
+release_year: 2022
+subgenre: hybrid_metroidvania
+wiki: https://roguelegacy.fandom.com/wiki/Rogue_Legacy_2
+stats:
+  playable_characters: 15
+  biome_count: 6
+  boss_count: 6
+mechanics:
+  hybrid_metroidvania: 3
+  hybrid_action_roguelite: 2
+  real_time_action: 3
+  platforming: 3
+  permadeath: 2
+  procgen_levels: 3
+  act_structure: 2
+  boss_gates: 3
+  multi_phase_bosses: 2
+  attack_patterns: 2
+  permanent_stat_upgrades: 3
+  skill_tree_meta: 3
+  hub_building: 2
+  character_classes: 3
+  loadout_start: 2
+  double_edged_items: 2
+  passive_relics: 3
+  hp_as_currency: 2
+  in_run_currency: 3
+  crafting: 1
+  flat_stat_scaling: 2
+  ascension_ladder: 3
+  assist_mode: 3
+  healing_scarcity: 2
+  optional_challenges: 2
+  multiple_endings: 1
+  narrative_across_runs: 2
+  lore_codex: 1
+  early_access_dev: 2
+  content_updates: 2
+  steam_deck_friendly: 2
+evidence:
+  hp_as_currency: Relics cost Resolve, which reduces max HP when over budget.
+  ascension_ladder: Burdens of NG+ (Thread levels) stack difficulty modifiers after beating the game.
+  assist_mode: House Rules let players tune enemy health/damage and disable contact damage.
+  crafting: Blacksmith equipment and Enchantress runes are bought with ore/aether to build loadouts.
+  passive_relics: Relics found in-run modify rules (Heirloom abilities are permanent traversal unlocks).
+confidence: high
+curator: agent

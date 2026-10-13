@@ -1,0 +1,26 @@
+appid: 1051690
+name: Nightmare Reaper
+developer: Blazing Bit Games
+release_year: 2022
+subgenre: hybrid_shooter
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  procgen_levels: 3
+  act_structure: 3
+  boss_gates: 2
+  weapons_variety: 3
+  item_rarity: 3
+  high_variance_loot: 2
+  skill_tree_meta: 3
+  permanent_stat_upgrades: 2
+  in_run_currency: 2
+  loadout_start: 1
+  early_access_dev: 2
+evidence:
+  skill_tree_meta: Gold collected is spent in minigames (platformer, etc.) that unlock skill-tree upgrades.
+  item_rarity: Weapons drop with random rarities and modifiers across 50+ weapon types.
+  loadout_start: Only one weapon (and a portion of gold) carries over between levels.
+confidence: medium
+curator: agent

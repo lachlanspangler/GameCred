@@ -1,0 +1,29 @@
+appid: 1178790
+name: 'Shiren the Wanderer: The Tower of Fortune and the Dice of Fate'
+developer: Spike Chunsoft Co., Ltd.
+release_year: 2020
+subgenre: hybrid_traditional
+mechanics:
+  hybrid_traditional: 3
+  turn_based: 3
+  permadeath: 3
+  procgen_levels: 3
+  long_runs: 1
+  item_upgrading: 3
+  synergies: 2
+  consumables: 3
+  inventory_management: 3
+  shops: 2
+  in_run_currency: 2
+  second_chance: 2
+  status_effects: 2
+  enemy_variety: 3
+  healing_scarcity: 1
+  hybrid_survival: 1
+evidence:
+  permadeath: Fainting returns Shiren to level 1 and loses everything carried, Mystery Dungeon style.
+  item_upgrading: Weapons/shields absorb seals via Synthesis Pots to build up a single carried kit.
+  second_chance: Revival Grass and the online Rescue system can save a failed run.
+  hybrid_survival: Fullness drains each turn; riceballs are a constant resource concern.
+confidence: medium
+curator: agent

@@ -1,0 +1,24 @@
+appid: 546430
+name: Pathway
+developer: Robotality
+release_year: 2019
+subgenre: hybrid_strategy
+critic:
+  metacritic: 68
+mechanics:
+  hybrid_strategy: 3
+  grid_tactics: 3
+  turn_based: 3
+  permadeath: 2
+  node_map: 2
+  random_events: 3
+  character_classes: 2
+  unlock_characters: 2
+  shops: 2
+  in_run_currency: 2
+  hybrid_survival: 1
+evidence:
+  node_map: Each adventure crosses a map of nodes with fuel consumed per move.
+  random_events: Text events branch based on party members' skills.
+confidence: medium
+curator: agent

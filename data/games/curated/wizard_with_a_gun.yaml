@@ -1,0 +1,29 @@
+appid: 1150530
+name: Wizard with a Gun
+developer: Galvanic Games
+release_year: 2023
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_survival: 1
+  real_time_action: 3
+  twin_stick: 3
+  dodge_iframes: 2
+  open_procgen_world: 3
+  procgen_levels: 2
+  time_pressure: 3
+  crafting: 3
+  hub_building: 3
+  weapons_variety: 2
+  loadout_start: 2
+  elemental_interactions: 2
+  status_effects: 2
+  synergies: 2
+  unlock_items: 2
+  online_coop: 2
+evidence:
+  time_pressure: Each expedition has a limited time before Chaos overruns the world.
+  crafting: Gathered materials are crafted at the Tower into new bullet types and gear.
+  elemental_interactions: Ammo types (fire, ice, lightning) combine with environmental effects.
+confidence: medium
+curator: agent

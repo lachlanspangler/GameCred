@@ -1,0 +1,39 @@
+appid: 323220
+name: Vagante
+developer: Nuke Nine
+release_year: 2018
+subgenre: hybrid_action_roguelite
+stats:
+  playable_characters: 5
+  biome_count: 5
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 3
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 3
+  boss_gates: 3
+  character_classes: 3
+  unlock_characters: 2
+  level_up_choices: 2
+  skill_tree_meta: 1
+  flat_stat_scaling: 2
+  weapons_variety: 2
+  passive_relics: 2
+  consumables: 2
+  item_rarity: 1
+  cursed_items: 2
+  shops: 2
+  in_run_currency: 2
+  healing_scarcity: 3
+  environmental_hazards: 2
+  local_coop: 2
+  online_coop: 2
+  early_access_dev: 2
+evidence:
+  cursed_items: Unidentified gear may be cursed and cannot be unequipped until uncursed.
+  healing_scarcity: Healing is rare; HP is a run-long resource in the brutal side-scrolling crawl.
+  level_up_choices: Level-ups give a stat point and a choice of class-specific perk.
+confidence: medium
+curator: agent

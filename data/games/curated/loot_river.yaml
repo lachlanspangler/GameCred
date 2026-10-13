@@ -1,0 +1,25 @@
+appid: 1494260
+name: Loot River
+developer: straka.studio
+release_year: 2022
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_puzzle: 1
+  real_time_action: 3
+  dodge_iframes: 2
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 2
+  boss_gates: 3
+  weapons_variety: 2
+  passive_relics: 2
+  permanent_stat_upgrades: 2
+  in_run_currency: 2
+  environmental_hazards: 2
+  local_coop: 1
+evidence:
+  hybrid_puzzle: Player moves Tetris-like blocks of land across water to navigate and position in combat.
+  environmental_hazards: Shifting floating platforms let players reposition terrain to dodge or trap enemies.
+confidence: medium
+curator: agent

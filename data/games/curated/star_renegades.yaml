@@ -1,0 +1,27 @@
+appid: 651670
+name: Star Renegades
+developer: Massive Damage, Inc.
+release_year: 2020
+subgenre: hybrid_strategy
+critic:
+  metacritic: 77
+mechanics:
+  hybrid_strategy: 3
+  turn_based: 3
+  permadeath: 3
+  enemy_intents: 3
+  boss_gates: 3
+  act_structure: 2
+  elites: 2
+  character_classes: 3
+  unlock_characters: 2
+  unlock_items: 2
+  npc_relationships: 2
+  block_shield: 2
+  crits: 2
+evidence:
+  enemy_intents: An initiative timeline shows enemy actions; hitting first can break and delay them.
+  elites: Nemesis-style adaptive enemies (the Behemoth) gain power and remember the player.
+  npc_relationships: Camp bonding between party members unlocks combo abilities.
+confidence: medium
+curator: agent

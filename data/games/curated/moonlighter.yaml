@@ -1,0 +1,38 @@
+appid: 606150
+name: Moonlighter
+developer: Digital Sun
+release_year: 2018
+subgenre: hybrid_action_roguelite
+wiki: https://moonlighter.fandom.com/wiki/Moonlighter_Wiki
+stats:
+  playable_characters: 1
+  biome_count: 5
+  boss_count: 5
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  dodge_iframes: 2
+  procgen_levels: 3
+  room_based_floors: 3
+  boss_gates: 3
+  extraction: 3
+  inventory_management: 3
+  cursed_items: 2
+  crafting: 3
+  item_upgrading: 2
+  hub_building: 3
+  interest_economy: 2
+  weapons_variety: 1
+  loadout_start: 2
+  consumables: 1
+  shops: 2
+  in_run_currency: 2
+  healing_scarcity: 1
+  unlock_items: 2
+evidence:
+  extraction: The Merchant Pendant lets Will teleport out keeping loot; dying loses most of the backpack.
+  inventory_management: Grid backpack with item curses (destroy-adjacent, must-be-on-edge, transform-on-return).
+  interest_economy: Night-time shop pricing loop - tune prices to demand to maximise gold for upgrades.
+  hub_building: Gold funds new Rynoka shops (blacksmith, witch, bank) that unlock crafting tiers.
+confidence: high
+curator: agent

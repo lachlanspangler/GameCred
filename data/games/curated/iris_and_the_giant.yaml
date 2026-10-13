@@ -1,0 +1,23 @@
+appid: 1127610
+name: Iris and the Giant
+developer: Louis Rigaud
+release_year: 2020
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 2
+  permanent_stat_upgrades: 3
+  skill_tree_meta: 2
+  narrative_across_runs: 3
+  permadeath: 2
+  turn_based: 3
+  grid_tactics: 1
+  energy_mana: 2
+  act_structure: 2
+  boss_gates: 2
+evidence:
+  permanent_stat_upgrades: Points earned each run buy persistent talents.
+  narrative_across_runs: Iris's memories are unlocked progressively across runs.
+  grid_tactics: Enemies stand in rows; only the front row is directly reachable by most attacks.
+confidence: medium
+curator: agent

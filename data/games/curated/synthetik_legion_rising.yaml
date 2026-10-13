@@ -1,0 +1,36 @@
+appid: 528230
+name: 'SYNTHETIK: Legion Rising'
+developer: Flow Fire Games
+release_year: 2018
+subgenre: hybrid_action_roguelite
+stats:
+  playable_characters: 8
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_shooter: 2
+  real_time_action: 3
+  twin_stick: 3
+  dodge_iframes: 1
+  permadeath: 3
+  procgen_levels: 2
+  act_structure: 3
+  boss_gates: 2
+  character_classes: 3
+  unlock_characters: 2
+  level_up_choices: 2
+  weapons_variety: 3
+  item_upgrading: 2
+  passive_relics: 2
+  active_items: 2
+  item_rarity: 2
+  shops: 2
+  in_run_currency: 2
+  permanent_stat_upgrades: 1
+  unlock_items: 2
+  online_coop: 2
+  early_access_dev: 2
+evidence:
+  weapons_variety: Guns use active reloads, overheating and jamming with per-weapon attachments.
+  character_classes: Classes (Riot Guard, Sniper, Breacher, Engineer) each level their own perk tree.
+confidence: medium
+curator: agent

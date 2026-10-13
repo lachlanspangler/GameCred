@@ -1,0 +1,63 @@
+appid: 632360
+name: Risk of Rain 2
+developer: Hopoo Games
+release_year: 2020
+subgenre: hybrid_shooter
+wiki: https://riskofrain2.wiki.gg/
+critic:
+  metacritic: 85
+stats:
+  difficulty_levels: 3
+  run_length_min: 45
+  meta_currencies: 1
+mechanics:
+  hybrid_shooter: 3
+  real_time_action: 3
+  permadeath: 3
+  item_stacking: 3
+  time_pressure: 3
+  procgen_levels: 1
+  act_structure: 2
+  endless_mode: 3
+  boss_gates: 3
+  online_coop: 3
+  character_classes: 3
+  unlock_characters: 3
+  achievement_unlocks: 3
+  unlock_items: 3
+  passive_relics: 3
+  active_items: 2
+  item_rarity: 3
+  cursed_items: 2
+  double_edged_items: 3
+  hp_as_currency: 1
+  gambling: 3
+  shops: 2
+  in_run_currency: 3
+  multiplicative_scaling: 2
+  synergies: 3
+  build_archetypes: 2
+  crits: 2
+  status_effects: 2
+  elites: 3
+  enemy_hp_scaling: 3
+  multiple_endings: 2
+  modular_difficulty: 3
+  ascension_ladder: 2
+  lore_codex: 2
+  mod_support: 1
+  content_updates: 3
+  early_access_dev: 2
+  push_your_luck: 2
+  high_variance_loot: 2
+  rng_mitigation: 1
+  run_history: 1
+  steam_deck_friendly: 1
+evidence:
+  time_pressure: Difficulty climbs continuously with elapsed time, not just stage depth.
+  item_stacking: Every item stacks linearly or hyperbolically; proc-chains are the core of builds.
+  modular_difficulty: Artifacts are toggleable rule modifiers (e.g. Command, Sacrifice) unlocked via codes.
+  double_edged_items: Lunar items trade big upsides for explicit penalties (e.g. Shaped Glass, Gesture of the Drowned).
+  ascension_ladder: Eclipse mode adds 8 cumulative difficulty levels per survivor.
+confidence: high
+curator: agent

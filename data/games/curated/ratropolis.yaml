@@ -1,0 +1,30 @@
+appid: 1108370
+name: Ratropolis
+developer: Cassel Games
+release_year: 2020
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 82
+mechanics:
+  hybrid_deckbuilder: 3
+  hybrid_city_builder: 2
+  hybrid_strategy: 1
+  deckbuilding: 3
+  time_pressure: 2
+  waves: 3
+  in_run_currency: 3
+  card_draw: 2
+  character_classes: 2
+  unlock_characters: 2
+  unlock_items: 2
+  boss_gates: 2
+  permadeath: 2
+  pick_one_of_n: 2
+  random_events: 2
+  ascension_ladder: 1
+evidence:
+  time_pressure: Cards are played in real time between enemy waves arriving on a timer.
+  in_run_currency: Cards cost gold rather than energy; economy cards fund military cards.
+  hybrid_city_builder: Building cards expand the rat city and its defenses.
+confidence: medium
+curator: agent

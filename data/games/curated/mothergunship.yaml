@@ -1,0 +1,31 @@
+appid: 574090
+name: MOTHERGUNSHIP
+developer: Terrible Posture Games / Grip Digital
+release_year: 2018
+subgenre: hybrid_shooter
+critic:
+  metacritic: 72
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  crafting: 3
+  bullet_hell: 3
+  room_based_floors: 2
+  procgen_levels: 2
+  shops: 2
+  in_run_currency: 2
+  permanent_stat_upgrades: 2
+  loadout_start: 2
+  weapons_variety: 3
+  synergies: 2
+  build_archetypes: 2
+  platforming: 2
+  optional_challenges: 1
+  boss_gates: 2
+evidence:
+  crafting: Guns are assembled from barrels, connectors and caps into large multi-barrel contraptions.
+  loadout_start: Parts are chosen from inventory before each mission; parts brought in are lost on failure.
+  permanent_stat_upgrades: Persistent XP levels grant stat points between missions.
+confidence: medium
+curator: agent

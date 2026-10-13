@@ -1,0 +1,33 @@
+appid: 857980
+name: Void Bastards
+developer: Blue Manchu
+release_year: 2019
+subgenre: hybrid_shooter
+critic:
+  metacritic: 81
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 2
+  node_map: 3
+  procgen_levels: 2
+  crafting: 3
+  permadeath: 2
+  unlock_items: 2
+  healing_scarcity: 2
+  push_your_luck: 2
+  hybrid_survival: 2
+  hybrid_strategy: 1
+  random_events: 2
+  double_edged_items: 2
+  consumables: 2
+  weapons_variety: 2
+  act_structure: 2
+  character_classes: 1
+evidence:
+  crafting: Weapons and gadgets are crafted from scavenged junk and persist across client deaths.
+  double_edged_items: Each new client has random traits, some harmful (e.g. Tourette's alerting enemies, short-sightedness).
+  hybrid_survival: Food and fuel must be scavenged to keep moving across the nebula map.
+  push_your_luck: Oxygen limits on each derelict force a stay-or-leave decision while looting.
+confidence: high
+curator: agent

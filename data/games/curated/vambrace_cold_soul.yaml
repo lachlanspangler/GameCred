@@ -1,0 +1,19 @@
+appid: 904380
+name: 'Vambrace: Cold Soul'
+developer: Devespresso Games
+release_year: 2019
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  turn_based: 3
+  permadeath: 2
+  procgen_levels: 2
+  character_classes: 2
+  healing_scarcity: 2
+  hybrid_survival: 1
+  random_events: 2
+evidence:
+  hybrid_survival: Expeditions are limited by cold/supplies; camping consumes resources.
+  permadeath: Recruited companions die permanently on expeditions.
+confidence: medium
+curator: agent

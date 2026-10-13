@@ -1,0 +1,31 @@
+appid: 1782120
+name: ZERO Sievert
+developer: CABO Studio
+release_year: 2024
+subgenre: hybrid_shooter
+critic:
+  metacritic: 81
+mechanics:
+  hybrid_shooter: 3
+  extraction: 3
+  twin_stick: 2
+  real_time_action: 3
+  hub_building: 2
+  inventory_management: 3
+  hybrid_survival: 2
+  procgen_levels: 1
+  crafting: 2
+  weapons_variety: 3
+  item_upgrading: 2
+  shops: 2
+  status_effects: 2
+  healing_scarcity: 2
+  early_access_dev: 2
+  mod_support: 1
+evidence:
+  extraction: Raids from the bunker; reaching an extraction point keeps loot, death loses everything carried.
+  inventory_management: Grid-based inventory with weight forces loot triage during raids.
+  hybrid_survival: Hunger, thirst, radiation and bleeding/fracture status must be managed.
+  item_upgrading: Weapons are modded with attachments bought from traders or found.
+confidence: medium
+curator: agent

@@ -1,0 +1,19 @@
+appid: 311720
+name: Sproggiwood
+developer: Freehold Games
+release_year: 2014
+subgenre: hybrid_traditional
+mechanics:
+  hybrid_traditional: 3
+  turn_based: 3
+  permadeath: 1
+  procgen_levels: 2
+  short_runs: 3
+  hub_building: 3
+  character_classes: 3
+  unlock_characters: 2
+evidence:
+  hub_building: Sproggi village grows and unlocks shops and upgrades between dungeons.
+  short_runs: Bite-sized dungeons designed to be cleared in a few minutes.
+confidence: medium
+curator: agent

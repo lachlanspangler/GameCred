@@ -1,0 +1,33 @@
+appid: 763890
+name: Wildermyth
+developer: Worldwalker Games LLC
+release_year: 2021
+subgenre: hybrid_strategy
+wiki: https://wildermyth.com/wiki/Main_Page
+critic:
+  metacritic: 86
+mechanics:
+  hybrid_strategy: 3
+  grid_tactics: 3
+  turn_based: 3
+  permadeath: 2
+  procgen_levels: 2
+  long_runs: 3
+  random_events: 3
+  npc_relationships: 3
+  narrative_across_runs: 2
+  unlock_characters: 1
+  character_classes: 2
+  level_up_choices: 2
+  pick_one_of_n: 2
+  environmental_hazards: 2
+  online_coop: 2
+  assist_mode: 1
+  mod_support: 3
+evidence:
+  random_events: Procedural story events branch based on hero personality and choices.
+  npc_relationships: Heroes form romances, rivalries and friendships that change dialogue and abilities.
+  narrative_across_runs: Legacy heroes can be carried into future campaigns.
+  environmental_hazards: Mystics interfuse with terrain objects to turn them into weapons.
+confidence: medium
+curator: agent

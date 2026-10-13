@@ -1,0 +1,51 @@
+appid: 1649240
+name: Returnal
+developer: Housemarque
+release_year: 2023
+subgenre: hybrid_shooter
+stats:
+  biome_count: 6
+  boss_count: 5
+mechanics:
+  hybrid_shooter: 3
+  real_time_action: 3
+  permadeath: 3
+  mid_run_save: 1
+  second_chance: 2
+  procgen_levels: 2
+  room_based_floors: 2
+  act_structure: 3
+  boss_gates: 3
+  bullet_hell: 3
+  dodge_iframes: 3
+  attack_patterns: 3
+  multi_phase_bosses: 3
+  platforming: 1
+  passive_relics: 2
+  consumables: 2
+  double_edged_items: 3
+  cursed_items: 3
+  weapons_variety: 2
+  unlock_items: 2
+  in_run_currency: 2
+  shops: 2
+  healing_scarcity: 2
+  narrative_across_runs: 3
+  lore_codex: 2
+  endless_mode: 2
+  daily_challenge: 2
+  leaderboards: 2
+  online_coop: 1
+  multiple_endings: 1
+  hybrid_metroidvania: 1
+  optional_challenges: 1
+  push_your_luck: 1
+  steam_deck_friendly: 1
+evidence:
+  double_edged_items: Parasites attach with one buff and one debuff; malignant items risk Malfunctions with a removal task.
+  second_chance: Astronaut Figurine and Reconstructors revive Selene once per run.
+  endless_mode: Tower of Sisyphus is an endless score-attack mode with phases.
+  daily_challenge: Daily Challenge with fixed loadout and global leaderboard.
+  hybrid_metroidvania: Permanent traversal tools (grapple, Atropian blade) gate areas across cycles.
+confidence: high
+curator: agent

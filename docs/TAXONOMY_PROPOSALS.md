@@ -1,0 +1,59 @@
+# Taxonomy proposals (from curation agents)
+
+Collected from curators; reviewed into taxonomy versions. Status: `pending` / `accepted (vN)` / `rejected (reason)`.
+
+## From action-roguelite curator (2026-10-13)
+- weapon_durability — weapons break/degrade (Going Under, Exit the Gungeon)
+- weapon_auto_swap — weapon changes on timer/trigger (Exit the Gungeon)
+- combo_meter — uninterrupted kill/trick chains build a payout multiplier (Downwell, GoNNER, NecroDancer)
+- rhythm_timing — actions synced to a beat (Crypt of the NecroDancer)
+- parry_counter — dedicated precision parry/deflect (Absolum, Curse of the Dead Gods, Windblown)
+- traversal_unlocks — permanent movement abilities open routes across runs (Dead Cells runes, RL2 heirlooms)
+- heir_traits — each run's character rolls random mixed traits (Rogue Legacy)
+- corruption_meter — run-long meter that inflicts curses as it fills (Curse of the Dead Gods, Sundered)
+- day_night_cycle — in-run clock/day count structures exploration (Ravenswatch, Moon Hunters, Atomicrops)
+- shop_management — run a shop/sell loot between runs (Moonlighter)
+- life_sim_hub — non-combat social/farming layer between runs (Cult of the Lamb, Atomicrops, Dreamscaper)
+- weapon_stance_swap — two movesets swapped mid-combat (Skul, Windblown)
+
+## From deckbuilder curator (2026-10-13)
+- party_building — recruit/manage multiple units in a run (Banners of Ruin, Across the Obelisk, Slice & Dice)
+- unit_summoning — cards deploy persistent units (Monster Train, Inscryption, Wildfrost)
+- lane_positioning — rows/lanes/front-back determine targeting (Monster Train, Wildfrost, Roguebook)
+- card_mods — permanent per-card modifiers: sockets/enchants/seals (Balatro, Vault of the Void, Roguebook)
+- dual_resource — two separate spend resources (Dawncaster, Fights in Tight Spaces)
+- deck_from_equipment — deck derived from equipped gear (Trials of Fire, Hand of Fate)
+- dice_manipulation — modify die faces/values (Dicey Dungeons, Astrea, Slice & Dice)
+- score_target_rounds — each round must hit a score threshold (Balatro, Luck be a Landlord, Ballionaire)
+- dual_deck — separate decks per conflict type (Griftlands)
+- limited_play_card_pool — no free reshuffle; spent cards must be recovered (Deck of Ashes)
+
+## Gaps noted
+- Risk of Rain 2 (632360) not yet profiled; Slay the Spire 2 (2868840) not profiled.
+
+## From traditional/strategy curator (2026-10-13)
+- stealth — detection/alarm systems; avoidance is a viable core strategy (Invisible Inc, Cogmind, Quasimorph)
+- summons_minions — build around controlling allied summons (Rift Wizard, Iratus, Loop Hero necromancer)
+- legacy_inheritance — next character inherits from the dead one (Sunless Sea, Rogue Legacy, Dungeonmans)
+- breeding_genetics — units bred from previous ones pass traits (Mewgenics)
+- stress_sanity — second meter besides HP causing breakdowns (Darkest Dungeon, Curious Expedition, Don't Starve)
+- turn_escalation — per-turn/jump escalation (FTL rebel fleet, Invisible Inc alarm, One Way Heroics)
+- item_identification — unidentified consumables learned by use (Pixel Dungeon, Shiren, ADOM)
+- hunger_clock — food drains per turn forcing progress (Shiren, SPD, Stoneshard)
+- limb_injuries — localized body-part wounds (NEO Scavenger, Stoneshard, Quasimorph)
+- positional_ranks — line/rank positions (Darkest Dungeon, Iratus, Shogun Showdown)
+- day_night_phases — separate build/prep and combat phases per cycle (The Last Spell, Against the Storm, Don't Starve)
+
+## From shooter/3D curator (2026-10-13)
+- weapon_handling — manual reload/jam/heat as a skill layer (Synthetik, Heavy Bullets)
+- weapon_mastery — weapons level/gain perks through use, persisting (Witchfire, Returnal)
+- run_loss_carry — one chosen item carries across levels/runs (Nightmare Reaper, Mothergunship)
+- time_loop_world — hand-built world resets on cycle, chosen progress persists (Ultros, Returnal)
+- vehicle_combat — ship/vehicle is the avatar (Everspace, Sublevel Zero, Nova Drift)
+- asymmetric_multiplayer — one vs many with different roles (Crawl)
+- faction_reputation — standing unlocks wares/quests (ZERO Sievert, Arcadegeddon)
+- traversal_tools — grapple/whip/multi-jump kit central to play (Phantom Abyss, Roboquest)
+- (+ votes) stress_sanity, rhythm_timing, stealth
+
+## Subgenre alignment note
+Top-down/twin-stick shooters: shooter curator used hybrid_shooter (Dead Estate, Synthetik 2, ZERO Sievert, Nova Drift); action curator used hybrid_action_roguelite for Gungeon-likes. Decision needed (see I-014).

@@ -1,0 +1,24 @@
+appid: 745000
+name: Card Crawl
+developer: Arnold Rauers
+release_year: 2018
+subgenre: hybrid_puzzle
+mechanics:
+  hybrid_puzzle: 3
+  hybrid_deckbuilder: 1
+  short_runs: 3
+  permadeath: 2
+  loadout_start: 2
+  unlock_items: 2
+  inventory_management: 2
+  consumables: 2
+  in_run_currency: 2
+  leaderboards: 2
+  turn_based: 3
+  perfect_information: 1
+evidence:
+  loadout_start: Players assemble a small deck of ability cards before each dungeon.
+  inventory_management: Only two hand slots plus a backpack slot to hold dealt cards.
+  short_runs: A full dungeon deck is cleared in a few minutes.
+confidence: medium
+curator: agent

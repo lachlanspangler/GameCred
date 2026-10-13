@@ -1,0 +1,72 @@
+appid: 1145360
+name: Hades
+developer: Supergiant Games
+release_year: 2020
+subgenre: hybrid_action_roguelite
+wiki: https://hades.fandom.com/wiki/Hades_Wiki
+critic:
+  metacritic: 93
+  ign: 9.0
+stats:
+  playable_characters: 1
+  run_length_min: 35
+  weapon_count: 6
+  boss_count: 4
+  biome_count: 4
+  meta_currencies: 6
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  permadeath: 2
+  mid_run_save: 1
+  second_chance: 2
+  procgen_levels: 2
+  room_based_floors: 3
+  act_structure: 3
+  boss_gates: 3
+  multi_phase_bosses: 2
+  attack_patterns: 3
+  dodge_iframes: 3
+  melee_combos: 2
+  talent_slots: 3
+  pick_one_of_n: 3
+  reroll: 2
+  synergies: 3
+  build_archetypes: 3
+  item_upgrading: 2
+  loadout_start: 3
+  weapons_variety: 2
+  passive_relics: 2
+  status_effects: 2
+  crits: 1
+  item_rarity: 2
+  shops: 2
+  in_run_currency: 2
+  healing_scarcity: 2
+  elites: 2
+  optional_challenges: 2
+  enemy_hp_scaling: 1
+  permanent_stat_upgrades: 3
+  hub_building: 1
+  unlock_items: 2
+  ascension_ladder: 2
+  modular_difficulty: 3
+  narrative_across_runs: 3
+  npc_relationships: 3
+  lore_codex: 2
+  multiple_endings: 1
+  assist_mode: 2
+  tutorialized_unlocks: 2
+  run_history: 1
+  early_access_dev: 2
+  steam_deck_friendly: 2
+  rng_mitigation: 2
+evidence:
+  talent_slots: Olympian boons fill fixed Attack/Special/Cast/Dash/Call slots, overwriting prior boons of that slot.
+  modular_difficulty: Pact of Punishment offers toggleable Heat conditions that raise bounties on weapons.
+  narrative_across_runs: Each death returns Zagreus to the House where dialogue and story advance.
+  second_chance: Death Defiance charges from the Mirror of Night revive Zagreus mid-run.
+  npc_relationships: Nectar/Ambrosia gifting builds affinity hearts and unlocks Keepsakes and companions.
+  rng_mitigation: Chamber door symbols preview the reward; Fated Authority grants rerolls.
+confidence: high
+curator: agent

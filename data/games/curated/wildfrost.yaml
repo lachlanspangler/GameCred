@@ -1,0 +1,44 @@
+appid: 1811990
+name: Wildfrost
+developer: Deadpan Games
+release_year: 2023
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 80
+stats:
+  playable_characters: 3
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  turn_based: 3
+  grid_tactics: 1
+  enemy_intents: 2
+  card_draw: 2
+  node_map: 3
+  boss_gates: 3
+  permadeath: 2
+  mid_run_save: 1
+  hub_building: 3
+  unlock_items: 3
+  unlock_characters: 2
+  daily_challenge: 2
+  modular_difficulty: 3
+  loadout_start: 2
+  pick_one_of_n: 3
+  item_upgrading: 2
+  synergies: 3
+  build_archetypes: 2
+  shops: 2
+  in_run_currency: 2
+  status_effects: 3
+  block_shield: 2
+  waves: 2
+  content_updates: 2
+  perfect_information: 1
+evidence:
+  enemy_intents: Every unit shows a counter that ticks down each turn; it acts at zero.
+  hub_building: Snowdwell town is rebuilt across runs, unlocking new cards, charms and pets.
+  modular_difficulty: Storm Bells toggle individual hardship modifiers.
+  item_upgrading: Charms permanently modify a card for the run.
+confidence: high
+curator: agent

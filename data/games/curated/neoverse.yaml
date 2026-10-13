@@ -1,0 +1,26 @@
+appid: 994220
+name: NEOVERSE
+developer: Tinogames Inc.
+release_year: 2020
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  energy_mana: 3
+  card_draw: 2
+  optional_challenges: 3
+  act_structure: 2
+  boss_gates: 3
+  permadeath: 2
+  unlock_items: 2
+  character_classes: 3
+  turn_based: 3
+  synergies: 2
+  shops: 2
+  in_run_currency: 2
+  item_upgrading: 2
+  block_shield: 2
+evidence:
+  optional_challenges: Each battle has an optional challenge condition rewarding extra loot.
+confidence: medium
+curator: agent

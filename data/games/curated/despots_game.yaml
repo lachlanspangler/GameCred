@@ -1,0 +1,24 @@
+appid: 1227280
+name: 'Despot''s Game: Dystopian Battle Simulator'
+developer: Konfa Games
+release_year: 2022
+subgenre: hybrid_autobattler
+mechanics:
+  hybrid_autobattler: 3
+  auto_battler: 3
+  node_map: 2
+  shops: 3
+  in_run_currency: 2
+  synergies: 3
+  build_archetypes: 2
+  pvp: 2
+  unlock_items: 2
+  permadeath: 2
+  random_events: 1
+  early_access_dev: 2
+evidence:
+  synergies: Unit class counts (weapons) activate TFT-style tiered bonuses.
+  node_map: The squad moves room by room through a labyrinth, consuming food each step.
+  pvp: Tournament mode pits players' squads against each other.
+confidence: medium
+curator: agent

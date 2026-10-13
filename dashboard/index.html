@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GameCred · Roguelike Mechanics Intelligence</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="viz-root">
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">◆</span>
+      <div>
+        <div class="brand-name">GameCred</div>
+        <div class="brand-sub">Roguelike mechanics → measurable outcomes</div>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button role="tab" data-view="overview" class="active">Overview</button>
+      <button role="tab" data-view="mechanics">Mechanics</button>
+      <button role="tab" data-view="families">Families</button>
+      <button role="tab" data-view="games">Games</button>
+      <button role="tab" data-view="lab">Design Lab</button>
+      <button role="tab" data-view="synergy">Synergies</button>
+      <button role="tab" data-view="method">Method</button>
+    </nav>
+    <button id="theme-toggle" class="ghost" title="Toggle light/dark">◐</button>
+  </header>
+
+  <section class="filters" id="filters" aria-label="Filters (scope every view)">
+    <label>Subgenre <select id="f-sub"></select></label>
+    <label>Released <select id="f-year">
+      <option value="0">All years</option><option value="2024">2024+</option><option value="2022">2022+</option>
+      <option value="2020">2020+</option><option value="2017">2017+</option></select></label>
+    <label>Min reviews <select id="f-rev">
+      <option value="0">Any</option><option value="200">200+</option><option value="1000">1K+</option>
+      <option value="5000">5K+</option></select></label>
+    <label>Tag source <select id="f-conf">
+      <option value="0">All (auto + curated)</option><option value="0.6">High confidence</option>
+      <option value="1">Curated only</option></select></label>
+    <label>Outcome <select id="f-out">
+      <option value="gsi">GameCred Success Index</option><option value="q">Player quality (review pct)</option>
+      <option value="c">Commercial (revenue pct)</option><option value="k">Critic (score pct)</option></select></label>
+    <details class="weights"><summary>GSI weights</summary>
+      <label>Quality <input type="range" id="w-q" min="0" max="100" value="40"><span></span></label>
+      <label>Commercial <input type="range" id="w-c" min="0" max="100" value="45"><span></span></label>
+      <label>Critic <input type="range" id="w-k" min="0" max="100" value="15"><span></span></label>
+    </details>
+    <span class="slice-count" id="slice-count"></span>
+  </section>
+
+  <main>
+    <section class="view active" id="view-overview"></section>
+    <section class="view" id="view-mechanics"></section>
+    <section class="view" id="view-families"></section>
+    <section class="view" id="view-games"></section>
+    <section class="view" id="view-lab"></section>
+    <section class="view" id="view-synergy"></section>
+    <section class="view" id="view-method"></section>
+  </main>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <button class="ghost drawer-close" id="drawer-close" aria-label="Close">✕</button>
+    <div id="drawer-body"></div>
+  </aside>
+  <div class="tooltip" id="tooltip" role="tooltip"></div>
+  <footer class="foot" id="foot"></footer>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

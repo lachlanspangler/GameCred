@@ -1,0 +1,44 @@
+appid: 262060
+name: Darkest Dungeon
+developer: Red Hook Studios
+release_year: 2016
+subgenre: hybrid_strategy
+wiki: https://darkestdungeon.wiki.gg/
+critic:
+  metacritic: 84
+stats:
+  playable_characters: 15
+  biome_count: 5
+  difficulty_levels: 3
+mechanics:
+  hybrid_strategy: 3
+  turn_based: 3
+  permadeath: 2
+  mid_run_save: 1
+  procgen_levels: 2
+  room_based_floors: 2
+  boss_gates: 2
+  long_runs: 2
+  hub_building: 3
+  permanent_stat_upgrades: 2
+  character_classes: 3
+  status_effects: 3
+  crits: 2
+  healing_scarcity: 2
+  consumables: 2
+  inventory_management: 2
+  shops: 2
+  passive_relics: 2
+  double_edged_items: 2
+  item_rarity: 2
+  random_events: 1
+  push_your_luck: 2
+  mod_support: 2
+  content_updates: 2
+evidence:
+  hub_building: The Hamlet (Blacksmith, Guild, Sanitarium, Abbey/Tavern) is upgraded with heirlooms between expeditions.
+  permadeath: Heroes who die are gone for good; the campaign persists around them.
+  push_your_luck: Torchlight, stress and supplies force continue-or-retreat decisions on every expedition.
+  double_edged_items: Many trinkets pair a buff with a penalty (e.g. +damage, -stress resist).
+confidence: high
+curator: agent

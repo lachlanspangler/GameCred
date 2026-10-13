@@ -1,0 +1,50 @@
+appid: 239350
+name: Spelunky
+developer: Mossmouth
+release_year: 2013
+subgenre: hybrid_action_roguelite
+wiki: https://spelunky.fandom.com/wiki/Spelunky_Wiki
+stats:
+  playable_characters: 16
+  run_length_min: 30
+  biome_count: 5
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 3
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 3
+  boss_gates: 1
+  short_runs: 2
+  time_pressure: 2
+  multiple_endings: 2
+  daily_challenge: 2
+  leaderboards: 2
+  speedrun_support: 2
+  physics_simulation: 1
+  environmental_hazards: 3
+  active_items: 2
+  passive_relics: 2
+  consumables: 2
+  weapons_variety: 1
+  shops: 2
+  in_run_currency: 2
+  gambling: 1
+  push_your_luck: 2
+  healing_scarcity: 3
+  optional_challenges: 2
+  random_events: 1
+  local_coop: 2
+  pvp: 1
+  hub_building: 1
+  achievement_unlocks: 1
+  unlock_characters: 1
+evidence:
+  time_pressure: The Ghost appears after 2.5 minutes on a level and one-shots the player.
+  environmental_hazards: Spikes, arrow traps, lava, and boulders are lethal and can be turned on enemies.
+  push_your_luck: Robbing shopkeepers or idols trades wealth for powerful, persistent pursuers.
+  multiple_endings: Hell route via the Ankh/Book of the Dead to fight Yama is a hidden deeper ending.
+  hub_building: Paying the Tunnel Man builds shortcuts to later worlds.
+confidence: high
+curator: agent

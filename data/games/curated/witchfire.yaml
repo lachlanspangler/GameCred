@@ -1,0 +1,31 @@
+appid: 3156770
+name: Witchfire
+developer: The Astronauts
+release_year: 2024
+subgenre: hybrid_shooter
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  extraction: 3
+  open_procgen_world: 2
+  loadout_start: 3
+  weapons_variety: 2
+  item_upgrading: 3
+  permanent_stat_upgrades: 3
+  passive_relics: 2
+  dodge_iframes: 2
+  status_effects: 2
+  elites: 2
+  healing_scarcity: 2
+  time_pressure: 1
+  optional_challenges: 2
+  early_access_dev: 3
+  content_updates: 2
+evidence:
+  extraction: Expeditions end by leaving at an exit; dying drops unbanked Witchfire which can be recovered on the next attempt.
+  item_upgrading: Weapons gain Mysteries (perks) by fulfilling kill-based mastery goals.
+  permanent_stat_upgrades: Witchfire is spent between expeditions to raise permanent character levels and stats.
+  loadout_start: Guns, spells, rings and fetishes are chosen at the hideout before each expedition.
+confidence: medium
+curator: agent

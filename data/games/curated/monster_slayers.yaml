@@ -1,0 +1,29 @@
+appid: 496620
+name: Monster Slayers
+developer: Nerdook Productions
+release_year: 2017
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 86
+mechanics:
+  hybrid_deckbuilder: 3
+  character_classes: 3
+  level_up_choices: 2
+  deckbuilding: 3
+  energy_mana: 3
+  procgen_levels: 2
+  act_structure: 2
+  boss_gates: 3
+  permadeath: 2
+  permanent_stat_upgrades: 2
+  unlock_characters: 2
+  item_rarity: 2
+  shops: 2
+  in_run_currency: 2
+  healing_scarcity: 2
+  turn_based: 3
+evidence:
+  permanent_stat_upgrades: Guild Hall upgrades bought with gold persist across runs.
+  level_up_choices: Heroes choose cards/skills on level-up during the run.
+confidence: medium
+curator: agent

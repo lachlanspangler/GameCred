@@ -1,0 +1,33 @@
+appid: 266510
+name: Hand of Fate
+developer: Defiant Development
+release_year: 2015
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 78
+mechanics:
+  hybrid_deckbuilder: 3
+  hybrid_action_roguelite: 2
+  real_time_action: 3
+  deckbuilding: 3
+  loadout_start: 3
+  random_events: 3
+  gambling: 2
+  healing_scarcity: 3
+  act_structure: 2
+  boss_gates: 3
+  permadeath: 2
+  endless_mode: 2
+  unlock_items: 3
+  achievement_unlocks: 3
+  shops: 2
+  in_run_currency: 2
+  cursed_items: 2
+  melee_combos: 2
+  double_edged_items: 1
+evidence:
+  boss_gates: Story mode is a ladder of court-card bosses (Jack, Queen, King per suit).
+  cursed_items: Curse cards impose persistent penalties until lifted.
+  endless_mode: Endless mode continues dealing harder encounter decks.
+confidence: medium
+curator: agent

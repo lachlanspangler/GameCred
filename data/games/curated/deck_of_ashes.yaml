@@ -1,0 +1,30 @@
+appid: 1016730
+name: Deck of Ashes
+developer: AYGames
+release_year: 2020
+subgenre: hybrid_deckbuilder
+stats:
+  playable_characters: 4
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  card_draw: 3
+  hp_as_currency: 2
+  healing_scarcity: 2
+  crafting: 3
+  character_classes: 3
+  unlock_characters: 2
+  boss_gates: 3
+  energy_mana: 3
+  permadeath: 2
+  shops: 2
+  in_run_currency: 2
+  turn_based: 3
+  status_effects: 2
+  random_events: 1
+evidence:
+  card_draw: Played cards go to an Ash Pile and must be restored instead of reshuffling freely.
+  hp_as_currency: Restoring cards from the Ash Pile mid-fight costs health.
+  crafting: Card recipes are bought and crafted at camp with gathered resources.
+confidence: medium
+curator: agent

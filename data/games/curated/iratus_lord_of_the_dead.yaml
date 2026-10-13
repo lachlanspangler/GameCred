@@ -1,0 +1,22 @@
+appid: 807120
+name: 'Iratus: Lord of the Dead'
+developer: Unfrozen
+release_year: 2020
+subgenre: hybrid_strategy
+critic:
+  metacritic: 78
+mechanics:
+  hybrid_strategy: 3
+  turn_based: 3
+  permadeath: 2
+  procgen_levels: 1
+  boss_gates: 3
+  crafting: 3
+  character_classes: 2
+  status_effects: 2
+  consumables: 1
+evidence:
+  crafting: Minions are crafted from body parts looted from killed heroes.
+  status_effects: Madness/stress-style damage drives enemies to breakdown as an alternate kill route.
+confidence: medium
+curator: agent

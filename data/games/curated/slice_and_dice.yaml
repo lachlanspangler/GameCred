@@ -1,0 +1,36 @@
+appid: 1775490
+name: Slice & Dice
+developer: Tann
+release_year: 2024
+subgenre: hybrid_deckbuilder
+stats:
+  run_length_min: 40
+mechanics:
+  hybrid_deckbuilder: 3
+  dice: 3
+  turn_based: 3
+  enemy_intents: 3
+  perfect_information: 2
+  reroll: 3
+  level_up_choices: 3
+  character_classes: 3
+  inventory_management: 2
+  passive_relics: 2
+  pick_one_of_n: 3
+  boss_gates: 2
+  permadeath: 2
+  modular_difficulty: 3
+  double_edged_items: 2
+  unlock_items: 2
+  unlock_characters: 2
+  block_shield: 3
+  status_effects: 2
+  act_structure: 1
+  synergies: 2
+evidence:
+  dice: Each party hero is a custom die; faces are attacks, shields, heals or mana.
+  reroll: Two rerolls per turn to lock in desired faces.
+  level_up_choices: Heroes level up into one of two higher-tier classes, changing their die.
+  modular_difficulty: Curse/blessing custom modes and many alternate rule modes.
+confidence: medium
+curator: agent

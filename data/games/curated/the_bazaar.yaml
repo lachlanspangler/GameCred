@@ -1,0 +1,34 @@
+appid: 1617400
+name: The Bazaar
+developer: Tempo
+release_year: 2025
+subgenre: hybrid_autobattler
+mechanics:
+  hybrid_autobattler: 3
+  auto_battler: 3
+  async_multiplayer: 3
+  inventory_management: 3
+  shops: 3
+  in_run_currency: 3
+  interest_economy: 2
+  character_classes: 3
+  cooldown_reduction: 3
+  item_upgrading: 3
+  item_rarity: 3
+  synergies: 3
+  build_archetypes: 3
+  status_effects: 3
+  block_shield: 2
+  crits: 2
+  pick_one_of_n: 3
+  random_events: 2
+  level_up_choices: 2
+  leaderboards: 2
+  content_updates: 2
+evidence:
+  cooldown_reduction: Items fire on cooldowns; Haste/Slow/Freeze manipulating them is a core axis.
+  interest_economy: Income stat pays gold each day; investing in income vs power is a key tradeoff.
+  item_upgrading: Buying a duplicate of a held item upgrades its tier (Bronze -> Silver -> Gold -> Diamond).
+  async_multiplayer: PvP fights each day are against other players' recorded boards.
+confidence: medium
+curator: agent

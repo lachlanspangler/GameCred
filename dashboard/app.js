@@ -1,0 +1,700 @@
+/* GameCred dashboard — vanilla JS, no dependencies. Data: window.GAMECRED (dashboard/data.js).
+ * All data-derived strings are inserted with textContent (via h()/s()), never innerHTML. */
+(() => {
+"use strict";
+const D = window.GAMECRED;
+if (!D) { document.body.textContent = "dashboard/data.js not found — run `python -m gamecred export`."; return; }
+const MECH = D.taxonomy.mechanics;
+const FAMS = D.taxonomy.families;
+const HYBRIDS = Object.keys(MECH).filter(m => MECH[m].subfamily === "hybrids");
+const GAMES = D.games;
+const BY_ID = new Map(GAMES.map(g => [g.id, g]));
+const AN = D.analysis;
+
+// ---------- DOM helpers ----------
+const SVGNS = "http://www.w3.org/2000/svg";
+function h(tag, attrs, ...kids) {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (v == null || v === false) continue;
+    if (k === "class") el.className = v;
+    else if (k === "style") el.style.cssText = v;
+    else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
+    else el.setAttribute(k, v === true ? "" : v);
+  }
+  for (const c of kids.flat()) if (c != null && c !== false) el.append(c instanceof Node ? c : document.createTextNode(String(c)));
+  return el;
+}
+function s(tag, attrs, ...kids) {
+  const el = document.createElementNS(SVGNS, tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (v == null) continue;
+    if (k.startsWith("on")) el.addEventListener(k.slice(2), v); else el.setAttribute(k, v);
+  }
+  for (const c of kids.flat()) if (c != null) el.append(c instanceof Node ? c : document.createTextNode(String(c)));
+  return el;
+}
+const $ = sel => document.querySelector(sel);
+const put = (el, ...kids) => el.replaceChildren(...kids.flat().filter(k => k != null && k !== false));
+const fmt = {
+  n: x => x == null ? "–" : x >= 1e9 ? (x / 1e9).toFixed(1) + "B" : x >= 1e6 ? (x / 1e6).toFixed(1) + "M" : x >= 1e3 ? (x / 1e3).toFixed(x >= 1e4 ? 0 : 1) + "K" : String(Math.round(x)),
+  usd: x => x == null ? "–" : "$" + fmt.n(x),
+  pct: x => x == null ? "–" : Math.round(x * 100) + "%",
+  d1: x => x == null || isNaN(x) ? "–" : (x > 0 ? "+" : "") + x.toFixed(1),
+  f1: x => x == null || isNaN(x) ? "–" : x.toFixed(1),
+  f2: x => x == null || isNaN(x) ? "–" : x.toFixed(2),
+};
+const mname = id => (MECH[id] || { name: id }).name;
+const famName = id => (FAMS.find(f => f.id === id) || { name: id }).name;
+
+// ---------- tooltip ----------
+const TT = $("#tooltip");
+function tip(ev, value, label, extra) {
+  put(TT, h("div", { class: "tv" }, value), label ? h("div", { class: "tl" }, label) : null,
+    ...(extra || []).map(e => h("div", { class: "tl" }, e)));
+  TT.classList.add("on");
+  const x = Math.min(ev.clientX + 14, innerWidth - 330), y = Math.min(ev.clientY + 14, innerHeight - 120);
+  TT.style.left = x + "px"; TT.style.top = y + "px";
+}
+const untip = () => TT.classList.remove("on");
+function hover(el, fn) {
+  el.addEventListener("pointermove", ev => { const [v, l, e] = fn(); tip(ev, v, l, e); });
+  el.addEventListener("pointerleave", untip);
+  el.setAttribute("tabindex", "0");
+  el.addEventListener("focus", () => { const r = el.getBoundingClientRect(); const [v, l, e] = fn(); tip({ clientX: r.right, clientY: r.top }, v, l, e); });
+  el.addEventListener("blur", untip);
+}
+
+// ---------- state & slicing ----------
+const state = { sub: "", year: 0, rev: 0, conf: 0, out: "gsi", w: { q: 40, c: 45, k: 15 }, view: "overview" };
+const OUT_LABEL = { gsi: "Success Index", q: "Quality pct", c: "Commercial pct", k: "Critic pct" };
+
+function outcome(g) {
+  if (state.out !== "gsi") return g[state.out];
+  const parts = [[g.q, state.w.q], [g.c, state.w.c], [g.k, state.w.k]].filter(([v, w]) => v != null && w > 0);
+  const ws = parts.reduce((a, [, w]) => a + w, 0);
+  return ws ? parts.reduce((a, [v, w]) => a + v * w, 0) / ws : null;
+}
+function mechConf(g, mid) { const m = g.m[mid]; return m ? m[1] / 10 : 0; }
+function has(g, mid) { const m = g.m[mid]; return !!m && m[1] / 10 >= state.conf - 1e-9; }
+function inten(g, mid) { return has(g, mid) ? g.m[mid][0] : 0; }
+
+function slice() {
+  return GAMES.filter(g => (!state.sub || g.sg === state.sub) && (!state.year || (g.y || 0) >= state.year)
+    && (g.rv || 0) >= state.rev && (state.conf < 1 || g.src === "curated"))
+    .map(g => ({ g, y: outcome(g) })).filter(r => r.y != null);
+}
+
+function quantile(sorted, q) {
+  if (!sorted.length) return NaN;
+  const p = (sorted.length - 1) * q, lo = Math.floor(p), hi = Math.ceil(p);
+  return sorted[lo] + (sorted[hi] - sorted[lo]) * (p - lo);
+}
+const mean = a => a.reduce((x, y) => x + y, 0) / (a.length || 1);
+const variance = a => { const m = mean(a); return a.reduce((x, y) => x + (y - m) ** 2, 0) / Math.max(a.length - 1, 1); };
+
+function ridgeScope() {
+  if (state.sub && AN.subgenres[state.sub]) return AN.subgenres[state.sub];
+  if (state.conf >= 1) return AN.scopes.curated;
+  if (state.conf > 0) return AN.scopes.high_conf;
+  if (state.out === "q") return AN.scopes["all:quality_pct"];
+  if (state.out === "c") return AN.scopes["all:commercial_pct"];
+  return AN.scopes.all;
+}
+
+/** Live with/without analysis on the current slice (Welch CI). Ridge partial effects come from the nearest precomputed scope. */
+let _cache = null;
+function impact() {
+  const key = JSON.stringify([state.sub, state.year, state.rev, state.conf, state.out, state.w]);
+  if (_cache && _cache.key === key) return _cache.val;
+  const rows = slice();
+  const ys = rows.map(r => r.y).sort((a, b) => a - b);
+  const hitT = quantile(ys, 0.75), flopT = quantile(ys, 0.25);
+  const scope = ridgeScope();
+  const rc = new Map(((scope && scope.ridge && scope.ridge.coefs) || []).map(c => [c.feature, c]));
+  const out = [];
+  for (const mid of Object.keys(MECH)) {
+    const w = [], wo = []; let hw = 0, fw = 0, hwo = 0, fwo = 0, intenSum = 0;
+    for (const r of rows) {
+      if (has(r.g, mid)) { w.push(r.y); intenSum += r.g.m[mid][0]; if (r.y >= hitT) hw++; if (r.y <= flopT) fw++; }
+      else { wo.push(r.y); if (r.y >= hitT) hwo++; if (r.y <= flopT) fwo++; }
+    }
+    const n1 = w.length, n0 = wo.length;
+    const row = { mid, n1, n0, prev: rows.length ? n1 / rows.length : 0 };
+    const c = rc.get(mid);
+    row.ridge = c ? c.coef : null; row.rlo = c ? c.ci_lo : null; row.rhi = c ? c.ci_hi : null;
+    if (n1 >= 3 && n0 >= 3) {
+      const m1 = mean(w), m0 = mean(wo), se = Math.sqrt(variance(w) / n1 + variance(wo) / n0) || 1e-9;
+      Object.assign(row, { m1, m0, diff: m1 - m0, lo: m1 - m0 - 1.96 * se, hi: m1 - m0 + 1.96 * se,
+        hit1: hw / n1, hit0: hwo / n0, flop1: fw / n1, flop0: fwo / n0, mi: intenSum / n1 });
+      const nh = hw + hwo;
+      row.prevHits = nh ? hw / nh : null;
+      row.lift = row.hit0 > 0 ? row.hit1 / row.hit0 : null;
+      row.flopR = row.flop0 > 0 ? row.flop1 / row.flop0 : null;
+    }
+    row.verdict = verdict(row);
+    out.push(row);
+  }
+  const val = { rows: out, n: rows.length, hitT, flopT, slice: rows, scope };
+  _cache = { key, val };
+  return val;
+}
+function verdict(r) {
+  if (r.diff == null || r.n1 < 10 || r.n0 < 10) return "insufficient data";
+  const posU = r.lo > 0, negU = r.hi < 0;
+  const posR = r.rlo != null && r.rlo > 0, negR = r.rhi != null && r.rhi < 0;
+  const riskRed = r.flopR != null && r.flopR <= 0.7;
+  if ((negU && (r.ridge == null || r.ridge < 0)) || negR) return "red flag";
+  if ((r.prevHits || 0) >= 0.5 && r.diff >= 0 && riskRed) return "table stakes";
+  if (r.prev <= 0.35 && (posU || posR)) return "differentiator";
+  if (posU || posR) return "positive";
+  if (riskRed) return "risk reducer";
+  return "neutral";
+}
+const VERDICT_ORDER = ["table stakes", "differentiator", "positive", "risk reducer", "neutral", "red flag", "insufficient data"];
+function chip(v, small) { return h("span", { class: `chip ${small ? "small " : ""}v-${v.replace(/ /g, "-")}` }, h("span", { class: "dot" }), v); }
+
+// ---------- color: diverging via color-mix (theme-aware) ----------
+function divFill(x, max = 12) {
+  if (x == null || isNaN(x)) return "var(--surface-2)";
+  const t = Math.max(-1, Math.min(1, x / max));
+  const pct = Math.round(Math.abs(t) * 100);
+  return `color-mix(in oklab, ${t >= 0 ? "var(--pos)" : "var(--neg)"} ${pct}%, var(--mid))`;
+}
+function divText(x, max = 12) { return x != null && Math.abs(x / max) > 0.55 ? "darkfill" : "lightfill"; }
+
+// ---------- SVG chart primitives ----------
+function colPath(x, y, w, hgt, r = 4) { // column with rounded top, square base
+  if (hgt <= 0) return "";
+  r = Math.min(r, w / 2, hgt);
+  return `M${x},${y + hgt}V${y + r}Q${x},${y} ${x + r},${y}H${x + w - r}Q${x + w},${y} ${x + w},${y + r}V${y + hgt}Z`;
+}
+function hbarPath(x0, x1, y, hgt, r = 4) { // horizontal bar from baseline x0 to data end x1 (rounded at x1)
+  const w = Math.abs(x1 - x0); if (w < 0.5) return "";
+  r = Math.min(r, w, hgt / 2);
+  if (x1 >= x0) return `M${x0},${y}H${x1 - r}Q${x1},${y} ${x1},${y + r}V${y + hgt - r}Q${x1},${y + hgt} ${x1 - r},${y + hgt}H${x0}Z`;
+  return `M${x0},${y}H${x1 + r}Q${x1},${y} ${x1},${y + r}V${y + hgt - r}Q${x1},${y + hgt} ${x1 + r},${y + hgt}H${x0}Z`;
+}
+function niceTicks(lo, hi, n = 5) {
+  const span = hi - lo || 1, step0 = span / n, mag = 10 ** Math.floor(Math.log10(step0));
+  const step = [1, 2, 2.5, 5, 10].map(m => m * mag).find(s => span / s <= n) || mag * 10;
+  const out = []; for (let v = Math.ceil(lo / step) * step; v <= hi + 1e-9; v += step) out.push(+v.toFixed(10));
+  return out;
+}
+
+function histogram(values, { width = 560, height = 200, bins = 20, lo = 0, hi = 100, color = "var(--series-1)", label = "games", xlabel = "" } = {}) {
+  const pad = { l: 36, r: 10, t: 10, b: 30 }, W = width - pad.l - pad.r, H = height - pad.t - pad.b;
+  const counts = new Array(bins).fill(0), bw = (hi - lo) / bins;
+  for (const v of values) counts[Math.min(bins - 1, Math.max(0, Math.floor((v - lo) / bw)))]++;
+  const ymax = Math.max(1, ...counts), ticks = niceTicks(0, ymax, 4);
+  const svg = s("svg", { class: "svgchart", viewBox: `0 0 ${width} ${height}`, role: "img", "aria-label": `Histogram of ${xlabel}` });
+  for (const t of ticks) {
+    const y = pad.t + H - (t / ticks[ticks.length - 1]) * H;
+    svg.append(s("line", { class: "gridline", x1: pad.l, x2: pad.l + W, y1: y, y2: y }), s("text", { x: pad.l - 6, y: y + 4, "text-anchor": "end" }, fmt.n(t)));
+  }
+  const top = ticks[ticks.length - 1], cw = W / bins;
+  counts.forEach((c, i) => {
+    const x = pad.l + i * cw + 1, hh = (c / top) * H, w = Math.max(1, cw - 2);
+    const g = s("g", { class: "hov" });
+    g.append(s("path", { class: "mark", d: colPath(x, pad.t + H - hh, w, hh), fill: color }));
+    const hit = s("rect", { class: "hit", x: x - 1, y: pad.t, width: cw, height: H });
+    hover(hit, () => [`${c} ${label}`, `${xlabel} ${Math.round(lo + i * bw)}–${Math.round(lo + (i + 1) * bw)}`]);
+    g.append(hit); svg.append(g);
+  });
+  svg.append(s("line", { class: "axisline", x1: pad.l, x2: pad.l + W, y1: pad.t + H, y2: pad.t + H }));
+  for (const t of niceTicks(lo, hi, 5)) svg.append(s("text", { x: pad.l + ((t - lo) / (hi - lo)) * W, y: height - 10, "text-anchor": "middle" }, t));
+  return svg;
+}
+
+/** Horizontal bars: items [{label, value, sub, onclick, color}] */
+function hbars(items, { width = 560, rowH = 26, max = null, fmtv = fmt.f1, color = "var(--series-1)", labelW = 190, diverging = false } = {}) {
+  const pad = { l: labelW, r: 56, t: 4, b: 4 }, W = width - pad.l - pad.r, height = pad.t + pad.b + items.length * rowH;
+  const vals = items.flatMap(i => [i.value, i.lo, i.hi]).filter(v => v != null), mx = max ?? Math.max(1e-9, ...vals.map(Math.abs));
+  const svg = s("svg", { class: "svgchart", viewBox: `0 0 ${width} ${height}` });
+  const x0 = diverging ? pad.l + W / 2 : pad.l, scale = diverging ? (W / 2) / mx : W / mx;
+  if (diverging) svg.append(s("line", { class: "axisline", x1: x0, x2: x0, y1: 0, y2: height }));
+  items.forEach((it, i) => {
+    const y = pad.t + i * rowH, bh = Math.min(16, rowH - 8), by = y + (rowH - bh) / 2;
+    const g = s("g", { class: "hov", style: it.onclick ? "cursor:pointer" : "" });
+    g.append(s("text", { class: "lbl", x: pad.l - 8, y: y + rowH / 2 + 4, "text-anchor": "end" }, it.label.length > 28 ? it.label.slice(0, 27) + "…" : it.label));
+    const x1 = x0 + it.value * scale;
+    g.append(s("path", { class: "mark", d: hbarPath(x0, x1, by, bh), fill: it.color || (diverging ? (it.value >= 0 ? "var(--pos)" : "var(--neg)") : color) }));
+    if (it.lo != null) {
+      const a = x0 + it.lo * scale, b = x0 + it.hi * scale;
+      g.append(s("line", { x1: a, x2: b, y1: by + bh / 2, y2: by + bh / 2, stroke: "var(--text-secondary)", "stroke-width": 1.5 }));
+    }
+    g.append(s("text", { class: "val", x: diverging ? (it.value >= 0 ? Math.max(x1, it.hi != null ? x0 + it.hi * scale : x1) + 6 : Math.min(x1, it.lo != null ? x0 + it.lo * scale : x1) - 6) : x1 + 6,
+      y: y + rowH / 2 + 4, "text-anchor": diverging && it.value < 0 ? "end" : "start" }, fmtv(it.value)));
+    const hit = s("rect", { class: "hit", x: 0, y, width, height: rowH });
+    hover(hit, () => [fmtv(it.value), it.label, it.sub ? [it.sub] : []]);
+    if (it.onclick) hit.addEventListener("click", it.onclick);
+    g.append(hit); svg.append(g);
+  });
+  return svg;
+}
+
+/** Mechanic scatter: x = prevalence, y = effect. */
+function effectScatter(rows, { width = 720, height = 380, onclick } = {}) {
+  const pad = { l: 44, r: 16, t: 14, b: 36 }, W = width - pad.l - pad.r, H = height - pad.t - pad.b;
+  const pts = rows.filter(r => r.diff != null && r.n1 >= 10 && r.n0 >= 10);
+  const ymax = Math.max(5, ...pts.map(r => Math.abs(r.diff))) * 1.08;
+  const X = p => pad.l + p * W, Y = v => pad.t + H / 2 - (v / ymax) * (H / 2);
+  const svg = s("svg", { class: "svgchart", viewBox: `0 0 ${width} ${height}`, role: "img", "aria-label": "Mechanic prevalence vs outcome difference" });
+  for (const t of niceTicks(-ymax, ymax, 6)) svg.append(s("line", { class: "gridline", x1: pad.l, x2: pad.l + W, y1: Y(t), y2: Y(t) }), s("text", { x: pad.l - 6, y: Y(t) + 4, "text-anchor": "end" }, fmt.d1(t)));
+  svg.append(s("line", { class: "axisline", x1: pad.l, x2: pad.l + W, y1: Y(0), y2: Y(0) }));
+  for (const t of [0, .2, .4, .6, .8, 1]) svg.append(s("text", { x: X(t), y: height - 14, "text-anchor": "middle" }, Math.round(t * 100) + "%"));
+  svg.append(s("text", { x: pad.l + W, y: height - 2, "text-anchor": "end" }, "share of games with mechanic →"));
+  svg.append(s("text", { x: pad.l + 4, y: pad.t + 10 }, `↑ higher ${OUT_LABEL[state.out]} with mechanic`));
+  const labeled = new Set([...pts].sort((a, b) => Math.abs(b.diff) - Math.abs(a.diff)).slice(0, 8).map(r => r.mid));
+  for (const r of pts) {
+    const cx = X(r.prev), cy = Y(r.diff);
+    const g = s("g", { class: "hov", style: "cursor:pointer" });
+    g.append(s("circle", { class: "mark", cx, cy, r: 5, fill: divFill(r.diff, ymax * 0.7), stroke: "var(--surface-1)", "stroke-width": 2 }));
+    if (labeled.has(r.mid)) g.append(s("text", { class: "lbl", x: cx + 8, y: cy + 4 }, mname(r.mid)));
+    const hit = s("circle", { class: "hit", cx, cy, r: 12 });
+    hover(hit, () => [fmt.d1(r.diff) + " pts", mname(r.mid), [`${fmt.pct(r.prev)} of games · n=${r.n1}`, r.verdict]]);
+    hit.addEventListener("click", () => onclick && onclick(r.mid));
+    g.append(hit); svg.append(g);
+  }
+  return svg;
+}
+
+function lineChart(points, { width = 560, height = 200, xlabel = "", ylabel = "" } = {}) {
+  const pad = { l: 40, r: 16, t: 12, b: 32 }, W = width - pad.l - pad.r, H = height - pad.t - pad.b;
+  const xs = points.map(p => p.x), ys = points.map(p => p.y);
+  const xlo = Math.min(...xs), xhi = Math.max(...xs), ylo = Math.min(...ys) - 3, yhi = Math.max(...ys) + 3;
+  const X = x => pad.l + ((x - xlo) / (xhi - xlo || 1)) * W, Y = y => pad.t + H - ((y - ylo) / (yhi - ylo || 1)) * H;
+  const svg = s("svg", { class: "svgchart", viewBox: `0 0 ${width} ${height}` });
+  for (const t of niceTicks(ylo, yhi, 4)) svg.append(s("line", { class: "gridline", x1: pad.l, x2: pad.l + W, y1: Y(t), y2: Y(t) }), s("text", { x: pad.l - 6, y: Y(t) + 4, "text-anchor": "end" }, Math.round(t)));
+  svg.append(s("path", { d: points.map((p, i) => `${i ? "L" : "M"}${X(p.x)},${Y(p.y)}`).join(""), fill: "none", stroke: "var(--series-1)", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+  points.forEach(p => {
+    svg.append(s("circle", { cx: X(p.x), cy: Y(p.y), r: 4, fill: "var(--series-1)", stroke: "var(--surface-1)", "stroke-width": 2 }));
+    svg.append(s("text", { x: X(p.x), y: height - 12, "text-anchor": "middle" }, p.xl));
+    const hit = s("rect", { class: "hit", x: X(p.x) - 18, y: pad.t, width: 36, height: H });
+    hover(hit, () => [fmt.f1(p.y), `${xlabel} ${p.xl}`, [`n=${p.n}`]]); svg.append(hit);
+  });
+  svg.append(s("text", { x: pad.l + W, y: height - 0, "text-anchor": "end" }, xlabel));
+  return svg;
+}
+
+/** with vs without box strip */
+function boxCompare(a, b, { width = 600, height = 110, labels = ["With", "Without"] } = {}) {
+  const pad = { l: 70, r: 16, t: 8, b: 26 }, W = width - pad.l - pad.r;
+  const X = v => pad.l + (v / 100) * W;
+  const svg = s("svg", { class: "svgchart", viewBox: `0 0 ${width} ${height}` });
+  for (const t of [0, 25, 50, 75, 100]) svg.append(s("line", { class: "gridline", x1: X(t), x2: X(t), y1: pad.t, y2: height - pad.b }), s("text", { x: X(t), y: height - 8, "text-anchor": "middle" }, t));
+  [a, b].forEach((arr, i) => {
+    if (!arr.length) return;
+    const sr = [...arr].sort((x, y) => x - y), q = [0.1, 0.25, 0.5, 0.75, 0.9].map(p => quantile(sr, p));
+    const y = pad.t + 10 + i * 36, col = i === 0 ? "var(--series-1)" : "var(--axis)";
+    svg.append(s("text", { class: "lbl", x: pad.l - 8, y: y + 12, "text-anchor": "end" }, labels[i]));
+    svg.append(s("line", { x1: X(q[0]), x2: X(q[4]), y1: y + 8, y2: y + 8, stroke: col, "stroke-width": 2 }));
+    svg.append(s("rect", { x: X(q[1]), y, width: Math.max(2, X(q[3]) - X(q[1])), height: 16, rx: 4, fill: col, opacity: 0.9 }));
+    svg.append(s("line", { x1: X(q[2]), x2: X(q[2]), y1: y - 2, y2: y + 18, stroke: "var(--text-primary)", "stroke-width": 2 }));
+    const hit = s("rect", { class: "hit", x: pad.l, y: y - 4, width: W, height: 24 });
+    hover(hit, () => [`median ${fmt.f1(q[2])}`, `${labels[i]} (n=${arr.length})`, [`IQR ${fmt.f1(q[1])}–${fmt.f1(q[3])}`, `10–90%: ${fmt.f1(q[0])}–${fmt.f1(q[4])}`]]);
+    svg.append(hit);
+  });
+  return svg;
+}
+
+// ---------- sortable table ----------
+function table(cols, rows, { onRow, initialSort, limit = 500 } = {}) {
+  let sortKey = initialSort ? initialSort[0] : null, dir = initialSort ? initialSort[1] : -1;
+  const wrap = h("div", { class: "table-wrap" });
+  function render() {
+    const sorted = sortKey ? [...rows].sort((a, b) => {
+      const c = cols.find(c => c.key === sortKey), va = c.sort ? c.sort(a) : a[sortKey], vb = c.sort ? c.sort(b) : b[sortKey];
+      if (va == null) return 1; if (vb == null) return -1;
+      return (va > vb ? 1 : va < vb ? -1 : 0) * dir;
+    }) : rows;
+    const thead = h("thead", {}, h("tr", {}, cols.map(c => h("th", { class: c.num ? "num" : "", title: c.title || "",
+      onclick: () => { dir = sortKey === c.key ? -dir : -1; sortKey = c.key; render(); } }, c.label + (sortKey === c.key ? (dir > 0 ? " ▲" : " ▼") : "")))));
+    const tbody = h("tbody", {}, sorted.slice(0, limit).map(r => h("tr", { class: onRow ? "click" : "", onclick: onRow ? () => onRow(r) : null },
+      cols.map(c => h("td", { class: c.num ? "num" : "" }, c.render ? c.render(r) : (r[c.key] ?? "–"))))));
+    put(wrap, h("table", {}, thead, tbody), ...(sorted.length > limit ? [h("div", { class: "muted", style: "padding:8px" }, `showing ${limit} of ${sorted.length}`)] : []));
+  }
+  render();
+  return wrap;
+}
+function effectCell(r, max = 20) {
+  const W = 150, Hh = 18, x0 = W / 2, sc = (W / 2 - 4) / max;
+  const svg = s("svg", { width: W, height: Hh, class: "svgchart" });
+  svg.append(s("line", { class: "axisline", x1: x0, x2: x0, y1: 0, y2: Hh }));
+  if (r.diff != null) {
+    const cl = v => Math.max(-max, Math.min(max, v));
+    svg.append(s("path", { d: hbarPath(x0, x0 + cl(r.diff) * sc, 5, 8), fill: r.diff >= 0 ? "var(--pos)" : "var(--neg)" }));
+    svg.append(s("line", { x1: x0 + cl(r.lo) * sc, x2: x0 + cl(r.hi) * sc, y1: 9, y2: 9, stroke: "var(--text-secondary)", "stroke-width": 1.5 }));
+  }
+  return h("span", { class: "row", style: "gap:6px;justify-content:flex-end" }, svg, h("span", { style: "width:42px;text-align:right" }, fmt.d1(r.diff)));
+}
+
+// ---------- drawer ----------
+const DRAWER = $("#drawer");
+function openDrawer(...content) { put($("#drawer-body"), ...content); DRAWER.classList.add("open"); DRAWER.setAttribute("aria-hidden", "false"); DRAWER.scrollTop = 0; }
+$("#drawer-close").addEventListener("click", () => { DRAWER.classList.remove("open"); DRAWER.setAttribute("aria-hidden", "true"); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") $("#drawer-close").click(); });
+
+function openMechanic(mid) {
+  const im = impact(), r = im.rows.find(x => x.mid === mid), m = MECH[mid];
+  const withG = im.slice.filter(x => has(x.g, mid)).sort((a, b) => b.y - a.y);
+  const without = im.slice.filter(x => !has(x.g, mid)).map(x => x.y);
+  const subRows = HYBRIDS.map(hy => {
+    const sl = im.slice.filter(x => x.g.sg === hy), w = sl.filter(x => has(x.g, mid)).map(x => x.y), wo = sl.filter(x => !has(x.g, mid)).map(x => x.y);
+    return { hy, n: sl.length, prev: sl.length ? w.length / sl.length : 0, diff: w.length >= 5 && wo.length >= 5 ? mean(w) - mean(wo) : null, nw: w.length };
+  }).filter(x => x.n >= 15);
+  openDrawer(
+    h("div", { class: "muted" }, `${famName(m.family)} › ${(FAMS.find(f => f.id === m.family).subfamilies.find(sf => sf.id === m.subfamily) || {}).name}`),
+    h("h2", {}, m.name), h("p", { class: "sub" }, m.desc),
+    h("div", { class: "grid g4" },
+      tile("Prevalence", fmt.pct(r.prev), `${r.n1} of ${r.n1 + r.n0} games`),
+      tile("Δ " + OUT_LABEL[state.out], fmt.d1(r.diff), r.lo != null ? `95% CI ${fmt.d1(r.lo)} to ${fmt.d1(r.hi)}` : ""),
+      tile("Partial effect (ridge)", fmt.d1(r.ridge), r.rlo != null ? `CI ${fmt.d1(r.rlo)} to ${fmt.d1(r.rhi)}` : "not in model"),
+      tile("Verdict", chip(r.verdict), `hit lift ${fmt.f2(r.lift)} · flop ratio ${fmt.f2(r.flopR)}`)),
+    h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, `${OUT_LABEL[state.out]}: with vs without`), boxCompare(withG.map(x => x.y), without)),
+    subRows.length ? h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, "By subgenre (Δ with − without)"),
+      hbars(subRows.filter(x => x.diff != null).map(x => ({ label: mname(x.hy), value: x.diff, sub: `${fmt.pct(x.prev)} prevalence · n=${x.nw}/${x.n}` })), { diverging: true, fmtv: fmt.d1, width: 640 })) : null,
+    h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, `Top games with ${m.name}`),
+      table([{ key: "n", label: "Game", render: x => x.g.n }, { key: "i", label: "Intensity", render: x => intenDots(x.g.m[mid][0]) },
+        { key: "src", label: "Source", render: x => x.g.m[mid][1] >= 10 ? "curated" : "auto" },
+        { key: "y", label: OUT_LABEL[state.out], num: true, render: x => fmt.f1(x.y) }], withG.slice(0, 40).map(x => ({ ...x, n: x.g.n })),
+        { onRow: x => openGame(x.g.id) })));
+}
+function intenDots(i) { return h("span", { class: "inten", title: ["", "present", "significant", "core pillar"][i] }, [1, 2, 3].map(k => h("b", { class: k <= i ? "on" : "" }))); }
+function tile(label, value, note) { return h("div", { class: "card tight" }, h("div", { class: "tile-label" }, label), h("div", { class: "tile-value" }, value), note ? h("div", { class: "tile-note" }, note) : null); }
+
+function similar(vec, { k = 12, exclude = null, pool = GAMES } = {}) {
+  // weighted Jaccard on intensities (hybrid tags count double: genre matters for comps)
+  const res = [];
+  for (const g of pool) {
+    if (g.id === exclude) continue;
+    let mn = 0, mx = 0;
+    const keys = new Set([...Object.keys(vec), ...Object.keys(g.m)]);
+    for (const k2 of keys) {
+      const a = vec[k2] || 0, b = g.m[k2] ? g.m[k2][0] * (g.m[k2][1] >= 7 ? 1 : 0.6) : 0, wgt = MECH[k2] && MECH[k2].subfamily === "hybrids" ? 2 : 1;
+      mn += Math.min(a, b) * wgt; mx += Math.max(a, b) * wgt;
+    }
+    if (mx > 0) res.push({ g, sim: mn / mx });
+  }
+  return res.sort((a, b) => b.sim - a.sim).slice(0, k);
+}
+
+function openGame(id) {
+  const g = BY_ID.get(id); if (!g) return;
+  const im = impact(), eff = new Map(im.rows.map(r => [r.mid, r]));
+  const vec = Object.fromEntries(Object.entries(g.m).map(([k, v]) => [k, v[0]]));
+  const comps = similar(vec, { exclude: id });
+  const fams = FAMS.map(f => {
+    const ms = f.subfamilies.flatMap(sf => sf.mechanics).filter(mid => g.m[mid]);
+    if (!ms.length) return null;
+    return h("div", { class: "fam-block" }, h("div", { class: "fam-title" }, f.name),
+      ms.sort((a, b) => g.m[b][0] - g.m[a][0]).map(mid => {
+        const e = eff.get(mid), auto = g.m[mid][1] < 10;
+        const pill = h("span", { class: "mech-pill" + (auto ? " src-auto" : ""), onclick: () => openMechanic(mid) }, intenDots(g.m[mid][0]), mname(mid),
+          e && e.diff != null ? h("span", { class: "muted" }, fmt.d1(e.diff)) : null);
+        hover(pill, () => [mname(mid), (g.ev && g.ev[mid]) || MECH[mid].desc, [auto ? `auto-tagged (confidence ${g.m[mid][1] / 10})` : "curated", e ? `slice Δ ${fmt.d1(e.diff)} · ${e.verdict}` : ""]]);
+        return pill;
+      }));
+  }).filter(Boolean);
+  openDrawer(
+    h("div", { class: "game-head" }, g.img ? h("img", { src: g.img, alt: "" }) : null,
+      h("div", {}, h("h2", {}, g.n), h("div", { class: "muted" }, [g.dev, g.y, mname(g.sg)].filter(Boolean).join(" · ")),
+        h("div", { class: "row", style: "margin-top:6px" }, h("a", { href: `https://store.steampowered.com/app/${g.id}`, target: "_blank", rel: "noopener" }, "Steam"),
+          h("a", { href: `https://steamdb.info/app/${g.id}/`, target: "_blank", rel: "noopener" }, "SteamDB"),
+          h("a", { href: `https://gamalytic.com/game/${g.id}`, target: "_blank", rel: "noopener" }, "Gamalytic"),
+          g.wiki ? h("a", { href: g.wiki, target: "_blank", rel: "noopener" }, "Wiki") : null,
+          h("span", { class: "chip small" }, g.src === "curated" ? "curated profile" : "auto-tagged")))),
+    h("div", { class: "grid g4" },
+      tile("Success Index", fmt.f1(outcome(g)), `quality ${fmt.f1(g.q)} · commercial ${fmt.f1(g.c)} · critic ${fmt.f1(g.k)}`),
+      tile("Steam reviews", fmt.pct(g.pr), `${fmt.n(g.rv)} reviews · ${g.rd || ""}`),
+      tile("Est. gross revenue", fmt.usd(g.rev), g.rev ? `band ${fmt.usd(g.revlo)}–${fmt.usd(g.revhi)}` : (g.f ? "free-to-play" : "")),
+      tile("Critic", g.mc ? `MC ${g.mc}` : g.ign ? `IGN ${g.ign}` : "–", [g.mc ? `Metacritic ${g.mc}` : "", g.ign ? `IGN ${g.ign}` : ""].filter(Boolean).join(" · "))),
+    Object.keys(g.st || {}).length ? h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, "Design stats"),
+      h("div", { class: "row" }, Object.entries(g.st).map(([k, v]) => h("span", { class: "chip" }, `${k.replace(/_/g, " ")}: ${v}`)))) : null,
+    h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, `Mechanic fingerprint (${Object.keys(g.m).length})`),
+      h("div", { class: "muted", style: "margin-bottom:6px" }, "● ● ● = present / significant / core pillar. Number = slice Δ for that mechanic. Italic = auto-tagged."), fams),
+    h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, "Closest design comps"),
+      table([{ key: "n", label: "Game", render: x => x.g.n }, { key: "sim", label: "Similarity", num: true, render: x => fmt.pct(x.sim) },
+        { key: "gsi", label: OUT_LABEL[state.out], num: true, render: x => fmt.f1(outcome(x.g)) }, { key: "rv", label: "Reviews", num: true, render: x => fmt.n(x.g.rv) }],
+        comps.map(x => ({ ...x, n: x.g.n })), { onRow: x => openGame(x.g.id) })),
+    h("div", { class: "row", style: "margin-top:14px" }, h("button", { class: "btn", onclick: () => { loadTemplate(g); switchView("lab"); $("#drawer-close").click(); } }, "Open in Design Lab")));
+}
+
+// ---------- views ----------
+function viewOverview() {
+  const im = impact(), ys = im.slice.map(r => r.y);
+  const el = $("#view-overview");
+  const curated = im.slice.filter(r => r.g.src === "curated").length;
+  const rev = im.slice.reduce((a, r) => a + (r.g.rev || 0), 0);
+  const ok = im.rows.filter(r => r.verdict !== "insufficient data");
+  const top = [...ok.filter(r => !r.mid.startsWith("hybrid_"))].sort((a, b) => (b.ridge ?? b.diff) - (a.ridge ?? a.diff));
+  const subs = HYBRIDS.map(hy => { const v = im.slice.filter(r => r.g.sg === hy).map(r => r.y).sort((a, b) => a - b); return { hy, n: v.length, med: quantile(v, 0.5) }; }).filter(x => x.n > 0).sort((a, b) => b.n - a.n);
+  const comp = (im.scope && im.scope.complexity) || [];
+  const counts = {}; for (const r of ok) counts[r.verdict] = (counts[r.verdict] || 0) + 1;
+  put(el, 
+    h("h2", {}, "The roguelike design landscape"),
+    h("p", { class: "sub" }, `Every game is broken into ${Object.keys(MECH).length} mechanics across ${FAMS.length} families, then linked to player reception, estimated revenue and critic scores. Filters above scope every view.`),
+    h("div", { class: "grid g4" },
+      h("div", { class: "card" }, h("div", { class: "tile-label" }, "Games in slice"), h("div", { class: "hero" }, h("span", { class: "hero-value" }, fmt.n(im.n))), h("div", { class: "tile-note" }, `${curated} expert-curated · ${im.n - curated} auto-tagged`)),
+      tile("Estimated gross revenue covered", fmt.usd(rev), "Boxleiter review-multiplier method"),
+      tile("Hit threshold (top 25%)", fmt.f1(im.hitT), `${OUT_LABEL[state.out]} ≥ this = hit · flop ≤ ${fmt.f1(im.flopT)}`),
+      tile("Mechanic verdicts", `${counts["table stakes"] || 0} · ${counts["differentiator"] || 0} · ${counts["red flag"] || 0}`, "table stakes · differentiators · red flags")),
+    h("div", { class: "grid g21", style: "margin-top:16px" },
+      h("div", { class: "card" }, h("h3", {}, "Which mechanics move the needle"),
+        h("div", { class: "muted", style: "margin-bottom:8px" }, `Partial effect on ${OUT_LABEL[state.out]} (points) holding other mechanics, subgenre, price & year constant. Bar = estimate, whisker = 95% bootstrap CI. Click for detail.`),
+        hbars([...top.slice(0, 12), ...top.slice(-6)].map(r => ({ label: mname(r.mid), value: r.ridge ?? r.diff, lo: r.ridge != null ? r.rlo : r.lo, hi: r.ridge != null ? r.rhi : r.hi, sub: `${r.verdict} · prevalence ${fmt.pct(r.prev)}`, onclick: () => openMechanic(r.mid) })),
+          { diverging: true, fmtv: fmt.d1, width: 760, labelW: 210 })),
+      h("div", { class: "grid", style: "align-content:start" },
+        h("div", { class: "card" }, h("h3", {}, `${OUT_LABEL[state.out]} distribution`), histogram(ys, { xlabel: OUT_LABEL[state.out], width: 460, height: 190 })),
+        comp.length > 2 ? h("div", { class: "card" }, h("h3", {}, "Complexity curve"), h("div", { class: "muted" }, "Mean Success Index by number of mechanics tagged (precomputed scope)"),
+          lineChart(comp.map(c => ({ x: c.lo, xl: `${c.lo}–${c.hi === 200 ? "+" : c.hi - 1}`, y: c.mean, n: c.n })), { width: 460, height: 190, xlabel: "# mechanics" })) : null)),
+    h("div", { class: "grid g2", style: "margin-top:16px" },
+      h("div", { class: "card" }, h("h3", {}, "Games per subgenre"), hbars(subs.map(x => ({ label: mname(x.hy), value: x.n, onclick: () => { $("#f-sub").value = x.hy; $("#f-sub").dispatchEvent(new Event("change")); } })), { fmtv: fmt.n, width: 600 })),
+      h("div", { class: "card" }, h("h3", {}, `Median ${OUT_LABEL[state.out]} per subgenre`), hbars(subs.filter(x => x.n >= 5).map(x => ({ label: mname(x.hy), value: x.med, sub: `n=${x.n}` })), { fmtv: fmt.f1, width: 600, max: 100 }))));
+}
+
+function viewMechanics() {
+  const im = impact(), el = $("#view-mechanics");
+  let fam = el.dataset.fam || "", q = el.dataset.q || "";
+  const rows = im.rows.filter(r => (!fam || MECH[r.mid].family === fam) && (!q || mname(r.mid).toLowerCase().includes(q.toLowerCase())));
+  const famSel = h("select", { onchange: e => { el.dataset.fam = e.target.value; viewMechanics(); } }, h("option", { value: "" }, "All families"), FAMS.map(f => h("option", { value: f.id, selected: f.id === fam }, f.name)));
+  const search = h("input", { class: "search", placeholder: "Search mechanics…", value: q, oninput: e => { el.dataset.q = e.target.value; clearTimeout(el._t); el._t = setTimeout(() => { viewMechanics(); const s2 = el.querySelector(".search"); s2.focus(); s2.setSelectionRange(s2.value.length, s2.value.length); }, 200); } });
+  put(el, 
+    h("h2", {}, "Mechanic impact table"),
+    h("p", { class: "sub" }, `Live with/without comparison on the current slice (n=${im.n}). Δ = mean ${OUT_LABEL[state.out]} of games with the mechanic minus games without (95% Welch CI). Ridge = partial effect controlling for every other mechanic + covariates (precomputed${state.sub && AN.subgenres[state.sub] ? " for this subgenre" : ""}). Hit lift = P(top-25% | has) ÷ P(top-25% | lacks); flop ratio < 1 means lower downside risk.`),
+    h("div", { class: "card" }, h("div", { class: "row", style: "margin-bottom:10px" }, famSel, search, h("span", { class: "legend" }, VERDICT_ORDER.map(v => chip(v, true)))),
+      table([
+        { key: "name", label: "Mechanic", render: r => h("span", {}, mname(r.mid), h("div", { class: "muted", style: "font-size:11px" }, famName(MECH[r.mid].family))), sort: r => mname(r.mid) },
+        { key: "prev", label: "Prevalence", num: true, render: r => fmt.pct(r.prev) },
+        { key: "m1", label: "Mean with", num: true, render: r => fmt.f1(r.m1) },
+        { key: "diff", label: "Δ vs without (95% CI)", num: true, render: r => effectCell(r), title: "Univariate difference" },
+        { key: "ridge", label: "Ridge Δ", num: true, render: r => fmt.d1(r.ridge), title: "Partial effect, other factors held constant" },
+        { key: "lift", label: "Hit lift", num: true, render: r => fmt.f2(r.lift) },
+        { key: "flopR", label: "Flop ratio", num: true, render: r => fmt.f2(r.flopR) },
+        { key: "verdict", label: "Verdict", render: r => chip(r.verdict, true), sort: r => VERDICT_ORDER.indexOf(r.verdict) },
+      ], rows.map(r => ({ ...r, name: mname(r.mid) })), { onRow: r => openMechanic(r.mid), initialSort: ["diff", -1] })),
+    h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, "Prevalence vs impact"), h("div", { class: "muted" }, "Top-left: rare and strong (differentiators). Top-right: common and strong (table stakes). Bottom: associated with weaker outcomes."),
+      effectScatter(rows, { width: 1100, height: 420, onclick: openMechanic })));
+}
+
+function viewFamilies() {
+  const im = impact(), eff = new Map(im.rows.map(r => [r.mid, r])), el = $("#view-families");
+  const famStats = (im.scope && im.scope.families) || [];
+  put(el, 
+    h("h2", {}, "Mechanic families — the textbook"),
+    h("p", { class: "sub" }, "Family → subfamily → mechanic. Cell color = Δ outcome (blue better, red worse, gray ≈ no difference / insufficient data). Click any mechanic."),
+    h("div", { class: "scale" }, "worse", h("span", { class: "bar", style: "background:linear-gradient(90deg,var(--neg),var(--mid),var(--pos))" }), "better", h("span", { class: "muted" }, "(±12 pts saturates)")),
+    famStats.length ? h("div", { class: "card", style: "margin-bottom:16px" }, h("h3", {}, "Family depth vs success"),
+      h("div", { class: "muted" }, "Spearman correlation between how many significant mechanics a game has in each family and its Success Index (precomputed scope)."),
+      hbars(famStats.filter(f => f.spearman != null).sort((a, b) => b.spearman - a.spearman).map(f => ({ label: f.name, value: f.spearman, sub: `mean depth ${fmt.f1(f.mean_depth)} of ${f.n_mechanics}` })), { diverging: true, fmtv: fmt.f2, width: 760, max: 0.5 })) : null,
+    h("div", { class: "fam-grid" }, FAMS.map(f => h("div", { class: "card fam-card" },
+      h("h3", {}, f.name, h("span", { class: "muted", style: "font-weight:400;font-size:12px" }, `${f.subfamilies.reduce((a, sf) => a + sf.mechanics.length, 0)} mechanics`)),
+      h("div", { class: "muted", style: "font-size:12px" }, f.desc),
+      f.subfamilies.map(sf => h("div", { class: "sf" }, h("div", { class: "sf-name" }, sf.name),
+        h("div", { class: "cells" }, sf.mechanics.map(mid => {
+          const r = eff.get(mid), ok = r && r.verdict !== "insufficient data", d = ok ? r.diff : null;
+          const c = h("span", { class: "cell " + divText(d), style: `background:${divFill(d)}`, onclick: () => openMechanic(mid) }, mname(mid));
+          hover(c, () => [ok ? fmt.d1(d) + " pts" : "insufficient data", mname(mid), [MECH[mid].desc, r ? `${fmt.pct(r.prev)} of games · ${r.verdict}` : ""]]);
+          return c;
+        }))))))));
+}
+
+function viewGames() {
+  const im = impact(), el = $("#view-games");
+  const q = (el.dataset.q || "").toLowerCase();
+  const rows = im.slice.filter(r => !q || r.g.n.toLowerCase().includes(q) || (r.g.dev || "").toLowerCase().includes(q))
+    .map(r => ({ id: r.g.id, n: r.g.n, dev: r.g.dev, y: r.g.y, sg: mname(r.g.sg), rv: r.g.rv, pr: r.g.pr, rev: r.g.rev, crit: r.g.mc || (r.g.ign ? r.g.ign * 10 : null), out: r.y, nm: Object.keys(r.g.m).length, src: r.g.src }));
+  const search = h("input", { class: "search", placeholder: "Search games or developers…", value: el.dataset.q || "", style: "width:320px",
+    oninput: e => { el.dataset.q = e.target.value; clearTimeout(el._t); el._t = setTimeout(() => { viewGames(); const s2 = el.querySelector(".search"); s2.focus(); s2.setSelectionRange(s2.value.length, s2.value.length); }, 200); } });
+  put(el, h("h2", {}, "Game explorer"), h("p", { class: "sub" }, "Every game in the slice with its outcomes. Click a game for its mechanic fingerprint, design comps, and to load it into the Design Lab."),
+    h("div", { class: "card" }, h("div", { class: "row", style: "margin-bottom:10px" }, search, h("span", { class: "muted" }, `${rows.length} games`)),
+      table([
+        { key: "n", label: "Game" }, { key: "dev", label: "Developer", render: r => (r.dev || "").slice(0, 28) }, { key: "y", label: "Year", num: true },
+        { key: "sg", label: "Subgenre" }, { key: "rv", label: "Reviews", num: true, render: r => fmt.n(r.rv) },
+        { key: "pr", label: "Positive", num: true, render: r => fmt.pct(r.pr) }, { key: "rev", label: "Est. revenue", num: true, render: r => fmt.usd(r.rev) },
+        { key: "crit", label: "Critic", num: true, render: r => r.crit ? Math.round(r.crit) : "–" },
+        { key: "out", label: OUT_LABEL[state.out], num: true, render: r => fmt.f1(r.out) },
+        { key: "nm", label: "# mech", num: true }, { key: "src", label: "Tags", render: r => r.src === "curated" ? "curated" : "auto" },
+      ], rows, { onRow: r => openGame(r.id), initialSort: ["out", -1], limit: 400 })));
+}
+
+// ---------- Design Lab ----------
+const lab = { vec: {}, sub: "hybrid_action_roguelite", price: 19.99, year: 2026, ea: false, free: false, from: null };
+function loadTemplate(g) {
+  lab.vec = Object.fromEntries(Object.entries(g.m).filter(([k]) => !k.startsWith("hybrid_")).map(([k, v]) => [k, v[0]]));
+  lab.sub = g.sg; lab.price = g.p || 0; lab.free = !!g.f; lab.ea = !!g.ea; lab.year = g.y || 2026; lab.from = g.n;
+}
+function labScope() { return (AN.subgenres[lab.sub] && AN.subgenres[lab.sub].ridge) ? AN.subgenres[lab.sub] : AN.scopes.all; }
+function predict(vec) {
+  const sc = labScope(), r = sc.ridge; if (!r) return null;
+  let y = r.intercept;
+  r.features.forEach((f, i) => {
+    const c = r.coefs[i].coef; let x = 0;
+    if (MECH[f]) x = vec[f] ? 1 : 0;
+    else if (f.startsWith("subgenre=")) x = f === "subgenre=" + lab.sub ? 1 : 0;
+    else if (f === "year-2020") x = lab.year - 2020;
+    else if (f === "log10_price") x = lab.price > 0 && !lab.free ? Math.log10(lab.price) : 0;
+    else if (f === "free_to_play") x = lab.free ? 1 : 0;
+    else if (f === "early_access") x = lab.ea ? 1 : 0;
+    y += c * x;
+  });
+  return { y: Math.max(0, Math.min(100, y)), rmse: r.cv_rmse, base: r.baseline_rmse, scopeN: sc.n };
+}
+const ncdf = z => { const t = 1 / (1 + 0.2316419 * Math.abs(z)), d = 0.3989423 * Math.exp(-z * z / 2); const p = d * t * (0.3193815 + t * (-0.3565638 + t * (1.781478 + t * (-1.821256 + t * 1.330274)))); return z > 0 ? 1 - p : p; };
+
+function viewLab() {
+  const el = $("#view-lab");
+  const sc = labScope();
+  const coef = new Map(((sc.ridge || {}).coefs || []).map(c => [c.feature, c]));
+  const subEff = new Map((sc.mechanics || []).map(r => [r.mechanic, r]));
+  const allGsi = GAMES.filter(g => g.sg === lab.sub && g.gsi != null).map(g => g.gsi).sort((a, b) => a - b);
+  const pr = predict(lab.vec);
+  const vecFull = { ...lab.vec, [lab.sub]: 3 };
+  const comps = similar(vecFull, { k: 25 });
+  const compG = comps.map(c => c.g.gsi).filter(v => v != null);
+  const hitT = sc.hit_threshold, flopT = sc.flop_threshold;
+  const wsum = comps.reduce((a, c) => a + c.sim, 0) || 1;
+  const compHit = comps.reduce((a, c) => a + (c.g.gsi >= hitT ? c.sim : 0), 0) / wsum;
+  const compFlop = comps.reduce((a, c) => a + (c.g.gsi != null && c.g.gsi <= flopT ? c.sim : 0), 0) / wsum;
+  const pctile = pr ? 100 * allGsi.filter(v => v <= pr.y).length / Math.max(1, allGsi.length) : null;
+  const pFlop = pr ? ncdf((flopT - pr.y) / pr.rmse) : null, pHit = pr ? 1 - ncdf((hitT - pr.y) / pr.rmse) : null;
+  const stakes = (sc.mechanics || []).filter(r => r.verdict === "table stakes" && !r.mechanic.startsWith("hybrid_"));
+  const missing = stakes.filter(r => !lab.vec[r.mechanic]);
+  const flags = (sc.mechanics || []).filter(r => r.verdict === "red flag" && lab.vec[r.mechanic]);
+  const adds = [...coef.values()].filter(c => c.is_mechanic && !lab.vec[c.feature] && c.coef > 0).sort((a, b) => (b.ci_lo > 0) - (a.ci_lo > 0) || b.coef - a.coef).slice(0, 8);
+  const hitComps = comps.filter(c => c.g.gsi >= hitT);
+  const hitCommon = Object.keys(MECH).filter(m => !m.startsWith("hybrid_") && !lab.vec[m] && hitComps.length >= 3 && hitComps.filter(c => c.g.m[m]).length / hitComps.length >= 0.6);
+  const risk = pFlop == null ? null : pFlop >= 0.4 ? ["critical", "▲", "High risk"] : pFlop >= 0.25 ? ["serious", "▲", "Elevated risk"] : pHit >= 0.35 ? ["good", "●", "Strong design"] : ["warning", "◆", "Moderate"];
+
+  const templateSel = h("select", { onchange: e => { const g = BY_ID.get(+e.target.value); if (g) { loadTemplate(g); viewLab(); } } },
+    h("option", { value: "" }, lab.from ? `Template: ${lab.from}` : "Load a game as template…"),
+    [...GAMES].filter(g => g.src === "curated").sort((a, b) => a.n.localeCompare(b.n)).map(g => h("option", { value: g.id }, g.n)));
+  const controls = h("div", { class: "lab-controls" },
+    h("label", {}, "Subgenre", h("select", { onchange: e => { lab.sub = e.target.value; viewLab(); } }, HYBRIDS.map(hy => h("option", { value: hy, selected: hy === lab.sub }, mname(hy))))),
+    h("label", {}, "Price (USD)", h("input", { type: "number", min: 0, step: 1, value: lab.price, style: "width:90px", onchange: e => { lab.price = +e.target.value; viewLab(); } })),
+    h("label", {}, "Release year", h("input", { type: "number", min: 2010, max: 2030, value: lab.year, style: "width:90px", onchange: e => { lab.year = +e.target.value; viewLab(); } })),
+    h("label", { style: "flex-direction:row;align-items:center;gap:6px" }, h("input", { type: "checkbox", checked: lab.ea, onchange: e => { lab.ea = e.target.checked; viewLab(); } }), "Early Access"),
+    h("label", { style: "flex-direction:row;align-items:center;gap:6px" }, h("input", { type: "checkbox", checked: lab.free, onchange: e => { lab.free = e.target.checked; viewLab(); } }), "Free-to-play"),
+    h("label", {}, "Template", templateSel),
+    h("button", { class: "btn secondary", onclick: () => { lab.vec = {}; lab.from = null; viewLab(); } }, "Clear"));
+  const picker = FAMS.filter(f => f.id !== "structure_hybrid").map(f => {
+    const ms = f.subfamilies.flatMap(sf => sf.mechanics), on = ms.filter(m => lab.vec[m]).length;
+    const det = h("details", { class: "lab-fam", open: el.dataset["open_" + f.id] !== "0" ? true : null, ontoggle: e => { el.dataset["open_" + f.id] = e.target.open ? "1" : "0"; } },
+      h("summary", {}, f.name, h("span", { class: "cnt" }, `${on}/${ms.length}`)),
+      ms.map(mid => {
+        const i = lab.vec[mid] || 0, c = coef.get(mid), se = subEff.get(mid);
+        const b = h("span", { class: `lab-mech i${i}`, onclick: () => { const n = ((lab.vec[mid] || 0) + 1) % 4; if (n) lab.vec[mid] = n; else delete lab.vec[mid]; viewLab(); } },
+          i ? intenDots(i) : null, mname(mid), c ? h("span", { class: "eff" }, fmt.d1(c.coef)) : null);
+        hover(b, () => [mname(mid), MECH[mid].desc, [c ? `partial effect ${fmt.d1(c.coef)} (CI ${fmt.d1(c.ci_lo)}…${fmt.d1(c.ci_hi)})` : "not in model (too rare/common)", se && se.verdict ? `verdict in ${mname(lab.sub)}: ${se.verdict}` : "", "click to cycle: off → present → significant → core"]]);
+        return b;
+      }));
+    return det;
+  });
+  const out = h("div", { class: "card lab-out" },
+    h("div", { class: "tile-label" }, `Predicted Success Index · ${AN.subgenres[lab.sub] ? mname(lab.sub) + " model" : "all-roguelike model (subgenre as covariate)"} · n=${sc.n}`),
+    h("div", { class: "hero" }, h("span", { class: "hero-value" }, pr ? fmt.f1(pr.y) : "–"), pr ? h("span", { class: "muted" }, `± ${fmt.f1(pr.rmse)} (CV RMSE)`) : null),
+    pr ? h("div", { class: "meter", title: `percentile ${Math.round(pctile)}` }, h("div", { style: `width:${pctile}%` })) : null,
+    pr ? h("div", { class: "tile-note" }, `${Math.round(pctile)}th percentile of ${allGsi.length} ${mname(lab.sub)} games`) : null,
+    risk ? h("div", { class: `status ${risk[0]}`, style: "margin-top:10px" }, h("span", { class: "ico" }, risk[1]), risk[2], h("span", { class: "muted", style: "font-weight:400" }, `P(hit) ${fmt.pct(pHit)} · P(flop) ${fmt.pct(pFlop)} (model)`)) : null,
+    h("div", { class: "grid g2", style: "margin-top:12px" },
+      tile("Comps hit rate", fmt.pct(compHit), `25 nearest designs, similarity-weighted`),
+      tile("Comps flop rate", fmt.pct(compFlop), compG.length ? `comp median ${fmt.f1(quantile([...compG].sort((a, b) => a - b), 0.5))}` : "")),
+    h("h3", { style: "margin-top:16px" }, `Missing table stakes (${missing.length})`),
+    missing.length ? h("ul", { class: "list-tight" }, missing.map(r => h("li", {}, h("a", { href: "#", onclick: e => { e.preventDefault(); lab.vec[r.mechanic] = 2; viewLab(); } }, mname(r.mechanic)),
+      h("span", { class: "muted" }, ` — in ${fmt.pct(r.prev_in_hits)} of hits, flop ratio ${fmt.f2(r.flop_ratio)}`)))) : h("div", { class: "muted" }, "None — genre fundamentals covered."),
+    h("h3", { style: "margin-top:14px" }, `Red flags present (${flags.length})`),
+    flags.length ? h("ul", { class: "list-tight" }, flags.map(r => h("li", {}, mname(r.mechanic), h("span", { class: "muted" }, ` — Δ ${fmt.d1(r.diff)} (CI ${fmt.d1(r.ci_lo)}…${fmt.d1(r.ci_hi)})`)))) : h("div", { class: "muted" }, "None."),
+    h("h3", { style: "margin-top:14px" }, "Highest-leverage additions"),
+    h("ul", { class: "list-tight" }, adds.map(c => h("li", {}, h("a", { href: "#", onclick: e => { e.preventDefault(); lab.vec[c.feature] = 2; viewLab(); } }, mname(c.feature)),
+      h("span", { class: "muted" }, ` +${fmt.f1(c.coef)} pts${c.ci_lo > 0 ? " (CI > 0)" : ""}`)))),
+    hitCommon.length ? h("div", {}, h("h3", { style: "margin-top:14px" }, "Common in your hit comps, missing here"), h("div", { class: "muted" }, hitCommon.map(mname).join(" · "))) : null,
+    h("h3", { style: "margin-top:14px" }, "Closest comps"),
+    table([{ key: "n", label: "Game", render: x => x.g.n }, { key: "sim", label: "Sim", num: true, render: x => fmt.pct(x.sim) },
+      { key: "gsi", label: "GSI", num: true, render: x => fmt.f1(x.g.gsi) }, { key: "rev", label: "Est. rev", num: true, render: x => fmt.usd(x.g.rev) }],
+      comps.slice(0, 10).map(x => ({ ...x, n: x.g.n })), { onRow: x => openGame(x.g.id) }),
+    h("div", { class: "row", style: "margin-top:12px" }, h("button", { class: "btn", onclick: () => copyReport({ pr, pctile, pHit, pFlop, compHit, compFlop, missing, flags, adds, comps }) }, "Copy pitch report (Markdown)")));
+  put(el, h("h2", {}, "Design Lab — score a game design"),
+    h("p", { class: "sub" }, "Tag a design (yours, a pitch, or a template), get a predicted Success Index from the subgenre's ridge model, risk from nearest comps, and the gaps vs what hits in this genre have. Click a mechanic to cycle intensity. Small numbers = partial effect in points."),
+    controls, h("div", { class: "lab" }, h("div", { class: "card" }, picker), out));
+}
+function copyReport(x) {
+  const lines = [`# GameCred design assessment`, ``, `**Subgenre:** ${mname(lab.sub)} · **Price:** $${lab.price} · **Release:** ${lab.year}${lab.ea ? " · Early Access" : ""}`,
+    `**Mechanics (${Object.keys(lab.vec).length}):** ${Object.entries(lab.vec).map(([k, v]) => `${mname(k)}${"·".repeat(v)}`).join(", ")}`, ``,
+    `## Score`, `- Predicted Success Index: **${fmt.f1(x.pr && x.pr.y)}** ± ${fmt.f1(x.pr && x.pr.rmse)} (${Math.round(x.pctile)}th percentile in subgenre)`,
+    `- Model P(hit): ${fmt.pct(x.pHit)} · P(flop): ${fmt.pct(x.pFlop)}`, `- Nearest-25 comps: hit rate ${fmt.pct(x.compHit)}, flop rate ${fmt.pct(x.compFlop)}`, ``,
+    `## Missing table stakes`, ...(x.missing.length ? x.missing.map(r => `- ${mname(r.mechanic)} (in ${fmt.pct(r.prev_in_hits)} of hits)`) : ["- none"]), ``,
+    `## Red flags`, ...(x.flags.length ? x.flags.map(r => `- ${mname(r.mechanic)} (Δ ${fmt.d1(r.diff)})`) : ["- none"]), ``,
+    `## Highest-leverage additions`, ...x.adds.map(c => `- ${mname(c.feature)} (+${fmt.f1(c.coef)} pts)`), ``,
+    `## Closest comps`, ...x.comps.slice(0, 10).map(c => `- ${c.g.n} — similarity ${fmt.pct(c.sim)}, GSI ${fmt.f1(c.g.gsi)}, est. revenue ${fmt.usd(c.g.rev)}`), ``,
+    `_Generated by GameCred (${D.generated}). Associations, not causal guarantees; see Method._`];
+  navigator.clipboard.writeText(lines.join("\n")).then(() => alert("Report copied to clipboard."), () => alert("Copy failed — clipboard unavailable."));
+}
+
+function viewSynergy() {
+  const el = $("#view-synergy"), sc = ridgeScope() && ridgeScope().synergies && ridgeScope().synergies.length ? ridgeScope() : AN.scopes.all;
+  const syn = sc.synergies || [];
+  const pos = syn.filter(x => x.interaction > 0).slice(0, 25), neg = syn.filter(x => x.interaction < 0).slice(0, 25);
+  const mk = list => table([{ key: "a", label: "Mechanic A", render: r => mname(r.a) }, { key: "b", label: "Mechanic B", render: r => mname(r.b) },
+    { key: "interaction", label: "Interaction", num: true, render: r => fmt.d1(r.interaction) }, { key: "z", label: "z", num: true, render: r => fmt.f1(r.z) },
+    { key: "n_both", label: "n both", num: true }, { key: "mean_both", label: "Mean (both)", num: true, render: r => fmt.f1(r.mean_both) }], list, { initialSort: ["z", list === neg ? 1 : -1] });
+  put(el, h("h2", {}, "Mechanic synergies"),
+    h("p", { class: "sub" }, `Interaction = (effect of A when B present) − (effect of A when B absent), in Success Index points. Positive = the pair is worth more than the sum of its parts. Exploratory: ranked by |z|, no multiple-comparison correction (scope n=${sc.n}).`),
+    h("div", { class: "grid g2" }, h("div", { class: "card" }, h("h3", {}, "Super-additive pairs"), mk(pos)), h("div", { class: "card" }, h("h3", {}, "Clashing pairs"), mk(neg))));
+}
+
+function viewMethod() {
+  const el = $("#view-method"), r = AN.scopes.all.ridge || {};
+  const P = t => h("p", {}, t), LI = t => h("li", {}, t);
+  put(el, h("div", { class: "method" },
+    h("h2", {}, "Method & caveats"),
+    P("GameCred turns design evidence into numbers in four steps: (1) a taxonomy of mechanics; (2) per-game mechanic profiles; (3) outcome metrics from public storefront data; (4) statistics linking the two."),
+    h("h3", {}, "1 · Mechanics"),
+    P(`${Object.keys(MECH).length} mechanics in ${FAMS.length} families. Each game gets an intensity per mechanic: 1 present, 2 significant, 3 core pillar. Curated profiles are expert-tagged from wikis/guides (confidence 1.0). The long tail is auto-tagged from Steam user tags (≈0.7) and store-description keywords (≈0.4); those confidences are re-calibrated against curated ground truth by the self-healing doctor, and unreliable rules are suppressed.`),
+    h("h3", {}, "2 · Outcomes"),
+    h("ul", {}, LI("Quality = percentile of the SteamDB rating (positive share shrunk toward 50% for small samples)."),
+      LI("Commercial = percentile of estimated gross revenue: reviews × owners-per-review multiplier (55 pre-2017 → 30 for 2022+) × launch price × 0.55 realized-price factor. Band shown is 0.6×–1.6×. Gamalytic numbers replace this when an API key is configured."),
+      LI("Critic = percentile of Metacritic (from Steam) or IGN ×10 where curated."),
+      LI("Success Index (GSI) = weighted mean of available percentiles (default 40/45/15; adjustable above).")),
+    h("h3", {}, "3 · Statistics"),
+    h("ul", {}, LI("Δ: mean outcome with − without, 95% CI (Welch live; bootstrap 1,000× in the precomputed scopes, with Benjamini-Hochberg q-values)."),
+      LI(`Ridge: outcome ~ all mechanics + subgenre + log price + year + EA + F2P; λ by 5-fold CV (λ=${r.lambda}, CV RMSE ${fmt.f1(r.cv_rmse)} vs ${fmt.f1(r.baseline_rmse)} baseline SD). Coefficients = partial effect in points; 200× bootstrap CIs.`),
+      LI("Hits/flops = top/bottom quartile of the slice. Hit lift and flop ratio express risk in publisher terms."),
+      LI("Verdicts: red flag (effect CI < 0) · table stakes (≥50% of hits have it, Δ ≥ 0, flop ratio ≤ 0.7) · differentiator (≤35% prevalence, CI > 0) · positive · risk reducer · neutral.")),
+    h("h3", {}, "Caveats — read before quoting a number"),
+    h("ul", {}, LI("Correlation, not causation. Mechanics co-occur with budget, team experience and marketing, which we cannot observe."),
+      LI("Survivorship: the universe is games with ≥50 reviews; true flops are under-represented, so downside risk is understated."),
+      LI("Auto-tags are noisy; prefer the High-confidence / Curated scopes for decisions, the full set for breadth."),
+      LI("Revenue is a model estimate (±~2×); use relative rankings, not absolute dollars, unless Gamalytic data is enabled.")),
+    h("p", { class: "muted" }, `Data generated ${D.generated}. ${D.counts.games} games, ${D.counts.curated} curated.`)));
+}
+
+// ---------- wiring ----------
+const VIEWS = { overview: viewOverview, mechanics: viewMechanics, families: viewFamilies, games: viewGames, lab: viewLab, synergy: viewSynergy, method: viewMethod };
+function switchView(v) {
+  state.view = v;
+  document.querySelectorAll(".tabs button").forEach(b => b.classList.toggle("active", b.dataset.view === v));
+  document.querySelectorAll(".view").forEach(s2 => s2.classList.toggle("active", s2.id === "view-" + v));
+  $("#filters").style.display = v === "lab" || v === "method" ? "none" : "";
+  render(); history.replaceState(null, "", "#" + v);
+}
+function render() {
+  const im = impact();
+  $("#slice-count").textContent = `${im.n} games in slice`;
+  VIEWS[state.view]();
+}
+document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => switchView(b.dataset.view)));
+const subSel = $("#f-sub");
+subSel.append(h("option", { value: "" }, "All subgenres"), ...HYBRIDS.map(hy => h("option", { value: hy }, `${mname(hy)} (${GAMES.filter(g => g.sg === hy).length})`)));
+const bind = (id, key, num) => $(id).addEventListener("change", e => { state[key] = num ? +e.target.value : e.target.value; render(); });
+bind("#f-sub", "sub"); bind("#f-year", "year", 1); bind("#f-rev", "rev", 1); bind("#f-conf", "conf", 1); bind("#f-out", "out");
+for (const k of ["q", "c", "k"]) {
+  const inp = $("#w-" + k), lab2 = inp.nextElementSibling; lab2.textContent = inp.value;
+  inp.addEventListener("input", () => { state.w[k] = +inp.value; lab2.textContent = inp.value; clearTimeout(inp._t); inp._t = setTimeout(render, 120); });
+}
+$("#theme-toggle").addEventListener("click", () => { const r = document.documentElement; r.dataset.theme = r.dataset.theme === "dark" ? "light" : "dark"; localStorage.setItem("gc-theme", r.dataset.theme); });
+document.documentElement.dataset.theme = localStorage.getItem("gc-theme") || "dark";
+$("#foot").textContent = `GameCred · data generated ${D.generated} · ${D.counts.games} games · ${D.counts.curated} curated profiles · ${D.counts.mechanics} mechanics. Sources: Steam storefront & reviews, SteamSpy, curated wiki research.`;
+const sts = GAMES.find(g => g.n === "Slay the Spire"); if (sts) loadTemplate(sts);
+addEventListener("hashchange", () => { const v = location.hash.slice(1); if (VIEWS[v] && v !== state.view) switchView(v); });
+switchView(VIEWS[location.hash.slice(1)] ? location.hash.slice(1) : "overview");
+})();

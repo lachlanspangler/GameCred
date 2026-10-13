@@ -1,0 +1,29 @@
+appid: 358130
+name: Curious Expedition
+developer: Maschinen-Mensch
+release_year: 2016
+subgenre: hybrid_survival
+critic:
+  metacritic: 74
+mechanics:
+  hybrid_survival: 3
+  hybrid_strategy: 2
+  permadeath: 2
+  open_procgen_world: 2
+  act_structure: 2
+  dice: 3
+  turn_based: 2
+  push_your_luck: 2
+  random_events: 3
+  inventory_management: 3
+  character_classes: 2
+  unlock_characters: 3
+  shops: 2
+  in_run_currency: 2
+  status_effects: 2
+evidence:
+  hybrid_survival: Sanity drains with each step on the hex map; food and supplies restore it.
+  dice: Combat is resolved by rolling and rerolling each party member's dice faces.
+  act_structure: A campaign is a series of expeditions racing rival explorers for fame.
+confidence: high
+curator: agent

@@ -1,0 +1,31 @@
+appid: 1485590
+name: ENDLESS Dungeon
+developer: AMPLITUDE Studios
+release_year: 2023
+subgenre: hybrid_strategy
+critic:
+  metacritic: 75
+mechanics:
+  hybrid_strategy: 3
+  real_time_action: 3
+  twin_stick: 3
+  waves: 3
+  room_based_floors: 2
+  procgen_levels: 2
+  permadeath: 3
+  act_structure: 2
+  boss_gates: 2
+  hub_building: 2
+  unlock_items: 2
+  unlock_characters: 2
+  character_classes: 3
+  in_run_currency: 2
+  item_upgrading: 2
+  weapons_variety: 2
+  online_coop: 3
+evidence:
+  waves: Defend the crystal bot from waves while placing turrets with Industry.
+  hub_building: The Saloon serves as persistent hub between runs.
+  online_coop: Up to three-player online co-op.
+confidence: medium
+curator: agent

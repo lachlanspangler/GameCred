@@ -1,0 +1,32 @@
+appid: 1000010
+name: Crown Trick
+developer: NEXT Studios
+release_year: 2020
+subgenre: hybrid_traditional
+critic:
+  metacritic: 83
+mechanics:
+  hybrid_traditional: 3
+  turn_based: 3
+  grid_tactics: 2
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 3
+  boss_gates: 3
+  elemental_interactions: 3
+  status_effects: 3
+  environmental_hazards: 2
+  active_items: 2
+  passive_relics: 2
+  weapons_variety: 2
+  permanent_stat_upgrades: 2
+  unlock_items: 2
+  shops: 2
+  in_run_currency: 2
+  elites: 1
+evidence:
+  elemental_interactions: Fire, water, electricity, poison and oil combine on tiles (e.g. electrified water).
+  turn_based: Time only advances when the player acts, Crypt-free Mystery Dungeon style.
+  active_items: Familiars grant swappable active skills.
+confidence: high
+curator: agent

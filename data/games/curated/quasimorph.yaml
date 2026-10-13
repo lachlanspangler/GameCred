@@ -1,0 +1,23 @@
+appid: 2059170
+name: Quasimorph
+developer: Magnum Scriptum
+release_year: 2026
+subgenre: hybrid_traditional
+mechanics:
+  hybrid_traditional: 3
+  turn_based: 3
+  extraction: 3
+  permadeath: 2
+  procgen_levels: 3
+  inventory_management: 3
+  crafting: 2
+  hub_building: 2
+  status_effects: 3
+  weapons_variety: 3
+  early_access_dev: 3
+evidence:
+  extraction: Mercenaries enter missions and must extract with loot; dying loses their gear.
+  status_effects: Per-limb wounds, bleeding, infections and amputations.
+  hub_building: A persistent space station stores gear and crafts items between missions.
+confidence: medium
+curator: agent

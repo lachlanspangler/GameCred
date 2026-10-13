@@ -1,0 +1,71 @@
+appid: 250900
+name: 'The Binding of Isaac: Rebirth'
+developer: Nicalis / Edmund McMillen
+release_year: 2014
+subgenre: hybrid_action_roguelite
+wiki: https://bindingofisaacrebirth.wiki.gg/
+critic:
+  metacritic: 86
+stats:
+  playable_characters: 34
+  run_length_min: 40
+  item_count: 700
+  boss_count: 100
+  enemy_types: 200
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  twin_stick: 3
+  bullet_hell: 1
+  permadeath: 3
+  mid_run_save: 1
+  second_chance: 2
+  procgen_levels: 3
+  room_based_floors: 3
+  seeded_runs: 2
+  daily_challenge: 2
+  act_structure: 3
+  boss_gates: 3
+  multiple_endings: 3
+  achievement_unlocks: 3
+  unlock_items: 3
+  unlock_characters: 3
+  character_classes: 2
+  passive_relics: 3
+  active_items: 3
+  consumables: 2
+  item_stacking: 2
+  synergies: 3
+  transformations: 3
+  multiplicative_scaling: 2
+  flat_stat_scaling: 2
+  high_variance_loot: 3
+  item_rarity: 1
+  shops: 2
+  in_run_currency: 2
+  gambling: 2
+  double_edged_items: 2
+  hp_as_currency: 3
+  cursed_items: 2
+  healing_scarcity: 2
+  status_effects: 2
+  elites: 1
+  optional_challenges: 3
+  enemy_variety: 3
+  random_events: 1
+  push_your_luck: 1
+  lore_codex: 1
+  leaderboards: 1
+  mod_support: 3
+  content_updates: 3
+  speedrun_support: 1
+  run_history: 1
+evidence:
+  hp_as_currency: Devil Rooms sell items for permanent heart containers.
+  transformations: Collecting 3 items of a set (Guppy, Beelzebub, etc.) grants a transformation.
+  achievement_unlocks: Over 600 achievements, most of which unlock specific items, characters or challenges.
+  gambling: Slot machines, fortune tellers, dice rooms and arcade rooms.
+  multiple_endings: 20+ endings gated by alternate final bosses (Mom's Heart, Satan, Lamb, Delirium, Mother, Beast).
+  optional_challenges: Challenge rooms, Boss Rush, Hush timers and 45 numbered Challenges.
+confidence: high
+curator: agent

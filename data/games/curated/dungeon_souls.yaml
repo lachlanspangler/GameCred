@@ -1,0 +1,29 @@
+appid: 383230
+name: Dungeon Souls
+developer: Lamina Studios
+release_year: 2016
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 3
+  boss_gates: 3
+  horde_density: 2
+  character_classes: 3
+  unlock_characters: 2
+  level_up_choices: 2
+  flat_stat_scaling: 2
+  passive_relics: 2
+  item_rarity: 1
+  shops: 1
+  in_run_currency: 2
+  permanent_stat_upgrades: 1
+  local_coop: 1
+  early_access_dev: 2
+evidence:
+  horde_density: Activating the floor's seals spawns waves of monsters before the exit opens.
+  level_up_choices: Level-ups let the player allocate stat points.
+confidence: medium
+curator: agent

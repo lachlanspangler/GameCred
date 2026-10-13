@@ -1,0 +1,40 @@
+appid: 1404850
+name: Luck be a Landlord
+developer: TrampolineTales
+release_year: 2023
+subgenre: hybrid_puzzle
+stats:
+  run_length_min: 30
+mechanics:
+  hybrid_puzzle: 3
+  hybrid_deckbuilder: 1
+  deckbuilding: 2
+  synergies: 3
+  multiplicative_scaling: 2
+  pick_one_of_n: 3
+  reroll: 2
+  banish_skip: 2
+  deck_thinning: 3
+  passive_relics: 2
+  item_rarity: 2
+  in_run_currency: 3
+  gambling: 3
+  high_variance_loot: 2
+  short_runs: 2
+  permadeath: 2
+  turn_based: 2
+  endless_mode: 2
+  unlock_items: 2
+  ascension_ladder: 3
+  mod_support: 2
+  transformations: 2
+  build_archetypes: 2
+  content_updates: 2
+  early_access_dev: 1
+evidence:
+  gambling: Core loop is a slot machine; symbols pay out based on adjacency each spin.
+  deck_thinning: Removal tokens delete unwanted symbols from the pool.
+  transformations: Symbols transform into others (e.g. eggs hatch, items upgrade on conditions).
+  mod_support: Steam Workshop mod support.
+confidence: medium
+curator: agent

@@ -1,0 +1,31 @@
+appid: 1904480
+name: Absolum
+developer: Dotemu / Guard Crush Games / Supamonks
+release_year: 2025
+subgenre: hybrid_action_roguelite
+stats:
+  playable_characters: 4
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  melee_combos: 3
+  dodge_iframes: 2
+  permadeath: 2
+  node_map: 2
+  act_structure: 2
+  boss_gates: 3
+  character_classes: 3
+  pick_one_of_n: 2
+  synergies: 2
+  passive_relics: 2
+  permanent_stat_upgrades: 2
+  hub_building: 1
+  narrative_across_runs: 2
+  local_coop: 2
+  online_coop: 2
+evidence:
+  melee_combos: Side-scrolling beat-'em-up combat from the Streets of Rage 4 team, with juggles and parries.
+  node_map: Runs branch at crossroads between hand-built routes rather than procedural rooms.
+  local_coop: 2-player local and online co-op.
+confidence: medium
+curator: agent

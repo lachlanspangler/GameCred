@@ -1,0 +1,26 @@
+appid: 252630
+name: Eldritch
+developer: Minor Key Games
+release_year: 2013
+subgenre: hybrid_action_roguelite
+critic:
+  metacritic: 77
+mechanics:
+  hybrid_action_roguelite: 3
+  fps: 2
+  real_time_action: 3
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 3
+  shops: 2
+  in_run_currency: 2
+  consumables: 2
+  extraction: 1
+  environmental_hazards: 1
+  short_runs: 2
+evidence:
+  shops: Artifacts are spent at shrines to buy powers such as teleport or invisibility.
+  extraction: A bank in the library stores artifacts across deaths.
+  procgen_levels: Voxel dungeons are generated per world, with destructible terrain.
+confidence: medium
+curator: agent

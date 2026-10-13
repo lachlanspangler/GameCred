@@ -1,0 +1,23 @@
+appid: 323060
+name: Tharsis
+developer: Choice Provisions
+release_year: 2016
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  hybrid_survival: 2
+  dice: 3
+  permadeath: 3
+  healing_scarcity: 3
+  push_your_luck: 2
+  random_events: 2
+  turn_based: 3
+  short_runs: 2
+  double_edged_items: 2
+  character_classes: 1
+evidence:
+  dice: Each crew member rolls dice each week to repair ship events; ones and twos can cause injury.
+  double_edged_items: Cannibalism restores food/dice at a heavy morale cost.
+  healing_scarcity: Food and crew health are a run-long resource over 10 weeks.
+confidence: medium
+curator: agent

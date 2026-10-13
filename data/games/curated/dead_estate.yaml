@@ -1,0 +1,29 @@
+appid: 1484720
+name: Dead Estate
+developer: Milkbar Lads
+release_year: 2021
+subgenre: hybrid_shooter
+mechanics:
+  hybrid_shooter: 3
+  twin_stick: 3
+  real_time_action: 3
+  permadeath: 3
+  room_based_floors: 3
+  procgen_levels: 2
+  act_structure: 3
+  boss_gates: 3
+  passive_relics: 3
+  character_classes: 2
+  unlock_characters: 2
+  shops: 2
+  in_run_currency: 2
+  synergies: 2
+  consumables: 1
+  unlock_items: 1
+  healing_scarcity: 2
+evidence:
+  room_based_floors: Binding of Isaac-style floor of rooms within a haunted mansion.
+  character_classes: Several characters each with a distinct starting weapon and stats.
+  passive_relics: Large pool of passive pickups modify shots and stats.
+confidence: medium
+curator: agent

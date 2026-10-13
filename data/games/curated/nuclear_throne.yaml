@@ -1,0 +1,51 @@
+appid: 242680
+name: Nuclear Throne
+developer: Vlambeer
+release_year: 2015
+subgenre: hybrid_action_roguelite
+wiki: https://nuclear-throne.fandom.com/wiki/Nuclear_Throne_Wiki
+critic:
+  metacritic: 88
+stats:
+  playable_characters: 12
+  run_length_min: 20
+  weapon_count: 125
+  biome_count: 7
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  twin_stick: 3
+  bullet_hell: 2
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 3
+  boss_gates: 2
+  short_runs: 3
+  endless_mode: 2
+  enemy_hp_scaling: 2
+  daily_challenge: 2
+  leaderboards: 2
+  level_up_choices: 3
+  pick_one_of_n: 3
+  synergies: 2
+  build_archetypes: 2
+  weapons_variety: 3
+  character_classes: 3
+  loadout_start: 1
+  unlock_characters: 3
+  achievement_unlocks: 2
+  environmental_hazards: 1
+  healing_scarcity: 2
+  optional_challenges: 2
+  elites: 1
+  multiple_endings: 1
+  local_coop: 2
+  early_access_dev: 2
+  speedrun_support: 1
+evidence:
+  level_up_choices: Radiation (Rads) levels up the mutant; each level offers a choice of 4 Mutations.
+  endless_mode: Beating the Throne enables Loop mode with escalating enemy power.
+  optional_challenges: Crown Vaults offer Crowns that modify the run (Crown of Destiny, Crown of Blood).
+  early_access_dev: Developed on Steam Early Access with livestreamed development.
+confidence: high
+curator: agent

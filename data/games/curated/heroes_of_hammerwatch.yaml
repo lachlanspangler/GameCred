@@ -1,0 +1,35 @@
+appid: 677120
+name: Heroes of Hammerwatch
+developer: Crackshell
+release_year: 2018
+subgenre: hybrid_action_roguelite
+stats:
+  biome_count: 5
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  permadeath: 2
+  procgen_levels: 3
+  act_structure: 3
+  boss_gates: 3
+  long_runs: 2
+  character_classes: 3
+  unlock_characters: 2
+  level_up_choices: 2
+  skill_tree_meta: 2
+  hub_building: 3
+  permanent_stat_upgrades: 3
+  passive_relics: 2
+  item_rarity: 2
+  shops: 2
+  in_run_currency: 2
+  horde_density: 2
+  online_coop: 3
+  local_coop: 2
+  mod_support: 2
+evidence:
+  hub_building: Gold and ore brought back fund town buildings (guild hall, blacksmith, chapel) with persistent upgrades.
+  horde_density: Enemy spawners flood corridors with large packs, Gauntlet-style.
+  mod_support: Steam Workshop support for custom content.
+confidence: medium
+curator: agent

@@ -1,0 +1,35 @@
+appid: 1040420
+name: Dreamscaper
+developer: Afterburner Studios
+release_year: 2021
+subgenre: hybrid_action_roguelite
+stats:
+  playable_characters: 1
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  dodge_iframes: 2
+  melee_combos: 2
+  permadeath: 2
+  procgen_levels: 2
+  room_based_floors: 3
+  act_structure: 3
+  boss_gates: 3
+  weapons_variety: 2
+  loadout_start: 2
+  passive_relics: 2
+  talent_slots: 2
+  synergies: 2
+  item_rarity: 2
+  shops: 2
+  in_run_currency: 2
+  npc_relationships: 3
+  narrative_across_runs: 3
+  permanent_stat_upgrades: 2
+  early_access_dev: 2
+evidence:
+  npc_relationships: Daytime life-sim sections let Cassidy build relationships with townsfolk, unlocking lucid boosts.
+  narrative_across_runs: Story progresses between dream runs in Redhaven during the day.
+  talent_slots: Melee, ranged and special (lucid burst) slots are filled from in-run drops.
+confidence: medium
+curator: agent

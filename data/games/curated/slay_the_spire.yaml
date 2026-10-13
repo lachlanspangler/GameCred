@@ -1,0 +1,74 @@
+appid: 646570
+name: Slay the Spire
+developer: Mega Crit
+release_year: 2019
+subgenre: hybrid_deckbuilder
+wiki: https://slay-the-spire.fandom.com/wiki/Slay_the_Spire_Wiki
+critic:
+  metacritic: 89
+  ign: 9.0
+stats:
+  playable_characters: 4
+  run_length_min: 60
+  card_count: 350
+  item_count: 180
+  enemy_types: 66
+  boss_count: 10
+  biome_count: 4
+  difficulty_levels: 20
+  meta_currencies: 0
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  permadeath: 3
+  mid_run_save: 1
+  node_map: 3
+  act_structure: 3
+  boss_gates: 3
+  seeded_runs: 1
+  daily_challenge: 2
+  multiple_endings: 2
+  unlock_items: 2
+  unlock_characters: 2
+  ascension_ladder: 3
+  pick_one_of_n: 3
+  banish_skip: 1
+  synergies: 3
+  build_archetypes: 3
+  multiplicative_scaling: 2
+  item_upgrading: 2
+  character_classes: 3
+  passive_relics: 3
+  consumables: 2
+  item_rarity: 2
+  cursed_items: 2
+  shops: 2
+  in_run_currency: 2
+  deck_thinning: 3
+  turn_based: 3
+  energy_mana: 3
+  card_draw: 3
+  status_effects: 2
+  block_shield: 3
+  healing_scarcity: 3
+  enemy_intents: 3
+  attack_patterns: 2
+  elites: 3
+  enemy_hp_scaling: 2
+  double_edged_items: 3
+  hp_as_currency: 1
+  random_events: 3
+  optional_challenges: 2
+  leaderboards: 1
+  mod_support: 2
+  early_access_dev: 1
+  lore_codex: 1
+  run_history: 1
+evidence:
+  enemy_intents: Every enemy shows its next action (attack value / buff / debuff) above its head.
+  elites: Elite nodes are optional higher-risk fights that guarantee a relic.
+  double_edged_items: Boss relics like Ectoplasm/Coffee Dripper grant energy with a hard drawback.
+  ascension_ladder: 20 cumulative Ascension levels unlocked per character after a win.
+  deck_thinning: Card removal at shops/events is a primary strategic lever.
+confidence: high
+curator: seed

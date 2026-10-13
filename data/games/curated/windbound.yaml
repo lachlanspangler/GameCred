@@ -1,0 +1,22 @@
+appid: 1162130
+name: Windbound
+developer: 5 Lives Studios
+release_year: 2020
+subgenre: hybrid_survival
+mechanics:
+  hybrid_survival: 3
+  open_procgen_world: 3
+  crafting: 3
+  real_time_action: 2
+  act_structure: 2
+  permadeath: 2
+  inventory_management: 2
+  healing_scarcity: 2
+  assist_mode: 2
+  boss_gates: 1
+evidence:
+  open_procgen_world: Each chapter's archipelago is procedurally generated and explored by a self-built boat.
+  permadeath: Survivalist mode sends the player back to chapter 1 and wipes inventory on death; Storyteller mode keeps progress.
+  assist_mode: Storyteller mode exists specifically to remove the roguelike penalty.
+confidence: medium
+curator: agent

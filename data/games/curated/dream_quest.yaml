@@ -1,0 +1,31 @@
+appid: 557410
+name: Dream Quest
+developer: Peter Whalen
+release_year: 2016
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  character_classes: 3
+  level_up_choices: 3
+  procgen_levels: 3
+  act_structure: 2
+  boss_gates: 3
+  permadeath: 3
+  achievement_unlocks: 3
+  unlock_characters: 3
+  energy_mana: 3
+  card_draw: 2
+  shops: 2
+  in_run_currency: 2
+  deck_thinning: 2
+  turn_based: 3
+  healing_scarcity: 2
+  random_events: 1
+evidence:
+  achievement_unlocks: Achievements earn points that unlock new classes and perks.
+  procgen_levels: Each of 3 floors is a fog-of-war tile dungeon explored step by step.
+  level_up_choices: Leveling grants class-specific abilities or cards.
+  energy_mana: Colored mana types (plus gold-as-mana for some classes) pay for spells.
+confidence: medium
+curator: agent

@@ -1,0 +1,34 @@
+appid: 456670
+name: Hand of Fate 2
+developer: Defiant Development
+release_year: 2017
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 80
+mechanics:
+  hybrid_deckbuilder: 3
+  hybrid_action_roguelite: 2
+  real_time_action: 3
+  deckbuilding: 3
+  loadout_start: 3
+  random_events: 3
+  gambling: 3
+  dice: 2
+  healing_scarcity: 3
+  permadeath: 1
+  unlock_items: 3
+  achievement_unlocks: 3
+  optional_challenges: 2
+  shops: 2
+  in_run_currency: 2
+  melee_combos: 2
+  consumables: 1
+  cursed_items: 1
+  narrative_across_runs: 1
+evidence:
+  gambling: Chance cards, dice rolls, pendulum and wheel minigames decide event outcomes.
+  achievement_unlocks: Tokens earned by completing encounters unlock new cards.
+  healing_scarcity: Food is consumed per move; starving drains health.
+  loadout_start: Before each challenge the player builds encounter and equipment decks.
+confidence: medium
+curator: agent

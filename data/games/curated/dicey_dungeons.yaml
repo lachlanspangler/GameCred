@@ -1,0 +1,40 @@
+appid: 861540
+name: Dicey Dungeons
+developer: Terry Cavanagh
+release_year: 2019
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 80
+stats:
+  playable_characters: 6
+  run_length_min: 30
+mechanics:
+  hybrid_deckbuilder: 3
+  hybrid_puzzle: 2
+  dice: 3
+  turn_based: 3
+  inventory_management: 3
+  procgen_levels: 2
+  boss_gates: 3
+  short_runs: 2
+  permadeath: 2
+  character_classes: 3
+  unlock_characters: 2
+  optional_challenges: 2
+  status_effects: 2
+  shops: 2
+  in_run_currency: 1
+  item_upgrading: 2
+  enemy_intents: 1
+  synergies: 2
+  healing_scarcity: 2
+  mod_support: 2
+  content_updates: 2
+  pick_one_of_n: 1
+evidence:
+  dice: Rolled dice are slotted into equipment cards that require specific values.
+  inventory_management: Equipment is placed on a limited backpack grid that sizes your combat hand.
+  optional_challenges: Each character has 6 rule-changing Episodes with twisted rulesets.
+  mod_support: Official mod support added post-launch.
+confidence: high
+curator: agent

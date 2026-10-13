@@ -1,0 +1,23 @@
+appid: 293780
+name: Crawl
+developer: Powerhoof
+release_year: 2017
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  pvp: 3
+  local_coop: 1
+  level_up_choices: 2
+  weapon_evolution: 2
+  shops: 2
+  procgen_levels: 2
+  boss_gates: 3
+  short_runs: 3
+  environmental_hazards: 2
+evidence:
+  pvp: One player is the hero; the others are ghosts possessing traps and monsters, and whoever kills the hero takes over.
+  weapon_evolution: Ghost players spend Wrath to evolve their monsters into stronger forms.
+  boss_gates: The hero must reach level 10 and survive the final boss gate to win.
+confidence: medium
+curator: agent

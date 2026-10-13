@@ -1,0 +1,22 @@
+appid: 248860
+name: NEO Scavenger
+developer: Blue Bottle Games
+release_year: 2014
+subgenre: hybrid_survival
+critic:
+  metacritic: 77
+mechanics:
+  hybrid_survival: 3
+  turn_based: 3
+  permadeath: 3
+  crafting: 3
+  inventory_management: 3
+  status_effects: 3
+  loadout_start: 2
+  double_edged_items: 1
+  random_events: 2
+evidence:
+  status_effects: Detailed injuries, infections, hypothermia and diseases.
+  loadout_start: Point-buy skills and flaws at character creation.
+confidence: medium
+curator: agent

@@ -1,0 +1,27 @@
+appid: 625960
+name: Stoneshard
+developer: Ink Stains Games
+release_year: 2020
+subgenre: hybrid_traditional
+mechanics:
+  hybrid_traditional: 3
+  turn_based: 3
+  hybrid_survival: 2
+  permadeath: 2
+  procgen_levels: 2
+  long_runs: 3
+  status_effects: 3
+  level_up_choices: 2
+  character_classes: 2
+  build_archetypes: 2
+  inventory_management: 3
+  crafting: 1
+  shops: 2
+  healing_scarcity: 2
+  early_access_dev: 3
+evidence:
+  hybrid_survival: Hunger, thirst, fatigue and sanity plus per-limb injuries.
+  inventory_management: Spatial grid inventory with weight.
+  early_access_dev: In Early Access since 2020.
+confidence: medium
+curator: agent

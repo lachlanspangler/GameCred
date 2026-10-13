@@ -1,0 +1,37 @@
+appid: 1740720
+name: Have a Nice Death
+developer: Magic Design Studios
+release_year: 2023
+subgenre: hybrid_action_roguelite
+wiki: https://have-a-nice-death.fandom.com/wiki/Have_a_Nice_Death_Wiki
+stats:
+  playable_characters: 1
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 2
+  dodge_iframes: 2
+  melee_combos: 2
+  permadeath: 3
+  procgen_levels: 2
+  room_based_floors: 2
+  act_structure: 3
+  boss_gates: 3
+  weapons_variety: 2
+  pick_one_of_n: 2
+  talent_slots: 2
+  passive_relics: 2
+  energy_mana: 2
+  in_run_currency: 2
+  shops: 2
+  unlock_items: 2
+  permanent_stat_upgrades: 1
+  hub_building: 1
+  narrative_across_runs: 1
+  early_access_dev: 2
+evidence:
+  energy_mana: Spells consume a mana gauge that refills over time.
+  talent_slots: Curses picked between floors fill weapon/spell modifier categories.
+  boss_gates: Each department ends with a Sorrow boss fight.
+confidence: medium
+curator: agent

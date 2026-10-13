@@ -1,0 +1,42 @@
+appid: 2179850
+name: Cobalt Core
+developer: Rocket Rat Games
+release_year: 2023
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 94
+stats:
+  playable_characters: 8
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  energy_mana: 3
+  card_draw: 2
+  grid_tactics: 2
+  enemy_intents: 3
+  perfect_information: 2
+  node_map: 3
+  act_structure: 2
+  boss_gates: 3
+  permadeath: 2
+  narrative_across_runs: 3
+  unlock_characters: 3
+  unlock_items: 2
+  loadout_start: 3
+  passive_relics: 3
+  item_upgrading: 2
+  status_effects: 2
+  block_shield: 3
+  healing_scarcity: 2
+  random_events: 2
+  synergies: 2
+  build_archetypes: 2
+  character_classes: 3
+  turn_based: 3
+evidence:
+  grid_tactics: Ships move laterally; cannons and enemy attacks hit only the columns they align with.
+  enemy_intents: Enemy attack intents are shown per cannon column before your turn.
+  loadout_start: Choose 3 crew members (each contributes a card pool) and a ship.
+  narrative_across_runs: Time-loop story where crew memories unlock across runs.
+confidence: medium
+curator: agent

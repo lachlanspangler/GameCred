@@ -1,0 +1,23 @@
+appid: 2386310
+name: Ultros
+developer: Hadoque
+release_year: 2024
+subgenre: hybrid_metroidvania
+critic:
+  metacritic: 81
+mechanics:
+  hybrid_metroidvania: 3
+  platforming: 3
+  real_time_action: 3
+  melee_combos: 3
+  skill_tree_meta: 2
+  narrative_across_runs: 2
+  multiple_endings: 2
+  boss_gates: 1
+  unlock_items: 1
+evidence:
+  melee_combos: Varied combos are rewarded with more nutrients from defeated enemies, feeding skill unlocks.
+  narrative_across_runs: 'Time-loop structure: each cycle resets the Sarcophagus while story knowledge, key abilities and planted gardens persist.'
+  skill_tree_meta: Skill tree fed by nutrients from eating; much of it resets each loop while selected progress carries over.
+confidence: medium
+curator: agent

@@ -1,0 +1,31 @@
+appid: 1714040
+name: Super Auto Pets
+developer: Team Wood Games
+release_year: 2021
+subgenre: hybrid_autobattler
+wiki: https://superautopets.fandom.com/wiki/Super_Auto_Pets_Wiki
+mechanics:
+  hybrid_autobattler: 3
+  auto_battler: 3
+  turn_based: 1
+  async_multiplayer: 3
+  pvp: 2
+  shops: 3
+  in_run_currency: 3
+  reroll: 3
+  item_upgrading: 3
+  flat_stat_scaling: 3
+  synergies: 3
+  build_archetypes: 2
+  consumables: 2
+  loadout_start: 2
+  item_rarity: 1
+  short_runs: 3
+  content_updates: 3
+evidence:
+  async_multiplayer: Arena mode battles snapshots of other players' teams.
+  item_upgrading: Merging three copies of a pet levels it up and grants a free higher-tier shop pet.
+  flat_stat_scaling: Food and abilities give permanent +attack/+health buffs.
+  loadout_start: Packs (Turtle, Puppy, Star, Golden...) define the pet/food pool for the run.
+confidence: high
+curator: agent

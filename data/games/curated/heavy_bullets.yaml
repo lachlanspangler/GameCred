@@ -1,0 +1,28 @@
+appid: 297120
+name: Heavy Bullets
+developer: Terri Vellmann
+release_year: 2014
+subgenre: hybrid_shooter
+critic:
+  metacritic: 72
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 2
+  shops: 2
+  in_run_currency: 2
+  consumables: 2
+  second_chance: 2
+  healing_scarcity: 3
+  extraction: 1
+  passive_relics: 1
+evidence:
+  healing_scarcity: Very low HP; most enemies kill in one or two hits.
+  second_chance: Life insurance-style items let the player continue after death.
+  extraction: Banks let players deposit money and items to retrieve on future runs.
+  hybrid_shooter: Ammo is only six physical bullets that must be picked back up after firing.
+confidence: medium
+curator: agent

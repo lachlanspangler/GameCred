@@ -1,0 +1,23 @@
+appid: 1515640
+name: Arcadegeddon
+developer: IllFonic
+release_year: 2023
+subgenre: hybrid_shooter
+mechanics:
+  hybrid_shooter: 3
+  real_time_action: 3
+  online_coop: 3
+  pvp: 1
+  procgen_levels: 2
+  weapons_variety: 2
+  item_rarity: 2
+  boss_gates: 2
+  permadeath: 2
+  content_updates: 2
+  early_access_dev: 2
+evidence:
+  online_coop: Third-person shooter runs for up to 4 players through generated arcade worlds.
+  pvp: Optional PvP zones inside the PvE run.
+  early_access_dev: Spent ~2 years in Early Access; modest player base and Mostly Positive reviews.
+confidence: medium
+curator: agent

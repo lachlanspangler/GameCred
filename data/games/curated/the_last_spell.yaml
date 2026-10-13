@@ -1,0 +1,32 @@
+appid: 1105670
+name: The Last Spell
+developer: Ishtar Games
+release_year: 2023
+subgenre: hybrid_strategy
+critic:
+  metacritic: 82
+mechanics:
+  hybrid_strategy: 3
+  grid_tactics: 3
+  turn_based: 3
+  hybrid_city_builder: 2
+  waves: 3
+  horde_density: 2
+  permadeath: 2
+  long_runs: 3
+  act_structure: 2
+  boss_gates: 2
+  unlock_items: 3
+  permanent_stat_upgrades: 2
+  level_up_choices: 3
+  item_rarity: 2
+  shops: 2
+  ascension_ladder: 2
+  early_access_dev: 2
+evidence:
+  hybrid_city_builder: Day phase spends gold and materials rebuilding and fortifying the city.
+  waves: Night phase holds off huge hordes converging from all sides.
+  ascension_ladder: Apocalypse levels stack harder modifiers per city.
+  unlock_items: Essence from runs unlocks buildings, weapons and perks as meta progression.
+confidence: high
+curator: agent

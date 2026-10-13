@@ -1,0 +1,37 @@
+appid: 1175460
+name: Revita
+developer: BenStar
+release_year: 2023
+subgenre: hybrid_action_roguelite
+stats:
+  playable_characters: 1
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 3
+  twin_stick: 2
+  bullet_hell: 2
+  dodge_iframes: 2
+  permadeath: 3
+  procgen_levels: 2
+  room_based_floors: 3
+  act_structure: 3
+  boss_gates: 3
+  hp_as_currency: 3
+  passive_relics: 3
+  synergies: 2
+  shops: 2
+  in_run_currency: 1
+  double_edged_items: 2
+  unlock_items: 2
+  hub_building: 1
+  narrative_across_runs: 1
+  ascension_ladder: 2
+  assist_mode: 2
+  early_access_dev: 2
+evidence:
+  hp_as_currency: Hearts are the shop currency - relics and services cost HP, max HP is traded at the Soul Shrine.
+  platforming: Precision side-on platforming with mouse-aimed shooting.
+  hub_building: A clock tower train station hub fills with NPCs and services as runs progress.
+confidence: medium
+curator: agent

@@ -1,0 +1,46 @@
+appid: 212680
+name: 'FTL: Faster Than Light'
+developer: Subset Games
+release_year: 2012
+subgenre: hybrid_strategy
+wiki: https://ftl.fandom.com/wiki/FTL:_Faster_Than_Light_Wiki
+critic:
+  metacritic: 84
+stats:
+  playable_characters: 10
+  run_length_min: 120
+  boss_count: 1
+  difficulty_levels: 3
+mechanics:
+  hybrid_strategy: 3
+  permadeath: 3
+  mid_run_save: 1
+  node_map: 3
+  act_structure: 3
+  boss_gates: 1
+  multi_phase_bosses: 3
+  long_runs: 1
+  random_events: 3
+  push_your_luck: 2
+  shops: 3
+  in_run_currency: 3
+  item_upgrading: 3
+  weapons_variety: 2
+  synergies: 2
+  build_archetypes: 2
+  loadout_start: 2
+  character_classes: 2
+  unlock_characters: 2
+  achievement_unlocks: 3
+  inventory_management: 1
+  healing_scarcity: 2
+  high_variance_loot: 2
+  content_updates: 2
+evidence:
+  node_map: Each of 8 sectors is a beacon graph; the player picks jumps while the rebel fleet advances.
+  item_upgrading: Scrap buys reactor and system power upgrades (shields, weapons, engines) mid-run.
+  multi_phase_bosses: The Rebel Flagship fight has three distinct phases.
+  achievement_unlocks: New ships and layouts unlock through ship-specific achievements and event quests.
+  push_your_luck: Exploring extra beacons for scrap risks being caught by the advancing rebel fleet.
+confidence: high
+curator: agent

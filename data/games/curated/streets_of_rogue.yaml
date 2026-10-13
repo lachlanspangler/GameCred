@@ -1,0 +1,42 @@
+appid: 512900
+name: Streets of Rogue
+developer: Matt Dabrowski
+release_year: 2019
+subgenre: hybrid_action_roguelite
+wiki: https://streetsofrogue.fandom.com/wiki/Streets_of_Rogue_Wiki
+stats:
+  playable_characters: 26
+  biome_count: 6
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 3
+  character_classes: 3
+  unlock_characters: 3
+  unlock_items: 2
+  level_up_choices: 2
+  pick_one_of_n: 2
+  environmental_hazards: 2
+  physics_simulation: 1
+  weapons_variety: 2
+  consumables: 2
+  active_items: 2
+  inventory_management: 1
+  shops: 2
+  in_run_currency: 2
+  random_events: 1
+  optional_challenges: 2
+  modular_difficulty: 2
+  online_coop: 2
+  local_coop: 2
+  mod_support: 2
+  early_access_dev: 2
+evidence:
+  character_classes: Classes (Hacker, Gorilla, Doctor, Vampire) solve the same mission via stealth, hacking or violence.
+  optional_challenges: Each floor has optional missions (assassinate, steal, free prisoner) for extra rewards.
+  modular_difficulty: Mutators toggle global rule changes (Everyone Hates You, Infinite Ammo, Rocket Launchers Only).
+  mod_support: Character creator and level editor plus Steam Workshop support.
+confidence: medium
+curator: agent

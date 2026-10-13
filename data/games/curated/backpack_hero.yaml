@@ -1,0 +1,44 @@
+appid: 1970580
+name: Backpack Hero
+developer: Jaspel
+release_year: 2023
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 76
+stats:
+  playable_characters: 5
+mechanics:
+  hybrid_deckbuilder: 3
+  hybrid_puzzle: 2
+  inventory_management: 3
+  energy_mana: 3
+  turn_based: 3
+  synergies: 3
+  procgen_levels: 2
+  act_structure: 2
+  boss_gates: 3
+  permadeath: 2
+  hub_building: 3
+  unlock_items: 2
+  unlock_characters: 2
+  character_classes: 3
+  level_up_choices: 2
+  pick_one_of_n: 2
+  passive_relics: 2
+  consumables: 2
+  item_rarity: 2
+  cursed_items: 2
+  shops: 2
+  in_run_currency: 2
+  status_effects: 2
+  block_shield: 3
+  enemy_intents: 3
+  narrative_across_runs: 2
+  early_access_dev: 1
+evidence:
+  inventory_management: Items occupy shaped tiles in the backpack; adjacency drives effects.
+  level_up_choices: Leveling up grants new backpack spaces to place.
+  hub_building: Haversack Hill town is rebuilt with resources brought back from runs.
+  cursed_items: Curses enter the pack and occupy space with negative effects.
+confidence: medium
+curator: agent

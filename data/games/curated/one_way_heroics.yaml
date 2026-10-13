@@ -1,0 +1,19 @@
+appid: 266210
+name: One Way Heroics
+developer: Smoking WOLF
+release_year: 2014
+subgenre: hybrid_traditional
+mechanics:
+  hybrid_traditional: 3
+  turn_based: 3
+  permadeath: 3
+  open_procgen_world: 3
+  short_runs: 3
+  character_classes: 3
+  unlock_characters: 2
+  random_events: 1
+evidence:
+  open_procgen_world: A procedurally generated world scrolls right while darkness consumes the left edge every step.
+  short_runs: Runs last roughly 30 minutes.
+confidence: medium
+curator: agent

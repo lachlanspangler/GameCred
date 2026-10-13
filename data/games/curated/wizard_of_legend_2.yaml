@@ -1,0 +1,28 @@
+appid: 2193540
+name: Wizard of Legend 2
+developer: Dead Mage
+release_year: 2025
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  online_coop: 2
+  local_coop: 2
+  talent_slots: 2
+  loadout_start: 2
+  passive_relics: 2
+  elemental_interactions: 2
+  shops: 2
+  in_run_currency: 2
+  unlock_items: 2
+  dodge_iframes: 2
+  act_structure: 2
+  boss_gates: 3
+  synergies: 2
+  early_access_dev: 2
+evidence:
+  talent_slots: Arcana (spells) occupy fixed slots - basic, dash, standard, signature - swapped from run rewards.
+  elemental_interactions: Elemental arcana interact (e.g. water/ice/lightning combinations).
+  early_access_dev: Launched Early Access Oct 2024 with Mixed reviews after the 3D shift; 1.0 in 2025.
+confidence: medium
+curator: agent

@@ -1,0 +1,44 @@
+appid: 1940340
+name: Darkest Dungeon II
+developer: Red Hook Studios
+release_year: 2023
+subgenre: hybrid_strategy
+critic:
+  metacritic: 81
+mechanics:
+  hybrid_strategy: 3
+  turn_based: 3
+  permadeath: 3
+  mid_run_save: 1
+  node_map: 3
+  act_structure: 2
+  boss_gates: 3
+  long_runs: 2
+  skill_tree_meta: 3
+  unlock_characters: 2
+  unlock_items: 2
+  npc_relationships: 3
+  narrative_across_runs: 2
+  loadout_start: 2
+  character_classes: 3
+  synergies: 2
+  status_effects: 3
+  block_shield: 2
+  crits: 2
+  consumables: 2
+  shops: 2
+  in_run_currency: 2
+  passive_relics: 2
+  double_edged_items: 2
+  item_rarity: 2
+  random_events: 2
+  healing_scarcity: 2
+  content_updates: 2
+  early_access_dev: 1
+evidence:
+  npc_relationships: Party members form in-run relationships (romance, hatred) that change combat behaviour.
+  skill_tree_meta: Candles of Hope are spent at the Altar of Hope on persistent unlocks.
+  node_map: Each region is a branching road; the stagecoach picks forks toward inns and the Mountain.
+  block_shield: Combat tokens (block, dodge, guard) are the core mitigation layer.
+confidence: high
+curator: agent

@@ -1,0 +1,33 @@
+appid: 527230
+name: For The King
+developer: IronOak Games
+release_year: 2018
+subgenre: hybrid_strategy
+wiki: https://fortheking.fandom.com/wiki/For_The_King_Wiki
+critic:
+  metacritic: 79
+mechanics:
+  hybrid_strategy: 3
+  turn_based: 3
+  open_procgen_world: 3
+  permadeath: 3
+  second_chance: 3
+  long_runs: 3
+  boss_gates: 2
+  character_classes: 3
+  unlock_characters: 2
+  unlock_items: 2
+  rng_mitigation: 2
+  shops: 3
+  in_run_currency: 2
+  consumables: 2
+  status_effects: 2
+  random_events: 2
+  online_coop: 3
+  local_coop: 2
+evidence:
+  second_chance: A shared life pool lets fallen party members be revived until it runs out.
+  rng_mitigation: Focus points guarantee success slots on stat-check rolls.
+  unlock_items: Lore earned in runs buys new items, classes and events in the Lore Store.
+confidence: high
+curator: agent

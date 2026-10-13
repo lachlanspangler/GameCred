@@ -1,0 +1,28 @@
+appid: 1691190
+name: Rogue Waters
+developer: Ice Code Games
+release_year: 2024
+subgenre: hybrid_strategy
+critic:
+  metacritic: 83
+mechanics:
+  hybrid_strategy: 3
+  grid_tactics: 3
+  turn_based: 3
+  node_map: 3
+  environmental_hazards: 3
+  character_classes: 2
+  permadeath: 2
+  hub_building: 2
+  permanent_stat_upgrades: 2
+  unlock_characters: 2
+  random_events: 2
+  boss_gates: 2
+  act_structure: 2
+  status_effects: 1
+evidence:
+  environmental_hazards: Boarding fights reward knocking enemies overboard, into hazards or into each other.
+  character_classes: Pirate crew classes (e.g. gunners, brawlers) recruited by capturing enemy pirates.
+  hub_building: Ship and crew upgrades between runs are bought at the hideout.
+confidence: medium
+curator: agent

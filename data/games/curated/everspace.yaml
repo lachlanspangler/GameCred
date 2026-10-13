@@ -1,0 +1,33 @@
+appid: 396750
+name: EVERSPACE
+developer: ROCKFISH Games
+release_year: 2017
+subgenre: hybrid_shooter
+critic:
+  metacritic: 79
+mechanics:
+  hybrid_shooter: 3
+  real_time_action: 3
+  permadeath: 3
+  procgen_levels: 2
+  node_map: 2
+  act_structure: 3
+  permanent_stat_upgrades: 3
+  crafting: 2
+  consumables: 2
+  character_classes: 2
+  unlock_characters: 1
+  narrative_across_runs: 2
+  weapons_variety: 2
+  random_events: 2
+  hybrid_survival: 1
+  healing_scarcity: 2
+  inventory_management: 1
+  boss_gates: 1
+evidence:
+  permanent_stat_upgrades: Credits carried over from each death buy permanent perks in the hangar.
+  node_map: Each sector offers a jump map of procedurally generated locations to choose from.
+  narrative_across_runs: The clone-pilot story advances with each death and new clone.
+  hybrid_survival: Fuel must be managed to keep jumping between locations.
+confidence: medium
+curator: agent

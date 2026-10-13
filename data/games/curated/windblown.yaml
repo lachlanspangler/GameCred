@@ -1,0 +1,37 @@
+appid: 1911610
+name: Windblown
+developer: Motion Twin
+release_year: 2024
+subgenre: hybrid_action_roguelite
+stats:
+  playable_characters: 1
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  dodge_iframes: 3
+  melee_combos: 3
+  permadeath: 3
+  procgen_levels: 2
+  room_based_floors: 2
+  act_structure: 3
+  boss_gates: 3
+  attack_patterns: 2
+  weapons_variety: 3
+  loadout_start: 1
+  synergies: 3
+  passive_relics: 2
+  item_upgrading: 2
+  status_effects: 2
+  shops: 2
+  in_run_currency: 2
+  unlock_items: 3
+  hub_building: 2
+  online_coop: 3
+  early_access_dev: 3
+  content_updates: 2
+evidence:
+  synergies: Alterattack - finishing a combo with one weapon triggers the other equipped weapon's special.
+  online_coop: Built for 3-player online co-op.
+  unlock_items: Blueprints and weapons are unlocked in the Ark hub for future runs.
+confidence: medium
+curator: agent

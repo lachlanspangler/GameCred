@@ -1,0 +1,36 @@
+appid: 1154810
+name: Going Under
+developer: Aggro Crab
+release_year: 2020
+subgenre: hybrid_action_roguelite
+stats:
+  playable_characters: 1
+  biome_count: 4
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  dodge_iframes: 2
+  permadeath: 2
+  procgen_levels: 2
+  room_based_floors: 3
+  act_structure: 3
+  boss_gates: 3
+  physics_simulation: 2
+  environmental_hazards: 2
+  weapons_variety: 3
+  passive_relics: 2
+  active_items: 1
+  shops: 2
+  in_run_currency: 2
+  npc_relationships: 2
+  narrative_across_runs: 2
+  optional_challenges: 2
+  assist_mode: 2
+  unlock_items: 1
+evidence:
+  weapons_variety: Almost any object (chairs, keyboards, swords) is a breakable weapon with durability.
+  npc_relationships: Mentoring coworkers raises their level and unlocks their Skills for runs.
+  optional_challenges: Tasks assigned by coworkers grant rewards when completed in a run.
+  assist_mode: Assist options reduce damage and add invulnerability.
+confidence: medium
+curator: agent

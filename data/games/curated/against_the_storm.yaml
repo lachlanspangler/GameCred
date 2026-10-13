@@ -1,0 +1,43 @@
+appid: 1336490
+name: Against the Storm
+developer: Eremite Games
+release_year: 2023
+subgenre: hybrid_city_builder
+wiki: https://hoodedhorse.com/wiki/Against_the_Storm/Main_Page
+critic:
+  metacritic: 91
+stats:
+  run_length_min: 75
+mechanics:
+  hybrid_city_builder: 3
+  hybrid_survival: 1
+  procgen_levels: 3
+  time_pressure: 3
+  hub_building: 3
+  skill_tree_meta: 2
+  unlock_items: 2
+  pick_one_of_n: 3
+  reroll: 2
+  passive_relics: 3
+  synergies: 2
+  build_archetypes: 2
+  double_edged_items: 2
+  crafting: 3
+  shops: 2
+  in_run_currency: 2
+  random_events: 2
+  optional_challenges: 2
+  ascension_ladder: 3
+  modular_difficulty: 2
+  daily_challenge: 2
+  speed_controls: 2
+  early_access_dev: 2
+  content_updates: 2
+evidence:
+  time_pressure: The Queen's Impatience meter fills over time and loses the settlement if maxed.
+  passive_relics: Cornerstones picked from offers each season permanently alter settlement rules.
+  ascension_ladder: Prestige 1-20 stacks cumulative difficulty modifiers above Viceroy.
+  hub_building: The Smoldering City upgrades persist between settlements.
+  optional_challenges: Dangerous and Forbidden Glades hold rewards guarded by events and hostility.
+confidence: high
+curator: agent

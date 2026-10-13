@@ -1,0 +1,26 @@
+appid: 250580
+name: Paranautical Activity
+developer: Code Avarice
+release_year: 2014
+subgenre: hybrid_shooter
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  permadeath: 3
+  procgen_levels: 3
+  room_based_floors: 3
+  act_structure: 2
+  boss_gates: 3
+  passive_relics: 2
+  shops: 2
+  in_run_currency: 2
+  character_classes: 2
+  bullet_hell: 2
+  unlock_characters: 1
+evidence:
+  room_based_floors: Explicitly Binding of Isaac-inspired floors of locked rooms with a boss per floor, in first person.
+  bullet_hell: Enemies and bosses fire dense, slow projectile patterns to strafe through.
+  character_classes: Several characters with different weapon loadouts and stats.
+confidence: medium
+curator: agent

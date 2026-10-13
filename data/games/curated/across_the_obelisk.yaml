@@ -1,0 +1,49 @@
+appid: 1385380
+name: Across the Obelisk
+developer: Dreamsite Games
+release_year: 2022
+subgenre: hybrid_deckbuilder
+stats:
+  run_length_min: 240
+mechanics:
+  hybrid_deckbuilder: 3
+  online_coop: 3
+  character_classes: 3
+  deckbuilding: 3
+  energy_mana: 3
+  card_draw: 2
+  node_map: 3
+  act_structure: 3
+  boss_gates: 3
+  permadeath: 2
+  mid_run_save: 2
+  long_runs: 3
+  unlock_characters: 3
+  unlock_items: 2
+  permanent_stat_upgrades: 2
+  skill_tree_meta: 2
+  level_up_choices: 2
+  ascension_ladder: 2
+  modular_difficulty: 2
+  item_upgrading: 3
+  crafting: 2
+  shops: 3
+  in_run_currency: 2
+  passive_relics: 2
+  status_effects: 3
+  block_shield: 3
+  random_events: 3
+  optional_challenges: 2
+  deck_thinning: 2
+  daily_challenge: 1
+  leaderboards: 1
+  turn_based: 3
+  content_updates: 3
+  early_access_dev: 1
+evidence:
+  online_coop: Up to 4 players each control one hero of the 4-hero party.
+  permanent_stat_upgrades: Hero Perk points earned across runs buy permanent bonuses per hero.
+  item_upgrading: Every card has two upgrade branches (blue/gold) chosen at towns.
+  modular_difficulty: Madness levels plus selectable Corruptors stack difficulty.
+confidence: medium
+curator: agent

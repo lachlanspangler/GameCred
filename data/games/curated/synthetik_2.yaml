@@ -1,0 +1,26 @@
+appid: 1471410
+name: SYNTHETIK 2
+developer: Flow Fire Games
+release_year: 2021
+subgenre: hybrid_shooter
+mechanics:
+  hybrid_shooter: 3
+  twin_stick: 3
+  real_time_action: 3
+  permadeath: 2
+  online_coop: 3
+  character_classes: 2
+  weapons_variety: 3
+  item_upgrading: 2
+  item_rarity: 2
+  passive_relics: 2
+  inventory_management: 2
+  open_procgen_world: 2
+  unlock_items: 2
+  early_access_dev: 3
+evidence:
+  online_coop: Built around up to 4-player co-op, unlike the largely solo original.
+  early_access_dev: Long-running Early Access (since 2021) with a rework-heavy roadmap; reviews well below the 94% of the first game.
+  weapons_variety: Weapon handling (heat, manual reload, malfunctions) carried over from SYNTHETIK.
+confidence: medium
+curator: agent

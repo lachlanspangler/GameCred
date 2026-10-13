@@ -1,0 +1,23 @@
+appid: 463980
+name: Solitairica
+developer: Righteous Hammer Games
+release_year: 2016
+subgenre: hybrid_puzzle
+mechanics:
+  hybrid_puzzle: 3
+  hybrid_deckbuilder: 1
+  energy_mana: 3
+  turn_based: 3
+  permadeath: 2
+  shops: 2
+  in_run_currency: 2
+  loadout_start: 2
+  unlock_items: 2
+  boss_gates: 2
+  enemy_intents: 2
+  consumables: 1
+evidence:
+  energy_mana: Clearing solitaire cards of each suit generates colored energy to cast spells.
+  enemy_intents: Enemies charge abilities on visible countdowns.
+confidence: medium
+curator: agent

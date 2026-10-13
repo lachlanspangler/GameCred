@@ -1,0 +1,30 @@
+appid: 333300
+name: ADOM (Ancient Domains Of Mystery)
+developer: Thomas Biskup
+release_year: 2015
+subgenre: hybrid_traditional
+mechanics:
+  hybrid_traditional: 3
+  turn_based: 3
+  permadeath: 3
+  mid_run_save: 2
+  open_procgen_world: 2
+  procgen_levels: 3
+  long_runs: 3
+  multiple_endings: 3
+  character_classes: 3
+  double_edged_items: 1
+  consumables: 3
+  status_effects: 2
+  shops: 2
+  in_run_currency: 2
+  crafting: 1
+  enemy_variety: 3
+  optional_challenges: 2
+  healing_scarcity: 1
+evidence:
+  multiple_endings: Several endings including ultra endings requiring long quest chains.
+  character_classes: Race x class combinations (10+ races, 20+ classes).
+  double_edged_items: Chaos corruption grows over time and grants mutations that are mostly harmful, some useful.
+confidence: medium
+curator: agent

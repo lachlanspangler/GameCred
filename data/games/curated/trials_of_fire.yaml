@@ -1,0 +1,35 @@
+appid: 1038370
+name: Trials of Fire
+developer: Whatboy Games
+release_year: 2021
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 81
+mechanics:
+  hybrid_deckbuilder: 3
+  hybrid_strategy: 2
+  deckbuilding: 3
+  grid_tactics: 3
+  turn_based: 3
+  energy_mana: 2
+  open_procgen_world: 2
+  random_events: 3
+  level_up_choices: 2
+  character_classes: 3
+  inventory_management: 2
+  crafting: 2
+  healing_scarcity: 2
+  shops: 1
+  permadeath: 2
+  unlock_items: 2
+  long_runs: 2
+  block_shield: 2
+  status_effects: 2
+  item_rarity: 2
+evidence:
+  deckbuilding: Each hero's deck is derived from the equipment they carry.
+  grid_tactics: Battles on a hex grid with facing and positioning.
+  energy_mana: Willpower earned by discarding cards fuels plays.
+  random_events: Storybook encounters across an explorable overworld.
+confidence: medium
+curator: agent

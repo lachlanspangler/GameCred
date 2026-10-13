@@ -1,0 +1,25 @@
+appid: 1996430
+name: Dicefolk
+developer: LEAP Game Studios
+release_year: 2024
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  dice: 3
+  turn_based: 3
+  reroll: 2
+  node_map: 2
+  act_structure: 2
+  boss_gates: 3
+  permadeath: 2
+  synergies: 2
+  item_upgrading: 2
+  shops: 2
+  in_run_currency: 2
+  enemy_intents: 2
+  perfect_information: 2
+evidence:
+  dice: Rolled dice faces command both your chimeras and the enemy team.
+  perfect_information: Roster rotation wheel and dice results are visible for planning.
+confidence: medium
+curator: agent

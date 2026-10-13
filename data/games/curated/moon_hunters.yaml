@@ -1,0 +1,30 @@
+appid: 320040
+name: Moon Hunters
+developer: Kitfox Games
+release_year: 2016
+subgenre: hybrid_action_roguelite
+stats:
+  playable_characters: 6
+  run_length_min: 30
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  procgen_levels: 2
+  open_procgen_world: 1
+  short_runs: 2
+  time_pressure: 2
+  boss_gates: 2
+  character_classes: 3
+  unlock_characters: 2
+  random_events: 3
+  multiple_endings: 2
+  narrative_across_runs: 2
+  lore_codex: 2
+  local_coop: 3
+  online_coop: 2
+evidence:
+  time_pressure: A run is five in-game days; each day you choose one region to explore.
+  random_events: Nightly campfire events and personality-trait choices shape the legend recorded.
+  lore_codex: The Constellations/legends book records each hero's deeds across runs.
+confidence: medium
+curator: agent

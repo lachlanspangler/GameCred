@@ -1,0 +1,44 @@
+appid: 333640
+name: Caves of Qud
+developer: Freehold Games
+release_year: 2024
+subgenre: hybrid_traditional
+wiki: https://wiki.cavesofqud.com/wiki/Caves_of_Qud_Wiki
+critic:
+  metacritic: 91
+mechanics:
+  hybrid_traditional: 3
+  turn_based: 3
+  permadeath: 3
+  mid_run_save: 2
+  open_procgen_world: 3
+  procgen_levels: 3
+  long_runs: 3
+  multiple_endings: 2
+  character_classes: 3
+  level_up_choices: 2
+  build_archetypes: 3
+  synergies: 2
+  physics_simulation: 3
+  elemental_interactions: 2
+  status_effects: 3
+  crafting: 2
+  inventory_management: 2
+  consumables: 3
+  shops: 2
+  in_run_currency: 2
+  weapons_variety: 2
+  enemy_variety: 3
+  environmental_hazards: 1
+  daily_challenge: 2
+  assist_mode: 1
+  mod_support: 2
+  early_access_dev: 3
+evidence:
+  physics_simulation: Liquids mix and flow, temperature and gas spread, and fire propagates through the simulated world.
+  in_run_currency: Fresh water (drams) is the trade currency with merchants.
+  build_archetypes: Mutant mutation picks vs True Kin cybernetics produce very different builds.
+  daily_challenge: A Daily game mode gives everyone the same seeded character each day.
+  assist_mode: Roleplay mode adds checkpoints; Wander mode removes most hostility.
+confidence: high
+curator: agent

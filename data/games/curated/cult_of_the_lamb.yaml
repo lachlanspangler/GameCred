@@ -1,0 +1,52 @@
+appid: 1313140
+name: Cult of the Lamb
+developer: Massive Monster
+release_year: 2022
+subgenre: hybrid_action_roguelite
+wiki: https://cult-of-the-lamb.fandom.com/wiki/Cult_of_the_Lamb_Wiki
+stats:
+  playable_characters: 1
+  run_length_min: 15
+  boss_count: 4
+  biome_count: 4
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_city_builder: 2
+  real_time_action: 3
+  dodge_iframes: 2
+  melee_combos: 1
+  permadeath: 1
+  procgen_levels: 2
+  node_map: 2
+  room_based_floors: 2
+  short_runs: 3
+  boss_gates: 3
+  act_structure: 2
+  weapons_variety: 2
+  pick_one_of_n: 2
+  passive_relics: 2
+  active_items: 1
+  consumables: 1
+  status_effects: 1
+  item_rarity: 1
+  in_run_currency: 2
+  hub_building: 3
+  skill_tree_meta: 2
+  permanent_stat_upgrades: 2
+  npc_relationships: 2
+  crafting: 2
+  random_events: 2
+  gambling: 1
+  unlock_items: 2
+  optional_challenges: 1
+  online_coop: 1
+  local_coop: 2
+  content_updates: 3
+  steam_deck_friendly: 2
+evidence:
+  hub_building: Between crusades the player manages a cult base - buildings, farming, food, faith and follower needs.
+  pick_one_of_n: Tarot cards drawn during a crusade offer run-long buffs.
+  node_map: Each crusade is a branching node path of rooms leading to a bishop.
+  gambling: Knucklebones dice minigame is played for wagers with NPCs.
+confidence: high
+curator: agent

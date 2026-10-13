@@ -1,0 +1,22 @@
+appid: 688420
+name: 'Bad North: Jotunn Edition'
+developer: Plausible Concept
+release_year: 2018
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  permadeath: 3
+  mid_run_save: 2
+  procgen_levels: 3
+  node_map: 2
+  waves: 2
+  item_upgrading: 3
+  character_classes: 2
+  unlock_items: 2
+  short_runs: 1
+evidence:
+  item_upgrading: Coins saved from intact houses upgrade each commander's unit class and abilities.
+  node_map: Islands are chosen on a map while the viking fleet advances behind.
+  permadeath: Commanders who lose their unit are dead for the rest of the run.
+confidence: high
+curator: agent

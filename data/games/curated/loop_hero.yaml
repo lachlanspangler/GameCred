@@ -1,0 +1,39 @@
+appid: 1282730
+name: Loop Hero
+developer: Four Quarters
+release_year: 2021
+subgenre: hybrid_autobattler
+wiki: https://loophero.fandom.com/wiki/Loop_Hero_Wiki
+critic:
+  metacritic: 82
+stats:
+  playable_characters: 4
+  boss_count: 4
+mechanics:
+  hybrid_autobattler: 3
+  auto_battler: 3
+  deckbuilding: 2
+  permadeath: 1
+  extraction: 3
+  push_your_luck: 3
+  hub_building: 3
+  unlock_items: 2
+  unlock_characters: 2
+  character_classes: 2
+  narrative_across_runs: 2
+  act_structure: 2
+  boss_gates: 3
+  enemy_hp_scaling: 3
+  synergies: 3
+  level_up_choices: 2
+  pick_one_of_n: 2
+  item_rarity: 2
+  inventory_management: 1
+  speed_controls: 2
+evidence:
+  extraction: Retreating at camp keeps all gathered resources; dying keeps only 30%.
+  synergies: Placed tiles combine (e.g. 3x3 rock/mountain into a peak, vampire mansions next to villages).
+  auto_battler: The hero walks and fights automatically; the player places tiles and manages gear.
+  hub_building: Resources build the persistent camp, which unlocks cards, classes and supplies.
+confidence: high
+curator: agent

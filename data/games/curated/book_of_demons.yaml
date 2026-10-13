@@ -1,0 +1,34 @@
+appid: 449960
+name: Book of Demons
+developer: Thing Trunk
+release_year: 2018
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 72
+stats:
+  playable_characters: 3
+mechanics:
+  hybrid_deckbuilder: 3
+  hybrid_action_roguelite: 1
+  real_time_action: 3
+  deckbuilding: 2
+  energy_mana: 2
+  active_items: 2
+  passive_relics: 2
+  consumables: 2
+  item_upgrading: 2
+  procgen_levels: 3
+  act_structure: 3
+  boss_gates: 3
+  character_classes: 3
+  permadeath: 1
+  level_up_choices: 1
+  status_effects: 1
+  healing_scarcity: 1
+  short_runs: 1
+evidence:
+  real_time_action: Click-to-move hack-and-slash where cards are equipped as spells/passives.
+  short_runs: Flexiscope lets the player choose dungeon length before each descent.
+  energy_mana: Equipped cards reserve or spend mana.
+confidence: medium
+curator: agent

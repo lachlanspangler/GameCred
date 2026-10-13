@@ -1,0 +1,33 @@
+appid: 1676840
+name: For The King II
+developer: IronOak Games
+release_year: 2023
+subgenre: hybrid_strategy
+critic:
+  metacritic: 76
+mechanics:
+  hybrid_strategy: 3
+  turn_based: 3
+  open_procgen_world: 3
+  permadeath: 3
+  second_chance: 3
+  long_runs: 3
+  boss_gates: 2
+  character_classes: 3
+  unlock_characters: 2
+  unlock_items: 2
+  rng_mitigation: 2
+  shops: 3
+  in_run_currency: 2
+  consumables: 2
+  status_effects: 2
+  random_events: 2
+  online_coop: 3
+  local_coop: 2
+  content_updates: 2
+evidence:
+  second_chance: Shared life pool continues from the original.
+  rng_mitigation: Focus spent on slot rolls; battles add front/back-row positioning.
+  online_coop: Four-player online co-op.
+confidence: high
+curator: agent

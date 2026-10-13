@@ -1,0 +1,21 @@
+appid: 2128270
+name: Path of Achra
+developer: Ulfsire
+release_year: 2024
+subgenre: hybrid_traditional
+mechanics:
+  hybrid_traditional: 3
+  turn_based: 3
+  permadeath: 3
+  procgen_levels: 3
+  loadout_start: 3
+  character_classes: 3
+  build_archetypes: 3
+  synergies: 3
+  level_up_choices: 3
+  multiplicative_scaling: 2
+evidence:
+  loadout_start: Character is a combination of culture, class and god, each granting passives.
+  synergies: Trigger-based passives (on hit, on kill, on prayer) chain into screen-clearing builds.
+confidence: medium
+curator: agent

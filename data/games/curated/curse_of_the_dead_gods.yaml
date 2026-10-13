@@ -1,0 +1,48 @@
+appid: 1123770
+name: Curse of the Dead Gods
+developer: Passtech Games
+release_year: 2021
+subgenre: hybrid_action_roguelite
+wiki: https://curse-of-the-dead-gods.fandom.com/wiki/Curse_of_the_Dead_Gods_Wiki
+stats:
+  playable_characters: 1
+  run_length_min: 25
+  biome_count: 3
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  dodge_iframes: 3
+  melee_combos: 2
+  permadeath: 3
+  procgen_levels: 2
+  room_based_floors: 3
+  node_map: 2
+  rng_mitigation: 2
+  boss_gates: 3
+  attack_patterns: 2
+  short_runs: 2
+  weapons_variety: 2
+  loadout_start: 2
+  passive_relics: 2
+  cursed_items: 3
+  double_edged_items: 3
+  hp_as_currency: 3
+  energy_mana: 2
+  shops: 2
+  in_run_currency: 2
+  environmental_hazards: 3
+  status_effects: 2
+  elites: 2
+  optional_challenges: 2
+  permanent_stat_upgrades: 2
+  unlock_items: 2
+  ascension_ladder: 2
+  early_access_dev: 2
+evidence:
+  cursed_items: Corruption meter grants a permanent Curse each time it fills, with some curses tied to room types.
+  hp_as_currency: Blood can be paid at altars when gold runs short, adding Corruption.
+  environmental_hazards: Darkness boosts enemy damage; torches and braziers light rooms and ignite oil and traps.
+  energy_mana: Stamina gauge governs dodges and special attacks.
+  rng_mitigation: Room-choice doors preview rewards before entry.
+confidence: medium
+curator: agent

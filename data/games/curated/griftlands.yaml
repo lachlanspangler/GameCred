@@ -1,0 +1,51 @@
+appid: 601840
+name: Griftlands
+developer: Klei Entertainment
+release_year: 2021
+subgenre: hybrid_deckbuilder
+wiki: https://griftlands.fandom.com/wiki/Griftlands_Wiki
+critic:
+  metacritic: 84
+stats:
+  playable_characters: 3
+  run_length_min: 150
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  energy_mana: 3
+  card_draw: 3
+  npc_relationships: 3
+  random_events: 3
+  act_structure: 3
+  boss_gates: 3
+  permadeath: 2
+  mid_run_save: 1
+  long_runs: 3
+  unlock_items: 2
+  unlock_characters: 2
+  ascension_ladder: 2
+  pick_one_of_n: 3
+  item_upgrading: 3
+  synergies: 2
+  build_archetypes: 2
+  character_classes: 3
+  passive_relics: 2
+  consumables: 2
+  cursed_items: 2
+  shops: 2
+  in_run_currency: 2
+  deck_thinning: 2
+  turn_based: 3
+  status_effects: 2
+  block_shield: 3
+  healing_scarcity: 2
+  double_edged_items: 2
+  optional_challenges: 2
+  enemy_intents: 2
+evidence:
+  npc_relationships: NPCs become loved/hated, granting boon or bane grafts that persist through the run.
+  deckbuilding: 'Two separate decks: Battle and Negotiation, each with its own card pool.'
+  item_upgrading: Cards gain XP when played and upgrade into one of two variants.
+  act_structure: Each campaign spans multiple in-game days ending in a boss confrontation.
+confidence: high
+curator: agent

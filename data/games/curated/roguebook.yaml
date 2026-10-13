@@ -1,0 +1,45 @@
+appid: 1076200
+name: Roguebook
+developer: Abrakam Entertainment SA
+release_year: 2021
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 78
+stats:
+  playable_characters: 4
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  energy_mana: 3
+  card_draw: 2
+  open_procgen_world: 2
+  act_structure: 3
+  boss_gates: 3
+  permadeath: 2
+  skill_tree_meta: 2
+  unlock_items: 2
+  ascension_ladder: 2
+  item_upgrading: 2
+  passive_relics: 2
+  consumables: 2
+  level_up_choices: 1
+  shops: 2
+  in_run_currency: 2
+  block_shield: 3
+  enemy_intents: 3
+  status_effects: 2
+  elites: 2
+  random_events: 1
+  healing_scarcity: 2
+  character_classes: 3
+  loadout_start: 2
+  turn_based: 3
+  synergies: 2
+evidence:
+  open_procgen_world: Hex map is revealed by spending ink and brushes earned in fights.
+  loadout_start: Pick 2 of the heroes; they share one deck and swap front/back position.
+  item_upgrading: Gems are socketed into cards to add effects.
+  skill_tree_meta: Pages earned per run unlock permanent bonuses in the Roguebook.
+  level_up_choices: Hero talents trigger as the deck reaches size thresholds.
+confidence: medium
+curator: agent

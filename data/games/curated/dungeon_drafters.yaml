@@ -1,0 +1,21 @@
+appid: 1824580
+name: Dungeon Drafters
+developer: Manalith Studios
+release_year: 2023
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 75
+mechanics:
+  hybrid_deckbuilder: 3
+  grid_tactics: 3
+  turn_based: 3
+  deckbuilding: 3
+  procgen_levels: 2
+  act_structure: 2
+  boss_gates: 2
+  permadeath: 2
+  environmental_hazards: 1
+evidence:
+  grid_tactics: Cards are played as movement and attacks on a tile grid dungeon room.
+confidence: medium
+curator: agent

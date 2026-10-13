@@ -1,0 +1,32 @@
+appid: 595140
+name: Immortal Redneck
+developer: Crema
+release_year: 2017
+subgenre: hybrid_shooter
+critic:
+  metacritic: 70
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  permadeath: 3
+  procgen_levels: 3
+  room_based_floors: 3
+  act_structure: 3
+  boss_gates: 3
+  skill_tree_meta: 3
+  permanent_stat_upgrades: 3
+  character_classes: 3
+  unlock_characters: 3
+  passive_relics: 2
+  double_edged_items: 2
+  cursed_items: 2
+  weapons_variety: 3
+  in_run_currency: 2
+  platforming: 1
+evidence:
+  skill_tree_meta: Gold from each run is spent on a large persistent skill tree; unspent gold is lost on re-entering.
+  character_classes: Unlockable Egyptian gods act as classes with unique weapons and passives.
+  double_edged_items: Scrolls include cursed variants with harmful effects alongside strong positives.
+confidence: medium
+curator: agent

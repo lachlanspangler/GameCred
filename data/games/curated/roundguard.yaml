@@ -1,0 +1,30 @@
+appid: 848030
+name: Roundguard
+developer: Wonderbelly Games
+release_year: 2020
+subgenre: hybrid_puzzle
+stats:
+  playable_characters: 3
+mechanics:
+  hybrid_puzzle: 3
+  physics_simulation: 2
+  character_classes: 3
+  active_items: 2
+  passive_relics: 3
+  consumables: 2
+  healing_scarcity: 2
+  act_structure: 2
+  boss_gates: 3
+  permadeath: 2
+  shops: 2
+  in_run_currency: 2
+  random_events: 2
+  cursed_items: 2
+  synergies: 2
+  turn_based: 2
+evidence:
+  physics_simulation: 'Peggle-style: the hero is launched into a board of enemies and pegs.'
+  active_items: Each class has mana-powered abilities activated mid-bounce.
+  cursed_items: Cursed relics offer strong effects with drawbacks.
+confidence: medium
+curator: agent

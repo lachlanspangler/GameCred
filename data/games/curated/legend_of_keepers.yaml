@@ -1,0 +1,21 @@
+appid: 978520
+name: 'Legend of Keepers: Career of a Dungeon Manager'
+developer: Goblinz Studio
+release_year: 2021
+subgenre: hybrid_strategy
+critic:
+  metacritic: 76
+mechanics:
+  hybrid_strategy: 3
+  turn_based: 3
+  permadeath: 2
+  random_events: 2
+  character_classes: 2
+  unlock_characters: 2
+  in_run_currency: 2
+  environmental_hazards: 2
+evidence:
+  environmental_hazards: Traps placed in dungeon rooms damage invading heroes before monsters fight them.
+  permadeath: Monsters killed defending are lost for the career.
+confidence: medium
+curator: agent

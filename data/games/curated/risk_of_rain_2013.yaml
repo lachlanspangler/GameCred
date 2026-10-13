@@ -1,0 +1,49 @@
+appid: 248820
+name: Risk of Rain (2013)
+developer: Hopoo Games
+release_year: 2013
+subgenre: hybrid_action_roguelite
+wiki: https://riskofrain.fandom.com/wiki/Risk_of_Rain_Wiki
+stats:
+  playable_characters: 12
+  run_length_min: 45
+  item_count: 110
+  difficulty_levels: 3
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 2
+  permadeath: 3
+  procgen_levels: 1
+  act_structure: 3
+  boss_gates: 2
+  time_pressure: 3
+  endless_mode: 2
+  enemy_hp_scaling: 3
+  item_stacking: 3
+  passive_relics: 3
+  active_items: 2
+  synergies: 2
+  multiplicative_scaling: 2
+  high_variance_loot: 3
+  item_rarity: 3
+  in_run_currency: 2
+  gambling: 2
+  character_classes: 3
+  crits: 2
+  horde_density: 2
+  elites: 2
+  achievement_unlocks: 3
+  unlock_items: 3
+  unlock_characters: 3
+  modular_difficulty: 2
+  lore_codex: 2
+  online_coop: 2
+  local_coop: 2
+evidence:
+  time_pressure: Difficulty meter rises with elapsed real time, from Very Easy to HAHAHAHA.
+  item_stacking: Duplicate items stack (Soldier's Syringe attack speed, etc.).
+  modular_difficulty: Artifacts found in stages toggle run modifiers (Honor, Glass, Kin, Command).
+  gambling: Shrines and chests consume gold for random item rolls.
+confidence: high
+curator: agent

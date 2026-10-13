@@ -1,0 +1,33 @@
+appid: 943140
+name: Sparklite
+developer: Red Blue Games
+release_year: 2019
+subgenre: hybrid_action_roguelite
+wiki: https://sparklite.fandom.com/wiki/Sparklite_Wiki
+stats:
+  playable_characters: 1
+  biome_count: 5
+  boss_count: 5
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  dodge_iframes: 1
+  procgen_levels: 3
+  open_procgen_world: 2
+  boss_gates: 3
+  permadeath: 1
+  hub_building: 3
+  inventory_management: 3
+  permanent_stat_upgrades: 2
+  passive_relics: 2
+  consumables: 1
+  weapons_variety: 1
+  in_run_currency: 2
+  unlock_items: 2
+  local_coop: 1
+evidence:
+  inventory_management: Patches are slotted into a grid-based patch board whose size is upgraded at the Refuge.
+  procgen_levels: The overworld map of Geodia reshuffles each time the player returns to it.
+  hub_building: Sparklite funds airship Refuge facilities (workshop, medbay, map room).
+confidence: medium
+curator: agent

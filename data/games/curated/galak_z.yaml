@@ -1,0 +1,26 @@
+appid: 300580
+name: GALAK-Z
+developer: 17-BIT
+release_year: 2015
+subgenre: hybrid_action_roguelite
+stats:
+  playable_characters: 1
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  twin_stick: 2
+  permadeath: 2
+  procgen_levels: 3
+  act_structure: 3
+  boss_gates: 2
+  physics_simulation: 1
+  item_upgrading: 2
+  passive_relics: 1
+  shops: 2
+  in_run_currency: 2
+  melee_combos: 1
+evidence:
+  act_structure: Campaign split into Seasons of 5 procedurally generated missions; dying restarts the Season.
+  physics_simulation: Newtonian thrust-and-drift flight model with a mech transformation for melee.
+confidence: medium
+curator: agent

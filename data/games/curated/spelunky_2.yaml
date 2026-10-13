@@ -1,0 +1,49 @@
+appid: 418530
+name: Spelunky 2
+developer: Mossmouth / BlitWorks
+release_year: 2020
+subgenre: hybrid_action_roguelite
+wiki: https://spelunky.fandom.com/wiki/Spelunky_2
+stats:
+  playable_characters: 20
+  run_length_min: 40
+  biome_count: 8
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 3
+  permadeath: 3
+  procgen_levels: 3
+  seeded_runs: 2
+  daily_challenge: 2
+  act_structure: 3
+  boss_gates: 2
+  time_pressure: 2
+  multiple_endings: 3
+  physics_simulation: 2
+  environmental_hazards: 3
+  active_items: 2
+  passive_relics: 2
+  consumables: 2
+  shops: 2
+  in_run_currency: 2
+  gambling: 1
+  push_your_luck: 2
+  healing_scarcity: 3
+  optional_challenges: 2
+  random_events: 1
+  online_coop: 2
+  local_coop: 2
+  pvp: 1
+  leaderboards: 2
+  speedrun_support: 2
+  lore_codex: 2
+  hub_building: 1
+  unlock_characters: 2
+evidence:
+  multiple_endings: Three endings - Hundun, Tiamat-only, and the Cosmic Ocean (7-98) true ending.
+  physics_simulation: Liquids (water, lava) flow and interact; explosions deform terrain.
+  seeded_runs: Seeded runs selectable from the camp.
+  online_coop: Up to 4-player online co-op and arena PvP.
+confidence: high
+curator: agent

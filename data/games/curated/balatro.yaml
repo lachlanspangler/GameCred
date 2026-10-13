@@ -1,0 +1,62 @@
+appid: 2379780
+name: Balatro
+developer: LocalThunk
+release_year: 2024
+subgenre: hybrid_deckbuilder
+wiki: https://balatrowiki.org/
+critic:
+  metacritic: 90
+stats:
+  run_length_min: 40
+  item_count: 150
+  boss_count: 28
+  difficulty_levels: 8
+  meta_currencies: 0
+mechanics:
+  hybrid_deckbuilder: 3
+  hybrid_puzzle: 1
+  deckbuilding: 3
+  poker_hands: 3
+  permadeath: 2
+  mid_run_save: 1
+  seeded_runs: 1
+  act_structure: 2
+  boss_gates: 3
+  endless_mode: 2
+  unlock_items: 2
+  achievement_unlocks: 2
+  ascension_ladder: 3
+  loadout_start: 2
+  pick_one_of_n: 2
+  reroll: 3
+  banish_skip: 2
+  multiplicative_scaling: 3
+  synergies: 3
+  build_archetypes: 3
+  item_upgrading: 2
+  passive_relics: 3
+  consumables: 3
+  item_rarity: 2
+  double_edged_items: 2
+  shops: 3
+  in_run_currency: 3
+  interest_economy: 3
+  inventory_management: 2
+  deck_thinning: 2
+  turn_based: 2
+  card_draw: 2
+  high_variance_loot: 2
+  gambling: 1
+  optional_challenges: 1
+  lore_codex: 1
+  speed_controls: 1
+  content_updates: 2
+  tutorialized_unlocks: 1
+evidence:
+  interest_economy: Earn $1 interest per $5 held (capped), making saving vs spending a core decision.
+  multiplicative_scaling: Jokers stack +Chips, +Mult and xMult in order, enabling exponential scores.
+  banish_skip: Small/Big Blinds can be skipped in exchange for a Tag reward.
+  ascension_ladder: 8 cumulative Stakes (White to Gold) per deck.
+  boss_gates: Each Ante ends in a Boss Blind with a rule-breaking debuff.
+confidence: high
+curator: agent

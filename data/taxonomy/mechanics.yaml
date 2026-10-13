@@ -1,0 +1,659 @@
+# GameCred Mechanic Taxonomy ("the textbook")
+#
+# Hierarchy: family -> subfamily -> mechanic.
+# Every mechanic id is globally unique (snake_case) and is what game profiles reference.
+#
+# Per-mechanic fields:
+#   name         human label
+#   desc         one-line definition (what must be true for a game to "have" it)
+#   steam_tags   Steam user tags that imply this mechanic (auto-tagger, confidence 0.7)
+#   keywords     lowercase phrases searched in store descriptions (auto-tagger, confidence 0.4)
+#   aliases      alternative ids/names accepted by the validator (self-healing renames)
+#
+# Intensity in game profiles: 1 = present, 2 = significant, 3 = core pillar of the game.
+version: 1
+
+families:
+
+  run_structure:
+    name: Run Structure
+    desc: How a single run is shaped, bounded and repeated.
+    subfamilies:
+      death_and_persistence:
+        name: Death & Persistence
+        mechanics:
+          permadeath:
+            name: Permadeath
+            desc: Losing ends the run; the run's state is discarded.
+            steam_tags: [Permadeath]
+            keywords: [permadeath, "permanent death", "death is permanent"]
+          mid_run_save:
+            name: Mid-run Save & Quit
+            desc: A run can be suspended and resumed later (no save-scumming).
+            keywords: ["save and quit", "suspend your run", "resume your run"]
+          second_chance:
+            name: Revive / Extra Life
+            desc: Items or systems that prevent a single death from ending the run.
+            keywords: ["extra life", "extra lives", revive, resurrect]
+          extraction:
+            name: Extraction / Bank-out
+            desc: Player may leave a run early to keep loot; dying forfeits it.
+            steam_tags: [Extraction Shooter]
+            keywords: [extraction, "extract with", "escape with your loot"]
+      procedural_generation:
+        name: Procedural Generation
+        mechanics:
+          procgen_levels:
+            name: Procedural Levels
+            desc: Level layouts are generated per run.
+            steam_tags: [Procedural Generation]
+            keywords: ["procedurally generated", "procedural generation", "randomly generated", "every run is different", "never the same"]
+          node_map:
+            name: Branching Node Map
+            desc: Player chooses a path through a graph of encounter nodes (StS-style map).
+            keywords: ["branching path", "choose your path", "map of", "branching map"]
+          room_based_floors:
+            name: Room-based Floors
+            desc: Floors composed of discrete rooms cleared one at a time (Isaac/Hades-style).
+            keywords: ["room by room", chambers, "each room"]
+          open_procgen_world:
+            name: Open Procedural World
+            desc: Continuous generated world explored freely within a run.
+            steam_tags: [Open World, Exploration]
+            keywords: ["open world", "explore a vast"]
+          seeded_runs:
+            name: Seeded Runs
+            desc: Players can enter/share a seed to replay an identical run.
+            keywords: [seeded, "custom seeds", "seed sharing"]
+          daily_challenge:
+            name: Daily / Weekly Challenge
+            desc: Shared fixed-seed challenge with leaderboard on a schedule.
+            keywords: ["daily challenge", "daily run", "weekly challenge", "daily seed"]
+      run_shape:
+        name: Run Shape & Length
+        mechanics:
+          act_structure:
+            name: Acts / Biomes
+            desc: Run divided into distinct themed stages with escalating difficulty.
+            keywords: [biomes, "distinct zones", "unique biomes", "three acts"]
+          boss_gates:
+            name: Boss Gates
+            desc: Stage ends with a boss that must be defeated to proceed.
+            keywords: ["boss at the end", "boss fights", "epic bosses", "challenging bosses"]
+          short_runs:
+            name: Short Runs (<30 min)
+            desc: A typical full run takes under ~30 minutes.
+            keywords: ["30 minute", "short runs", "quick runs", "bite-sized", "bite sized"]
+          long_runs:
+            name: Long Runs (>90 min)
+            desc: A typical full run takes over ~90 minutes.
+            keywords: ["epic runs", "long runs"]
+          endless_mode:
+            name: Endless Mode
+            desc: Run can continue indefinitely past the nominal end.
+            keywords: ["endless mode", "infinite mode"]
+          time_pressure:
+            name: Run Timer / Time Pressure
+            desc: Difficulty or failure escalates with real time (RoR2, Survivors timer).
+            keywords: ["the longer you", "difficulty increases over time", "survive for", "against the clock"]
+          multiple_endings:
+            name: Multiple Endings / True Ending
+            desc: Run outcomes branch into different endings, often a hidden true ending.
+            steam_tags: [Multiple Endings]
+            keywords: ["multiple endings", "true ending", "secret ending"]
+
+  meta_progression:
+    name: Meta-Progression
+    desc: What persists between runs and how it changes future runs.
+    subfamilies:
+      persistent_power:
+        name: Persistent Power
+        mechanics:
+          permanent_stat_upgrades:
+            name: Permanent Stat Upgrades
+            desc: Currency spent between runs on permanent stat boosts (Rogue Legacy, Hades mirror).
+            keywords: ["permanent upgrades", "permanently upgrade", "persistent upgrades", "between runs"]
+          skill_tree_meta:
+            name: Meta Skill Tree
+            desc: Branching tree of persistent unlocks/talents.
+            keywords: ["skill tree", "talent tree", "upgrade tree"]
+          hub_building:
+            name: Hub / Base Building
+            desc: Player builds or upgrades a persistent hub between runs.
+            steam_tags: [Base Building, Building, Town Building]
+            keywords: ["upgrade your base", "build your town", "home base", "your hub"]
+      content_unlocks:
+        name: Content Unlocks
+        mechanics:
+          unlock_items:
+            name: Item/Card Pool Unlocks
+            desc: New items/cards/relics added to the pool through play.
+            keywords: ["unlock new", unlockable, "unlock more", unlocks]
+          unlock_characters:
+            name: Unlockable Characters
+            desc: New playable characters gained through play.
+            keywords: ["unlock new characters", "unlockable characters", "unlock characters", "new heroes"]
+          achievement_unlocks:
+            name: Challenge-gated Unlocks
+            desc: Specific feats (not currency) unlock content (Isaac/RoR2 achievements).
+            keywords: ["complete challenges to unlock", achievements unlock]
+      difficulty_ladder:
+        name: Difficulty Ladder
+        mechanics:
+          ascension_ladder:
+            name: Ascension / Heat Ladder
+            desc: Stacking post-win difficulty levels (Ascension, Heat, Prestige).
+            keywords: [ascension, "heat system", "difficulty levels", "higher difficulties", "difficulty tiers"]
+          modular_difficulty:
+            name: Modular Difficulty Modifiers
+            desc: Player toggles individual handicap modifiers for rewards (Hades Pact).
+            keywords: ["modifiers", "customize difficulty", "pact"]
+      narrative_meta:
+        name: Narrative Meta
+        mechanics:
+          narrative_across_runs:
+            name: Story Progresses Across Runs
+            desc: Dying advances narrative; NPCs react to runs (Hades).
+            steam_tags: [Story Rich]
+            keywords: ["story unfolds", "every death", "each death", "with each run the story"]
+          lore_codex:
+            name: Codex / Compendium
+            desc: Collectible encyclopedia of discovered items/enemies.
+            keywords: [codex, compendium, bestiary]
+          npc_relationships:
+            name: NPC Relationships
+            desc: Persistent relationship/affinity meters with characters.
+            steam_tags: [Dating Sim, Romance]
+            keywords: [relationships, romance, "bond with"]
+
+  build_power:
+    name: Build & Power Scaling
+    desc: How the player's power grows inside a run and how builds form.
+    subfamilies:
+      choice_structures:
+        name: Choice Structures
+        mechanics:
+          pick_one_of_n:
+            name: Pick 1 of N Rewards
+            desc: Offered a small set of options, choose one (the core roguelite choice).
+            keywords: ["choose one of", "pick one", "one of three", "choose between", "choice of"]
+          level_up_choices:
+            name: Level-up Choice
+            desc: In-run XP leads to level-ups that present upgrade choices.
+            keywords: ["level up", "level-up", "gain experience"]
+          reroll:
+            name: Reroll
+            desc: Spend resource to re-randomize offered choices.
+            keywords: [reroll, re-roll]
+          banish_skip:
+            name: Banish / Skip
+            desc: Remove an option from the pool permanently or skip a reward.
+            keywords: [banish]
+          loadout_start:
+            name: Starting Loadout Choice
+            desc: Pre-run selection of weapon/kit/deck that shapes the run.
+            keywords: [loadout, "starting weapon", "choose your weapon", "starting deck"]
+      scaling_math:
+        name: Scaling Math
+        mechanics:
+          flat_stat_scaling:
+            name: Flat Stat Increments
+            desc: Upgrades add flat numbers (+5 damage, +10 HP).
+            keywords: ["increase your stats", "stat boosts", "stat upgrades"]
+          multiplicative_scaling:
+            name: Multiplicative Scaling
+            desc: Multipliers compound (xMult, % stacking) enabling exponential builds.
+            keywords: [multiplier, multipliers, exponential, multiply]
+          item_stacking:
+            name: Item Stacking
+            desc: Duplicate items stack their effect (RoR2-style).
+            keywords: [stacking, stackable, "items stack"]
+          weapon_evolution:
+            name: Evolution / Fusion
+            desc: Combine specific items/weapons into upgraded forms (VS evolutions).
+            keywords: [evolve, evolution, fuse, fusion, "combine items", "merge"]
+          synergies:
+            name: Explicit Synergies
+            desc: Designed interactions between items/abilities that multiply effect.
+            keywords: [synergy, synergies, synergize, "game-breaking", "broken builds"]
+          transformations:
+            name: Transformations / Set Bonuses
+            desc: Collecting N items of a set grants a bonus or transformation.
+            keywords: ["set bonus", "set bonuses", transformations]
+          build_archetypes:
+            name: Build Archetypes
+            desc: Distinct, nameable build strategies emerge (poison build, crit build).
+            keywords: [builds, "build crafting", buildcrafting, "theorycraft", "build variety"]
+      upgrades:
+        name: Upgrades
+        mechanics:
+          item_upgrading:
+            name: Item/Card Upgrading
+            desc: Existing items/cards can be improved mid-run (smith, upgrade).
+            keywords: ["upgrade your cards", "upgrade cards", "upgrade weapons", "upgrade your weapons", smith, forge]
+          cooldown_reduction:
+            name: Cooldown Reduction
+            desc: Upgrades that make abilities fire faster.
+            keywords: [cooldown, cooldowns, "attack speed", "fire rate"]
+          character_classes:
+            name: Distinct Characters / Classes
+            desc: Multiple playable characters with different kits.
+            steam_tags: [Character Customization, Class-Based]
+            keywords: ["playable characters", classes, "unique heroes", "each character", "unique characters"]
+          talent_slots:
+            name: Ability Slots / Boons
+            desc: Fixed ability slots filled/overwritten by run rewards (Hades boons).
+            keywords: [boons, blessings, "ability slots"]
+
+  items_economy:
+    name: Items & Economy
+    desc: Objects, resources and markets inside a run.
+    subfamilies:
+      item_types:
+        name: Item Types
+        mechanics:
+          passive_relics:
+            name: Passive Relics / Trinkets
+            desc: Persistent passive items modifying rules.
+            keywords: [relics, relic, trinkets, artifacts, "passive items"]
+          active_items:
+            name: Active Items
+            desc: Usable items with charges or cooldowns.
+            keywords: ["active item", "active items"]
+          consumables:
+            name: Consumables
+            desc: Single-use items (potions, bombs, scrolls).
+            keywords: [potions, consumables, scrolls]
+          weapons_variety:
+            name: Weapon Variety
+            desc: Many distinct weapons with different behaviours.
+            keywords: ["hundreds of weapons", arsenal, "dozens of weapons", "variety of weapons"]
+          item_rarity:
+            name: Rarity Tiers
+            desc: Items stratified by rarity with power correlated to rarity.
+            steam_tags: [Loot]
+            keywords: [legendary, rarity, "rare items"]
+          cursed_items:
+            name: Cursed Items
+            desc: Items with mandatory downsides or that clog inventory/deck.
+            keywords: [cursed, curses]
+      economy:
+        name: In-run Economy
+        mechanics:
+          shops:
+            name: Shops / Merchants
+            desc: Spend in-run currency at shops.
+            keywords: [shop, shops, merchant, merchants, vendor]
+          in_run_currency:
+            name: In-run Currency
+            desc: Currency earned and spent within the run (gold, coins).
+            keywords: [gold, coins, currency]
+          interest_economy:
+            name: Interest / Economy Management
+            desc: Saving currency yields returns; economic planning is core (Balatro, auto-battlers).
+            keywords: ["earn interest", "manage your economy", "economy management"]
+          crafting:
+            name: Crafting
+            desc: Combine resources into items.
+            steam_tags: [Crafting]
+            keywords: [crafting, "craft new"]
+          inventory_management:
+            name: Inventory / Spatial Inventory
+            desc: Limited or spatial inventory forces item tradeoffs (Backpack Hero).
+            steam_tags: [Inventory Management]
+            keywords: ["inventory management", backpack, "limited inventory"]
+          deck_thinning:
+            name: Removal / Thinning
+            desc: Remove weak cards/items to increase consistency.
+            keywords: ["remove cards", "card removal", "thin your deck"]
+
+  combat:
+    name: Combat Model
+    desc: The moment-to-moment interaction model.
+    subfamilies:
+      time_model:
+        name: Time Model
+        mechanics:
+          real_time_action:
+            name: Real-time Action
+            desc: Continuous real-time control of an avatar.
+            steam_tags: [Action, Hack and Slash, Fast-Paced]
+            keywords: ["real-time", "fast-paced", "action-packed", "hack and slash"]
+          turn_based:
+            name: Turn-based
+            desc: Actions resolve in discrete turns.
+            steam_tags: [Turn-Based, Turn-Based Combat, Turn-Based Strategy, Turn-Based Tactics]
+            keywords: ["turn-based", "turn based"]
+          grid_tactics:
+            name: Grid Tactics
+            desc: Turn-based positioning on a grid/tiles.
+            steam_tags: [Tactical, Grid-Based Movement, Tactical RPG]
+            keywords: ["grid-based", tactical, positioning]
+          auto_battler:
+            name: Auto-battle Resolution
+            desc: Player prepares; combat resolves automatically.
+            steam_tags: [Auto Battler]
+            keywords: [auto-battler, "auto battler", "autobattler", "battles automatically"]
+          auto_attack:
+            name: Auto-attack (Survivors-like)
+            desc: Weapons fire automatically; player controls movement.
+            steam_tags: [Bullet Heaven, Survivors-like]
+            keywords: ["automatically attack", "auto-attack", "attacks automatically", "survivors", "bullet heaven"]
+      input_model:
+        name: Input & Control
+        mechanics:
+          twin_stick:
+            name: Twin-stick Shooting
+            desc: Independent move and aim.
+            steam_tags: [Twin Stick Shooter, "Shoot 'Em Up", Top-Down Shooter]
+            keywords: ["twin-stick", "twin stick"]
+          bullet_hell:
+            name: Bullet Hell Patterns
+            desc: Dense projectile patterns to dodge.
+            steam_tags: [Bullet Hell]
+            keywords: ["bullet hell", "bullet-hell"]
+          dodge_iframes:
+            name: Dodge / Dash with i-frames
+            desc: Evasive move with invulnerability frames.
+            keywords: [dodge, dash, "dodge roll"]
+          melee_combos:
+            name: Melee Combos
+            desc: Chained melee attacks / combo system.
+            steam_tags: [Hack and Slash, "Beat 'em up", Character Action Game]
+            keywords: [combos, "melee combat", "combo system"]
+          platforming:
+            name: Platforming
+            desc: Jumping/traversal is a core skill.
+            steam_tags: [Platformer, 2D Platformer, Precision Platformer, Metroidvania]
+            keywords: [platformer, platforming]
+          fps:
+            name: First-person
+            desc: First-person perspective combat.
+            steam_tags: [FPS, First-Person, Shooter]
+            keywords: [fps, "first-person", "first person"]
+      card_dice:
+        name: Cards & Dice
+        mechanics:
+          deckbuilding:
+            name: Deckbuilding
+            desc: The player's action set is a deck built over the run.
+            steam_tags: [Deckbuilding, Card Battler, Roguelike Deckbuilder, Card Game]
+            keywords: [deckbuilder, deckbuilding, "deck-building", "deck building", "build your deck", "build a deck"]
+          energy_mana:
+            name: Energy / Mana per Turn
+            desc: Per-turn action resource limits plays.
+            keywords: [energy, mana, "action points"]
+          card_draw:
+            name: Draw Manipulation
+            desc: Effects manipulating draw, discard, exhaust, retain.
+            keywords: ["draw cards", discard, exhaust, "card draw"]
+          dice:
+            name: Dice Mechanics
+            desc: Dice rolls as primary action resource.
+            steam_tags: [Dice]
+            keywords: [dice]
+          poker_hands:
+            name: Pattern / Hand Scoring
+            desc: Score by forming patterns (poker hands, matches, words).
+            steam_tags: [Card Game, Puzzle, Match 3, Word Game]
+            keywords: ["poker hands", poker, "match-3", "match three", "spell words"]
+      resolution:
+        name: Damage Resolution
+        mechanics:
+          status_effects:
+            name: Status Effects
+            desc: Damage-over-time/debuffs (poison, burn, bleed, freeze, stun).
+            keywords: [poison, burn, bleed, freeze, stun, "status effects", debuff, debuffs]
+          elemental_interactions:
+            name: Elemental Interactions
+            desc: Elements combine/interact (wet + lightning).
+            keywords: [elemental, "elemental combinations", "elemental reactions"]
+          crits:
+            name: Critical Hits
+            desc: Chance-based bonus damage.
+            keywords: ["critical hits", crit, crits]
+          block_shield:
+            name: Block / Shield / Armor
+            desc: Temporary or persistent damage mitigation layer.
+            keywords: [block, shields, armor, armour]
+          healing_scarcity:
+            name: Scarce Healing
+            desc: HP restoration is limited; HP is a run-long resource.
+            keywords: ["limited healing", "health is precious", "healing is scarce"]
+          environmental_hazards:
+            name: Environmental Interaction
+            desc: Terrain/objects usable as weapons (push into spikes, explosive barrels).
+            keywords: ["environmental hazards", traps, "push enemies", "use the environment"]
+          physics_simulation:
+            name: Systemic Simulation
+            desc: Emergent physics/chemistry systems (Noita pixels, liquids, fire spread).
+            steam_tags: [Physics, Simulation, Sandbox]
+            keywords: [physics, simulated, "every pixel", "fully destructible"]
+
+  enemy_design:
+    name: Enemy & Challenge Design
+    desc: How opposition is built and scaled.
+    subfamilies:
+      telegraphing:
+        name: Information & Telegraphing
+        mechanics:
+          enemy_intents:
+            name: Visible Enemy Intents
+            desc: Enemies telegraph next action explicitly (StS intents, ItB).
+            keywords: [intents, telegraph, telegraphed, "see what enemies"]
+          attack_patterns:
+            name: Learnable Attack Patterns
+            desc: Enemies/bosses use readable, learnable patterns.
+            keywords: ["attack patterns", "learn their patterns", "boss patterns"]
+          perfect_information:
+            name: Perfect Information
+            desc: Little/no hidden randomness in combat outcomes.
+            keywords: ["no randomness", "perfect information", deterministic, "every move matters"]
+      scaling:
+        name: Enemy Scaling
+        mechanics:
+          enemy_hp_scaling:
+            name: Enemy Health/Damage Scaling
+            desc: Enemy stats scale with depth/time/loop.
+            keywords: ["stronger enemies", "enemies get stronger", "scaling difficulty"]
+          elites:
+            name: Elites / Champions
+            desc: Optional/upgraded enemy variants with higher risk & reward.
+            keywords: [elite, elites, champions, "mini-boss", "mini-bosses", "minibosses"]
+          multi_phase_bosses:
+            name: Multi-phase Bosses
+            desc: Bosses change behaviour across phases.
+            keywords: ["multi-phase", "boss phases", "multiple phases"]
+          horde_density:
+            name: Horde Density
+            desc: Very high enemy counts on screen.
+            steam_tags: [Bullet Heaven, Horde]
+            keywords: [hordes, horde, "thousands of enemies", "waves of enemies", swarms]
+          enemy_variety:
+            name: Large Enemy Roster
+            desc: Large and diverse enemy set (>50 types).
+            keywords: ["hundreds of enemies", "enemy types", "variety of enemies", "dozens of enemies"]
+          waves:
+            name: Wave Survival
+            desc: Combat structured as discrete waves.
+            steam_tags: [Wave Defense, Tower Defense]
+            keywords: ["waves of", "wave-based", "survive waves"]
+
+  risk_reward:
+    name: Risk & Double-Edged Design
+    desc: Systems that ask the player to gamble or pay a cost for power.
+    subfamilies:
+      voluntary_risk:
+        name: Voluntary Risk
+        mechanics:
+          double_edged_items:
+            name: Double-edged Effects
+            desc: Powerful items/choices with explicit drawbacks.
+            keywords: ["at a cost", drawbacks, downsides, "double-edged", "risk and reward", "risk/reward", "risk vs reward"]
+          hp_as_currency:
+            name: Pay with Health
+            desc: Spend HP/max-HP for power (devil deals, blood magic).
+            keywords: ["devil deal", "blood magic", sacrifice, "pay with health"]
+          gambling:
+            name: Gambling / Chance Rewards
+            desc: Slot machines, chests with random payout, wagers.
+            keywords: [gamble, gambling, "slot machine"]
+          optional_challenges:
+            name: Optional Challenge Rooms
+            desc: Opt-in harder encounters for better rewards.
+            keywords: ["challenge rooms", "optional challenges", "for greater rewards", "greater rewards"]
+          push_your_luck:
+            name: Push-your-luck
+            desc: Repeated continue/stop decision with escalating risk.
+            steam_tags: [Push Your Luck]
+            keywords: ["push your luck", "press your luck"]
+      randomness:
+        name: Randomness Profile
+        mechanics:
+          random_events:
+            name: Random Events (? nodes)
+            desc: Narrative or mechanical events with branching outcomes.
+            keywords: ["random events", "unexpected events", "mysterious events", "strange encounters"]
+          high_variance_loot:
+            name: High-variance Loot
+            desc: Run power depends strongly on random drops.
+            steam_tags: [Loot, Looter Shooter]
+            keywords: ["random loot", "procedural loot", "loot-driven"]
+          rng_mitigation:
+            name: RNG Mitigation
+            desc: Systems that reduce variance (pity, guaranteed shops, rerolls).
+            keywords: ["pity system"]
+
+  social_meta:
+    name: Social & Longevity
+    desc: Systems that extend life beyond single-player runs.
+    subfamilies:
+      multiplayer:
+        name: Multiplayer
+        mechanics:
+          online_coop:
+            name: Online Co-op
+            desc: Co-op play over network.
+            steam_tags: [Online Co-Op, Co-op]
+            keywords: ["online co-op", "co-op", coop, "play with friends"]
+          local_coop:
+            name: Local Co-op
+            desc: Same-screen co-op.
+            steam_tags: [Local Co-Op, Local Multiplayer]
+            keywords: ["local co-op", "couch co-op", "split-screen"]
+          pvp:
+            name: PvP
+            desc: Competitive play against other players.
+            steam_tags: [PvP, Online PvP]
+            keywords: [pvp, "against other players"]
+          async_multiplayer:
+            name: Asynchronous Multiplayer
+            desc: Fight ghosts/snapshots of other players' builds.
+            keywords: [asynchronous, "other players' builds"]
+      longevity:
+        name: Longevity
+        mechanics:
+          leaderboards:
+            name: Leaderboards
+            desc: Score/time leaderboards.
+            keywords: [leaderboard, leaderboards]
+          mod_support:
+            name: Mod Support / Workshop
+            desc: Official modding tools or Steam Workshop.
+            steam_tags: [Moddable, Level Editor]
+            keywords: [mods, modding, "steam workshop", "mod support"]
+          speedrun_support:
+            name: Speedrun Support
+            desc: Timers/modes catering to speedrunning.
+            steam_tags: [Speedrun]
+            keywords: [speedrun, speedrunning]
+          content_updates:
+            name: Major Free Updates
+            desc: Substantial post-launch free content updates.
+            keywords: ["free updates", "free update", "content updates"]
+          early_access_dev:
+            name: Early Access Development
+            desc: Developed publicly through Early Access.
+            steam_tags: [Early Access]
+            keywords: ["early access"]
+
+  structure_hybrid:
+    name: Genre Hybridization
+    desc: What other genre the roguelike structure is fused with.
+    subfamilies:
+      hybrids:
+        name: Hybrid Genres
+        mechanics:
+          hybrid_deckbuilder:
+            name: Roguelike Deckbuilder
+            desc: Card battler + roguelike run structure.
+            steam_tags: [Roguelike Deckbuilder]
+          hybrid_survivors:
+            name: Survivors-like
+            desc: Auto-attack horde survival + level-up choices.
+            steam_tags: [Bullet Heaven, Survivors-like]
+          hybrid_action_roguelite:
+            name: Action Roguelite
+            desc: Real-time action combat + roguelite structure.
+            steam_tags: [Action Roguelike]
+          hybrid_traditional:
+            name: Traditional Roguelike
+            desc: Turn-based, tile-based dungeon crawler in the Rogue lineage.
+            steam_tags: [Traditional Roguelike]
+          hybrid_metroidvania:
+            name: Roguevania
+            desc: Metroidvania exploration/abilities + roguelite runs.
+            steam_tags: [Metroidvania]
+          hybrid_strategy:
+            name: Strategy Roguelite
+            desc: Tactics/strategy/colony management with run structure.
+            steam_tags: [Strategy, Tactical, Turn-Based Strategy, RTS]
+          hybrid_puzzle:
+            name: Puzzle Roguelite
+            desc: Puzzle core with roguelite run structure.
+            steam_tags: [Puzzle]
+          hybrid_shooter:
+            name: Shooter Roguelite
+            desc: Shooter core (FPS/TPS) with roguelite runs.
+            steam_tags: [FPS, Shooter, Third-Person Shooter, Looter Shooter]
+          hybrid_autobattler:
+            name: Auto-battler Roguelite
+            desc: Team-building auto battler with run structure.
+            steam_tags: [Auto Battler]
+          hybrid_city_builder:
+            name: Builder Roguelite
+            desc: City/base/colony building with run structure.
+            steam_tags: [City Builder, Colony Sim, Base Building]
+          hybrid_survival:
+            name: Survival Roguelite
+            desc: Survival resource pressure (hunger, temperature) with runs.
+            steam_tags: [Survival]
+
+  qol_accessibility:
+    name: Quality of Life & Accessibility
+    desc: Systems that lower friction and widen the audience.
+    subfamilies:
+      onboarding:
+        name: Onboarding & Assist
+        mechanics:
+          assist_mode:
+            name: Assist / God Mode
+            desc: Optional difficulty reduction for accessibility.
+            keywords: ["god mode", "assist mode", "story mode", "accessibility options"]
+          tutorialized_unlocks:
+            name: Gradual Complexity Unlock
+            desc: Systems introduced gradually across first runs.
+            keywords: ["easy to learn", "hard to master", "learn as you go"]
+          run_history:
+            name: Run History / Stats
+            desc: Records of past runs and statistics.
+            keywords: ["run history", "detailed statistics"]
+          speed_controls:
+            name: Game Speed Controls
+            desc: Speed-up/fast-forward of animations or combat.
+            keywords: ["speed up", "fast forward", "game speed"]
+          steam_deck_friendly:
+            name: Controller / Deck Friendly
+            desc: Full controller support (proxy via Steam controller tags).
+            steam_tags: [Controller]
+            keywords: ["controller support", "steam deck"]

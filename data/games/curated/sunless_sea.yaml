@@ -1,0 +1,25 @@
+appid: 304650
+name: Sunless Sea
+developer: Failbetter Games
+release_year: 2015
+subgenre: hybrid_survival
+mechanics:
+  hybrid_survival: 3
+  permadeath: 3
+  mid_run_save: 2
+  open_procgen_world: 2
+  real_time_action: 1
+  long_runs: 3
+  random_events: 3
+  multiple_endings: 3
+  shops: 2
+  in_run_currency: 2
+  narrative_across_runs: 1
+  assist_mode: 2
+evidence:
+  hybrid_survival: Fuel, supplies, crew and terror must be managed on every voyage.
+  permadeath: Captain death is permanent; a new captain may inherit a legacy (charts, ship, items).
+  multiple_endings: Each captain pursues an ambition with its own ending.
+  assist_mode: Merciful mode allows manual saves.
+confidence: high
+curator: agent

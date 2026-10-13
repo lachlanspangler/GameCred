@@ -1,0 +1,41 @@
+appid: 757320
+name: Atomicrops
+developer: Bird Bath Games
+release_year: 2020
+subgenre: hybrid_action_roguelite
+wiki: https://atomicrops.fandom.com/wiki/Atomicrops_Wiki
+stats:
+  playable_characters: 6
+  run_length_min: 30
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_survivors: 1
+  real_time_action: 3
+  twin_stick: 3
+  bullet_hell: 1
+  dodge_iframes: 2
+  permadeath: 3
+  procgen_levels: 2
+  act_structure: 2
+  boss_gates: 3
+  time_pressure: 2
+  waves: 3
+  horde_density: 2
+  passive_relics: 2
+  weapons_variety: 2
+  item_upgrading: 1
+  in_run_currency: 3
+  shops: 2
+  npc_relationships: 2
+  character_classes: 2
+  unlock_characters: 2
+  unlock_items: 2
+  optional_challenges: 1
+  local_coop: 1
+  early_access_dev: 2
+evidence:
+  in_run_currency: Harvested crops sell for Cashews spent in town each season; fertiliser and seeds drive the economy.
+  waves: Each day is a short wave-defence phase around the farm; nights spawn tougher threats.
+  npc_relationships: Townsfolk can be married with roses, each spouse granting a combat helper.
+confidence: medium
+curator: agent

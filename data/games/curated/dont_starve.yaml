@@ -1,0 +1,29 @@
+appid: 219740
+name: Don't Starve
+developer: Klei Entertainment
+release_year: 2013
+subgenre: hybrid_survival
+wiki: https://dontstarve.wiki.gg/
+critic:
+  metacritic: 79
+mechanics:
+  hybrid_survival: 3
+  real_time_action: 2
+  open_procgen_world: 3
+  permadeath: 3
+  second_chance: 2
+  long_runs: 3
+  endless_mode: 2
+  crafting: 3
+  inventory_management: 2
+  character_classes: 2
+  unlock_characters: 3
+  act_structure: 1
+  mod_support: 3
+evidence:
+  hybrid_survival: Hunger, health and sanity meters plus seasons and darkness.
+  second_chance: Touch Stones, Meat Effigies and the Life Giving Amulet revive the player.
+  unlock_characters: Experience from each death unlocks new characters.
+  act_structure: Adventure Mode chains five fixed-theme worlds.
+confidence: high
+curator: agent

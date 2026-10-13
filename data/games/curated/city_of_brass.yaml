@@ -1,0 +1,29 @@
+appid: 301840
+name: City of Brass
+developer: Uppercut Games
+release_year: 2018
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  fps: 3
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 3
+  boss_gates: 2
+  environmental_hazards: 3
+  weapons_variety: 1
+  passive_relics: 2
+  shops: 2
+  in_run_currency: 2
+  modular_difficulty: 3
+  assist_mode: 2
+  unlock_items: 1
+  early_access_dev: 1
+evidence:
+  modular_difficulty: Burdens (harder) and Blessings (easier) are toggled pre-run and shift score/reward.
+  environmental_hazards: Whip pulls enemies into spike traps, pits and hazards.
+  fps: First-person scimitar-and-whip melee combat.
+  shops: Genies grant wishes/services in exchange for gold.
+confidence: medium
+curator: agent

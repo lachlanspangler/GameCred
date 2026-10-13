@@ -1,0 +1,32 @@
+appid: 1075740
+name: Banners of Ruin
+developer: MonteBearo
+release_year: 2021
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 71
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  energy_mana: 3
+  card_draw: 2
+  node_map: 3
+  permadeath: 3
+  act_structure: 2
+  boss_gates: 2
+  unlock_characters: 2
+  shops: 2
+  item_upgrading: 2
+  passive_relics: 2
+  status_effects: 2
+  block_shield: 2
+  healing_scarcity: 2
+  random_events: 2
+  grid_tactics: 1
+  turn_based: 3
+  character_classes: 2
+evidence:
+  permadeath: Individual party members die permanently mid-run along with their cards.
+  grid_tactics: Party arranged in front/back formation slots.
+confidence: medium
+curator: agent

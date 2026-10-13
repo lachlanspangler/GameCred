@@ -1,0 +1,37 @@
+appid: 2084000
+name: Shogun Showdown
+developer: Roboatino
+release_year: 2024
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  hybrid_strategy: 1
+  grid_tactics: 3
+  turn_based: 3
+  enemy_intents: 3
+  perfect_information: 3
+  deckbuilding: 2
+  item_upgrading: 3
+  node_map: 2
+  act_structure: 2
+  boss_gates: 3
+  short_runs: 2
+  permadeath: 2
+  unlock_characters: 2
+  unlock_items: 2
+  ascension_ladder: 2
+  cooldown_reduction: 2
+  shops: 2
+  in_run_currency: 2
+  environmental_hazards: 2
+  character_classes: 2
+  synergies: 2
+  early_access_dev: 1
+evidence:
+  grid_tactics: Combat on a single-row line; facing and position matter for every attack.
+  enemy_intents: Every enemy shows its next attack and a turn countdown.
+  item_upgrading: Attack tiles are upgraded and enchanted at shops.
+  cooldown_reduction: Tiles go on cooldown after use; items and upgrades shorten it.
+  environmental_hazards: Traps and enemy friendly fire can be exploited via positioning.
+confidence: medium
+curator: agent

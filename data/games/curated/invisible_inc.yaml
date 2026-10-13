@@ -1,0 +1,34 @@
+appid: 243970
+name: Invisible, Inc.
+developer: Klei Entertainment
+release_year: 2015
+subgenre: hybrid_strategy
+critic:
+  metacritic: 82
+stats:
+  difficulty_levels: 3
+mechanics:
+  hybrid_strategy: 3
+  grid_tactics: 3
+  turn_based: 3
+  permadeath: 3
+  second_chance: 2
+  procgen_levels: 3
+  long_runs: 2
+  loadout_start: 2
+  character_classes: 2
+  unlock_characters: 2
+  shops: 2
+  in_run_currency: 2
+  item_upgrading: 2
+  push_your_luck: 3
+  perfect_information: 2
+  endless_mode: 2
+  modular_difficulty: 2
+evidence:
+  push_your_luck: The alarm level rises each turn, so looting extra vaults trades against escalating security.
+  second_chance: Limited rewinds per campaign undo a turn.
+  modular_difficulty: Custom difficulty exposes individual generation and rule options.
+  endless_mode: Endless mode continues the campaign past the final mission.
+confidence: high
+curator: agent

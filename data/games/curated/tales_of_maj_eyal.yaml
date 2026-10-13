@@ -1,0 +1,44 @@
+appid: 259680
+name: Tales of Maj'Eyal
+developer: Netcore Games
+release_year: 2013
+subgenre: hybrid_traditional
+stats:
+  difficulty_levels: 5
+mechanics:
+  hybrid_traditional: 3
+  turn_based: 3
+  permadeath: 2
+  second_chance: 2
+  mid_run_save: 2
+  procgen_levels: 3
+  long_runs: 3
+  multiple_endings: 2
+  boss_gates: 2
+  optional_challenges: 2
+  character_classes: 3
+  unlock_characters: 3
+  achievement_unlocks: 2
+  level_up_choices: 3
+  build_archetypes: 3
+  synergies: 2
+  cooldown_reduction: 1
+  item_rarity: 3
+  high_variance_loot: 2
+  consumables: 1
+  status_effects: 3
+  elemental_interactions: 2
+  crits: 2
+  shops: 2
+  in_run_currency: 2
+  enemy_variety: 3
+  lore_codex: 2
+  assist_mode: 1
+  mod_support: 3
+evidence:
+  unlock_characters: Most classes and races are locked and unlocked by in-game deeds across characters.
+  second_chance: Adventure mode grants extra lives gained by levelling; Roguelike mode is one life.
+  level_up_choices: Level-ups grant class/generic talent and category points spent across talent trees.
+  mod_support: Extensive addon system with an official addons site and Steam Workshop.
+confidence: high
+curator: agent

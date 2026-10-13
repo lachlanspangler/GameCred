@@ -1,0 +1,23 @@
+appid: 296970
+name: 'Renowned Explorers: International Society'
+developer: Abbey Games
+release_year: 2015
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  grid_tactics: 3
+  turn_based: 3
+  node_map: 2
+  random_events: 3
+  status_effects: 2
+  character_classes: 3
+  loadout_start: 2
+  unlock_characters: 2
+  shops: 2
+  in_run_currency: 2
+evidence:
+  status_effects: Combat runs on three attitudes (Aggressive, Devious, Friendly) that build party moods.
+  loadout_start: Pick a crew of three from 20 explorers with distinct skills.
+  random_events: Expedition maps are mostly event nodes resolved with party skills.
+confidence: medium
+curator: agent

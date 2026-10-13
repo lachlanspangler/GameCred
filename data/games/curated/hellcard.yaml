@@ -1,0 +1,31 @@
+appid: 1201540
+name: HELLCARD
+developer: Thing Trunk
+release_year: 2024
+subgenre: hybrid_deckbuilder
+stats:
+  playable_characters: 3
+mechanics:
+  hybrid_deckbuilder: 3
+  online_coop: 3
+  grid_tactics: 2
+  character_classes: 3
+  deckbuilding: 3
+  energy_mana: 3
+  card_draw: 2
+  permadeath: 2
+  act_structure: 2
+  boss_gates: 3
+  unlock_items: 2
+  enemy_intents: 2
+  block_shield: 2
+  status_effects: 2
+  early_access_dev: 2
+  mod_support: 2
+  turn_based: 3
+evidence:
+  online_coop: Up to 3 players share a battlefield in co-op.
+  grid_tactics: Enemies occupy near and far range bands; cards have range restrictions.
+  mod_support: Free HELLCARD Modding Tools released on Steam.
+confidence: medium
+curator: agent

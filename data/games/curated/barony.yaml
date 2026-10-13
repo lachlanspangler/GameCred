@@ -1,0 +1,36 @@
+appid: 371970
+name: Barony
+developer: Turning Wheel LLC
+release_year: 2015
+subgenre: hybrid_traditional
+mechanics:
+  hybrid_traditional: 3
+  hybrid_action_roguelite: 2
+  fps: 1
+  real_time_action: 3
+  permadeath: 3
+  procgen_levels: 3
+  online_coop: 3
+  local_coop: 2
+  character_classes: 3
+  cursed_items: 3
+  consumables: 3
+  inventory_management: 3
+  hybrid_survival: 1
+  crafting: 2
+  status_effects: 2
+  healing_scarcity: 2
+  mod_support: 2
+  act_structure: 2
+  boss_gates: 2
+  long_runs: 3
+  unlock_characters: 1
+  content_updates: 2
+  item_rarity: 1
+evidence:
+  cursed_items: NetHack-style unidentified and cursed equipment that cannot be removed.
+  online_coop: Up to 4-player online co-op (plus split-screen) in a first-person roguelike.
+  hybrid_survival: Hunger must be managed with food found in the dungeon.
+  mod_support: Steam Workshop support with an official level editor.
+confidence: medium
+curator: agent

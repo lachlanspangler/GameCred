@@ -1,0 +1,20 @@
+appid: 1069690
+name: Rogue Lords
+developer: Leikir Studio
+release_year: 2021
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  turn_based: 3
+  permadeath: 3
+  node_map: 3
+  random_events: 2
+  character_classes: 3
+  unlock_characters: 2
+  shops: 2
+  status_effects: 2
+evidence:
+  node_map: Branching road map of encounters per chapter.
+  character_classes: Party drawn from legendary villains (Dracula, Bloody Mary, Headless Horseman...).
+confidence: medium
+curator: agent

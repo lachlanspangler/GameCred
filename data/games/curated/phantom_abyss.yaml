@@ -1,0 +1,27 @@
+appid: 989440
+name: Phantom Abyss
+developer: Team WIBY
+release_year: 2024
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 3
+  async_multiplayer: 3
+  permadeath: 3
+  procgen_levels: 3
+  push_your_luck: 2
+  extraction: 2
+  pick_one_of_n: 2
+  loadout_start: 2
+  unlock_items: 2
+  environmental_hazards: 3
+  double_edged_items: 1
+  early_access_dev: 3
+evidence:
+  async_multiplayer: Ghosts of every previous player's attempt in the same temple replay alongside you.
+  permadeath: Each generated temple can only be attempted once per player and is retired once someone claims its relic.
+  push_your_luck: Exits between tiers let you leave with a lesser relic or push deeper for a better one.
+  loadout_start: Choose a whip (each with different perks) before entering a temple.
+confidence: medium
+curator: agent

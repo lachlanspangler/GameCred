@@ -1,0 +1,20 @@
+appid: 355680
+name: Overland
+developer: Finji
+release_year: 2019
+subgenre: hybrid_strategy
+critic:
+  metacritic: 69
+mechanics:
+  hybrid_strategy: 3
+  grid_tactics: 3
+  turn_based: 3
+  hybrid_survival: 2
+  procgen_levels: 3
+  permadeath: 3
+  act_structure: 2
+evidence:
+  hybrid_survival: Fuel and limited supplies force scavenging at every stop on the road west.
+  grid_tactics: Small grids where every action (including noise) draws more creatures.
+confidence: medium
+curator: agent

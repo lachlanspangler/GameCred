@@ -1,0 +1,39 @@
+appid: 1135230
+name: Ember Knights
+developer: Doom Turtle
+release_year: 2023
+subgenre: hybrid_action_roguelite
+stats:
+  playable_characters: 1
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  dodge_iframes: 2
+  melee_combos: 2
+  permadeath: 3
+  procgen_levels: 2
+  room_based_floors: 3
+  act_structure: 3
+  boss_gates: 3
+  weapons_variety: 2
+  loadout_start: 2
+  talent_slots: 2
+  pick_one_of_n: 2
+  passive_relics: 2
+  elemental_interactions: 2
+  status_effects: 2
+  synergies: 2
+  shops: 2
+  in_run_currency: 2
+  permanent_stat_upgrades: 2
+  hub_building: 1
+  unlock_items: 2
+  online_coop: 3
+  local_coop: 2
+  early_access_dev: 2
+evidence:
+  online_coop: Designed for 1-4 player online/local co-op with shared room rewards.
+  elemental_interactions: Elemental relics/skills (fire, ice, lightning, poison) combine into stronger effects.
+  loadout_start: Weapon and skill choice before each run, expanded via hub unlocks.
+confidence: medium
+curator: agent

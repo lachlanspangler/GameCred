@@ -1,0 +1,21 @@
+appid: 351700
+name: UnReal World
+developer: Sami Maaranen
+release_year: 2016
+subgenre: hybrid_survival
+mechanics:
+  hybrid_survival: 3
+  hybrid_traditional: 2
+  turn_based: 3
+  open_procgen_world: 3
+  permadeath: 3
+  crafting: 3
+  long_runs: 3
+  endless_mode: 2
+  status_effects: 2
+  character_classes: 2
+evidence:
+  hybrid_survival: 'Iron Age Finland survival: hunger, cold, fatigue and seasonal hunting/trapping.'
+  open_procgen_world: A large randomly generated world map per character.
+confidence: medium
+curator: agent

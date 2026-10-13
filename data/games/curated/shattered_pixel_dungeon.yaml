@@ -1,0 +1,42 @@
+appid: 1769170
+name: Shattered Pixel Dungeon
+developer: Shattered Pixel
+release_year: 2022
+subgenre: hybrid_traditional
+stats:
+  playable_characters: 6
+  biome_count: 5
+  boss_count: 5
+mechanics:
+  hybrid_traditional: 3
+  turn_based: 3
+  permadeath: 3
+  mid_run_save: 2
+  procgen_levels: 3
+  act_structure: 3
+  boss_gates: 3
+  long_runs: 1
+  character_classes: 3
+  unlock_characters: 2
+  achievement_unlocks: 2
+  level_up_choices: 2
+  consumables: 3
+  item_upgrading: 3
+  cursed_items: 3
+  healing_scarcity: 2
+  shops: 2
+  in_run_currency: 2
+  status_effects: 2
+  environmental_hazards: 2
+  seeded_runs: 2
+  daily_challenge: 2
+  modular_difficulty: 3
+  run_history: 2
+  content_updates: 3
+evidence:
+  modular_difficulty: Challenges menu with 9 toggleable handicaps (e.g. On Diet, Faith is My Armor).
+  item_upgrading: Scrolls of Upgrade are the scarce core resource deciding which item carries the run.
+  cursed_items: Unidentified gear can be cursed with sticky negative enchantments.
+  level_up_choices: Talent points each level, plus a subclass choice after the second boss.
+confidence: high
+curator: agent

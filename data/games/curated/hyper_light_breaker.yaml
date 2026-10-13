@@ -1,0 +1,30 @@
+appid: 1534840
+name: Hyper Light Breaker
+developer: Heart Machine
+release_year: 2025
+subgenre: hybrid_action_roguelite
+stats:
+  playable_characters: 4
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  dodge_iframes: 2
+  melee_combos: 2
+  open_procgen_world: 3
+  procgen_levels: 2
+  boss_gates: 3
+  weapons_variety: 2
+  loadout_start: 2
+  item_rarity: 2
+  in_run_currency: 2
+  hub_building: 1
+  character_classes: 2
+  online_coop: 2
+  early_access_dev: 3
+evidence:
+  open_procgen_world: Each cycle generates a 3D open Overgrowth with biomes, towers and Crowns to hunt.
+  boss_gates: Defeating the region Crowns unlocks the Abyss King fight that ends the cycle.
+  online_coop: Up to 3-player online co-op.
+  early_access_dev: Launched in Early Access Jan 2025 to Mixed reviews; development wound down later that year.
+confidence: medium
+curator: agent

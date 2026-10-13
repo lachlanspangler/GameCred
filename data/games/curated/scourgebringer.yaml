@@ -1,0 +1,36 @@
+appid: 1037020
+name: ScourgeBringer
+developer: Flying Oak Games
+release_year: 2020
+subgenre: hybrid_action_roguelite
+stats:
+  playable_characters: 1
+  biome_count: 4
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 3
+  dodge_iframes: 2
+  melee_combos: 2
+  bullet_hell: 1
+  permadeath: 3
+  procgen_levels: 2
+  room_based_floors: 3
+  act_structure: 3
+  boss_gates: 3
+  attack_patterns: 2
+  short_runs: 2
+  skill_tree_meta: 2
+  passive_relics: 2
+  pick_one_of_n: 2
+  hp_as_currency: 1
+  in_run_currency: 2
+  shops: 1
+  assist_mode: 2
+  early_access_dev: 2
+evidence:
+  melee_combos: Air-dash/slash/smash combat keeps the player airborne; Fury meter powers ranged shots.
+  skill_tree_meta: Judge's Blood buys permanent skills in the persistent Altar tree.
+  assist_mode: Explorer mode and accessibility options lower difficulty.
+confidence: medium
+curator: agent

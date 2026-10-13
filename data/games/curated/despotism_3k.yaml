@@ -1,0 +1,17 @@
+appid: 699920
+name: Despotism 3k
+developer: Konfa Games
+release_year: 2018
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  hybrid_city_builder: 2
+  hybrid_survival: 1
+  permadeath: 2
+  random_events: 2
+  short_runs: 2
+evidence:
+  hybrid_city_builder: Allocate humans to power, food, breeding and research rooms to keep the AI's base running.
+  random_events: Frequent events and quests (e.g. human demands) alter the economy.
+confidence: medium
+curator: agent

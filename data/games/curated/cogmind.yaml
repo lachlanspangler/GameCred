@@ -1,0 +1,39 @@
+appid: 722730
+name: Cogmind
+developer: Grid Sage Games
+release_year: 2017
+subgenre: hybrid_traditional
+stats:
+  difficulty_levels: 3
+mechanics:
+  hybrid_traditional: 3
+  turn_based: 3
+  permadeath: 3
+  mid_run_save: 2
+  procgen_levels: 3
+  act_structure: 2
+  long_runs: 3
+  multiple_endings: 3
+  seeded_runs: 2
+  inventory_management: 3
+  item_rarity: 2
+  high_variance_loot: 2
+  synergies: 2
+  build_archetypes: 3
+  weapons_variety: 3
+  healing_scarcity: 3
+  environmental_hazards: 1
+  crafting: 1
+  lore_codex: 2
+  run_history: 2
+  leaderboards: 2
+  assist_mode: 1
+  early_access_dev: 2
+  content_updates: 2
+evidence:
+  inventory_management: The robot is built from salvaged parts in limited slots; parts break and are constantly swapped.
+  healing_scarcity: Core integrity is barely repairable; survival means replacing destroyed parts.
+  multiple_endings: Several endings depending on route and faction alliances.
+  build_archetypes: Combat, stealth/speed and hacking builds play very differently.
+confidence: high
+curator: agent

@@ -1,0 +1,22 @@
+appid: 873940
+name: Crying Suns
+developer: Alt Shift
+release_year: 2019
+subgenre: hybrid_strategy
+critic:
+  metacritic: 75
+mechanics:
+  hybrid_strategy: 3
+  permadeath: 2
+  node_map: 2
+  act_structure: 3
+  random_events: 3
+  narrative_across_runs: 3
+  unlock_items: 2
+  shops: 2
+  in_run_currency: 2
+evidence:
+  narrative_across_runs: A cloned admiral continues the story across deaths with chapter checkpoints.
+  act_structure: Six chapters each ending in a set-piece encounter.
+confidence: medium
+curator: agent

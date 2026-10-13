@@ -1,0 +1,41 @@
+appid: 788100
+name: Neon Abyss
+developer: Veewo Games
+release_year: 2020
+subgenre: hybrid_action_roguelite
+wiki: https://neon-abyss.fandom.com/wiki/Neon_Abyss_Wiki
+stats:
+  playable_characters: 12
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 2
+  permadeath: 3
+  procgen_levels: 3
+  room_based_floors: 3
+  act_structure: 2
+  boss_gates: 3
+  passive_relics: 3
+  active_items: 2
+  item_stacking: 3
+  synergies: 2
+  high_variance_loot: 3
+  weapons_variety: 2
+  character_classes: 2
+  shops: 2
+  in_run_currency: 2
+  gambling: 2
+  hp_as_currency: 1
+  double_edged_items: 1
+  optional_challenges: 1
+  unlock_items: 2
+  unlock_characters: 2
+  hub_building: 1
+  online_coop: 1
+  early_access_dev: 2
+evidence:
+  item_stacking: No item cap - every passive stacks visually and mechanically on the character.
+  passive_relics: Hatchable eggs spawn pet followers whose effects stack.
+  gambling: Chests, crystal/key economy and slot machines.
+confidence: medium
+curator: agent

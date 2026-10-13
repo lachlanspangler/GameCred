@@ -1,0 +1,52 @@
+appid: 2742830
+name: Monster Train 2
+developer: Shiny Shoe
+release_year: 2025
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 87
+stats:
+  playable_characters: 5
+  run_length_min: 60
+mechanics:
+  hybrid_deckbuilder: 3
+  hybrid_strategy: 1
+  deckbuilding: 3
+  energy_mana: 3
+  card_draw: 2
+  permadeath: 2
+  mid_run_save: 1
+  node_map: 2
+  act_structure: 2
+  boss_gates: 3
+  daily_challenge: 2
+  unlock_items: 2
+  unlock_characters: 2
+  ascension_ladder: 3
+  loadout_start: 3
+  pick_one_of_n: 3
+  item_upgrading: 3
+  synergies: 3
+  build_archetypes: 3
+  multiplicative_scaling: 2
+  character_classes: 3
+  passive_relics: 2
+  shops: 2
+  in_run_currency: 2
+  deck_thinning: 2
+  turn_based: 3
+  status_effects: 2
+  block_shield: 1
+  waves: 3
+  healing_scarcity: 2
+  optional_challenges: 2
+  random_events: 2
+  multi_phase_bosses: 1
+  speed_controls: 2
+  content_updates: 1
+evidence:
+  loadout_start: Primary + allied clan pairing again defines the card pool each run.
+  item_upgrading: Upgrades plus new Equipment cards attach persistently to units.
+  waves: Enemy waves ascend the train's floors toward the Pyre heart.
+confidence: medium
+curator: agent

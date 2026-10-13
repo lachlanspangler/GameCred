@@ -1,0 +1,23 @@
+appid: 2667120
+name: Ballionaire
+developer: newobject
+release_year: 2024
+subgenre: hybrid_puzzle
+mechanics:
+  hybrid_puzzle: 3
+  physics_simulation: 3
+  synergies: 3
+  multiplicative_scaling: 3
+  pick_one_of_n: 3
+  passive_relics: 2
+  build_archetypes: 2
+  short_runs: 2
+  permadeath: 2
+  unlock_items: 2
+  high_variance_loot: 1
+evidence:
+  physics_simulation: Balls drop through a pachinko board of triggers placed by the player.
+  multiplicative_scaling: Trigger combos chain multipliers to reach escalating score targets.
+  passive_relics: Boons modify board rules for the rest of the run.
+confidence: medium
+curator: agent

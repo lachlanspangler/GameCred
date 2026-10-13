@@ -1,0 +1,30 @@
+appid: 1199030
+name: 'Tainted Grail: Conquest'
+developer: Questline
+release_year: 2021
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 82
+mechanics:
+  hybrid_deckbuilder: 3
+  hub_building: 3
+  permanent_stat_upgrades: 2
+  unlock_characters: 2
+  character_classes: 3
+  deckbuilding: 3
+  energy_mana: 3
+  act_structure: 2
+  boss_gates: 3
+  permadeath: 2
+  random_events: 2
+  passive_relics: 2
+  item_upgrading: 2
+  turn_based: 3
+  status_effects: 2
+  block_shield: 2
+  node_map: 1
+evidence:
+  hub_building: The Menhir village is expanded with buildings between runs, unlocking services.
+  permanent_stat_upgrades: Meta resources brought back buy persistent upgrades.
+confidence: medium
+curator: agent

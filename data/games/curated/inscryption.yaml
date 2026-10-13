@@ -1,0 +1,40 @@
+appid: 1092790
+name: Inscryption
+developer: Daniel Mullins Games
+release_year: 2021
+subgenre: hybrid_deckbuilder
+wiki: https://inscryption.fandom.com/wiki/Inscryption_Wiki
+critic:
+  metacritic: 85
+stats:
+  boss_count: 4
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  node_map: 3
+  boss_gates: 3
+  act_structure: 2
+  permadeath: 1
+  narrative_across_runs: 3
+  unlock_items: 2
+  pick_one_of_n: 3
+  synergies: 2
+  item_upgrading: 2
+  consumables: 3
+  turn_based: 3
+  energy_mana: 2
+  card_draw: 2
+  enemy_intents: 3
+  random_events: 2
+  modular_difficulty: 2
+  achievement_unlocks: 1
+  hp_as_currency: 1
+  multiple_endings: 1
+  build_archetypes: 1
+evidence:
+  enemy_intents: Leshy's upcoming cards sit in a visible queue row before they advance onto the board.
+  item_upgrading: Campfire buffs and the Sacrificial Altar transfer sigils between cards.
+  narrative_across_runs: Act 1 deaths produce Death Cards and advance the meta-narrative.
+  modular_difficulty: Kaycee's Mod offers toggleable challenges for more skull points.
+confidence: high
+curator: agent

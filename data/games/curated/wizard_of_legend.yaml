@@ -1,0 +1,44 @@
+appid: 445980
+name: Wizard of Legend
+developer: Contingent99
+release_year: 2018
+subgenre: hybrid_action_roguelite
+wiki: https://wizardoflegend.fandom.com/wiki/Wizard_of_Legend_Wiki
+stats:
+  playable_characters: 1
+  run_length_min: 30
+  biome_count: 3
+  boss_count: 3
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  dodge_iframes: 2
+  melee_combos: 2
+  permadeath: 3
+  procgen_levels: 3
+  room_based_floors: 2
+  act_structure: 3
+  boss_gates: 3
+  attack_patterns: 2
+  short_runs: 2
+  talent_slots: 3
+  loadout_start: 3
+  elemental_interactions: 2
+  status_effects: 2
+  cooldown_reduction: 2
+  synergies: 2
+  passive_relics: 3
+  cursed_items: 2
+  shops: 2
+  in_run_currency: 2
+  unlock_items: 3
+  local_coop: 2
+  pvp: 1
+  crits: 1
+evidence:
+  talent_slots: Four arcana slots (basic, dash, standard, signature) plus one in-run swap slot.
+  elemental_interactions: Eight elements with interactions (water + lightning, ice + earth).
+  loadout_start: Chaos Gems buy arcana, relics and robes at the hub to set a pre-run loadout.
+  cursed_items: Cursed relics give strong buffs with drawbacks.
+confidence: high
+curator: agent

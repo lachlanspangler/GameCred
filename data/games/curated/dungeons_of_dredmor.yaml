@@ -1,0 +1,34 @@
+appid: 98800
+name: Dungeons of Dredmor
+developer: Gaslamp Games, Inc.
+release_year: 2011
+subgenre: hybrid_traditional
+critic:
+  metacritic: 79
+stats:
+  difficulty_levels: 3
+mechanics:
+  hybrid_traditional: 3
+  turn_based: 3
+  permadeath: 2
+  procgen_levels: 3
+  boss_gates: 1
+  long_runs: 2
+  loadout_start: 3
+  build_archetypes: 3
+  level_up_choices: 2
+  synergies: 2
+  crafting: 3
+  consumables: 2
+  shops: 2
+  in_run_currency: 2
+  item_rarity: 2
+  status_effects: 2
+  mod_support: 2
+evidence:
+  loadout_start: Character creation is picking 7 skill trees from a pool of 30+ (e.g. Vampirism, Fleshsmithing).
+  crafting: Smithing, Tinkering, Alchemy and Wandcrafting via in-dungeon crafting tools.
+  permadeath: Permadeath is an opt-in toggle at character creation.
+  mod_support: Moddable via XML with Steam Workshop support.
+confidence: high
+curator: agent

@@ -1,0 +1,43 @@
+appid: 1296610
+name: Peglin
+developer: Red Nexus Games Inc.
+release_year: 2024
+subgenre: hybrid_puzzle
+stats:
+  playable_characters: 4
+  difficulty_levels: 20
+mechanics:
+  hybrid_puzzle: 3
+  hybrid_deckbuilder: 2
+  deckbuilding: 2
+  physics_simulation: 2
+  node_map: 3
+  act_structure: 2
+  boss_gates: 3
+  permadeath: 2
+  ascension_ladder: 3
+  pick_one_of_n: 3
+  item_upgrading: 2
+  synergies: 3
+  build_archetypes: 2
+  passive_relics: 3
+  shops: 2
+  in_run_currency: 2
+  deck_thinning: 2
+  turn_based: 3
+  status_effects: 2
+  crits: 2
+  random_events: 2
+  healing_scarcity: 2
+  unlock_characters: 2
+  multiplicative_scaling: 1
+  elites: 1
+  early_access_dev: 2
+  content_updates: 2
+evidence:
+  physics_simulation: Orbs are launched into a pachinko peg board; damage depends on pegs hit.
+  crits: Crit pegs switch the shot to the orb's crit damage value.
+  ascension_ladder: 20 Cruciball levels of stacking difficulty.
+  deckbuilding: The 'deck' is a bag of orbs drawn in order.
+confidence: medium
+curator: agent

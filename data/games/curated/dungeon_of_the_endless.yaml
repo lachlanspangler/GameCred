@@ -1,0 +1,28 @@
+appid: 249050
+name: Dungeon of the Endless
+developer: AMPLITUDE Studios
+release_year: 2014
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  permadeath: 3
+  procgen_levels: 3
+  room_based_floors: 3
+  real_time_action: 1
+  waves: 3
+  push_your_luck: 2
+  in_run_currency: 3
+  item_upgrading: 2
+  character_classes: 3
+  unlock_characters: 2
+  unlock_items: 2
+  loadout_start: 2
+  shops: 2
+  online_coop: 2
+evidence:
+  room_based_floors: Every door opened powers a new room and can trigger a monster wave.
+  in_run_currency: Dust (power rooms), Industry, Science and Food are generated per door opened.
+  push_your_luck: Explore more rooms for resources vs carry the crystal to the exit before waves overwhelm.
+  loadout_start: Choose the escape pod (rule modifiers) and starting heroes.
+confidence: high
+curator: agent
