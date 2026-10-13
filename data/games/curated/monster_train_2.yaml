@@ -44,9 +44,13 @@ mechanics:
   multi_phase_bosses: 1
   speed_controls: 2
   content_updates: 1
+  summons_minions: 3
+  lanes_ranks: 3
 evidence:
   loadout_start: Primary + allied clan pairing again defines the card pool each run.
   item_upgrading: Upgrades plus new Equipment cards attach persistently to units.
   waves: Enemy waves ascend the train's floors toward the Pyre heart.
+  summons_minions: Unit cards deploy persistent allied monsters that are the core of every build.
+  lanes_ranks: Units sit on floors in front-to-back order that decides who is attacked.
 confidence: medium
 curator: agent

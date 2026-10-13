@@ -24,9 +24,13 @@ mechanics:
   healing_scarcity: 2
   loadout_start: 2
   unlock_items: 2
+  combo_meter: 3
+  weapon_handling: 2
 evidence:
   pick_one_of_n: Between stages the player chooses one of three upgrades.
   loadout_start: Unlocked 'styles' (Arm Gun, Float, Boulder, Levitate) set starting rules.
   weapons_variety: Gunboot modules (laser, shotgun, puncher) found in side caves.
+  combo_meter: Chaining kills without landing builds a combo that pays out gems and rewards.
+  weapon_handling: Gunboot ammo is limited and only reloads by landing or stomping.
 confidence: high
 curator: agent

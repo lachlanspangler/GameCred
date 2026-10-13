@@ -26,9 +26,11 @@ mechanics:
   in_run_currency: 1
   optional_challenges: 1
   attack_patterns: 2
+  traversal_tools: 3
 evidence:
   platforming: Grappling-hook swinging is the primary traversal, with a slow-time chrono ability.
   loadout_start: Perks are equipped in limited slots before each voyage.
   boss_gates: Collecting enough ghost gems across ship raids unlocks each bounty-boss ship.
+  traversal_tools: The grappling hook to anchor rings is the core moment-to-moment movement.
 confidence: medium
 curator: agent

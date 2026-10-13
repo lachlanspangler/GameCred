@@ -2,11 +2,11 @@ appid: 1782120
 name: ZERO Sievert
 developer: CABO Studio
 release_year: 2024
-subgenre: hybrid_shooter
+subgenre: hybrid_action_roguelite
 critic:
   metacritic: 81
 mechanics:
-  hybrid_shooter: 3
+  hybrid_shooter: 2
   extraction: 3
   twin_stick: 2
   real_time_action: 3
@@ -22,10 +22,17 @@ mechanics:
   healing_scarcity: 2
   early_access_dev: 2
   mod_support: 1
+  faction_reputation: 3
+  hunger_clock: 2
+  weapon_durability: 2
+  hybrid_action_roguelite: 3
 evidence:
   extraction: Raids from the bunker; reaching an extraction point keeps loot, death loses everything carried.
   inventory_management: Grid-based inventory with weight forces loot triage during raids.
   hybrid_survival: Hunger, thirst, radiation and bleeding/fracture status must be managed.
   item_upgrading: Weapons are modded with attachments bought from traders or found.
+  faction_reputation: Standing with factions and traders unlocks wares and quests.
+  hunger_clock: Hunger and thirst drain during raids and must be managed.
+  weapon_durability: Weapon durability degrades and causes jams, requiring repair.
 confidence: medium
 curator: agent

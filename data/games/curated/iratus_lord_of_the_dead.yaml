@@ -15,8 +15,12 @@ mechanics:
   character_classes: 2
   status_effects: 2
   consumables: 1
+  summons_minions: 3
+  lanes_ranks: 3
 evidence:
   crafting: Minions are crafted from body parts looted from killed heroes.
   status_effects: Madness/stress-style damage drives enemies to breakdown as an alternate kill route.
+  summons_minions: Iratus crafts undead minions from body parts and fields them as his army.
+  lanes_ranks: Combat uses Darkest Dungeon-style rank positions that determine valid targets.
 confidence: medium
 curator: agent

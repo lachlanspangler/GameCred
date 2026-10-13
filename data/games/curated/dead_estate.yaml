@@ -2,9 +2,9 @@ appid: 1484720
 name: Dead Estate
 developer: Milkbar Lads
 release_year: 2021
-subgenre: hybrid_shooter
+subgenre: hybrid_action_roguelite
 mechanics:
-  hybrid_shooter: 3
+  hybrid_shooter: 2
   twin_stick: 3
   real_time_action: 3
   permadeath: 3
@@ -21,6 +21,7 @@ mechanics:
   consumables: 1
   unlock_items: 1
   healing_scarcity: 2
+  hybrid_action_roguelite: 3
 evidence:
   room_based_floors: Binding of Isaac-style floor of rooms within a haunted mansion.
   character_classes: Several characters each with a distinct starting weapon and stats.

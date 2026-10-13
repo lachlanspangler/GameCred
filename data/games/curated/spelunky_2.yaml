@@ -40,6 +40,7 @@ mechanics:
   lore_codex: 2
   hub_building: 1
   unlock_characters: 2
+  traversal_tools: 1
 evidence:
   multiple_endings: Three endings - Hundun, Tiamat-only, and the Cosmic Ocean (7-98) true ending.
   physics_simulation: Liquids (water, lava) flow and interact; explosions deform terrain.

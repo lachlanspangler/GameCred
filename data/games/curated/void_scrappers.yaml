@@ -1,0 +1,24 @@
+appid: 2005210
+name: Void Scrappers
+developer: 8BitSkull
+release_year: 2022
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 2
+  real_time_action: 3
+  horde_density: 3
+  in_run_currency: 2
+  boss_gates: 2
+  weapons_variety: 1
+  unlock_characters: 2
+  unlock_items: 2
+  permanent_stat_upgrades: 2
+  permadeath: 2
+  vehicle_combat: 3
+evidence:
+  in_run_currency: Scrap dropped by enemies is spent on ship upgrades during a run.
+  boss_gates: Bosses drop new weapons when destroyed.
+  permanent_stat_upgrades: Permanent ship stat upgrades between runs.
+confidence: medium
+curator: agent

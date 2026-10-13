@@ -64,11 +64,15 @@ mechanics:
   assist_mode: 2
   multiple_endings: 1
   steam_deck_friendly: 2
+  traversal_unlocks: 2
+  parry_counter: 1
 evidence:
   hybrid_metroidvania: Permanent runes (vine, teleport, spider) unlock new branching biome paths across runs.
   build_archetypes: Scrolls of Power raise Brutality/Tactics/Survival; gear colour determines which stat scales it.
   ascension_ladder: 5 Boss Stem Cells stacked difficulty levels, each removing healing/adding enemies.
   cursed_items: Cursed chests/curses kill you in one hit until N enemies are slain.
   unlock_items: Cells are spent with the Collector to permanently add blueprints to the item pool.
+  traversal_unlocks: Permanent runes (vine, teleport, ram, spider) open new routes and biomes.
+  parry_counter: Shields allow precision-timed parries.
 confidence: high
 curator: agent

@@ -5,7 +5,8 @@ import datetime as dt
 import json
 import logging
 
-from . import DASHBOARD_DIR, PROCESSED_DIR
+from . import DASHBOARD_DIR, DOCS_DIR, PROCESSED_DIR
+from .analysis.extras import rubric, temporal_holdout, trends
 from .analysis.impact import run_scope, stat_correlations
 from .build import load_dataset
 from .taxonomy import load_taxonomy
@@ -50,7 +51,13 @@ def export() -> dict:
             by_sub[h] = run_scope(sub, with_synergy=False)
     for metric in ("quality_pct", "commercial_pct"):
         scopes[f"all:{metric}"] = run_scope(games, outcome=metric, with_synergy=False)
-    analysis = {"scopes": scopes, "subgenres": by_sub, "stats": stat_correlations(games)}
+    analysis = {"scopes": scopes, "subgenres": by_sub, "stats": stat_correlations(games),
+                "trends": trends(games), "holdout": temporal_holdout(games)}
+    rub_dir = DOCS_DIR / "rubrics"
+    rub_dir.mkdir(exist_ok=True)
+    (rub_dir / "all_roguelikes.md").write_text(rubric(scopes["high_conf"], "All roguelikes (high-confidence tags)"))
+    for h, sc in by_sub.items():
+        (rub_dir / f"{h}.md").write_text(rubric(sc, tax.mechanics[h].name))
     ANALYSIS_PATH.write_text(json.dumps(analysis))
 
     taxo = {"families": [

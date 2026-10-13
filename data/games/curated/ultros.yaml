@@ -15,9 +15,13 @@ mechanics:
   multiple_endings: 2
   boss_gates: 1
   unlock_items: 1
+  handcrafted_loop_world: 3
+  traversal_unlocks: 2
 evidence:
   melee_combos: Varied combos are rewarded with more nutrients from defeated enemies, feeding skill unlocks.
   narrative_across_runs: 'Time-loop structure: each cycle resets the Sarcophagus while story knowledge, key abilities and planted gardens persist.'
   skill_tree_meta: Skill tree fed by nutrients from eating; much of it resets each loop while selected progress carries over.
+  handcrafted_loop_world: Hand-built Sarcophagus world resets each loop while chosen progress carries over.
+  traversal_unlocks: Movement upgrades persist across loops and open new routes.
 confidence: medium
 curator: agent

@@ -21,9 +21,11 @@ mechanics:
   in_run_currency: 2
   status_effects: 2
   mod_support: 2
+  summons_minions: 1
 evidence:
   character_classes: Job system lets the character switch between a dozen jobs and mix learned abilities.
   hub_building: Riverstone Camp provides a bank, garden and monster corral that persist between characters.
   permadeath: Heroic mode is permadeath; Adventure mode allows continuing after death.
+  summons_minions: Captured monster pets and summoner jobs provide persistent allies.
 confidence: medium
 curator: agent

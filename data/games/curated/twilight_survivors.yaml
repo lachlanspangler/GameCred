@@ -1,0 +1,31 @@
+appid: 2788310
+name: Twilight Survivors
+developer: DORIDORI STUDIO
+release_year: 2024
+subgenre: hybrid_survivors
+stats:
+  playable_characters: 13
+  biome_count: 6
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  real_time_action: 3
+  horde_density: 3
+  time_pressure: 2
+  short_runs: 2
+  permadeath: 2
+  level_up_choices: 3
+  pick_one_of_n: 3
+  weapon_evolution: 3
+  character_classes: 2
+  skill_tree_meta: 2
+  permanent_stat_upgrades: 2
+  unlock_items: 2
+  unlock_characters: 2
+  lore_codex: 1
+evidence:
+  weapon_evolution: 20+ weapons and 20+ skills combine into 20+ super weapons.
+  skill_tree_meta: Each character has its own coin-funded Talent Tree.
+  unlock_items: 150+ collectible Kwent Cards add meta bonuses.
+confidence: medium
+curator: agent

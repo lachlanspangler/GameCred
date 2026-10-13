@@ -25,9 +25,13 @@ mechanics:
   random_events: 2
   online_coop: 3
   local_coop: 2
+  party_building: 2
+  turn_escalation: 2
+  day_night_cycle: 1
 evidence:
   second_chance: A shared life pool lets fallen party members be revived until it runs out.
   rng_mitigation: Focus points guarantee success slots on stat-check rolls.
   unlock_items: Lore earned in runs buys new items, classes and events in the Lore Store.
+  turn_escalation: The Chaos track advances with turns/days on the overworld, adding penalties until it ends the run.
 confidence: high
 curator: agent

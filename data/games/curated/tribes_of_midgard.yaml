@@ -20,9 +20,11 @@ mechanics:
   content_updates: 2
   item_rarity: 2
   permadeath: 2
+  day_night_cycle: 3
 evidence:
   time_pressure: 'Day/night cycle: nightly Helthing raids and scheduled Jotunn giant attacks escalate over a Saga.'
   online_coop: Up to 10 players share one village and Seed of Yggdrasil.
   permadeath: Saga mode ends permanently if the Seed is destroyed, keeping only meta unlocks.
+  day_night_cycle: Days are for exploring and gathering; nights bring waves attacking the Seed.
 confidence: medium
 curator: agent

@@ -21,9 +21,11 @@ mechanics:
   synergies: 2
   unlock_items: 2
   online_coop: 2
+  weapon_handling: 2
 evidence:
   time_pressure: Each expedition has a limited time before Chaos overruns the world.
   crafting: Gathered materials are crafted at the Tower into new bullet types and gear.
   elemental_interactions: Ammo types (fire, ice, lightning) combine with environmental effects.
+  weapon_handling: Guns are reloaded manually round by round with crafted ammo types.
 confidence: medium
 curator: agent

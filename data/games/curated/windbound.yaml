@@ -14,9 +14,13 @@ mechanics:
   healing_scarcity: 2
   assist_mode: 2
   boss_gates: 1
+  hunger_clock: 2
+  weapon_durability: 2
 evidence:
   open_procgen_world: Each chapter's archipelago is procedurally generated and explored by a self-built boat.
   permadeath: Survivalist mode sends the player back to chapter 1 and wipes inventory on death; Storyteller mode keeps progress.
   assist_mode: Storyteller mode exists specifically to remove the roguelike penalty.
+  hunger_clock: Hunger drains stamina capacity and must be fed with food.
+  weapon_durability: Crafted weapons and tools degrade and break.
 confidence: medium
 curator: agent

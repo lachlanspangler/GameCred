@@ -29,8 +29,10 @@ mechanics:
   unlock_items: 2
   online_coop: 2
   early_access_dev: 2
+  weapon_handling: 3
 evidence:
   weapons_variety: Guns use active reloads, overheating and jamming with per-weapon attachments.
   character_classes: Classes (Riot Guard, Sniper, Breacher, Engineer) each level their own perk tree.
+  weapon_handling: Manual reloads, active reload, jamming and overheating are a core skill layer.
 confidence: medium
 curator: agent

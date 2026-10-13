@@ -40,6 +40,7 @@ mechanics:
   hub_building: 1
   achievement_unlocks: 1
   unlock_characters: 1
+  traversal_tools: 1
 evidence:
   time_pressure: The Ghost appears after 2.5 minutes on a level and one-shots the player.
   environmental_hazards: Spikes, arrow traps, lava, and boulders are lethal and can be turned on enemies.

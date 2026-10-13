@@ -27,10 +27,12 @@ mechanics:
   optional_challenges: 2
   assist_mode: 2
   unlock_items: 1
+  weapon_durability: 3
 evidence:
   weapons_variety: Almost any object (chairs, keyboards, swords) is a breakable weapon with durability.
   npc_relationships: Mentoring coworkers raises their level and unlocks their Skills for runs.
   optional_challenges: Tasks assigned by coworkers grant rewards when completed in a run.
   assist_mode: Assist options reduce damage and add invulnerability.
+  weapon_durability: Nearly every weapon (office items) breaks after a few uses, forcing constant swaps.
 confidence: medium
 curator: agent

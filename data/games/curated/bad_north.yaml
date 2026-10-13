@@ -14,9 +14,11 @@ mechanics:
   character_classes: 2
   unlock_items: 2
   short_runs: 1
+  party_building: 2
 evidence:
   item_upgrading: Coins saved from intact houses upgrade each commander's unit class and abilities.
   node_map: Islands are chosen on a map while the viking fleet advances behind.
   permadeath: Commanders who lose their unit are dead for the rest of the run.
+  party_building: Commanders are recruited from islands and managed across the run.
 confidence: high
 curator: agent

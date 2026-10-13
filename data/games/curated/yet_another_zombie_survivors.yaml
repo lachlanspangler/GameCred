@@ -1,0 +1,26 @@
+appid: 2163330
+name: Yet Another Zombie Survivors
+developer: Awesome Games Studio
+release_year: 2026
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  real_time_action: 3
+  horde_density: 3
+  level_up_choices: 3
+  pick_one_of_n: 3
+  character_classes: 2
+  permanent_stat_upgrades: 3
+  ascension_ladder: 2
+  enemy_hp_scaling: 2
+  weapons_variety: 2
+  permadeath: 2
+  early_access_dev: 1
+  party_building: 2
+evidence:
+  auto_attack: Characters aim and shoot on their own; you control a lone soldier or a whole mercenary squad.
+  ascension_ladder: Raise the virus' strength to make the horde stronger, then prestige to ascend.
+  permanent_stat_upgrades: Resettable permanent upgrade specializations.
+confidence: medium
+curator: agent

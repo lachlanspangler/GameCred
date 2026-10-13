@@ -23,10 +23,16 @@ mechanics:
   shops: 2
   ascension_ladder: 2
   early_access_dev: 2
+  prep_combat_phases: 3
+  day_night_cycle: 2
+  party_building: 3
 evidence:
   hybrid_city_builder: Day phase spends gold and materials rebuilding and fortifying the city.
   waves: Night phase holds off huge hordes converging from all sides.
   ascension_ladder: Apocalypse levels stack harder modifiers per city.
   unlock_items: Essence from runs unlocks buildings, weapons and perks as meta progression.
+  prep_combat_phases: Each cycle is a day build/production phase followed by a night defence battle.
+  day_night_cycle: Runs are structured as a fixed number of day/night cycles leading to the final night.
+  party_building: Recruit, level and equip a roster of heroes across the run.
 confidence: high
 curator: agent

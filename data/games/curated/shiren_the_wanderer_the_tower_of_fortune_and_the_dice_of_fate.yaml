@@ -20,10 +20,14 @@ mechanics:
   enemy_variety: 3
   healing_scarcity: 1
   hybrid_survival: 1
+  hunger_clock: 3
+  item_identification: 3
+  card_mods: 2
 evidence:
   permadeath: Fainting returns Shiren to level 1 and loses everything carried, Mystery Dungeon style.
   item_upgrading: Weapons/shields absorb seals via Synthesis Pots to build up a single carried kit.
   second_chance: Revival Grass and the online Rescue system can save a failed run.
   hybrid_survival: Fullness drains each turn; riceballs are a constant resource concern.
+  item_identification: Unidentified items appear under random names until used or identified.
 confidence: medium
 curator: agent

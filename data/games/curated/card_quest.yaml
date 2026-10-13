@@ -16,8 +16,10 @@ mechanics:
   act_structure: 2
   boss_gates: 2
   permadeath: 2
+  deck_from_equipment: 3
 evidence:
   loadout_start: Equipped gear determines the cards in the deck before each run.
   energy_mana: Stamina is spent on cards and regained by skipping/resting.
+  deck_from_equipment: Your deck is assembled from cards provided by the weapon, armor and gear you equip.
 confidence: medium
 curator: agent

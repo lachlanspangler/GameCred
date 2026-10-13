@@ -2,9 +2,9 @@ appid: 1471410
 name: SYNTHETIK 2
 developer: Flow Fire Games
 release_year: 2021
-subgenre: hybrid_shooter
+subgenre: hybrid_action_roguelite
 mechanics:
-  hybrid_shooter: 3
+  hybrid_shooter: 2
   twin_stick: 3
   real_time_action: 3
   permadeath: 2
@@ -18,9 +18,13 @@ mechanics:
   open_procgen_world: 2
   unlock_items: 2
   early_access_dev: 3
+  weapon_handling: 3
+  hybrid_action_roguelite: 3
 evidence:
   online_coop: Built around up to 4-player co-op, unlike the largely solo original.
-  early_access_dev: Long-running Early Access (since 2021) with a rework-heavy roadmap; reviews well below the 94% of the first game.
+  early_access_dev: Long-running Early Access (since 2021) with a rework-heavy roadmap; reviews well below the 94%
+    of the first game.
   weapons_variety: Weapon handling (heat, manual reload, malfunctions) carried over from SYNTHETIK.
+  weapon_handling: Manual reloads, magazine management, jamming and overheating are a core skill layer.
 confidence: medium
 curator: agent

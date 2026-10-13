@@ -14,8 +14,12 @@ mechanics:
   endless_mode: 2
   status_effects: 2
   character_classes: 2
+  hunger_clock: 3
+  limb_injuries: 3
 evidence:
   hybrid_survival: 'Iron Age Finland survival: hunger, cold, fatigue and seasonal hunting/trapping.'
   open_procgen_world: A large randomly generated world map per character.
+  hunger_clock: Hunger, thirst, fatigue and cold must be constantly managed.
+  limb_injuries: Detailed per-body-part wounds, bleeding and infections persist beyond HP.
 confidence: medium
 curator: agent

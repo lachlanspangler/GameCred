@@ -13,8 +13,13 @@ mechanics:
   procgen_levels: 3
   permadeath: 3
   act_structure: 2
+  turn_escalation: 3
+  hunger_clock: 2
+  party_building: 2
 evidence:
   hybrid_survival: Fuel and limited supplies force scavenging at every stop on the road west.
   grid_tactics: Small grids where every action (including noise) draws more creatures.
+  turn_escalation: Each turn and every noisy action draws more creatures onto the board.
+  party_building: Survivors and dogs are recruited on the road and managed as a small party.
 confidence: medium
 curator: agent

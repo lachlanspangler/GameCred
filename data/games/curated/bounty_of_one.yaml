@@ -1,0 +1,31 @@
+appid: 1968730
+name: Bounty of One
+developer: OptizOnion
+release_year: 2023
+subgenre: hybrid_survivors
+stats:
+  item_count: 80
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  real_time_action: 3
+  horde_density: 3
+  level_up_choices: 3
+  pick_one_of_n: 3
+  passive_relics: 2
+  elites: 2
+  boss_gates: 2
+  character_classes: 2
+  unlock_characters: 2
+  local_coop: 3
+  synergies: 2
+  build_archetypes: 2
+  short_runs: 2
+  enemy_hp_scaling: 2
+  permadeath: 2
+evidence:
+  local_coop: Up to four players on the same screen (or remotely via Remote Play Together).
+  passive_relics: 80+ items, many dropped by elites and bosses, change playstyle.
+  boss_gates: Sheriffs, deputies and a nemesis serve as boss encounters.
+confidence: medium
+curator: agent

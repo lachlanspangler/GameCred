@@ -15,9 +15,11 @@ mechanics:
   permadeath: 2
   unlock_items: 2
   high_variance_loot: 1
+  score_target_rounds: 3
 evidence:
   physics_simulation: Balls drop through a pachinko board of triggers placed by the player.
   multiplicative_scaling: Trigger combos chain multipliers to reach escalating score targets.
   passive_relics: Boons modify board rules for the rest of the run.
+  score_target_rounds: Each round has a money/score target that must be met to continue.
 confidence: medium
 curator: agent

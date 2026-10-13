@@ -12,8 +12,14 @@ mechanics:
   healing_scarcity: 2
   hybrid_survival: 1
   random_events: 2
+  stress_sanity: 3
+  party_building: 3
+  lanes_ranks: 2
 evidence:
   hybrid_survival: Expeditions are limited by cold/supplies; camping consumes resources.
   permadeath: Recruited companions die permanently on expeditions.
+  stress_sanity: Party members have a sanity meter that causes afflictions as it drains.
+  party_building: Recruit and manage a party of four from the Icenaire refugees.
+  lanes_ranks: Party formation positions determine which abilities can be used and targeted.
 confidence: medium
 curator: agent

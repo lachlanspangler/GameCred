@@ -19,9 +19,13 @@ mechanics:
   npc_relationships: 2
   block_shield: 2
   crits: 2
+  party_building: 3
+  day_night_cycle: 2
 evidence:
   enemy_intents: An initiative timeline shows enemy actions; hitting first can break and delay them.
   elites: Nemesis-style adaptive enemies (the Behemoth) gain power and remember the player.
   npc_relationships: Camp bonding between party members unlocks combo abilities.
+  party_building: Recruit and manage a squad of up to three heroes from a growing rebel roster each run.
+  day_night_cycle: Each planet gives a limited number of days to explore zones and camp before facing the Behemoth.
 confidence: medium
 curator: agent

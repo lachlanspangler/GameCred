@@ -45,11 +45,13 @@ mechanics:
   mod_support: 3
   early_access_dev: 2
   content_updates: 1
+  traversal_tools: 2
 evidence:
   physics_simulation: Every pixel is simulated - liquids flow, fire spreads, gases explode, terrain is destructible.
   crafting: Wands are built by arranging spells in slots; spell order, modifiers and triggers define behaviour.
   healing_scarcity: Healing is nearly absent outside Holy Mountain refills between levels.
   pick_one_of_n: Holy Mountain offers a choice of perks after each level.
   double_edged_items: Perks like Glass Cannon and potions like polymorphine trade power for risk.
+  traversal_tools: Levitation is a constant movement resource; digging and teleport wands reshape routes.
 confidence: high
 curator: agent

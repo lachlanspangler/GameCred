@@ -38,11 +38,15 @@ mechanics:
   unlock_items: 2
   ascension_ladder: 2
   early_access_dev: 2
+  corruption_meter: 3
+  dual_resource: 1
 evidence:
   cursed_items: Corruption meter grants a permanent Curse each time it fills, with some curses tied to room types.
   hp_as_currency: Blood can be paid at altars when gold runs short, adding Corruption.
   environmental_hazards: Darkness boosts enemy damage; torches and braziers light rooms and ignite oil and traps.
   energy_mana: Stamina gauge governs dodges and special attacks.
   rng_mitigation: Room-choice doors preview rewards before entry.
+  corruption_meter: Corruption fills from damage and choices; each full bar imposes a permanent curse.
+  dual_resource: Stamina is spent on dodges/attacks while Divinity charges and is spent on divine attacks.
 confidence: medium
 curator: agent

@@ -31,10 +31,12 @@ mechanics:
   build_archetypes: 2
   content_updates: 2
   early_access_dev: 1
+  score_target_rounds: 3
 evidence:
   gambling: Core loop is a slot machine; symbols pay out based on adjacency each spin.
   deck_thinning: Removal tokens delete unwanted symbols from the pool.
   transformations: Symbols transform into others (e.g. eggs hatch, items upgrade on conditions).
   mod_support: Steam Workshop mod support.
+  score_target_rounds: Rent payments of rising size are due every few spins; failing to pay ends the run.
 confidence: medium
 curator: agent

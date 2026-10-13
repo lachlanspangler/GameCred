@@ -174,6 +174,11 @@ def check_dataset(rep: Report):
         lines.append("dead mechanics (0 games): " + ", ".join(dead)); rep.warnings += len(dead)
     if broad:
         lines.append("non-discriminating (>90% of games): " + ", ".join(broad)); rep.warnings += len(broad)
+    seen_tags = {t for g in games for t in g.get("steam_tags", [])}
+    if len(games) > 200:
+        dead_rules = sorted({f"{m.id}:{t}" for m in tax.mechanics.values() for t in m.steam_tags if t not in seen_tags})
+        if dead_rules:
+            lines.append("taxonomy steam_tags never seen on any game (dead rules): " + ", ".join(dead_rules)); rep.warnings += len(dead_rules)
     sub = {}
     for g in games:
         sub[g["subgenre"]] = sub.get(g["subgenre"], 0) + 1

@@ -1,0 +1,30 @@
+appid: 3026450
+name: 'Deadly Days: Roadtrip'
+developer: Pixelsplit
+release_year: 2025
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 2
+  real_time_action: 3
+  horde_density: 3
+  node_map: 2
+  procgen_levels: 2
+  inventory_management: 3
+  synergies: 3
+  crafting: 2
+  item_upgrading: 2
+  level_up_choices: 2
+  unlock_characters: 2
+  hub_building: 1
+  boss_gates: 2
+  dodge_iframes: 1
+  permadeath: 2
+  early_access_dev: 2
+evidence:
+  inventory_management: Weapons and items take blocks in a small backpack; adjacency effects stack.
+  crafting: Items are recombined into stronger versions or new legendaries.
+  node_map: Each trip is a route you pick stop by stop toward a final boss.
+  unlock_characters: Rescue and recruit 10+ survivors who join your base.
+confidence: medium
+curator: agent

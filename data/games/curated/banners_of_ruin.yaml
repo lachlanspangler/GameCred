@@ -25,8 +25,12 @@ mechanics:
   grid_tactics: 1
   turn_based: 3
   character_classes: 2
+  party_building: 3
+  lanes_ranks: 2
 evidence:
   permadeath: Individual party members die permanently mid-run along with their cards.
   grid_tactics: Party arranged in front/back formation slots.
+  party_building: Recruit and manage a party of beastfolk heroes over the run.
+  lanes_ranks: Party is arranged in front/back positions that govern who can be targeted.
 confidence: medium
 curator: agent

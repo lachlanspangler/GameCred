@@ -25,9 +25,15 @@ mechanics:
   cursed_items: 2
   melee_combos: 2
   double_edged_items: 1
+  deck_from_equipment: 2
+  hunger_clock: 3
+  parry_counter: 2
 evidence:
   boss_gates: Story mode is a ladder of court-card bosses (Jack, Queen, King per suit).
   cursed_items: Curse cards impose persistent penalties until lifted.
   endless_mode: Endless mode continues dealing harder encounter decks.
+  hunger_clock: Each move on the card map consumes food; starving drains health.
+  deck_from_equipment: The player builds a deck of equipment cards that are dealt as gear during the run.
+  parry_counter: Real-time combat uses timed counter prompts to reverse enemy attacks.
 confidence: medium
 curator: agent

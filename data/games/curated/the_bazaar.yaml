@@ -25,10 +25,12 @@ mechanics:
   level_up_choices: 2
   leaderboards: 2
   content_updates: 2
+  prep_combat_phases: 2
 evidence:
   cooldown_reduction: Items fire on cooldowns; Haste/Slow/Freeze manipulating them is a core axis.
   interest_economy: Income stat pays gold each day; investing in income vs power is a key tradeoff.
   item_upgrading: Buying a duplicate of a held item upgrades its tier (Bronze -> Silver -> Gold -> Diamond).
   async_multiplayer: PvP fights each day are against other players' recorded boards.
+  prep_combat_phases: Each day alternates shopping/event hours with a combat fight.
 confidence: medium
 curator: agent

@@ -1,0 +1,31 @@
+appid: 1918040
+name: Army of Ruin
+developer: Milkstone Studios
+release_year: 2023
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  real_time_action: 3
+  horde_density: 3
+  time_pressure: 2
+  short_runs: 2
+  permadeath: 2
+  level_up_choices: 3
+  pick_one_of_n: 3
+  weapon_evolution: 2
+  passive_relics: 1
+  character_classes: 2
+  active_items: 1
+  permanent_stat_upgrades: 2
+  unlock_items: 2
+  achievement_unlocks: 2
+  boss_gates: 2
+  weapons_variety: 2
+  synergies: 1
+evidence:
+  weapon_evolution: Combining trinkets/equipment with weapons evolves them into stronger forms.
+  boss_gates: Missions build to fights with Army General bosses.
+  permanent_stat_upgrades: Skills are levelled between missions using earned rewards.
+confidence: medium
+curator: agent

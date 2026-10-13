@@ -25,9 +25,15 @@ mechanics:
   online_coop: 3
   local_coop: 2
   content_updates: 2
+  party_building: 2
+  turn_escalation: 2
+  day_night_cycle: 1
+  lanes_ranks: 2
 evidence:
   second_chance: Shared life pool continues from the original.
   rng_mitigation: Focus spent on slot rolls; battles add front/back-row positioning.
   online_coop: Four-player online co-op.
+  turn_escalation: Chaos advances with overworld turns, adding penalties over time.
+  lanes_ranks: Combat uses front and back rows; back-row heroes are protected from melee.
 confidence: high
 curator: agent

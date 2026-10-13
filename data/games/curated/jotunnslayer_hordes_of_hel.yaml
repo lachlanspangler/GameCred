@@ -1,0 +1,32 @@
+appid: 2820820
+name: 'Jotunnslayer: Hordes of Hel'
+developer: Games Farm
+release_year: 2025
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  real_time_action: 3
+  dodge_iframes: 1
+  horde_density: 3
+  level_up_choices: 3
+  pick_one_of_n: 3
+  reroll: 1
+  synergies: 2
+  build_archetypes: 2
+  character_classes: 2
+  unlock_characters: 2
+  unlock_items: 2
+  permanent_stat_upgrades: 2
+  optional_challenges: 2
+  boss_gates: 2
+  elites: 1
+  short_runs: 2
+  permadeath: 2
+  early_access_dev: 1
+evidence:
+  optional_challenges: Runs spawn missions/quests with specific objectives and extra obstacles en route to the final boss.
+  synergies: Norse gods grant Divine Powers that combine with hero skills.
+  boss_gates: Each run ends with a boss trial.
+confidence: medium
+curator: agent

@@ -54,11 +54,14 @@ mechanics:
   early_access_dev: 2
   content_updates: 2
   steam_deck_friendly: 2
+  life_sim_hub: 2
+  second_chance: 2
 evidence:
   energy_mana: Magick bar fuels Omega (charged) attacks and casts, a new resource layer over Hades 1.
   loadout_start: Arcana cards (grasp-limited) and Nocturnal Arms aspects are chosen pre-run.
   modular_difficulty: Oath of the Unseen Fear vows act as the toggleable Heat system.
   crafting: Gathered reagents (herbs, ore, psyche) are spent at the Cauldron for Incantations that expand the Crossroads.
   act_structure: Two separate routes (Underworld down to Tartarus, Surface up to Olympus) each with 4+ regions.
+  life_sim_hub: The Crossroads has gardening, gathering, fishing and incantation crafting between runs.
 confidence: high
 curator: agent

@@ -36,10 +36,12 @@ mechanics:
   elites: 1
   early_access_dev: 2
   content_updates: 2
+  weapon_stance_swap: 3
 evidence:
   character_classes: Skulls (skull heads) found in-run swap Skul's moveset; two can be held and swapped.
   synergies: Items carry inscriptions that grant set bonuses when enough matching inscriptions are held.
   rng_mitigation: Door icons show the reward type (skull, item, gold) before entering.
   ascension_ladder: Dark Mirror difficulty tiers added post-launch.
+  weapon_stance_swap: Two skulls are held and swapped mid-combat, triggering swap skills.
 confidence: medium
 curator: agent

@@ -21,9 +21,13 @@ mechanics:
   shops: 2
   in_run_currency: 2
   status_effects: 2
+  party_building: 3
+  stress_sanity: 3
 evidence:
   hybrid_survival: Sanity drains with each step on the hex map; food and supplies restore it.
   dice: Combat is resolved by rolling and rerolling each party member's dice faces.
   act_structure: A campaign is a series of expeditions racing rival explorers for fame.
+  party_building: Recruit and manage expedition members with traits and roles.
+  stress_sanity: Sanity drains with travel and causes events/afflictions as it falls.
 confidence: high
 curator: agent

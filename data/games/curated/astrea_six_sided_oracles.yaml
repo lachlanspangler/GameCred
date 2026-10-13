@@ -27,9 +27,11 @@ mechanics:
   shops: 2
   in_run_currency: 2
   synergies: 2
+  dice_manipulation: 3
 evidence:
   dice: Players build a bag of custom dice instead of a card deck.
   double_edged_items: Corruption faces hurt enemies but fill your own corruption meter, which damages you on overflow.
   item_upgrading: Dice faces can be upgraded or purified mid-run.
+  dice_manipulation: Dice faces are added, upgraded and swapped; dice-face editing is the core build loop.
 confidence: medium
 curator: agent

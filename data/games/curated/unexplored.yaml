@@ -21,8 +21,10 @@ mechanics:
   environmental_hazards: 1
   healing_scarcity: 2
   multiple_endings: 1
+  item_identification: 2
 evidence:
   procgen_levels: Cyclic dungeon generation builds Zelda-like lock-and-key loops with puzzles, not just room grids.
   environmental_hazards: Traps, pits and spreading fire are used against the player and enemies.
+  item_identification: Potions and scrolls are unidentified until used or identified.
 confidence: medium
 curator: agent

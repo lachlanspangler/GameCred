@@ -53,6 +53,7 @@ mechanics:
   rng_mitigation: 1
   run_history: 1
   steam_deck_friendly: 1
+  summons_minions: 1
 evidence:
   time_pressure: Difficulty climbs continuously with elapsed time, not just stage depth.
   item_stacking: Every item stacks linearly or hyperbolically; proc-chains are the core of builds.

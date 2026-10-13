@@ -17,6 +17,8 @@ mechanics:
   shops: 2
   in_run_currency: 2
   hybrid_survival: 1
+  hunger_clock: 2
+  party_building: 2
 evidence:
   node_map: Each adventure crosses a map of nodes with fuel consumed per move.
   random_events: Text events branch based on party members' skills.

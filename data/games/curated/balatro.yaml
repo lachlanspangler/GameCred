@@ -52,11 +52,15 @@ mechanics:
   speed_controls: 1
   content_updates: 2
   tutorialized_unlocks: 1
+  score_target_rounds: 3
+  card_mods: 3
 evidence:
   interest_economy: Earn $1 interest per $5 held (capped), making saving vs spending a core decision.
   multiplicative_scaling: Jokers stack +Chips, +Mult and xMult in order, enabling exponential scores.
   banish_skip: Small/Big Blinds can be skipped in exchange for a Tag reward.
   ascension_ladder: 8 cumulative Stakes (White to Gold) per deck.
   boss_gates: Each Ante ends in a Boss Blind with a rule-breaking debuff.
+  score_target_rounds: Every Blind requires reaching a chip score threshold within limited hands.
+  card_mods: Playing cards gain permanent Enhancements, Editions and Seals.
 confidence: high
 curator: agent

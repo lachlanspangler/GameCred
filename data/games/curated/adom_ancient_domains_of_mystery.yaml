@@ -22,9 +22,15 @@ mechanics:
   enemy_variety: 3
   optional_challenges: 2
   healing_scarcity: 1
+  item_identification: 3
+  hunger_clock: 2
+  corruption_meter: 2
 evidence:
   multiple_endings: Several endings including ultra endings requiring long quest chains.
   character_classes: Race x class combinations (10+ races, 20+ classes).
   double_edged_items: Chaos corruption grows over time and grants mutations that are mostly harmful, some useful.
+  item_identification: Potions, scrolls, wands and rings start unidentified and must be learned by use or identify.
+  hunger_clock: Satiation drains over time; starving forces food management and forward progress.
+  corruption_meter: ChAoS corruption accumulates over the game and inflicts permanent corruptions (mutations).
 confidence: medium
 curator: agent

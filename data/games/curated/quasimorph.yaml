@@ -15,9 +15,13 @@ mechanics:
   status_effects: 3
   weapons_variety: 3
   early_access_dev: 3
+  limb_injuries: 3
+  turn_escalation: 2
 evidence:
   extraction: Mercenaries enter missions and must extract with loot; dying loses their gear.
   status_effects: Per-limb wounds, bleeding, infections and amputations.
   hub_building: A persistent space station stores gear and crafts items between missions.
+  limb_injuries: Per-limb wounds, fractures and amputations persist beyond HP.
+  turn_escalation: Quasimorphosis rises over time in a mission, spawning increasingly dangerous quasimorphs.
 confidence: medium
 curator: agent

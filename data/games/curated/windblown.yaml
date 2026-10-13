@@ -29,9 +29,13 @@ mechanics:
   online_coop: 3
   early_access_dev: 3
   content_updates: 2
+  weapon_stance_swap: 3
+  parry_counter: 2
 evidence:
   synergies: Alterattack - finishing a combo with one weapon triggers the other equipped weapon's special.
   online_coop: Built for 3-player online co-op.
   unlock_items: Blueprints and weapons are unlocked in the Ark hub for future runs.
+  weapon_stance_swap: Two weapons are equipped and swapped mid-combo, triggering alterattacks.
+  parry_counter: Timed parries deflect attacks and reward precise timing.
 confidence: medium
 curator: agent

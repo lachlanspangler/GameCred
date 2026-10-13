@@ -42,11 +42,15 @@ mechanics:
   mod_support: 2
   early_access_dev: 2
   assist_mode: 1
+  rhythm_timing: 3
+  combo_meter: 3
 evidence:
   real_time_action: Every move must land on the music beat - a tile-based roguelike played in rhythm.
   attack_patterns: Each enemy type has a fixed, learnable movement rhythm tied to the beat.
   multiplicative_scaling: Coin multiplier rises with consecutive on-beat kills and resets on missed beats.
   permanent_stat_upgrades: Diamonds buy permanent hearts and unlock items in the lobby.
   character_classes: Characters like Aria (one-hit, dagger-only) and Bard (no rhythm) radically change rules.
+  rhythm_timing: Every move and attack must be made on the beat of the music.
+  combo_meter: Killing without missing a beat raises a coin multiplier that resets on a missed beat.
 confidence: high
 curator: agent

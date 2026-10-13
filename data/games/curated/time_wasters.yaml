@@ -1,0 +1,30 @@
+appid: 1290330
+name: Time Wasters
+developer: Proton Studio
+release_year: 2023
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 2
+  real_time_action: 3
+  horde_density: 2
+  waves: 3
+  elites: 2
+  level_up_choices: 2
+  pick_one_of_n: 2
+  reroll: 2
+  in_run_currency: 2
+  weapon_evolution: 2
+  character_classes: 2
+  permanent_stat_upgrades: 2
+  optional_challenges: 1
+  endless_mode: 2
+  permadeath: 2
+  vehicle_combat: 3
+evidence:
+  waves: Enemies arrive in 10-second waves; elites must be destroyed as fast as possible.
+  reroll: Time Cubes reroll choices or compress time for multiple upgrades at the Time Cube Shop.
+  permanent_stat_upgrades: Space Cubes start runs with Outposts developed and Captains upgraded.
+  weapon_evolution: Captains' primary weapons transform into Super Weapons.
+confidence: medium
+curator: agent

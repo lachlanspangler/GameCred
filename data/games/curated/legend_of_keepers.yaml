@@ -14,8 +14,10 @@ mechanics:
   unlock_characters: 2
   in_run_currency: 2
   environmental_hazards: 2
+  prep_combat_phases: 2
 evidence:
   environmental_hazards: Traps placed in dungeon rooms damage invading heroes before monsters fight them.
   permadeath: Monsters killed defending are lost for the career.
+  prep_combat_phases: Each raid alternates placing traps/monsters in rooms with the heroes fighting through them.
 confidence: medium
 curator: agent

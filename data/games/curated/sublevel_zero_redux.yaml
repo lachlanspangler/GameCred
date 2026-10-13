@@ -18,9 +18,11 @@ mechanics:
   character_classes: 2
   unlock_characters: 2
   weapons_variety: 2
+  vehicle_combat: 3
 evidence:
   crafting: Weapons and ship parts are combined at a crafting grid into higher-tier items.
   real_time_action: Six-degrees-of-freedom (Descent-style) ship combat in procedural tunnels.
   character_classes: Unlockable ships with different starting loadouts.
+  vehicle_combat: The player pilots a 6DOF gunship that is the combat avatar.
 confidence: medium
 curator: agent

@@ -30,10 +30,16 @@ mechanics:
   assist_mode: 1
   early_access_dev: 2
   content_updates: 2
+  weapon_durability: 3
+  stealth: 2
+  item_identification: 1
 evidence:
   inventory_management: The robot is built from salvaged parts in limited slots; parts break and are constantly swapped.
   healing_scarcity: Core integrity is barely repairable; survival means replacing destroyed parts.
   multiple_endings: Several endings depending on route and faction alliances.
   build_archetypes: Combat, stealth/speed and hacking builds play very differently.
+  weapon_durability: Attached parts lose integrity and are destroyed in combat, forcing constant replacement.
+  stealth: Avoiding detection and sneaking past patrols is a viable alternative to fighting.
+  item_identification: Prototype parts are unknown until used or analyzed.
 confidence: high
 curator: agent

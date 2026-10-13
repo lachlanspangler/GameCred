@@ -31,9 +31,11 @@ mechanics:
   local_coop: 2
   online_coop: 2
   early_access_dev: 2
+  item_identification: 2
 evidence:
   cursed_items: Unidentified gear may be cursed and cannot be unequipped until uncursed.
   healing_scarcity: Healing is rare; HP is a run-long resource in the brutal side-scrolling crawl.
   level_up_choices: Level-ups give a stat point and a choice of class-specific perk.
+  item_identification: Potions and many items are unidentified until used.
 confidence: medium
 curator: agent

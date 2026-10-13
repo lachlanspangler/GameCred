@@ -20,6 +20,7 @@ mechanics:
   unlock_items: 2
   online_coop: 2
   environmental_hazards: 1
+  hunger_clock: 2
 evidence:
   hybrid_survival: Hunger meter must be fed with food found or crafted in the dungeon.
   crafting: Recipes combine ingredients into potions, food and gear.

@@ -28,9 +28,11 @@ mechanics:
   in_run_currency: 2
   healing_scarcity: 2
   local_coop: 1
+  weapon_stance_swap: 2
 evidence:
   skill_tree_meta: Ability points from levels are allocated across trees (e.g. Wrath, Swiftness, Greed).
   hub_building: Rescued villagers set up shops and services in the town.
   weapons_variety: Hundreds of melee, ranged and magic weapons with two swappable hands.
+  weapon_stance_swap: Two weapon sets are equipped and swapped instantly during combat.
 confidence: medium
 curator: agent

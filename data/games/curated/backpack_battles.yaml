@@ -25,10 +25,12 @@ mechanics:
   leaderboards: 2
   early_access_dev: 2
   content_updates: 2
+  prep_combat_phases: 3
 evidence:
   inventory_management: Items must physically fit into a grid backpack; adjacency triggers effects.
   weapon_evolution: Specific items placed together combine into recipe items at the start of a round.
   async_multiplayer: Each round fights another player's recorded backpack.
   rng_mitigation: Shop items can be reserved (locked) across rerolls.
+  prep_combat_phases: Each round alternates a shop/arrange-backpack phase with an automatic battle.
 confidence: high
 curator: agent

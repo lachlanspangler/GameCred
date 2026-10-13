@@ -23,9 +23,11 @@ mechanics:
   narrative_across_runs: 2
   local_coop: 2
   online_coop: 2
+  parry_counter: 2
 evidence:
   melee_combos: Side-scrolling beat-'em-up combat from the Streets of Rage 4 team, with juggles and parries.
   node_map: Runs branch at crossroads between hand-built routes rather than procedural rooms.
   local_coop: 2-player local and online co-op.
+  parry_counter: Precision-timed parry/deflect is a key defensive tool in combat.
 confidence: medium
 curator: agent

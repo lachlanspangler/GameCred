@@ -24,10 +24,16 @@ mechanics:
   online_coop: 2
   assist_mode: 1
   mod_support: 3
+  party_building: 3
+  limb_injuries: 2
+  legacy_inheritance: 2
 evidence:
   random_events: Procedural story events branch based on hero personality and choices.
   npc_relationships: Heroes form romances, rivalries and friendships that change dialogue and abilities.
   narrative_across_runs: Legacy heroes can be carried into future campaigns.
   environmental_hazards: Mystics interfuse with terrain objects to turn them into weapons.
+  party_building: Recruit and manage a growing band of heroes through a campaign.
+  limb_injuries: Heroes can suffer lasting injuries such as lost limbs or eyes.
+  legacy_inheritance: Legacy heroes carry over into later campaigns with their histories.
 confidence: medium
 curator: agent

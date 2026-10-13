@@ -22,6 +22,7 @@ mechanics:
   perfect_information: 2
   enemy_variety: 3
   early_access_dev: 1
+  summons_minions: 2
 evidence:
   synergies: Spell, skill and summon combinations define the run like the original.
   item_upgrading: Skill points buy spells and per-spell upgrades; shrines add further spell modifications.

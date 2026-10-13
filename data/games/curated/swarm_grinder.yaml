@@ -1,0 +1,30 @@
+appid: 1375900
+name: Swarm Grinder
+developer: Last Bite Games
+release_year: 2024
+subgenre: hybrid_survivors
+stats:
+  playable_characters: 3
+  biome_count: 3
+  enemy_types: 10
+  boss_count: 2
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 2
+  real_time_action: 3
+  horde_density: 3
+  procgen_levels: 2
+  talent_slots: 2
+  item_upgrading: 2
+  synergies: 2
+  item_rarity: 2
+  ascension_ladder: 2
+  achievement_unlocks: 1
+  boss_gates: 1
+  permadeath: 2
+evidence:
+  horde_density: Bug cells spread across the map and hatch into a swarm when triggered.
+  talent_slots: Up to five skills per run (auto-striking actives or passives), each upgraded along its own path.
+  ascension_ladder: 3 maps with 7 evolution difficulty levels.
+confidence: medium
+curator: agent

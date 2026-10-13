@@ -40,10 +40,12 @@ mechanics:
   turn_based: 3
   content_updates: 3
   early_access_dev: 1
+  party_building: 3
 evidence:
   online_coop: Up to 4 players each control one hero of the 4-hero party.
   permanent_stat_upgrades: Hero Perk points earned across runs buy permanent bonuses per hero.
   item_upgrading: Every card has two upgrade branches (blue/gold) chosen at towns.
   modular_difficulty: Madness levels plus selectable Corruptors stack difficulty.
+  party_building: Player fields a party of four heroes, each with its own deck.
 confidence: medium
 curator: agent

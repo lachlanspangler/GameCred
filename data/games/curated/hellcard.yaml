@@ -23,9 +23,11 @@ mechanics:
   early_access_dev: 2
   mod_support: 2
   turn_based: 3
+  lanes_ranks: 2
 evidence:
   online_coop: Up to 3 players share a battlefield in co-op.
   grid_tactics: Enemies occupy near and far range bands; cards have range restrictions.
   mod_support: Free HELLCARD Modding Tools released on Steam.
+  lanes_ranks: Monsters occupy distance zones around the party; cards can only hit certain ranges.
 confidence: medium
 curator: agent

@@ -16,9 +16,13 @@ mechanics:
   permadeath: 2
   random_events: 1
   early_access_dev: 2
+  prep_combat_phases: 3
+  party_building: 2
 evidence:
   synergies: Unit class counts (weapons) activate TFT-style tiered bonuses.
   node_map: The squad moves room by room through a labyrinth, consuming food each step.
   pvp: Tournament mode pits players' squads against each other.
+  prep_combat_phases: Recruit/equip humans in shop phases between automatic battles.
+  party_building: A squad of humans is recruited and assigned classes over the run.
 confidence: medium
 curator: agent

@@ -19,8 +19,10 @@ mechanics:
   shops: 2
   in_run_currency: 2
   melee_combos: 1
+  vehicle_combat: 3
 evidence:
   act_structure: Campaign split into Seasons of 5 procedurally generated missions; dying restarts the Season.
   physics_simulation: Newtonian thrust-and-drift flight model with a mech transformation for melee.
+  vehicle_combat: Combat is fought piloting the Galak-Z ship/mech.
 confidence: medium
 curator: agent

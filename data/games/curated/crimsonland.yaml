@@ -1,0 +1,34 @@
+appid: 262830
+name: Crimsonland
+developer: 10tons Ltd
+release_year: 2014
+subgenre: hybrid_action_roguelite
+critic:
+  metacritic: 68
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_survivors: 2
+  twin_stick: 3
+  real_time_action: 3
+  horde_density: 3
+  level_up_choices: 3
+  pick_one_of_n: 3
+  weapons_variety: 3
+  high_variance_loot: 2
+  consumables: 2
+  unlock_items: 3
+  double_edged_items: 2
+  hp_as_currency: 1
+  endless_mode: 3
+  short_runs: 3
+  permadeath: 1
+  enemy_hp_scaling: 2
+  local_coop: 2
+  leaderboards: 2
+evidence:
+  level_up_choices: In Survival mode each level-up offers a choice of perks, the template later survivors-likes copied.
+  double_edged_items: Perks like Infernal Contract (+3 levels, HP drops to 10%) and Fatal Lottery trade risk for power.
+  unlock_items: Completing Quest mode levels unlocks new weapons and perks for Survival.
+  high_variance_loot: Weapons are random field drops that replace your current gun.
+confidence: medium
+curator: agent

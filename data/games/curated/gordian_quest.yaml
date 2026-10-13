@@ -27,9 +27,12 @@ mechanics:
   random_events: 2
   early_access_dev: 2
   skill_tree_meta: 1
+  party_building: 3
+  deck_from_equipment: 1
 evidence:
   level_up_choices: Each hero has a large skill tree; points grant new cards and passives.
   item_rarity: Diablo-style randomized loot with rarity tiers.
   grid_tactics: Party and enemies occupy a small positional grid affecting range.
+  party_building: A party of up to three heroes is recruited and managed across the campaign.
 confidence: medium
 curator: agent

@@ -33,10 +33,12 @@ mechanics:
   build_archetypes: 2
   character_classes: 3
   turn_based: 3
+  vehicle_combat: 3
 evidence:
   grid_tactics: Ships move laterally; cannons and enemy attacks hit only the columns they align with.
   enemy_intents: Enemy attack intents are shown per cannon column before your turn.
   loadout_start: Choose 3 crew members (each contributes a card pool) and a ship.
   narrative_across_runs: Time-loop story where crew memories unlock across runs.
+  vehicle_combat: Combat is ship-vs-ship; you pilot and move your ship to align cannons and dodge.
 confidence: medium
 curator: agent

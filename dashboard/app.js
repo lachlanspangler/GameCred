@@ -113,35 +113,50 @@ function impact() {
   const scope = ridgeScope();
   const rc = new Map(((scope && scope.ridge && scope.ridge.coefs) || []).map(c => [c.feature, c]));
   const out = [];
+  const strataKeys = ["curated", "auto"];
   for (const mid of Object.keys(MECH)) {
-    const w = [], wo = []; let hw = 0, fw = 0, hwo = 0, fwo = 0, intenSum = 0;
+    // Stratify by tag source: curated games are both better-known and more richly tagged (see Method).
+    const cell = { curated: [[], []], auto: [[], []] };
+    const ev = { curated: { h: [0, 0], f: [0, 0] }, auto: { h: [0, 0], f: [0, 0] } };
+    let n1 = 0, n0 = 0, hw = 0, intenSum = 0; const all1 = [], all0 = [];
     for (const r of rows) {
-      if (has(r.g, mid)) { w.push(r.y); intenSum += r.g.m[mid][0]; if (r.y >= hitT) hw++; if (r.y <= flopT) fw++; }
-      else { wo.push(r.y); if (r.y >= hitT) hwo++; if (r.y <= flopT) fwo++; }
+      const sk = r.g.src === "curated" ? "curated" : "auto", k = has(r.g, mid) ? 0 : 1;
+      cell[sk][k].push(r.y); (k ? all0 : all1).push(r.y);
+      if (r.y >= hitT) ev[sk].h[k]++; if (r.y <= flopT) ev[sk].f[k]++;
+      if (!k) { n1++; intenSum += r.g.m[mid][0]; if (r.y >= hitT) hw++; } else n0++;
     }
-    const n1 = w.length, n0 = wo.length;
     const row = { mid, n1, n0, prev: rows.length ? n1 / rows.length : 0 };
     const c = rc.get(mid);
     row.ridge = c ? c.coef : null; row.rlo = c ? c.ci_lo : null; row.rhi = c ? c.ci_hi : null;
-    if (n1 >= 3 && n0 >= 3) {
-      const m1 = mean(w), m0 = mean(wo), se = Math.sqrt(variance(w) / n1 + variance(wo) / n0) || 1e-9;
-      Object.assign(row, { m1, m0, diff: m1 - m0, lo: m1 - m0 - 1.96 * se, hi: m1 - m0 + 1.96 * se,
-        hit1: hw / n1, hit0: hwo / n0, flop1: fw / n1, flop0: fwo / n0, mi: intenSum / n1 });
-      const nh = hw + hwo;
+    let W = 0, D = 0, V = 0, nEff = 0;
+    for (const sk of strataKeys) {
+      const [a, b] = cell[sk];
+      if (a.length < 2 || b.length < 2) continue;
+      const wt = a.length * b.length / (a.length + b.length);
+      W += wt; D += wt * (mean(a) - mean(b)); V += wt * wt * (variance(a) / a.length + variance(b) / b.length); nEff += a.length;
+    }
+    const mh = key => { let num = 0, den = 0; for (const sk of strataKeys) { const a = cell[sk][0].length, b = cell[sk][1].length; if (!a || !b) continue; const N = a + b; num += ev[sk][key][0] * b / N; den += ev[sk][key][1] * a / N; } return den > 0 ? num / den : null; };
+    if (n1 >= 3 && n0 >= 3 && W > 0) {
+      const diff = D / W, se = Math.sqrt(V) / W || 1e-9;
+      Object.assign(row, { m1: mean(all1), m0: mean(all0), diff, lo: diff - 1.96 * se, hi: diff + 1.96 * se, nEff, mi: intenSum / n1,
+        raw: mean(all1) - mean(all0), lift: mh("h"), flopR: mh("f") });
+      const nh = rows.filter(r => r.y >= hitT).length;
       row.prevHits = nh ? hw / nh : null;
-      row.lift = row.hit0 > 0 ? row.hit1 / row.hit0 : null;
-      row.flopR = row.flop0 > 0 ? row.flop1 / row.flop0 : null;
     }
     row.verdict = verdict(row);
     out.push(row);
   }
+  // Benjamini-Hochberg across mechanics on normal-approx p-values (controls false discoveries in live verdicts)
+  const withP = out.filter(r => r.diff != null).map(r => { const z = Math.abs(r.diff) / (((r.hi - r.lo) / 3.92) || 1e-9); r.p = 2 * (1 - ncdf(z)); return r; }).sort((a, b) => a.p - b.p);
+  let minq = 1; for (let i = withP.length - 1; i >= 0; i--) { minq = Math.min(minq, withP[i].p * withP.length / (i + 1)); withP[i].q = minq; }
+  for (const r of out) r.verdict = verdict(r);
   const val = { rows: out, n: rows.length, hitT, flopT, slice: rows, scope };
   _cache = { key, val };
   return val;
 }
 function verdict(r) {
-  if (r.diff == null || r.n1 < 10 || r.n0 < 10) return "insufficient data";
-  const posU = r.lo > 0, negU = r.hi < 0;
+  if (r.diff == null || (r.nEff ?? r.n1) < 15 || r.n0 < 15) return "insufficient data";
+  const sig = r.q != null && r.q < 0.1, posU = r.lo > 0 && sig, negU = r.hi < 0 && sig;
   const posR = r.rlo != null && r.rlo > 0, negR = r.rhi != null && r.rhi < 0;
   const riskRed = r.flopR != null && r.flopR <= 0.7;
   if ((negU && (r.ridge == null || r.ridge < 0)) || negR) return "red flag";
@@ -236,7 +251,7 @@ function hbars(items, { width = 560, rowH = 26, max = null, fmtv = fmt.f1, color
 /** Mechanic scatter: x = prevalence, y = effect. */
 function effectScatter(rows, { width = 720, height = 380, onclick } = {}) {
   const pad = { l: 44, r: 16, t: 14, b: 36 }, W = width - pad.l - pad.r, H = height - pad.t - pad.b;
-  const pts = rows.filter(r => r.diff != null && r.n1 >= 10 && r.n0 >= 10);
+  const pts = rows.filter(r => r.diff != null && r.verdict !== "insufficient data");
   const ymax = Math.max(5, ...pts.map(r => Math.abs(r.diff))) * 1.08;
   const X = p => pad.l + p * W, Y = v => pad.t + H / 2 - (v / ymax) * (H / 2);
   const svg = s("svg", { class: "svgchart", viewBox: `0 0 ${width} ${height}`, role: "img", "aria-label": "Mechanic prevalence vs outcome difference" });
@@ -326,7 +341,7 @@ function effectCell(r, max = 20) {
     svg.append(s("path", { d: hbarPath(x0, x0 + cl(r.diff) * sc, 5, 8), fill: r.diff >= 0 ? "var(--pos)" : "var(--neg)" }));
     svg.append(s("line", { x1: x0 + cl(r.lo) * sc, x2: x0 + cl(r.hi) * sc, y1: 9, y2: 9, stroke: "var(--text-secondary)", "stroke-width": 1.5 }));
   }
-  return h("span", { class: "row", style: "gap:6px;justify-content:flex-end" }, svg, h("span", { style: "width:42px;text-align:right" }, fmt.d1(r.diff)));
+  return h("span", { style: "display:inline-flex;gap:6px;align-items:center;justify-content:flex-end;white-space:nowrap" }, svg, h("span", { style: "width:42px;text-align:right" }, fmt.d1(r.diff)));
 }
 
 // ---------- drawer ----------
@@ -467,7 +482,7 @@ function viewMechanics() {
         { key: "name", label: "Mechanic", render: r => h("span", {}, mname(r.mid), h("div", { class: "muted", style: "font-size:11px" }, famName(MECH[r.mid].family))), sort: r => mname(r.mid) },
         { key: "prev", label: "Prevalence", num: true, render: r => fmt.pct(r.prev) },
         { key: "m1", label: "Mean with", num: true, render: r => fmt.f1(r.m1) },
-        { key: "diff", label: "Δ vs without (95% CI)", num: true, render: r => effectCell(r), title: "Univariate difference" },
+        { key: "diff", label: "Δ vs without (95% CI)", num: true, render: r => effectCell(r), title: "Difference stratified by tag source (curated vs auto)", sort: r => r.verdict === "insufficient data" ? null : r.diff },
         { key: "ridge", label: "Ridge Δ", num: true, render: r => fmt.d1(r.ridge), title: "Partial effect, other factors held constant" },
         { key: "lift", label: "Hit lift", num: true, render: r => fmt.f2(r.lift) },
         { key: "flopR", label: "Flop ratio", num: true, render: r => fmt.f2(r.flopR) },
@@ -524,6 +539,18 @@ function loadTemplate(g) {
   lab.vec = Object.fromEntries(Object.entries(g.m).filter(([k]) => !k.startsWith("hybrid_")).map(([k, v]) => [k, v[0]]));
   lab.sub = g.sg; lab.price = g.p || 0; lab.free = !!g.f; lab.ea = !!g.ea; lab.year = g.y || 2026; lab.from = g.n;
 }
+function labToHash() {
+  const m = Object.entries(lab.vec).map(([k, v]) => `${k}:${v}`).join(",");
+  return `#lab?s=${lab.sub}&p=${lab.price}&y=${lab.year}&ea=${+lab.ea}&f=${+lab.free}&m=${m}`;
+}
+function labFromHash() {
+  const q = location.hash.split("?")[1]; if (!q) return false;
+  const P = new URLSearchParams(q);
+  if (P.get("s") && MECH[P.get("s")]) lab.sub = P.get("s");
+  lab.price = +(P.get("p") || lab.price); lab.year = +(P.get("y") || lab.year); lab.ea = P.get("ea") === "1"; lab.free = P.get("f") === "1";
+  lab.vec = {}; (P.get("m") || "").split(",").filter(Boolean).forEach(kv => { const [k, v] = kv.split(":"); if (MECH[k]) lab.vec[k] = Math.max(1, Math.min(3, +v || 1)); });
+  lab.from = "shared link"; return true;
+}
 function labScope() { return (AN.subgenres[lab.sub] && AN.subgenres[lab.sub].ridge) ? AN.subgenres[lab.sub] : AN.scopes.all; }
 function predict(vec) {
   const sc = labScope(), r = sc.ridge; if (!r) return null;
@@ -536,11 +563,13 @@ function predict(vec) {
     else if (f === "log10_price") x = lab.price > 0 && !lab.free ? Math.log10(lab.price) : 0;
     else if (f === "free_to_play") x = lab.free ? 1 : 0;
     else if (f === "early_access") x = lab.ea ? 1 : 0;
+    else if (f === "curated_profile") x = 1; // a Lab design is fully hand-tagged, like a curated profile
+    else if (f === "tag_depth_z") x = 0;     // assume average documentation depth
     y += c * x;
   });
   return { y: Math.max(0, Math.min(100, y)), rmse: r.cv_rmse, base: r.baseline_rmse, scopeN: sc.n };
 }
-const ncdf = z => { const t = 1 / (1 + 0.2316419 * Math.abs(z)), d = 0.3989423 * Math.exp(-z * z / 2); const p = d * t * (0.3193815 + t * (-0.3565638 + t * (1.781478 + t * (-1.821256 + t * 1.330274)))); return z > 0 ? 1 - p : p; };
+function ncdf(z) { const t = 1 / (1 + 0.2316419 * Math.abs(z)), d = 0.3989423 * Math.exp(-z * z / 2); const p = d * t * (0.3193815 + t * (-0.3565638 + t * (1.781478 + t * (-1.821256 + t * 1.330274)))); return z > 0 ? 1 - p : p; }
 
 function viewLab() {
   const el = $("#view-lab");
@@ -612,7 +641,8 @@ function viewLab() {
     table([{ key: "n", label: "Game", render: x => x.g.n }, { key: "sim", label: "Sim", num: true, render: x => fmt.pct(x.sim) },
       { key: "gsi", label: "GSI", num: true, render: x => fmt.f1(x.g.gsi) }, { key: "rev", label: "Est. rev", num: true, render: x => fmt.usd(x.g.rev) }],
       comps.slice(0, 10).map(x => ({ ...x, n: x.g.n })), { onRow: x => openGame(x.g.id) }),
-    h("div", { class: "row", style: "margin-top:12px" }, h("button", { class: "btn", onclick: () => copyReport({ pr, pctile, pHit, pFlop, compHit, compFlop, missing, flags, adds, comps }) }, "Copy pitch report (Markdown)")));
+    h("div", { class: "row", style: "margin-top:12px" }, h("button", { class: "btn secondary", onclick: () => { const url = location.href.split("#")[0] + labToHash(); navigator.clipboard.writeText(url).then(() => alert("Shareable link copied."), () => prompt("Copy this link:", url)); } }, "Copy share link"),
+      h("button", { class: "btn", onclick: () => copyReport({ pr, pctile, pHit, pFlop, compHit, compFlop, missing, flags, adds, comps }) }, "Copy pitch report (Markdown)")));
   put(el, h("h2", {}, "Design Lab — score a game design"),
     h("p", { class: "sub" }, "Tag a design (yours, a pitch, or a template), get a predicted Success Index from the subgenre's ridge model, risk from nearest comps, and the gaps vs what hits in this genre have. Click a mechanic to cycle intensity. Small numbers = partial effect in points."),
     controls, h("div", { class: "lab" }, h("div", { class: "card" }, picker), out));
@@ -668,14 +698,53 @@ function viewMethod() {
     h("p", { class: "muted" }, `Data generated ${D.generated}. ${D.counts.games} games, ${D.counts.curated} curated.`)));
 }
 
+
+function sparkline(series, years, { width = 220, height = 54 } = {}) {
+  const pts = series.map((v, i) => [years[i], v]).filter(([, v]) => v != null);
+  const svg = s("svg", { class: "svgchart", viewBox: `0 0 ${width} ${height}` });
+  if (pts.length < 2) return svg;
+  const ymax = Math.max(0.05, ...pts.map(p => p[1])), x0 = years[0], x1 = years[years.length - 1];
+  const X = x => 4 + ((x - x0) / (x1 - x0 || 1)) * (width - 8), Y = v => height - 14 - (v / ymax) * (height - 22);
+  svg.append(s("line", { class: "axisline", x1: 4, x2: width - 4, y1: height - 14, y2: height - 14 }));
+  svg.append(s("path", { d: pts.map((p, i) => `${i ? "L" : "M"}${X(p[0])},${Y(p[1])}`).join(""), fill: "none", stroke: "var(--series-1)", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+  const last = pts[pts.length - 1];
+  svg.append(s("circle", { cx: X(last[0]), cy: Y(last[1]), r: 4, fill: "var(--series-1)", stroke: "var(--surface-1)", "stroke-width": 2 }));
+  svg.append(s("text", { x: 4, y: height - 2 }, x0), s("text", { x: width - 4, y: height - 2, "text-anchor": "end" }, x1));
+  pts.forEach(p => { const hit = s("rect", { class: "hit", x: X(p[0]) - 8, y: 0, width: 16, height: height - 14 }); hover(hit, () => [fmt.pct(p[1]), `released ${p[0]}`]); svg.append(hit); });
+  return svg;
+}
+
+function viewTrends() {
+  const el = $("#view-trends"), T = AN.trends;
+  if (!T) { put(el, h("div", { class: "empty" }, "No trend data — re-run export.")); return; }
+  const rows = Object.entries(T.mechanics).filter(([m, v]) => v.slope != null && !m.startsWith("hybrid_")).map(([m, v]) => ({ m, ...v }));
+  rows.sort((a, b) => b.slope - a.slope);
+  const rising = rows.slice(0, 12), falling = rows.slice(-8).reverse();
+  const card = r => h("div", { class: "card tight", style: "cursor:pointer", onclick: () => openMechanic(r.m) },
+    h("div", { class: "tile-label" }, mname(r.m)), h("div", { class: "row", style: "justify-content:space-between" },
+      h("span", { class: "tile-value", style: "font-size:20px" }, fmt.pct(r.series.filter(v => v != null).slice(-1)[0])),
+      h("span", { class: "muted" }, `${r.slope >= 0 ? "+" : ""}${(r.slope * 100).toFixed(1)} pp/yr`)), sparkline(r.series, T.years));
+  const ho = AN.holdout;
+  put(el, h("h2", {}, "Design trends"),
+    h("p", { class: "sub" }, `Share of roguelikes released each year that have each mechanic (high-confidence tags; years with ≥15 releases fit the slope). Releases per year: ${T.years.map((y, i) => `${y}: ${T.n_by_year[i]}`).join(" · ")}.`),
+    ho ? h("div", { class: "card", style: "margin-bottom:16px" }, h("h3", {}, "Does the model predict the future? (temporal holdout)"),
+      h("div", { class: "grid g4" }, tile("Trained on", `≤ ${ho.split_year - 1}`, `${ho.n_train} games`), tile("Tested on", `${ho.split_year}+`, `${ho.n_test} games, unseen`),
+        tile("Rank correlation", fmt.f2(ho.spearman), "predicted vs actual Success Index"),
+        tile("Top-quartile precision", fmt.pct(ho.top_quartile_precision), `of games predicted top 25%, share that were hits (chance = 25%)`))) : null,
+    h("h3", {}, "Rising mechanics"), h("div", { class: "grid g4" }, rising.map(card)),
+    h("h3", { style: "margin-top:18px" }, "Declining mechanics"), h("div", { class: "grid g4" }, falling.map(card)),
+    h("div", { class: "card", style: "margin-top:18px" }, h("h3", {}, "All mechanics — prevalence change per year"),
+      hbars(rows.map(r => ({ label: mname(r.m), value: r.slope * 100, sub: `now ${fmt.pct(r.series.filter(v => v != null).slice(-1)[0])}`, onclick: () => openMechanic(r.m) })), { diverging: true, fmtv: v => (v >= 0 ? "+" : "") + v.toFixed(1) + "pp", width: 900, rowH: 22, labelW: 230 })));
+}
+
 // ---------- wiring ----------
-const VIEWS = { overview: viewOverview, mechanics: viewMechanics, families: viewFamilies, games: viewGames, lab: viewLab, synergy: viewSynergy, method: viewMethod };
+const VIEWS = { overview: viewOverview, mechanics: viewMechanics, families: viewFamilies, games: viewGames, lab: viewLab, trends: viewTrends, synergy: viewSynergy, method: viewMethod };
 function switchView(v) {
   state.view = v;
   document.querySelectorAll(".tabs button").forEach(b => b.classList.toggle("active", b.dataset.view === v));
   document.querySelectorAll(".view").forEach(s2 => s2.classList.toggle("active", s2.id === "view-" + v));
-  $("#filters").style.display = v === "lab" || v === "method" ? "none" : "";
-  render(); history.replaceState(null, "", "#" + v);
+  $("#filters").style.display = ["lab", "method", "trends"].includes(v) ? "none" : "";
+  render(); if (hashView() !== v) history.replaceState(null, "", "#" + v);
 }
 function render() {
   const im = impact();
@@ -695,6 +764,8 @@ $("#theme-toggle").addEventListener("click", () => { const r = document.document
 document.documentElement.dataset.theme = localStorage.getItem("gc-theme") || "dark";
 $("#foot").textContent = `GameCred · data generated ${D.generated} · ${D.counts.games} games · ${D.counts.curated} curated profiles · ${D.counts.mechanics} mechanics. Sources: Steam storefront & reviews, SteamSpy, curated wiki research.`;
 const sts = GAMES.find(g => g.n === "Slay the Spire"); if (sts) loadTemplate(sts);
-addEventListener("hashchange", () => { const v = location.hash.slice(1); if (VIEWS[v] && v !== state.view) switchView(v); });
-switchView(VIEWS[location.hash.slice(1)] ? location.hash.slice(1) : "overview");
+const hashView = () => location.hash.slice(1).split("?")[0];
+addEventListener("hashchange", () => { const v = hashView(); if (VIEWS[v] && v !== state.view) switchView(v); });
+if (hashView() === "lab") labFromHash();
+switchView(VIEWS[hashView()] ? hashView() : "overview");
 })();

@@ -24,10 +24,13 @@ mechanics:
   healing_scarcity: 2
   inventory_management: 1
   boss_gates: 1
+  vehicle_combat: 3
+  hunger_clock: 1
 evidence:
   permanent_stat_upgrades: Credits carried over from each death buy permanent perks in the hangar.
   node_map: Each sector offers a jump map of procedurally generated locations to choose from.
   narrative_across_runs: The clone-pilot story advances with each death and new clone.
   hybrid_survival: Fuel must be managed to keep jumping between locations.
+  vehicle_combat: The player pilots a fighter ship; all combat is ship-to-ship.
 confidence: medium
 curator: agent

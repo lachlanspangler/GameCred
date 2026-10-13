@@ -1,0 +1,29 @@
+appid: 2726450
+name: Windowkill
+developer: torcado
+release_year: 2024
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_survivors: 1
+  real_time_action: 3
+  twin_stick: 3
+  permadeath: 2
+  shops: 2
+  in_run_currency: 2
+  pick_one_of_n: 1
+  horde_density: 2
+  boss_gates: 2
+  character_classes: 2
+  unlock_characters: 2
+  unlock_items: 1
+  local_coop: 2
+  short_runs: 3
+  enemy_hp_scaling: 1
+  prep_combat_phases: 2
+evidence:
+  twin_stick: The OS game window itself is the arena and constantly shrinks; shooting its edges pushes them outward.
+  shops: Shop screens between fights sell upgrades and perks.
+  local_coop: Local co-op multiplayer listed on the store page.
+confidence: medium
+curator: agent

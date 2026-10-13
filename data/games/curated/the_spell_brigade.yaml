@@ -1,0 +1,28 @@
+appid: 2904000
+name: The Spell Brigade
+developer: Bolt Blaster Games
+release_year: 2026
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  real_time_action: 3
+  online_coop: 3
+  horde_density: 3
+  level_up_choices: 3
+  pick_one_of_n: 3
+  synergies: 3
+  elemental_interactions: 2
+  second_chance: 2
+  optional_challenges: 2
+  unlock_items: 2
+  short_runs: 2
+  permadeath: 1
+  early_access_dev: 1
+evidence:
+  online_coop: 1-4 player online co-op with friendly fire.
+  second_chance: Revive Cores blast dead wizards (and teammates) back into action.
+  elemental_interactions: Spells are infused with elements and augmented, combining across the squad.
+  optional_challenges: Random team-based objectives appear during runs.
+confidence: medium
+curator: agent

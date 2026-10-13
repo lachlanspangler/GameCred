@@ -23,9 +23,12 @@ mechanics:
   item_upgrading: 2
   weapons_variety: 2
   online_coop: 3
+  party_building: 2
+  summons_minions: 2
 evidence:
   waves: Defend the crystal bot from waves while placing turrets with Industry.
   hub_building: The Saloon serves as persistent hub between runs.
   online_coop: Up to three-player online co-op.
+  summons_minions: Turrets built on module slots are persistent defenders that builds revolve around.
 confidence: medium
 curator: agent

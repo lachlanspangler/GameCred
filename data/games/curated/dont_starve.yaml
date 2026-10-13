@@ -20,10 +20,16 @@ mechanics:
   unlock_characters: 3
   act_structure: 1
   mod_support: 3
+  day_night_cycle: 3
+  hunger_clock: 3
+  stress_sanity: 3
 evidence:
   hybrid_survival: Hunger, health and sanity meters plus seasons and darkness.
   second_chance: Touch Stones, Meat Effigies and the Life Giving Amulet revive the player.
   unlock_characters: Experience from each death unlocks new characters.
   act_structure: Adventure Mode chains five fixed-theme worlds.
+  day_night_cycle: Day/dusk/night cycle drives play; darkness is lethal without light.
+  hunger_clock: Hunger constantly drains and is a primary survival pressure.
+  stress_sanity: Sanity drains and at low levels spawns shadow creatures.
 confidence: high
 curator: agent

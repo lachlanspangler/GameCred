@@ -18,9 +18,11 @@ mechanics:
   extraction: 1
   environmental_hazards: 1
   short_runs: 2
+  stealth: 2
 evidence:
   shops: Artifacts are spent at shrines to buy powers such as teleport or invisibility.
   extraction: A bank in the library stores artifacts across deaths.
   procgen_levels: Voxel dungeons are generated per world, with destructible terrain.
+  stealth: Sneaking and avoiding detection is a viable alternative to fighting Lovecraftian enemies.
 confidence: medium
 curator: agent

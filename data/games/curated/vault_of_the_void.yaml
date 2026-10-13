@@ -29,9 +29,11 @@ mechanics:
   turn_based: 3
   early_access_dev: 2
   rng_mitigation: 2
+  card_mods: 3
 evidence:
   deckbuilding: Fixed-size 20-card deck; new cards are swapped in rather than added.
   item_upgrading: Void Stones are socketed into cards for added effects.
   rng_mitigation: Pre-fight purge/swap options and fixed deck size reduce draw variance.
+  card_mods: Void Stones are socketed into individual cards to enhance them permanently.
 confidence: medium
 curator: agent

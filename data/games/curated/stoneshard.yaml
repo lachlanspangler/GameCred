@@ -19,9 +19,19 @@ mechanics:
   shops: 2
   healing_scarcity: 2
   early_access_dev: 3
+  limb_injuries: 3
+  hunger_clock: 2
+  stress_sanity: 2
+  weapon_durability: 2
+  faction_reputation: 1
 evidence:
   hybrid_survival: Hunger, thirst, fatigue and sanity plus per-limb injuries.
   inventory_management: Spatial grid inventory with weight.
   early_access_dev: In Early Access since 2020.
+  limb_injuries: Damage is tracked per body part; injured limbs impose penalties until treated.
+  hunger_clock: Hunger and thirst drain over time and must be managed with food and drink.
+  stress_sanity: Sanity and morale meters cause negative effects as they degrade.
+  weapon_durability: Weapons and armor lose durability with use and must be repaired.
+  faction_reputation: Settlement reputation unlocks contracts and better trade.
 confidence: medium
 curator: agent

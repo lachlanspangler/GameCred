@@ -1,0 +1,31 @@
+appid: 1919460
+name: Seraph's Last Stand
+developer: Sad Socket
+release_year: 2022
+subgenre: hybrid_action_roguelite
+stats:
+  item_count: 40
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_survivors: 1
+  real_time_action: 3
+  waves: 3
+  pick_one_of_n: 3
+  item_stacking: 3
+  transformations: 2
+  synergies: 2
+  build_archetypes: 2
+  loadout_start: 2
+  leaderboards: 2
+  platforming: 1
+  enemy_hp_scaling: 2
+  short_runs: 2
+  permadeath: 2
+  prep_combat_phases: 1
+evidence:
+  waves: Side-view arena shooter modeled on Heli Attack; an upgrade is chosen after every wave.
+  transformations: Secret items are discovered by stacking specific items.
+  loadout_start: Staves and hats are chosen before a run.
+  leaderboards: World, national and local leaderboard ranks.
+confidence: medium
+curator: agent

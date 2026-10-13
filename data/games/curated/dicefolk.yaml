@@ -18,8 +18,12 @@ mechanics:
   in_run_currency: 2
   enemy_intents: 2
   perfect_information: 2
+  party_building: 3
+  dice_manipulation: 2
 evidence:
   dice: Rolled dice faces command both your chimeras and the enemy team.
   perfect_information: Roster rotation wheel and dice results are visible for planning.
+  party_building: Recruit and command a team of chimeras that rotate in and out of combat.
+  dice_manipulation: Dice faces are customized and enemy dice can be manipulated.
 confidence: medium
 curator: agent

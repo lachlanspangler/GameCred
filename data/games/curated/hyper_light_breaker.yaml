@@ -21,10 +21,12 @@ mechanics:
   character_classes: 2
   online_coop: 2
   early_access_dev: 3
+  traversal_tools: 2
 evidence:
   open_procgen_world: Each cycle generates a 3D open Overgrowth with biomes, towers and Crowns to hunt.
   boss_gates: Defeating the region Crowns unlocks the Abyss King fight that ends the cycle.
   online_coop: Up to 3-player online co-op.
   early_access_dev: Launched in Early Access Jan 2025 to Mixed reviews; development wound down later that year.
+  traversal_tools: Hoverboard, glider and dash movement are central to crossing the open world.
 confidence: medium
 curator: agent

@@ -19,10 +19,14 @@ mechanics:
   loadout_start: 2
   shops: 2
   online_coop: 2
+  party_building: 3
+  turn_escalation: 3
 evidence:
   room_based_floors: Every door opened powers a new room and can trigger a monster wave.
   in_run_currency: Dust (power rooms), Industry, Science and Food are generated per door opened.
   push_your_luck: Explore more rooms for resources vs carry the crystal to the exit before waves overwhelm.
   loadout_start: Choose the escape pod (rule modifiers) and starting heroes.
+  party_building: Heroes are recruited mid-run on floors and managed as a squad of up to four.
+  turn_escalation: Every door opened (not real time) spends a turn of Dust/Industry/Food and can spawn monster waves.
 confidence: high
 curator: agent

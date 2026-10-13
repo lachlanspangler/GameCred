@@ -40,11 +40,15 @@ mechanics:
   early_access_dev: 2
   content_updates: 2
   steam_deck_friendly: 2
+  legacy_inheritance: 3
+  traversal_unlocks: 3
 evidence:
   hp_as_currency: Relics cost Resolve, which reduces max HP when over budget.
   ascension_ladder: Burdens of NG+ (Thread levels) stack difficulty modifiers after beating the game.
   assist_mode: House Rules let players tune enemy health/damage and disable contact damage.
   crafting: Blacksmith equipment and Enchantress runes are bought with ore/aether to build loadouts.
   passive_relics: Relics found in-run modify rules (Heirloom abilities are permanent traversal unlocks).
+  legacy_inheritance: Each run picks one of several heirs with random classes and traits.
+  traversal_unlocks: Heirlooms (dash, double jump, spin kick) permanently open new routes across runs.
 confidence: high
 curator: agent

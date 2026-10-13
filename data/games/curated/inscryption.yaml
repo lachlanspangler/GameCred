@@ -31,10 +31,14 @@ mechanics:
   hp_as_currency: 1
   multiple_endings: 1
   build_archetypes: 1
+  lanes_ranks: 3
+  card_mods: 2
 evidence:
   enemy_intents: Leshy's upcoming cards sit in a visible queue row before they advance onto the board.
   item_upgrading: Campfire buffs and the Sacrificial Altar transfer sigils between cards.
   narrative_across_runs: Act 1 deaths produce Death Cards and advance the meta-narrative.
   modular_difficulty: Kaycee's Mod offers toggleable challenges for more skull points.
+  lanes_ranks: Cards occupy four lanes and attack straight across into the opposing lane.
+  card_mods: Sigils are permanently transferred onto individual cards at the Sacrificial Altar.
 confidence: high
 curator: agent

@@ -20,9 +20,11 @@ mechanics:
   shops: 2
   in_run_currency: 2
   platforming: 1
+  rhythm_timing: 3
 evidence:
   talent_slots: Equipment occupies fixed slots (head, body, boots, shield, weapon); new finds overwrite.
   room_based_floors: Isaac-style room grids across Norse realms with a boss per realm.
   real_time_action: Firing, reloading and dodging must be timed to the music's beat.
+  rhythm_timing: Shooting, reloading and dodging must be done on the beat of the soundtrack.
 confidence: medium
 curator: agent

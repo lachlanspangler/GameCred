@@ -12,8 +12,10 @@ mechanics:
   crafting: 2
   multiple_endings: 3
   short_runs: 2
+  hunger_clock: 3
 evidence:
   hybrid_survival: Fuel, oxygen and hull must be replenished by mining planets on each jump.
   multiple_endings: Several endings depending on destination and choices.
+  hunger_clock: Fuel and oxygen drain with every jump; mining is needed to keep moving.
 confidence: medium
 curator: agent

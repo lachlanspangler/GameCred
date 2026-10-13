@@ -1,0 +1,29 @@
+appid: 1512480
+name: Gunlocked
+developer: FromLefcourt
+release_year: 2022
+subgenre: hybrid_survivors
+stats:
+  playable_characters: 7
+  enemy_types: 30
+  boss_count: 3
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  real_time_action: 3
+  pick_one_of_n: 2
+  synergies: 2
+  character_classes: 2
+  consumables: 1
+  boss_gates: 2
+  enemy_hp_scaling: 2
+  modular_difficulty: 3
+  endless_mode: 2
+  permadeath: 2
+  vehicle_combat: 2
+evidence:
+  auto_attack: Player controls only movement; each weapon has its own targeting system the player influences by positioning.
+  modular_difficulty: 20 toggleable difficulty modifiers.
+  enemy_hp_scaling: 3 evolving bosses grow more powerful as the player does.
+confidence: medium
+curator: agent

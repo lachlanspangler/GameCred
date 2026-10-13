@@ -1,0 +1,34 @@
+appid: 2181720
+name: Scarlet Tower
+developer: Pyxeralia LLC
+release_year: 2024
+subgenre: hybrid_survivors
+stats:
+  weapon_count: 70
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 2
+  real_time_action: 3
+  horde_density: 3
+  level_up_choices: 3
+  pick_one_of_n: 3
+  weapon_evolution: 3
+  weapons_variety: 3
+  passive_relics: 2
+  character_classes: 2
+  unlock_items: 2
+  permanent_stat_upgrades: 2
+  lore_codex: 2
+  random_events: 1
+  shops: 1
+  boss_gates: 2
+  endless_mode: 2
+  steam_deck_friendly: 2
+  permadeath: 2
+  day_night_cycle: 2
+evidence:
+  weapon_evolution: Weapon fusion system across 70+ weapons.
+  random_events: Day/night cycle and weather events; some relics and vendors only spawn at night.
+  lore_codex: Bestiary of discovered monsters.
+confidence: medium
+curator: agent

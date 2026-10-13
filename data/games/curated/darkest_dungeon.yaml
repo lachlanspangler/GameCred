@@ -35,10 +35,18 @@ mechanics:
   push_your_luck: 2
   mod_support: 2
   content_updates: 2
+  party_building: 3
+  lanes_ranks: 3
+  stress_sanity: 3
+  hunger_clock: 2
 evidence:
   hub_building: The Hamlet (Blacksmith, Guild, Sanitarium, Abbey/Tavern) is upgraded with heirlooms between expeditions.
   permadeath: Heroes who die are gone for good; the campaign persists around them.
   push_your_luck: Torchlight, stress and supplies force continue-or-retreat decisions on every expedition.
   double_edged_items: Many trinkets pair a buff with a penalty (e.g. +damage, -stress resist).
+  party_building: Recruit a roster of heroes and field a party of four on each expedition.
+  lanes_ranks: Four-rank formation determines which skills can be used and who can be targeted.
+  stress_sanity: Stress fills from horrors and triggers afflictions or virtues.
+  hunger_clock: Food and torches must be bought and rationed during expeditions.
 confidence: high
 curator: agent

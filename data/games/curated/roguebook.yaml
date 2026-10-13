@@ -35,11 +35,15 @@ mechanics:
   loadout_start: 2
   turn_based: 3
   synergies: 2
+  card_mods: 3
+  lanes_ranks: 2
 evidence:
   open_procgen_world: Hex map is revealed by spending ink and brushes earned in fights.
   loadout_start: Pick 2 of the heroes; they share one deck and swap front/back position.
   item_upgrading: Gems are socketed into cards to add effects.
   skill_tree_meta: Pages earned per run unlock permanent bonuses in the Roguebook.
   level_up_choices: Hero talents trigger as the deck reaches size thresholds.
+  card_mods: Gems socketed into cards permanently add effects.
+  lanes_ranks: The two heroes swap front/back positions; the front hero takes damage.
 confidence: medium
 curator: agent

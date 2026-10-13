@@ -25,10 +25,14 @@ mechanics:
   perfect_information: 2
   endless_mode: 2
   modular_difficulty: 2
+  turn_escalation: 3
+  stealth: 3
 evidence:
   push_your_luck: The alarm level rises each turn, so looting extra vaults trades against escalating security.
   second_chance: Limited rewinds per campaign undo a turn.
   modular_difficulty: Custom difficulty exposes individual generation and rule options.
   endless_mode: Endless mode continues the campaign past the final mission.
+  turn_escalation: The security alarm level rises every turn, adding guards and daemons.
+  stealth: Avoiding detection and sneaking past guards is the primary way to complete missions.
 confidence: high
 curator: agent

@@ -1,0 +1,28 @@
+appid: 1903560
+name: Atomic Picnic
+developer: BitCake Studio
+release_year: 2024
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  hybrid_shooter: 2
+  real_time_action: 3
+  horde_density: 3
+  online_coop: 3
+  platforming: 1
+  level_up_choices: 2
+  pick_one_of_n: 2
+  weapon_evolution: 2
+  cursed_items: 2
+  synergies: 2
+  boss_gates: 2
+  permadeath: 2
+  early_access_dev: 2
+  traversal_tools: 2
+evidence:
+  hybrid_shooter: Third-person shooter bullet heaven with arena objectives.
+  online_coop: Solo or up to 4-player online co-op.
+  cursed_items: Cursed Curios stack powerful effects alongside evolutions.
+  platforming: Impulse Gear launches the player off ramps and cliffs for aerial play.
+confidence: medium
+curator: agent

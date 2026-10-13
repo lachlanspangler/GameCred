@@ -1,0 +1,46 @@
+appid: 1966900
+name: 20 Minutes Till Dawn
+developer: flanne
+release_year: 2023
+subgenre: hybrid_survivors
+stats:
+  run_length_min: 20
+  difficulty_levels: 15
+mechanics:
+  hybrid_survivors: 3
+  twin_stick: 3
+  real_time_action: 3
+  auto_attack: 1
+  horde_density: 3
+  time_pressure: 3
+  short_runs: 3
+  permadeath: 2
+  level_up_choices: 3
+  pick_one_of_n: 3
+  synergies: 2
+  build_archetypes: 2
+  loadout_start: 3
+  character_classes: 2
+  weapons_variety: 2
+  unlock_characters: 2
+  unlock_items: 2
+  permanent_stat_upgrades: 2
+  ascension_ladder: 3
+  status_effects: 2
+  crits: 1
+  cooldown_reduction: 1
+  healing_scarcity: 2
+  enemy_hp_scaling: 2
+  endless_mode: 1
+  early_access_dev: 1
+  steam_deck_friendly: 2
+  weapon_handling: 2
+evidence:
+  time_pressure: Survive a fixed 20-minute timer until dawn; enemy pressure escalates with the clock.
+  twin_stick: Manual mouse aim with reloading guns; auto-aim is an optional setting.
+  build_archetypes: Level-up upgrades are organized into themed trees (fire, frost, lightning, summons) with prerequisites.
+  loadout_start: Each run picks a character, a gun and a map before starting.
+  ascension_ladder: Darkness levels 1-15 stack difficulty modifiers after a win.
+  weapon_handling: Guns have magazines and manual reload timing is part of the skill ceiling.
+confidence: high
+curator: agent

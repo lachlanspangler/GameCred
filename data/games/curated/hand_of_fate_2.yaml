@@ -25,10 +25,16 @@ mechanics:
   consumables: 1
   cursed_items: 1
   narrative_across_runs: 1
+  deck_from_equipment: 2
+  hunger_clock: 3
+  parry_counter: 2
 evidence:
   gambling: Chance cards, dice rolls, pendulum and wheel minigames decide event outcomes.
   achievement_unlocks: Tokens earned by completing encounters unlock new cards.
   healing_scarcity: Food is consumed per move; starving drains health.
   loadout_start: Before each challenge the player builds encounter and equipment decks.
+  hunger_clock: Food is consumed per move; starving drains health.
+  deck_from_equipment: The player builds a deck of equipment cards that are dealt as gear during the run.
+  parry_counter: Real-time combat uses timed counter prompts to reverse enemy attacks.
 confidence: medium
 curator: agent

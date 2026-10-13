@@ -11,7 +11,7 @@
 #   aliases      alternative ids/names accepted by the validator (self-healing renames)
 #
 # Intensity in game profiles: 1 = present, 2 = significant, 3 = core pillar of the game.
-version: 1
+version: 2
 
 families:
 
@@ -40,6 +40,14 @@ families:
             desc: Player may leave a run early to keep loot; dying forfeits it.
             steam_tags: [Extraction Shooter]
             keywords: [extraction, "extract with", "escape with your loot"]
+          legacy_inheritance:
+            name: Heirs / Legacy Inheritance
+            desc: The next run's character is an heir with rolled traits or inherits from the fallen (Rogue Legacy).
+            keywords: [heir, heirs, lineage, descendants, "your children"]
+          breeding_genetics:
+            name: Breeding / Genetics
+            desc: New units are bred from previous ones, passing traits (Mewgenics).
+            keywords: [breed, breeding, genetics, offspring]
       procedural_generation:
         name: Procedural Generation
         mechanics:
@@ -69,6 +77,10 @@ families:
             name: Daily / Weekly Challenge
             desc: Shared fixed-seed challenge with leaderboard on a schedule.
             keywords: ["daily challenge", "daily run", "weekly challenge", "daily seed"]
+          handcrafted_loop_world:
+            name: Handcrafted Looping World
+            desc: Hand-built (not generated) world that resets each loop while chosen progress persists (Ultros, Returnal).
+            keywords: ["time loop", "loop resets", "each loop"]
       run_shape:
         name: Run Shape & Length
         mechanics:
@@ -102,6 +114,18 @@ families:
             steam_tags: [Multiple Endings]
             keywords: ["multiple endings", "true ending", "secret ending"]
 
+          turn_escalation:
+            name: Per-turn Escalation
+            desc: Pressure rises per turn/jump/action rather than real time (FTL rebel fleet, Invisible Inc alarm).
+            keywords: ["rebel fleet", "alarm level", "each turn the"]
+          day_night_cycle:
+            name: In-run Clock / Day Cycle
+            desc: An in-run day count or clock structures exploration and forces the climax (Ravenswatch, Atomicrops).
+            keywords: ["day and night", "day/night", "day-night cycle", "night falls"]
+          prep_combat_phases:
+            name: Build / Combat Phases
+            desc: Each cycle alternates a preparation/build phase with a combat phase (The Last Spell, Brotato shop).
+            keywords: ["build phase", "prepare your defenses", "between waves"]
   meta_progression:
     name: Meta-Progression
     desc: What persists between runs and how it changes future runs.
@@ -122,6 +146,15 @@ families:
             desc: Player builds or upgrades a persistent hub between runs.
             steam_tags: [Base Building, Building, Town Building]
             keywords: ["upgrade your base", "build your town", "home base", "your hub"]
+          life_sim_hub:
+            name: Life-sim Hub Layer
+            desc: Non-combat social/farming/management layer between runs (Cult of the Lamb, Atomicrops).
+            steam_tags: [Farming Sim, Life Sim]
+            keywords: [farm, farming, "manage your cult", "life sim"]
+          shop_management:
+            name: Shopkeeping Between Runs
+            desc: Sell run loot in a shop you run (Moonlighter).
+            keywords: ["run a shop", "your shop", shopkeeper, "sell your loot"]
       content_unlocks:
         name: Content Unlocks
         mechanics:
@@ -137,6 +170,14 @@ families:
             name: Challenge-gated Unlocks
             desc: Specific feats (not currency) unlock content (Isaac/RoR2 achievements).
             keywords: ["complete challenges to unlock", achievements unlock]
+          traversal_unlocks:
+            name: Permanent Traversal Unlocks
+            desc: Movement abilities unlocked permanently open new routes across runs (Dead Cells runes).
+            keywords: ["new paths", "new routes", runes, "unlock new areas"]
+          weapon_mastery:
+            name: Weapon Mastery
+            desc: Weapons gain persistent levels/perks through use (Witchfire, Returnal traits).
+            keywords: ["weapon mastery", "master your weapons", "weapon traits"]
       difficulty_ladder:
         name: Difficulty Ladder
         mechanics:
@@ -245,6 +286,27 @@ families:
             desc: Fixed ability slots filled/overwritten by run rewards (Hades boons).
             keywords: [boons, blessings, "ability slots"]
 
+          card_mods:
+            name: Per-card / Per-item Modifiers
+            desc: Permanent enchantments/sockets/seals on individual cards or items (Balatro seals, Roguebook gems).
+            keywords: [enchant, enchantments, sockets, gems, seals, charms]
+          weapon_stance_swap:
+            name: Moveset Swap
+            desc: Two weapons/forms held and swapped mid-combat, often with swap effects (Skul, Windblown).
+            keywords: ["swap between", "switch between", "skull swap"]
+          party_building:
+            name: Party / Roster Building
+            desc: Recruit and manage multiple heroes or units within a run (Darkest Dungeon, Slice & Dice).
+            steam_tags: [Party-Based RPG]
+            keywords: [party, recruit, roster, "your team", "your heroes"]
+          summons_minions:
+            name: Summons / Minions
+            desc: Persistent allied units summoned or deployed; builds around them (Monster Train, Rift Wizard).
+            keywords: [summon, summons, minions, undead army]
+          combo_meter:
+            name: Combo / Chain Multiplier
+            desc: Uninterrupted chains of kills/tricks build a payout multiplier (Downwell, NecroDancer).
+            keywords: ["combo meter", "combo multiplier", "chain kills", "keep your combo"]
   items_economy:
     name: Items & Economy
     desc: Objects, resources and markets inside a run.
@@ -307,6 +369,22 @@ families:
             desc: Remove weak cards/items to increase consistency.
             keywords: ["remove cards", "card removal", "thin your deck"]
 
+          weapon_durability:
+            name: Durability / Breakage
+            desc: Weapons/items degrade or break, forcing swaps (Going Under).
+            keywords: [durability, "weapons break", breakable]
+          item_identification:
+            name: Item Identification
+            desc: Unidentified consumables/gear must be learned by use or identify effects (Pixel Dungeon, Shiren).
+            keywords: [unidentified, identify, identification]
+          deck_from_equipment:
+            name: Gear-derived Actions
+            desc: The action deck/skills are generated from equipped gear (Trials of Fire, Hand of Fate).
+            keywords: ["cards from your equipment", "equipment grants cards", "gear determines"]
+          faction_reputation:
+            name: Faction Reputation
+            desc: Standing with traders/factions unlocks wares and quests (ZERO Sievert).
+            keywords: [reputation, factions, faction]
   combat:
     name: Combat Model
     desc: The moment-to-moment interaction model.
@@ -329,6 +407,10 @@ families:
             desc: Turn-based positioning on a grid/tiles.
             steam_tags: [Tactical, Grid-Based Movement, Tactical RPG]
             keywords: ["grid-based", tactical, positioning]
+          lanes_ranks:
+            name: Lanes / Ranks Positioning
+            desc: Units occupy lanes, rows or rank order that determines targeting (Darkest Dungeon, Monster Train).
+            keywords: [ranks, lanes, "front row", "back row", formation]
           auto_battler:
             name: Auto-battle Resolution
             desc: Player prepares; combat resolves automatically.
@@ -371,6 +453,33 @@ families:
             desc: First-person perspective combat.
             steam_tags: [FPS, First-Person, Shooter]
             keywords: [fps, "first-person", "first person"]
+          vehicle_combat:
+            name: Vehicle / Ship Avatar
+            desc: Piloted ship/vehicle is the combat avatar (FTL, Everspace, Nova Drift).
+            steam_tags: [Space, Space Sim, Vehicular Combat]
+            keywords: [ship, spaceship, pilot, vehicle]
+          traversal_tools:
+            name: Movement Kit
+            desc: Grapple, wall-run, multi-jump etc. central to moment-to-moment play (Roboquest, Phantom Abyss).
+            keywords: [grapple, grappling, "double jump", wall-run, "wall run"]
+          parry_counter:
+            name: Parry / Deflect
+            desc: Dedicated precision-timed parry or deflect that rewards timing (Absolum, Windblown).
+            keywords: [parry, deflect, counterattack, riposte]
+          rhythm_timing:
+            name: Rhythm Timing
+            desc: Actions must sync to a musical beat (Crypt of the NecroDancer, BPM).
+            steam_tags: [Rhythm]
+            keywords: [rhythm, "to the beat", "beat of the music"]
+          stealth:
+            name: Stealth / Detection
+            desc: Avoiding detection is a real alternative to fighting (Invisible Inc, Cogmind).
+            steam_tags: [Stealth]
+            keywords: [stealth, sneak, undetected, detection]
+          weapon_handling:
+            name: Weapon Handling Skill
+            desc: Manual reload/jamming/heat/ammo recovery as a skill layer (Synthetik, Heavy Bullets).
+            keywords: [reload, jam, overheat, "active reload"]
       card_dice:
         name: Cards & Dice
         mechanics:
@@ -397,6 +506,18 @@ families:
             desc: Score by forming patterns (poker hands, matches, words).
             steam_tags: [Card Game, Puzzle, Match 3, Word Game]
             keywords: ["poker hands", poker, "match-3", "match three", "spell words"]
+          score_target_rounds:
+            name: Score-target Rounds
+            desc: Each round requires reaching a score threshold (Balatro blinds, Luck be a Landlord rent).
+            keywords: ["score target", "reach the target", "pay rent", "beat the blind", blinds]
+          dice_manipulation:
+            name: Dice Manipulation
+            desc: Change die faces/values beyond simple rerolling (Dicey Dungeons, Slice & Dice).
+            keywords: ["dice faces", "change the dice", "manipulate dice", "upgrade your dice"]
+          dual_resource:
+            name: Dual Action Resources
+            desc: Two separate spendable combat resources (stamina + mana; momentum + combo).
+            keywords: ["stamina and mana", momentum]
       resolution:
         name: Damage Resolution
         mechanics:
@@ -420,6 +541,10 @@ families:
             name: Scarce Healing
             desc: HP restoration is limited; HP is a run-long resource.
             keywords: ["limited healing", "health is precious", "healing is scarce"]
+          limb_injuries:
+            name: Injuries / Body Parts
+            desc: Localized wounds or lasting injuries beyond HP (NEO Scavenger, Stoneshard).
+            keywords: [injuries, wounds, limbs, "broken bones"]
           environmental_hazards:
             name: Environmental Interaction
             desc: Terrain/objects usable as weapons (push into spikes, explosive barrels).
@@ -507,6 +632,18 @@ families:
             desc: Repeated continue/stop decision with escalating risk.
             steam_tags: [Push Your Luck]
             keywords: ["push your luck", "press your luck"]
+          stress_sanity:
+            name: Stress / Sanity Meter
+            desc: A secondary meter (stress, sanity, corruption) that causes afflictions as it fills (Darkest Dungeon).
+            keywords: [stress, sanity, madness, afflictions, insanity]
+          corruption_meter:
+            name: Accumulating Curse Meter
+            desc: A run-long meter filled by choices that periodically imposes curses (Curse of the Dead Gods).
+            keywords: [corruption, "curse meter"]
+          hunger_clock:
+            name: Hunger / Supply Clock
+            desc: Food/fuel/supplies drain over time forcing forward progress (Shiren, FTL fuel, Stoneshard).
+            keywords: [hunger, food, starvation, fuel, supplies, rations]
       randomness:
         name: Randomness Profile
         mechanics:
@@ -550,6 +687,10 @@ families:
             name: Asynchronous Multiplayer
             desc: Fight ghosts/snapshots of other players' builds.
             keywords: [asynchronous, "other players' builds"]
+          asymmetric_multiplayer:
+            name: Asymmetric Multiplayer
+            desc: Players take different roles (e.g. one hero vs monster players) (Crawl).
+            keywords: ["asymmetric", "play as the monsters"]
       longevity:
         name: Longevity
         mechanics:
@@ -614,7 +755,7 @@ families:
             steam_tags: [Puzzle]
           hybrid_shooter:
             name: Shooter Roguelite
-            desc: Shooter core (FPS/TPS) with roguelite runs.
+            desc: 3D shooter core (FPS/TPS/space-sim) with roguelite runs. Top-down/twin-stick shooters are hybrid_action_roguelite with this at 2.
             steam_tags: [FPS, Shooter, Third-Person Shooter, Looter Shooter]
           hybrid_autobattler:
             name: Auto-battler Roguelite

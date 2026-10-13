@@ -1,0 +1,22 @@
+appid: 2088840
+name: Picayune Dreams
+developer: Stepford
+release_year: 2023
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  real_time_action: 3
+  bullet_hell: 3
+  horde_density: 2
+  boss_gates: 3
+  attack_patterns: 3
+  level_up_choices: 2
+  pick_one_of_n: 2
+  unlock_items: 1
+  permadeath: 2
+evidence:
+  bullet_hell: Touhou-inspired bullet-hell boss gauntlet on top of horde survival; passive builds are discouraged.
+  unlock_items: Only limited roguelite progression modifies runs.
+  attack_patterns: Bosses use learnable bullet patterns.
+confidence: medium
+curator: agent

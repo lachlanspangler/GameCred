@@ -18,8 +18,10 @@ mechanics:
   weapons_variety: 2
   in_run_currency: 1
   unlock_items: 2
+  combo_meter: 2
 evidence:
   loadout_start: Heads, guns and backpacks are mix-and-match before each run, each changing rules.
   in_run_currency: Glyphs from combos buy continues and extra slots mid-run.
+  combo_meter: Killing without taking damage builds a combo multiplier that increases glyph drops.
 confidence: medium
 curator: agent

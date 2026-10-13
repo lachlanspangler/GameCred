@@ -25,10 +25,12 @@ mechanics:
   endless_mode: 2
   random_events: 1
   high_variance_loot: 1
+  traversal_tools: 2
 evidence:
   item_stacking: Extra-jump items stack, allowing dozens of mid-air jumps.
   item_upgrading: Guns level up from collected XP orbs during a run and lose levels when the player takes damage.
   achievement_unlocks: New guns and perks are unlocked by completing specific challenges.
   loadout_start: Players pick a starting gun and a perk before each run.
+  traversal_tools: Stacking multi-jumps and movement items are central to moment-to-moment play.
 confidence: medium
 curator: agent

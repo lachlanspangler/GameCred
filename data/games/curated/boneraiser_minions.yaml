@@ -1,0 +1,29 @@
+appid: 1944570
+name: Boneraiser Minions
+developer: caiys
+release_year: 2023
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  real_time_action: 3
+  horde_density: 3
+  level_up_choices: 3
+  pick_one_of_n: 3
+  character_classes: 3
+  unlock_characters: 3
+  unlock_items: 2
+  synergies: 3
+  build_archetypes: 3
+  short_runs: 2
+  boss_gates: 1
+  permadeath: 2
+  enemy_hp_scaling: 1
+  summons_minions: 3
+evidence:
+  auto_attack: The necromancer does not attack directly; bones from slain enemies raise minions that fight automatically.
+  character_classes: A large roster of Boneraisers each changes minion types and playstyle.
+  synergies: Relics/upgrades key off minion types, so builds revolve around which undead you field.
+  summons_minions: Whole build is an army of raised undead minions.
+confidence: medium
+curator: agent

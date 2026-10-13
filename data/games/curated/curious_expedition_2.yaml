@@ -22,8 +22,12 @@ mechanics:
   in_run_currency: 2
   status_effects: 2
   content_updates: 1
+  party_building: 3
+  stress_sanity: 3
 evidence:
   hybrid_survival: Sanity, food and carrying capacity constrain each expedition.
   dice: Dice-based combat with party members contributing dice.
+  party_building: Recruit and manage expedition members with traits and roles.
+  stress_sanity: Sanity drains with travel and causes events/afflictions as it falls.
 confidence: medium
 curator: agent

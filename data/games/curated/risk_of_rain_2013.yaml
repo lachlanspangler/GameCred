@@ -40,6 +40,7 @@ mechanics:
   lore_codex: 2
   online_coop: 2
   local_coop: 2
+  summons_minions: 1
 evidence:
   time_pressure: Difficulty meter rises with elapsed real time, from Very Easy to HAHAHAHA.
   item_stacking: Duplicate items stack (Soldier's Syringe attack speed, etc.).

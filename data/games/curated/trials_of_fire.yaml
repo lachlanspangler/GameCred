@@ -26,10 +26,14 @@ mechanics:
   block_shield: 2
   status_effects: 2
   item_rarity: 2
+  deck_from_equipment: 3
+  party_building: 2
 evidence:
   deckbuilding: Each hero's deck is derived from the equipment they carry.
   grid_tactics: Battles on a hex grid with facing and positioning.
   energy_mana: Willpower earned by discarding cards fuels plays.
   random_events: Storybook encounters across an explorable overworld.
+  deck_from_equipment: Each hero's card deck is generated from their equipped items.
+  party_building: Manage a party of three heroes, including their gear and levels.
 confidence: medium
 curator: agent

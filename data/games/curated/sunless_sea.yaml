@@ -16,10 +16,18 @@ mechanics:
   in_run_currency: 2
   narrative_across_runs: 1
   assist_mode: 2
+  vehicle_combat: 3
+  hunger_clock: 3
+  stress_sanity: 3
+  legacy_inheritance: 2
 evidence:
   hybrid_survival: Fuel, supplies, crew and terror must be managed on every voyage.
   permadeath: Captain death is permanent; a new captain may inherit a legacy (charts, ship, items).
   multiple_endings: Each captain pursues an ambition with its own ending.
   assist_mode: Merciful mode allows manual saves.
+  vehicle_combat: Combat is fought with the player-captained steamship.
+  hunger_clock: Fuel and supplies drain as you sail, forcing returns to port or starvation.
+  stress_sanity: Terror rises in darkness and events, triggering mutiny and madness at high values.
+  legacy_inheritance: A successor captain can inherit the chart, wealth or items willed by the previous captain.
 confidence: high
 curator: agent

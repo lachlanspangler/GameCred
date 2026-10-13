@@ -22,9 +22,11 @@ mechanics:
   lore_codex: 2
   local_coop: 3
   online_coop: 2
+  day_night_cycle: 3
 evidence:
   time_pressure: A run is five in-game days; each day you choose one region to explore.
   random_events: Nightly campfire events and personality-trait choices shape the legend recorded.
   lore_codex: The Constellations/legends book records each hero's deeds across runs.
+  day_night_cycle: A run lasts a fixed number of days; each day one region is explored and each night is spent at camp before the final fight.
 confidence: medium
 curator: agent

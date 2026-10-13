@@ -57,3 +57,21 @@ Collected from curators; reviewed into taxonomy versions. Status: `pending` / `a
 
 ## Subgenre alignment note
 Top-down/twin-stick shooters: shooter curator used hybrid_shooter (Dead Estate, Synthetik 2, ZERO Sievert, Nova Drift); action curator used hybrid_action_roguelite for Gungeon-likes. Decision needed (see I-014).
+
+## Decision: taxonomy v2 (2026-10-13) — 34 mechanics accepted (121 → 155)
+Accepted as proposed: turn_escalation, day_night_cycle, legacy_inheritance (merges heir_traits), breeding_genetics, life_sim_hub,
+shop_management, traversal_unlocks, weapon_mastery, card_mods, party_building, combo_meter, weapon_durability, item_identification,
+deck_from_equipment, faction_reputation, vehicle_combat, traversal_tools, parry_counter, rhythm_timing, stealth, weapon_handling,
+score_target_rounds, dice_manipulation, dual_resource, limb_injuries, stress_sanity, corruption_meter, hunger_clock, asymmetric_multiplayer.
+Merged/renamed: weapon_stance_swap (as moveset swap); summons_minions (merges unit_summoning); lanes_ranks (merges lane_positioning +
+positional_ranks); prep_combat_phases (from day_night_phases); handcrafted_loop_world (from time_loop_world).
+Rejected for now (≤2 examples): weapon_auto_swap, dual_deck, limited_play_card_pool, run_loss_carry.
+
+## From survivors curator (2026-10-13) — pending (candidate v3)
+- pickup_magnet_economy — XP/pickups must be collected; pickup radius is an upgradable stat (all survivors-likes)
+- minute_spawn_schedule — enemy composition scripted by elapsed time, not waves (Vampire Survivors, Nomad Survival)
+- aim_mode_options — player-selectable auto/manual aim (20MTD, Spellbook Demonslayers, Time Wasters)
+- adjacency_placement — item effect depends on grid adjacency (God Of Weapons, Bioprototype, Backpack Battles, Backpack Hero)
+- skill_tags — tag-based ability scaling (Soulstone Survivors, Halls of Torment)
+- random_run_traits — run-start random trait roll (Survivor Mercs)
+- friendly_fire, arena_manipulation, streamer_integration — single-example, rejected for now

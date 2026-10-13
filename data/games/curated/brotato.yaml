@@ -1,0 +1,67 @@
+appid: 1942280
+name: Brotato
+developer: Blobfish
+release_year: 2023
+subgenre: hybrid_survivors
+wiki: https://brotato.wiki.spellsandguns.com/
+stats:
+  run_length_min: 30
+  difficulty_levels: 6
+  meta_currencies: 0
+mechanics:
+  hybrid_survivors: 3
+  waves: 3
+  auto_attack: 3
+  real_time_action: 3
+  time_pressure: 2
+  short_runs: 2
+  permadeath: 2
+  shops: 3
+  in_run_currency: 3
+  interest_economy: 2
+  rng_mitigation: 2
+  level_up_choices: 3
+  pick_one_of_n: 3
+  reroll: 3
+  item_stacking: 3
+  flat_stat_scaling: 3
+  multiplicative_scaling: 1
+  transformations: 2
+  synergies: 2
+  build_archetypes: 3
+  character_classes: 3
+  loadout_start: 2
+  double_edged_items: 3
+  item_upgrading: 2
+  weapons_variety: 3
+  item_rarity: 3
+  consumables: 1
+  cursed_items: 1
+  crits: 2
+  status_effects: 1
+  cooldown_reduction: 1
+  elites: 2
+  boss_gates: 2
+  enemy_hp_scaling: 2
+  horde_density: 2
+  ascension_ladder: 2
+  unlock_characters: 3
+  unlock_items: 2
+  achievement_unlocks: 3
+  endless_mode: 2
+  local_coop: 2
+  mod_support: 2
+  content_updates: 2
+  early_access_dev: 1
+  steam_deck_friendly: 2
+  prep_combat_phases: 3
+evidence:
+  waves: Runs are 20 timed waves with a shop after every wave and a boss on wave 20.
+  interest_economy: The Harvesting stat pays materials at wave end and grows over the run, rewarding early economy investment.
+  double_edged_items: Most items mix positive and negative stats, and characters impose hard rule-bending drawbacks.
+  transformations: Weapon class set bonuses (Primitive, Gun, Elemental, etc.) scale with how many same-class weapons are held.
+  ascension_ladder: Danger 0-5 difficulty levels unlock per character after winning the previous level.
+  rng_mitigation: Shop items can be locked to persist through rerolls and into the next wave.
+  prep_combat_phases: Every wave is followed by a shop/upgrade phase before the next combat wave.
+confidence: high
+curator: agent

@@ -1,0 +1,61 @@
+appid: 1794680
+name: Vampire Survivors
+developer: poncle
+release_year: 2022
+subgenre: hybrid_survivors
+wiki: https://vampire-survivors.fandom.com/wiki/Vampire_Survivors_Wiki
+critic:
+  metacritic: 86
+stats:
+  run_length_min: 30
+  meta_currencies: 1
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  real_time_action: 3
+  horde_density: 3
+  time_pressure: 3
+  short_runs: 2
+  permadeath: 2
+  second_chance: 2
+  level_up_choices: 3
+  pick_one_of_n: 3
+  reroll: 2
+  banish_skip: 2
+  weapon_evolution: 3
+  weapons_variety: 3
+  passive_relics: 2
+  item_upgrading: 2
+  synergies: 2
+  build_archetypes: 1
+  flat_stat_scaling: 2
+  multiplicative_scaling: 1
+  cooldown_reduction: 2
+  character_classes: 2
+  unlock_characters: 3
+  unlock_items: 3
+  achievement_unlocks: 3
+  permanent_stat_upgrades: 3
+  lore_codex: 2
+  modular_difficulty: 2
+  endless_mode: 2
+  enemy_hp_scaling: 2
+  elites: 1
+  gambling: 1
+  high_variance_loot: 1
+  consumables: 1
+  random_events: 1
+  status_effects: 1
+  local_coop: 2
+  content_updates: 3
+  early_access_dev: 1
+  steam_deck_friendly: 2
+evidence:
+  weapon_evolution: A max-level weapon plus its paired passive (e.g. Whip + Hollow Heart -> Bloody Tear) evolves when a boss chest is opened.
+  time_pressure: Standard stages end at 30:00 when the Reaper spawns and kills the player.
+  banish_skip: Reroll, Skip and Banish are purchasable meta upgrades that manipulate level-up offers.
+  achievement_unlocks: Characters, weapons, stages and Arcanas unlock from specific feats listed in the Unlocks menu.
+  modular_difficulty: Per-stage toggles for Hyper, Hurry, Arcanas, Limit Break and Inverse modes.
+  local_coop: Up to 4-player local co-op added in a 2023 update.
+confidence: high
+curator: agent

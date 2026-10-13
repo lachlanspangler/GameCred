@@ -35,6 +35,7 @@ mechanics:
   lore_codex: 2
   assist_mode: 1
   mod_support: 3
+  summons_minions: 1
 evidence:
   unlock_characters: Most classes and races are locked and unlocked by in-game deeds across characters.
   second_chance: Adventure mode grants extra lives gained by levelling; Roguelike mode is one life.

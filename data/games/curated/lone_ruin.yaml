@@ -1,0 +1,27 @@
+appid: 1452070
+name: LONE RUIN
+developer: Cuddle Monster Games
+release_year: 2023
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  twin_stick: 3
+  dodge_iframes: 2
+  room_based_floors: 3
+  pick_one_of_n: 3
+  talent_slots: 2
+  item_upgrading: 2
+  synergies: 2
+  waves: 2
+  endless_mode: 2
+  boss_gates: 2
+  short_runs: 3
+  permadeath: 2
+  horde_density: 1
+evidence:
+  room_based_floors: Dive through a ruined city room by room, choosing the next room by its shown reward.
+  talent_slots: Spells occupy primary and secondary slots and are swapped or upgraded with rewards.
+  endless_mode: Separate Survival mode is an endless wave arena.
+confidence: medium
+curator: agent

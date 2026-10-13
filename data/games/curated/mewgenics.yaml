@@ -17,9 +17,14 @@ mechanics:
   status_effects: 2
   environmental_hazards: 2
   random_events: 2
+  breeding_genetics: 3
+  party_building: 2
+  life_sim_hub: 2
 evidence:
   hub_building: Between runs the player manages a house of cats, breeding them to pass on traits.
   character_classes: Collars assign a class to each cat for the run.
   grid_tactics: Combat is turn-based on a grid with four cats.
+  breeding_genetics: Cats bred in the house pass stats, abilities and mutations to kittens.
+  life_sim_hub: The house hub has cat care, furnishing and breeding management between runs.
 confidence: medium
 curator: agent

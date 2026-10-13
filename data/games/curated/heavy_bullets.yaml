@@ -19,10 +19,12 @@ mechanics:
   healing_scarcity: 3
   extraction: 1
   passive_relics: 1
+  weapon_handling: 3
 evidence:
   healing_scarcity: Very low HP; most enemies kill in one or two hits.
   second_chance: Life insurance-style items let the player continue after death.
   extraction: Banks let players deposit money and items to retrieve on future runs.
   hybrid_shooter: Ammo is only six physical bullets that must be picked back up after firing.
+  weapon_handling: The revolver has limited bullets that must be physically picked back up after firing.
 confidence: medium
 curator: agent

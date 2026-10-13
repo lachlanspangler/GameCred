@@ -1,0 +1,43 @@
+appid: 2066020
+name: Soulstone Survivors
+developer: Game Smithing Limited
+release_year: 2025
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 2
+  real_time_action: 3
+  dodge_iframes: 1
+  horde_density: 3
+  short_runs: 2
+  permadeath: 2
+  level_up_choices: 3
+  pick_one_of_n: 3
+  reroll: 2
+  banish_skip: 2
+  character_classes: 3
+  unlock_characters: 3
+  unlock_items: 2
+  permanent_stat_upgrades: 3
+  boss_gates: 2
+  attack_patterns: 2
+  elites: 2
+  synergies: 3
+  build_archetypes: 3
+  multiplicative_scaling: 2
+  status_effects: 2
+  elemental_interactions: 1
+  crits: 2
+  cooldown_reduction: 2
+  enemy_hp_scaling: 2
+  endless_mode: 1
+  early_access_dev: 1
+  content_updates: 2
+  steam_deck_friendly: 2
+evidence:
+  synergies: Skills carry damage/delivery tags (fire, frost, lightning, projectile, area) that tag-specific upgrades scale.
+  attack_patterns: Bosses and elites use large telegraphed area attacks that must be dodged.
+  permanent_stat_upgrades: Extensive meta-progression spends run currencies on permanent stat and skill unlocks.
+  character_classes: Many hero classes with distinct starting skills and weapon types.
+confidence: medium
+curator: agent

@@ -24,10 +24,14 @@ mechanics:
   weapons_variety: 2
   act_structure: 2
   character_classes: 1
+  hunger_clock: 3
+  stealth: 2
 evidence:
   crafting: Weapons and gadgets are crafted from scavenged junk and persist across client deaths.
   double_edged_items: Each new client has random traits, some harmful (e.g. Tourette's alerting enemies, short-sightedness).
   hybrid_survival: Food and fuel must be scavenged to keep moving across the nebula map.
   push_your_luck: Oxygen limits on each derelict force a stay-or-leave decision while looting.
+  hunger_clock: Food and fuel are consumed per jump on the nebula map.
+  stealth: Sneaking past enemies and security systems is a viable alternative to fighting.
 confidence: high
 curator: agent

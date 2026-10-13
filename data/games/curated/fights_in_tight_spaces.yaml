@@ -30,10 +30,12 @@ mechanics:
   optional_challenges: 2
   turn_based: 3
   content_updates: 1
+  dual_resource: 2
 evidence:
   environmental_hazards: Push/pull enemies into each other, off ledges, or into their allies' line of fire.
   enemy_intents: Every enemy's next attack and target tile is displayed.
   energy_mana: Momentum plus Combo points earned from attack cards gate finishers.
   optional_challenges: Fights carry optional objectives for bonus rewards.
+  dual_resource: Cards spend Momentum while Combo points build from attacks and fuel finisher cards.
 confidence: medium
 curator: agent

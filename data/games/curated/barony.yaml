@@ -27,10 +27,16 @@ mechanics:
   unlock_characters: 1
   content_updates: 2
   item_rarity: 1
+  item_identification: 2
+  hunger_clock: 2
+  stealth: 1
 evidence:
   cursed_items: NetHack-style unidentified and cursed equipment that cannot be removed.
   online_coop: Up to 4-player online co-op (plus split-screen) in a first-person roguelike.
   hybrid_survival: Hunger must be managed with food found in the dungeon.
   mod_support: Steam Workshop support with an official level editor.
+  item_identification: Items are unidentified until appraised with the Appraise skill.
+  hunger_clock: Hunger drains over time and must be managed with food.
+  stealth: Stealth skill and sneaking let players avoid detection.
 confidence: medium
 curator: agent

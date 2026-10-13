@@ -2,9 +2,9 @@ appid: 858210
 name: Nova Drift
 developer: Chimeric
 release_year: 2024
-subgenre: hybrid_shooter
+subgenre: hybrid_action_roguelite
 mechanics:
-  hybrid_shooter: 3
+  hybrid_shooter: 2
   twin_stick: 3
   real_time_action: 3
   permadeath: 3
@@ -23,9 +23,12 @@ mechanics:
   enemy_hp_scaling: 2
   early_access_dev: 3
   content_updates: 2
+  vehicle_combat: 3
+  hybrid_action_roguelite: 3
 evidence:
   loadout_start: Body, weapon and shield modules are chosen per run and fundamentally change the ship.
   level_up_choices: Each level offers mods from a hex upgrade tree; prerequisite chains define builds.
   early_access_dev: About five years in Early Access before 1.0 in 2024.
+  vehicle_combat: The player is a ship; body/weapon/shield modules define its handling and combat.
 confidence: medium
 curator: agent

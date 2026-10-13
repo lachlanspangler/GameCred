@@ -1,0 +1,49 @@
+appid: 3405340
+name: Megabonk
+developer: vedinad
+release_year: 2025
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  real_time_action: 3
+  platforming: 2
+  horde_density: 3
+  time_pressure: 3
+  procgen_levels: 2
+  short_runs: 3
+  permadeath: 2
+  level_up_choices: 3
+  pick_one_of_n: 3
+  reroll: 2
+  banish_skip: 2
+  item_rarity: 3
+  passive_relics: 3
+  item_stacking: 3
+  gambling: 2
+  in_run_currency: 2
+  optional_challenges: 2
+  character_classes: 3
+  unlock_characters: 3
+  unlock_items: 3
+  achievement_unlocks: 3
+  permanent_stat_upgrades: 2
+  boss_gates: 2
+  multiplicative_scaling: 2
+  synergies: 2
+  build_archetypes: 2
+  weapons_variety: 2
+  crits: 2
+  status_effects: 1
+  enemy_hp_scaling: 2
+  leaderboards: 2
+  steam_deck_friendly: 1
+  traversal_tools: 2
+evidence:
+  platforming: 3D movement with jumping, sliding and bunny-hopping is central to kiting hordes.
+  item_stacking: Chest items stack additively RoR2-style alongside weapon and tome level-ups.
+  gambling: Chests cost escalating gold and shrines/vending objects pay out random rewards.
+  time_pressure: A map timer counts down; at zero a final swarm forces the boss confrontation.
+  achievement_unlocks: Quests (feats per character/map) unlock new characters, weapons and items.
+confidence: medium
+curator: agent

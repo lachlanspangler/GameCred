@@ -39,10 +39,12 @@ mechanics:
   online_coop: 3
   early_access_dev: 2
   content_updates: 2
+  day_night_cycle: 3
 evidence:
   time_pressure: Each chapter runs on a day/night clock (several days) before the Nightmare boss is forced.
   open_procgen_world: Chapters are a single generated open map with points of interest rather than rooms.
   level_up_choices: XP levels offer a pick of talents that modify the hero's abilities.
   online_coop: Built around 4-player online co-op with shared revives.
+  day_night_cycle: Each chapter runs on a day/night clock that changes hero powers and forces the Nightmare boss.
 confidence: medium
 curator: agent

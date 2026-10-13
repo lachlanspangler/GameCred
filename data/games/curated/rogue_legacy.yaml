@@ -31,6 +31,7 @@ mechanics:
   healing_scarcity: 2
   enemy_hp_scaling: 1
   unlock_items: 2
+  legacy_inheritance: 3
 evidence:
   double_edged_items: Each heir has random traits (colour-blind, dwarfism, vertigo, IBS) with mixed effects.
   skill_tree_meta: Gold buys manor upgrades that expand the tree of classes and stats.

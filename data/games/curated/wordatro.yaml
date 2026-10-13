@@ -17,8 +17,10 @@ mechanics:
   boss_gates: 2
   permadeath: 2
   item_upgrading: 1
+  score_target_rounds: 3
 evidence:
   poker_hands: Score by spelling words from drawn letter tiles, Balatro-style blinds.
   multiplicative_scaling: Joker-like modifiers stack chips and multipliers on words.
+  score_target_rounds: Each round requires reaching a score threshold, Balatro-style.
 confidence: medium
 curator: agent

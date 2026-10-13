@@ -41,11 +41,19 @@ mechanics:
   optional_challenges: 1
   push_your_luck: 1
   steam_deck_friendly: 1
+  handcrafted_loop_world: 2
+  weapon_mastery: 2
+  traversal_unlocks: 2
+  combo_meter: 2
+  weapon_handling: 1
 evidence:
   double_edged_items: Parasites attach with one buff and one debuff; malignant items risk Malfunctions with a removal task.
   second_chance: Astronaut Figurine and Reconstructors revive Selene once per run.
   endless_mode: Tower of Sisyphus is an endless score-attack mode with phases.
   daily_challenge: Daily Challenge with fixed loadout and global leaderboard.
   hybrid_metroidvania: Permanent traversal tools (grapple, Atropian blade) gate areas across cycles.
+  handcrafted_loop_world: Hand-built biomes reshuffle each cycle while traversal tools and story progress persist.
+  weapon_mastery: Weapon traits unlock permanently through use and carry to later drops.
+  combo_meter: Adrenaline levels build with kills without taking damage and reset on hit.
 confidence: high
 curator: agent

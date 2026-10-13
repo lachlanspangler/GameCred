@@ -27,10 +27,14 @@ mechanics:
   status_effects: 2
   act_structure: 1
   synergies: 2
+  party_building: 3
+  dice_manipulation: 2
 evidence:
   dice: Each party hero is a custom die; faces are attacks, shields, heals or mana.
   reroll: Two rerolls per turn to lock in desired faces.
   level_up_choices: Heroes level up into one of two higher-tier classes, changing their die.
   modular_difficulty: Curse/blessing custom modes and many alternate rule modes.
+  party_building: Party of heroes recruited and leveled across the run.
+  dice_manipulation: Items and abilities change die faces and values.
 confidence: medium
 curator: agent

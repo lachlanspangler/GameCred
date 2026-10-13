@@ -1,0 +1,32 @@
+appid: 2342950
+name: God Of Weapons
+developer: Archmage Games Studio
+release_year: 2023
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  waves: 3
+  auto_attack: 3
+  real_time_action: 3
+  shops: 3
+  in_run_currency: 3
+  inventory_management: 3
+  synergies: 2
+  transformations: 2
+  item_rarity: 2
+  reroll: 2
+  item_upgrading: 2
+  character_classes: 2
+  unlock_characters: 2
+  boss_gates: 2
+  horde_density: 2
+  build_archetypes: 2
+  short_runs: 2
+  permadeath: 2
+  prep_combat_phases: 3
+evidence:
+  inventory_management: Weapons and items are placed into a shaped backpack grid; space and placement constrain the build.
+  waves: Brotato-style timed waves with a shop between each.
+  item_upgrading: Duplicate weapons merge into higher tiers.
+confidence: medium
+curator: agent

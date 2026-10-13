@@ -39,6 +39,7 @@ mechanics:
   content_updates: 2
   early_access_dev: 1
   steam_deck_friendly: 1
+  traversal_tools: 3
 evidence:
   hub_building: Basecamp is upgraded with Power Cells found in runs, unlocking new workshops and perks.
   level_up_choices: XP level-ups grant a pick from class-specific perk trees mid-run.

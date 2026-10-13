@@ -35,10 +35,16 @@ mechanics:
   waves: 2
   content_updates: 2
   perfect_information: 1
+  summons_minions: 3
+  lanes_ranks: 2
+  card_mods: 2
 evidence:
   enemy_intents: Every unit shows a counter that ticks down each turn; it acts at zero.
   hub_building: Snowdwell town is rebuilt across runs, unlocking new cards, charms and pets.
   modular_difficulty: Storm Bells toggle individual hardship modifiers.
   item_upgrading: Charms permanently modify a card for the run.
+  summons_minions: Companions are deployed onto the board as persistent allied units.
+  lanes_ranks: Units occupy two rows where front position determines targeting.
+  card_mods: Charms permanently attach to individual cards to modify them.
 confidence: high
 curator: agent

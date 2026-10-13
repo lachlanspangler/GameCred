@@ -7,7 +7,6 @@ mechanics:
   hybrid_action_roguelite: 3
   real_time_action: 3
   pvp: 3
-  local_coop: 1
   level_up_choices: 2
   weapon_evolution: 2
   shops: 2
@@ -15,9 +14,11 @@ mechanics:
   boss_gates: 3
   short_runs: 3
   environmental_hazards: 2
+  asymmetric_multiplayer: 3
 evidence:
   pvp: One player is the hero; the others are ghosts possessing traps and monsters, and whoever kills the hero takes over.
   weapon_evolution: Ghost players spend Wrath to evolve their monsters into stronger forms.
   boss_gates: The hero must reach level 10 and survive the final boss gate to win.
+  asymmetric_multiplayer: One player is the hero while the others control monsters trying to kill them.
 confidence: medium
 curator: agent

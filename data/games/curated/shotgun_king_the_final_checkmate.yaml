@@ -1,0 +1,23 @@
+appid: 1972440
+name: 'Shotgun King: The Final Checkmate'
+developer: PUNKCAKE Delicieux
+release_year: 2022
+subgenre: hybrid_puzzle
+mechanics:
+  hybrid_puzzle: 3
+  turn_based: 3
+  grid_tactics: 3
+  enemy_intents: 2
+  perfect_information: 2
+  pick_one_of_n: 3
+  double_edged_items: 3
+  synergies: 2
+  short_runs: 3
+  permadeath: 2
+  unlock_items: 1
+evidence:
+  double_edged_items: 'Between floors you pick a pair of cards: a White card buff for you bundled with a Black card buff for the enemy army.'
+  grid_tactics: Played on a chessboard; you are a king with a shotgun facing chess pieces that move by chess rules.
+  enemy_intents: Squares threatened by enemy pieces are shown, and pieces act on visible turn timers.
+confidence: medium
+curator: agent

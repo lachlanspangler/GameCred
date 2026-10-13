@@ -1,0 +1,38 @@
+appid: 2068280
+name: 'Nordic Ashes: Survivors of Ragnarok'
+developer: Noxfall Studios
+release_year: 2024
+subgenre: hybrid_survivors
+stats:
+  biome_count: 9
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  real_time_action: 3
+  horde_density: 3
+  short_runs: 2
+  permadeath: 2
+  level_up_choices: 3
+  pick_one_of_n: 3
+  skill_tree_meta: 3
+  permanent_stat_upgrades: 2
+  passive_relics: 2
+  item_upgrading: 2
+  character_classes: 2
+  unlock_characters: 2
+  unlock_items: 2
+  achievement_unlocks: 1
+  elites: 2
+  boss_gates: 2
+  optional_challenges: 2
+  daily_challenge: 2
+  modular_difficulty: 1
+  synergies: 1
+  steam_deck_friendly: 1
+evidence:
+  skill_tree_meta: Per-character Constellation trees plus a shared Yggdrasil meta-progress tree.
+  optional_challenges: Reward Shrines spawn in-run quests and challenges.
+  daily_challenge: Dedicated Daily Challenge mode alongside Adventure, Ragnarok, Custom and Nightmare.
+  item_upgrading: 150+ relics that can be Ascended for stronger effects.
+confidence: medium
+curator: agent

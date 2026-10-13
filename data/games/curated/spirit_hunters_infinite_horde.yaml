@@ -1,0 +1,28 @@
+appid: 1914580
+name: 'Spirit Hunters: Infinite Horde'
+developer: Creature Cauldron
+release_year: 2023
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  real_time_action: 3
+  horde_density: 3
+  time_pressure: 2
+  short_runs: 2
+  permadeath: 2
+  level_up_choices: 3
+  pick_one_of_n: 3
+  permanent_stat_upgrades: 3
+  character_classes: 2
+  unlock_characters: 2
+  unlock_items: 2
+  synergies: 2
+  build_archetypes: 2
+  enemy_hp_scaling: 2
+evidence:
+  permanent_stat_upgrades: Souls fund the Oracle's large permanent upgrade system between runs.
+  synergies: Hunters combine with abilities through a hunter/ability synergy system.
+  auto_attack: Explicitly Magic Survival/Vampire Survivors-style passive attacks.
+confidence: medium
+curator: agent

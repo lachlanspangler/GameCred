@@ -42,10 +42,13 @@ mechanics:
   local_coop: 2
   early_access_dev: 2
   speedrun_support: 1
+  weapon_handling: 2
+  weapon_stance_swap: 1
 evidence:
   level_up_choices: Radiation (Rads) levels up the mutant; each level offers a choice of 4 Mutations.
   endless_mode: Beating the Throne enables Loop mode with escalating enemy power.
   optional_challenges: Crown Vaults offer Crowns that modify the run (Crown of Destiny, Crown of Blood).
   early_access_dev: Developed on Steam Early Access with livestreamed development.
+  weapon_handling: Separate ammo pools per ammo type; ammo drops must be collected to keep firing.
 confidence: high
 curator: agent

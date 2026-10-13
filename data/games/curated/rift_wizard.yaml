@@ -23,6 +23,7 @@ mechanics:
   perfect_information: 2
   enemy_variety: 3
   mod_support: 1
+  summons_minions: 2
 evidence:
   synergies: Spells, skills and upgrades interact (e.g. summons + buffs, damage-type auras) into run-defining combos.
   pick_one_of_n: After each realm the player chooses among rifts that preview the next level's monsters and loot.

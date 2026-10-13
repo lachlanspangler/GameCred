@@ -1,0 +1,34 @@
+appid: 1929870
+name: Nomad Survival
+developer: The Fox Knocks
+release_year: 2022
+subgenre: hybrid_survivors
+stats:
+  playable_characters: 9
+  biome_count: 4
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  real_time_action: 3
+  horde_density: 3
+  time_pressure: 2
+  level_up_choices: 3
+  pick_one_of_n: 3
+  reroll: 2
+  item_upgrading: 2
+  weapon_evolution: 2
+  loadout_start: 2
+  character_classes: 2
+  unlock_characters: 2
+  status_effects: 1
+  random_events: 2
+  boss_gates: 2
+  permanent_stat_upgrades: 2
+  permadeath: 2
+evidence:
+  weapon_evolution: Each character's Weapon Skill branches into Weapon Skill Evolutions.
+  loadout_start: Heritages modify the run (e.g. Nomad adds a reroll, Poxbringer converts damage to damage-over-time).
+  random_events: Each of the four maps has unique events that complicate runs.
+  item_upgrading: Abilities level to 10 with bonus effects at levels 5 and 10.
+confidence: medium
+curator: agent

@@ -36,11 +36,18 @@ mechanics:
   healing_scarcity: 2
   high_variance_loot: 2
   content_updates: 2
+  turn_escalation: 3
+  vehicle_combat: 3
+  hunger_clock: 2
+  party_building: 2
 evidence:
   node_map: Each of 8 sectors is a beacon graph; the player picks jumps while the rebel fleet advances.
   item_upgrading: Scrap buys reactor and system power upgrades (shields, weapons, engines) mid-run.
   multi_phase_bosses: The Rebel Flagship fight has three distinct phases.
   achievement_unlocks: New ships and layouts unlock through ship-specific achievements and event quests.
   push_your_luck: Exploring extra beacons for scrap risks being caught by the advancing rebel fleet.
+  turn_escalation: The Rebel fleet advances one step per jump, forcing progress through each sector.
+  vehicle_combat: The ship itself is the combat avatar; weapons, shields and systems fight enemy ships.
+  hunger_clock: Each jump consumes fuel; running dry strands the ship.
 confidence: high
 curator: agent

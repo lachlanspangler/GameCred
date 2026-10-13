@@ -15,8 +15,11 @@ mechanics:
   loadout_start: 2
   double_edged_items: 1
   random_events: 2
+  limb_injuries: 3
+  hunger_clock: 2
 evidence:
   status_effects: Detailed injuries, infections, hypothermia and diseases.
   loadout_start: Point-buy skills and flaws at character creation.
+  limb_injuries: Localized wounds (cuts, fractures, infections) per body part with lasting effects.
 confidence: medium
 curator: agent

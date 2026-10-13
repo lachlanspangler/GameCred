@@ -1,0 +1,28 @@
+appid: 3689520
+name: Bioprototype
+developer: Emprom Game
+release_year: 2025
+subgenre: hybrid_survivors
+stats:
+  playable_characters: 24
+  item_count: 80
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 2
+  real_time_action: 3
+  horde_density: 2
+  bullet_hell: 1
+  level_up_choices: 3
+  pick_one_of_n: 3
+  inventory_management: 2
+  synergies: 3
+  build_archetypes: 2
+  character_classes: 2
+  short_runs: 2
+  permadeath: 2
+evidence:
+  inventory_management: The prototype is built by attaching organs to a body layout; organ placement determines how effects connect.
+  synergies: Player-defined skill trigger logic links organs into chains (e.g. Bullet Master, Flesh Army, Virus Master builds).
+  character_classes: 24 characters with different skills.
+confidence: medium
+curator: agent

@@ -20,9 +20,12 @@ mechanics:
   boss_gates: 2
   act_structure: 2
   status_effects: 1
+  party_building: 2
+  vehicle_combat: 2
 evidence:
   environmental_hazards: Boarding fights reward knocking enemies overboard, into hazards or into each other.
   character_classes: Pirate crew classes (e.g. gunners, brawlers) recruited by capturing enemy pirates.
   hub_building: Ship and crew upgrades between runs are bought at the hideout.
+  vehicle_combat: Ship-to-ship cannon phase precedes each boarding fight.
 confidence: medium
 curator: agent

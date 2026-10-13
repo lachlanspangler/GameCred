@@ -1,0 +1,32 @@
+appid: 2141520
+name: Survivor Mercs
+developer: Wolpertinger Games
+release_year: 2026
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 2
+  real_time_action: 3
+  horde_density: 3
+  extraction: 3
+  hub_building: 2
+  permanent_stat_upgrades: 2
+  procgen_levels: 2
+  act_structure: 2
+  time_pressure: 2
+  boss_gates: 2
+  optional_challenges: 1
+  character_classes: 2
+  unlock_characters: 2
+  loadout_start: 2
+  synergies: 1
+  online_coop: 2
+  party_building: 3
+evidence:
+  extraction: Reach and defend the extraction point to keep loot; dying forfeits it.
+  hub_building: Loot buys mercs, gear and permanent bunker HQ upgrades.
+  loadout_start: Each Commander clone rolls random traits; you pick a weapon and assemble a merc squad.
+  time_pressure: Each minute on the battlefield brings more, stronger enemies.
+  party_building: Assemble a mercenary squad, each merc with its own arsenal and specialization tree.
+confidence: medium
+curator: agent

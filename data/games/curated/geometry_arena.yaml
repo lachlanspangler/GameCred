@@ -1,0 +1,29 @@
+appid: 1255650
+name: Geometry Arena
+developer: 011 Games
+release_year: 2021
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_survivors: 1
+  twin_stick: 3
+  real_time_action: 3
+  waves: 3
+  pick_one_of_n: 3
+  item_rarity: 2
+  synergies: 3
+  build_archetypes: 2
+  permanent_stat_upgrades: 2
+  character_classes: 2
+  boss_gates: 2
+  horde_density: 2
+  bullet_hell: 1
+  short_runs: 2
+  permadeath: 2
+  prep_combat_phases: 1
+evidence:
+  waves: Neon twin-stick arena with discrete waves and upgrade picks between them.
+  synergies: Hundreds of abilities and upgrades combine into synergy builds.
+  permanent_stat_upgrades: Meta talents purchased between runs.
+confidence: medium
+curator: agent

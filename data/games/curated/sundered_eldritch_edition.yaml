@@ -22,10 +22,12 @@ mechanics:
   passive_relics: 2
   multiple_endings: 3
   local_coop: 1
+  traversal_unlocks: 2
 evidence:
   procgen_levels: Hand-crafted rooms are reshuffled into a new layout on each death.
   double_edged_items: Elder Shards can corrupt abilities, gaining power while sacrificing humanity.
   multiple_endings: Three endings depending on whether you embrace, resist or mix Eldritch corruption.
   horde_density: Periodic hordes swarm the player in large numbers.
+  traversal_unlocks: Movement abilities (e.g. grapple, double jump) persist across deaths and open new routes.
 confidence: medium
 curator: agent

@@ -1,0 +1,40 @@
+appid: 2334730
+name: Death Must Die
+developer: Realm Archive
+release_year: 2023
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 2
+  real_time_action: 3
+  dodge_iframes: 2
+  horde_density: 3
+  act_structure: 2
+  boss_gates: 3
+  elites: 2
+  permadeath: 2
+  talent_slots: 2
+  level_up_choices: 3
+  pick_one_of_n: 3
+  reroll: 2
+  item_rarity: 3
+  high_variance_loot: 2
+  inventory_management: 1
+  character_classes: 3
+  unlock_characters: 2
+  permanent_stat_upgrades: 2
+  synergies: 3
+  build_archetypes: 3
+  status_effects: 2
+  crits: 2
+  enemy_hp_scaling: 2
+  early_access_dev: 2
+  content_updates: 2
+  summons_minions: 1
+evidence:
+  talent_slots: Level-ups offer god blessings that fill Attack, Strike, Cast, Dash, Summon and Aura slots, Hades-style.
+  item_rarity: Diablo-style randomized equipment with rarity tiers and affixes drops throughout runs.
+  synergies: Blessings from different gods combine and upgrade each other's effects.
+  boss_gates: Each act culminates in a boss fight before progressing.
+confidence: medium
+curator: agent

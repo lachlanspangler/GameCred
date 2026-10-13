@@ -34,11 +34,17 @@ mechanics:
   assist_mode: 1
   mod_support: 2
   early_access_dev: 3
+  faction_reputation: 3
+  limb_injuries: 2
+  hunger_clock: 1
 evidence:
   physics_simulation: Liquids mix and flow, temperature and gas spread, and fire propagates through the simulated world.
   in_run_currency: Fresh water (drams) is the trade currency with merchants.
   build_archetypes: Mutant mutation picks vs True Kin cybernetics produce very different builds.
   daily_challenge: A Daily game mode gives everyone the same seeded character each day.
   assist_mode: Roleplay mode adds checkpoints; Wander mode removes most hostility.
+  faction_reputation: Reputation with dozens of factions changes hostility, trade, water ritual and quests.
+  limb_injuries: Limbs can be dismembered and regrown; body parts are tracked individually.
+  hunger_clock: Hunger and thirst require eating and drinking fresh water.
 confidence: high
 curator: agent

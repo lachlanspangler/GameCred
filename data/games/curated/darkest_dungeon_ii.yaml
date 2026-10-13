@@ -35,10 +35,16 @@ mechanics:
   healing_scarcity: 2
   content_updates: 2
   early_access_dev: 1
+  party_building: 3
+  lanes_ranks: 3
+  stress_sanity: 3
 evidence:
   npc_relationships: Party members form in-run relationships (romance, hatred) that change combat behaviour.
   skill_tree_meta: Candles of Hope are spent at the Altar of Hope on persistent unlocks.
   node_map: Each region is a branching road; the stagecoach picks forks toward inns and the Mountain.
   block_shield: Combat tokens (block, dodge, guard) are the core mitigation layer.
+  party_building: A party of four heroes is chosen and managed across the journey.
+  lanes_ranks: Four-rank formation determines skill usability and targeting.
+  stress_sanity: Stress fills and triggers meltdowns and damages relationships.
 confidence: high
 curator: agent
