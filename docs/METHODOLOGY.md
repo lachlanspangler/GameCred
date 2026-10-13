@@ -42,6 +42,9 @@ For each mechanic *m* in a scope (all / high-confidence / curated / per-subgenre
 - **Synergy:** `(m11 − m10) − (m01 − m00)` over the 2×2 cells of a mechanic pair (each cell ≥ 8 games), ranked by |z|. Exploratory, with no multiple-comparison correction.
 - **Family depth:** partial Spearman ρ between the number of significant (≥ 2) mechanics a game has in a family and its GSI, controlling for the game's total tag count (curated games only).
 
+## 4b. Design archetypes
+NMF (multiplicative updates, k = 12) on the curated game × mechanic intensity matrix. Columns are weighted by `log(N/(1+df)) + 0.5` so near-universal mechanics don't dominate. A game's archetype share = its normalised loading. ρ = Pearson correlation of share with GSI. Data-driven groupings complement the hand-built taxonomy.
+
 ## 5. Design Lab
 - **Prediction** = ridge intercept + Σ coefficients × features. It uses the subgenre's own model when that subgenre has n ≥ 40, otherwise the all-roguelike model with subgenre as a covariate. The ± band is the CV RMSE. P(hit)/P(flop) assume normal residuals with that RMSE.
 - **Comps:** weighted Jaccard similarity on intensity vectors. Hybrid tags count double, and auto tags with confidence < 0.7 count 0.6. The top 25 comps give a similarity-weighted hit/flop rate.

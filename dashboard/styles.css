@@ -196,3 +196,15 @@ tr.click:hover td { background: var(--surface-2); }
 .btn.secondary { background: var(--surface-2); color: var(--text-primary); border: 1px solid var(--border); }
 .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
 .empty { padding: 40px; text-align: center; color: var(--text-muted); }
+
+/* Print / PDF: Design Lab prints as a one-page assessment; other views print their main content. */
+@media print {
+  .topbar, .filters, .foot, .drawer, .tooltip, .lab-controls, button, .weights { display: none !important; }
+  .viz-root { background: #fff; color: #0b0b0b; }
+  main { padding: 0; max-width: none; }
+  .card { border: 1px solid #ddd; break-inside: avoid; box-shadow: none; }
+  #view-lab .lab { grid-template-columns: 1fr; }
+  #view-lab .lab > .card:first-child { display: none; }   /* hide the picker, keep the assessment */
+  .lab-out { position: static; }
+  a { color: #0b0b0b; text-decoration: none; }
+}

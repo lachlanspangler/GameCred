@@ -97,3 +97,38 @@ def test_analysis_recovers_planted_effects():
     assert coefs[ids[0]]["coef"] > 8
     assert coefs[ids[1]]["coef"] < -5
     assert rid["cv_rmse"] < rid["baseline_rmse"]
+
+
+def test_depth_strata_and_oof():
+    from gamecred.analysis.impact import depth_strata
+    games, ids = _synthetic()
+    for i, g in enumerate(games):
+        g["source"] = "curated" if i % 2 else "auto"
+    d = design_matrix(games)
+    st = depth_strata(d)
+    assert len(set(st)) >= 4  # 2 sources x tertiles
+    rid = ridge(d, n_boot=5)
+    assert len(rid["oof"]) == len(games)
+    assert "tag_depth_z" in rid["features"] and "curated_profile" in rid["features"]
+
+
+def test_confound_is_removed_by_stratification():
+    """A mechanic with no real effect, tagged only on well-documented (famous) games, must not look positive."""
+    rng = np.random.default_rng(3)
+    t = load_taxonomy()
+    ids = [m for m in t.ids() if not m.startswith("hybrid_")][:30]
+    games = []
+    for i in range(600):
+        fame = rng.random()
+        n_tags = int(5 + fame * 25)
+        mech = {m: {"intensity": 2, "confidence": 1.0, "source": "curated"} for m in rng.choice(ids[1:], n_tags, replace=False)}
+        if fame > 0.6 and rng.random() < 0.5:
+            mech[ids[0]] = {"intensity": 2, "confidence": 1.0, "source": "curated"}
+        games.append({"appid": i, "subgenre": "hybrid_deckbuilder", "year": 2020, "price": 20, "free": False,
+                      "early_access": False, "source": "curated", "mechanics": mech,
+                      "gsi": float(np.clip(30 + 50 * fame + rng.normal(0, 8), 0, 100))})
+    d = design_matrix(games)
+    naive = {r["mechanic"]: r for r in univariate(d, n_boot=200, adjust_depth=False)}[ids[0]]
+    adj = {r["mechanic"]: r for r in univariate(d, n_boot=200, adjust_depth=True)}[ids[0]]
+    assert naive["diff"] > 10            # confounded
+    assert abs(adj["diff"]) < naive["diff"] / 2   # stratification removes most of it

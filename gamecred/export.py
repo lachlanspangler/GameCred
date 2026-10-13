@@ -6,6 +6,7 @@ import json
 import logging
 
 from . import DASHBOARD_DIR, DOCS_DIR, PROCESSED_DIR
+from .analysis.archetypes import archetypes
 from .analysis.extras import rubric, temporal_holdout, trends
 from .analysis.impact import run_scope, stat_correlations
 from .analysis.irr import compute as irr_compute
@@ -62,7 +63,7 @@ def export() -> dict:
     for sc in list(scopes.values()):
         (sc.get("ridge") or {}).pop("oof", None)
     analysis = {"scopes": scopes, "subgenres": by_sub, "stats": stat_correlations(games),
-                "trends": trends(games), "holdout": temporal_holdout(games), "irr": irr_compute()}
+                "archetypes": archetypes(games), "trends": trends(games), "holdout": temporal_holdout(games), "irr": irr_compute()}
     rub_dir = DOCS_DIR / "rubrics"
     rub_dir.mkdir(exist_ok=True)
     (rub_dir / "all_roguelikes.md").write_text(rubric(scopes["high_conf"], "All roguelikes (high-confidence tags)"))

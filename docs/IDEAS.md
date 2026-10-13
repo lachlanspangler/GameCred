@@ -32,7 +32,7 @@ Score = value ÷ effort (each 1–5). Status: `open` · `doing` · `done` · `pa
 | I-022 | Temporal holdout: train on ≤2021 releases, test on 2022+ → honest predictive accuracy | 5 | 2 | done |
 | I-023 | Trend lines: mechanic prevalence by release year (rising/declining mechanics) | 4 | 1 | done |
 | I-024 | Saturation detector: diminishing returns of a mechanic as genre prevalence rises | 3 | 2 | open |
-| I-025 | Mechanic clusters (archetype discovery) via co-occurrence / NMF → "design archetypes" | 4 | 2 | open |
+| I-025 | Mechanic clusters (archetype discovery) via co-occurrence / NMF → "design archetypes" | 4 | 2 | done (NMF k=12) |
 | I-026 | Separate quality vs commercial models in the Lab ("will it sell" vs "will players love it") | 4 | 1 | done |
 | I-027 | Developer-experience covariate (prior titles count, prior success) to reduce confounding | 5 | 3 | open |
 
@@ -41,7 +41,7 @@ Score = value ÷ effort (each 1–5). Status: `open` · `doing` · `done` · `pa
 |---|---|---|---|---|
 | I-030 | Shareable Lab URLs (state encoded in hash) for pitch decks | 4 | 1 | done |
 | I-031 | "Compare two games" side-by-side fingerprint view | 4 | 2 | done |
-| I-032 | Printable one-page PDF pitch report | 4 | 2 | open |
+| I-032 | Printable one-page PDF pitch report | 4 | 2 | done (print CSS) |
 | I-033 | Trend tab (from I-023) with small multiples per family | 3 | 2 | open |
 | I-034 | Publisher rubric export: per-subgenre "must have x, y, z" checklist (Markdown/PDF) | 5 | 1 | done (Markdown) |
 | I-035 | AI-game rubric mode: score a design doc pasted as text via auto-tagger → Lab | 5 | 2 | done (keyword v1) |
