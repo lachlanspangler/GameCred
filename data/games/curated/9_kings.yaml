@@ -23,9 +23,12 @@ mechanics:
   passive_relics: 2
   short_runs: 2
   early_access_dev: 2
+  adjacency_placement: 3
+  permadeath: 2
 evidence:
   prep_combat_phases: Each year you place cards on a plot grid around your castle, then an invading king attacks and combat auto-resolves.
   character_classes: You choose one of the nine kings, each with its own card set and playstyle.
   item_upgrading: Placing more cards onto a plot levels up the building or unit there.
+  adjacency_placement: Cards placed on the plot grid buff or interact with neighbouring plots, so layout adjacency drives builds.
 confidence: medium
 curator: agent

@@ -17,9 +17,11 @@ mechanics:
   party_building: 2
   random_events: 1
   long_runs: 2
+  ship_base_design: 3
 evidence:
   hybrid_strategy: Players build and expand their ship's modules between FPS planet landings.
   breeding_genetics: Crew are cloned in a lab and alien DNA can be spliced in to change their traits.
   permadeath: Losing the ship or all crew ends the run.
+  ship_base_design: You build out the Genesis ship module by module (labs, hangars, crew quarters), and the layout runs the whole mission.
 confidence: medium
 curator: agent

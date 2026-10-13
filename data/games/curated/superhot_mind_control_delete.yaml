@@ -23,10 +23,12 @@ mechanics:
   weapon_handling: 1
   unlock_items: 2
   waves: 2
+  time_manipulation: 3
 evidence:
   passive_relics: Hacks (e.g. extra heart, bullet ricochet, faster katana) are chosen between levels within a node.
   pick_one_of_n: After each level the player picks one of two offered hacks.
   permadeath: Losing all hearts restarts the current node from scratch, dropping its hacks.
   unlock_characters: Cores (Charge, Hotswitch, Hyperlight, etc.) are unlocked and one is equipped before a node.
+  time_manipulation: Time only moves when you move, turning every real-time firefight into a slow-motion positioning puzzle.
 confidence: medium
 curator: agent

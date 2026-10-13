@@ -1,20 +1,20 @@
 # GameCred rubric — Shooter Roguelite
 
-Sample: 69 games. Hit = Success Index ≥ 70.4; flop ≤ 36.8.
+Sample: 86 games. Hit = Success Index ≥ 70.7; flop ≤ 36.9.
 Associations from observational data; see docs/METHODOLOGY.md.
 
 ## Must have (table stakes)
 Most hits have these, and lacking them raises flop risk.
 
-- **Early Access Development** — Δ +18.2 pts (95% CI +6.6…+28.2, partial +0.1); in 67% of hits; flop ratio 0.60
-- **Procedural Levels** — Δ +7.6 pts (95% CI -3.8…+17.8, partial +0.1); in 61% of hits; flop ratio 0.59
+- **Early Access Development** — Δ +16.9 pts (95% CI +9.2…+24.0, partial +0.1); in 55% of hits; flop ratio 0.45
+- **Weapon Variety** — Δ +3.9 pts (95% CI -6.2…+13.6, partial +0.0); in 55% of hits; flop ratio 0.69
 
 ## Differentiators
 Rare but associated with better outcomes.
 
-- **Distinct Characters / Classes** — Δ +12.5 pts (95% CI +0.2…+25.3, partial +0.1); in 33% of hits; flop ratio 0.66
-- **Item/Card Pool Unlocks** — Δ +20.6 pts (95% CI +10.2…+30.8, partial +0.1); in 33% of hits; flop ratio nan
-- **Online Co-op** — Δ +13.7 pts (95% CI +1.4…+27.3, partial -0.0); in 39% of hits; flop ratio 0.55
+- **Distinct Characters / Classes** — Δ +9.6 pts (95% CI +1.4…+19.5, partial +0.2); in 36% of hits; flop ratio 0.30
+- **Acts / Biomes** — Δ -1.9 pts (95% CI -15.4…+11.3, partial +0.1); in 50% of hits; flop ratio 0.43
+- **Scarce Healing** — Δ +3.8 pts (95% CI -6.4…+14.5, partial +0.1); in 32% of hits; flop ratio nan
 
 ## Positive signals
 
@@ -24,10 +24,9 @@ Rare but associated with better outcomes.
 ## Risk reducers
 Lower flop rate even if the average effect is unclear.
 
-- **Bullet Hell Patterns** — Δ +3.6 pts (95% CI -7.7…+13.9, partial +0.1); in 28% of hits; flop ratio 0.57
-- **Twin-stick Shooting** — Δ +3.0 pts (95% CI -9.1…+14.8, partial +0.1); in 11% of hits; flop ratio 0.56
-- **Acts / Biomes** — Δ +7.6 pts (95% CI -15.3…+29.0, partial +0.1); in 44% of hits; flop ratio 0.30
-- **Weapon Variety** — Δ +10.9 pts (95% CI -0.9…+22.5, partial +0.0); in 44% of hits; flop ratio 0.16
+- **High-variance Loot** — Δ +8.3 pts (95% CI -3.2…+19.0, partial +0.1); in 36% of hits; flop ratio 0.37
+- **Twin-stick Shooting** — Δ +2.4 pts (95% CI -9.1…+13.2, partial +0.1); in 18% of hits; flop ratio 0.52
+- **First-person** — Δ -4.8 pts (95% CI -24.7…+15.3, partial +0.1); in 82% of hits; flop ratio 0.28
 
 ## Red flags
 Associated with worse outcomes in this genre.

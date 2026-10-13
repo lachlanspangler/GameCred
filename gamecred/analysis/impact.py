@@ -46,6 +46,24 @@ def design_matrix(games: list[dict], outcome: str = "gsi", min_conf: float = 0.0
     return Design(keep, mech_ids, X, B, y, strata)
 
 
+def depth_strata(d: Design) -> np.ndarray:
+    """Stratum id = tag source x tag-count tertile (within source).
+
+    Thoroughly documented games are both better known and carry more tags, so comparing a mechanic
+    across games of similar documentation depth removes most of that 'fame' confound.
+    """
+    n_tags = (d.X >= 1).sum(axis=1)
+    out = np.zeros(len(n_tags), dtype=int)
+    for s_ in np.unique(d.strata):
+        m = d.strata == s_
+        if m.sum() < 9:
+            out[m] = s_ * 10
+            continue
+        cuts = np.percentile(n_tags[m], [33.3, 66.7])
+        out[m] = s_ * 10 + np.digitize(n_tags[m], cuts)
+    return out
+
+
 def _bh(p: np.ndarray) -> np.ndarray:
     """Benjamini-Hochberg q-values (NaN-safe)."""
     q = np.full_like(p, np.nan)
@@ -77,7 +95,7 @@ def _mh_ratio(event: np.ndarray, w: np.ndarray, strata: np.ndarray) -> float | N
     return float(num / den) if den > 0 else None
 
 
-def univariate(d: Design, n_boot: int = 1000) -> list[dict]:
+def univariate(d: Design, n_boot: int = 1000, adjust_depth: bool = True) -> list[dict]:
     """With/without effects, stratified by tag source (curated vs auto).
 
     Curated games are disproportionately well-known AND carry richer tags, so a naive comparison
@@ -87,7 +105,8 @@ def univariate(d: Design, n_boot: int = 1000) -> list[dict]:
     y = d.y
     hit_t, flop_t = np.percentile(y, 75), np.percentile(y, 25)
     hit, flop = y >= hit_t, y <= flop_t
-    strata_ids = np.unique(d.strata)
+    strata = depth_strata(d) if adjust_depth else d.strata
+    strata_ids = np.unique(strata)
     rows, pvals = [], []
     for j, mid in enumerate(d.mech_ids):
         w = d.B[:, j] == 1
@@ -95,7 +114,7 @@ def univariate(d: Design, n_boot: int = 1000) -> list[dict]:
         row = {"mechanic": mid, "n_with": n1, "n_without": n0, "prevalence": n1 / len(y) if len(y) else 0}
         cells = []
         for s_ in strata_ids:
-            m = d.strata == s_
+            m = strata == s_
             y1, y0 = y[w & m], y[~w & m]
             if len(y1) >= 2 and len(y0) >= 2:
                 cells.append((y1, y0, len(y1) * len(y0) / (len(y1) + len(y0))))
@@ -125,9 +144,9 @@ def univariate(d: Design, n_boot: int = 1000) -> list[dict]:
                      "median_with": float(np.median(y1a)), "diff": diff, "raw_diff": float(y1a.mean() - y0a.mean()),
                      "ci_lo": float(lo), "ci_hi": float(hi), "cohens_d": float(diff / sp), "p": p,
                      "hit_rate_with": float(hr1), "hit_rate_without": float(hr0),
-                     "hit_lift": _mh_ratio(hit, w, d.strata),
+                     "hit_lift": _mh_ratio(hit, w, strata),
                      "flop_rate_with": float(fr1), "flop_rate_without": float(fr0),
-                     "flop_ratio": _mh_ratio(flop, w, d.strata),
+                     "flop_ratio": _mh_ratio(flop, w, strata),
                      "prev_in_hits": float(d.B[hit, j].mean()) if hit.any() else None,
                      "prev_in_flops": float(d.B[flop, j].mean()) if flop.any() else None,
                      "mean_intensity": float(d.X[w, j].mean())})

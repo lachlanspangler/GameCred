@@ -18,9 +18,13 @@ mechanics:
   unlock_items: 2
   character_classes: 2
   act_structure: 2
+  ship_base_design: 3
+  destructible_subsystems: 3
 evidence:
   node_map: Sectors are graphs of star systems that you jump through toward Earth.
   crafting: Mined and salvaged resources are turned into modules and supplies in the ship workshop.
   hunger_clock: Fuel, food and other supplies must be kept up to survive the trip.
+  ship_base_design: The ship is customised module by module (weapons, reactors, shields, crew rooms) across the whole run.
+  destructible_subsystems: Ship combat targets individual enemy modules such as weapons, shields and reactors; knocking out the right ones first decides fights.
 confidence: medium
 curator: agent

@@ -36,6 +36,9 @@ mechanics:
   enemy_hp_scaling: 2
   content_updates: 3
   steam_deck_friendly: 2
+  minute_spawn_schedule: 2
+  pickup_magnet_economy: 2
+  aim_mode_options: 1
 evidence:
   weapon_evolution: 'Collabs: two specific max-level weapons fuse into a collab weapon; Super Collabs fuse further.'
   gambling: New idols are unlocked through a gacha that spends in-game HoloCoins.

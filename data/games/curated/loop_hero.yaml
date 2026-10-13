@@ -31,11 +31,13 @@ mechanics:
   inventory_management: 1
   speed_controls: 2
   day_night_cycle: 2
+  tile_placement_world: 3
 evidence:
   extraction: Retreating at camp keeps all gathered resources; dying keeps only 30%.
   synergies: Placed tiles combine (e.g. 3x3 rock/mountain into a peak, vampire mansions next to villages).
   auto_battler: The hero walks and fights automatically; the player places tiles and manages gear.
   hub_building: Resources build the persistent camp, which unlocks cards, classes and supplies.
   day_night_cycle: An in-run day counter triggers enemy spawns and card draws each day around the loop.
+  tile_placement_world: You place terrain and building cards around the loop, and that builds the world the hero walks through.
 confidence: high
 curator: agent

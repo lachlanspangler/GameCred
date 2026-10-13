@@ -24,9 +24,11 @@ mechanics:
   pick_one_of_n: 2
   unlock_items: 2
   horde_density: 1
+  spell_programming: 3
 evidence:
   synergies: Wands chain spell and modifier slots in order (Noita-style), so spell combinations define damage output.
   inventory_management: Each wand has a limited number of spell slots; which modifiers to slot is the main tradeoff.
   passive_relics: Relics alter wand and spell rules on top of the spell build.
+  spell_programming: Wands hold ordered slots of spells and modifiers that chain together to produce the cast.
 confidence: medium
 curator: agent

@@ -9,26 +9,26 @@
 
 | mechanic | κ | curated | rater 2 |
 |---|---|---|---|
-| Scarce Healing | -0.01 | 8 | 4 |
-| Permadeath | 0.05 | 28 | 19 |
-| Pick 1 of N Rewards | 0.15 | 13 | 9 |
+| Permadeath | -0.07 | 29 | 19 |
+| Scarce Healing | -0.04 | 9 | 4 |
+| Pick 1 of N Rewards | 0.16 | 19 | 9 |
 | Controller / Deck Friendly | 0.19 | 3 | 4 |
 | Run Timer / Time Pressure | 0.21 | 2 | 5 |
-| Item/Card Pool Unlocks | 0.23 | 13 | 19 |
 | Grid Tactics | 0.27 | 4 | 2 |
-| Consumables | 0.39 | 4 | 8 |
-| Block / Shield / Armor | 0.42 | 4 | 11 |
+| Consumables | 0.32 | 5 | 8 |
+| Item/Card Pool Unlocks | 0.33 | 15 | 19 |
 | Reroll | 0.44 | 6 | 8 |
 | Removal / Thinning | 0.44 | 2 | 6 |
 | Passive Relics / Trinkets | 0.47 | 14 | 16 |
-| Random Events (? nodes) | 0.48 | 12 | 7 |
 | Item/Card Upgrading | 0.49 | 12 | 9 |
-| Elites / Champions | 0.50 | 6 | 10 |
+| Block / Shield / Armor | 0.51 | 5 | 11 |
 | Meta Skill Tree | 0.52 | 3 | 4 |
 | Active Items | 0.52 | 3 | 4 |
 | Optional Challenge Rooms | 0.53 | 5 | 2 |
 | Rarity Tiers | 0.53 | 7 | 11 |
 | Ascension / Heat Ladder | 0.53 | 3 | 7 |
+| In-run Currency | 0.55 | 13 | 20 |
+| Random Events (? nodes) | 0.57 | 13 | 7 |
 
 ## Most reliable
 
@@ -55,32 +55,32 @@
 | game | Jaccard | curated tags | rater-2 tags |
 |---|---|---|---|
 | Despotism 3k | 0.33 | 3 | 9 |
+| Bounty of One | 0.42 | 17 | 17 |
+| Iris and the Giant | 0.42 | 11 | 16 |
 | One Way Heroics | 0.42 | 8 | 19 |
-| Bounty of One | 0.43 | 16 | 17 |
-| Iris and the Giant | 0.44 | 10 | 16 |
+| Jotunnslayer: Hordes of Hel | 0.48 | 20 | 14 |
 | Bad North: Jotunn Edition | 0.50 | 10 | 17 |
-| Jotunnslayer: Hordes of Hel | 0.50 | 19 | 14 |
 | Book of Demons | 0.52 | 16 | 19 |
 | Ratropolis | 0.53 | 13 | 16 |
 | Path of Achra | 0.53 | 9 | 17 |
+| Night of Full Moon | 0.55 | 16 | 18 |
 | LONE RUIN | 0.56 | 14 | 14 |
-| Night of Full Moon | 0.57 | 15 | 18 |
+| Phantom Abyss | 0.57 | 15 | 21 |
 | BPM: BULLETS PER MINUTE | 0.58 | 16 | 22 |
-| Phantom Abyss | 0.59 | 14 | 21 |
-| Astrea: Six-Sided Oracles | 0.59 | 19 | 32 |
-| Backpack Battles | 0.60 | 20 | 28 |
-| Cobalt Core | 0.61 | 25 | 28 |
+| Backpack Battles | 0.59 | 23 | 28 |
+| Halls of Torment | 0.59 | 33 | 26 |
 | Dicey Dungeons | 0.61 | 21 | 24 |
-| Cult of the Lamb | 0.62 | 32 | 31 |
-| Geometry Arena | 0.62 | 15 | 19 |
-| Rogue: Genesia | 0.63 | 28 | 21 |
+| Cobalt Core | 0.62 | 27 | 28 |
+| Hyper Light Breaker | 0.64 | 17 | 19 |
 | Roboquest | 0.64 | 30 | 29 |
-| Halls of Torment | 0.65 | 30 | 26 |
+| Cult of the Lamb | 0.64 | 33 | 31 |
+| Rogue: Genesia | 0.65 | 30 | 21 |
+| Astrea: Six-Sided Oracles | 0.66 | 21 | 32 |
+| Ballionaire | 0.67 | 12 | 13 |
+| Geometry Arena | 0.67 | 16 | 19 |
 | Trials of Fire | 0.68 | 20 | 27 |
 | Dream Quest | 0.68 | 17 | 20 |
-| Hyper Light Breaker | 0.70 | 15 | 19 |
-| Ballionaire | 0.71 | 11 | 13 |
+| Roguebook | 0.70 | 29 | 27 |
+| Banners of Ruin | 0.71 | 21 | 20 |
 | Tower of Guns | 0.71 | 19 | 17 |
-| Roguebook | 0.72 | 28 | 27 |
-| Banners of Ruin | 0.74 | 20 | 20 |
 | Balatro | 0.81 | 39 | 37 |

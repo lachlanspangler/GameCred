@@ -17,6 +17,7 @@ mechanics:
   permadeath: 2
   vehicle_combat: 3
   pick_one_of_n: 3
+  pickup_magnet_economy: 2
 evidence:
   in_run_currency: Scrap dropped by enemies is spent on ship upgrades during a run.
   boss_gates: Bosses drop new weapons when destroyed.

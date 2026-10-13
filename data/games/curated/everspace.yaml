@@ -26,6 +26,7 @@ mechanics:
   boss_gates: 1
   vehicle_combat: 3
   hunger_clock: 1
+  destructible_subsystems: 1
 evidence:
   permanent_stat_upgrades: Credits carried over from each death buy permanent perks in the hangar.
   node_map: Each sector offers a jump map of procedurally generated locations to choose from.

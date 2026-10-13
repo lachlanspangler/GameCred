@@ -23,6 +23,7 @@ mechanics:
   short_runs: 2
   enemy_hp_scaling: 2
   permadeath: 2
+  pickup_magnet_economy: 2
 evidence:
   local_coop: Up to four players on the same screen (or remotely via Remote Play Together).
   passive_relics: 80+ items, many dropped by elites and bosses, change playstyle.

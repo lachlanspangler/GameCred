@@ -22,6 +22,8 @@ mechanics:
   status_effects: 1
   party_building: 2
   vehicle_combat: 2
+  ship_base_design: 1
+  pick_one_of_n: 2
 evidence:
   environmental_hazards: Boarding fights reward knocking enemies overboard, into hazards or into each other.
   character_classes: Pirate crew classes (e.g. gunners, brawlers) recruited by capturing enemy pirates.

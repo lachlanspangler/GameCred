@@ -21,6 +21,7 @@ mechanics:
   endless_mode: 2
   permadeath: 2
   vehicle_combat: 3
+  aim_mode_options: 2
 evidence:
   waves: Enemies arrive in 10-second waves; elites must be destroyed as fast as possible.
   reroll: Time Cubes reroll choices or compress time for multiple upgrades at the Time Cube Shop.

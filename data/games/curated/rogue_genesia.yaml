@@ -34,6 +34,7 @@ mechanics:
   early_access_dev: 1
   content_updates: 2
   unlock_items: 2
+  pickup_magnet_economy: 2
 evidence:
   node_map: Campaign runs move across a branching world map choosing combat, elite, shop and event stages.
   level_up_choices: Level-ups offer Soul Cards (weapons, stat cards) with reroll and banish.

@@ -24,9 +24,11 @@ mechanics:
   shops: 1
   in_run_currency: 1
   dodge_iframes: 1
+  monster_capture: 3
 evidence:
   second_chance: On death you respawn as a weak soldier who must reach an altar to bring the hero back.
   melee_combos: Fighting-game moveset with directional attacks, combos and blocks.
   character_classes: Capture monster souls to play as those enemies, alongside three unlockable heroes.
+  monster_capture: Defeated enemies can be captured as souls and then played as alternate forms.
 confidence: medium
 curator: agent

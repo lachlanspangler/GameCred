@@ -39,10 +39,14 @@ mechanics:
   early_access_dev: 1
   content_updates: 2
   steam_deck_friendly: 2
+  skill_tags: 3
+  minute_spawn_schedule: 2
+  pickup_magnet_economy: 2
 evidence:
   unlock_items: Equipment (rings, amulets, gloves, boots, etc.) found in a run is sent to the Well and becomes available in later runs.
   achievement_unlocks: NPC quests (kill X, reach Y with character Z) unlock new characters, items and blessings.
   permanent_stat_upgrades: Gold buys permanent Blessings that raise base stats between runs.
   passive_relics: Fixed equipment slots hold one item each, forcing slot-by-slot tradeoffs.
+  skill_tags: Abilities carry tags, and traits and blessings scale by tag (projectile, area, summon, elemental).
 confidence: high
 curator: agent

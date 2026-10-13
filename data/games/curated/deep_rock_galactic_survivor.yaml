@@ -35,11 +35,13 @@ mechanics:
   early_access_dev: 1
   content_updates: 2
   steam_deck_friendly: 2
+  pickup_magnet_economy: 3
 evidence:
   procgen_levels: Generated cave maps of destructible rock that the dwarf mines through to path and collect minerals.
   act_structure: Missions are multi-stage descents through cave layers ending in a Dreadnought boss.
   character_classes: Scout, Driller, Engineer and Gunner, each with selectable subclasses and class weapons.
   item_upgrading: Weapons level up during runs and unlock overclock choices at milestone levels.
   ascension_ladder: Hazard levels 1-5 per biome raise difficulty and rewards.
+  pickup_magnet_economy: XP and mined minerals must be physically collected, with pickup radius as an upgradable stat.
 confidence: medium
 curator: agent

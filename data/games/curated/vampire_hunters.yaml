@@ -21,6 +21,7 @@ mechanics:
   synergies: 2
   permadeath: 2
   unlock_items: 2
+  pickup_magnet_economy: 2
 evidence:
   fps: First-person Survivors-like where many guns fire at once around the player's view.
   weapon_evolution: Duplicate weapons merge into higher tiers.

@@ -24,10 +24,12 @@ mechanics:
   turn_escalation: 2
   unlock_items: 2
   healing_scarcity: 2
+  crew_stations: 3
 evidence:
   node_map: Each region is a hex grid of sea tiles; players pick a path to the boss with limited moves.
   local_coop: Two players operate cannons and repair a shared ship; solo play uses a companion.
   vehicle_combat: Players crew a single ship; cannons and repairs on the ship are the combat.
   turn_escalation: The Tempest advances as the ship moves across the region map.
+  crew_stations: Players hop between the ship's cannons and the shield/steering stations to defend the boat together.
 confidence: medium
 curator: agent

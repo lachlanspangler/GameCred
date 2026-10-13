@@ -19,9 +19,11 @@ mechanics:
   long_runs: 3
   enemy_variety: 2
   status_effects: 1
+  ship_base_design: 3
 evidence:
   async_multiplayer: Dungeons can be retired and uploaded so other players can raid them in adventurer mode.
   summons_minions: The keeper attracts and commands minions who dig, craft and fight.
   mod_support: Steam Workshop mods and a moddable data folder.
+  ship_base_design: You dig out and lay out your dungeon keep (workshops, libraries, traps, doors), and that base is the heart of the game.
 confidence: medium
 curator: agent

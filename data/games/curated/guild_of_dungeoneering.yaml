@@ -21,9 +21,11 @@ mechanics:
   high_variance_loot: 2
   pick_one_of_n: 2
   short_runs: 2
+  tile_placement_world: 3
 evidence:
   deck_from_equipment: Gear looted after fights adds its cards to the hero's combat deck.
   hub_building: Gold is spent building guild rooms that unlock new classes and loot.
   pick_one_of_n: After each victory the hero picks one of several gear drops.
+  tile_placement_world: You play room, monster and loot cards to build the dungeon around a hero who walks it on his own.
 confidence: medium
 curator: agent

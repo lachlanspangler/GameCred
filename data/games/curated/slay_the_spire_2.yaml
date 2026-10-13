@@ -36,6 +36,7 @@ mechanics:
   random_events: 3
   double_edged_items: 2
   early_access_dev: 2
+  ascension_ladder: 2
 evidence:
   online_coop: Adds online co-op for up to 4 players working through the Spire together.
   card_mods: Enchantments are permanent modifiers applied to individual cards during a run.

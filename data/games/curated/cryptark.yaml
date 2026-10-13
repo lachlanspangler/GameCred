@@ -20,9 +20,11 @@ mechanics:
   local_coop: 2
   optional_challenges: 2
   unlock_items: 1
+  destructible_subsystems: 3
 evidence:
   loadout_start: Before each hulk you spend the campaign budget on weapons and gear; leftover profit carries forward.
   procgen_levels: Each alien hulk is generated with subsystems (shields, alarms, repair, spawners) around a central core.
   hybrid_strategy: Reading the hulk schematic to pick which subsystems to destroy before going for the core is a planning layer.
+  destructible_subsystems: Each derelict is a network of systems (shields, alarms, repair) that must be disabled in a chosen order before killing the core.
 confidence: medium
 curator: agent

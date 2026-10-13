@@ -19,9 +19,11 @@ mechanics:
   unlock_items: 1
   random_events: 1
   early_access_dev: 1
+  crew_stations: 3
 evidence:
   online_coop: 1-4 players crew a submarine, each manning stations (steering, guns, repairs) in real time.
   vehicle_combat: The submarine is the shared avatar; crew must patch hull breaches and fire turrets.
   procgen_levels: Generated underwater caverns with side caves explored on foot.
+  crew_stations: Co-op crews split duties across the submarine's helm, guns, engine and repairs while diving.
 confidence: medium
 curator: agent

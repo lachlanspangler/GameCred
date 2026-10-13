@@ -23,6 +23,7 @@ mechanics:
   unlock_items: 2
   unlock_characters: 2
   lore_codex: 1
+  pickup_magnet_economy: 2
 evidence:
   weapon_evolution: 20+ weapons and 20+ skills combine into 20+ super weapons.
   skill_tree_meta: Each character has its own coin-funded Talent Tree.

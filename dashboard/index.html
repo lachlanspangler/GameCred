@@ -43,6 +43,7 @@
     <label>Outcome <select id="f-out">
       <option value="gsi">GameCred Success Index</option><option value="q">Player quality (review pct)</option>
       <option value="c">Commercial (revenue pct)</option><option value="k">Critic (score pct)</option><option value="e">Community depth (wiki edits pct)</option></select></label>
+    <label title="Compare games of similar documentation depth (removes the 'famous games get tagged more' confound)" style="flex-direction:row;align-items:center;gap:6px;font-size:12px;color:var(--text-secondary)"><input type="checkbox" id="f-adj" checked> Control for documentation depth</label>
     <details class="weights"><summary>GSI weights</summary>
       <label>Quality <input type="range" id="w-q" min="0" max="100" value="40"><span></span></label>
       <label>Commercial <input type="range" id="w-c" min="0" max="100" value="45"><span></span></label>

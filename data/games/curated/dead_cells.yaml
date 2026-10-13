@@ -66,6 +66,7 @@ mechanics:
   steam_deck_friendly: 2
   traversal_unlocks: 2
   parry_counter: 1
+  skill_tags: 2
 evidence:
   hybrid_metroidvania: Permanent runes (vine, teleport, spider) unlock new branching biome paths across runs.
   build_archetypes: Scrolls of Power raise Brutality/Tactics/Survival; gear colour determines which stat scales it.

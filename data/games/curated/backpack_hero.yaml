@@ -36,11 +36,13 @@ mechanics:
   narrative_across_runs: 2
   early_access_dev: 1
   deck_from_equipment: 3
+  adjacency_placement: 3
 evidence:
   inventory_management: Items occupy shaped tiles in the backpack; adjacency drives effects.
   level_up_choices: Leveling up grants new backpack spaces to place.
   hub_building: Haversack Hill town is rebuilt with resources brought back from runs.
   cursed_items: Curses enter the pack and occupy space with negative effects.
   deck_from_equipment: The items placed in your backpack are your combat actions each turn.
+  adjacency_placement: Item effects depend on what is adjacent to them in the backpack grid.
 confidence: medium
 curator: agent

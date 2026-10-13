@@ -16,6 +16,7 @@ mechanics:
   unlock_items: 2
   high_variance_loot: 1
   score_target_rounds: 3
+  adjacency_placement: 1
 evidence:
   physics_simulation: Balls drop through a pachinko board of triggers placed by the player.
   multiplicative_scaling: Trigger combos chain multipliers to reach escalating score targets.

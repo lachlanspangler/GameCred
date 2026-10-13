@@ -23,9 +23,11 @@ mechanics:
   synergies: 1
   act_structure: 2
   boss_gates: 2
+  time_manipulation: 3
 evidence:
   shops: Between floors the bar sells drinks that act as run-long passive modifiers.
   healing_scarcity: Hotline Miami-style one-hit deaths for the player.
   weapon_handling: No reloads; empty guns are thrown and new ones looted from enemies.
+  time_manipulation: Focus is a meter of slow-motion that you spend to clear rooms; it is the core combat resource.
 confidence: medium
 curator: agent

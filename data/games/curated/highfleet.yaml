@@ -18,10 +18,13 @@ mechanics:
   weapon_handling: 1
   healing_scarcity: 2
   multiple_endings: 1
+  ship_base_design: 3
+  destructible_subsystems: 2
 evidence:
   hunger_clock: Fuel is the core strategic constraint; running dry strands the fleet on the map.
   stealth: Radar emissions, signals intelligence and visual range let fleets avoid or ambush strike groups.
   permadeath: Losing the flagship Sevastopol ends the campaign.
   party_building: Ships are bought, captured or custom-designed and grouped into a fleet with limited repairs.
+  ship_base_design: Ships are designed module by module in the shipyard; the fleet's designs carry through the whole campaign.
 confidence: medium
 curator: agent

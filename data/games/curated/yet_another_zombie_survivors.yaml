@@ -18,6 +18,7 @@ mechanics:
   permadeath: 2
   early_access_dev: 1
   party_building: 2
+  pickup_magnet_economy: 2
 evidence:
   auto_attack: Characters aim and shoot on their own; you control a lone soldier or a whole mercenary squad.
   ascension_ladder: Raise the virus' strength to make the horde stronger, then prestige to ascend.

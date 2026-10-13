@@ -44,6 +44,7 @@ mechanics:
   speedrun_support: 1
   weapon_handling: 2
   weapon_stance_swap: 1
+  pickup_magnet_economy: 2
 evidence:
   level_up_choices: Radiation (Rads) levels up the mutant; each level offers a choice of 4 Mutations.
   endless_mode: Beating the Throne enables Loop mode with escalating enemy power.

@@ -20,6 +20,7 @@ mechanics:
   permadeath: 2
   enemy_hp_scaling: 1
   summons_minions: 3
+  pickup_magnet_economy: 2
 evidence:
   auto_attack: The necromancer does not attack directly; bones from slain enemies raise minions that fight automatically.
   character_classes: A large roster of Boneraisers each changes minion types and playstyle.

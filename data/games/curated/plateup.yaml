@@ -31,11 +31,14 @@ mechanics:
   permadeath: 2
   synergies: 2
   content_updates: 2
+  automation_logistics: 3
+  ship_base_design: 2
 evidence:
   prep_combat_phases: Service runs during the day; at night the clock stops so you can rearrange the kitchen and buy blueprints.
   double_edged_items: At set days you must choose between two cards that add customers, dishes or modifiers, raising both income and difficulty.
   turn_escalation: Customer volume rises each day toward the day-15 win condition, then continues in overtime.
   reroll: The blueprint cabinet offer can be rerolled for coins at a rising cost.
   hybrid_city_builder: Building the restaurant layout and automating it with conveyors and grabbers is the main skill.
+  automation_logistics: Conveyors, grabbers and automated appliances move food through the kitchen without the player touching it.
 confidence: high
 curator: agent

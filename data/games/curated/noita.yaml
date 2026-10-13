@@ -46,6 +46,7 @@ mechanics:
   early_access_dev: 2
   content_updates: 1
   traversal_tools: 2
+  spell_programming: 3
 evidence:
   physics_simulation: Every pixel is simulated - liquids flow, fire spreads, gases explode, terrain is destructible.
   crafting: Wands are built by arranging spells in slots; spell order, modifiers and triggers define behaviour.
@@ -53,5 +54,6 @@ evidence:
   pick_one_of_n: Holy Mountain offers a choice of perks after each level.
   double_edged_items: Perks like Glass Cannon and potions like polymorphine trade power for risk.
   traversal_tools: Levitation is a constant movement resource; digging and teleport wands reshape routes.
+  spell_programming: Wands fire their spell slots in order, and modifiers and multicasts change the result (the core building system).
 confidence: high
 curator: agent

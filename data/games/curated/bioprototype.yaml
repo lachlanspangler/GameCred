@@ -20,9 +20,11 @@ mechanics:
   character_classes: 2
   short_runs: 2
   permadeath: 2
+  adjacency_placement: 3
 evidence:
   inventory_management: The prototype is built by attaching organs to a body layout; organ placement determines how effects connect.
   synergies: Player-defined skill trigger logic links organs into chains (e.g. Bullet Master, Flesh Army, Virus Master builds).
   character_classes: 24 characters with different skills.
+  adjacency_placement: Organs are placed on a body grid and connect to adjacent organs to chain effects.
 confidence: medium
 curator: agent

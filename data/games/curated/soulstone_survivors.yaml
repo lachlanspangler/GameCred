@@ -35,10 +35,13 @@ mechanics:
   content_updates: 2
   steam_deck_friendly: 2
   ascension_ladder: 2
+  skill_tags: 3
+  pickup_magnet_economy: 1
 evidence:
   synergies: Skills carry damage/delivery tags (fire, frost, lightning, projectile, area) that tag-specific upgrades scale.
   attack_patterns: Bosses and elites use large telegraphed area attacks that must be dodged.
   permanent_stat_upgrades: Extensive meta-progression spends run currencies on permanent stat and skill unlocks.
   character_classes: Many hero classes with distinct starting skills and weapon types.
+  skill_tags: Every skill carries tags such as Fire, Projectile or Area, and many upgrades and runes scale all skills sharing a tag.
 confidence: medium
 curator: agent

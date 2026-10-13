@@ -33,6 +33,7 @@ mechanics:
   weapon_durability: 3
   stealth: 2
   item_identification: 1
+  destructible_subsystems: 1
 evidence:
   inventory_management: The robot is built from salvaged parts in limited slots; parts break and are constantly swapped.
   healing_scarcity: Core integrity is barely repairable; survival means replacing destroyed parts.

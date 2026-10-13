@@ -26,6 +26,7 @@ mechanics:
   weapon_handling: 2
   status_effects: 1
   enemy_hp_scaling: 2
+  pickup_magnet_economy: 2
 evidence:
   time_pressure: Survive a 10-minute timer until dawn as enemy waves intensify.
   weapon_handling: Manual aim and reloading guns set it apart from auto-attack survivors games.

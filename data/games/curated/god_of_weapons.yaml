@@ -28,9 +28,11 @@ mechanics:
   unlock_items: 2
   passive_relics: 2
   time_pressure: 2
+  adjacency_placement: 3
 evidence:
   inventory_management: Weapons and items are placed into a shaped backpack grid; space and placement constrain the build.
   waves: Brotato-style timed waves with a shop between each.
   item_upgrading: Duplicate weapons merge into higher tiers.
+  adjacency_placement: Weapons sit in a backpack grid; matching adjacent weapon types gives set and adjacency bonuses.
 confidence: medium
 curator: agent

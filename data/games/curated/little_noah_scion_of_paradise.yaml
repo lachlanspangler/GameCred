@@ -17,6 +17,7 @@ mechanics:
   permanent_stat_upgrades: 2
   unlock_items: 2
   platforming: 1
+  permadeath: 2
 evidence:
   melee_combos: Your attack combo is built from up to several familiars, each performing one hit of the chain.
   talent_slots: Familiar combo slots get filled and swapped with familiars found during the run.

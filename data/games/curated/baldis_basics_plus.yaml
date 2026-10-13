@@ -20,10 +20,12 @@ mechanics:
   optional_challenges: 1
   early_access_dev: 3
   content_updates: 2
+  unkillable_pursuer: 3
 evidence:
   procgen_levels: Each floor of the school is procedurally generated per run.
   in_run_currency: YTPs collected on floors are spent at Johnny's store in the elevator between floors.
   random_events: Floors roll random events such as floods, fog or gravity chaos.
   stealth: Avoiding Baldi and other roaming NPCs, using sound-based alerts, is the core loop.
+  unkillable_pursuer: Baldi cannot be killed and continuously hunts the player, who must evade him while collecting notebooks.
 confidence: medium
 curator: agent

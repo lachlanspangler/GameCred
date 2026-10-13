@@ -22,6 +22,7 @@ mechanics:
   status_effects: 2
   mod_support: 2
   summons_minions: 1
+  monster_capture: 2
 evidence:
   character_classes: Job system lets the character switch between a dozen jobs and mix learned abilities.
   hub_building: Riverstone Camp provides a bank, garden and monster corral that persist between characters.

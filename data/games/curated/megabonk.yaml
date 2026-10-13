@@ -39,6 +39,7 @@ mechanics:
   leaderboards: 2
   steam_deck_friendly: 1
   traversal_tools: 2
+  pickup_magnet_economy: 2
 evidence:
   platforming: 3D movement with jumping, sliding and bunny-hopping is central to kiting hordes.
   item_stacking: Chest items stack additively RoR2-style alongside weapon and tome level-ups.

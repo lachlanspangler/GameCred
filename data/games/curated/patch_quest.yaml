@@ -16,9 +16,11 @@ mechanics:
   boss_gates: 2
   lore_codex: 2
   attack_patterns: 2
+  monster_capture: 3
 evidence:
   procgen_levels: The island map is built from handmade patches shuffled into a new arrangement every run.
   hybrid_metroidvania: Lassoing and riding monsters gives traversal abilities (swim, dig, jump) that open new paths.
   lore_codex: A monster journal records the creatures you have tamed and studied.
+  monster_capture: You lasso monsters, then ride them and use their abilities; capturing is the main way to fight and get around.
 confidence: medium
 curator: agent

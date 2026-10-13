@@ -19,11 +19,13 @@ mechanics:
   double_edged_items: 1
   early_access_dev: 3
   traversal_tools: 3
+  unkillable_pursuer: 3
 evidence:
   async_multiplayer: Ghosts of every previous player's attempt in the same temple replay alongside you.
   permadeath: Each generated temple can only be attempted once per player and is retired once someone claims its relic.
   push_your_luck: Exits between tiers let you leave with a lesser relic or push deeper for a better one.
   loadout_start: Choose a whip (each with different perks) before entering a temple.
   traversal_tools: Whip grapple and wall movement drive moment-to-moment traversal through trapped temples.
+  unkillable_pursuer: Each temple has an unkillable Guardian that hunts you as you go deeper.
 confidence: medium
 curator: agent

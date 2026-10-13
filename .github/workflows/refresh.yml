@@ -1,0 +1,28 @@
+# Weekly self-healing refresh: fetch fresh Steam/SteamSpy data, rebuild, heal, test, commit.
+# Requires: Settings → Actions → General → Workflow permissions: "Read and write".
+# Optional secret GAMALYTIC_API_KEY enables Gamalytic revenue.
+name: Weekly data refresh
+on:
+  schedule: [{ cron: "0 6 * * 1" }]
+  workflow_dispatch:
+permissions: { contents: write }
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/cache@v4
+        with: { path: data/raw, key: "raw-${{ github.run_id }}", restore-keys: "raw-" }
+      - run: python -m venv .venv && .venv/bin/pip install -q -r requirements.txt
+      - run: .venv/bin/python -m gamecred fetch
+        env: { GAMALYTIC_API_KEY: "${{ secrets.GAMALYTIC_API_KEY }}" }
+      - run: .venv/bin/python -m gamecred wikis
+      - run: bash scripts/loop.sh
+      - run: |
+          git config user.name "gamecred-bot"
+          git config user.email "gamecred-bot@users.noreply.github.com"
+          git add -A data/processed dashboard/data.js docs
+          git diff --cached --quiet || git commit -m "Weekly data refresh $(date +%F)" && git push

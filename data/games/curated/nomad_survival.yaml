@@ -25,6 +25,7 @@ mechanics:
   boss_gates: 2
   permanent_stat_upgrades: 2
   permadeath: 2
+  pickup_magnet_economy: 1
 evidence:
   weapon_evolution: Each character's Weapon Skill branches into Weapon Skill Evolutions.
   loadout_start: Heritages modify the run (e.g. Nomad adds a reroll, Poxbringer converts damage to damage-over-time).

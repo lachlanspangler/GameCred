@@ -66,7 +66,7 @@ function hover(el, fn) {
 }
 
 // ---------- state & slicing ----------
-const state = { sub: "", year: 0, rev: 0, conf: 0, out: "gsi", w: { q: 40, c: 45, k: 15, e: 0 }, view: "overview" };
+const state = { sub: "", year: 0, rev: 0, conf: 0, out: "gsi", w: { q: 40, c: 45, k: 15, e: 0 }, adjust: true, view: "overview" };
 const OUT_LABEL = { gsi: "Success Index", q: "Quality pct", c: "Commercial pct", k: "Critic pct", e: "Community pct" };
 
 function outcome(g) {
@@ -105,7 +105,7 @@ function ridgeScope() {
 /** Live with/without analysis on the current slice (Welch CI). Ridge partial effects come from the nearest precomputed scope. */
 let _cache = null;
 function impact() {
-  const key = JSON.stringify([state.sub, state.year, state.rev, state.conf, state.out, state.w]);
+  const key = JSON.stringify([state.sub, state.year, state.rev, state.conf, state.out, state.w, state.adjust]);
   if (_cache && _cache.key === key) return _cache.val;
   const rows = slice();
   const ys = rows.map(r => r.y).sort((a, b) => a - b);
@@ -113,14 +113,25 @@ function impact() {
   const scope = ridgeScope();
   const rc = new Map(((scope && scope.ridge && scope.ridge.coefs) || []).map(c => [c.feature, c]));
   const out = [];
-  const strataKeys = ["curated", "auto"];
+  // Strata: tag source x (optionally) documentation-depth tertile. Curated and well-documented games are both
+  // better known and more richly tagged, so comparisons are made within comparable games (see Method).
+  const strataOf = new Map();
+  for (const src of ["curated", "auto"]) {
+    const grp = rows.filter(r => (r.g.src === "curated") === (src === "curated"));
+    const counts = grp.map(r => Object.values(r.g.m).filter(v => v[1] / 10 >= state.conf - 1e-9).length).sort((a, b) => a - b);
+    const c1 = quantile(counts, 1 / 3), c2 = quantile(counts, 2 / 3);
+    for (const r of grp) {
+      const n = Object.values(r.g.m).filter(v => v[1] / 10 >= state.conf - 1e-9).length;
+      strataOf.set(r, state.adjust && grp.length >= 9 ? `${src}${n < c1 ? 0 : n < c2 ? 1 : 2}` : src);
+    }
+  }
+  const strataKeys = [...new Set(strataOf.values())];
   for (const mid of Object.keys(MECH)) {
-    // Stratify by tag source: curated games are both better-known and more richly tagged (see Method).
-    const cell = { curated: [[], []], auto: [[], []] };
-    const ev = { curated: { h: [0, 0], f: [0, 0] }, auto: { h: [0, 0], f: [0, 0] } };
+    const cell = {}, ev = {};
+    for (const k of strataKeys) { cell[k] = [[], []]; ev[k] = { h: [0, 0], f: [0, 0] }; }
     let n1 = 0, n0 = 0, hw = 0, intenSum = 0; const all1 = [], all0 = [];
     for (const r of rows) {
-      const sk = r.g.src === "curated" ? "curated" : "auto", k = has(r.g, mid) ? 0 : 1;
+      const sk = strataOf.get(r), k = has(r.g, mid) ? 0 : 1;
       cell[sk][k].push(r.y); (k ? all0 : all1).push(r.y);
       if (r.y >= hitT) ev[sk].h[k]++; if (r.y <= flopT) ev[sk].f[k]++;
       if (!k) { n1++; intenSum += r.g.m[mid][0]; if (r.y >= hitT) hw++; } else n0++;
@@ -446,7 +457,7 @@ function viewOverview() {
   const curated = im.slice.filter(r => r.g.src === "curated").length;
   const rev = im.slice.reduce((a, r) => a + (r.g.rev || 0), 0);
   const ok = im.rows.filter(r => r.verdict !== "insufficient data");
-  const top = [...ok.filter(r => !r.mid.startsWith("hybrid_"))].sort((a, b) => (b.ridge ?? b.diff) - (a.ridge ?? a.diff));
+  const top = [...ok.filter(r => !r.mid.startsWith("hybrid_"))].sort((a, b) => b.diff - a.diff);
   const subs = HYBRIDS.map(hy => { const v = im.slice.filter(r => r.g.sg === hy).map(r => r.y).sort((a, b) => a - b); return { hy, n: v.length, med: quantile(v, 0.5) }; }).filter(x => x.n > 0).sort((a, b) => b.n - a.n);
   const comp = (im.scope && im.scope.complexity) || [];
   const counts = {}; for (const r of ok) counts[r.verdict] = (counts[r.verdict] || 0) + 1;
@@ -458,10 +469,23 @@ function viewOverview() {
       tile("Estimated gross revenue covered", fmt.usd(rev), "Boxleiter review-multiplier method"),
       tile("Hit threshold (top 25%)", fmt.f1(im.hitT), `${OUT_LABEL[state.out]} ≥ this = hit · flop ≤ ${fmt.f1(im.flopT)}`),
       tile("Mechanic verdicts", `${counts["table stakes"] || 0} · ${counts["differentiator"] || 0} · ${counts["red flag"] || 0}`, "table stakes · differentiators · red flags")),
+    (() => {
+      const pick = v => ok.filter(r => r.verdict === v && !r.mid.startsWith("hybrid_")).sort((a, b) => (b.diff ?? 0) - (a.diff ?? 0));
+      const col = (title, v, cls, ico, blurb, lim = 8) => { const L = v === "red flag" ? pick(v).reverse() : pick(v);
+        return h("div", {}, h("div", { style: "margin-bottom:6px;font-weight:600" }, chip(v), " ", title), h("div", { class: "muted", style: "font-size:12px;margin-bottom:6px" }, blurb),
+          L.length ? h("ul", { class: "list-tight" }, L.slice(0, lim).map(r => h("li", {}, h("a", { href: "#", onclick: e => { e.preventDefault(); openMechanic(r.mid); } }, mname(r.mid)),
+            h("span", { class: "muted" }, ` ${fmt.d1(r.diff)} · in ${fmt.pct(r.prevHits)} of hits`)))) : h("div", { class: "muted" }, "none at this sample size")); };
+      return h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, `What ${state.sub ? mname(state.sub) : "a roguelike"} needs — evidence from ${im.n} games`),
+        h("div", { class: "grid g3" },
+          col("Must have (table stakes)", "table stakes", "good", "●", "Most hits have these; lacking them raises flop risk."),
+          col("Differentiators", "differentiator", "warning", "◆", "Uncommon, but strongly associated with success."),
+          col("Red flags", "red flag", "critical", "▲", "Associated with weaker outcomes here.")),
+        h("div", { class: "muted", style: "margin-top:8px;font-size:12px" }, "Δ = Success Index points vs games without, stratified by tag source. Associations, not guarantees — see Method."));
+    })(),
     h("div", { class: "grid g21", style: "margin-top:16px" },
       h("div", { class: "card" }, h("h3", {}, "Which mechanics move the needle"),
-        h("div", { class: "muted", style: "margin-bottom:8px" }, `Partial effect on ${OUT_LABEL[state.out]} (points) holding other mechanics, subgenre, price & year constant. Bar = estimate, whisker = 95% bootstrap CI. Click for detail.`),
-        hbars([...top.slice(0, 12), ...top.slice(-6)].map(r => ({ label: mname(r.mid), value: r.ridge ?? r.diff, lo: r.ridge != null ? r.rlo : r.lo, hi: r.ridge != null ? r.rhi : r.hi, sub: `${r.verdict} · prevalence ${fmt.pct(r.prev)}`, onclick: () => openMechanic(r.mid) })),
+        h("div", { class: "muted", style: "margin-bottom:8px" }, `Δ ${OUT_LABEL[state.out]} (points) for games with vs without the mechanic, compared within the same tag source${state.adjust ? " and documentation depth" : ""}. Bar = estimate, whisker = 95% CI. Click for the multivariate (ridge) estimate and detail.`),
+        hbars([...top.slice(0, 12), ...top.slice(-6)].map(r => ({ label: mname(r.mid), value: r.diff, lo: r.lo, hi: r.hi, sub: `${r.verdict} · prevalence ${fmt.pct(r.prev)}`, onclick: () => openMechanic(r.mid) })),
           { diverging: true, fmtv: fmt.d1, width: 760, labelW: 210 })),
       h("div", { class: "grid", style: "align-content:start" },
         h("div", { class: "card" }, h("h3", {}, `${OUT_LABEL[state.out]} distribution`), histogram(ys, { xlabel: OUT_LABEL[state.out], width: 460, height: 190 })),
@@ -799,6 +823,7 @@ document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click
 const subSel = $("#f-sub");
 subSel.append(h("option", { value: "" }, "All subgenres"), ...HYBRIDS.map(hy => h("option", { value: hy }, `${mname(hy)} (${GAMES.filter(g => g.sg === hy).length})`)));
 const bind = (id, key, num) => $(id).addEventListener("change", e => { state[key] = num ? +e.target.value : e.target.value; render(); });
+$("#f-adj").addEventListener("change", e => { state.adjust = e.target.checked; render(); });
 bind("#f-sub", "sub"); bind("#f-year", "year", 1); bind("#f-rev", "rev", 1); bind("#f-conf", "conf", 1); bind("#f-out", "out");
 for (const k of ["q", "c", "k", "e"]) {
   const inp = $("#w-" + k), lab2 = inp.nextElementSibling; lab2.textContent = inp.value;
