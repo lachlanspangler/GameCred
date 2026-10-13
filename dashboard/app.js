@@ -285,6 +285,29 @@ function effectScatter(rows, { width = 720, height = 380, onclick } = {}) {
   return svg;
 }
 
+function designScatter(rows, { width = 900, height = 400 } = {}) {
+  const pad = { l: 44, r: 16, t: 12, b: 36 }, W = width - pad.l - pad.r, H = height - pad.t - pad.b;
+  const X = v => pad.l + (v / 100) * W, Y = v => pad.t + H - (v / 100) * H;
+  const svg = s("svg", { class: "svgchart", style: `max-width:${width}px`, viewBox: `0 0 ${width} ${height}`, role: "img", "aria-label": "Design score vs actual" });
+  for (const t of [0, 25, 50, 75, 100]) {
+    svg.append(s("line", { class: "gridline", x1: pad.l, x2: pad.l + W, y1: Y(t), y2: Y(t) }), s("text", { x: pad.l - 6, y: Y(t) + 4, "text-anchor": "end" }, t));
+    svg.append(s("text", { x: X(t), y: height - 16, "text-anchor": "middle" }, t));
+  }
+  svg.append(s("line", { x1: X(0), y1: Y(0), x2: X(100), y2: Y(100), stroke: "var(--axis)", "stroke-width": 1 }));
+  svg.append(s("text", { x: pad.l + W, y: height - 2, "text-anchor": "end" }, "design score (predicted) →"));
+  svg.append(s("text", { x: pad.l + 4, y: pad.t + 10 }, "↑ actual Success Index"));
+  const lab = new Set([...rows].sort((a, b) => Math.abs(b.g.gsi - b.g.ds) - Math.abs(a.g.gsi - a.g.ds)).slice(0, 6).map(r => r.g.id));
+  for (const r of rows) {
+    const cx = X(Math.max(0, Math.min(100, r.g.ds))), cy = Y(r.g.gsi), cur = r.g.src === "curated";
+    svg.append(s("circle", { cx, cy, r: cur ? 4.5 : 3, fill: cur ? "var(--series-1)" : "var(--axis)", opacity: cur ? 0.95 : 0.6, stroke: "var(--surface-1)", "stroke-width": cur ? 1.5 : 0.5 }));
+    if (lab.has(r.g.id) && cur) svg.append(s("text", { class: "lbl", x: cx + 7, y: cy + 4 }, r.g.n));
+    const hit = s("circle", { class: "hit", cx, cy, r: 9 });
+    hover(hit, () => [r.g.n, `actual ${fmt.f1(r.g.gsi)} · design ${fmt.f1(r.g.ds)}`, [`${fmt.d1(r.g.gsi - r.g.ds)} vs design`, cur ? "curated" : "auto-tagged"]]);
+    hit.addEventListener("click", () => openGame(r.g.id)); svg.append(hit);
+  }
+  return h("div", {}, h("div", { class: "legend" }, h("span", {}, h("i", { style: "background:var(--series-1);border-radius:50%" }), "curated"), h("span", {}, h("i", { style: "background:var(--axis);border-radius:50%" }), "auto-tagged")), svg);
+}
+
 function lineChart(points, { width = 560, height = 200, xlabel = "", ylabel = "" } = {}) {
   const pad = { l: 40, r: 16, t: 12, b: 32 }, W = width - pad.l - pad.r, H = height - pad.t - pad.b;
   const xs = points.map(p => p.x), ys = points.map(p => p.y);
@@ -436,6 +459,10 @@ function openGame(id) {
       tile("Steam reviews", fmt.pct(g.pr), `${fmt.n(g.rv)} reviews · ${g.rd || ""}`),
       tile("Est. gross revenue", fmt.usd(g.rev), g.rev ? `band ${fmt.usd(g.revlo)}–${fmt.usd(g.revhi)}` : (g.f ? "free-to-play" : "")),
       tile("Critic", g.mc ? `MC ${g.mc}` : g.ign ? `IGN ${g.ign}` : "–", [g.mc ? `Metacritic ${g.mc}` : "", g.ign ? `IGN ${g.ign}` : ""].filter(Boolean).join(" · "))),
+    g.ds != null ? h("div", { class: "card tight", style: "margin-top:12px" }, h("div", { class: "row", style: "justify-content:space-between" },
+      h("div", {}, h("div", { class: "tile-label" }, "Design score (predicted from mechanics alone)"), h("div", { class: "tile-value" }, fmt.f1(g.ds))),
+      h("div", { style: "text-align:right" }, h("div", { class: "tile-label" }, "Actual vs design"), h("div", { class: "tile-value" }, fmt.d1(g.gsi - g.ds)),
+        h("div", { class: "tile-note" }, g.gsi - g.ds > 15 ? "over-performer: execution/marketing beat the design baseline" : g.gsi - g.ds < -15 ? "under-performer: design promised more than it delivered" : "performed about as its design predicts")))) : null,
     g.wa ? h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, "Wiki footprint"),
       h("div", { class: "row" }, h("span", { class: "chip" }, `${fmt.n(g.wa)} articles`), h("span", { class: "chip" }, `${fmt.n(g.we)} edits`),
         h("span", { class: "chip" }, `community pct ${fmt.f1(g.e)}`), Object.entries(g.wc || {}).filter(([, v]) => v > 0).map(([k, v]) => h("span", { class: "chip" }, `wiki ${k.replace(/_/g, " ")}: ${v}`)))) : null,
@@ -511,6 +538,9 @@ function viewOverview() {
         h("div", { class: "card" }, h("h3", {}, `${OUT_LABEL[state.out]} distribution`), histogram(ys, { xlabel: OUT_LABEL[state.out], width: 460, height: 190 })),
         comp.length > 2 ? h("div", { class: "card" }, h("h3", {}, "Complexity curve"), h("div", { class: "muted" }, "Mean Success Index by number of mechanics tagged (precomputed scope)"),
           lineChart(comp.map(c => ({ x: c.lo, xl: `${c.lo}–${c.hi === 200 ? "+" : c.hi - 1}`, y: c.mean, n: c.n })), { width: 460, height: 190, xlabel: "# mechanics" })) : null)),
+    h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, "Design score vs actual outcome"),
+      h("div", { class: "muted" }, "Each dot is a game. x = Success Index predicted from its mechanics alone (model never saw the game), y = actual. Above the diagonal = beat its design; below = under-delivered. Click a dot."),
+      designScatter(im.slice.filter(r => r.g.ds != null), { width: 1100, height: 420 })),
     h("div", { class: "grid g2", style: "margin-top:16px" },
       h("div", { class: "card" }, h("h3", {}, "Games per subgenre"), hbars(subs.map(x => ({ label: mname(x.hy), value: x.n, onclick: () => { $("#f-sub").value = x.hy; $("#f-sub").dispatchEvent(new Event("change")); } })), { fmtv: fmt.n, width: 600 })),
       h("div", { class: "card" }, h("h3", {}, `Median ${OUT_LABEL[state.out]} per subgenre`), hbars(subs.filter(x => x.n >= 5).map(x => ({ label: mname(x.hy), value: x.med, sub: `n=${x.n}` })), { fmtv: fmt.f1, width: 600, max: 100 }))));
@@ -566,7 +596,7 @@ function viewGames() {
   const im = impact(), el = $("#view-games");
   const q = (el.dataset.q || "").toLowerCase();
   const rows = im.slice.filter(r => !q || r.g.n.toLowerCase().includes(q) || (r.g.dev || "").toLowerCase().includes(q))
-    .map(r => ({ id: r.g.id, n: r.g.n, dev: r.g.dev, y: r.g.y, sg: mname(r.g.sg), rv: r.g.rv, pr: r.g.pr, rev: r.g.rev, crit: r.g.mc || (r.g.ign ? r.g.ign * 10 : null), out: r.y, nm: Object.keys(r.g.m).length, src: r.g.src }));
+    .map(r => ({ id: r.g.id, n: r.g.n, dev: r.g.dev, y: r.g.y, sg: mname(r.g.sg), rv: r.g.rv, pr: r.g.pr, rev: r.g.rev, crit: r.g.mc || (r.g.ign ? r.g.ign * 10 : null), out: r.y, ds: r.g.ds, gap: r.g.ds != null && r.g.gsi != null ? r.g.gsi - r.g.ds : null, nm: Object.keys(r.g.m).length, src: r.g.src }));
   const search = h("input", { class: "search", placeholder: "Search games or developers…", value: el.dataset.q || "", style: "width:320px",
     oninput: e => { el.dataset.q = e.target.value; clearTimeout(el._t); el._t = setTimeout(() => { viewGames(); const s2 = el.querySelector(".search"); s2.focus(); s2.setSelectionRange(s2.value.length, s2.value.length); }, 200); } });
   put(el, h("h2", {}, "Game explorer"), h("p", { class: "sub" }, "Every game in the slice with its outcomes. Click a game for its mechanic fingerprint, design comps, and to load it into the Design Lab."),
@@ -577,6 +607,8 @@ function viewGames() {
         { key: "pr", label: "Positive", num: true, render: r => fmt.pct(r.pr) }, { key: "rev", label: "Est. revenue", num: true, render: r => fmt.usd(r.rev) },
         { key: "crit", label: "Critic", num: true, render: r => r.crit ? Math.round(r.crit) : "–" },
         { key: "out", label: OUT_LABEL[state.out], num: true, render: r => fmt.f1(r.out) },
+        { key: "ds", label: "Design score", num: true, render: r => fmt.f1(r.ds), title: "Success Index predicted from mechanics alone (out-of-fold)" },
+        { key: "gap", label: "Over/under", num: true, render: r => r.gap == null ? "–" : fmt.d1(r.gap), title: "Actual − design score: execution, marketing, timing" },
         { key: "nm", label: "# mech", num: true }, { key: "src", label: "Tags", render: r => r.src === "curated" ? "curated" : "auto" },
       ], rows, { onRow: r => openGame(r.id), initialSort: ["out", -1], limit: 400 })));
 }

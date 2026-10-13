@@ -1,17 +1,17 @@
 # GameCred rubric — Strategy Roguelite
 
-Sample: 202 games. Hit = Success Index ≥ 58.4; flop ≤ 28.4.
+Sample: 226 games. Hit = Success Index ≥ 58.3; flop ≤ 28.7.
 Associations from observational data; see docs/METHODOLOGY.md.
 
 ## Must have (table stakes)
 Most hits have these, and lacking them raises flop risk.
 
-- none at current sample size
+- **Distinct Characters / Classes** — Δ +1.4 pts (95% CI -4.0…+7.1, partial +0.6); in 51% of hits; flop ratio 0.62
 
 ## Differentiators
 Rare but associated with better outcomes.
 
-- none at current sample size
+- **Wave Survival** — Δ +4.6 pts (95% CI -1.5…+10.5, partial +2.7); in 25% of hits; flop ratio 0.95
 
 ## Positive signals
 
@@ -21,20 +21,17 @@ Rare but associated with better outcomes.
 ## Risk reducers
 Lower flop rate even if the average effect is unclear.
 
-- **Status Effects** — Δ +6.9 pts (95% CI -1.0…+14.3, partial +0.7); in 27% of hits; flop ratio nan
-- **Hunger / Supply Clock** — Δ +6.1 pts (95% CI -2.0…+13.7, partial +0.4); in 18% of hits; flop ratio 0.43
-- **Distinct Characters / Classes** — Δ +1.1 pts (95% CI -4.9…+6.5, partial +0.1); in 49% of hits; flop ratio 0.67
-- **Random Events (? nodes)** — Δ +0.4 pts (95% CI -9.1…+9.5, partial -0.0); in 24% of hits; flop ratio nan
-- **Item/Card Pool Unlocks** — Δ +0.2 pts (95% CI -6.9…+7.5, partial -0.0); in 29% of hits; flop ratio 0.39
-- **Online Co-op** — Δ +1.5 pts (95% CI -5.4…+8.5, partial -0.1); in 18% of hits; flop ratio 0.57
-- **In-run Currency** — Δ +0.3 pts (95% CI -6.5…+7.7, partial -0.1); in 33% of hits; flop ratio nan
-- **Party / Roster Building** — Δ +0.0 pts (95% CI -5.3…+5.5, partial -0.4); in 39% of hits; flop ratio 0.51
-- **Unlockable Characters** — Δ -8.2 pts (95% CI -16.0…+0.5, partial -0.6); in 20% of hits; flop ratio nan
+- **Status Effects** — Δ +6.4 pts (95% CI -1.5…+14.7, partial +1.8); in 25% of hits; flop ratio nan
+- **Hunger / Supply Clock** — Δ +6.9 pts (95% CI -0.5…+14.4, partial +1.5); in 16% of hits; flop ratio nan
+- **Environmental Interaction** — Δ +4.3 pts (95% CI -2.5…+11.9, partial +1.2); in 14% of hits; flop ratio nan
+- **Item/Card Pool Unlocks** — Δ +3.2 pts (95% CI -2.9…+9.2, partial +1.0); in 33% of hits; flop ratio nan
+- **In-run Currency** — Δ +3.6 pts (95% CI -3.1…+10.2, partial +0.4); in 32% of hits; flop ratio nan
+- **Passive Relics / Trinkets** — Δ +4.3 pts (95% CI -3.7…+12.5, partial -1.0); in 12% of hits; flop ratio nan
+- **Unlockable Characters** — Δ -6.1 pts (95% CI -13.9…+1.5, partial -1.6); in 21% of hits; flop ratio nan
 
 ## Red flags
 Associated with worse outcomes in this genre.
 
-- **Acts / Biomes** — Δ -7.3 pts (95% CI -17.1…+2.7, partial -1.0); in 22% of hits; flop ratio 1.45
-- **Consumables** — Δ -7.1 pts (95% CI -14.4…+0.1, partial -1.1); in 12% of hits; flop ratio nan
-- **Turn-based** — Δ -3.5 pts (95% CI -9.0…+1.7, partial -1.4); in 49% of hits; flop ratio 0.96
-- **Pattern / Hand Scoring** — Δ -6.0 pts (95% CI -11.3…-0.8, partial -1.6); in 10% of hits; flop ratio 1.10
+- **Consumables** — Δ -5.0 pts (95% CI -11.4…+1.0, partial -2.5); in 12% of hits; flop ratio nan
+- **Acts / Biomes** — Δ -5.8 pts (95% CI -14.5…+2.7, partial -2.5); in 19% of hits; flop ratio nan
+- **Vehicle / Ship Avatar** — Δ -8.9 pts (95% CI -15.6…-2.1, partial -4.0); in 11% of hits; flop ratio 1.40

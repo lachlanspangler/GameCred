@@ -32,7 +32,7 @@ def _slim_game(g: dict) -> dict:
         "tags": g["steam_tags"][:12], "st": g["stats"], "ev": g["evidence"],
         # mechanics: id -> [intensity, confidence*10]
         "m": {k: [v["intensity"], int(round(v["confidence"] * 10))] for k, v in g["mechanics"].items()},
-        "img": g["header"], "e": g.get("community_pct"), "wa": g.get("wiki_articles"), "we": g.get("wiki_edits"),
+        "img": g["header"], "ds": g.get("design_score"), "e": g.get("community_pct"), "wa": g.get("wiki_articles"), "we": g.get("wiki_edits"),
         "wc": g.get("wiki_content") or {},
     }
 
@@ -51,8 +51,16 @@ def export() -> dict:
         sub = [g for g in games if g["subgenre"] == h]
         if len(sub) >= MIN_SUBGENRE_N:
             by_sub[h] = run_scope(sub, with_synergy=False)
+    # Design score: out-of-fold prediction from mechanics + covariates (all-roguelike model).
+    oof = (scopes["all"].get("ridge") or {}).pop("oof", {})
+    for sc in list(scopes.values()) + list(by_sub.values()):
+        (sc.get("ridge") or {}).pop("oof", None)
+    for g in games:
+        g["design_score"] = round(oof[g["appid"]], 2) if g["appid"] in oof else None
     for metric in ("quality_pct", "commercial_pct"):
         scopes[f"all:{metric}"] = run_scope(games, outcome=metric, with_synergy=False)
+    for sc in list(scopes.values()):
+        (sc.get("ridge") or {}).pop("oof", None)
     analysis = {"scopes": scopes, "subgenres": by_sub, "stats": stat_correlations(games),
                 "trends": trends(games), "holdout": temporal_holdout(games), "irr": irr_compute()}
     rub_dir = DOCS_DIR / "rubrics"

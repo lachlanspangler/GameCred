@@ -2,6 +2,22 @@
 
 Newest entries first. Automated doctor/loop lines are appended to **Automated log** at the bottom.
 
+## 2026-10-13 — Night: calibration, depth confound, design score
+**Changed:**
+- Taxonomy v3 (169).
+- Baseline-checklist sweep (+113 tags) and v3 retag (+83).
+- Auto-tagger calibrated on 318 curated games: 32 rules suppressed; "Perma Death" tag-name bug fixed.
+- Documentation-depth stratification, with a dashboard toggle.
+- Out-of-fold **design score** per game and a design-vs-actual scatter.
+- Compare-two-games view, generated TEXTBOOK.md, GitHub Actions (Pages + weekly refresh).
+
+**Learned:**
+1. **A second confound inside curated data.** Raters tag famous games more thoroughly, so every mechanic looked like a +20 differentiator. Stratifying by tag-count tertile shrinks the top effects to about +13.
+2. **Checklists predict the floor, not the ceiling.** The biggest over-performers vs their design score are genre-definers (FTL 95 vs 42, Into the Breach, Isaac, Brotato). The biggest under-performers tick the boxes and flop (Lone Ruin 7 vs 66, Loot River). Publisher pitch: GameCred de-risks the downside (missing table stakes, red flags); it doesn't manufacture hits.
+3. SteamSpy's tag vocabulary predates "Survivors-like" / "Bullet Heaven", so survivors-likes are now inferred from auto-attack + horde mechanics.
+
+**Next:** finish the fetch (steam_app is the bottleneck), round-3 curation of the uncurated top games, full rebuild.
+
 ## 2026-10-13 — Day 0 (evening): v2 taxonomy, confound fixes, reliability
 **Changed:**
 - Taxonomy v2 (155 mechanics, from ~40 curator proposals).

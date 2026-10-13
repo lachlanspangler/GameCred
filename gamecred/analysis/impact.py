@@ -207,6 +207,19 @@ def ridge(d: Design, n_boot: int = 200, min_prev: float = 0.03) -> dict:
         if rmse < best[1]:
             best = (lam, rmse)
     lam = best[0]
+    # Out-of-fold predictions: each game's "design score" comes from a model that never saw it.
+    # Fame proxies are neutralised at prediction time: average documentation depth, treated as fully tagged.
+    Zp = Z.copy()
+    allnames = [d.mech_ids[j] for j in use] + cnames
+    if "tag_depth_z" in allnames:
+        Zp[:, allnames.index("tag_depth_z")] = 0.0
+    if "curated_profile" in allnames:
+        Zp[:, allnames.index("curated_profile")] = 1.0
+    oof = np.empty(n)
+    for k in range(5):
+        tr, te = folds != k, folds == k
+        b0k, bk = _ridge_fit(Z[tr], d.y[tr], lam, penalize)
+        oof[te] = b0k + Zp[te] @ bk
     b0, beta = _ridge_fit(Z, d.y, lam, penalize)
     boots = np.empty((n_boot, Z.shape[1]))
     for i in range(n_boot):
@@ -221,6 +234,7 @@ def ridge(d: Design, n_boot: int = 200, min_prev: float = 0.03) -> dict:
     coefs = [{"feature": nm, "coef": float(c), "ci_lo": float(a), "ci_hi": float(bb), "is_mechanic": i < len(use)}
              for i, (nm, c, a, bb) in enumerate(zip(names, beta, lo, hi))]
     return {"lambda": lam, "cv": cv, "cv_rmse": best[1], "baseline_rmse": baseline_rmse,
+            "oof": {int(g["appid"]): float(v) for g, v in zip(d.games, oof)},
             "r2_in_sample": float(1 - ss_res / ss_tot) if ss_tot else None, "intercept": b0,
             "features": names, "means": Z.mean(axis=0).tolist(), "coefs": coefs, "n": n}
 

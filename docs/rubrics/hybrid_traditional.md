@@ -1,6 +1,6 @@
 # GameCred rubric — Traditional Roguelike
 
-Sample: 47 games. Hit = Success Index ≥ 70.7; flop ≤ 33.1.
+Sample: 63 games. Hit = Success Index ≥ 68.5; flop ≤ 34.5.
 Associations from observational data; see docs/METHODOLOGY.md.
 
 ## Must have (table stakes)
@@ -21,7 +21,7 @@ Rare but associated with better outcomes.
 ## Risk reducers
 Lower flop rate even if the average effect is unclear.
 
-- none at current sample size
+- **Crafting** — Δ +10.8 pts (95% CI +0.1…+20.2, partial +0.2); in 38% of hits; flop ratio 0.29
 
 ## Red flags
 Associated with worse outcomes in this genre.
