@@ -1,0 +1,35 @@
+appid: 2179850
+name: "Cobalt Core"
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  turn_based: 2
+  energy_mana: 2
+  card_draw: 2
+  node_map: 2
+  enemy_intents: 3
+  lanes_ranks: 2
+  vehicle_combat: 3
+  party_building: 2
+  character_classes: 2
+  unlock_characters: 2
+  loadout_start: 2
+  passive_relics: 2
+  item_upgrading: 2
+  block_shield: 2
+  status_effects: 2
+  summons_minions: 2
+  narrative_across_runs: 3
+  ascension_ladder: 1
+  pick_one_of_n: 2
+  deck_thinning: 1
+  act_structure: 2
+  boss_gates: 2
+  random_events: 1
+  short_runs: 1
+  achievement_unlocks: 1
+  synergies: 2
+  perfect_information: 1
+confidence: high
+curator: irr

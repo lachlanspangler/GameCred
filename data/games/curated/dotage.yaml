@@ -1,0 +1,23 @@
+appid: 638510
+name: dotAGE
+developer: Michele Pirovano
+release_year: 2023
+subgenre: hybrid_city_builder
+mechanics:
+  hybrid_city_builder: 3
+  hybrid_strategy: 2
+  hybrid_survival: 1
+  turn_based: 3
+  hunger_clock: 2
+  turn_escalation: 3
+  enemy_intents: 2
+  random_events: 2
+  permadeath: 2
+  long_runs: 3
+  unlock_items: 2
+evidence:
+  enemy_intents: Upcoming Dooms (disasters) are shown on a calendar ahead of time, so you can plan for them.
+  turn_escalation: Dooms grow harsher as days pass; the village must survive until the end date.
+  hunger_clock: Villagers (Pips) eat food every day, so food production drives the economy.
+confidence: medium
+curator: agent

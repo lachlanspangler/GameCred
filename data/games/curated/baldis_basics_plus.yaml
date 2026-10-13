@@ -1,0 +1,29 @@
+appid: 1275890
+name: Baldi's Basics Plus
+developer: Basically Games
+release_year: 2020
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  procgen_levels: 3
+  permadeath: 3
+  act_structure: 2
+  shops: 2
+  in_run_currency: 2
+  consumables: 3
+  inventory_management: 2
+  stealth: 2
+  random_events: 2
+  endless_mode: 2
+  short_runs: 2
+  optional_challenges: 1
+  early_access_dev: 3
+  content_updates: 2
+evidence:
+  procgen_levels: Each floor of the school is procedurally generated per run.
+  in_run_currency: YTPs collected on floors are spent at Johnny's store in the elevator between floors.
+  random_events: Floors roll random events such as floods, fog or gravity chaos.
+  stealth: Avoiding Baldi and other roaming NPCs, using sound-based alerts, is the core loop.
+confidence: medium
+curator: agent

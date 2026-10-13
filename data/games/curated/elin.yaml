@@ -1,0 +1,28 @@
+appid: 2135150
+name: Elin
+developer: Lafrontier
+release_year: 2024
+subgenre: hybrid_traditional
+mechanics:
+  hybrid_traditional: 3
+  turn_based: 3
+  procgen_levels: 2
+  hunger_clock: 2
+  crafting: 3
+  hub_building: 3
+  life_sim_hub: 3
+  party_building: 2
+  npc_relationships: 2
+  character_classes: 2
+  status_effects: 2
+  consumables: 2
+  item_rarity: 2
+  mod_support: 2
+  early_access_dev: 3
+  mid_run_save: 1
+evidence:
+  procgen_levels: Nefia dungeons scattered across the fixed overworld are generated and can be dived for loot.
+  life_sim_hub: Claimable land for homesteading, farming and running a town alongside dungeon crawling.
+  crafting: Large crafting and building system covering furniture, gear, food and structures.
+confidence: medium
+curator: agent

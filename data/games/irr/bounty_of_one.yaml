@@ -1,0 +1,24 @@
+appid: 1968730
+name: "Bounty of One"
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  horde_density: 3
+  level_up_choices: 3
+  reroll: 1
+  character_classes: 2
+  unlock_characters: 2
+  permanent_stat_upgrades: 2
+  time_pressure: 2
+  boss_gates: 2
+  elites: 1
+  weapons_variety: 1
+  in_run_currency: 1
+  flat_stat_scaling: 2
+  synergies: 1
+  dodge_iframes: 1
+  short_runs: 2
+  real_time_action: 2
+confidence: low
+curator: irr

@@ -1,0 +1,32 @@
+appid: 2124120
+name: SULFUR
+developer: Perfect Random
+release_year: 2024
+subgenre: hybrid_shooter
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  permadeath: 2
+  extraction: 2
+  inventory_management: 3
+  card_mods: 2
+  crafting: 1
+  procgen_levels: 3
+  weapons_variety: 3
+  weapon_durability: 2
+  weapon_handling: 1
+  shops: 2
+  in_run_currency: 2
+  healing_scarcity: 2
+  consumables: 2
+  act_structure: 2
+  early_access_dev: 3
+  high_variance_loot: 2
+evidence:
+  inventory_management: Tetris-style grid inventory for guns, attachments, food and loot.
+  card_mods: Oils and attachments permanently modify individual guns (damage type, fire rate, spread).
+  extraction: Loot brought back to the Church hub stash is kept; dying drops everything carried.
+  weapon_durability: Guns degrade with use and must be repaired or replaced.
+confidence: medium
+curator: agent

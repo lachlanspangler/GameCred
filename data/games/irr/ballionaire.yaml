@@ -1,0 +1,20 @@
+appid: 2667120
+name: "Ballionaire"
+subgenre: hybrid_puzzle
+mechanics:
+  hybrid_puzzle: 3
+  score_target_rounds: 3
+  physics_simulation: 2
+  pick_one_of_n: 3
+  reroll: 2
+  passive_relics: 2
+  multiplicative_scaling: 2
+  synergies: 3
+  build_archetypes: 2
+  unlock_items: 2
+  short_runs: 2
+  item_rarity: 1
+  permadeath: 1
+  turn_based: 1
+confidence: medium
+curator: irr

@@ -1,0 +1,25 @@
+appid: 1108370
+name: "Ratropolis"
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  hybrid_strategy: 2
+  hybrid_city_builder: 2
+  deckbuilding: 3
+  waves: 3
+  in_run_currency: 3
+  interest_economy: 2
+  summons_minions: 2
+  character_classes: 2
+  unlock_characters: 2
+  passive_relics: 2
+  card_draw: 2
+  prep_combat_phases: 2
+  pick_one_of_n: 2
+  boss_gates: 2
+  ascension_ladder: 2
+  deck_thinning: 1
+  item_upgrading: 1
+  unlock_items: 1
+confidence: medium
+curator: irr

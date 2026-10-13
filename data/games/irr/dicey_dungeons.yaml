@@ -1,0 +1,31 @@
+appid: 861540
+name: "Dicey Dungeons"
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  dice: 3
+  dice_manipulation: 3
+  turn_based: 3
+  deck_from_equipment: 2
+  inventory_management: 2
+  character_classes: 3
+  unlock_characters: 2
+  flat_stat_scaling: 1
+  item_upgrading: 2
+  shops: 2
+  in_run_currency: 2
+  consumables: 1
+  block_shield: 2
+  status_effects: 2
+  enemy_intents: 1
+  reroll: 1
+  card_draw: 1
+  act_structure: 1
+  boss_gates: 2
+  short_runs: 3
+  mod_support: 1
+  content_updates: 1
+  permadeath: 1
+  optional_challenges: 1
+confidence: high
+curator: irr

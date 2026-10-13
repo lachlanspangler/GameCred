@@ -1,0 +1,26 @@
+appid: 1835240
+name: Spiritfall
+developer: Gentle Giant
+release_year: 2024
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  melee_combos: 3
+  platforming: 2
+  talent_slots: 3
+  pick_one_of_n: 3
+  room_based_floors: 3
+  boss_gates: 3
+  permadeath: 3
+  permanent_stat_upgrades: 2
+  weapons_variety: 2
+  dodge_iframes: 2
+  synergies: 2
+  early_access_dev: 1
+evidence:
+  melee_combos: 'Platform-fighter controls: directional light/heavy attacks, juggles and air combos.'
+  talent_slots: Spirit blessings attach to specific moves, Hades-style.
+  early_access_dev: Early Access 2023, full release February 2024.
+confidence: medium
+curator: agent

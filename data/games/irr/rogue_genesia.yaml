@@ -1,0 +1,28 @@
+appid: 2067920
+name: "Rogue: Genesia"
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  horde_density: 3
+  level_up_choices: 3
+  node_map: 2
+  reroll: 2
+  banish_skip: 2
+  character_classes: 2
+  unlock_characters: 2
+  permanent_stat_upgrades: 2
+  unlock_items: 2
+  weapons_variety: 2
+  synergies: 2
+  build_archetypes: 2
+  item_rarity: 2
+  shops: 1
+  in_run_currency: 1
+  boss_gates: 2
+  elites: 2
+  early_access_dev: 2
+  act_structure: 1
+  real_time_action: 2
+confidence: low
+curator: irr

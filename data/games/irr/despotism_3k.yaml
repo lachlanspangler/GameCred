@@ -1,0 +1,17 @@
+appid: 699920
+name: "Despotism 3k"
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  hybrid_city_builder: 2
+  breeding_genetics: 1
+  random_events: 2
+  time_pressure: 2
+  permadeath: 2
+  short_runs: 2
+  unlock_items: 1
+  pick_one_of_n: 1
+  hunger_clock: 2
+  waves: 1
+confidence: low
+curator: irr

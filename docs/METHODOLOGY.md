@@ -40,7 +40,7 @@ For each mechanic *m* in a scope (all / high-confidence / curated / per-subgenre
   - *neutral:* otherwise
   - *insufficient data:* n < 10 on either side
 - **Synergy:** `(m11 − m10) − (m01 − m00)` over the 2×2 cells of a mechanic pair (each cell ≥ 8 games), ranked by |z|. Exploratory, with no multiple-comparison correction.
-- **Family depth:** Spearman ρ between the number of significant (≥ 2) mechanics a game has in a family and its GSI.
+- **Family depth:** partial Spearman ρ between the number of significant (≥ 2) mechanics a game has in a family and its GSI, controlling for the game's total tag count (curated games only).
 
 ## 5. Design Lab
 - **Prediction** = ridge intercept + Σ coefficients × features. It uses the subgenre's own model when that subgenre has n ≥ 40, otherwise the all-roguelike model with subgenre as a covariate. The ± band is the CV RMSE. P(hit)/P(flop) assume normal residuals with that RMSE.

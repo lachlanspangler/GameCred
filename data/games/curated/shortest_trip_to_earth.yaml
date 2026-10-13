@@ -1,0 +1,26 @@
+appid: 812040
+name: Shortest Trip to Earth
+developer: Interactive Fate
+release_year: 2019
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  vehicle_combat: 3
+  node_map: 3
+  random_events: 3
+  hunger_clock: 2
+  permadeath: 3
+  party_building: 2
+  shops: 2
+  in_run_currency: 2
+  crafting: 2
+  procgen_levels: 2
+  unlock_items: 2
+  character_classes: 2
+  act_structure: 2
+evidence:
+  node_map: Sectors are graphs of star systems that you jump through toward Earth.
+  crafting: Mined and salvaged resources are turned into modules and supplies in the ship workshop.
+  hunger_clock: Fuel, food and other supplies must be kept up to survive the trip.
+confidence: medium
+curator: agent

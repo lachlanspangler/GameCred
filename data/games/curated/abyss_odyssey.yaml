@@ -1,0 +1,32 @@
+appid: 255070
+name: Abyss Odyssey
+developer: ACE Team
+release_year: 2014
+subgenre: hybrid_action_roguelite
+critic:
+  metacritic: 69
+stats:
+  playable_characters: 3
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  melee_combos: 3
+  platforming: 2
+  procgen_levels: 3
+  permadeath: 2
+  second_chance: 2
+  character_classes: 2
+  unlock_characters: 2
+  local_coop: 2
+  online_coop: 2
+  pvp: 1
+  boss_gates: 2
+  shops: 1
+  in_run_currency: 1
+  dodge_iframes: 1
+evidence:
+  second_chance: On death you respawn as a weak soldier who must reach an altar to bring the hero back.
+  melee_combos: Fighting-game moveset with directional attacks, combos and blocks.
+  character_classes: Capture monster souls to play as those enemies, alongside three unlockable heroes.
+confidence: medium
+curator: agent

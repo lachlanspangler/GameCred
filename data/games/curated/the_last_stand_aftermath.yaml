@@ -1,0 +1,33 @@
+appid: 1266840
+name: 'The Last Stand: Aftermath'
+developer: Con Artist Games
+release_year: 2021
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_shooter: 2
+  hybrid_survival: 1
+  real_time_action: 3
+  twin_stick: 3
+  permadeath: 3
+  legacy_inheritance: 2
+  permanent_stat_upgrades: 2
+  weapon_durability: 3
+  crafting: 3
+  inventory_management: 2
+  hunger_clock: 2
+  double_edged_items: 2
+  stealth: 2
+  horde_density: 2
+  procgen_levels: 2
+  node_map: 2
+  act_structure: 2
+  weapons_variety: 2
+  consumables: 2
+evidence:
+  legacy_inheritance: Each volunteer is infected and will die; the next survivor picks up the Colony's shared progress and can find the last one's gear.
+  hunger_clock: Infection rises over time and with damage, and fuel limits how far you can drive between regions.
+  double_edged_items: As infection progresses, mutations give bonuses along with drawbacks.
+  weapon_durability: Melee weapons wear out and break, so you keep scavenging and crafting replacements.
+confidence: medium
+curator: agent

@@ -1,0 +1,39 @@
+appid: 2273430
+name: BlazBlue Entropy Effect
+developer: 91Act
+release_year: 2024
+subgenre: hybrid_action_roguelite
+critic:
+  metacritic: 83
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  melee_combos: 3
+  dodge_iframes: 2
+  platforming: 1
+  character_classes: 3
+  unlock_characters: 2
+  room_based_floors: 3
+  act_structure: 2
+  boss_gates: 3
+  permadeath: 2
+  pick_one_of_n: 3
+  synergies: 2
+  build_archetypes: 2
+  talent_slots: 2
+  skill_tree_meta: 2
+  permanent_stat_upgrades: 1
+  unlock_items: 1
+  shops: 2
+  in_run_currency: 2
+  status_effects: 2
+  attack_patterns: 2
+  multi_phase_bosses: 2
+  early_access_dev: 2
+  content_updates: 2
+evidence:
+  melee_combos: Fighting-game-derived combo strings, launchers and cancels per BlazBlue character.
+  talent_slots: Legacy system lets you slot another characters skills into your kit during a run.
+  skill_tree_meta: Persistent upgrade trees between runs strengthen characters and unlock options.
+confidence: medium
+curator: agent

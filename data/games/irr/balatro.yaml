@@ -1,0 +1,44 @@
+appid: 2379780
+name: "Balatro"
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  poker_hands: 3
+  score_target_rounds: 3
+  multiplicative_scaling: 3
+  passive_relics: 3
+  consumables: 2
+  shops: 3
+  reroll: 2
+  interest_economy: 3
+  in_run_currency: 2
+  card_mods: 2
+  deck_thinning: 2
+  deckbuilding: 2
+  card_draw: 1
+  synergies: 3
+  build_archetypes: 3
+  item_rarity: 2
+  ascension_ladder: 2
+  unlock_items: 2
+  achievement_unlocks: 1
+  loadout_start: 2
+  endless_mode: 2
+  seeded_runs: 2
+  boss_gates: 2
+  banish_skip: 2
+  double_edged_items: 2
+  gambling: 2
+  act_structure: 1
+  turn_based: 2
+  lore_codex: 1
+  run_history: 1
+  speed_controls: 1
+  steam_deck_friendly: 1
+  content_updates: 2
+  permadeath: 1
+  mid_run_save: 1
+  tutorialized_unlocks: 1
+  short_runs: 1
+confidence: high
+curator: irr

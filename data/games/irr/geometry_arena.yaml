@@ -1,0 +1,27 @@
+appid: 1255650
+name: "Geometry Arena"
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_shooter: 2
+  twin_stick: 3
+  bullet_hell: 2
+  horde_density: 2
+  waves: 2
+  level_up_choices: 3
+  pick_one_of_n: 2
+  reroll: 1
+  synergies: 2
+  build_archetypes: 2
+  skill_tree_meta: 2
+  permanent_stat_upgrades: 2
+  character_classes: 1
+  unlock_items: 1
+  boss_gates: 2
+  elites: 1
+  short_runs: 2
+  multiplicative_scaling: 1
+  item_rarity: 1
+  real_time_action: 3
+confidence: low
+curator: irr

@@ -1,0 +1,26 @@
+appid: 496300
+name: 'Kingdom: New Lands'
+developer: Noio
+release_year: 2016
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  hybrid_city_builder: 2
+  day_night_cycle: 3
+  waves: 2
+  in_run_currency: 3
+  procgen_levels: 2
+  act_structure: 2
+  permadeath: 2
+  party_building: 2
+  long_runs: 2
+  mid_run_save: 2
+  unlock_items: 1
+  turn_escalation: 1
+evidence:
+  day_night_cycle: Days are for building and recruiting; each night the Greed attack your walls, with blood moons escalating.
+  in_run_currency: 'Coins are the single resource: dropped to recruit vagrants, build walls, buy tools.'
+  act_structure: Sail between a chain of islands; each must be fortified enough to repair the boat and escape.
+  permadeath: Losing the crown to the Greed ends the reign.
+confidence: medium
+curator: agent

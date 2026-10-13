@@ -1,0 +1,38 @@
+appid: 1188930
+name: Chrono Ark
+developer: Al Fine
+release_year: 2024
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  turn_based: 3
+  party_building: 3
+  character_classes: 3
+  unlock_characters: 2
+  card_draw: 2
+  energy_mana: 2
+  enemy_intents: 3
+  status_effects: 3
+  passive_relics: 2
+  consumables: 2
+  procgen_levels: 2
+  act_structure: 3
+  boss_gates: 3
+  multiple_endings: 2
+  random_events: 2
+  shops: 1
+  item_upgrading: 2
+  healing_scarcity: 2
+  permadeath: 3
+  mod_support: 2
+  early_access_dev: 1
+  narrative_across_runs: 1
+  synergies: 2
+  build_archetypes: 2
+evidence:
+  party_building: Pick a team of investigators; each one adds their own skills to the shared deck.
+  enemy_intents: Enemy skills show their target and the turn they will go off, so you can plan around them.
+  mod_support: Steam Workshop hosts many custom character mods.
+confidence: medium
+curator: agent

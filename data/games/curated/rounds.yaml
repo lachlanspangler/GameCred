@@ -1,0 +1,30 @@
+appid: 1557740
+name: ROUNDS
+developer: Landfall
+release_year: 2021
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_shooter: 2
+  real_time_action: 3
+  pvp: 3
+  pick_one_of_n: 3
+  synergies: 3
+  item_stacking: 3
+  multiplicative_scaling: 3
+  double_edged_items: 3
+  build_archetypes: 2
+  platforming: 2
+  block_shield: 2
+  weapon_handling: 1
+  short_runs: 3
+  high_variance_loot: 2
+  rng_mitigation: 1
+evidence:
+  pick_one_of_n: The loser of each round picks one of five cards that permanently modify their gun.
+  double_edged_items: Most cards pair a buff with a penalty (e.g. more damage but slower reload/ammo).
+  item_stacking: Duplicate cards stack, producing extreme builds like dozens of bouncing bullets.
+  rng_mitigation: Only the round loser drafts a card, a built-in catch-up mechanic.
+  pvp: 1v1 (up to 4-player) local and online duels; there is no PvE mode.
+confidence: medium
+curator: agent

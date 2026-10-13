@@ -52,4 +52,5 @@ Score = value ÷ effort (each 1–5). Status: `open` · `doing` · `done` · `pa
 |---|---|---|---|---|
 | I-040 | GitHub Action: weekly `make fetch all`, commit data + diary line | 4 | 2 | open |
 | I-041 | Doctor: flag taxonomy steam_tags not present in any game's Steam tags (dead rules) | 3 | 1 | open |
-| I-042 | Inter-rater check: second agent independently re-tags 20 games; report agreement (Cohen's κ) per mechanic | 5 | 2 | open |
+| I-042 | Inter-rater check: second agent independently re-tags 20 games; report agreement (Cohen's κ) per mechanic | 5 | 2 | done — κ=0.72 on 30 games; docs/IRR.md |
+| I-043 | Baseline-checklist sweep: re-check the 13 most-forgotten mechanics across all curated profiles | 4 | 2 | open |

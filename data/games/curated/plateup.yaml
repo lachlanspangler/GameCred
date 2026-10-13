@@ -1,0 +1,41 @@
+appid: 1599600
+name: PlateUp!
+developer: It's happening
+release_year: 2022
+subgenre: hybrid_strategy
+wiki: https://plateup.fandom.com/wiki/PlateUp!_Wiki
+stats:
+  run_length_min: 75
+mechanics:
+  hybrid_strategy: 3
+  hybrid_city_builder: 2
+  hybrid_puzzle: 1
+  online_coop: 3
+  local_coop: 2
+  real_time_action: 2
+  prep_combat_phases: 3
+  day_night_cycle: 3
+  time_pressure: 2
+  turn_escalation: 2
+  pick_one_of_n: 3
+  double_edged_items: 3
+  shops: 2
+  in_run_currency: 2
+  reroll: 2
+  loadout_start: 2
+  unlock_items: 2
+  hub_building: 2
+  seeded_runs: 2
+  endless_mode: 2
+  mid_run_save: 2
+  permadeath: 2
+  synergies: 2
+  content_updates: 2
+evidence:
+  prep_combat_phases: Service runs during the day; at night the clock stops so you can rearrange the kitchen and buy blueprints.
+  double_edged_items: At set days you must choose between two cards that add customers, dishes or modifiers, raising both income and difficulty.
+  turn_escalation: Customer volume rises each day toward the day-15 win condition, then continues in overtime.
+  reroll: The blueprint cabinet offer can be rerolled for coins at a rising cost.
+  hybrid_city_builder: Building the restaurant layout and automating it with conveyors and grabbers is the main skill.
+confidence: high
+curator: agent

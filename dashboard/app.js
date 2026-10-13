@@ -202,7 +202,7 @@ function histogram(values, { width = 560, height = 200, bins = 20, lo = 0, hi = 
   const counts = new Array(bins).fill(0), bw = (hi - lo) / bins;
   for (const v of values) counts[Math.min(bins - 1, Math.max(0, Math.floor((v - lo) / bw)))]++;
   const ymax = Math.max(1, ...counts), ticks = niceTicks(0, ymax, 4);
-  const svg = s("svg", { class: "svgchart", viewBox: `0 0 ${width} ${height}`, role: "img", "aria-label": `Histogram of ${xlabel}` });
+  const svg = s("svg", { class: "svgchart", style: `max-width:${width}px`, viewBox: `0 0 ${width} ${height}`, role: "img", "aria-label": `Histogram of ${xlabel}` });
   for (const t of ticks) {
     const y = pad.t + H - (t / ticks[ticks.length - 1]) * H;
     svg.append(s("line", { class: "gridline", x1: pad.l, x2: pad.l + W, y1: y, y2: y }), s("text", { x: pad.l - 6, y: y + 4, "text-anchor": "end" }, fmt.n(t)));
@@ -225,7 +225,7 @@ function histogram(values, { width = 560, height = 200, bins = 20, lo = 0, hi = 
 function hbars(items, { width = 560, rowH = 26, max = null, fmtv = fmt.f1, color = "var(--series-1)", labelW = 190, diverging = false } = {}) {
   const pad = { l: labelW, r: 56, t: 4, b: 4 }, W = width - pad.l - pad.r, height = pad.t + pad.b + items.length * rowH;
   const vals = items.flatMap(i => [i.value, i.lo, i.hi]).filter(v => v != null), mx = max ?? Math.max(1e-9, ...vals.map(Math.abs));
-  const svg = s("svg", { class: "svgchart", viewBox: `0 0 ${width} ${height}` });
+  const svg = s("svg", { class: "svgchart", style: `max-width:${width}px`, viewBox: `0 0 ${width} ${height}` });
   const x0 = diverging ? pad.l + W / 2 : pad.l, scale = diverging ? (W / 2) / mx : W / mx;
   if (diverging) svg.append(s("line", { class: "axisline", x1: x0, x2: x0, y1: 0, y2: height }));
   items.forEach((it, i) => {
@@ -254,7 +254,7 @@ function effectScatter(rows, { width = 720, height = 380, onclick } = {}) {
   const pts = rows.filter(r => r.diff != null && r.verdict !== "insufficient data");
   const ymax = Math.max(5, ...pts.map(r => Math.abs(r.diff))) * 1.08;
   const X = p => pad.l + p * W, Y = v => pad.t + H / 2 - (v / ymax) * (H / 2);
-  const svg = s("svg", { class: "svgchart", viewBox: `0 0 ${width} ${height}`, role: "img", "aria-label": "Mechanic prevalence vs outcome difference" });
+  const svg = s("svg", { class: "svgchart", style: `max-width:${width}px`, viewBox: `0 0 ${width} ${height}`, role: "img", "aria-label": "Mechanic prevalence vs outcome difference" });
   for (const t of niceTicks(-ymax, ymax, 6)) svg.append(s("line", { class: "gridline", x1: pad.l, x2: pad.l + W, y1: Y(t), y2: Y(t) }), s("text", { x: pad.l - 6, y: Y(t) + 4, "text-anchor": "end" }, fmt.d1(t)));
   svg.append(s("line", { class: "axisline", x1: pad.l, x2: pad.l + W, y1: Y(0), y2: Y(0) }));
   for (const t of [0, .2, .4, .6, .8, 1]) svg.append(s("text", { x: X(t), y: height - 14, "text-anchor": "middle" }, Math.round(t * 100) + "%"));
@@ -279,7 +279,7 @@ function lineChart(points, { width = 560, height = 200, xlabel = "", ylabel = ""
   const xs = points.map(p => p.x), ys = points.map(p => p.y);
   const xlo = Math.min(...xs), xhi = Math.max(...xs), ylo = Math.min(...ys) - 3, yhi = Math.max(...ys) + 3;
   const X = x => pad.l + ((x - xlo) / (xhi - xlo || 1)) * W, Y = y => pad.t + H - ((y - ylo) / (yhi - ylo || 1)) * H;
-  const svg = s("svg", { class: "svgchart", viewBox: `0 0 ${width} ${height}` });
+  const svg = s("svg", { class: "svgchart", style: `max-width:${width}px`, viewBox: `0 0 ${width} ${height}` });
   for (const t of niceTicks(ylo, yhi, 4)) svg.append(s("line", { class: "gridline", x1: pad.l, x2: pad.l + W, y1: Y(t), y2: Y(t) }), s("text", { x: pad.l - 6, y: Y(t) + 4, "text-anchor": "end" }, Math.round(t)));
   svg.append(s("path", { d: points.map((p, i) => `${i ? "L" : "M"}${X(p.x)},${Y(p.y)}`).join(""), fill: "none", stroke: "var(--series-1)", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
   points.forEach(p => {
@@ -296,7 +296,7 @@ function lineChart(points, { width = 560, height = 200, xlabel = "", ylabel = ""
 function boxCompare(a, b, { width = 600, height = 110, labels = ["With", "Without"] } = {}) {
   const pad = { l: 70, r: 16, t: 8, b: 26 }, W = width - pad.l - pad.r;
   const X = v => pad.l + (v / 100) * W;
-  const svg = s("svg", { class: "svgchart", viewBox: `0 0 ${width} ${height}` });
+  const svg = s("svg", { class: "svgchart", style: `max-width:${width}px`, viewBox: `0 0 ${width} ${height}` });
   for (const t of [0, 25, 50, 75, 100]) svg.append(s("line", { class: "gridline", x1: X(t), x2: X(t), y1: pad.t, y2: height - pad.b }), s("text", { x: X(t), y: height - 8, "text-anchor": "middle" }, t));
   [a, b].forEach((arr, i) => {
     if (!arr.length) return;
@@ -504,7 +504,7 @@ function viewFamilies() {
     h("p", { class: "sub" }, "Family → subfamily → mechanic. Cell color = Δ outcome (blue better, red worse, gray ≈ no difference / insufficient data). Click any mechanic."),
     h("div", { class: "scale" }, "worse", h("span", { class: "bar", style: "background:linear-gradient(90deg,var(--neg),var(--mid),var(--pos))" }), "better", h("span", { class: "muted" }, "(±12 pts saturates)")),
     famStats.length ? h("div", { class: "card", style: "margin-bottom:16px" }, h("h3", {}, "Family depth vs success"),
-      h("div", { class: "muted" }, "Spearman correlation between how many significant mechanics a game has in each family and its Success Index (precomputed scope)."),
+      h("div", { class: "muted" }, "Partial Spearman correlation between a game's number of significant mechanics in each family and its Success Index, controlling for its total tag count (curated games, precomputed scope). Positive = investing in this family beyond the game's overall depth goes with success."),
       hbars(famStats.filter(f => f.spearman != null).sort((a, b) => b.spearman - a.spearman).map(f => ({ label: f.name, value: f.spearman, sub: `mean depth ${fmt.f1(f.mean_depth)} of ${f.n_mechanics}` })), { diverging: true, fmtv: fmt.f2, width: 760, max: 0.5 })) : null,
     h("div", { class: "fam-grid" }, FAMS.map(f => h("div", { class: "card fam-card" },
       h("h3", {}, f.name, h("span", { class: "muted", style: "font-weight:400;font-size:12px" }, `${f.subfamilies.reduce((a, sf) => a + sf.mechanics.length, 0)} mechanics`)),
@@ -609,7 +609,8 @@ function viewLab() {
     h("label", { style: "flex-direction:row;align-items:center;gap:6px" }, h("input", { type: "checkbox", checked: lab.ea, onchange: e => { lab.ea = e.target.checked; viewLab(); } }), "Early Access"),
     h("label", { style: "flex-direction:row;align-items:center;gap:6px" }, h("input", { type: "checkbox", checked: lab.free, onchange: e => { lab.free = e.target.checked; viewLab(); } }), "Free-to-play"),
     h("label", {}, "Template", templateSel),
-    h("button", { class: "btn secondary", onclick: () => { lab.vec = {}; lab.from = null; viewLab(); } }, "Clear"));
+    h("button", { class: "btn secondary", onclick: () => { lab.vec = {}; lab.from = null; viewLab(); } }, "Clear"),
+    h("button", { class: "btn", onclick: openDocTagger }, "Paste design doc…"));
   const picker = FAMS.filter(f => f.id !== "structure_hybrid").map(f => {
     const ms = f.subfamilies.flatMap(sf => sf.mechanics), on = ms.filter(m => lab.vec[m]).length;
     const det = h("details", { class: "lab-fam", open: el.dataset["open_" + f.id] !== "0" ? true : null, ontoggle: e => { el.dataset["open_" + f.id] = e.target.open ? "1" : "0"; } },
@@ -650,6 +651,36 @@ function viewLab() {
   put(el, h("h2", {}, "Design Lab — score a game design"),
     h("p", { class: "sub" }, "Tag a design (yours, a pitch, or a template), get a predicted Success Index from the subgenre's ridge model, risk from nearest comps, and the gaps vs what hits in this genre have. Click a mechanic to cycle intensity. Small numbers = partial effect in points."),
     controls, h("div", { class: "lab" }, h("div", { class: "card" }, picker), out));
+}
+/** Tag free text (a design doc / pitch) with the taxonomy's keyword rules, client-side. */
+function tagText(text) {
+  const t = " " + text.toLowerCase().replace(/[^a-z0-9+\-/' ]+/g, " ") + " ";
+  const out = {};
+  for (const [mid, m] of Object.entries(MECH)) {
+    if (mid.startsWith("hybrid_")) continue;
+    let hits = 0;
+    for (const kw of m.kw || []) {
+      const k = kw.toLowerCase().replace(/[^a-z0-9+\-/' ]+/g, " ").trim();
+      if (k.length < 3) continue;
+      const re = new RegExp(`(^|[^a-z])${k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}([^a-z]|$)`);
+      if (re.test(t)) hits++;
+    }
+    if (hits) out[mid] = hits >= 2 ? 2 : 1;
+  }
+  return out;
+}
+function openDocTagger() {
+  const ta = h("textarea", { style: "width:100%;height:260px;background:var(--surface-2);color:var(--text-primary);border:1px solid var(--border);border-radius:8px;padding:10px;font:13px/1.5 system-ui", placeholder: "Paste a game design doc, pitch deck text, or Steam page description…" });
+  const res = h("div", { style: "margin-top:10px" });
+  const run = merge => {
+    const tags = tagText(ta.value);
+    if (!merge) lab.vec = {};
+    for (const [k, v] of Object.entries(tags)) lab.vec[k] = Math.max(lab.vec[k] || 0, v);
+    lab.from = "design doc"; $("#drawer-close").click(); viewLab();
+  };
+  ta.addEventListener("input", () => { const tags = tagText(ta.value); put(res, h("div", { class: "muted" }, `${Object.keys(tags).length} mechanics detected:`), h("div", {}, Object.keys(tags).map(m => h("span", { class: "chip small", style: "margin:2px" }, mname(m))))); });
+  openDrawer(h("h2", {}, "Score a design doc"), h("p", { class: "sub" }, "Keyword detection uses the same rules as the auto-tagger, so treat it as a first pass: review the chips in the Lab afterwards and set intensities by hand. Nothing leaves your browser."),
+    ta, res, h("div", { class: "row", style: "margin-top:12px" }, h("button", { class: "btn", onclick: () => run(false) }, "Replace Lab design"), h("button", { class: "btn secondary", onclick: () => run(true) }, "Merge into Lab design")));
 }
 function copyReport(x) {
   const lines = [`# GameCred design assessment`, ``, `**Subgenre:** ${mname(lab.sub)} · **Price:** $${lab.price} · **Release:** ${lab.year}${lab.ea ? " · Early Access" : ""}`,
@@ -709,7 +740,7 @@ function viewMethod() {
 
 function sparkline(series, years, { width = 220, height = 54 } = {}) {
   const pts = series.map((v, i) => [years[i], v]).filter(([, v]) => v != null);
-  const svg = s("svg", { class: "svgchart", viewBox: `0 0 ${width} ${height}` });
+  const svg = s("svg", { class: "svgchart", style: `max-width:${width}px`, viewBox: `0 0 ${width} ${height}` });
   if (pts.length < 2) return svg;
   const ymax = Math.max(0.05, ...pts.map(p => p[1])), x0 = years[0], x1 = years[years.length - 1];
   const X = x => 4 + ((x - x0) / (x1 - x0 || 1)) * (width - 8), Y = v => height - 14 - (v / ymax) * (height - 22);

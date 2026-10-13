@@ -1,0 +1,32 @@
+appid: 690040
+name: 'SUPERHOT: MIND CONTROL DELETE'
+developer: SUPERHOT Team
+release_year: 2020
+subgenre: hybrid_shooter
+critic:
+  metacritic: 78
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  permadeath: 2
+  healing_scarcity: 3
+  pick_one_of_n: 3
+  passive_relics: 3
+  synergies: 2
+  build_archetypes: 1
+  unlock_characters: 2
+  character_classes: 2
+  loadout_start: 2
+  node_map: 2
+  narrative_across_runs: 2
+  weapon_handling: 1
+  unlock_items: 2
+  waves: 2
+evidence:
+  passive_relics: Hacks (e.g. extra heart, bullet ricochet, faster katana) are chosen between levels within a node.
+  pick_one_of_n: After each level the player picks one of two offered hacks.
+  permadeath: Losing all hearts restarts the current node from scratch, dropping its hacks.
+  unlock_characters: Cores (Charge, Hotswitch, Hyperlight, etc.) are unlocked and one is equipped before a node.
+confidence: medium
+curator: agent

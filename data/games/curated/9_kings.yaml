@@ -1,0 +1,31 @@
+appid: 2784470
+name: 9 Kings
+developer: Sad Socket
+release_year: 2025
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  auto_battler: 3
+  hybrid_autobattler: 1
+  hybrid_city_builder: 2
+  deckbuilding: 2
+  pick_one_of_n: 2
+  prep_combat_phases: 3
+  character_classes: 3
+  unlock_characters: 2
+  synergies: 3
+  build_archetypes: 3
+  multiplicative_scaling: 2
+  enemy_intents: 2
+  turn_escalation: 2
+  in_run_currency: 2
+  item_upgrading: 2
+  passive_relics: 2
+  short_runs: 2
+  early_access_dev: 2
+evidence:
+  prep_combat_phases: Each year you place cards on a plot grid around your castle, then an invading king attacks and combat auto-resolves.
+  character_classes: You choose one of the nine kings, each with its own card set and playstyle.
+  item_upgrading: Placing more cards onto a plot levels up the building or unit there.
+confidence: medium
+curator: agent

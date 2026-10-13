@@ -1,0 +1,26 @@
+appid: 1534840
+name: "Hyper Light Breaker"
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  open_procgen_world: 3
+  real_time_action: 3
+  online_coop: 2
+  melee_combos: 2
+  dodge_iframes: 2
+  parry_counter: 1
+  traversal_tools: 2
+  weapons_variety: 2
+  boss_gates: 2
+  hub_building: 1
+  permanent_stat_upgrades: 1
+  consumables: 1
+  item_rarity: 2
+  in_run_currency: 1
+  shops: 1
+  character_classes: 2
+  early_access_dev: 3
+  procgen_levels: 2
+  attack_patterns: 1
+confidence: medium
+curator: irr

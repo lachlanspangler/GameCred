@@ -1,0 +1,35 @@
+appid: 2427700
+name: "Backpack Battles"
+subgenre: hybrid_autobattler
+mechanics:
+  hybrid_autobattler: 3
+  auto_battler: 3
+  inventory_management: 3
+  async_multiplayer: 3
+  pvp: 2
+  shops: 3
+  reroll: 3
+  in_run_currency: 2
+  interest_economy: 2
+  item_rarity: 2
+  weapon_evolution: 3
+  synergies: 3
+  build_archetypes: 3
+  character_classes: 2
+  unlock_characters: 1
+  status_effects: 2
+  block_shield: 2
+  crits: 1
+  prep_combat_phases: 3
+  pick_one_of_n: 1
+  leaderboards: 2
+  content_updates: 2
+  early_access_dev: 2
+  speed_controls: 1
+  permadeath: 1
+  high_variance_loot: 2
+  run_history: 1
+  short_runs: 2
+  enemy_hp_scaling: 1
+confidence: high
+curator: irr

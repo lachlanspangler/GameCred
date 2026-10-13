@@ -1,0 +1,60 @@
+appid: 2622380
+name: ELDEN RING NIGHTREIGN
+developer: FromSoftware
+release_year: 2025
+subgenre: hybrid_action_roguelite
+wiki: https://eldenringnightreign.wiki.fextralife.com/
+stats:
+  playable_characters: 8
+  run_length_min: 40
+  boss_count: 8
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  online_coop: 3
+  permadeath: 2
+  second_chance: 2
+  open_procgen_world: 2
+  day_night_cycle: 3
+  time_pressure: 3
+  act_structure: 2
+  boss_gates: 3
+  character_classes: 3
+  loadout_start: 2
+  passive_relics: 2
+  unlock_items: 2
+  unlock_characters: 1
+  narrative_across_runs: 2
+  weapons_variety: 3
+  item_rarity: 3
+  high_variance_loot: 2
+  pick_one_of_n: 2
+  flat_stat_scaling: 2
+  synergies: 2
+  build_archetypes: 1
+  consumables: 2
+  shops: 1
+  in_run_currency: 3
+  dodge_iframes: 3
+  parry_counter: 1
+  melee_combos: 2
+  traversal_tools: 2
+  status_effects: 2
+  healing_scarcity: 2
+  attack_patterns: 3
+  multi_phase_bosses: 3
+  elites: 2
+  enemy_variety: 2
+  optional_challenges: 2
+  ascension_ladder: 1
+  content_updates: 2
+  steam_deck_friendly: 2
+evidence:
+  day_night_cycle: Each expedition is Day 1, Day 2, then a Nightlord fight; each day ends with a night boss as the map closes in.
+  time_pressure: The Night's Tide circle shrinks on a fixed schedule and drives the whole party toward the day boss.
+  open_procgen_world: Limveld's base layout is fixed, but camps, castles, field bosses and Shifting Earth events roll per expedition.
+  passive_relics: Relics with rolled effects go into Vessel slots at Roundtable Hold before the run and shape every expedition.
+  second_chance: Downed teammates can be revived by hitting them; full death on a day drops a level and some runes instead of ending the run.
+  ascension_ladder: Deep of Night mode adds ranked Depth tiers with harsher enemies and better loot.
+confidence: high
+curator: agent

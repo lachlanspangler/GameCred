@@ -1,0 +1,28 @@
+appid: 1904860
+name: Legends of Kingdom Rush
+developer: Ironhide Game Studio
+release_year: 2022
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  turn_based: 3
+  grid_tactics: 3
+  party_building: 3
+  character_classes: 3
+  unlock_characters: 2
+  node_map: 2
+  random_events: 3
+  passive_relics: 2
+  consumables: 2
+  shops: 2
+  in_run_currency: 2
+  act_structure: 2
+  boss_gates: 2
+  healing_scarcity: 2
+  level_up_choices: 2
+  permadeath: 2
+evidence:
+  random_events: Tabletop-style text encounters resolved with stat-based rolls between battles.
+  grid_tactics: Battles are turn-based on a hex grid with a hero party.
+confidence: medium
+curator: agent

@@ -1,0 +1,28 @@
+appid: 452060
+name: Caveblazers
+developer: Deadpan Games
+release_year: 2017
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  platforming: 3
+  real_time_action: 3
+  procgen_levels: 3
+  permadeath: 3
+  boss_gates: 2
+  act_structure: 2
+  passive_relics: 3
+  cursed_items: 2
+  double_edged_items: 2
+  shops: 2
+  in_run_currency: 2
+  weapons_variety: 2
+  local_coop: 2
+  unlock_items: 2
+  high_variance_loot: 2
+  optional_challenges: 1
+evidence:
+  double_edged_items: Shrine blessings and curses trade permanent run penalties for power.
+  local_coop: Two-player local co-op through the generated caves.
+confidence: medium
+curator: agent

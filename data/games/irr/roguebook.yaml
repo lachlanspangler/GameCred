@@ -1,0 +1,34 @@
+appid: 1076200
+name: "Roguebook"
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  turn_based: 2
+  energy_mana: 2
+  card_draw: 2
+  card_mods: 3
+  lanes_ranks: 2
+  character_classes: 2
+  loadout_start: 2
+  unlock_characters: 1
+  passive_relics: 2
+  open_procgen_world: 2
+  shops: 2
+  in_run_currency: 2
+  synergies: 2
+  permanent_stat_upgrades: 2
+  skill_tree_meta: 2
+  unlock_items: 2
+  act_structure: 2
+  boss_gates: 2
+  elites: 1
+  enemy_intents: 2
+  status_effects: 2
+  block_shield: 2
+  ascension_ladder: 2
+  consumables: 2
+  weapon_stance_swap: 1
+  party_building: 1
+confidence: medium
+curator: irr

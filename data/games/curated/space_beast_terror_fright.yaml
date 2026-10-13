@@ -1,0 +1,25 @@
+appid: 357330
+name: Space Beast Terror Fright
+developer: nornware AB
+release_year: 2022
+subgenre: hybrid_shooter
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  procgen_levels: 3
+  permadeath: 2
+  local_coop: 3
+  online_coop: 2
+  weapon_handling: 3
+  character_classes: 2
+  horde_density: 2
+  time_pressure: 2
+  short_runs: 2
+  early_access_dev: 2
+evidence:
+  weapon_handling: Ammo, reloads and a motion tracker are managed by hand while beasts swarm from vents.
+  local_coop: Built around four-player split-screen co-op on one machine.
+  time_pressure: Beast spawn pressure rises the longer a team lingers in the generated ship.
+confidence: medium
+curator: agent

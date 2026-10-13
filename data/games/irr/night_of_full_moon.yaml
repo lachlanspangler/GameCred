@@ -1,0 +1,25 @@
+appid: 769560
+name: "Night of Full Moon"
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  turn_based: 2
+  energy_mana: 2
+  card_draw: 2
+  character_classes: 2
+  unlock_characters: 2
+  multiple_endings: 2
+  random_events: 2
+  node_map: 2
+  passive_relics: 2
+  shops: 2
+  in_run_currency: 1
+  item_upgrading: 1
+  status_effects: 2
+  block_shield: 1
+  boss_gates: 2
+  permadeath: 2
+  deck_thinning: 1
+confidence: low
+curator: irr

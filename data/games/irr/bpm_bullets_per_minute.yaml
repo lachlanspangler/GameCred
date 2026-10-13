@@ -1,0 +1,29 @@
+appid: 1286350
+name: "BPM: BULLETS PER MINUTE"
+subgenre: hybrid_shooter
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  rhythm_timing: 3
+  room_based_floors: 3
+  procgen_levels: 2
+  boss_gates: 3
+  act_structure: 2
+  weapons_variety: 2
+  active_items: 2
+  passive_relics: 2
+  shops: 2
+  in_run_currency: 2
+  consumables: 1
+  block_shield: 1
+  character_classes: 2
+  unlock_characters: 2
+  permadeath: 2
+  dodge_iframes: 2
+  weapon_handling: 2
+  traversal_tools: 1
+  healing_scarcity: 1
+  real_time_action: 2
+  attack_patterns: 1
+confidence: medium
+curator: irr

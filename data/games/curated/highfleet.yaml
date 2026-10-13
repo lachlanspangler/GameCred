@@ -1,0 +1,27 @@
+appid: 1434950
+name: HighFleet
+developer: Konstantin Koshutin
+release_year: 2021
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  vehicle_combat: 3
+  real_time_action: 2
+  permadeath: 3
+  hunger_clock: 3
+  party_building: 2
+  shops: 2
+  in_run_currency: 2
+  random_events: 2
+  stealth: 2
+  long_runs: 3
+  weapon_handling: 1
+  healing_scarcity: 2
+  multiple_endings: 1
+evidence:
+  hunger_clock: Fuel is the core strategic constraint; running dry strands the fleet on the map.
+  stealth: Radar emissions, signals intelligence and visual range let fleets avoid or ambush strike groups.
+  permadeath: Losing the flagship Sevastopol ends the campaign.
+  party_building: Ships are bought, captured or custom-designed and grouped into a fleet with limited repairs.
+confidence: medium
+curator: agent

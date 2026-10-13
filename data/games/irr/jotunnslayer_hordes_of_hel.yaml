@@ -1,0 +1,21 @@
+appid: 2820820
+name: "Jotunnslayer: Hordes of Hel"
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  horde_density: 3
+  level_up_choices: 3
+  talent_slots: 2
+  character_classes: 2
+  unlock_characters: 2
+  permanent_stat_upgrades: 2
+  skill_tree_meta: 1
+  boss_gates: 2
+  time_pressure: 2
+  early_access_dev: 2
+  dodge_iframes: 1
+  short_runs: 2
+  real_time_action: 2
+confidence: low
+curator: irr

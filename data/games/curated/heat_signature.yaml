@@ -1,0 +1,33 @@
+appid: 268130
+name: Heat Signature
+developer: Suspicious Developments
+release_year: 2017
+subgenre: hybrid_action_roguelite
+critic:
+  metacritic: 79
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 2
+  stealth: 3
+  procgen_levels: 3
+  open_procgen_world: 2
+  permadeath: 3
+  legacy_inheritance: 1
+  unlock_items: 2
+  active_items: 3
+  weapons_variety: 2
+  vehicle_combat: 1
+  physics_simulation: 2
+  environmental_hazards: 2
+  optional_challenges: 2
+  time_pressure: 2
+  in_run_currency: 2
+  shops: 1
+  high_variance_loot: 1
+evidence:
+  stealth: Breaching a ship undetected and avoiding the alarm is the main way to play; mission bonuses reward no-alarm or no-kill runs.
+  active_items: Gadgets like the Swapper, Visitor and Glitch Trap recharge between uses and enable improvised solutions.
+  physics_simulation: Breaching hulls sucks guards (and you) into space, and your pod can be steered back to catch you.
+  legacy_inheritance: Characters die permanently; ones who finish their personal mission retire and leave an item to the shared stash.
+confidence: medium
+curator: agent

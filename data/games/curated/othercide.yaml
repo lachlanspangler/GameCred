@@ -3,10 +3,6 @@ name: Othercide
 developer: Lightbulb Crew
 release_year: 2020
 subgenre: hybrid_strategy
-wiki: https://othercide.fandom.com/wiki/Othercide_Wiki
-stats:
-  playable_characters: 4
-  boss_count: 5
 mechanics:
   hybrid_strategy: 3
   turn_based: 3

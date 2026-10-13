@@ -1,0 +1,24 @@
+appid: 234190
+name: Receiver
+developer: Wolfire Games
+release_year: 2013
+subgenre: hybrid_shooter
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  weapon_handling: 3
+  permadeath: 3
+  procgen_levels: 3
+  healing_scarcity: 3
+  stealth: 1
+  short_runs: 2
+  loadout_start: 1
+  lore_codex: 1
+evidence:
+  weapon_handling: Separate keys to eject magazine, insert rounds, rack slide, toggle safety and check the chamber.
+  healing_scarcity: No healing; a single turret or drone hit is usually fatal.
+  procgen_levels: The building is assembled from randomly arranged tiles each life.
+  lore_codex: The goal is collecting 11 audio tapes in a single life; each tape is a lecture.
+confidence: high
+curator: agent

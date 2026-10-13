@@ -66,7 +66,8 @@ def export() -> dict:
         {"id": fid, "name": f["name"], "desc": f["desc"], "subfamilies": [
             {"id": sid, "name": s["name"], "mechanics": s["mechanics"]} for sid, s in f["subfamilies"].items()]}
         for fid, f in tax.families.items()],
-        "mechanics": {m.id: {"name": m.name, "desc": m.desc, "family": m.family, "subfamily": m.subfamily}
+        "mechanics": {m.id: {"name": m.name, "desc": m.desc, "family": m.family, "subfamily": m.subfamily,
+                             "kw": list(m.keywords) + [m.name.lower()] + [t.lower() for t in m.steam_tags]}
                       for m in tax.mechanics.values()}}
     payload = {
         "generated": dt.datetime.now().isoformat(timespec="seconds"),

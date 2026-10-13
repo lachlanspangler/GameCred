@@ -1,0 +1,39 @@
+appid: 1313140
+name: "Cult of the Lamb"
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_city_builder: 2
+  life_sim_hub: 3
+  hub_building: 3
+  real_time_action: 3
+  melee_combos: 2
+  dodge_iframes: 2
+  room_based_floors: 2
+  node_map: 2
+  procgen_levels: 2
+  act_structure: 2
+  boss_gates: 3
+  multi_phase_bosses: 2
+  weapons_variety: 2
+  passive_relics: 2
+  active_items: 2
+  pick_one_of_n: 1
+  unlock_items: 2
+  skill_tree_meta: 2
+  permanent_stat_upgrades: 2
+  loadout_start: 1
+  narrative_across_runs: 2
+  npc_relationships: 1
+  in_run_currency: 1
+  shops: 1
+  local_coop: 2
+  elites: 1
+  steam_deck_friendly: 1
+  content_updates: 3
+  assist_mode: 1
+  permadeath: 1
+  short_runs: 2
+  attack_patterns: 1
+confidence: high
+curator: irr

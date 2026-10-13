@@ -1,0 +1,34 @@
+appid: 1888430
+name: 10 Minutes Till Dawn
+developer: flanne
+release_year: 2022
+subgenre: hybrid_survivors
+stats:
+  run_length_min: 10
+mechanics:
+  hybrid_survivors: 3
+  twin_stick: 3
+  real_time_action: 3
+  horde_density: 3
+  time_pressure: 3
+  short_runs: 3
+  permadeath: 2
+  level_up_choices: 3
+  pick_one_of_n: 3
+  synergies: 2
+  build_archetypes: 2
+  loadout_start: 3
+  character_classes: 2
+  weapons_variety: 2
+  unlock_characters: 2
+  unlock_items: 2
+  permanent_stat_upgrades: 2
+  weapon_handling: 2
+  status_effects: 1
+  enemy_hp_scaling: 2
+evidence:
+  time_pressure: Survive a 10-minute timer until dawn as enemy waves intensify.
+  weapon_handling: Manual aim and reloading guns set it apart from auto-attack survivors games.
+  loadout_start: Pick a character and a gun before each run.
+confidence: medium
+curator: agent

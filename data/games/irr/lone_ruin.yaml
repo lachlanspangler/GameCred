@@ -1,0 +1,22 @@
+appid: 1452070
+name: "LONE RUIN"
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_shooter: 2
+  twin_stick: 3
+  room_based_floors: 3
+  dodge_iframes: 2
+  talent_slots: 2
+  pick_one_of_n: 2
+  synergies: 2
+  endless_mode: 2
+  boss_gates: 2
+  short_runs: 3
+  bullet_hell: 1
+  passive_relics: 1
+  procgen_levels: 1
+  unlock_items: 1
+  real_time_action: 3
+confidence: medium
+curator: irr

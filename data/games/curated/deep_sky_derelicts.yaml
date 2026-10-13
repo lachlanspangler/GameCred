@@ -1,0 +1,30 @@
+appid: 698640
+name: Deep Sky Derelicts
+developer: Snowhound Games
+release_year: 2018
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 70
+mechanics:
+  hybrid_deckbuilder: 3
+  hybrid_strategy: 1
+  deck_from_equipment: 3
+  party_building: 3
+  character_classes: 3
+  turn_based: 3
+  procgen_levels: 3
+  hunger_clock: 3
+  shops: 2
+  in_run_currency: 2
+  random_events: 2
+  status_effects: 2
+  block_shield: 2
+  card_draw: 1
+  long_runs: 3
+  permadeath: 1
+evidence:
+  deck_from_equipment: Each merc's combat deck is generated from equipped weapons, armour and gadgets plus class skills.
+  hunger_clock: Moving and scanning in a derelict drains energy; running out forces a costly retreat.
+  party_building: A party of three mercenaries with chosen classes, recruited and equipped at the station hub.
+confidence: medium
+curator: agent

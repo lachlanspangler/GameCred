@@ -1,0 +1,39 @@
+appid: 1755830
+name: "Astrea: Six-Sided Oracles"
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  dice: 3
+  dice_manipulation: 2
+  turn_based: 3
+  enemy_intents: 3
+  double_edged_items: 3
+  permadeath: 2
+  node_map: 2
+  act_structure: 2
+  boss_gates: 2
+  ascension_ladder: 2
+  unlock_items: 1
+  unlock_characters: 2
+  pick_one_of_n: 2
+  reroll: 2
+  character_classes: 2
+  passive_relics: 2
+  consumables: 1
+  shops: 2
+  in_run_currency: 1
+  deck_thinning: 1
+  item_upgrading: 2
+  card_mods: 1
+  status_effects: 2
+  block_shield: 2
+  elites: 2
+  random_events: 2
+  synergies: 2
+  build_archetypes: 2
+  item_rarity: 1
+  healing_scarcity: 1
+  steam_deck_friendly: 1
+confidence: medium
+curator: irr

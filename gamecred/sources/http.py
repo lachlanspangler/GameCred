@@ -46,6 +46,10 @@ def get_json(source: str, key: str, url: str, *, min_interval: float = 1.0, max_
         _last_call[source] = time.time()
         try:
             r = _session.get(url, params=params, timeout=30)
+            if r.status_code in (404, 410):  # permanent: cache the negative result, never retry
+                data = {"_http_error": r.status_code}
+                p.write_text(json.dumps(data))
+                return data
             if r.status_code == 429 or r.status_code >= 500:
                 raise requests.HTTPError(f"HTTP {r.status_code}")
             r.raise_for_status()
@@ -54,6 +58,7 @@ def get_json(source: str, key: str, url: str, *, min_interval: float = 1.0, max_
             return data
         except (requests.RequestException, ValueError) as e:
             log.warning("%s %s attempt %d failed: %s", source, key, attempt + 1, e)
-            time.sleep(delay)
-            delay = min(delay * 2, 120)
+            if attempt + 1 < retries:
+                time.sleep(delay)
+                delay = min(delay * 2, 120)
     return None

@@ -1,0 +1,27 @@
+appid: 1075740
+name: "Banners of Ruin"
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  turn_based: 2
+  party_building: 3
+  node_map: 2
+  energy_mana: 2
+  card_draw: 1
+  block_shield: 2
+  status_effects: 2
+  passive_relics: 2
+  shops: 2
+  in_run_currency: 1
+  item_upgrading: 1
+  enemy_intents: 2
+  character_classes: 2
+  permadeath: 2
+  lanes_ranks: 2
+  random_events: 2
+  unlock_items: 1
+  unlock_characters: 1
+  boss_gates: 2
+confidence: low
+curator: irr

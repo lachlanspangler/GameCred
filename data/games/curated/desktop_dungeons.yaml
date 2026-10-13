@@ -1,0 +1,34 @@
+appid: 226620
+name: Desktop Dungeons
+developer: QCF Design
+release_year: 2013
+subgenre: hybrid_puzzle
+critic:
+  metacritic: 82
+stats:
+  run_length_min: 10
+mechanics:
+  hybrid_puzzle: 3
+  hybrid_traditional: 1
+  perfect_information: 3
+  healing_scarcity: 3
+  short_runs: 3
+  procgen_levels: 3
+  character_classes: 3
+  unlock_characters: 3
+  hub_building: 3
+  loadout_start: 2
+  consumables: 2
+  shops: 2
+  in_run_currency: 2
+  double_edged_items: 2
+  boss_gates: 2
+  optional_challenges: 2
+  turn_based: 2
+  permadeath: 2
+evidence:
+  healing_scarcity: HP and mana regenerate only by exploring new tiles, which are finite per dungeon.
+  perfect_information: Combat outcomes are deterministic and previewed before attacking.
+  double_edged_items: Altar gods grant boons but impose taboos that cost piety.
+confidence: medium
+curator: agent

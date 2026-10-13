@@ -1,0 +1,26 @@
+appid: 2400510
+name: Dungeons & Degenerate Gamblers
+developer: Purple Moss Collectors
+release_year: 2024
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  push_your_luck: 3
+  gambling: 2
+  turn_based: 3
+  passive_relics: 2
+  shops: 2
+  in_run_currency: 2
+  deck_thinning: 2
+  boss_gates: 2
+  act_structure: 2
+  synergies: 2
+  build_archetypes: 2
+  card_draw: 2
+  unlock_items: 1
+evidence:
+  push_your_luck: 'Combat is blackjack: hit or stand against the opponent, and busting over 21 costs you.'
+  deckbuilding: You draft odd cards (above 21, negative values, special effects) into your blackjack deck.
+confidence: medium
+curator: agent

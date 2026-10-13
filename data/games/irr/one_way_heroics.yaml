@@ -1,0 +1,26 @@
+appid: 266210
+name: "One Way Heroics"
+subgenre: hybrid_traditional
+mechanics:
+  hybrid_traditional: 3
+  turn_based: 3
+  permadeath: 3
+  open_procgen_world: 2
+  turn_escalation: 3
+  procgen_levels: 2
+  character_classes: 2
+  unlock_characters: 2
+  loadout_start: 2
+  unlock_items: 2
+  level_up_choices: 2
+  random_events: 2
+  party_building: 1
+  shops: 2
+  in_run_currency: 1
+  inventory_management: 2
+  weapon_durability: 2
+  short_runs: 2
+  multiple_endings: 2
+  boss_gates: 1
+confidence: medium
+curator: irr

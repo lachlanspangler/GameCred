@@ -1,0 +1,25 @@
+appid: 318230
+name: Convoy
+developer: Convoy Games
+release_year: 2015
+subgenre: hybrid_strategy
+critic:
+  metacritic: 72
+mechanics:
+  hybrid_strategy: 3
+  vehicle_combat: 3
+  party_building: 2
+  random_events: 3
+  open_procgen_world: 2
+  hunger_clock: 2
+  in_run_currency: 2
+  shops: 2
+  item_upgrading: 2
+  permadeath: 3
+  speed_controls: 1
+evidence:
+  vehicle_combat: Real-time-with-pause battles where convoy vehicles fight raiders on the road.
+  hunger_clock: Fuel drains as you travel the generated wasteland map.
+  random_events: FTL-style text events with branching outcomes on the map.
+confidence: medium
+curator: agent

@@ -1,0 +1,25 @@
+appid: 2187290
+name: Wall World
+developer: Alawar
+release_year: 2023
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  procgen_levels: 2
+  waves: 3
+  prep_combat_phases: 2
+  horde_density: 2
+  boss_gates: 2
+  permanent_stat_upgrades: 3
+  unlock_items: 2
+  in_run_currency: 3
+  flat_stat_scaling: 2
+  pick_one_of_n: 2
+  permadeath: 2
+evidence:
+  prep_combat_phases: The loop alternates mining inside the wall for resources with racing back to the spider robot before a swarm wave hits.
+  waves: Monster swarms arrive at intervals, and you fight them from the robot's turret.
+  permanent_stat_upgrades: Mined resources pay for robot, turret and mining upgrades that carry over between runs.
+confidence: medium
+curator: agent

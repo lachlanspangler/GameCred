@@ -1,0 +1,24 @@
+appid: 1883260
+name: 'Little Noah: Scion of Paradise'
+developer: Cygames, Inc.
+release_year: 2022
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  melee_combos: 3
+  summons_minions: 2
+  talent_slots: 2
+  passive_relics: 2
+  procgen_levels: 2
+  room_based_floors: 2
+  boss_gates: 3
+  act_structure: 2
+  permanent_stat_upgrades: 2
+  unlock_items: 2
+  platforming: 1
+evidence:
+  melee_combos: Your attack combo is built from up to several familiars, each performing one hit of the chain.
+  talent_slots: Familiar combo slots get filled and swapped with familiars found during the run.
+confidence: medium
+curator: agent

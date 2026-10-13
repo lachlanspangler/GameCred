@@ -1,0 +1,23 @@
+appid: 1127610
+name: "Iris and the Giant"
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  turn_based: 2
+  lanes_ranks: 3
+  energy_mana: 1
+  card_draw: 2
+  passive_relics: 1
+  permanent_stat_upgrades: 2
+  unlock_items: 2
+  narrative_across_runs: 2
+  healing_scarcity: 2
+  procgen_levels: 1
+  act_structure: 2
+  boss_gates: 2
+  block_shield: 1
+  status_effects: 1
+  permadeath: 2
+confidence: low
+curator: irr

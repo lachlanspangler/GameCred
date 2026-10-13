@@ -1,0 +1,27 @@
+appid: 858260
+name: Until You Fall
+developer: Schell Games
+release_year: 2020
+subgenre: hybrid_action_roguelite
+critic:
+  metacritic: 87
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  parry_counter: 3
+  melee_combos: 1
+  weapons_variety: 2
+  permanent_stat_upgrades: 3
+  unlock_items: 2
+  room_based_floors: 2
+  act_structure: 2
+  boss_gates: 3
+  attack_patterns: 2
+  pick_one_of_n: 2
+  healing_scarcity: 2
+  permadeath: 2
+evidence:
+  parry_counter: VR melee where blocking and parrying incoming hits at the right time opens enemies to heavy counterattacks.
+  permanent_stat_upgrades: Crystals collected in runs pay for permanent weapon unlocks and upgrades at the Forge.
+confidence: medium
+curator: agent

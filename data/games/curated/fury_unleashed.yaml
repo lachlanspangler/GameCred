@@ -1,0 +1,30 @@
+appid: 465200
+name: Fury Unleashed
+developer: Awesome Games Studio
+release_year: 2020
+subgenre: hybrid_action_roguelite
+critic:
+  metacritic: 79
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 3
+  combo_meter: 3
+  permadeath: 3
+  procgen_levels: 3
+  room_based_floors: 2
+  act_structure: 3
+  boss_gates: 3
+  weapons_variety: 3
+  skill_tree_meta: 3
+  permanent_stat_upgrades: 2
+  local_coop: 2
+  in_run_currency: 2
+  unlock_items: 2
+  dodge_iframes: 1
+evidence:
+  combo_meter: Chaining kills builds a combo; high combos grant bonuses such as damage immunity.
+  skill_tree_meta: Ink collected in runs is spent on a persistent skill tree.
+  act_structure: Runs move through themed comic books, each with chapters and a boss.
+confidence: medium
+curator: agent

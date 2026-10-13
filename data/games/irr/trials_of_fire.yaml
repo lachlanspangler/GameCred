@@ -1,0 +1,34 @@
+appid: 1038370
+name: "Trials of Fire"
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 3
+  deck_from_equipment: 3
+  grid_tactics: 3
+  turn_based: 3
+  party_building: 3
+  character_classes: 2
+  unlock_characters: 2
+  random_events: 3
+  open_procgen_world: 2
+  hunger_clock: 2
+  crafting: 2
+  shops: 2
+  in_run_currency: 1
+  inventory_management: 2
+  level_up_choices: 2
+  item_rarity: 2
+  energy_mana: 2
+  card_draw: 1
+  status_effects: 2
+  block_shield: 2
+  limb_injuries: 1
+  permadeath: 2
+  healing_scarcity: 2
+  long_runs: 2
+  lore_codex: 1
+  unlock_items: 2
+  mid_run_save: 1
+  environmental_hazards: 1
+confidence: high
+curator: irr

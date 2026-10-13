@@ -3,11 +3,9 @@ name: Crab Champions
 developer: Noisestorm
 release_year: 2023
 subgenre: hybrid_shooter
-wiki: https://crabchampions.wiki.gg/
 stats:
   playable_characters: 1
   run_length_min: 40
-  difficulty_levels: 3
 mechanics:
   hybrid_shooter: 3
   real_time_action: 3

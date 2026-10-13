@@ -269,10 +269,25 @@ def family_effects(d: Design) -> list[dict]:
         cols = [d.mech_ids.index(m) for s in fam["subfamilies"].values() for m in s["mechanics"]]
         keep = d.strata == 1 if d.strata.any() else np.ones(len(d.y), bool)
         depth = (d.X[keep][:, cols] >= 2).sum(axis=1)
-        rho = _spearman(depth, d.y[keep])
+        total = (d.X[keep] >= 1).sum(axis=1)
+        rho = _partial_spearman(depth, d.y[keep], total)
         out.append({"family": fid, "name": fam["name"], "mean_depth": float(depth.mean()), "spearman": rho,
                     "n_mechanics": len(cols)})
     return out
+
+
+def _partial_spearman(a: np.ndarray, b: np.ndarray, c: np.ndarray) -> float | None:
+    """Spearman correlation of a and b after removing the (rank-)linear effect of c from both."""
+    if len(a) < 8 or a.std() == 0 or b.std() == 0:
+        return None
+    r = lambda v: np.argsort(np.argsort(v)).astype(float)
+    ra, rb, rc = r(a), r(b), r(c)
+    X = np.vstack([np.ones_like(rc), rc]).T
+    res = lambda v: v - X @ np.linalg.lstsq(X, v, rcond=None)[0]
+    ea, eb = res(ra), res(rb)
+    if ea.std() == 0 or eb.std() == 0:
+        return None
+    return float(np.corrcoef(ea, eb)[0, 1])
 
 
 def _spearman(a: np.ndarray, b: np.ndarray) -> float | None:

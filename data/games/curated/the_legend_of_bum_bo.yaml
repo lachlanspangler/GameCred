@@ -1,0 +1,33 @@
+appid: 1148650
+name: The Legend of Bum-Bo
+developer: Edmund McMillen
+release_year: 2019
+subgenre: hybrid_puzzle
+critic:
+  metacritic: 73
+wiki: https://bindingofisaacrebirth.fandom.com/wiki/The_Legend_of_Bum-bo
+mechanics:
+  hybrid_puzzle: 3
+  turn_based: 3
+  poker_hands: 3
+  energy_mana: 3
+  character_classes: 3
+  unlock_characters: 2
+  active_items: 2
+  passive_relics: 2
+  shops: 2
+  in_run_currency: 2
+  lanes_ranks: 2
+  act_structure: 3
+  boss_gates: 3
+  room_based_floors: 2
+  permadeath: 3
+  unlock_items: 2
+  synergies: 2
+  multiple_endings: 1
+evidence:
+  poker_hands: 'Combat is tile matching: lines of 4+ tiles produce attacks, movement or mana by tile type.'
+  energy_mana: Matches give colored mana, which pays for the spells you have equipped.
+  lanes_ranks: Enemies sit at different distances in front of Bum-bo and move closer over turns.
+confidence: medium
+curator: agent

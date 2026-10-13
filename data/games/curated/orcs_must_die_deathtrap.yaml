@@ -1,0 +1,29 @@
+appid: 2273980
+name: Orcs Must Die! Deathtrap
+developer: Robot Entertainment
+release_year: 2025
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_strategy: 2
+  hybrid_shooter: 1
+  real_time_action: 3
+  prep_combat_phases: 3
+  waves: 3
+  horde_density: 3
+  environmental_hazards: 3
+  online_coop: 3
+  character_classes: 3
+  pick_one_of_n: 2
+  permanent_stat_upgrades: 2
+  unlock_items: 2
+  in_run_currency: 2
+  act_structure: 2
+  synergies: 2
+  build_archetypes: 2
+evidence:
+  environmental_hazards: Placing traps (spikes, launchers, lava) along orc paths is the main way to kill waves.
+  prep_combat_phases: Each map has a build phase for trap placement before waves start.
+  online_coop: Up to 4-player online co-op.
+confidence: medium
+curator: agent

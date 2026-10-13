@@ -1,0 +1,28 @@
+appid: 1016790
+name: West of Dead
+developer: Upstream Arcade
+release_year: 2020
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_shooter: 2
+  twin_stick: 3
+  real_time_action: 3
+  procgen_levels: 3
+  permadeath: 3
+  dodge_iframes: 2
+  weapon_handling: 2
+  weapons_variety: 2
+  active_items: 2
+  act_structure: 2
+  boss_gates: 3
+  unlock_items: 2
+  in_run_currency: 2
+  shops: 2
+  healing_scarcity: 2
+evidence:
+  weapon_handling: Guns need manual reloads, and you hold two weapons mapped to separate triggers.
+  twin_stick: 'Twin-stick cover shooter: you snap to cover and light lanterns to reveal enemies.'
+  unlock_items: Currency carried out of runs permanently unlocks new gear into the pool.
+confidence: medium
+curator: agent

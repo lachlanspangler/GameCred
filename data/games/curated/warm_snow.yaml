@@ -1,0 +1,36 @@
+appid: 1296830
+name: Warm Snow
+developer: BadMudStudio
+release_year: 2022
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  permadeath: 3
+  dodge_iframes: 3
+  room_based_floors: 3
+  act_structure: 2
+  boss_gates: 3
+  character_classes: 2
+  unlock_characters: 2
+  passive_relics: 3
+  pick_one_of_n: 2
+  synergies: 3
+  build_archetypes: 3
+  item_rarity: 2
+  shops: 2
+  in_run_currency: 2
+  unlock_items: 2
+  attack_patterns: 2
+  multi_phase_bosses: 2
+  elites: 1
+  status_effects: 1
+  melee_combos: 2
+  narrative_across_runs: 1
+  early_access_dev: 1
+evidence:
+  build_archetypes: Sects such as flying swords, thunder and others each set up their own build around one core attack type.
+  passive_relics: Relics taken between rooms stack on the sect's effects and decide how the run plays.
+  dodge_iframes: Dashing is central; many relics and sects add effects to dashes.
+confidence: medium
+curator: agent

@@ -1,0 +1,24 @@
+appid: 2128270
+name: "Path of Achra"
+subgenre: hybrid_traditional
+mechanics:
+  hybrid_traditional: 3
+  turn_based: 3
+  permadeath: 2
+  level_up_choices: 3
+  build_archetypes: 3
+  synergies: 3
+  character_classes: 3
+  loadout_start: 3
+  procgen_levels: 2
+  act_structure: 2
+  boss_gates: 2
+  summons_minions: 2
+  status_effects: 2
+  multiplicative_scaling: 2
+  flat_stat_scaling: 2
+  weapons_variety: 1
+  grid_tactics: 1
+  elites: 1
+confidence: medium
+curator: irr

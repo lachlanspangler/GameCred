@@ -3,8 +3,6 @@ name: 'Teleglitch: Die More Edition'
 developer: Test3 Projects
 release_year: 2013
 subgenre: hybrid_action_roguelite
-stats:
-  biome_count: 10
 mechanics:
   hybrid_action_roguelite: 3
   hybrid_shooter: 2

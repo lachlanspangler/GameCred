@@ -1,0 +1,27 @@
+appid: 449960
+name: "Book of Demons"
+subgenre: hybrid_deckbuilder
+mechanics:
+  hybrid_deckbuilder: 2
+  deckbuilding: 2
+  hybrid_action_roguelite: 2
+  real_time_action: 2
+  energy_mana: 2
+  character_classes: 2
+  procgen_levels: 2
+  act_structure: 2
+  boss_gates: 2
+  item_upgrading: 2
+  permanent_stat_upgrades: 2
+  consumables: 2
+  item_identification: 1
+  item_rarity: 2
+  shops: 2
+  in_run_currency: 2
+  elites: 2
+  status_effects: 1
+  level_up_choices: 1
+  permadeath: 1
+  enemy_variety: 1
+confidence: medium
+curator: irr

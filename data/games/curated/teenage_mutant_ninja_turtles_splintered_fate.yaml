@@ -1,0 +1,30 @@
+appid: 2996040
+name: 'Teenage Mutant Ninja Turtles: Splintered Fate'
+developer: Super Evil Megacorp
+release_year: 2024
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  melee_combos: 2
+  dodge_iframes: 2
+  character_classes: 3
+  online_coop: 3
+  local_coop: 2
+  room_based_floors: 3
+  pick_one_of_n: 3
+  talent_slots: 3
+  synergies: 2
+  build_archetypes: 2
+  permanent_stat_upgrades: 2
+  narrative_across_runs: 2
+  boss_gates: 3
+  act_structure: 3
+  in_run_currency: 2
+  shops: 2
+  permadeath: 2
+evidence:
+  talent_slots: Hades-style upgrades fill attack/special/dash/tool slots during a run.
+  online_coop: Up to four-player online co-op, one turtle each.
+confidence: medium
+curator: agent

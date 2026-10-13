@@ -1,0 +1,55 @@
+appid: 113200
+name: The Binding of Isaac
+developer: Edmund McMillen, Florian Himsl
+release_year: 2011
+subgenre: hybrid_action_roguelite
+wiki: https://bindingofisaac.fandom.com/wiki/The_Binding_of_Isaac
+critic:
+  metacritic: 84
+stats:
+  playable_characters: 7
+  run_length_min: 30
+  item_count: 196
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  twin_stick: 3
+  permadeath: 3
+  procgen_levels: 3
+  room_based_floors: 3
+  act_structure: 3
+  boss_gates: 3
+  multiple_endings: 3
+  achievement_unlocks: 3
+  unlock_items: 3
+  unlock_characters: 3
+  character_classes: 2
+  passive_relics: 3
+  active_items: 3
+  consumables: 2
+  item_stacking: 1
+  synergies: 3
+  transformations: 2
+  flat_stat_scaling: 2
+  high_variance_loot: 3
+  shops: 2
+  in_run_currency: 2
+  gambling: 2
+  double_edged_items: 2
+  hp_as_currency: 3
+  cursed_items: 1
+  healing_scarcity: 2
+  second_chance: 1
+  summons_minions: 1
+  optional_challenges: 2
+  enemy_variety: 2
+  random_events: 1
+  short_runs: 1
+evidence:
+  hp_as_currency: Devil Rooms trade heart containers for powerful items.
+  achievement_unlocks: Secrets (e.g. beating Mom's Heart N times) unlock new items, characters and chapters.
+  transformations: Collecting Guppy or Lord of the Flies items grants a set transformation.
+  gambling: Slot machines, fortune tellers and (Wrath of the Lamb) shell games and arcade rooms.
+  multiple_endings: 13 endings unlocked progressively, gated by Mom's Heart, Isaac, Satan, ??? and the Lamb.
+confidence: high
+curator: agent

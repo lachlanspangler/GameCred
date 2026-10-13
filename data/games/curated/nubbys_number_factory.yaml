@@ -1,0 +1,25 @@
+appid: 3191030
+name: Nubby's Number Factory
+developer: MogDogBlog Productions
+release_year: 2025
+subgenre: hybrid_puzzle
+mechanics:
+  hybrid_puzzle: 3
+  physics_simulation: 2
+  score_target_rounds: 3
+  multiplicative_scaling: 3
+  passive_relics: 3
+  synergies: 3
+  build_archetypes: 2
+  shops: 3
+  in_run_currency: 2
+  reroll: 1
+  permadeath: 2
+  short_runs: 2
+  unlock_items: 2
+evidence:
+  score_target_rounds: Each round requires the dropped ball to score past a rising target or the run ends.
+  multiplicative_scaling: Pegs and items add and multiply score, with exponential scaling as the main build goal (Balatro-style).
+  physics_simulation: Pachinko/plinko board where the ball bouncing across pegs triggers effects.
+confidence: medium
+curator: agent

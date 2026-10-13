@@ -1,0 +1,29 @@
+appid: 317820
+name: Guild of Dungeoneering
+developer: Gambrinous
+release_year: 2015
+subgenre: hybrid_deckbuilder
+critic:
+  metacritic: 72
+mechanics:
+  hybrid_deckbuilder: 3
+  hybrid_strategy: 1
+  deck_from_equipment: 3
+  turn_based: 3
+  card_draw: 2
+  block_shield: 2
+  hub_building: 3
+  unlock_characters: 3
+  character_classes: 3
+  unlock_items: 2
+  permadeath: 2
+  boss_gates: 2
+  high_variance_loot: 2
+  pick_one_of_n: 2
+  short_runs: 2
+evidence:
+  deck_from_equipment: Gear looted after fights adds its cards to the hero's combat deck.
+  hub_building: Gold is spent building guild rooms that unlock new classes and loot.
+  pick_one_of_n: After each victory the hero picks one of several gear drops.
+confidence: medium
+curator: agent

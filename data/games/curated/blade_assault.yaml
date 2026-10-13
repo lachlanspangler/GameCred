@@ -1,0 +1,23 @@
+appid: 1367300
+name: Blade Assault
+developer: TeamSuneat
+release_year: 2022
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  melee_combos: 2
+  dodge_iframes: 2
+  platforming: 2
+  character_classes: 2
+  unlock_characters: 2
+  room_based_floors: 2
+  boss_gates: 3
+  act_structure: 2
+  pick_one_of_n: 2
+  permanent_stat_upgrades: 2
+  permadeath: 2
+evidence:
+  room_based_floors: Side-scrolling Hades-style rooms with reward choices between stages.
+confidence: medium
+curator: agent

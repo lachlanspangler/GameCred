@@ -1,0 +1,31 @@
+appid: 1608640
+name: OTXO
+developer: Lateralis Heavy Industries
+release_year: 2023
+subgenre: hybrid_action_roguelite
+critic:
+  metacritic: 81
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_shooter: 2
+  real_time_action: 3
+  twin_stick: 2
+  permadeath: 3
+  procgen_levels: 3
+  room_based_floors: 2
+  weapons_variety: 3
+  weapon_handling: 1
+  shops: 3
+  passive_relics: 3
+  in_run_currency: 2
+  healing_scarcity: 3
+  unlock_items: 2
+  synergies: 1
+  act_structure: 2
+  boss_gates: 2
+evidence:
+  shops: Between floors the bar sells drinks that act as run-long passive modifiers.
+  healing_scarcity: Hotline Miami-style one-hit deaths for the player.
+  weapon_handling: No reloads; empty guns are thrown and new ones looted from enemies.
+confidence: medium
+curator: agent

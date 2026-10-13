@@ -1,0 +1,27 @@
+appid: 329970
+name: KeeperRL
+developer: Electric Succubi
+release_year: 2024
+subgenre: hybrid_city_builder
+mechanics:
+  hybrid_city_builder: 3
+  hybrid_strategy: 2
+  hybrid_traditional: 1
+  permadeath: 2
+  open_procgen_world: 3
+  procgen_levels: 3
+  summons_minions: 3
+  crafting: 3
+  async_multiplayer: 2
+  mod_support: 3
+  early_access_dev: 3
+  turn_based: 2
+  long_runs: 3
+  enemy_variety: 2
+  status_effects: 1
+evidence:
+  async_multiplayer: Dungeons can be retired and uploaded so other players can raid them in adventurer mode.
+  summons_minions: The keeper attracts and commands minions who dig, craft and fight.
+  mod_support: Steam Workshop mods and a moddable data folder.
+confidence: medium
+curator: agent

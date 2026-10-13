@@ -1,0 +1,33 @@
+appid: 1637320
+name: Dome Keeper
+developer: Bippinbits
+release_year: 2022
+subgenre: hybrid_action_roguelite
+wiki: https://domekeeper.wiki.gg/
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_strategy: 1
+  real_time_action: 3
+  prep_combat_phases: 3
+  waves: 3
+  time_pressure: 3
+  procgen_levels: 3
+  permadeath: 3
+  loadout_start: 3
+  character_classes: 2
+  unlock_items: 2
+  in_run_currency: 3
+  flat_stat_scaling: 2
+  pick_one_of_n: 2
+  enemy_hp_scaling: 2
+  endless_mode: 2
+  content_updates: 2
+  synergies: 1
+  build_archetypes: 1
+evidence:
+  prep_combat_phases: Between monster waves the keeper mines underground for iron, water and cobalt, then returns to defend the dome.
+  time_pressure: A wave timer counts down while mining; being late to the dome costs dome HP.
+  loadout_start: Pre-run choice of dome (laser, sword, artillery, tesla), keeper and primary gadget.
+  endless_mode: Prestige mode is an endless score-attack variant of Relic Hunt.
+confidence: medium
+curator: agent

@@ -1,0 +1,37 @@
+appid: 1062810
+name: Inkbound
+developer: Shiny Shoe
+release_year: 2024
+subgenre: hybrid_strategy
+critic:
+  metacritic: 80
+mechanics:
+  hybrid_strategy: 3
+  hybrid_deckbuilder: 1
+  turn_based: 3
+  online_coop: 3
+  character_classes: 3
+  energy_mana: 3
+  pick_one_of_n: 3
+  passive_relics: 3
+  item_upgrading: 2
+  status_effects: 3
+  node_map: 2
+  act_structure: 3
+  boss_gates: 3
+  elites: 2
+  enemy_intents: 2
+  shops: 2
+  in_run_currency: 2
+  unlock_items: 2
+  synergies: 3
+  build_archetypes: 3
+  permadeath: 2
+  early_access_dev: 1
+  content_updates: 1
+evidence:
+  energy_mana: Abilities cost Will from a per-turn pool, and movement is free-form rather than on a grid.
+  online_coop: Up to 4 players take their turns at the same time against shared encounters.
+  passive_relics: Vestiges are passive items that combine with drafted ability upgrades to form builds.
+confidence: medium
+curator: agent

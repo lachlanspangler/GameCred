@@ -1,0 +1,24 @@
+appid: 1347970
+name: Patch Quest
+developer: Lychee Game Labs
+release_year: 2023
+subgenre: hybrid_action_roguelite
+critic:
+  metacritic: 80
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_metroidvania: 2
+  real_time_action: 3
+  bullet_hell: 2
+  procgen_levels: 3
+  permadeath: 2
+  enemy_variety: 2
+  boss_gates: 2
+  lore_codex: 2
+  attack_patterns: 2
+evidence:
+  procgen_levels: The island map is built from handmade patches shuffled into a new arrangement every run.
+  hybrid_metroidvania: Lassoing and riding monsters gives traversal abilities (swim, dig, jump) that open new paths.
+  lore_codex: A monster journal records the creatures you have tamed and studied.
+confidence: medium
+curator: agent

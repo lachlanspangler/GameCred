@@ -1,0 +1,43 @@
+appid: 200210
+name: Realm of the Mad God Exalt
+developer: Deca Games
+release_year: 2012
+subgenre: hybrid_action_roguelite
+wiki: https://www.realmeye.com/wiki
+critic:
+  metacritic: 82
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_shooter: 2
+  permadeath: 3
+  real_time_action: 3
+  twin_stick: 2
+  bullet_hell: 3
+  online_coop: 3
+  character_classes: 3
+  unlock_characters: 2
+  permanent_stat_upgrades: 2
+  extraction: 2
+  open_procgen_world: 2
+  procgen_levels: 2
+  boss_gates: 2
+  attack_patterns: 3
+  multi_phase_bosses: 2
+  enemy_variety: 3
+  item_rarity: 3
+  high_variance_loot: 3
+  consumables: 2
+  active_items: 2
+  weapons_variety: 2
+  status_effects: 2
+  crafting: 1
+  leaderboards: 1
+  content_updates: 3
+evidence:
+  permadeath: Character death is permanent and destroys all equipped gear; only vault storage survives.
+  extraction: Nexusing (instant escape to hub) to save a character and bank loot in the vault is a core survival tool.
+  online_coop: 'Massively multiplayer: dozens of players share each realm and dungeon in real time.'
+  unlock_characters: New classes unlock by reaching level thresholds on prerequisite classes.
+  permanent_stat_upgrades: Exaltation system grants permanent per-class stat bonuses that carry over to future characters.
+confidence: medium
+curator: agent

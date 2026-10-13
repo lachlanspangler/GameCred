@@ -1,0 +1,33 @@
+appid: 2218750
+name: "Halls of Torment"
+subgenre: hybrid_survivors
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  horde_density: 3
+  level_up_choices: 3
+  character_classes: 2
+  unlock_characters: 2
+  permanent_stat_upgrades: 2
+  unlock_items: 2
+  extraction: 1
+  item_rarity: 2
+  passive_relics: 2
+  time_pressure: 2
+  boss_gates: 2
+  elites: 2
+  act_structure: 2
+  short_runs: 2
+  achievement_unlocks: 2
+  synergies: 2
+  build_archetypes: 2
+  flat_stat_scaling: 2
+  crits: 1
+  status_effects: 1
+  ascension_ladder: 2
+  inventory_management: 1
+  content_updates: 2
+  early_access_dev: 2
+  real_time_action: 2
+confidence: medium
+curator: irr

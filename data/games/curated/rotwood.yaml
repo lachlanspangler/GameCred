@@ -1,0 +1,25 @@
+appid: 2015270
+name: Rotwood
+developer: Klei Entertainment
+release_year: 2026
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  melee_combos: 3
+  online_coop: 3
+  crafting: 3
+  hub_building: 2
+  room_based_floors: 3
+  boss_gates: 3
+  pick_one_of_n: 3
+  dodge_iframes: 2
+  weapons_variety: 2
+  permadeath: 2
+  early_access_dev: 3
+evidence:
+  crafting: Monster parts from hunts are crafted into armour and weapons at the camp.
+  melee_combos: Weapons have light/heavy combo strings and timed 'focus' hits.
+  early_access_dev: Early Access from 2024; full release 2026.
+confidence: medium
+curator: agent

@@ -75,3 +75,25 @@ Rejected for now (≤2 examples): weapon_auto_swap, dual_deck, limited_play_card
 - skill_tags — tag-based ability scaling (Soulstone Survivors, Halls of Torment)
 - random_run_traits — run-start random trait roll (Survivor Mercs)
 - friendly_fire, arena_manipulation, streamer_integration — single-example, rejected for now
+
+## From round-2 curator D (2026-10-13) — pending
+- health_drain — HP drains continuously; kills restore (Post Void)
+- momentum_movement — speed conservation as core skill/resource (Haste)
+- realtime_deck_cycling — real-time deck play with continuous shuffle (One Step From Eden)
+- vehicle_crew_stations — co-op players man stations of a shared vehicle (We Need To Go Deeper, Void Crew)
+- sacrifice_healing — heal one unit by consuming another (Othercide)
+
+## From round-2 curator B (2026-10-13) — pending
+- tile_placement_world — player places tiles that build the hero's level (Guild of Dungeoneering, Loop Hero)
+- time_manipulation — time scales with movement / slow-mo as resource (SUPERHOT MCD, OTXO)
+- vehicle_or_base_design — design own ship/base layout as run-long system (Genesis Alpha One, HighFleet, FTL?)
+- catchup_drafting, pvp_only_rounds — ROUNDS-specific; rejected for now
+
+## From round-2 curator A (2026-10-13) — pending
+- automation_logistics — conveyors/production chains that run autonomously (PlateUp!)
+- run_carryover_on_win — winning carries chosen items/layout into next run (PlateUp! franchising)
+- indirect_control — command via interface/orders, not direct control (Duskers)
+- destructible_subsystems — targetable systems whose destruction order matters (CRYPTARK, FTL)
+- shrinking_zone — closing circle forces movement (Nightreign)
+- raid_mechanics — MMO-style co-op boss mechanics (Rabbit and Steel)
+- vr_motion_control — physical movement as input (Until You Fall)

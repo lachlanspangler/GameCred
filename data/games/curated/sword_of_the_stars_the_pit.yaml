@@ -1,0 +1,25 @@
+appid: 233700
+name: 'Sword of the Stars: The Pit'
+developer: Kerberos Productions
+release_year: 2013
+subgenre: hybrid_traditional
+critic:
+  metacritic: 69
+mechanics:
+  hybrid_traditional: 3
+  turn_based: 3
+  permadeath: 3
+  procgen_levels: 3
+  hunger_clock: 3
+  crafting: 3
+  character_classes: 3
+  healing_scarcity: 2
+  inventory_management: 2
+  consumables: 2
+  act_structure: 1
+evidence:
+  hunger_clock: Food is scarce and starvation is the main long-term threat while descending.
+  crafting: Recipes are discovered and used to combine found components into gear and consumables.
+  character_classes: Marine, Scout and Engineer start with different stats and skills.
+confidence: medium
+curator: agent

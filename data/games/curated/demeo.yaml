@@ -1,0 +1,32 @@
+appid: 1484280
+name: Demeo
+developer: Resolution Games
+release_year: 2021
+subgenre: hybrid_strategy
+critic:
+  metacritic: 83
+mechanics:
+  hybrid_strategy: 3
+  grid_tactics: 3
+  turn_based: 3
+  online_coop: 3
+  character_classes: 3
+  dice: 2
+  consumables: 3
+  energy_mana: 2
+  permadeath: 2
+  act_structure: 2
+  boss_gates: 2
+  shops: 2
+  in_run_currency: 2
+  second_chance: 1
+  content_updates: 3
+  environmental_hazards: 1
+  status_effects: 2
+evidence:
+  consumables: Each hero's actions are ability cards drawn from chests and bought with gold, used once.
+  dice: Attacks roll a d20-style die with hit, miss and crit faces.
+  energy_mana: Two action points per turn limit card plays and moves.
+  content_updates: Free adventure modules (Roots of Evil, Realm of the Rat King, etc.) added post-launch.
+confidence: medium
+curator: agent

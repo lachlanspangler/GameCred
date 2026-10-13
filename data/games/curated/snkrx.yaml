@@ -1,0 +1,35 @@
+appid: 915310
+name: SNKRX
+developer: a327ex
+release_year: 2021
+subgenre: hybrid_autobattler
+mechanics:
+  hybrid_autobattler: 3
+  hybrid_survivors: 1
+  auto_attack: 3
+  real_time_action: 2
+  party_building: 3
+  synergies: 3
+  transformations: 3
+  item_upgrading: 3
+  shops: 3
+  in_run_currency: 2
+  interest_economy: 2
+  reroll: 2
+  passive_relics: 2
+  waves: 3
+  prep_combat_phases: 3
+  build_archetypes: 3
+  horde_density: 2
+  short_runs: 2
+  endless_mode: 2
+  ascension_ladder: 2
+  permadeath: 2
+  enemy_hp_scaling: 2
+evidence:
+  transformations: Unit classes (ranger, mage, swarmer...) grant set bonuses at class-count thresholds, auto-chess style.
+  item_upgrading: Buying three copies of a unit merges it into a higher level.
+  auto_attack: You only steer the snake; every unit in the chain attacks automatically.
+  ascension_ladder: NG+ levels raise difficulty after a win.
+confidence: high
+curator: agent

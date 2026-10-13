@@ -1,0 +1,32 @@
+appid: 2103140
+name: Magicraft
+developer: Wave Games
+release_year: 2024
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  twin_stick: 2
+  bullet_hell: 1
+  room_based_floors: 3
+  procgen_levels: 2
+  act_structure: 2
+  boss_gates: 3
+  permadeath: 2
+  synergies: 3
+  build_archetypes: 3
+  multiplicative_scaling: 2
+  passive_relics: 3
+  inventory_management: 2
+  item_rarity: 2
+  shops: 2
+  in_run_currency: 2
+  pick_one_of_n: 2
+  unlock_items: 2
+  horde_density: 1
+evidence:
+  synergies: Wands chain spell and modifier slots in order (Noita-style), so spell combinations define damage output.
+  inventory_management: Each wand has a limited number of spell slots; which modifiers to slot is the main tradeoff.
+  passive_relics: Relics alter wand and spell rules on top of the spell build.
+confidence: medium
+curator: agent

@@ -1,0 +1,28 @@
+appid: 344740
+name: CRYPTARK
+developer: Alientrap
+release_year: 2017
+subgenre: hybrid_action_roguelite
+critic:
+  metacritic: 80
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_shooter: 2
+  hybrid_strategy: 1
+  twin_stick: 3
+  real_time_action: 3
+  loadout_start: 3
+  in_run_currency: 3
+  procgen_levels: 3
+  permadeath: 2
+  weapons_variety: 3
+  weapon_handling: 2
+  local_coop: 2
+  optional_challenges: 2
+  unlock_items: 1
+evidence:
+  loadout_start: Before each hulk you spend the campaign budget on weapons and gear; leftover profit carries forward.
+  procgen_levels: Each alien hulk is generated with subsystems (shields, alarms, repair, spawners) around a central core.
+  hybrid_strategy: Reading the hulk schematic to pick which subsystems to destroy before going for the core is a planning layer.
+confidence: medium
+curator: agent

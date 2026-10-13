@@ -1,0 +1,36 @@
+appid: 692890
+name: "Roboquest"
+subgenre: hybrid_shooter
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  traversal_tools: 3
+  online_coop: 2
+  character_classes: 2
+  unlock_characters: 2
+  level_up_choices: 2
+  hub_building: 2
+  permanent_stat_upgrades: 2
+  weapons_variety: 3
+  item_rarity: 2
+  act_structure: 2
+  node_map: 1
+  boss_gates: 2
+  elites: 2
+  optional_challenges: 2
+  shops: 2
+  in_run_currency: 2
+  consumables: 1
+  crits: 2
+  status_effects: 1
+  dodge_iframes: 1
+  endless_mode: 2
+  ascension_ladder: 1
+  content_updates: 2
+  early_access_dev: 2
+  procgen_levels: 2
+  enemy_variety: 1
+  synergies: 1
+confidence: high
+curator: irr

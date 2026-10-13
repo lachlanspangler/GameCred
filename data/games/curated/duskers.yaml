@@ -1,0 +1,27 @@
+appid: 254320
+name: Duskers
+developer: Misfits Attic
+release_year: 2016
+subgenre: hybrid_strategy
+critic:
+  metacritic: 83
+mechanics:
+  hybrid_strategy: 3
+  real_time_action: 1
+  permadeath: 3
+  procgen_levels: 3
+  stealth: 2
+  party_building: 2
+  hunger_clock: 3
+  turn_escalation: 2
+  weapon_durability: 2
+  environmental_hazards: 3
+  random_events: 1
+  lore_codex: 1
+evidence:
+  environmental_hazards: You kill threats by opening airlocks to vent rooms, closing doors and setting up motion sensors and generators, not by shooting.
+  hunger_clock: Each derelict jump uses fuel, so you have to keep salvaging to continue.
+  weapon_durability: Drone upgrades and the drones themselves wear down over the run and fail.
+  party_building: You command a small squad of drones by typing commands and can salvage replacements from derelicts.
+confidence: medium
+curator: agent
