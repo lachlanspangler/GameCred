@@ -61,6 +61,8 @@ def export() -> dict:
     for h, sc in by_sub.items():
         (rub_dir / f"{h}.md").write_text(rubric(sc, tax.mechanics[h].name))
     ANALYSIS_PATH.write_text(json.dumps(analysis))
+    from .textbook import write as write_textbook
+    write_textbook(games, analysis)
 
     taxo = {"families": [
         {"id": fid, "name": f["name"], "desc": f["desc"], "subfamilies": [

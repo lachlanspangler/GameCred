@@ -1,6 +1,6 @@
 # GameCred rubric — Traditional Roguelike
 
-Sample: 45 games. Hit = Success Index ≥ 69.0; flop ≤ 31.9.
+Sample: 47 games. Hit = Success Index ≥ 70.7; flop ≤ 33.1.
 Associations from observational data; see docs/METHODOLOGY.md.
 
 ## Must have (table stakes)

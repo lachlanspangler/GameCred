@@ -1,20 +1,19 @@
 # GameCred rubric — Shooter Roguelite
 
-Sample: 86 games. Hit = Success Index ≥ 70.7; flop ≤ 36.9.
+Sample: 96 games. Hit = Success Index ≥ 70.4; flop ≤ 33.8.
 Associations from observational data; see docs/METHODOLOGY.md.
 
 ## Must have (table stakes)
 Most hits have these, and lacking them raises flop risk.
 
-- **Early Access Development** — Δ +16.9 pts (95% CI +9.2…+24.0, partial +0.1); in 55% of hits; flop ratio 0.45
-- **Weapon Variety** — Δ +3.9 pts (95% CI -6.2…+13.6, partial +0.0); in 55% of hits; flop ratio 0.69
+- **Early Access Development** — Δ +17.6 pts (95% CI +10.2…+25.0, partial +0.2); in 54% of hits; flop ratio 0.46
+- **Real-time Action** — Δ +11.9 pts (95% CI -12.5…+36.0, partial +0.2); in 100% of hits; flop ratio 0.50
 
 ## Differentiators
 Rare but associated with better outcomes.
 
-- **Distinct Characters / Classes** — Δ +9.6 pts (95% CI +1.4…+19.5, partial +0.2); in 36% of hits; flop ratio 0.30
-- **Acts / Biomes** — Δ -1.9 pts (95% CI -15.4…+11.3, partial +0.1); in 50% of hits; flop ratio 0.43
-- **Scarce Healing** — Δ +3.8 pts (95% CI -6.4…+14.5, partial +0.1); in 32% of hits; flop ratio nan
+- **Distinct Characters / Classes** — Δ +11.1 pts (95% CI +2.1…+20.8, partial +0.5); in 38% of hits; flop ratio nan
+- **Acts / Biomes** — Δ -1.7 pts (95% CI -14.6…+11.1, partial +0.2); in 46% of hits; flop ratio nan
 
 ## Positive signals
 
@@ -24,9 +23,9 @@ Rare but associated with better outcomes.
 ## Risk reducers
 Lower flop rate even if the average effect is unclear.
 
-- **High-variance Loot** — Δ +8.3 pts (95% CI -3.2…+19.0, partial +0.1); in 36% of hits; flop ratio 0.37
-- **Twin-stick Shooting** — Δ +2.4 pts (95% CI -9.1…+13.2, partial +0.1); in 18% of hits; flop ratio 0.52
-- **First-person** — Δ -4.8 pts (95% CI -24.7…+15.3, partial +0.1); in 82% of hits; flop ratio 0.28
+- **First-person** — Δ -6.1 pts (95% CI -25.9…+13.5, partial +0.3); in 83% of hits; flop ratio 0.23
+- **Twin-stick Shooting** — Δ -5.3 pts (95% CI -17.9…+6.2, partial +0.2); in 21% of hits; flop ratio 0.67
+- **Scarce Healing** — Δ +3.7 pts (95% CI -7.5…+13.8, partial +0.1); in 33% of hits; flop ratio nan
 
 ## Red flags
 Associated with worse outcomes in this genre.
