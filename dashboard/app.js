@@ -818,8 +818,15 @@ function revenueBlock(comps) {
   const pBreak = budget > 0 ? cr.reduce((a, c) => a + (c.v >= budget ? c.w : 0), 0) / W : null;
   const exp = cr.reduce((a, c) => a + c.w * c.v, 0) / W;
   const sorted = [...cr].sort((a, b) => a.v - b.v); let acc = 0; const medComp = (sorted.find(c => (acc += c.w) >= W / 2) || {}).v;
+  const tiersDef = [[0, 1e5, "<$100K", "var(--series-8)"], [1e5, 1e6, "$100K–1M", "var(--series-4)"], [1e6, 1e7, "$1M–10M", "var(--series-3)"], [1e7, 1e13, "$10M+", "var(--series-1)"]];
+  const cw = comps.filter(c => c.g.rev), CW = cw.reduce((a, c) => a + c.sim, 0) || 1;
+  const tierP = tiersDef.map(([a, b]) => cw.reduce((acc, c) => acc + (c.g.rev >= a && c.g.rev < b ? c.sim : 0), 0) / CW);
+  const bar = h("div", { style: "display:flex;height:22px;border-radius:6px;overflow:hidden;gap:2px;margin:6px 0 4px" },
+    tiersDef.map(([, , label, col], i) => tierP[i] > 0 ? (() => { const seg = h("div", { style: `flex:${tierP[i]};background:${col};color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center;min-width:2px` }, tierP[i] >= 0.12 ? fmt.pct(tierP[i]) : ""); hover(seg, () => [fmt.pct(tierP[i]), `comps grossing ${label}`]); return seg; })() : null));
   return h("div", { class: "card tight", style: "margin-top:10px" },
-    h("div", { class: "row", style: "justify-content:space-between;align-items:flex-start" },
+    h("div", { class: "tile-label" }, "Revenue tier odds (similarity-weighted comps)"), bar,
+    legendSw(tiersDef.map(([, , l, c]) => [l, c])),
+    h("div", { class: "row", style: "justify-content:space-between;align-items:flex-start;margin-top:8px" },
       h("div", {}, h("div", { class: "tile-label" }, "Projected gross revenue (model)"), h("div", { class: "tile-value" }, fmt.usd(mid)), h("div", { class: "tile-note" }, `comps' middle 50%: ${fmt.usd(lo)} – ${fmt.usd(hi)}`)),
       h("div", {}, h("div", { class: "tile-label" }, "Comps: net to developer"), h("div", { class: "tile-value" }, fmt.usd(medComp)), h("div", { class: "tile-note" }, `median of 25 comps · mean ${fmt.usd(exp)} (hits skew it)`))),
     h("div", { class: "row", style: "margin-top:10px;align-items:center" },
@@ -1208,7 +1215,7 @@ function viewMoney() {
       logScatter(paidGames.map(g => ({ id: g.id, n: g.n, p: g.p, rev: g.rev, sg: g.sg })), { width: 1100, height: 400, x: r => r.p, y: r => r.rev, xl: "launch price →", yl: "↑ estimated gross revenue (log)",
         colorOf: r => scatterSubs.includes(r.sg) ? SUB_COLOR(r.sg) : OTHER, label: r => [fmt.usd(r.rev), r.n, [`$${r.p} · ${mname(r.sg)}`]] })),
     h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, "White space: high revenue multiple, few competitors"),
-      h("div", { class: "muted", style: "margin-bottom:8px" }, "Mechanics whose games earn ≥1.8× the median of comparable games, but that fewer than 40 games use. Candidate briefs for a publisher's next greenlight."),
+      h("div", { class: "muted", style: "margin-bottom:8px" }, "Mechanics whose games earn ≥1.8× the median of comparable games, but that fewer than 40 games use. A full design brief for each (proven by, pair it with, price) is generated in docs/briefs/."),
       hbars(mm.filter(r => r.uplift_x >= 1.8 && r.n < 40).sort((a, b) => b.uplift_x - a.uplift_x).slice(0, 12).map(r => ({ label: mname(r.mechanic), value: r.uplift_x, sub: `${r.n} games · median ${fmt.usd(r.median_with)} · $1M+ ${fmt.pct(r.million_rate_with)}`, color: FAM_COLOR(MECH[r.mechanic].family), onclick: () => openMechanic(r.mechanic) })), { fmtv: v => v.toFixed(1) + "×", width: 900, labelW: 240 })),
     h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, "Top-grossing roguelikes (estimated)"),
       hbars(M.top_games.map(g => ({ label: g.n, value: g.rev, color: SUB_COLOR(g.sg), sub: mname(g.sg), onclick: () => openGame(g.id) })), { fmtv: fmt.usd, width: 1000, labelW: 260, rowH: 24 })));

@@ -78,11 +78,23 @@ def generate(games: list[dict], analysis: dict) -> list[dict]:
     crit = sum(1 for g in games if g.get("metacritic") or g.get("ign"))
     if crit / max(len(games), 1) < 0.3:
         add("data", f"Add a critic-score source (only {crit}/{len(games)} games have one): OpenCritic API or IGN import", 4, 2, "critic component is sparse")
+    ledger_p = DOCS_DIR / "ideas_ledger.json"
+    ledger = json.loads(ledger_p.read_text()) if ledger_p.exists() else {}
     seen, out = set(), []
     for i in sorted(ideas, key=lambda i: -(i["value"] / i["effort"])):
-        if i["text"] not in seen:
-            seen.add(i["text"]); out.append(i)
+        if i["text"] in seen:
+            continue
+        seen.add(i["text"])
+        k = idea_key(i["text"])
+        if k in ledger:   # already attempted: keep it visible but rank it last until its metric changes
+            i = {**i, "status": f"attempted {ledger[k]['attempted']}", "value": max(1, i["value"] - 2)}
+        out.append(i)
+    out.sort(key=lambda i: ("status" in i, -(i["value"] / i["effort"])))
     return out
+
+
+def idea_key(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", re.sub(r"\(.*?\)|Δ [+-]?[\d.]+|n=\d+|κ [-\d.]+", "", text.lower()))[:80]
 
 
 def write(games: list[dict], analysis: dict) -> list[dict]:
@@ -92,7 +104,7 @@ def write(games: list[dict], analysis: dict) -> list[dict]:
     block = [START, "## Auto-generated ideas (rewritten every export by `gamecred/ideas.py`)", "",
              "Ranked by value ÷ effort. Promote one by copying it into a table above with a new I-### id.", "",
              "| # | Kind | Idea | V | E | Why |", "|---|---|---|---|---|---|"]
-    block += [f"| A{n + 1} | {i['kind']} | {i['text']} | {i['value']} | {i['effort']} | {i['why']} |" for n, i in enumerate(ideas[:40])]
+    block += [f"| A{n + 1} | {i['kind']} | {i['text']} | {i['value']} | {i['effort']} | {i['why']}{' · _' + i['status'] + '_' if i.get('status') else ''} |" for n, i in enumerate(ideas[:50])]
     block.append(END)
     text = "\n".join(block)
     md = re.sub(re.escape(START) + ".*?" + re.escape(END), text, md, flags=re.S) if START in md else md.rstrip() + "\n\n" + text + "\n"

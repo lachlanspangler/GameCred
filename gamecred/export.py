@@ -76,6 +76,8 @@ def export() -> dict:
     from .textbook import write as write_textbook
     write_textbook(games, analysis)
     write_findings(games, analysis)
+    from .briefs import write as write_briefs
+    analysis["briefs"] = write_briefs(games, analysis)
     from .ideas import write as write_ideas
     analysis["auto_ideas"] = write_ideas(games, analysis)
 

@@ -67,41 +67,51 @@ Ranked by value ÷ effort. Promote one by copying it into a table above with a n
 | A1 | opportunity | Trend bet: **Pick 1 of N Rewards** is rising (+1.1 pp/yr) and positive (Δ +3.7) | 4 | 1 | momentum + payoff |
 | A2 | opportunity | Trend bet: **Explicit Synergies** is rising (+2.5 pp/yr) and positive (Δ +5.8) | 4 | 1 | momentum + payoff |
 | A3 | opportunity | Trend bet: **Passive Relics / Trinkets** is rising (+1.2 pp/yr) and positive (Δ +7.5) | 4 | 1 | momentum + payoff |
-| A4 | taxonomy | Sharpen the definition of **Permadeath** (κ -0.07); add include/exclude examples | 3 | 1 | raters disagree |
-| A5 | taxonomy | Sharpen the definition of **Run Timer / Time Pressure** (κ 0.21); add include/exclude examples | 3 | 1 | raters disagree |
-| A6 | taxonomy | Sharpen the definition of **Item/Card Pool Unlocks** (κ 0.33); add include/exclude examples | 3 | 1 | raters disagree |
-| A7 | taxonomy | Sharpen the definition of **Pick 1 of N Rewards** (κ 0.16); add include/exclude examples | 3 | 1 | raters disagree |
-| A8 | taxonomy | Sharpen the definition of **Consumables** (κ 0.32); add include/exclude examples | 3 | 1 | raters disagree |
-| A9 | taxonomy | Sharpen the definition of **Grid Tactics** (κ 0.27); add include/exclude examples | 3 | 1 | raters disagree |
-| A10 | taxonomy | Sharpen the definition of **Scarce Healing** (κ -0.04); add include/exclude examples | 3 | 1 | raters disagree |
-| A11 | taxonomy | Sharpen the definition of **Controller / Deck Friendly** (κ 0.19); add include/exclude examples | 3 | 1 | raters disagree |
-| A12 | tagging | Write auto-tag keyword rules for **Acts / Biomes** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
-| A13 | tagging | Write auto-tag keyword rules for **Boss Gates** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
-| A14 | tagging | Write auto-tag keyword rules for **Short Runs (<30 min)** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
-| A15 | tagging | Write auto-tag keyword rules for **Unlockable Characters** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
-| A16 | tagging | Write auto-tag keyword rules for **Pick 1 of N Rewards** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
-| A17 | tagging | Write auto-tag keyword rules for **Starting Loadout Choice** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
-| A18 | tagging | Write auto-tag keyword rules for **Item/Card Upgrading** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
-| A19 | tagging | Write auto-tag keyword rules for **Status Effects** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
-| A20 | tagging | Write auto-tag keyword rules for **Scarce Healing** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
-| A21 | tagging | Write auto-tag keyword rules for **Optional Challenge Rooms** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
-| A22 | opportunity | White space: **Pre-run Mutators / Challenge Runs** games earn 4.3× median revenue but only 18 use it; build a design brief | 5 | 2 | high $, low competition |
-| A23 | opportunity | White space: **Multi-phase Bosses** games earn 3.3× median revenue but only 19 use it; build a design brief | 5 | 2 | high $, low competition |
-| A24 | opportunity | White space: **In-run Clock / Day Cycle** games earn 3.3× median revenue but only 21 use it; build a design brief | 5 | 2 | high $, low competition |
-| A25 | opportunity | White space: **Seeded Runs** games earn 2.6× median revenue but only 15 use it; build a design brief | 5 | 2 | high $, low competition |
-| A26 | opportunity | White space: **Codex / Compendium** games earn 2.6× median revenue but only 35 use it; build a design brief | 5 | 2 | high $, low competition |
-| A27 | opportunity | White space: **Companions / Pets** games earn 2.4× median revenue but only 26 use it; build a design brief | 5 | 2 | high $, low competition |
-| A28 | data | Curate 15+ more games featuring **Soft Run Limit** (Δ +6.1 on only n=4) | 4 | 2 | large effect, too few games to trust it |
-| A29 | data | Curate 15+ more games featuring **Heirs / Legacy Inheritance** (Δ +7.4 on only n=8) | 4 | 2 | large effect, too few games to trust it |
-| A30 | data | Curate 15+ more games featuring **Weapon Mastery** (Δ -13.1 on only n=4) | 4 | 2 | large effect, too few games to trust it |
-| A31 | data | Curate 15+ more games featuring **Knowledge Progression** (Δ +7.1 on only n=6) | 4 | 2 | large effect, too few games to trust it |
-| A32 | data | Curate 15+ more games featuring **Banish / Skip** (Δ +7.4 on only n=10) | 4 | 2 | large effect, too few games to trust it |
-| A33 | data | Curate 15+ more games featuring **On-hit / On-kill Triggers** (Δ +9.1 on only n=12) | 4 | 2 | large effect, too few games to trust it |
-| A34 | data | Curate 15+ more games featuring **Temporary Buffs / Stacks** (Δ +7.2 on only n=6) | 4 | 2 | large effect, too few games to trust it |
-| A35 | data | Curate 15+ more games featuring **Luck Stat** (Δ +9.9 on only n=9) | 4 | 2 | large effect, too few games to trust it |
-| A36 | data | Curate 15+ more games featuring **Item Identification** (Δ -8.4 on only n=13) | 4 | 2 | large effect, too few games to trust it |
-| A37 | data | Curate 15+ more games featuring **Faction Reputation** (Δ -11.2 on only n=4) | 4 | 2 | large effect, too few games to trust it |
-| A38 | data | Curate 15+ more games featuring **Score-target Rounds** (Δ +8.0 on only n=6) | 4 | 2 | large effect, too few games to trust it |
-| A39 | data | Curate 15+ more games featuring **Dice Manipulation** (Δ -6.0 on only n=6) | 4 | 2 | large effect, too few games to trust it |
-| A40 | data | Curate 15+ more games featuring **Dice Placement** (Δ -9.6 on only n=5) | 4 | 2 | large effect, too few games to trust it |
+| A4 | opportunity | White space: **Pre-run Mutators / Challenge Runs** games earn 4.3× median revenue but only 18 use it; build a design brief | 5 | 2 | high $, low competition |
+| A5 | opportunity | White space: **Multi-phase Bosses** games earn 3.3× median revenue but only 19 use it; build a design brief | 5 | 2 | high $, low competition |
+| A6 | opportunity | White space: **In-run Clock / Day Cycle** games earn 3.3× median revenue but only 21 use it; build a design brief | 5 | 2 | high $, low competition |
+| A7 | opportunity | White space: **Seeded Runs** games earn 2.6× median revenue but only 15 use it; build a design brief | 5 | 2 | high $, low competition |
+| A8 | opportunity | White space: **Codex / Compendium** games earn 2.6× median revenue but only 35 use it; build a design brief | 5 | 2 | high $, low competition |
+| A9 | opportunity | White space: **Companions / Pets** games earn 2.4× median revenue but only 26 use it; build a design brief | 5 | 2 | high $, low competition |
+| A10 | data | Curate 15+ more games featuring **Dual Action Resources** (Δ -8.7 on only n=4) | 4 | 2 | large effect, too few games to trust it |
+| A11 | data | Curate 15+ more games featuring **Systemic Simulation** (Δ +7.5 on only n=14) | 4 | 2 | large effect, too few games to trust it |
+| A12 | data | Curate 15+ more games featuring **Unkillable Pursuer** (Δ +9.0 on only n=8) | 4 | 2 | large effect, too few games to trust it |
+| A13 | data | Curate 15+ more games featuring **Speedrun Support** (Δ +7.6 on only n=10) | 4 | 2 | large effect, too few games to trust it |
+| A14 | data | Curate 15+ more games featuring **Gradual Complexity Unlock** (Δ +12.2 on only n=7) | 4 | 2 | large effect, too few games to trust it |
+| A15 | research | Case study: why did **The Binding of Isaac** beat its design score (96 vs 54)? Find the missing mechanic | 4 | 2 | the model misses something |
+| A16 | research | Case study: why did **FTL: Faster Than Light** beat its design score (97 vs 54)? Find the missing mechanic | 4 | 2 | the model misses something |
+| A17 | research | Case study: why did **Super Auto Pets** beat its design score (96 vs 55)? Find the missing mechanic | 4 | 2 | the model misses something |
+| A18 | data | Add a critic-score source (only 276/2462 games have one): OpenCritic API or IGN import | 4 | 2 | critic component is sparse |
+| A19 | data | Tighten the estimate for **Extraction / Bank-out** (95% CI width 16 pts): curate more games | 3 | 2 | wide confidence interval |
+| A20 | data | Tighten the estimate for **Interest / Economy Management** (95% CI width 16 pts): curate more games | 3 | 2 | wide confidence interval |
+| A21 | data | Tighten the estimate for **Rhythm Timing** (95% CI width 15 pts): curate more games | 3 | 2 | wide confidence interval |
+| A22 | data | Tighten the estimate for **Dice Mechanics** (95% CI width 14 pts): curate more games | 3 | 2 | wide confidence interval |
+| A23 | data | Grow curated **Roguevania** coverage (only 7 curated) | 3 | 2 | thin subgenre |
+| A24 | data | Grow curated **Auto-battler Roguelite** coverage (only 9 curated) | 3 | 2 | thin subgenre |
+| A25 | data | Grow curated **Builder Roguelite** coverage (only 7 curated) | 3 | 2 | thin subgenre |
+| A26 | data | Grow curated **Survival Roguelite** coverage (only 14 curated) | 3 | 2 | thin subgenre |
+| A27 | data | Grow curated **Narrative / Event Roguelite** coverage (only 5 curated) | 3 | 2 | thin subgenre |
+| A28 | research | Post-mortem: **LONE RUIN** ticked the boxes but scored 30 vs 77 | 3 | 2 | execution/marketing signal |
+| A29 | research | Post-mortem: **Card Crawl** ticked the boxes but scored 25 vs 58 | 3 | 2 | execution/marketing signal |
+| A30 | research | Post-mortem: **Loot River** ticked the boxes but scored 45 vs 77 | 3 | 2 | execution/marketing signal |
+| A31 | data | Curate 30 more **Action Roguelite** games so its rubric has must-haves (n=943, none yet) | 4 | 3 | empty rubric |
+| A32 | data | Curate 30 more **Strategy Roguelite** games so its rubric has must-haves (n=482, none yet) | 4 | 3 | empty rubric |
+| A33 | data | Curate 30 more **Puzzle Roguelite** games so its rubric has must-haves (n=90, none yet) | 4 | 3 | empty rubric |
+| A34 | data | Curate 30 more **Auto-battler Roguelite** games so its rubric has must-haves (n=80, none yet) | 4 | 3 | empty rubric |
+| A35 | taxonomy | Sharpen the definition of **Permadeath** (κ -0.07); add include/exclude examples | 1 | 1 | raters disagree · _attempted 2026-10-13_ |
+| A36 | taxonomy | Sharpen the definition of **Run Timer / Time Pressure** (κ 0.21); add include/exclude examples | 1 | 1 | raters disagree · _attempted 2026-10-13_ |
+| A37 | taxonomy | Sharpen the definition of **Item/Card Pool Unlocks** (κ 0.33); add include/exclude examples | 1 | 1 | raters disagree · _attempted 2026-10-13_ |
+| A38 | taxonomy | Sharpen the definition of **Pick 1 of N Rewards** (κ 0.16); add include/exclude examples | 1 | 1 | raters disagree · _attempted 2026-10-13_ |
+| A39 | taxonomy | Sharpen the definition of **Consumables** (κ 0.32); add include/exclude examples | 1 | 1 | raters disagree · _attempted 2026-10-13_ |
+| A40 | taxonomy | Sharpen the definition of **Grid Tactics** (κ 0.27); add include/exclude examples | 1 | 1 | raters disagree · _attempted 2026-10-13_ |
+| A41 | taxonomy | Sharpen the definition of **Scarce Healing** (κ -0.04); add include/exclude examples | 1 | 1 | raters disagree · _attempted 2026-10-13_ |
+| A42 | taxonomy | Sharpen the definition of **Controller / Deck Friendly** (κ 0.19); add include/exclude examples | 1 | 1 | raters disagree · _attempted 2026-10-13_ |
+| A43 | tagging | Write auto-tag keyword rules for **Acts / Biomes** (recall < 10% vs curated) | 1 | 1 | long-tail games can't be tagged with it · _attempted 2026-10-13_ |
+| A44 | tagging | Write auto-tag keyword rules for **Boss Gates** (recall < 10% vs curated) | 1 | 1 | long-tail games can't be tagged with it · _attempted 2026-10-13_ |
+| A45 | tagging | Write auto-tag keyword rules for **Short Runs (<30 min)** (recall < 10% vs curated) | 1 | 1 | long-tail games can't be tagged with it · _attempted 2026-10-13_ |
+| A46 | tagging | Write auto-tag keyword rules for **Unlockable Characters** (recall < 10% vs curated) | 1 | 1 | long-tail games can't be tagged with it · _attempted 2026-10-13_ |
+| A47 | tagging | Write auto-tag keyword rules for **Pick 1 of N Rewards** (recall < 10% vs curated) | 1 | 1 | long-tail games can't be tagged with it · _attempted 2026-10-13_ |
+| A48 | tagging | Write auto-tag keyword rules for **Starting Loadout Choice** (recall < 10% vs curated) | 1 | 1 | long-tail games can't be tagged with it · _attempted 2026-10-13_ |
+| A49 | tagging | Write auto-tag keyword rules for **Item/Card Upgrading** (recall < 10% vs curated) | 1 | 1 | long-tail games can't be tagged with it · _attempted 2026-10-13_ |
+| A50 | tagging | Write auto-tag keyword rules for **Status Effects** (recall < 10% vs curated) | 1 | 1 | long-tail games can't be tagged with it · _attempted 2026-10-13_ |
 <!-- AUTO-IDEAS:END -->
