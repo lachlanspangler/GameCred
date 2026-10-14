@@ -1298,13 +1298,33 @@ function viewIdeas() {
       h("div", { class: "row", style: "justify-content:space-between" }, h("span", { class: "chip small" }, `A${n + 1} · ${i.kind}`), h("span", { class: "muted" }, `value ${i.value} · effort ${i.effort}`)),
       h("div", { style: "margin-top:6px" }, md(i.text)), h("div", { class: "muted", style: "font-size:12px;margin-top:4px" }, i.why)))));
 }
+
+function viewAbout() {
+  const el = $("#view-about"), c = D.counts;
+  put(el, h("div", { class: "about" },
+    h("div", { class: "card about-hero" },
+      h("img", { class: "founder-photo", src: "assets/founder.jpeg", alt: "William Spangler, founder of GameCred" }),
+      h("div", {},
+        h("div", { class: "about-brand" }, h("img", { src: "assets/logo.jpeg", alt: "" }), h("span", {}, "GameCred")),
+        h("h2", {}, "William Spangler"), h("div", { class: "muted", style: "margin-bottom:14px" }, "Founder"),
+        h("p", {}, "Game funding is broken because it runs on vibes. GameCred breaks games down mechanically and ties every mechanic to measurable outcomes: player reception, revenue and critical scores. Publishers and studios can then back designs with evidence instead of gut feel."),
+        h("p", {}, "It started with roguelikes, a genre with deep wikis, passionate communities and thousands of comparable releases, and it is built as a living database: every week it re-fetches market data, re-tests its own tagging, and generates its own next questions."))),
+    h("div", { class: "pillars" },
+      h("div", { class: "card pillar" }, h("h3", {}, "The textbook"), h("p", {}, `${c.mechanics} mechanics in ${c.families} families. A shared vocabulary for game design, from permadeath to proc chains.`)),
+      h("div", { class: "card pillar", style: "border-top-color:var(--series-2)" }, h("h3", {}, "The evidence"), h("p", {}, `${fmt.n(c.games)} roguelikes, ${c.curated} expert-curated profiles, and revenue, reviews and critic scores, with confounders controlled and results validated on unseen releases.`)),
+      h("div", { class: "card pillar", style: "border-top-color:var(--series-3)" }, h("h3", {}, "The rubric"), h("p", {}, "For publishers, what a genre must have, what sets hits apart, and how risky a design is. For studios, including AI-assisted ones, a design loop backed by data."))),
+    h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, "Work with GameCred"),
+      h("p", {}, "Studios pitching a roguelike, and publishers evaluating one, can use the Design Lab to score a design against thousands of comparable games and export a pitch report."),
+      h("div", { class: "row" }, h("button", { class: "btn", onclick: () => switchView("lab") }, "Open the Design Lab"),
+        h("a", { class: "btn secondary", href: "https://github.com/lachlanspangler/GameCred", target: "_blank", rel: "noopener", style: "text-decoration:none" }, "GitHub")))));
+}
 // ---------- wiring ----------
-const VIEWS = { ideas: viewIdeas, money: viewMoney, overview: viewOverview, mechanics: viewMechanics, families: viewFamilies, games: viewGames, lab: viewLab, trends: viewTrends, synergy: viewSynergy, method: viewMethod };
+const VIEWS = { about: viewAbout, ideas: viewIdeas, money: viewMoney, overview: viewOverview, mechanics: viewMechanics, families: viewFamilies, games: viewGames, lab: viewLab, trends: viewTrends, synergy: viewSynergy, method: viewMethod };
 function switchView(v) {
   state.view = v;
   document.querySelectorAll(".tabs button").forEach(b => b.classList.toggle("active", b.dataset.view === v));
   document.querySelectorAll(".view").forEach(s2 => s2.classList.toggle("active", s2.id === "view-" + v));
-  $("#filters").style.display = ["lab", "method", "trends", "money", "ideas"].includes(v) ? "none" : "";
+  $("#filters").style.display = ["lab", "method", "trends", "money", "ideas", "about"].includes(v) ? "none" : "";
   render(); if (hashView() !== v) history.replaceState(null, "", "#" + v);
 }
 function render() {

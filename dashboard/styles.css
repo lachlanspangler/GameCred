@@ -49,7 +49,7 @@ a { color: var(--accent); }
 .topbar { display: flex; align-items: center; gap: 24px; padding: 14px 28px; background: var(--surface-1);
   border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 20; }
 .brand { display: flex; gap: 10px; align-items: center; min-width: 230px; }
-.logo { font-size: 26px; color: var(--accent); }
+.logo { width: 38px; height: 38px; border-radius: 9px; object-fit: cover; }
 .brand-name { font-weight: 700; font-size: 18px; letter-spacing: .3px; }
 .brand-sub { color: var(--text-muted); font-size: 12px; }
 .tabs { display: flex; gap: 4px; flex: 1; flex-wrap: wrap; }
@@ -208,3 +208,15 @@ tr.click:hover td { background: var(--surface-2); }
   .lab-out { position: static; }
   a { color: #0b0b0b; text-decoration: none; }
 }
+
+/* About */
+.about-hero { display: grid; grid-template-columns: 280px 1fr; gap: 32px; align-items: center; }
+@media (max-width: 900px) { .about-hero { grid-template-columns: 1fr; } }
+.founder-photo { width: 280px; height: 280px; border-radius: 20px; object-fit: cover; box-shadow: var(--shadow); }
+.about-brand { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; }
+.about-brand img { width: 56px; height: 56px; border-radius: 12px; }
+.about-brand span { font-size: 30px; font-weight: 700; }
+.about p { max-width: 760px; color: var(--text-secondary); font-size: 15px; line-height: 1.6; }
+.pillars { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 20px; }
+@media (max-width: 900px) { .pillars { grid-template-columns: 1fr; } }
+.pillar { border-top: 4px solid var(--accent); }
