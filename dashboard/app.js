@@ -699,7 +699,9 @@ function viewLab() {
   const stakes = (vs.mechanics || []).filter(r => r.verdict === "table stakes" && !r.mechanic.startsWith("hybrid_"));
   const missing = stakes.filter(r => !lab.vec[r.mechanic]);
   const flags = (vs.mechanics || []).filter(r => r.verdict === "red flag" && lab.vec[r.mechanic]);
-  const adds = [...coef.values()].filter(c => c.is_mechanic && !lab.vec[c.feature] && c.coef > 0).sort((a, b) => (b.ci_lo > 0) - (a.ci_lo > 0) || b.coef - a.coef).slice(0, 8);
+  const subGames = GAMES.filter(g => g.sg === lab.sub);
+  const genrePrev = m => subGames.length ? subGames.filter(g => g.m[m]).length / subGames.length : 0;
+  const adds = [...coef.values()].filter(c => c.is_mechanic && !lab.vec[c.feature] && c.coef > 0 && genrePrev(c.feature) >= 0.1).sort((a, b) => (b.ci_lo > 0) - (a.ci_lo > 0) || b.coef - a.coef).slice(0, 8);
   const hitComps = comps.filter(c => c.g.gsi >= hitT);
   const hitCommon = Object.keys(MECH).filter(m => !m.startsWith("hybrid_") && !lab.vec[m] && hitComps.length >= 3 && hitComps.filter(c => c.g.m[m]).length / hitComps.length >= 0.6);
   const risk = pFlop == null ? null : pFlop >= 0.4 ? ["critical", "▲", "High risk"] : pFlop >= 0.25 ? ["serious", "▲", "Elevated risk"] : pHit >= 0.35 ? ["good", "●", "Strong design"] : ["warning", "◆", "Moderate"];
@@ -753,7 +755,7 @@ function viewLab() {
       h("span", { class: "muted" }, ` — in ${fmt.pct(r.prev_in_hits)} of hits, flop ratio ${fmt.f2(r.flop_ratio)}`)))) : h("div", { class: "muted" }, "None — genre fundamentals covered."),
     h("h3", { style: "margin-top:14px" }, `Red flags present (${flags.length})`),
     flags.length ? h("ul", { class: "list-tight" }, flags.map(r => h("li", {}, mname(r.mechanic), h("span", { class: "muted" }, ` — Δ ${fmt.d1(r.diff)} (CI ${fmt.d1(r.ci_lo)}…${fmt.d1(r.ci_hi)})`)))) : h("div", { class: "muted" }, "None."),
-    h("h3", { style: "margin-top:14px" }, "Highest-leverage additions"),
+    h("h3", { style: "margin-top:14px" }, "Highest-leverage additions"), h("div", { class: "muted", style: "font-size:12px" }, `mechanics used by ≥10% of ${mname(lab.sub)} games, ranked by partial effect`),
     h("ul", { class: "list-tight" }, adds.map(c => h("li", {}, h("a", { href: "#", onclick: e => { e.preventDefault(); lab.vec[c.feature] = 2; viewLab(); } }, mname(c.feature)),
       h("span", { class: "muted" }, ` +${fmt.f1(c.coef)} pts${c.ci_lo > 0 ? " (CI > 0)" : ""}`)))),
     hitCommon.length ? h("div", {}, h("h3", { style: "margin-top:14px" }, "Common in your hit comps, missing here"), h("div", { class: "muted" }, hitCommon.map(mname).join(" · "))) : null,
@@ -803,7 +805,9 @@ function revenueBlock(comps) {
   const pc = predict(lab.vec, AN.scopes["all:commercial_pct"]); if (!pc) return null;
   const revs = GAMES.filter(g => g.rev && g.c != null).sort((a, b) => a.c - b.c);
   const at = pct => { const i = revs.findIndex(g => g.c >= pct); return (revs[i < 0 ? revs.length - 1 : i] || {}).rev || 0; };
-  const mid = at(pc.y), lo = at(Math.max(0, pc.y - pc.rmse)), hi = at(Math.min(100, pc.y + pc.rmse));
+  const mid = at(pc.y);
+  const compRev = comps.map(c => c.g.rev).filter(Boolean).sort((a, b) => a - b);
+  const lo = compRev.length >= 4 ? quantile(compRev, 0.25) : at(Math.max(0, pc.y - pc.rmse / 2)), hi = compRev.length >= 4 ? quantile(compRev, 0.75) : at(Math.min(100, pc.y + pc.rmse / 2));
   const budget = lab.budget || 0, net = 0.7;
   const cr = comps.filter(c => c.g.rev).map(c => ({ w: c.sim, v: c.g.rev * net }));
   const W = cr.reduce((a, c) => a + c.w, 0) || 1;
@@ -812,7 +816,7 @@ function revenueBlock(comps) {
   const sorted = [...cr].sort((a, b) => a.v - b.v); let acc = 0; const medComp = (sorted.find(c => (acc += c.w) >= W / 2) || {}).v;
   return h("div", { class: "card tight", style: "margin-top:10px" },
     h("div", { class: "row", style: "justify-content:space-between;align-items:flex-start" },
-      h("div", {}, h("div", { class: "tile-label" }, "Projected gross revenue (model)"), h("div", { class: "tile-value" }, fmt.usd(mid)), h("div", { class: "tile-note" }, `likely range ${fmt.usd(lo)} – ${fmt.usd(hi)}`)),
+      h("div", {}, h("div", { class: "tile-label" }, "Projected gross revenue (model)"), h("div", { class: "tile-value" }, fmt.usd(mid)), h("div", { class: "tile-note" }, `comps' middle 50%: ${fmt.usd(lo)} – ${fmt.usd(hi)}`)),
       h("div", {}, h("div", { class: "tile-label" }, "Comps: net to developer"), h("div", { class: "tile-value" }, fmt.usd(medComp)), h("div", { class: "tile-note" }, `median of 25 comps · mean ${fmt.usd(exp)} (hits skew it)`))),
     h("div", { class: "row", style: "margin-top:10px;align-items:center" },
       h("label", { style: "flex-direction:row;display:flex;gap:6px;align-items:center;font-size:12px;color:var(--text-secondary)" }, "Budget $",
