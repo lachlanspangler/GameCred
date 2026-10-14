@@ -9,6 +9,22 @@
   - Overview, Mechanics, Families, Games and Trends views
   - **Design Lab**: tag a design and get a predicted score, risk, nearest comps, missing table stakes, red flags and the highest-leverage additions, plus a copyable pitch report and a share link
 - **Publisher rubrics.** `docs/rubrics/*.md` gives per-subgenre "must have x, y, z" checklists.
+- **Living docs** (regenerated on every export):
+  - [FINDINGS.md](docs/FINDINGS.md): executive summary
+  - [TEXTBOOK.md](docs/TEXTBOOK.md): every mechanic with examples, evidence, effect, reliability and trend
+  - [IRR.md](docs/IRR.md): tagging reliability
+- **Rigor built in:**
+  - Effects are stratified by tag source and documentation depth (fame confound)
+  - Ridge controls for subgenre, price, year, Early Access, F2P and team pedigree
+  - Matched-comparison robustness checks
+  - Out-of-time validation: a model trained on releases up to 2021 picks 2022+ hits at about 2× chance
+  - Blind inter-rater κ = 0.72
+- **Dashboard extras:**
+  - Data-driven design archetypes (NMF)
+  - Per-game out-of-fold "design score" versus actual results, which flags over- and under-performers
+  - Compare-two-games view
+  - "Paste a design doc" scoring
+  - Print/PDF
 
 ## Quick start
 ```bash

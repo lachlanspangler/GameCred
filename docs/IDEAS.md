@@ -19,6 +19,8 @@ Score = value ÷ effort (each 1–5). Status: `open` · `doing` · `done` · `pa
 |---|---|---|---|---|
 | I-010 | Taxonomy v2: review the ~33 curator proposals in TAXONOMY_PROPOSALS.md, accept those with ≥3 example games | 5 | 2 | done (v2: +34, v3: +14) |
 | I-015 | Taxonomy v3: pickup_magnet_economy, minute_spawn_schedule, adjacency_placement, skill_tags, aim_mode_options (survivors curator) | 3 | 2 | open |
+| I-016 | Taxonomy v4: add hybrid_narrative subgenre (WORLD OF HORROR, Red Lantern, Sunless Sea, Curious Expedition) + reassign; corpse_run, knowledge_progression, soft_run_limit, dice_placement | 4 | 2 | open |
+| I-017 | Wiki-researched curation of the long tail (agents read MediaWiki pages, cite evidence) | 5 | 2 | doing |
 | I-011 | Split `time_pressure` into real-time vs per-turn escalation | 3 | 1 | open |
 | I-012 | Numeric mechanic parameters (e.g. reward choices offered per pick, run length) as continuous features | 4 | 3 | open |
 | I-014 | Subgenre alignment: twin-stick/top-down shooters → one subgenre consistently (curators disagreed) | 4 | 1 | done — rule: hybrid_shooter = FPS/TPS/3D only; top-down → action roguelite (+hybrid_shooter 2) |

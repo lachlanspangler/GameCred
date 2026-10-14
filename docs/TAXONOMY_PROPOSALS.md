@@ -121,3 +121,4 @@ run_carryover_on_win, shrinking_zone, raid_mechanics, vr_motion_control, shared_
 - hybrid_narrative — event/text-driven narrative roguelite (WORLD OF HORROR, The Red Lantern, Sunless Sea?, Curious Expedition?) — strong candidate for v4
 - corpse_run — recover gear from previous body (BELOW, LET IT DIE)
 - persistent_shortcuts — shortcuts persist across runs (BELOW)
+- (round-3 C) falling_block_placement (Drop Duchy), minesweeper_deduction (DemonCrawl), heist_planning (Crime Boss), boss_checkpoint_shortcut (Neon Chrome) — single examples, pending
