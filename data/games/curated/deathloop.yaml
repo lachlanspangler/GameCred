@@ -1,0 +1,41 @@
+appid: 1252330
+name: DEATHLOOP
+developer: Arkane Studios
+release_year: 2021
+subgenre: hybrid_shooter
+wiki: https://deathloop.fandom.com/
+critic:
+  metacritic: 87
+stats:
+  boss_count: 8
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  handcrafted_loop_world: 3
+  day_night_cycle: 3
+  narrative_across_runs: 3
+  stealth: 2
+  loadout_start: 3
+  second_chance: 2
+  permadeath: 1
+  active_items: 2
+  passive_relics: 2
+  item_upgrading: 2
+  item_rarity: 2
+  weapons_variety: 2
+  unlock_items: 2
+  traversal_tools: 1
+  asymmetric_multiplayer: 2
+  pvp: 2
+  lore_codex: 1
+evidence:
+  handcrafted_loop_world: "Wiki 'Deathloop': the same day on Blackreef repeats; Colt must kill 8 Visionaries before the day resets."
+  day_night_cycle: "Wiki 'Blackreef': 4 districts visited across Morning/Noon/Afternoon/Evening time periods; loadout changed between periods."
+  second_chance: "Wiki 'Reprise': Colt gets 3 attempts at life per period, rewinding on death; a third death ends the loop."
+  unlock_items: "Wiki 'Residuum': infuse weapons, slabs and trinkets with Residuum to keep them between loops; un-infused gear is lost."
+  active_items: "Wiki 'Slabs': ability slabs (Shift, Aether, Karnesis...) taken from Visionaries; only two extra slabs held at once; repeats grant upgrades."
+  passive_relics: "Wiki 'Trinkets': up to 4 character trinkets and up to 3 per weapon, slots by quality (Crude/Sleek/Exemplar)."
+  asymmetric_multiplayer: "Wiki 'Protect the Loop': PvP mode where a player as Julianna invades another Colt's loop; Hunter Ranks unlock gear."
+confidence: medium
+curator: wiki-agent

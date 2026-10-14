@@ -1,0 +1,40 @@
+appid: 1063420
+name: Void Crew
+developer: Hutlihut Games
+release_year: 2024
+subgenre: hybrid_shooter
+wiki: https://void-crew.fandom.com/
+critic:
+  metacritic: 80
+stats:
+  weapon_count: 5
+mechanics:
+  hybrid_shooter: 3
+  real_time_action: 3
+  fps: 2
+  vehicle_combat: 3
+  crew_stations: 3
+  online_coop: 3
+  ship_base_design: 3
+  loadout_start: 2
+  skill_tree_meta: 2
+  passive_relics: 2
+  weapons_variety: 2
+  item_upgrading: 1
+  crafting: 2
+  consumables: 1
+  environmental_hazards: 2
+  destructible_subsystems: 1
+  optional_challenges: 1
+  permadeath: 1
+  procgen_levels: 1
+evidence:
+  crew_stations: "Steam/wiki main page: 1-6 players pilot the ship, man turrets, repair, recharge power cells and go EVA; 'pick a role'."
+  ship_base_design: "Wiki 'Player Ship Types and Variants': Destroyer etc. with medium/large hardpoints; Steam: 'on-the-go installable ship systems'."
+  loadout_start: "Wiki 'Player Ship Types and Variants': named ship loadouts (Rookie, CQB, Broadside, Energy Boat) set starting weapons/defenses."
+  skill_tree_meta: "Wiki 'Gene Trees': 4 gene trees (Grease Monkey, Gunner, Pilot, Scavenger) bought with Gene Points from levelling, reset at the Hub."
+  passive_relics: "Wiki 'Relics': lootable relics fused into the ship for power, mostly rewards on hard/insane missions; removing one destroys it."
+  crafting: "Wiki 'Weapon Mods': craftable mods (Accuracy, Damage, Fire Rate...) plus lootable ones; Steam: 'fabricate munitions'."
+  environmental_hazards: "Wiki 'Helios - Zone Modifiers': sectors roll ice shard/asteroid storms, heat storms and system malfunction surges."
+confidence: medium
+curator: wiki-agent

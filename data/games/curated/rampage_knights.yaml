@@ -1,0 +1,51 @@
+appid: 314410
+name: Rampage Knights
+developer: Rake in Grass
+release_year: 2015
+subgenre: hybrid_action_roguelite
+wiki: https://rampage-knights.fandom.com/
+critic:
+  metacritic: 80
+stats:
+  playable_characters: 6
+  weapon_count: 111
+  enemy_types: 40
+  boss_count: 7
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  melee_combos: 2
+  permadeath: 2
+  second_chance: 2
+  procgen_levels: 2
+  room_based_floors: 2
+  boss_gates: 2
+  character_classes: 2
+  unlock_characters: 3
+  achievement_unlocks: 3
+  assist_mode: 1
+  weapons_variety: 3
+  passive_relics: 2
+  consumables: 3
+  cursed_items: 2
+  double_edged_items: 2
+  item_identification: 1
+  status_effects: 2
+  crits: 1
+  shops: 2
+  in_run_currency: 2
+  random_events: 1
+  local_coop: 2
+  online_coop: 2
+  pvp: 1
+  steam_deck_friendly: 1
+evidence:
+  achievement_unlocks: "Wiki 'Challenges': 82 challenges; completing sets (e.g. Grant Me Revenge + Crush + Oversized) unlocks the Barbarian, Assassin, Battlemage, Pirate and Warlock classes."
+  assist_mode: "Wiki 'Challenges': 'Please don't hurt me!' (die 3 times) unlocks casual difficulty."
+  second_chance: "Wiki 'Gold': gold is kept when you die and respawn but all of it is lost on game over; Devil's Pact resurrects you cursed."
+  double_edged_items: "Wiki 'Modifiers': Plague Bearer poisons everything but you are permanently poisoned; Mechanic Arms removes your dash."
+  cursed_items: "Wiki 'Curses, Diseases and Blessings': curses and diseases (Weak Bones, Shrinking...) inflicted by potions and altars."
+  item_identification: "Wiki 'Potions': Murky Water and Mysterious Potion have unknown effects until drunk."
+  procgen_levels: "Steam: a cooperative beat 'em up mixed with randomized dungeon crawling and exploration."
+confidence: medium
+curator: wiki-agent

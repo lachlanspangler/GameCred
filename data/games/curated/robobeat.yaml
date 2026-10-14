@@ -1,0 +1,43 @@
+appid: 1456760
+name: ROBOBEAT
+developer: Simon Fredholm
+release_year: 2024
+subgenre: hybrid_shooter
+wiki: https://robobeat.wiki.gg/
+critic:
+  metacritic: 83
+stats:
+  weapon_count: 25
+  boss_count: 4
+  biome_count: 5
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  rhythm_timing: 3
+  traversal_tools: 3
+  platforming: 2
+  parry_counter: 1
+  crits: 2
+  permadeath: 2
+  procgen_levels: 2
+  room_based_floors: 2
+  act_structure: 3
+  boss_gates: 3
+  hub_building: 1
+  unlock_items: 3
+  loadout_start: 2
+  weapons_variety: 3
+  active_items: 2
+  synergies: 1
+  cooldown_reduction: 1
+  mod_support: 1
+evidence:
+  rhythm_timing: "Steam: shooting in sync with the beat maximises damage and shortens cooldowns; custom .wav/.mp3/.ogg tracks auto-generate beats."
+  traversal_tools: "Wiki main page/Steam: wall run, grapple hook, slide, double jump and bunny hop through levels."
+  boss_gates: "Wiki 'Stages': Old Passage, Gallery (Ray Punk), Ruins (The Showman), Citadel (The Mask), Machine (Frazzer); each boss unlocks the next stage."
+  unlock_items: "Wiki 'Utilities': utilities unlocked by spending blips on blueprints in the workshop; blueprints found in the mansion or dropped by enemies."
+  weapons_variety: "Wiki 'Weapons': 25 guns and melee weapons (Tempo sticky grenades, Revolver, Yojimbo...), with charged and parry-charged attacks."
+  mod_support: "Wiki 'Cassettes': custom cassettes (songs) can be downloaded or created on PC."
+confidence: medium
+curator: wiki-agent

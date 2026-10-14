@@ -1,0 +1,46 @@
+appid: 1260590
+name: Hadean Tactics
+developer: Emberfish Games
+release_year: 2023
+subgenre: hybrid_deckbuilder
+wiki: https://hadean-tactics.fandom.com/
+stats:
+  playable_characters: 3
+  card_count: 260
+  item_count: 95
+  enemy_types: 50
+  boss_count: 9
+  difficulty_levels: 20
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  auto_battler: 2
+  party_building: 3
+  permadeath: 2
+  node_map: 2
+  procgen_levels: 1
+  act_structure: 2
+  boss_gates: 2
+  ascension_ladder: 3
+  unlock_characters: 2
+  character_classes: 2
+  loadout_start: 2
+  level_up_choices: 2
+  synergies: 2
+  build_archetypes: 2
+  passive_relics: 3
+  double_edged_items: 1
+  shops: 2
+  in_run_currency: 1
+  random_events: 2
+  elites: 1
+  early_access_dev: 1
+evidence:
+  party_building: "Wiki 'Units': runs start with two Draugr in 3 unit slots plus a bench; units come from map banners, events, shops or relics; boss rewards add slots."
+  auto_battler: "Steam: recruited souls battle automatically while you influence them with cards in semi real-time combat."
+  level_up_choices: "Wiki 'Units': each unit level offers two path options (heroes get four), each granting stats plus a skill and alliance."
+  ascension_ladder: "Steam: 20 Corruption (difficulty) levels."
+  unlock_characters: "Wiki 'Heroes': 3 default heroes (Deucalion unlocked at start, Erith, Alatar), each with 3 unlockable variants; custom heroes allowed."
+  double_edged_items: "Wiki 'Units': an event relic adds a unit slot while reducing all healing by 90%."
+confidence: medium
+curator: wiki-agent

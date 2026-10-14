@@ -1,0 +1,48 @@
+appid: 718590
+name: Dark Devotion
+developer: Hibernian Workshop
+release_year: 2019
+subgenre: hybrid_action_roguelite
+wiki: https://darkdevotion.fandom.com/
+critic:
+  metacritic: 72
+stats:
+  enemy_types: 19
+  boss_count: 19
+  biome_count: 4
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  dodge_iframes: 3
+  dual_resource: 2
+  permadeath: 2
+  act_structure: 2
+  boss_gates: 2
+  hub_building: 1
+  unlock_items: 3
+  loadout_start: 2
+  lore_codex: 2
+  weapons_variety: 2
+  passive_relics: 2
+  consumables: 2
+  cursed_items: 2
+  double_edged_items: 2
+  item_upgrading: 1
+  crits: 2
+  status_effects: 2
+  limb_injuries: 2
+  healing_scarcity: 2
+  environmental_hazards: 1
+  high_variance_loot: 1
+  steam_deck_friendly: 1
+evidence:
+  unlock_items: "Wiki 'Forge': green items and boss weapons found in runs are added to the forge in the Filthblood Shelter."
+  loadout_start: "Wiki 'Forge': before a run, Bones lets you pick a weapon, an armor and up to two consumables from unlocked items."
+  limb_injuries: "Wiki 'Curses': 54 curses including Broken arm, Deep wound, Second-degree burn and Glass bones weaken the Templar."
+  cursed_items: "Wiki 'Items': purple-glowing items apply a curse when equipped; blue ones grant a blessing."
+  dual_resource: "Wiki 'Faith'/'Movement': Faith (capped at 30) powers altars and Miracles; stamina pays for rolls and attacks."
+  dodge_iframes: "Wiki 'Movement': the roll makes the Templar invulnerable and able to pass through enemies for its full duration."
+  item_upgrading: "Wiki 'Runes': runes applied to weapons add crit, slow, curse-cure or stamina effects at levels I-V."
+  act_structure: "Wiki 'Temple': three main worlds of sub-locations followed by the Heraldic Lily boss rush."
+confidence: medium
+curator: wiki-agent

@@ -1,0 +1,44 @@
+appid: 364420
+name: Roguelands
+developer: SmashGames
+release_year: 2016
+subgenre: hybrid_action_roguelite
+wiki: https://roguelands.fandom.com/
+stats:
+  enemy_types: 48
+  boss_count: 16
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 2
+  permadeath: 1
+  procgen_levels: 3
+  open_procgen_world: 2
+  crafting: 3
+  hub_building: 1
+  unlock_characters: 2
+  unlock_items: 2
+  achievement_unlocks: 2
+  character_classes: 2
+  weapons_variety: 2
+  item_rarity: 2
+  flat_stat_scaling: 2
+  crits: 1
+  status_effects: 2
+  consumables: 1
+  shops: 1
+  in_run_currency: 2
+  enemy_hp_scaling: 2
+  optional_challenges: 2
+  run_history: 1
+  online_coop: 2
+  mod_support: 1
+evidence:
+  procgen_levels: "Wiki main page: each world is procedurally generated as the Combat Squad beams down."
+  crafting: "Wiki Beginner Guide: harvest trees, plants and ores on planets, then craft gear at stations on your ship."
+  optional_challenges: "Wiki 'Challenge Level': buy up to 3 Challenge Levels with Credits for stronger monsters but more EXP, credits, mods and legendary chance."
+  achievement_unlocks: "Wiki 'Unlockables': races, augments and uniforms are unlocked on the Death Screen by meeting feats (levels, kills, storylines)."
+  permadeath: "Wiki 'Level 200 Ironman' guide: Ironman characters can be killed off for their unlocks; the Death Screen summarises the run."
+  online_coop: "Wiki 'Multiplayer': co-op servers via VPN, port-forwarding or a dedicated-server mod; all characters must be downed to die."
+confidence: medium
+curator: wiki-agent

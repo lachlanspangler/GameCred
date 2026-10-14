@@ -1,0 +1,43 @@
+appid: 596970
+name: 'Sunless Skies: Sovereign Edition'
+developer: Failbetter Games
+release_year: 2019
+subgenre: hybrid_narrative
+wiki: https://sunlessskies.fandom.com/
+critic:
+  metacritic: 87
+stats:
+  biome_count: 4
+  weapon_count: 15
+  enemy_types: 30
+mechanics:
+  hybrid_narrative: 3
+  hybrid_survival: 2
+  permadeath: 2
+  legacy_inheritance: 2
+  assist_mode: 2
+  open_procgen_world: 2
+  long_runs: 3
+  real_time_action: 1
+  vehicle_combat: 3
+  hunger_clock: 3
+  stress_sanity: 3
+  random_events: 3
+  multiple_endings: 3
+  shops: 2
+  in_run_currency: 2
+  ship_base_design: 1
+  flat_stat_scaling: 1
+  lore_codex: 1
+  steam_deck_friendly: 1
+evidence:
+  permadeath: "Wiki 'How to Play Guide': Legacy mode permanently kills your captain on death, forcing a new one."
+  assist_mode: "Wiki 'How to Play Guide': Merciful mode lets you return to before your captain was killed."
+  legacy_inheritance: "Wiki 'Something awaits you': the next captain may inherit the locomotive, modules, sovereigns, chart and level."
+  hunger_clock: "Wiki 'How to Play Guide': an open-world survival game in which you manage fuel and supplies."
+  stress_sanity: "Wiki 'Terror': Terror rises ~1% per 20 s in the Wilderness (faster with headlight off); at 100% the captain is likely to die."
+  open_procgen_world: "Wiki 'How to Play Guide': four sky-domains whose middle and outer rings contain procedurally-generated locations and randomly placed ports."
+  multiple_endings: "Wiki 'Captain': you choose an Ambition that sets your own victory condition (Wealth, Song of the Sky, the Truth, ...)."
+  vehicle_combat: "Wiki 'Combat': real-time combat with locomotive-mounted weaponry; Steam lists full controller support."
+confidence: medium
+curator: wiki-agent

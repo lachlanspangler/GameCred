@@ -1,0 +1,38 @@
+appid: 1173200
+name: Metal Unit
+developer: JellySnow Studio
+release_year: 2021
+subgenre: hybrid_action_roguelite
+wiki: https://metalunit.fandom.com/
+stats:
+  weapon_count: 62
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 2
+  melee_combos: 2
+  dodge_iframes: 1
+  permadeath: 2
+  procgen_levels: 2
+  room_based_floors: 2
+  permanent_stat_upgrades: 2
+  unlock_items: 3
+  weapons_variety: 3
+  loadout_start: 2
+  crafting: 2
+  item_upgrading: 2
+  shops: 1
+  healing_scarcity: 2
+  assist_mode: 2
+  modular_difficulty: 1
+  optional_challenges: 2
+  early_access_dev: 1
+evidence:
+  unlock_items: "Steam: on death all equipped items convert into permanent research points used to unlock new items and skills."
+  weapons_variety: "Wiki categories: 25 ranged, 19 melee and 18 sub weapons plus 11 ultimate skills."
+  crafting: "Wiki 'Weapon Forging': combine weapons and materials into stronger weapons at Sun Tail base or any Campsite."
+  healing_scarcity: "Wiki 'Campsite': after a set number of rooms choose to rest (restore HP) or enter the Secret Area, not both."
+  loadout_start: "Wiki category 'Starting Sets': 5 starting equipment sets."
+  assist_mode: "Steam: Assist Mode customises the experience; Challenge Mode stacks odds against you for new rewards."
+confidence: medium
+curator: wiki-agent

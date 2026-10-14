@@ -1,0 +1,54 @@
+appid: 2097570
+name: StarVaders
+developer: Pengonauts
+release_year: 2025
+subgenre: hybrid_deckbuilder
+wiki: https://starvaders.wiki.gg/
+critic:
+  metacritic: 85
+stats:
+  playable_characters: 10
+  card_count: 285
+  item_count: 137
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  grid_tactics: 3
+  turn_based: 3
+  permadeath: 2
+  mid_run_save: 1
+  loadout_start: 2
+  character_classes: 3
+  unlock_items: 2
+  unlock_characters: 2
+  ascension_ladder: 2
+  daily_challenge: 2
+  optional_challenges: 2
+  multiple_endings: 1
+  pick_one_of_n: 3
+  reroll: 2
+  passive_relics: 3
+  item_rarity: 2
+  shops: 2
+  card_draw: 2
+  synergies: 3
+  build_archetypes: 2
+  cursed_items: 1
+  summons_minions: 2
+  block_shield: 2
+  environmental_hazards: 2
+  enemy_intents: 2
+  boss_gates: 2
+  elites: 1
+  time_manipulation: 2
+  steam_deck_friendly: 1
+evidence:
+  grid_tactics: "Steam: a fusion of deckbuilding and grid-based tactics, piloting a mech against an alien invasion."
+  character_classes: "Wiki 'Mech'/'Pilot': 3 mechs (Gunner, Stinger, Keeper), each with exclusive pilots who add cards and a starting artifact; 10 pilots listed."
+  passive_relics: "Wiki 'Artifact': 137 permanent passive artifacts in Common/Legendary/Special rarities; Legendary ones come from boss stages."
+  reroll: "Wiki 'Artifact': Chrono Tokens can reroll special-stage rewards; Steam: Chrono Tokens also rewind time to undo mistakes."
+  ascension_ladder: "Steam: ascending difficulties, daily runs and challenge modes; new cards, pilots and deadlier enemies unlock after runs."
+  cursed_items: "Wiki categories: 26 Junk cards and Burnt cards clog the deck (e.g. 'Insulation' artifact triggers on drawing Junk)."
+  environmental_hazards: "Wiki 'Artifact': bombs on the grid detonate and strike adjacent tiles (Mine Field, Bomber Mech)."
+confidence: medium
+curator: wiki-agent

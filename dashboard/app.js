@@ -215,7 +215,9 @@ function histogram(values, { width = 560, height = 200, bins = 20, lo = 0, hi = 
   const pad = { l: 36, r: 10, t: 10, b: 30 }, W = width - pad.l - pad.r, H = height - pad.t - pad.b;
   const counts = new Array(bins).fill(0), bw = (hi - lo) / bins;
   for (const v of values) counts[Math.min(bins - 1, Math.max(0, Math.floor((v - lo) / bw)))]++;
-  const ymax = Math.max(1, ...counts), ticks = niceTicks(0, ymax, 4);
+  const ymax = Math.max(1, ...counts);
+  let ticks = niceTicks(0, ymax, 4);
+  if (ticks[ticks.length - 1] < ymax) ticks.push(ticks[ticks.length - 1] + (ticks[1] - ticks[0] || ymax));
   const svg = s("svg", { class: "svgchart", style: `max-width:${width}px`, viewBox: `0 0 ${width} ${height}`, role: "img", "aria-label": `Histogram of ${xlabel}` });
   for (const t of ticks) {
     const y = pad.t + H - (t / ticks[ticks.length - 1]) * H;

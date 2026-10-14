@@ -1,0 +1,41 @@
+appid: 2198070
+name: Cardboard Town
+developer: Stratera Games
+release_year: 2023
+subgenre: hybrid_city_builder
+wiki: https://cardboard-town.fandom.com/
+stats:
+  card_count: 233
+  difficulty_levels: 2
+mechanics:
+  hybrid_city_builder: 3
+  hybrid_deckbuilder: 2
+  deckbuilding: 2
+  card_draw: 2
+  turn_based: 3
+  permadeath: 2
+  turn_escalation: 3
+  pick_one_of_n: 3
+  passive_relics: 2
+  adjacency_placement: 2
+  random_events: 3
+  optional_challenges: 1
+  modular_difficulty: 1
+  assist_mode: 1
+  unlock_items: 2
+  permanent_stat_upgrades: 1
+  gambling: 1
+  double_edged_items: 2
+  in_run_currency: 2
+  leaderboards: 1
+  steam_deck_friendly: 1
+evidence:
+  turn_escalation: "Wiki 'Trouble-Meter': advances by 1 each Day; mark 3 gives a random Trouble, mark 7 a random Disaster."
+  pick_one_of_n: "Wiki 'Upgrades': on level-up or star quest you are offered three upgrades and the chosen one is permanent for the run."
+  permadeath: "Wiki 'Failed Game Endings': the game is lost when any resource drops below -20 or 3 Red Alerts trigger."
+  adjacency_placement: "Wiki main page/'Trouble-Meter': buildings have Blue/Green/Red auras; a Population building in a Blue aura reduces trouble per square."
+  unlock_items: "Wiki 'Player Level-Up': after each game you earn score and level up, unlocking new cards and advantages for the next round."
+  assist_mode: "Wiki 'Modes': Utopia and Blessed Town lock the Trouble-Meter at 0; Expert starts with fewer resources and no officer."
+  double_edged_items: "Wiki 'Red Alerts': 'All Under Control' raises the alert limit but adds two random Disasters; 'Desperate Measures' trades a Red Alert for cards and resources."
+confidence: medium
+curator: wiki-agent
