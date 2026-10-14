@@ -1,0 +1,38 @@
+appid: 1830970
+name: The Last Flame
+developer: Hotloop
+release_year: 2025
+subgenre: hybrid_autobattler
+wiki: https://the-last-flame.fandom.com/
+stats:
+  playable_characters: 32
+mechanics:
+  hybrid_autobattler: 3
+  auto_battler: 3
+  party_building: 3
+  permadeath: 2
+  endless_mode: 2
+  synergies: 3
+  build_archetypes: 3
+  multiplicative_scaling: 2
+  crafting: 2
+  item_rarity: 1
+  flat_stat_scaling: 2
+  passive_relics: 2
+  shops: 2
+  in_run_currency: 1
+  summons_minions: 2
+  block_shield: 2
+  status_effects: 2
+  crits: 2
+  elemental_interactions: 1
+  early_access_dev: 1
+evidence:
+  synergies: "Wiki 'Origins': 62 origin pages, each a party-wide bonus (e.g. Time Travelers grants full mana to all heroes when one drops below 40% HP)."
+  party_building: "Steam: recruit a party of unique heroes; wiki 'Heroes': 32 heroes with traits like melee, healer, crit, summon and shield."
+  crafting: "Wiki 'Items': gear is split into Heirlooms (normal/superior bonuses) and crafted Recipes such as Bloodknight's Armor."
+  passive_relics: "Wiki 'Relics': e.g. Firewood grants a third campfire action, Genie Lamp gives 30% off everything at the shop."
+  summons_minions: "Wiki 'Starving Beasts': summons gain the bonus crit chance and 300% of the crit damage of all heroes, plus 300% bleed effectiveness."
+  endless_mode: "Steam: an endless roguelike auto-battler; wiki lists a January 2024 launch before the January 2025 full release."
+confidence: medium
+curator: wiki-agent

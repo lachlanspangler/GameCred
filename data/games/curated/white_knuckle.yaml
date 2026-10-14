@@ -1,0 +1,39 @@
+appid: 3195790
+name: White Knuckle
+developer: Dark Machine Games
+release_year: 2025
+subgenre: hybrid_action_roguelite
+wiki: https://white-knuckle.fandom.com/
+stats:
+  biome_count: 3
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 3
+  traversal_tools: 3
+  permadeath: 2
+  second_chance: 1
+  procgen_levels: 2
+  act_structure: 2
+  time_pressure: 2
+  unkillable_pursuer: 2
+  inventory_management: 3
+  consumables: 2
+  pick_one_of_n: 2
+  double_edged_items: 2
+  flat_stat_scaling: 1
+  shops: 2
+  in_run_currency: 2
+  unlock_items: 2
+  environmental_hazards: 2
+  early_access_dev: 1
+evidence:
+  inventory_management: "Wiki 'Mechanics': 13 items before you become encumbered; encumbrance slows you and makes required jumps impossible."
+  traversal_tools: "Wiki 'Advanced Movement': rebar, brick and flare jumps launch you opposite the throw; pitons and rope rebar aid climbing."
+  pick_one_of_n: "Wiki 'Perks and Upgrades': at Interlude Lockdown and Forlorn Gateway pick one of two free perks or a stronger perk bought with roaches."
+  double_edged_items: "Wiki 'Perks and Upgrades': experimental perks from the Break Room may pair a positive with a negative trait, some time-limited."
+  unlock_items: "Wiki 'Vendors': vending machines sell for gold roaches; extra items join their stock after you use them twice."
+  procgen_levels: "Wiki 'Regions': Silos, Pipeworks and Habitation sub-regions are built from rooms randomly stitched together each run."
+  unkillable_pursuer: "Steam: something oozes from the depths, following you and growing angrier, and won't let up."
+confidence: medium
+curator: wiki-agent

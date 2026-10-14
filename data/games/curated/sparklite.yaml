@@ -25,6 +25,7 @@ mechanics:
   in_run_currency: 2
   unlock_items: 2
   local_coop: 1
+  companions_pets: 1
 evidence:
   inventory_management: Patches are slotted into a grid-based patch board whose size is upgraded at the Refuge.
   procgen_levels: The overworld map of Geodia reshuffles each time the player returns to it.

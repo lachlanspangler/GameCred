@@ -23,6 +23,8 @@ mechanics:
   day_night_cycle: 3
   hunger_clock: 3
   stress_sanity: 3
+  companions_pets: 2
+  knowledge_progression: 2
 evidence:
   hybrid_survival: Hunger, health and sanity meters plus seasons and darkness.
   second_chance: Touch Stones, Meat Effigies and the Life Giving Amulet revive the player.

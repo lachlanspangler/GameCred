@@ -126,3 +126,9 @@ run_carryover_on_win, shrinking_zone, raid_mechanics, vr_motion_control, shared_
 ## Decision: taxonomy v4 (2026-10-13) — 5 accepted (169 → 174)
 hybrid_narrative (new subgenre; WORLD OF HORROR, The Red Lantern, Sunless Sea reassigned, old subgenre kept at 2), corpse_run,
 soft_run_limit, knowledge_progression, dice_placement.
+- (wiki B) partial_death_penalty (Slasher's Keep), atb_timer_combat (Kingsway), carried_risk_pickups (Blazing Beaks), noise_detection (PANICORE), loop_gear_infusion (DEATHLOOP)
+
+## Decision: taxonomy v5 (2026-10-13) — 21 accepted (174 → 195)
+From backlog + own ideation: partial_death_penalty, projectile_modifiers, proc_triggers, lifesteal, temporary_buffs, ultimate_meter,
+luck_stat, movement_speed_scaling, companions_pets, resource_conversion, secret_areas, run_mutators, boss_rush, shrinking_zone,
+shared_world_mmo, raid_mechanics, realtime_deck_cycling, momentum_movement, health_drain, merge_upgrades, turn_rewind.

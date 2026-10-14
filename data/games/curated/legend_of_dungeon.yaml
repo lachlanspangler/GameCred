@@ -1,0 +1,48 @@
+appid: 238280
+name: Legend of Dungeon
+developer: Robot Loves Kitty
+release_year: 2013
+subgenre: hybrid_action_roguelite
+wiki: https://legend-of-dungeon.fandom.com/
+critic:
+  metacritic: 62
+stats:
+  boss_count: 7
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  melee_combos: 1
+  permadeath: 3
+  second_chance: 1
+  procgen_levels: 3
+  room_based_floors: 2
+  long_runs: 1
+  enemy_hp_scaling: 2
+  unlock_characters: 2
+  character_classes: 1
+  weapons_variety: 2
+  consumables: 2
+  item_identification: 2
+  cursed_items: 1
+  double_edged_items: 1
+  shops: 2
+  in_run_currency: 2
+  gambling: 1
+  healing_scarcity: 2
+  flat_stat_scaling: 1
+  monster_capture: 1
+  environmental_hazards: 2
+  optional_challenges: 1
+  leaderboards: 2
+  local_coop: 3
+  secret_areas: 1
+evidence:
+  procgen_levels: 'Wiki ''Dungeon'': randomly generated each playthrough; 26 floors down from the Tavern and back, with secret doors, traps and lava.'
+  item_identification: 'Wiki ''Strategy'': potion effects change every run, so players note them down; shop spellbooks hold unknown spells.'
+  cursed_items: 'Wiki ''Enchantments'': weapons and hats may roll random enchantments, including debuffs (Heavy, Clumsy, Feebleness).'
+  shops: 'Wiki ''Shop'': random shop room with three priced items; gold spent here also lowers scoreboard placement.'
+  second_chance: 'Steam: with 2+ players a dead player becomes a ghost collecting spirit orbs to resurrect.'
+  healing_scarcity: 'Wiki ''Health'': HP restored only by apples and Heal/Heal More potions; Tavern beer trades health for XP.'
+  optional_challenges: 'Wiki ''Boss monsters'': free-roaming bosses (Deep Minotaur, Lich King, Vampire, Giant Skull...) are often wiser to avoid but drop gold and special items.'
+confidence: medium
+curator: wiki-agent

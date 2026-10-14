@@ -30,6 +30,7 @@ mechanics:
   run_history: 1
   item_identification: 3
   hunger_clock: 2
+  secret_areas: 2
 evidence:
   item_upgrading: Scrolls of Upgrade decide which weapon/armor/wand becomes the run's core.
   pick_one_of_n: Tome of Mastery after the second boss offers a choice of two subclasses.

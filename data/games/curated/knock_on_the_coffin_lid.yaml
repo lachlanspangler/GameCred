@@ -1,0 +1,48 @@
+appid: 1232580
+name: Knock on the Coffin Lid
+developer: RedBoon
+release_year: 2024
+subgenre: hybrid_deckbuilder
+wiki: https://knock-on-the-coffin-lid.fandom.com/
+stats:
+  playable_characters: 3
+  boss_count: 15
+  biome_count: 4
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  turn_based: 3
+  energy_mana: 2
+  card_draw: 2
+  permadeath: 2
+  act_structure: 3
+  boss_gates: 3
+  narrative_across_runs: 3
+  multiple_endings: 2
+  character_classes: 3
+  loadout_start: 2
+  deck_from_equipment: 3
+  transformations: 1
+  item_upgrading: 1
+  cursed_items: 3
+  deck_thinning: 2
+  shops: 2
+  in_run_currency: 2
+  consumables: 1
+  status_effects: 2
+  block_shield: 3
+  elites: 2
+  random_events: 3
+  modular_difficulty: 2
+  double_edged_items: 2
+  weapon_stance_swap: 1
+evidence:
+  deck_from_equipment: "Wiki 'Items': each item lists the cards it adds to your deck (e.g. Aduisor's Amulet adds 3x Bad luck)."
+  cursed_items: "Wiki 'Curse': curse cards stay for the whole run (some only while the linked item is equipped) and can be removed at stores and events."
+  character_classes: "Wiki 'Characters': 3 heroes (Persival, Bjorn, Vanadis), each with 4 classes such as Knight, Turnskin or Raven mistress."
+  modular_difficulty: "Wiki 'Tarot Cards': per-hero tarot scenarios change the rules, e.g. Sun sets max HP to 1 with immunity to negative effects."
+  narrative_across_runs: "Steam: investigate your own death and find ways to break free from a time loop; the hero you choose may rise to the throne."
+  random_events: "Wiki 'Events': branching per-biome events (Lycan, Wolf Pack, Simeon the curse collector) with hero-specific choices and trophies."
+  weapon_stance_swap: "Wiki 'Lycan'/'Tarot Cards': Bjorn switches between a lycan form and a weak form with different damage rules."
+confidence: medium
+curator: wiki-agent

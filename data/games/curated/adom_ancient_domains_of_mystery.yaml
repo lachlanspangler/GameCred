@@ -27,6 +27,8 @@ mechanics:
   corruption_meter: 2
   time_pressure: 1
   item_upgrading: 1
+  secret_areas: 2
+  companions_pets: 1
 evidence:
   multiple_endings: Several endings including ultra endings requiring long quest chains.
   character_classes: Race x class combinations (10+ races, 20+ classes).

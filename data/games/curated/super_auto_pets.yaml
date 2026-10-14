@@ -24,6 +24,7 @@ mechanics:
   content_updates: 3
   prep_combat_phases: 3
   lanes_ranks: 2
+  merge_upgrades: 3
 evidence:
   async_multiplayer: Arena mode battles snapshots of other players' teams.
   item_upgrading: Merging three copies of a pet levels it up and grants a free higher-tier shop pet.
@@ -31,5 +32,6 @@ evidence:
   loadout_start: Packs (Turtle, Puppy, Star, Golden...) define the pet/food pool for the run.
   prep_combat_phases: Each turn alternates a shop/build phase with an automatic battle.
   lanes_ranks: Pet order in the lineup determines who fights and is targeted first.
+  merge_upgrades: Combining duplicate pets levels them up; stacking copies is the core upgrade path.
 confidence: high
 curator: agent

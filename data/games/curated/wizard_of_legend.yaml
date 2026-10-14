@@ -35,6 +35,7 @@ mechanics:
   local_coop: 2
   pvp: 1
   crits: 1
+  ultimate_meter: 2
 evidence:
   talent_slots: Four arcana slots (basic, dash, standard, signature) plus one in-run swap slot.
   elemental_interactions: Eight elements with interactions (water + lightning, ice + earth).

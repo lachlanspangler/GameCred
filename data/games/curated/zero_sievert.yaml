@@ -27,6 +27,7 @@ mechanics:
   weapon_durability: 2
   hybrid_action_roguelite: 3
   consumables: 2
+  partial_death_penalty: 2
 evidence:
   extraction: Raids from the bunker; reaching an extraction point keeps loot, death loses everything carried.
   inventory_management: Grid-based inventory with weight forces loot triage during raids.

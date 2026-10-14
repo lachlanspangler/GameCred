@@ -64,6 +64,7 @@ mechanics:
   early_access_dev: 1
   lore_codex: 1
   run_history: 1
+  run_mutators: 2
 evidence:
   enemy_intents: Every enemy shows its next action (attack value / buff / debuff) above its head.
   elites: Elite nodes are optional higher-risk fights that guarantee a relic.

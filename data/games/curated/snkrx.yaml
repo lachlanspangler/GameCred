@@ -26,10 +26,12 @@ mechanics:
   ascension_ladder: 2
   permadeath: 2
   enemy_hp_scaling: 2
+  merge_upgrades: 3
 evidence:
   transformations: Unit classes (ranger, mage, swarmer...) grant set bonuses at class-count thresholds, auto-chess style.
   item_upgrading: Buying three copies of a unit merges it into a higher level.
   auto_attack: You only steer the snake; every unit in the chain attacks automatically.
   ascension_ladder: NG+ levels raise difficulty after a win.
+  merge_upgrades: Buying three copies of the same unit merges it into the next level.
 confidence: high
 curator: agent

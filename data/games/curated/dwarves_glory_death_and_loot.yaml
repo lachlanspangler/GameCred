@@ -1,0 +1,53 @@
+appid: 2205850
+name: 'Dwarves: Glory, Death and Loot'
+developer: Hamma Studios
+release_year: 2026
+subgenre: hybrid_autobattler
+wiki: https://dwarves-glory-death-and-loot.fandom.com/
+stats:
+  item_count: 110
+  weapon_count: 48
+  biome_count: 5
+  difficulty_levels: 3
+mechanics:
+  hybrid_autobattler: 3
+  auto_battler: 3
+  real_time_action: 1
+  party_building: 3
+  permadeath: 2
+  long_runs: 1
+  endless_mode: 2
+  extraction: 1
+  waves: 2
+  elites: 2
+  boss_gates: 1
+  optional_challenges: 2
+  character_classes: 2
+  build_archetypes: 2
+  synergies: 2
+  pick_one_of_n: 2
+  reroll: 2
+  item_upgrading: 3
+  item_rarity: 3
+  high_variance_loot: 3
+  passive_relics: 2
+  shops: 2
+  in_run_currency: 2
+  lanes_ranks: 1
+  status_effects: 2
+  crits: 1
+  assist_mode: 1
+  leaderboards: 1
+  steam_deck_friendly: 1
+  merge_upgrades: 2
+evidence:
+  permadeath: 'Wiki ''Game Mode'': on Glory (normal) you lose if all dwarves die in a battle; Loot (easy) only costs 10 victories and the run ends when you retire.'
+  party_building: 'Steam: build a party of up to 10 Beardlings; wiki ''Professions'': 7 professions set by the weapon type you give each dwarf.'
+  item_upgrading: 'Wiki ''Forge'': combine an item with 3 copies of the same rarity to upgrade it, choosing 1 of 3 random upgrades with reroll.'
+  reroll: 'Wiki ''Battles'': the reward, battle map and battle itself can be rerolled (except ambushes).'
+  elites: 'Wiki ''Battles'': elite encounters appear every 10, later every 5 rounds, plus chieftain and champion encounters with more loot.'
+  extraction: 'Wiki ''Game Mode''/''Battles'': use the white flag to retreat from a losing battle, or in Eternal mode to leave with the EXP, gold and Mythril earned.'
+  lanes_ranks: 'Wiki ''Formations'': 13 formations such as Phalanx and Hold the Line control how the clan advances.'
+  optional_challenges: 'Wiki ''Raids'': after stage 50, raid bosses such as the Cave Troll drop special items.'
+confidence: medium
+curator: wiki-agent

@@ -42,11 +42,13 @@ mechanics:
   content_updates: 3
   early_access_dev: 1
   steam_deck_friendly: 1
+  ultimate_meter: 3
 evidence:
   elemental_interactions: Fire, Shock and Corrosion elements interact (e.g. elemental reactions/combos between status effects) and drive builds.
   passive_relics: Scrolls are passive run modifiers picked from offers of three, many hero-agnostic.
   online_coop: Up to 4-player online co-op with shared run progression.
   skill_tree_meta: Talent tree purchased with Soul Essence persists between runs.
   crits: Weak-point (head) hits deal crit damage; many scrolls/occult builds scale crit.
+  ultimate_meter: Each hero has an ultimate skill that charges through combat and is unleashed on demand.
 confidence: high
 curator: agent

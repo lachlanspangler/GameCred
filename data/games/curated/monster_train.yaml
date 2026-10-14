@@ -51,6 +51,7 @@ mechanics:
   run_history: 1
   summons_minions: 3
   lanes_ranks: 3
+  run_mutators: 2
 evidence:
   loadout_start: Each run pairs a primary and an allied clan, mixing two card pools.
   waves: Enemies arrive in waves and climb the train floor by floor toward the Pyre.

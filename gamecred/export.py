@@ -7,6 +7,7 @@ import logging
 
 from . import DASHBOARD_DIR, DOCS_DIR, PROCESSED_DIR
 from .analysis.archetypes import archetypes
+from .analysis.money import heatmap, market, mechanic_money
 from .analysis.extras import rubric, temporal_holdout, trends
 from .analysis.impact import run_scope, stat_correlations
 from .analysis.irr import compute as irr_compute
@@ -63,17 +64,20 @@ def export() -> dict:
     for sc in list(scopes.values()):
         (sc.get("ridge") or {}).pop("oof", None)
     analysis = {"scopes": scopes, "subgenres": by_sub, "stats": stat_correlations(games),
-                "archetypes": archetypes(games), "trends": trends(games), "holdout": temporal_holdout(games), "irr": irr_compute()}
+                "archetypes": archetypes(games), "money": {"mechanics": mechanic_money(games), **market(games)},
+                "heatmap": heatmap(games), "trends": trends(games), "holdout": temporal_holdout(games), "irr": irr_compute()}
     rub_dir = DOCS_DIR / "rubrics"
     rub_dir.mkdir(exist_ok=True)
     (rub_dir / "all_roguelikes.md").write_text(rubric(scopes["high_conf"], "All roguelikes (high-confidence tags)"))
     for h, sc in by_sub.items():
         (rub_dir / f"{h}.md").write_text(rubric(sc, tax.mechanics[h].name))
-    ANALYSIS_PATH.write_text(json.dumps(analysis))
+    ANALYSIS_PATH.write_text(json.dumps(analysis, default=str))
     from .findings import write as write_findings
     from .textbook import write as write_textbook
     write_textbook(games, analysis)
     write_findings(games, analysis)
+    from .ideas import write as write_ideas
+    analysis["auto_ideas"] = write_ideas(games, analysis)
 
     taxo = {"families": [
         {"id": fid, "name": f["name"], "desc": f["desc"], "subfamilies": [

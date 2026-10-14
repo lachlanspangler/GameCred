@@ -54,6 +54,7 @@ mechanics:
   tutorialized_unlocks: 1
   score_target_rounds: 3
   card_mods: 3
+  run_mutators: 2
 evidence:
   interest_economy: Earn $1 interest per $5 held (capped), making saving vs spending a core decision.
   multiplicative_scaling: Jokers stack +Chips, +Mult and xMult in order, enabling exponential scores.

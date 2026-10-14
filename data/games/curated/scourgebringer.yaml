@@ -30,6 +30,7 @@ mechanics:
   early_access_dev: 2
   parry_counter: 2
   healing_scarcity: 2
+  ultimate_meter: 2
 evidence:
   melee_combos: Air-dash/slash/smash combat keeps the player airborne; Fury meter powers ranged shots.
   skill_tree_meta: Judge's Blood buys permanent skills in the persistent Altar tree.

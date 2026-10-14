@@ -1,0 +1,43 @@
+appid: 598060
+name: Slasher's Keep
+developer: Damian Schloter
+release_year: 2020
+subgenre: hybrid_action_roguelite
+wiki: https://slashers-keep.fandom.com/
+stats:
+  playable_characters: 6
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  fps: 2
+  parry_counter: 2
+  environmental_hazards: 3
+  permadeath: 2
+  procgen_levels: 3
+  permanent_stat_upgrades: 2
+  extraction: 1
+  unlock_characters: 2
+  achievement_unlocks: 1
+  character_classes: 2
+  flat_stat_scaling: 2
+  level_up_choices: 1
+  crits: 1
+  weapons_variety: 1
+  crafting: 3
+  item_rarity: 2
+  high_variance_loot: 2
+  card_mods: 1
+  consumables: 2
+  inventory_management: 1
+  partial_death_penalty: 3
+evidence:
+  permanent_stat_upgrades: 'Wiki main page: on death the character returns to floor 1 losing carried items plus 25% of attributes, levels and money, keeping the rest.'
+  extraction: 'Wiki ''Equipment'': only items placed down the chute are saved and passed to the character''s next run.'
+  crafting: 'Wiki ''Crafting'': forges on odd floors from floor 3 build shortswords, swords, axes and maces from blade/head, hilt/shaft components.'
+  environmental_hazards: 'Steam/Wiki ''Weapon'': smack enemies into spikes and chasms with the inventory sack or mace knockback.'
+  item_rarity: 'Wiki ''Equipment'': White/Green/Blue/Purple/Red tiers; Green and higher roll skills and passive bonuses.'
+  unlock_characters: 'Wiki main page: two starting character origins; the other four are unlocked through actions during play.'
+  parry_counter: 'Steam: dynamic melee with swings, thrusts and precise parrying.'
+  partial_death_penalty: 'Wiki main page: on death the character loses carried items plus 25% of attributes, levels and money, keeping the rest.'
+confidence: medium
+curator: wiki-agent

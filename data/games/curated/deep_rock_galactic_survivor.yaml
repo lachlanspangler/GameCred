@@ -36,6 +36,7 @@ mechanics:
   content_updates: 2
   steam_deck_friendly: 2
   pickup_magnet_economy: 3
+  movement_speed_scaling: 1
 evidence:
   procgen_levels: Generated cave maps of destructible rock that the dwarf mines through to path and collect minerals.
   act_structure: Missions are multi-stage descents through cave layers ending in a Dreadnought boss.

@@ -42,6 +42,7 @@ mechanics:
   skill_tags: 3
   minute_spawn_schedule: 2
   pickup_magnet_economy: 2
+  movement_speed_scaling: 1
 evidence:
   unlock_items: Equipment (rings, amulets, gloves, boots, etc.) found in a run is sent to the Well and becomes available in later runs.
   achievement_unlocks: NPC quests (kill X, reach Y with character Z) unlock new characters, items and blessings.

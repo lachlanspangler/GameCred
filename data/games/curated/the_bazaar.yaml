@@ -29,6 +29,8 @@ mechanics:
   reroll: 2
   adjacency_placement: 3
   skill_tags: 2
+  lifesteal: 2
+  merge_upgrades: 2
 evidence:
   cooldown_reduction: Items fire on cooldowns; Haste/Slow/Freeze manipulating them is a core axis.
   interest_economy: Income stat pays gold each day; investing in income vs power is a key tradeoff.

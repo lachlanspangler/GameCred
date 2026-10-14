@@ -43,10 +43,18 @@ mechanics:
   local_coop: 2
   steam_deck_friendly: 2
   summons_minions: 1
+  proc_triggers: 3
+  run_mutators: 3
+  secret_areas: 2
+  lifesteal: 2
+  companions_pets: 1
+  temporary_buffs: 1
 evidence:
   loadout_start: New alternate skill loadouts per survivor unlocked via challenges.
   time_pressure: Difficulty scales continuously with time spent in the run.
   modular_difficulty: Artifacts toggle global run modifiers before a run.
   item_stacking: Items stack linearly or hyperbolically when duplicated.
+  proc_triggers: Items fire chance-on-hit effects (Ukulele, AtG Missile, Sticky Bomb) that stack into proc chains.
+  run_mutators: Artifacts found in hidden spots are toggled before a run to change the rules (Honor, Command, Glass).
 confidence: medium
 curator: agent

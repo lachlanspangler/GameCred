@@ -32,6 +32,7 @@ mechanics:
   online_coop: 2
   early_access_dev: 2
   item_identification: 2
+  secret_areas: 2
 evidence:
   cursed_items: Unidentified gear may be cursed and cannot be unequipped until uncursed.
   healing_scarcity: Healing is rare; HP is a run-long resource in the brutal side-scrolling crawl.

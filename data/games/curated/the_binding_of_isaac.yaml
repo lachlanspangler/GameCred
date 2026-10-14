@@ -46,11 +46,18 @@ mechanics:
   random_events: 1
   short_runs: 1
   elites: 1
+  projectile_modifiers: 3
+  secret_areas: 3
+  luck_stat: 2
+  movement_speed_scaling: 2
+  companions_pets: 2
 evidence:
   hp_as_currency: Devil Rooms trade heart containers for powerful items.
   achievement_unlocks: Secrets (e.g. beating Mom's Heart N times) unlock new items, characters and chapters.
   transformations: Collecting Guppy or Lord of the Flies items grants a set transformation.
   gambling: Slot machines, fortune tellers and (Wrath of the Lamb) shell games and arcade rooms.
   multiple_endings: 13 endings unlocked progressively, gated by Mom's Heart, Isaac, Satan, ??? and the Lamb.
+  projectile_modifiers: Tear items change shot behaviour (homing, piercing, spectral, Brimstone) and define builds.
+  secret_areas: Secret rooms reached by bombing walls and hidden unlocks are a central discovery pillar.
 confidence: high
 curator: agent

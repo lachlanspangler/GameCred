@@ -1,0 +1,25 @@
+appid: 2695940
+name: PANICORE
+developer: ZTEK Studio
+release_year: 2024
+subgenre: hybrid_action_roguelite
+wiki: https://panicore.fandom.com/
+mechanics:
+  hybrid_action_roguelite: 2
+  real_time_action: 2
+  unkillable_pursuer: 3
+  stealth: 3
+  permadeath: 2
+  short_runs: 1
+  second_chance: 1
+  consumables: 1
+  high_variance_loot: 1
+  online_coop: 3
+evidence:
+  stealth: "Wiki 'Sound Level': a 5-section meter tracks noise from steps, jumps, doors and the player's real microphone; Steam: hide in cabinets and shadows."
+  unkillable_pursuer: "Steam: a relentless AI monster that hears your steps and voice must be outwitted, not fought."
+  high_variance_loot: "Wiki 'Items List': most items spawn randomly; each map (Volga Middle School, Havenview Hospital, Ravenswood Asylum) has its own escape items."
+  second_chance: "Wiki 'Medipacks': medipacks can be used to heal fallen players."
+  online_coop: "Steam: co-op for up to 5 players; escape alone or together."
+confidence: medium
+curator: wiki-agent

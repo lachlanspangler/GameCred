@@ -34,10 +34,14 @@ mechanics:
   online_coop: 1
   early_access_dev: 2
   summons_minions: 2
+  companions_pets: 3
+  projectile_modifiers: 2
+  secret_areas: 1
 evidence:
   item_stacking: No item cap - every passive stacks visually and mechanically on the character.
   passive_relics: Hatchable eggs spawn pet followers whose effects stack.
   gambling: Chests, crystal/key economy and slot machines.
   summons_minions: Hatched pets follow and attack alongside the player and stack in number.
+  companions_pets: Eggs hatch into pets that follow the player and assist in combat, evolving as more are collected.
 confidence: medium
 curator: agent

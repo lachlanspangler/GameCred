@@ -1,0 +1,34 @@
+appid: 1608290
+name: GNOSIA
+developer: Petit Depotto
+release_year: 2022
+subgenre: hybrid_narrative
+wiki: https://gnosia.fandom.com/
+mechanics:
+  hybrid_narrative: 3
+  turn_based: 2
+  short_runs: 2
+  turn_escalation: 1
+  narrative_across_runs: 3
+  npc_relationships: 3
+  lore_codex: 3
+  multiple_endings: 2
+  permanent_stat_upgrades: 2
+  flat_stat_scaling: 2
+  unlock_items: 2
+  tutorialized_unlocks: 2
+  loadout_start: 2
+  modular_difficulty: 1
+  random_events: 3
+  perfect_information: 1
+  steam_deck_friendly: 1
+evidence:
+  narrative_across_runs: "Wiki 'Loops': each loop is a new game; the player fills their Silver Key with Notes across loops to escape the time loop."
+  lore_codex: "Wiki 'Notes': collecting character Notes from events is the primary goal; Event Search is unlocked to target missing Notes."
+  permanent_stat_upgrades: "Wiki 'Gameplay'/'Abilities': experience from past loops levels the player up, each level granting a point in Charisma, Intuition, Logic, Charm, Performance or Stealth."
+  npc_relationships: "Wiki 'Love': a hidden Love stat persists across loops and biases each loop's randomized Amicability."
+  loadout_start: "Wiki 'Roles': the player chooses which roles are present in a loop and may choose their own role; NPC roles are random."
+  turn_escalation: "Wiki 'Gameplay': loops proceed by day (5 discussion rounds, then night); a loop ends automatically on Day 15."
+  tutorialized_unlocks: "Wiki 'Skills'/'Loops': the first dozen loops are static tutorials and many skills unlock through story progress."
+confidence: medium
+curator: wiki-agent

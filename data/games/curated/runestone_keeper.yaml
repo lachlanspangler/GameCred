@@ -1,0 +1,50 @@
+appid: 339400
+name: Runestone Keeper
+developer: Blackfire
+release_year: 2015
+subgenre: hybrid_traditional
+wiki: https://runestonekeeper.fandom.com/
+stats:
+  playable_characters: 10
+mechanics:
+  hybrid_traditional: 3
+  hybrid_puzzle: 1
+  turn_based: 3
+  permadeath: 3
+  mid_run_save: 2
+  procgen_levels: 3
+  act_structure: 1
+  boss_gates: 2
+  multi_phase_bosses: 1
+  endless_mode: 1
+  multiple_endings: 1
+  hub_building: 2
+  permanent_stat_upgrades: 3
+  unlock_characters: 2
+  unlock_items: 1
+  modular_difficulty: 2
+  character_classes: 2
+  level_up_choices: 1
+  flat_stat_scaling: 2
+  pick_one_of_n: 2
+  passive_relics: 1
+  consumables: 2
+  shops: 3
+  in_run_currency: 2
+  crafting: 1
+  double_edged_items: 2
+  hunger_clock: 1
+  environmental_hazards: 2
+  random_events: 3
+  leaderboards: 1
+evidence:
+  permadeath: "Wiki 'Gameplay and Strategies': dungeons are generated each game, you can Save and Quit, but death is permanent."
+  procgen_levels: "Wiki 'Dungeon': 20 levels of 56 hidden tiles revealed Minesweeper-style to find the exit, monsters, traps and loot."
+  permanent_stat_upgrades: "Wiki 'Upgrades': gold buys persistent tiered upgrades in Hero's Town (Bargainer, Prospector, Warrior +10/20/30 starting life)."
+  modular_difficulty: "Wiki 'Hero's Town': Runewords spend runes to make the next run harder and multiply its end score."
+  double_edged_items: "Wiki 'Gods': worshipping one God grants abilities in exchange for sacrifices; switching gods brings a betrayal punishment."
+  pick_one_of_n: "Wiki 'Shops': clearing all monsters on a level offers a choice of 3 clearance bonuses; skill and item shops show 3 random offers."
+  hunger_clock: "Wiki 'Dungeon': revealing tiles consumes turns and restores soul points, which skills and upgrades spend."
+  unlock_characters: "Wiki 'Heroes': 10 heroes; Svafa unlocks at player level 10, Hogg at 15, Merlyn after beating the game with the Endless runeword."
+confidence: medium
+curator: wiki-agent

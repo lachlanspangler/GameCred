@@ -32,11 +32,14 @@ mechanics:
   content_updates: 2
   pick_one_of_n: 1
   dice_manipulation: 3
+  dice_placement: 3
+  run_mutators: 2
 evidence:
   dice: Rolled dice are slotted into equipment cards that require specific values.
   inventory_management: Equipment is placed on a limited backpack grid that sizes your combat hand.
   optional_challenges: Each character has 6 rule-changing Episodes with twisted rulesets.
   mod_support: Official mod support added post-launch.
   dice_manipulation: Equipment splits, bumps, flips and changes die values as the core puzzle.
+  dice_placement: Rolled dice are slotted into equipment cards with value requirements each turn.
 confidence: high
 curator: agent

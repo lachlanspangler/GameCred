@@ -25,6 +25,7 @@ mechanics:
   synergies: 1
   item_upgrading: 2
   pickup_magnet_economy: 2
+  movement_speed_scaling: 1
 evidence:
   weapon_evolution: Combining trinkets/equipment with weapons evolves them into stronger forms.
   boss_gates: Missions build to fights with Army General bosses.

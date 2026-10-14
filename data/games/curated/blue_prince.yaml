@@ -24,6 +24,9 @@ mechanics:
   lore_codex: 2
   tutorialized_unlocks: 2
   mid_run_save: 1
+  soft_run_limit: 3
+  knowledge_progression: 3
+  secret_areas: 3
 evidence:
   tile_placement_world: Each day the player drafts room blueprints onto Mount Holly's 5x9 grid, building the house they explore.
   pick_one_of_n: Opening a door offers three blueprints; gems pay for the pricier rooms.
@@ -31,5 +34,8 @@ evidence:
   reroll: Dice let the player redraw the current set of blueprint options.
   narrative_across_runs: The house resets daily, but knowledge, story clues and a few permanent upgrades carry forward toward Room 46 and beyond.
   double_edged_items: Red rooms such as the Gymnasium or Chapel give benefits but cost steps or coins.
+  soft_run_limit: Each day ends when the step counter runs out, not through death.
+  knowledge_progression: Progress across days is mostly learned clues, puzzle solutions and house rules rather than unlocks.
+  secret_areas: Hidden rooms, secret passages and layered meta-puzzles reward exploration and community discovery.
 confidence: high
 curator: agent

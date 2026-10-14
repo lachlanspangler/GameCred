@@ -26,10 +26,12 @@ mechanics:
   vehicle_combat: 3
   hybrid_action_roguelite: 3
   block_shield: 2
+  projectile_modifiers: 3
 evidence:
   loadout_start: Body, weapon and shield modules are chosen per run and fundamentally change the ship.
   level_up_choices: Each level offers mods from a hex upgrade tree; prerequisite chains define builds.
   early_access_dev: About five years in Early Access before 1.0 in 2024.
   vehicle_combat: The player is a ship; body/weapon/shield modules define its handling and combat.
+  projectile_modifiers: Mods alter projectile behaviour such as split, pierce, homing and ricochet shots.
 confidence: medium
 curator: agent

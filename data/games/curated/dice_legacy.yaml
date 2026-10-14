@@ -21,10 +21,12 @@ mechanics:
   unlock_items: 1
   optional_challenges: 1
   speed_controls: 1
+  dice_placement: 3
 evidence:
   dice: Settlers are physical dice; the rolled face decides which buildings and jobs each die can perform.
   weapon_durability: Every die has limited durability and dies after enough uses unless healed or blessed.
   day_night_cycle: Seasons cycle on the ring-shaped world, and winter brings food and heat pressure.
   loadout_start: Each run starts with a chosen Ruler whose perks and starting dice shape the settlement; more Rulers unlock through play.
+  dice_placement: Rolled dice faces are placed onto buildings and tiles that require specific faces to act.
 confidence: medium
 curator: agent

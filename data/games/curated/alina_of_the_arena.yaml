@@ -1,0 +1,46 @@
+appid: 1668690
+name: Alina of the Arena
+developer: PINIX
+release_year: 2022
+subgenre: hybrid_deckbuilder
+wiki: https://alina-of-the-arena.fandom.com/
+stats:
+  card_count: 60
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 3
+  grid_tactics: 3
+  turn_based: 3
+  energy_mana: 2
+  card_draw: 2
+  permadeath: 2
+  character_classes: 2
+  loadout_start: 1
+  deck_from_equipment: 2
+  weapons_variety: 2
+  passive_relics: 2
+  consumables: 3
+  inventory_management: 1
+  cursed_items: 2
+  item_rarity: 1
+  shops: 2
+  in_run_currency: 2
+  permanent_stat_upgrades: 1
+  unlock_items: 1
+  block_shield: 2
+  status_effects: 2
+  enemy_intents: 1
+  environmental_hazards: 2
+  random_events: 1
+  mod_support: 1
+  steam_deck_friendly: 1
+evidence:
+  grid_tactics: "Steam/wiki: a roguelike deckbuilder with hex-based tactics combining Slay the Spire and Into the Breach; dodges and knockbacks matter."
+  deck_from_equipment: "Wiki 'Weapons': equipped weapons in the red/blue hand slots grant their effects to matching-colour Combat cards; weapons can also be hurled."
+  passive_relics: "Wiki 'Accessories': Charm and Bracer slots give permanent passives such as Iron Bracer (+2 Block each turn)."
+  consumables: "Wiki 'Consumables': potions, throwables, blowguns, traps and dust used for no energy; the audience throws items into the arena."
+  cursed_items: "Wiki 'Status Cards': 14 status cards (Wound, Fatigue, Fear...) clog the deck; heavy Axes add Fatigue."
+  permanent_stat_upgrades: "Wiki 'Items': after unlocking the Mystery Shop, extra item and bracer slots are bought permanently with Kill Coins."
+  environmental_hazards: "Wiki 'Accessories'/'Consumables': flaming tiles and placeable traps that immobilize whoever steps on them."
+confidence: medium
+curator: wiki-agent

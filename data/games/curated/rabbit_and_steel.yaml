@@ -24,9 +24,11 @@ mechanics:
   second_chance: 2
   permadeath: 2
   assist_mode: 1
+  raid_mechanics: 3
 evidence:
   attack_patterns: 'Fights play like MMO raids: telegraphed area attacks, stack/spread markers and safe-zone puzzles.'
   synergies: Many items trigger on or buff teammates, so builds are planned around the whole group.
   online_coop: Built for 1-4 players online; each class has primary, secondary, special and defensive abilities.
+  raid_mechanics: Bosses use MMO-style mechanics (stack, spread, soak, tank swaps) that require coordinated roles.
 confidence: medium
 curator: agent

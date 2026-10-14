@@ -36,6 +36,7 @@ mechanics:
   stealth: 2
   weapon_durability: 2
   party_building: 1
+  run_mutators: 2
 evidence:
   character_classes: Classes (Hacker, Gorilla, Doctor, Vampire) solve the same mission via stealth, hacking or violence.
   optional_challenges: Each floor has optional missions (assassinate, steal, free prisoner) for extra rewards.

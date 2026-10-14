@@ -26,9 +26,11 @@ mechanics:
   short_runs: 1
   speedrun_support: 1
   healing_scarcity: 1
+  momentum_movement: 3
 evidence:
   traversal_tools: Momentum-based downhill running with landing timing; abilities like grapple/board/fly chosen before runs.
   node_map: Each shard is a node map of levels, shops, challenges and a boss.
   passive_relics: Items with rarities picked between levels modify speed, energy and damage rules.
+  momentum_movement: Maintaining speed through perfect landings and flow is the core skill and fuels abilities.
 confidence: medium
 curator: agent

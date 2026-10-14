@@ -1,0 +1,41 @@
+appid: 1694420
+name: 'Card Survival: Tropical Island'
+developer: WinterSpring Games
+release_year: 2022
+subgenre: hybrid_survival
+wiki: https://cardsurvival.fandom.com/
+stats:
+  playable_characters: 5
+  biome_count: 16
+mechanics:
+  hybrid_survival: 3
+  turn_based: 2
+  hunger_clock: 3
+  healing_scarcity: 2
+  limb_injuries: 3
+  stress_sanity: 2
+  permadeath: 1
+  open_procgen_world: 1
+  long_runs: 3
+  day_night_cycle: 2
+  multiple_endings: 2
+  crafting: 3
+  inventory_management: 3
+  loadout_start: 3
+  unlock_characters: 2
+  double_edged_items: 2
+  random_events: 2
+  weapon_durability: 1
+  consumables: 2
+  tutorialized_unlocks: 1
+  content_updates: 2
+evidence:
+  hunger_clock: "Wiki 'Mechanics - Stats': tracks saturation by food group, hydration, body weight, temperature, stamina and more."
+  limb_injuries: "Wiki 'Mechanics - Injuries & Illnesses': foot and hand injuries, lacerations, bites, lung damage; bleeding and dehydration kill fastest."
+  stress_sanity: "Wiki 'Injuries & Illnesses': hidden Mental Structure stat drops with stress and loneliness and can trigger psychotic breaks."
+  loadout_start: "Wiki 'Mechanics - Character & Perks': character creator perks give advantages or drawbacks that set a difficulty rating; perks unlock via Suns and Moons."
+  multiple_endings: "Wiki 'Mechanics - Win Condition': Raft ending (survive a sailing stage to civilisation) or Home Ending unlocked by high determination."
+  inventory_management: "Wiki page 'Mechanics - Encumbrance, Inventories, & Containers' plus storage chests; storms on the raft wash away unsecured items."
+  random_events: "Wiki 'Mechanics - Encounters & Raids': animal encounters and mouse/monitor lizard/macaque raids governed by hidden fear and population values."
+confidence: medium
+curator: wiki-agent

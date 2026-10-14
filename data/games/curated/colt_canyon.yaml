@@ -1,0 +1,58 @@
+appid: 940710
+name: Colt Canyon
+developer: Retrific
+release_year: 2020
+subgenre: hybrid_action_roguelite
+wiki: https://colt-canyon.fandom.com/
+stats:
+  item_count: 40
+  weapon_count: 100
+  boss_count: 3
+  biome_count: 3
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_shooter: 2
+  twin_stick: 2
+  real_time_action: 3
+  dodge_iframes: 3
+  weapon_handling: 2
+  stealth: 3
+  crits: 1
+  aim_mode_options: 1
+  permadeath: 3
+  mid_run_save: 2
+  procgen_levels: 3
+  seeded_runs: 2
+  act_structure: 3
+  boss_gates: 3
+  endless_mode: 2
+  enemy_hp_scaling: 2
+  elites: 3
+  pick_one_of_n: 3
+  flat_stat_scaling: 2
+  summons_minions: 2
+  party_building: 1
+  unlock_characters: 3
+  unlock_items: 1
+  achievement_unlocks: 2
+  loadout_start: 3
+  weapons_variety: 3
+  consumables: 1
+  shops: 2
+  in_run_currency: 1
+  status_effects: 1
+  environmental_hazards: 2
+  modular_difficulty: 2
+  assist_mode: 1
+  local_coop: 2
+  leaderboards: 1
+evidence:
+  pick_one_of_n: "Wiki 'Upgrades': rescuing a level's prisoner offers 1 of 5 random upgrades (~40 total, each with a per-run limit); loops cut this to 2."
+  stealth: "Wiki 'Stealth': enemies have hidden fields of view and must spot you first; attacks on unaware enemies deal critical damage."
+  summons_minions: "Wiki 'Companions': the companion upgrade turns a rescued prisoner into an ally you arm with found guns; no hard limit."
+  loadout_start: "Wiki 'Loadouts': per-character starting weapon/ammo loadouts unlocked by feats (kill 200 enemies, reach the first boss area...)."
+  endless_mode: "Wiki 'Looped run': loop instead of finishing to replay a new run with more enemies, elites, traps and boss HP, keeping your loadout and upgrades."
+  modular_difficulty: "Wiki 'Run settings': toggle permadeath, seed, boss health, container/ammo/health drops and enemy attention; big changes disable achievements."
+  act_structure: "Wiki 'Run': 3 areas (Farms, Wilderness, ...) of 3 levels plus a boss level, then backtrack through 9 B-Levels with new enemies and loot."
+confidence: medium
+curator: wiki-agent

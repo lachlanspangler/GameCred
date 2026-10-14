@@ -58,6 +58,11 @@ mechanics:
   passive_relics: 3
   block_shield: 1
   pickup_magnet_economy: 2
+  luck_stat: 3
+  lifesteal: 2
+  proc_triggers: 2
+  movement_speed_scaling: 2
+  projectile_modifiers: 1
 evidence:
   waves: Runs are 20 timed waves with a shop after every wave and a boss on wave 20.
   interest_economy: The Harvesting stat pays materials at wave end and grows over the run, rewarding early economy investment.
@@ -66,5 +71,6 @@ evidence:
   ascension_ladder: Danger 0-5 difficulty levels unlock per character after winning the previous level.
   rng_mitigation: Shop items can be locked to persist through rerolls and into the next wave.
   prep_combat_phases: Every wave is followed by a shop/upgrade phase before the next combat wave.
+  luck_stat: Luck is an explicit stat that raises the chance of material drops, rarer shop items and luck-based item effects.
 confidence: high
 curator: agent

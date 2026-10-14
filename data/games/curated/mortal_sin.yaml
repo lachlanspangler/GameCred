@@ -1,0 +1,44 @@
+appid: 1494810
+name: Mortal Sin
+developer: Nikola Todorovic
+release_year: 2025
+subgenre: hybrid_action_roguelite
+wiki: https://mortal-sin.fandom.com/
+stats:
+  playable_characters: 14
+  weapon_count: 29
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  melee_combos: 3
+  permadeath: 2
+  procgen_levels: 3
+  room_based_floors: 2
+  character_classes: 3
+  unlock_characters: 2
+  unlock_items: 2
+  achievement_unlocks: 1
+  weapons_variety: 3
+  synergies: 1
+  in_run_currency: 2
+  shops: 1
+  healing_scarcity: 2
+  consumables: 1
+  cursed_items: 2
+  double_edged_items: 1
+  optional_challenges: 2
+  narrative_across_runs: 2
+  environmental_hazards: 1
+  platforming: 1
+  elites: 1
+  early_access_dev: 1
+  lifesteal: 1
+evidence:
+  melee_combos: 'Wiki ''Combos'': named chains of kick/bash/whirlwind/attack inputs (Power Combo, Heavy Metal, Tempest...) with distinct effects.'
+  character_classes: 'Wiki category ''Class'': 14 classes (Berserker, Duelist, Hoarder, Vampire, Warlock...); Steam: roster unlocked through play.'
+  healing_scarcity: 'Wiki ''Essence'': red Vital Essence restores healing potion uses and blue Wizard Essence restores mana potions; gold essence is currency.'
+  cursed_items: 'Wiki ''Quests'': quest rewards can remove a specific curse while retaining its bonuses; Wiki ''Scares'': some curses trigger scares.'
+  optional_challenges: 'Wiki ''Quests'': random in-level quests give Helena XP and storable rewards (armor upgrades, gold, curse removal) usable in later runs.'
+  achievement_unlocks: 'Wiki ''Trial Of Resolve'': area unlocked by clearing cave and dungeon in one run; completing it unlocks specific weapons and combos.'
+confidence: medium
+curator: wiki-agent

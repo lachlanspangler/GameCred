@@ -1,0 +1,37 @@
+appid: 249630
+name: Delver
+developer: Chad Cuddigan
+release_year: 2018
+subgenre: hybrid_traditional
+wiki: https://delver.fandom.com/
+mechanics:
+  hybrid_traditional: 2
+  hybrid_action_roguelite: 2
+  real_time_action: 3
+  fps: 2
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 2
+  ascension_ladder: 2
+  enemy_hp_scaling: 2
+  time_pressure: 1
+  level_up_choices: 2
+  pick_one_of_n: 2
+  flat_stat_scaling: 2
+  item_identification: 3
+  consumables: 2
+  weapons_variety: 2
+  shops: 2
+  in_run_currency: 2
+  environmental_hazards: 1
+  mod_support: 3
+evidence:
+  item_identification: "Wiki 'Potions': potion colour effects are reshuffled each run and show as ??? until drunk and identified."
+  level_up_choices: "Wiki 'Experience Points': on each level-up you choose one of three random attributes to increase by one."
+  ascension_ladder: "Wiki 'Difficulty': each time the Yithidian Orb is returned the save's difficulty number rises (more damage, health and spawns)."
+  time_pressure: "Wiki 'Yithidian Orb': once the Orb is taken the dungeon shakes with damaging explosions and the Lich respawns near exits for the escape."
+  procgen_levels: "Wiki 'Yithidian Orb'/Steam: shifting, randomly generated floors with a few static ones like the Well."
+  mod_support: "Wiki: DelvEdit level editor and modding guides; Steam lists Workshop and an included level editor."
+  shops: "Wiki 'Skill Points': Joff's Supplies in the camp sells Skill in a Jar for an extra point before entering the dungeon."
+confidence: medium
+curator: wiki-agent

@@ -1,0 +1,45 @@
+appid: 681280
+name: Descenders
+developer: RageSquid
+release_year: 2019
+subgenre: hybrid_action_roguelite
+wiki: https://descenders.fandom.com/
+critic:
+  metacritic: 78
+stats:
+  biome_count: 10
+mechanics:
+  hybrid_action_roguelite: 2
+  real_time_action: 3
+  vehicle_combat: 1
+  traversal_tools: 2
+  permadeath: 2
+  second_chance: 2
+  procgen_levels: 3
+  seeded_runs: 2
+  node_map: 3
+  act_structure: 3
+  boss_gates: 3
+  daily_challenge: 2
+  combo_meter: 2
+  pick_one_of_n: 2
+  passive_relics: 2
+  optional_challenges: 2
+  push_your_luck: 1
+  achievement_unlocks: 1
+  unlock_items: 1
+  leaderboards: 1
+  pvp: 1
+  mod_support: 2
+  steam_deck_friendly: 1
+  momentum_movement: 2
+evidence:
+  node_map: 'Wiki ''How to play guide'': after each track you pick the next node on a region world map, heading for the Boss Jump node.'
+  procgen_levels: 'Wiki ''Seed'': every track is procedurally generated from a seed that can be replayed in Freeride.'
+  second_chance: 'Wiki ''How to play guide'': each track''s random bonus objective awards 1 life; Medic Camp nodes give extra lives.'
+  optional_challenges: 'Wiki ''How to play guide'': Danger Zone nodes give more rep but double health loss from bails; Fire Nodes offer an 8-8-8 rated track.'
+  pick_one_of_n: 'Wiki ''Crew Members'': at rising rep thresholds you pick 1 of 4 random crew members that boost an attribute for the run (max 10).'
+  combo_meter: 'Wiki ''Reputation'': tricks earn reputation with diminishing returns on repeats; run rep decides the post-run item drop.'
+  act_structure: 'Wiki ''Career''/''Career-Plus'': regions Highlands, Forest, Canyon, Peaks (+Volcano), with Career-Plus unlocked at 100,000 total rep.'
+confidence: medium
+curator: wiki-agent

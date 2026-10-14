@@ -1,0 +1,43 @@
+appid: 843200
+name: Alien Hominid Invasion
+developer: The Behemoth
+release_year: 2023
+subgenre: hybrid_action_roguelite
+wiki: https://alienhominidinvasion.wiki.gg/
+stats:
+  enemy_types: 40
+  difficulty_levels: 3
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_shooter: 2
+  real_time_action: 3
+  platforming: 2
+  traversal_tools: 1
+  permadeath: 2
+  procgen_levels: 2
+  node_map: 2
+  boss_gates: 2
+  elites: 1
+  level_up_choices: 2
+  transformations: 1
+  unlock_items: 2
+  lore_codex: 1
+  assist_mode: 2
+  loadout_start: 1
+  weapons_variety: 1
+  environmental_hazards: 1
+  local_coop: 3
+  online_coop: 3
+  content_updates: 1
+  steam_deck_friendly: 1
+  partial_death_penalty: 1
+evidence:
+  permadeath: 'Wiki ''Save Slot'': Mastery life insurance gives +50% XP but all items are lost on death; Permakeep keeps items.'
+  assist_mode: 'Wiki ''Save Slot'': per-player difficulty Friendly/Normal/Insane scales player health (Insane = 45%).'
+  procgen_levels: 'Wiki main page: invade randomly-assembled neighborhoods built from hundreds of hand-crafted city blocks.'
+  node_map: 'Wiki main page: a non-linear level experience where you choose which area to invade next on the way to enemy headquarters.'
+  level_up_choices: 'Wiki main page/''Security Clearance'': level up and mutate your alien (super speed, healing, flight); clearance tiers tied to level grant bonuses.'
+  lore_codex: 'Wiki ''Guide'': an in-game Guide lists locked and unlocked items and pays bonuses for completed pages.'
+  content_updates: 'Wiki main page: two post-release updates added a new map algorithm, hazards, a mutation, a mini-boss and modifiers.'
+confidence: medium
+curator: wiki-agent

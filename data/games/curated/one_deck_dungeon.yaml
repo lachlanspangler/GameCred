@@ -22,11 +22,13 @@ mechanics:
   random_events: 1
   permanent_stat_upgrades: 2
   local_coop: 1
+  dice_placement: 3
 evidence:
   dice: Rolled stat-coloured dice are placed into encounter boxes; unfilled boxes inflict damage or time loss.
   pick_one_of_n: Each defeated encounter card is kept as an item (more dice), a skill or XP, one use only.
   dice_manipulation: Skills transform dice, and two dice of one colour can be combined into a black wild die.
   turn_escalation: Exploring and failed boxes burn the dungeon deck's time; running out forces descent and penalties.
   permanent_stat_upgrades: Campaign mode awards checkmarks that buy persistent perks for the heroes.
+  dice_placement: Rolled dice are placed into requirement boxes on encounter cards to avoid damage and time loss.
 confidence: medium
 curator: agent

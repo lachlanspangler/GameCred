@@ -32,6 +32,8 @@ mechanics:
   content_updates: 2
   summons_minions: 1
   pickup_magnet_economy: 2
+  proc_triggers: 2
+  movement_speed_scaling: 1
 evidence:
   talent_slots: Level-ups offer god blessings that fill Attack, Strike, Cast, Dash, Summon and Aura slots, Hades-style.
   item_rarity: Diablo-style randomized equipment with rarity tiers and affixes drops throughout runs.

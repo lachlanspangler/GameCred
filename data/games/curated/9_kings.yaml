@@ -25,6 +25,7 @@ mechanics:
   early_access_dev: 2
   adjacency_placement: 3
   permadeath: 2
+  merge_upgrades: 2
 evidence:
   prep_combat_phases: Each year you place cards on a plot grid around your castle, then an invading king attacks and combat auto-resolves.
   character_classes: You choose one of the nine kings, each with its own card set and playstyle.

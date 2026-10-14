@@ -30,6 +30,7 @@ mechanics:
   synergies: 1
   steam_deck_friendly: 1
   pickup_magnet_economy: 1
+  movement_speed_scaling: 1
 evidence:
   skill_tree_meta: Per-character Constellation trees plus a shared Yggdrasil meta-progress tree.
   optional_challenges: Reward Shrines spawn in-run quests and challenges.

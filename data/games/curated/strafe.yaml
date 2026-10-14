@@ -16,6 +16,7 @@ mechanics:
   environmental_hazards: 2
   shops: 1
   speedrun_support: 1
+  secret_areas: 1
 evidence:
   procgen_levels: Levels are stitched together from prefabricated rooms each run.
   loadout_start: Choose one of three primary guns (machine gun, shotgun, railgun) at the start of each run.

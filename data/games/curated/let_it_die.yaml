@@ -20,10 +20,12 @@ mechanics:
   shops: 2
   status_effects: 1
   content_updates: 2
+  corpse_run: 3
 evidence:
   async_multiplayer: Dead fighters become Haters that roam other players' Tower of Barbs.
   second_chance: Death Metal can be spent to revive a fighter on the spot.
   weapon_durability: Weapons and armor wear out and break, forcing constant swaps.
   consumables: Mushrooms and caught critters give heals and temporary buffs.
+  corpse_run: Dead Fighters remain in the tower and must be defeated or recovered to reclaim them and their gear.
 confidence: medium
 curator: agent

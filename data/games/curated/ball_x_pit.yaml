@@ -25,6 +25,8 @@ mechanics:
   build_archetypes: 2
   permadeath: 2
   speed_controls: 1
+  projectile_modifiers: 2
+  lifesteal: 2
 evidence:
   weapon_evolution: Max-level special balls fuse or evolve into new balls with combined effects.
   hub_building: Between runs you build the city of New Ballbylon; buildings are harvested with characters and grant unlocks/stats.

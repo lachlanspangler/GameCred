@@ -29,13 +29,15 @@ mechanics:
   asymmetric_multiplayer: 2
   pvp: 2
   lore_codex: 1
+  soft_run_limit: 2
+  knowledge_progression: 2
 evidence:
-  handcrafted_loop_world: "Wiki 'Deathloop': the same day on Blackreef repeats; Colt must kill 8 Visionaries before the day resets."
-  day_night_cycle: "Wiki 'Blackreef': 4 districts visited across Morning/Noon/Afternoon/Evening time periods; loadout changed between periods."
-  second_chance: "Wiki 'Reprise': Colt gets 3 attempts at life per period, rewinding on death; a third death ends the loop."
-  unlock_items: "Wiki 'Residuum': infuse weapons, slabs and trinkets with Residuum to keep them between loops; un-infused gear is lost."
-  active_items: "Wiki 'Slabs': ability slabs (Shift, Aether, Karnesis...) taken from Visionaries; only two extra slabs held at once; repeats grant upgrades."
-  passive_relics: "Wiki 'Trinkets': up to 4 character trinkets and up to 3 per weapon, slots by quality (Crude/Sleek/Exemplar)."
-  asymmetric_multiplayer: "Wiki 'Protect the Loop': PvP mode where a player as Julianna invades another Colt's loop; Hunter Ranks unlock gear."
+  handcrafted_loop_world: 'Wiki ''Deathloop'': the same day on Blackreef repeats; Colt must kill 8 Visionaries before the day resets.'
+  day_night_cycle: 'Wiki ''Blackreef'': 4 districts visited across Morning/Noon/Afternoon/Evening time periods; loadout changed between periods.'
+  second_chance: 'Wiki ''Reprise'': Colt gets 3 attempts at life per period, rewinding on death; a third death ends the loop.'
+  unlock_items: 'Wiki ''Residuum'': infuse weapons, slabs and trinkets with Residuum to keep them between loops; un-infused gear is lost.'
+  active_items: 'Wiki ''Slabs'': ability slabs (Shift, Aether, Karnesis...) taken from Visionaries; only two extra slabs held at once; repeats grant upgrades.'
+  passive_relics: 'Wiki ''Trinkets'': up to 4 character trinkets and up to 3 per weapon, slots by quality (Crude/Sleek/Exemplar).'
+  asymmetric_multiplayer: 'Wiki ''Protect the Loop'': PvP mode where a player as Julianna invades another Colt''s loop; Hunter Ranks unlock gear.'
 confidence: medium
 curator: wiki-agent

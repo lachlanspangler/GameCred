@@ -61,6 +61,7 @@ mechanics:
   early_access_dev: 2
   steam_deck_friendly: 2
   rng_mitigation: 2
+  ultimate_meter: 3
 evidence:
   talent_slots: Olympian boons fill fixed Attack/Special/Cast/Dash/Call slots, overwriting prior boons of that slot.
   modular_difficulty: Pact of Punishment offers toggleable Heat conditions that raise bounties on weapons.
@@ -68,5 +69,6 @@ evidence:
   second_chance: Death Defiance charges from the Mirror of Night revive Zagreus mid-run.
   npc_relationships: Nectar/Ambrosia gifting builds affinity hearts and unlocks Keepsakes and companions.
   rng_mitigation: Chamber door symbols preview the reward; Fated Authority grants rerolls.
+  ultimate_meter: The God Gauge fills in combat and is spent on the Call of the boon god.
 confidence: high
 curator: agent

@@ -14,8 +14,10 @@ mechanics:
   synergies: 3
   level_up_choices: 3
   multiplicative_scaling: 2
+  proc_triggers: 3
 evidence:
   loadout_start: Character is a combination of culture, class and god, each granting passives.
   synergies: Trigger-based passives (on hit, on kill, on prayer) chain into screen-clearing builds.
+  proc_triggers: Gods, cultures and classes grant on-hit, on-kill and on-damage triggers that chain into large proc combos.
 confidence: medium
 curator: agent

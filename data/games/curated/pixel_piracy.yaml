@@ -1,0 +1,38 @@
+appid: 264140
+name: Pixel Piracy
+developer: Vitali Kirpu
+release_year: 2014
+subgenre: hybrid_strategy
+wiki: https://pixelpiracy.fandom.com/
+stats:
+  weapon_count: 100
+  difficulty_levels: 3
+mechanics:
+  hybrid_strategy: 3
+  real_time_action: 2
+  party_building: 3
+  ship_base_design: 3
+  open_procgen_world: 3
+  long_runs: 2
+  modular_difficulty: 2
+  loadout_start: 2
+  flat_stat_scaling: 2
+  crits: 1
+  weapons_variety: 3
+  consumables: 2
+  shops: 2
+  in_run_currency: 3
+  hunger_clock: 2
+  stress_sanity: 2
+  random_events: 2
+  vehicle_combat: 2
+evidence:
+  party_building: "Wiki 'Your Crew': hire any number of crew; each has level, EXP, Training Points for stats, hunger, morale and a salary."
+  stress_sanity: "Wiki 'Your Crew': low morale makes crew hostile to you and each other; restored by salary, campfires or taverns."
+  ship_base_design: "Wiki 'Ship Building': build your ship block by block from captured ships; dark spaces spawn spiders so place lamps."
+  vehicle_combat: "Wiki 'Combat': ship-vs-ship fights have a 30 s Cannon Phase (crew with cannon mastery load and fire) then a Boarding Phase."
+  modular_difficulty: "Wiki 'Strategy Guide': Sailor/Captain/Legendary modes plus world questions (more monsters, plague, long nights, more ship encounters)."
+  loadout_start: "Wiki 'Strategy Guide': 'How do you remember your father?' picks a starting sword, an extra pirate or +20 gold."
+  random_events: "Wiki 'Events': sailing events (long nights, sharks, crew demanding gold, bleeding without bandages)."
+confidence: medium
+curator: wiki-agent

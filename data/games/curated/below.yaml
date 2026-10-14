@@ -19,11 +19,14 @@ mechanics:
   environmental_hazards: 2
   weapons_variety: 1
   assist_mode: 1
+  corpse_run: 3
+  secret_areas: 2
 evidence:
   hunger_clock: Hunger, thirst and cold drain constantly; food and water are scavenged.
   status_effects: Bleeding wounds must be bandaged or they drain health.
   crafting: Recipes are discovered by combining found materials.
   assist_mode: Explore Mode removes survival meters for a combat/exploration-only descent.
   permadeath: Death spawns a new wanderer; the lantern must be recovered from the previous body.
+  corpse_run: After death the next wanderer can travel back to the fallen body to reclaim the lantern and carried gear.
 confidence: medium
 curator: agent

@@ -26,6 +26,8 @@ mechanics:
   unlock_items: 2
   combo_meter: 3
   weapon_handling: 2
+  temporary_buffs: 2
+  secret_areas: 1
 evidence:
   pick_one_of_n: Between stages the player chooses one of three upgrades.
   loadout_start: Unlocked 'styles' (Arm Gun, Float, Boulder, Levitate) set starting rules.

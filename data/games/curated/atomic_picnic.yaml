@@ -21,6 +21,8 @@ mechanics:
   traversal_tools: 2
   item_upgrading: 2
   pickup_magnet_economy: 2
+  projectile_modifiers: 2
+  movement_speed_scaling: 1
 evidence:
   hybrid_shooter: Third-person shooter bullet heaven with arena objectives.
   online_coop: Solo or up to 4-player online co-op.

@@ -22,6 +22,8 @@ mechanics:
   in_run_currency: 2
   unlock_items: 2
   dodge_iframes: 1
+  temporary_buffs: 2
+  secret_areas: 1
 evidence:
   combo_meter: Chaining kills builds a combo; high combos grant bonuses such as damage immunity.
   skill_tree_meta: Ink collected in runs is spent on a persistent skill tree.

@@ -52,6 +52,10 @@ mechanics:
   steam_deck_friendly: 2
   minute_spawn_schedule: 3
   pickup_magnet_economy: 3
+  luck_stat: 3
+  movement_speed_scaling: 2
+  secret_areas: 2
+  run_mutators: 2
 evidence:
   weapon_evolution: A max-level weapon plus its paired passive (e.g. Whip + Hollow Heart -> Bloody Tear) evolves when a boss chest is opened.
   time_pressure: Standard stages end at 30:00 when the Reaper spawns and kills the player.
@@ -61,5 +65,6 @@ evidence:
   local_coop: Up to 4-player local co-op added in a 2023 update.
   minute_spawn_schedule: Each stage spawns scripted enemy waves and bosses by elapsed minute, ending with the Reaper at 30:00.
   pickup_magnet_economy: XP gems must be physically collected, and pickup radius (Magnet / Attractorb) is a core upgradable stat.
+  luck_stat: Luck is an explicit stat (Clover, Luck PowerUp) skewing chest, evolution and level-up outcomes.
 confidence: high
 curator: agent

@@ -46,6 +46,7 @@ mechanics:
   content_updates: 1
   summons_minions: 3
   lanes_ranks: 3
+  run_mutators: 1
 evidence:
   loadout_start: Primary + allied clan pairing again defines the card pool each run.
   item_upgrading: Upgrades plus new Equipment cards attach persistently to units.

@@ -35,6 +35,8 @@ mechanics:
   early_access_dev: 2
   day_night_cycle: 3
   life_sim_hub: 2
+  companions_pets: 2
+  projectile_modifiers: 1
 evidence:
   in_run_currency: Harvested crops sell for Cashews spent in town each season; fertiliser and seeds drive the economy.
   waves: Each day is a short wave-defence phase around the farm; nights spawn tougher threats.

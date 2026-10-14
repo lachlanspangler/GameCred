@@ -43,11 +43,13 @@ mechanics:
   mod_support: 2
   elites: 1
   random_events: 1
+  realtime_deck_cycling: 3
 evidence:
   grid_tactics: Real-time combat on a Mega Man Battle Network-style 4x4 per-side grid.
   energy_mana: Spells cost mana that regenerates in real time; the deck shuffles continuously.
   multiple_endings: Boss fights against previous heroes can be won by killing or sparing, leading to Genocide/Pacifist routes.
   ascension_ladder: Hell Pass difficulty tiers unlock after wins.
   mod_support: Steam Workshop support for custom spells and artifacts.
+  realtime_deck_cycling: Spells from the deck are cast in real time from a two-slot queue that continuously cycles and reshuffles.
 confidence: high
 curator: agent

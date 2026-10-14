@@ -23,6 +23,7 @@ mechanics:
   content_updates: 2
   weapon_mastery: 3
   handcrafted_loop_world: 2
+  partial_death_penalty: 2
 evidence:
   extraction: Expeditions end by leaving at an exit; dying drops unbanked Witchfire which can be recovered on the next attempt.
   item_upgrading: Weapons gain Mysteries (perks) by fulfilling kill-based mastery goals.

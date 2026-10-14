@@ -38,6 +38,7 @@ mechanics:
   content_updates: 3
   long_runs: 1
   multi_phase_bosses: 1
+  lifesteal: 1
 evidence:
   permadeath: Hardcore character mode makes death permanent; softcore characters persist like a Diablo-style ARPG.
   character_classes: Many classes (Viking, Pyromancer, Samurai, etc.) each with own talent tree, several paid DLC classes.

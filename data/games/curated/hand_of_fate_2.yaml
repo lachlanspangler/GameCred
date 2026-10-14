@@ -28,6 +28,7 @@ mechanics:
   deck_from_equipment: 2
   hunger_clock: 3
   parry_counter: 2
+  companions_pets: 2
 evidence:
   gambling: Chance cards, dice rolls, pendulum and wheel minigames decide event outcomes.
   achievement_unlocks: Tokens earned by completing encounters unlock new cards.

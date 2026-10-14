@@ -21,6 +21,7 @@ mechanics:
   early_access_dev: 3
   mid_run_save: 1
   monster_capture: 1
+  companions_pets: 2
 evidence:
   procgen_levels: Nefia dungeons scattered across the fixed overworld are generated and can be dived for loot.
   life_sim_hub: Claimable land for homesteading, farming and running a town alongside dungeon crawling.

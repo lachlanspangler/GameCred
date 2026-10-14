@@ -42,13 +42,14 @@ mechanics:
   elites: 1
   time_manipulation: 2
   steam_deck_friendly: 1
+  turn_rewind: 2
 evidence:
-  grid_tactics: "Steam: a fusion of deckbuilding and grid-based tactics, piloting a mech against an alien invasion."
-  character_classes: "Wiki 'Mech'/'Pilot': 3 mechs (Gunner, Stinger, Keeper), each with exclusive pilots who add cards and a starting artifact; 10 pilots listed."
-  passive_relics: "Wiki 'Artifact': 137 permanent passive artifacts in Common/Legendary/Special rarities; Legendary ones come from boss stages."
-  reroll: "Wiki 'Artifact': Chrono Tokens can reroll special-stage rewards; Steam: Chrono Tokens also rewind time to undo mistakes."
-  ascension_ladder: "Steam: ascending difficulties, daily runs and challenge modes; new cards, pilots and deadlier enemies unlock after runs."
-  cursed_items: "Wiki categories: 26 Junk cards and Burnt cards clog the deck (e.g. 'Insulation' artifact triggers on drawing Junk)."
-  environmental_hazards: "Wiki 'Artifact': bombs on the grid detonate and strike adjacent tiles (Mine Field, Bomber Mech)."
+  grid_tactics: 'Steam: a fusion of deckbuilding and grid-based tactics, piloting a mech against an alien invasion.'
+  character_classes: 'Wiki ''Mech''/''Pilot'': 3 mechs (Gunner, Stinger, Keeper), each with exclusive pilots who add cards and a starting artifact; 10 pilots listed.'
+  passive_relics: 'Wiki ''Artifact'': 137 permanent passive artifacts in Common/Legendary/Special rarities; Legendary ones come from boss stages.'
+  reroll: 'Wiki ''Artifact'': Chrono Tokens can reroll special-stage rewards; Steam: Chrono Tokens also rewind time to undo mistakes.'
+  ascension_ladder: 'Steam: ascending difficulties, daily runs and challenge modes; new cards, pilots and deadlier enemies unlock after runs.'
+  cursed_items: 'Wiki categories: 26 Junk cards and Burnt cards clog the deck (e.g. ''Insulation'' artifact triggers on drawing Junk).'
+  environmental_hazards: 'Wiki ''Artifact'': bombs on the grid detonate and strike adjacent tiles (Mine Field, Bomber Mech).'
 confidence: medium
 curator: wiki-agent

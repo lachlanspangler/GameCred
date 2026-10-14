@@ -49,6 +49,8 @@ mechanics:
   ascension_ladder: 1
   content_updates: 2
   steam_deck_friendly: 2
+  shrinking_zone: 3
+  ultimate_meter: 3
 evidence:
   day_night_cycle: Each expedition is Day 1, Day 2, then a Nightlord fight; each day ends with a night boss as the map closes in.
   time_pressure: The Night's Tide circle shrinks on a fixed schedule and drives the whole party toward the day boss.
@@ -56,5 +58,7 @@ evidence:
   passive_relics: Relics with rolled effects go into Vessel slots at Roundtable Hold before the run and shape every expedition.
   second_chance: Downed teammates can be revived by hitting them; full death on a day drops a level and some runes instead of ending the run.
   ascension_ladder: Deep of Night mode adds ranked Depth tiers with harsher enemies and better loot.
+  shrinking_zone: The Night's Tide rain closes the map each day, forcing the party toward the final circle.
+  ultimate_meter: Each Nightfarer has an Ultimate Art whose gauge charges through combat.
 confidence: high
 curator: agent

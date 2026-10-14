@@ -1,0 +1,40 @@
+appid: 588950
+name: Kingsway
+developer: Andrew Morrish
+release_year: 2017
+subgenre: hybrid_action_roguelite
+wiki: https://kingsway.fandom.com/
+critic:
+  metacritic: 80
+stats:
+  playable_characters: 9
+  enemy_types: 57
+mechanics:
+  hybrid_action_roguelite: 2
+  real_time_action: 2
+  permadeath: 3
+  open_procgen_world: 3
+  multiple_endings: 3
+  inventory_management: 3
+  character_classes: 3
+  unlock_characters: 2
+  achievement_unlocks: 1
+  level_up_choices: 2
+  block_shield: 2
+  consumables: 2
+  item_rarity: 2
+  cursed_items: 2
+  shops: 2
+  in_run_currency: 1
+  optional_challenges: 2
+  random_events: 1
+evidence:
+  permadeath: "Wiki main page: the world is randomly generated every time you play, and death is permanent."
+  inventory_management: "Wiki 'Items'/Steam: items are files and backpacks are folders; containers nest and are organised by drag-and-drop."
+  real_time_action: "Wiki 'How To Play': monster popups act when their progress bar fills; your Attack/Block/Escape actions also take time; some attacks need an AVOID! click."
+  multiple_endings: "Wiki 'Characters': hidden classes unlock via endings (Demonblood: #4/#5, Ascended: #2/#7, Worthless: #1); 7 endings in the wiki category."
+  cursed_items: "Wiki 'Items': equipment may roll prefixes/suffixes as Enchanted or Cursed; the 'Curse Item' skill adds power plus a random negative."
+  level_up_choices: "Wiki 'Skills': Skill Points from levelling, Monolith offerings or Books of Skill buy magic, attack and passive skills."
+  optional_challenges: "Wiki 'Items'/Steam: Guild quests arrive as emails and award quest items for extra treasure."
+confidence: medium
+curator: wiki-agent

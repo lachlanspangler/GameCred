@@ -44,11 +44,16 @@ mechanics:
   early_access_dev: 2
   content_updates: 2
   passive_relics: 2
+  projectile_modifiers: 3
+  proc_triggers: 2
+  lifesteal: 1
+  movement_speed_scaling: 1
 evidence:
   endless_mode: Runs continue island after island with no fixed end; scoring is about how far you get.
   item_stacking: Weapon mods and perks stack repeatedly, producing exponential late-run screen-clearing builds.
   time_pressure: Each island has a countdown timer to clear it.
   optional_challenges: Challenge/elite islands with modifiers offer better rewards, chosen from the island route.
   online_coop: Up to 4-player online co-op.
+  projectile_modifiers: Weapon mods add bouncing, splitting, homing and piercing to every shot.
 confidence: medium
 curator: agent

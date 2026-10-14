@@ -2,8 +2,8 @@
 
 30 curated games were re-tagged blind by an independent rater (presence/absence per mechanic).
 
-- **Overall Cohen's κ:** 0.72  (0.4–0.6 moderate, 0.6–0.8 substantial)
-- **Mean per-game Jaccard overlap:** 0.59
+- **Overall Cohen's κ:** 0.71  (0.4–0.6 moderate, 0.6–0.8 substantial)
+- **Mean per-game Jaccard overlap:** 0.58
 
 ## Least reliable mechanics (sharpen definitions)
 
@@ -55,32 +55,32 @@
 | game | Jaccard | curated tags | rater-2 tags |
 |---|---|---|---|
 | Despotism 3k | 0.33 | 3 | 9 |
-| Bounty of One | 0.42 | 17 | 17 |
+| Bounty of One | 0.40 | 18 | 17 |
+| One Way Heroics | 0.40 | 9 | 19 |
 | Iris and the Giant | 0.42 | 11 | 16 |
-| One Way Heroics | 0.42 | 8 | 19 |
 | Jotunnslayer: Hordes of Hel | 0.48 | 20 | 14 |
 | Bad North: Jotunn Edition | 0.50 | 10 | 17 |
+| Path of Achra | 0.50 | 10 | 17 |
+| Backpack Battles | 0.51 | 28 | 28 |
 | Book of Demons | 0.52 | 16 | 19 |
 | Ratropolis | 0.53 | 13 | 16 |
-| Path of Achra | 0.53 | 9 | 17 |
 | Night of Full Moon | 0.55 | 16 | 18 |
 | LONE RUIN | 0.56 | 14 | 14 |
 | Phantom Abyss | 0.57 | 15 | 21 |
+| Dicey Dungeons | 0.57 | 23 | 24 |
+| Halls of Torment | 0.58 | 34 | 26 |
 | BPM: BULLETS PER MINUTE | 0.58 | 16 | 22 |
-| Backpack Battles | 0.59 | 23 | 28 |
-| Halls of Torment | 0.59 | 33 | 26 |
-| Dicey Dungeons | 0.61 | 21 | 24 |
+| Rogue: Genesia | 0.61 | 32 | 21 |
 | Cobalt Core | 0.62 | 27 | 28 |
+| Ballionaire | 0.62 | 13 | 13 |
+| Geometry Arena | 0.64 | 17 | 19 |
 | Hyper Light Breaker | 0.64 | 17 | 19 |
 | Roboquest | 0.64 | 30 | 29 |
 | Cult of the Lamb | 0.64 | 33 | 31 |
-| Rogue: Genesia | 0.65 | 30 | 21 |
 | Astrea: Six-Sided Oracles | 0.66 | 21 | 32 |
-| Ballionaire | 0.67 | 12 | 13 |
-| Geometry Arena | 0.67 | 16 | 19 |
 | Trials of Fire | 0.68 | 20 | 27 |
 | Dream Quest | 0.68 | 17 | 20 |
 | Roguebook | 0.70 | 29 | 27 |
 | Banners of Ruin | 0.71 | 21 | 20 |
 | Tower of Guns | 0.71 | 19 | 17 |
-| Balatro | 0.81 | 39 | 37 |
+| Balatro | 0.79 | 40 | 37 |

@@ -1,0 +1,43 @@
+appid: 2294130
+name: Goobies
+developer: Höganäs Spel
+release_year: 2023
+subgenre: hybrid_survivors
+wiki: https://goobies.fandom.com/
+stats:
+  playable_characters: 5
+  item_count: 30
+  boss_count: 5
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 3
+  real_time_action: 3
+  horde_density: 3
+  waves: 2
+  level_up_choices: 3
+  pick_one_of_n: 2
+  weapon_evolution: 2
+  item_upgrading: 2
+  synergies: 2
+  permadeath: 2
+  procgen_levels: 2
+  act_structure: 2
+  boss_gates: 3
+  elites: 2
+  enemy_hp_scaling: 1
+  time_pressure: 1
+  permanent_stat_upgrades: 3
+  unlock_items: 1
+  character_classes: 2
+  modular_difficulty: 2
+  gambling: 1
+  lore_codex: 1
+evidence:
+  level_up_choices: "Wiki 'Items': items are granted at each level up during a run; many have multiple upgrades and evolutions (17 evolved items)."
+  permanent_stat_upgrades: "Wiki 'Upgrades': permanent upgrades for all Goobies, each levelled up to 3 times with Goobie coins (15,960 coins for all)."
+  boss_gates: "Wiki 'Enemies': bosses spawn at the end of a round and open a portal to the next island; mini bosses and bosses grant a Roulette Wheel spin."
+  modular_difficulty: "Wiki 'Artifacts': up to 20 artifacts change gameplay and raise or lower the run's score bonus."
+  time_pressure: "Wiki 'Mutations': bosses gain extra movesets (teleportation, regeneration, clones) after a while."
+  elites: "Wiki 'Enemies': elite variants of Blob, Giant, Runner and Spider."
+confidence: medium
+curator: wiki-agent

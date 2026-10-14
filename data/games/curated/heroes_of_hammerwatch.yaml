@@ -27,6 +27,7 @@ mechanics:
   online_coop: 3
   local_coop: 2
   mod_support: 2
+  secret_areas: 2
 evidence:
   hub_building: Gold and ore brought back fund town buildings (guild hall, blacksmith, chapel) with persistent upgrades.
   horde_density: Enemy spawners flood corridors with large packs, Gauntlet-style.

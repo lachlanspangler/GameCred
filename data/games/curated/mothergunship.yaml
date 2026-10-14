@@ -26,9 +26,11 @@ mechanics:
   traversal_tools: 1
   permadeath: 2
   unlock_items: 2
+  projectile_modifiers: 3
 evidence:
   crafting: Guns are assembled from barrels, connectors and caps into large multi-barrel contraptions.
   loadout_start: Parts are chosen from inventory before each mission; parts brought in are lost on failure.
   permanent_stat_upgrades: Persistent XP levels grant stat points between missions.
+  projectile_modifiers: Gun caps and connectors change bullet behaviour (bouncing, splitting, homing) as the core of gun crafting.
 confidence: medium
 curator: agent

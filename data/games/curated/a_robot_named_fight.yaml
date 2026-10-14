@@ -16,6 +16,7 @@ mechanics:
   achievement_unlocks: 2
   boss_gates: 2
   high_variance_loot: 2
+  secret_areas: 2
 evidence:
   procgen_levels: Each run generates a new Super Metroid-style map, ending at the Megabeast.
   traversal_tools: Movement upgrades found in the run gate which areas of that map you can reach.

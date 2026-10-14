@@ -1,0 +1,48 @@
+appid: 2510960
+name: 'Temtem: Swarm'
+developer: Crema, GGTech Studios
+release_year: 2026
+subgenre: hybrid_survivors
+wiki: https://temtemswarm.wiki.gg/
+stats:
+  playable_characters: 28
+  item_count: 61
+mechanics:
+  hybrid_survivors: 3
+  auto_attack: 2
+  twin_stick: 2
+  real_time_action: 3
+  horde_density: 3
+  bullet_hell: 1
+  level_up_choices: 3
+  pick_one_of_n: 2
+  weapon_evolution: 3
+  synergies: 3
+  flat_stat_scaling: 1
+  cooldown_reduction: 2
+  elemental_interactions: 2
+  permadeath: 1
+  second_chance: 2
+  boss_gates: 3
+  elites: 2
+  endless_mode: 2
+  daily_challenge: 2
+  random_events: 1
+  optional_challenges: 2
+  unlock_characters: 3
+  unlock_items: 3
+  achievement_unlocks: 3
+  skill_tree_meta: 1
+  character_classes: 2
+  online_coop: 3
+  early_access_dev: 1
+evidence:
+  weapon_evolution: "Wiki 'Synergy Techniques': a level-5 Technique plus its matching Gear upgrades into a Synergy (e.g. Wave + Heatsink = Wave +)."
+  achievement_unlocks: "Wiki 'Synergy Techniques'/'Kudos': techniques, gears and synergies are unlocked by Kudo feats (deal X damage, reach level 25 with Oree...)."
+  unlock_characters: "Wiki 'Eggs': new playable Temtem hatch from eggs won by beating stage minibosses/bosses, then escorted 2 minutes in-map."
+  second_chance: "Wiki 'Loading screen tips'/Steam: knocked-out allies enter Soul/Ghost form and are revived by transferring half your health."
+  daily_challenge: "Wiki 'Loading screen tips': Saipark features a different Swarm setup every day."
+  elemental_interactions: "Wiki 'Loading screen tips': type matchups (Water beats Fire beats Nature...) give a 30% damage boost."
+  elites: "Wiki 'Loading screen tips': golden Powerful Temtem are bigger and stronger but give better rewards."
+confidence: medium
+curator: wiki-agent

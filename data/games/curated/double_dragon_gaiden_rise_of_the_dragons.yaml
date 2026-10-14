@@ -21,6 +21,7 @@ mechanics:
   in_run_currency: 2
   modular_difficulty: 1
   consumables: 1
+  ultimate_meter: 2
 evidence:
   turn_escalation: Stage order is player-chosen; stages played later get more sections and tougher enemies.
   weapon_stance_swap: Two-character tag team swapped on the fly mid-fight.

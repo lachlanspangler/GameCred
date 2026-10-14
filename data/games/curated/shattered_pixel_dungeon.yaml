@@ -36,6 +36,8 @@ mechanics:
   item_identification: 3
   hunger_clock: 2
   passive_relics: 2
+  secret_areas: 2
+  run_mutators: 2
 evidence:
   modular_difficulty: Challenges menu with 9 toggleable handicaps (e.g. On Diet, Faith is My Armor).
   item_upgrading: Scrolls of Upgrade are the scarce core resource deciding which item carries the run.

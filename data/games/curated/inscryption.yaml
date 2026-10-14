@@ -33,6 +33,8 @@ mechanics:
   build_archetypes: 1
   lanes_ranks: 3
   card_mods: 2
+  secret_areas: 2
+  knowledge_progression: 1
 evidence:
   enemy_intents: Leshy's upcoming cards sit in a visible queue row before they advance onto the board.
   item_upgrading: Campfire buffs and the Sacrificial Altar transfer sigils between cards.

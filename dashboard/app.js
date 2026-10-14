@@ -587,6 +587,9 @@ function viewFamilies() {
     famStats.length ? h("div", { class: "card", style: "margin-bottom:16px" }, h("h3", {}, "Family depth vs success"),
       h("div", { class: "muted" }, "Partial Spearman correlation between a game's number of significant mechanics in each family and its Success Index, controlling for its total tag count (curated games, precomputed scope). Positive = investing in this family beyond the game's overall depth goes with success."),
       hbars(famStats.filter(f => f.spearman != null).sort((a, b) => b.spearman - a.spearman).map(f => ({ label: f.name, value: f.spearman, sub: `mean depth ${fmt.f1(f.mean_depth)} of ${f.n_mechanics}` })), { diverging: true, fmtv: fmt.f2, width: 760, max: 0.5 })) : null,
+    AN.heatmap ? h("div", { class: "card", style: "margin-bottom:16px" }, h("h3", {}, "Genre DNA: mechanic prevalence by subgenre"),
+      h("div", { class: "muted", style: "margin-bottom:8px" }, "Share of curated games in each subgenre that use each of the 30 most common mechanics. Darker = more universal in that genre. Numbers shown at ≥50%."),
+      h("div", { style: "overflow-x:auto" }, heatmapChart(AN.heatmap))) : null,
     AN.archetypes ? h("div", { class: "card", style: "margin-bottom:16px" }, h("h3", {}, "Emergent design archetypes (data-driven)"),
       h("div", { class: "muted", style: "margin-bottom:10px" }, `Non-negative matrix factorisation of ${AN.archetypes.n_games} curated games × mechanics finds ${AN.archetypes.k} bundles of mechanics that travel together. Each game is a mix; "dominant" = its largest share. ρ = correlation between a game's share of the archetype and its Success Index.`),
       h("div", { class: "fam-grid" }, AN.archetypes.archetypes.map(a => h("div", { class: "card tight" },
@@ -728,6 +731,7 @@ function viewLab() {
     h("div", { class: "hero" }, h("span", { class: "hero-value" }, pr ? fmt.f1(pr.y) : "–"), pr ? h("span", { class: "muted" }, `± ${fmt.f1(pr.rmse)} (CV RMSE)`) : null),
     pr ? h("div", { class: "meter", title: `percentile ${Math.round(pctile)}` }, h("div", { style: `width:${pctile}%` })) : null,
     pr ? h("div", { class: "tile-note" }, `${Math.round(pctile)}th percentile of ${allGsi.length} ${mname(lab.sub)} games`) : null,
+    revenueBlock(comps),
     (() => { const pq = predict(lab.vec, AN.scopes["all:quality_pct"]), pc = predict(lab.vec, AN.scopes["all:commercial_pct"]);
       return pq && pc ? h("div", { class: "grid g2", style: "margin-top:10px" },
         tile("Will players love it?", fmt.f1(pq.y), `predicted review-quality percentile ± ${fmt.f1(pq.rmse)}`),
@@ -785,6 +789,28 @@ function openDocTagger() {
   ta.addEventListener("input", () => { const tags = tagText(ta.value); put(res, h("div", { class: "muted" }, `${Object.keys(tags).length} mechanics detected:`), h("div", {}, Object.keys(tags).map(m => h("span", { class: "chip small", style: "margin:2px" }, mname(m))))); });
   openDrawer(h("h2", {}, "Score a design doc"), h("p", { class: "sub" }, "Keyword detection uses the same rules as the auto-tagger, so treat it as a first pass: review the chips in the Lab afterwards and set intensities by hand. Nothing leaves your browser."),
     ta, res, h("div", { class: "row", style: "margin-top:12px" }, h("button", { class: "btn", onclick: () => run(false) }, "Replace Lab design"), h("button", { class: "btn secondary", onclick: () => run(true) }, "Merge into Lab design")));
+}
+/** Revenue projection: map predicted commercial percentile onto the actual revenue distribution; ROI from comps. */
+function revenueBlock(comps) {
+  const pc = predict(lab.vec, AN.scopes["all:commercial_pct"]); if (!pc) return null;
+  const revs = GAMES.filter(g => g.rev && g.c != null).sort((a, b) => a.c - b.c);
+  const at = pct => { const i = revs.findIndex(g => g.c >= pct); return (revs[i < 0 ? revs.length - 1 : i] || {}).rev || 0; };
+  const mid = at(pc.y), lo = at(Math.max(0, pc.y - pc.rmse)), hi = at(Math.min(100, pc.y + pc.rmse));
+  const budget = lab.budget || 0, net = 0.7;
+  const cr = comps.filter(c => c.g.rev).map(c => ({ w: c.sim, v: c.g.rev * net }));
+  const W = cr.reduce((a, c) => a + c.w, 0) || 1;
+  const pBreak = budget > 0 ? cr.reduce((a, c) => a + (c.v >= budget ? c.w : 0), 0) / W : null;
+  const exp = cr.reduce((a, c) => a + c.w * c.v, 0) / W;
+  const sorted = [...cr].sort((a, b) => a.v - b.v); let acc = 0; const medComp = (sorted.find(c => (acc += c.w) >= W / 2) || {}).v;
+  return h("div", { class: "card tight", style: "margin-top:10px" },
+    h("div", { class: "row", style: "justify-content:space-between;align-items:flex-start" },
+      h("div", {}, h("div", { class: "tile-label" }, "Projected gross revenue (model)"), h("div", { class: "tile-value" }, fmt.usd(mid)), h("div", { class: "tile-note" }, `likely range ${fmt.usd(lo)} – ${fmt.usd(hi)}`)),
+      h("div", {}, h("div", { class: "tile-label" }, "Comps: net to developer"), h("div", { class: "tile-value" }, fmt.usd(medComp)), h("div", { class: "tile-note" }, `median of 25 comps · mean ${fmt.usd(exp)} (hits skew it)`))),
+    h("div", { class: "row", style: "margin-top:10px;align-items:center" },
+      h("label", { style: "flex-direction:row;display:flex;gap:6px;align-items:center;font-size:12px;color:var(--text-secondary)" }, "Budget $",
+        h("input", { type: "number", min: 0, step: 50000, value: budget, style: "width:120px", class: "search", onchange: e => { lab.budget = +e.target.value; viewLab(); } })),
+      budget > 0 ? h("span", { class: `status ${pBreak >= 0.5 ? "good" : pBreak >= 0.25 ? "warning" : "critical"}` }, h("span", { class: "ico" }, pBreak >= 0.5 ? "●" : pBreak >= 0.25 ? "◆" : "▲"),
+        `${fmt.pct(pBreak)} of comps recouped this budget`, h("span", { class: "muted", style: "font-weight:400" }, ` · median-comp ROI ${medComp ? ((medComp / budget - 1) * 100).toFixed(0) + "%" : "–"}`)) : h("span", { class: "muted" }, "enter a budget to see break-even odds")));
 }
 function copyReport(x) {
   const lines = [`# GameCred design assessment`, ``, `**Subgenre:** ${mname(lab.sub)} · **Price:** $${lab.price} · **Release:** ${lab.year}${lab.ea ? " · Early Access" : ""}`,
@@ -881,13 +907,221 @@ function viewTrends() {
       hbars(rows.map(r => ({ label: mname(r.m), value: r.slope * 100, sub: `now ${fmt.pct(r.series.filter(v => v != null).slice(-1)[0])}`, onclick: () => openMechanic(r.m) })), { diverging: true, fmtv: v => (v >= 0 ? "+" : "") + v.toFixed(1) + "pp", width: 900, rowH: 22, labelW: 230 })));
 }
 
+
+
+function heatmapChart(H, { cell = 30, labelW = 210 } = {}) {
+  const rows = H.mechanics, cols = H.subgenres, top = 110, width = labelW + cols.length * cell + 10, height = top + rows.length * (cell * 0.72) + 10, rh = cell * 0.72;
+  const svg = s("svg", { class: "svgchart", style: `max-width:${width}px`, viewBox: `0 0 ${width} ${height}` });
+  cols.forEach((c, j) => svg.append(s("text", { class: "lbl", transform: `translate(${labelW + j * cell + cell / 2},${top - 8}) rotate(-50)` }, `${mname(c)} (${H.n[j]})`)));
+  rows.forEach((m, i) => {
+    svg.append(s("text", { class: "lbl", x: labelW - 8, y: top + i * rh + rh / 2 + 4, "text-anchor": "end" }, mname(m)));
+    cols.forEach((c, j) => {
+      const v = H.values[i][j], g = s("g", { class: "hov", style: "cursor:pointer" });
+      g.append(s("rect", { class: "mark", x: labelW + j * cell + 1, y: top + i * rh + 1, width: cell - 2, height: rh - 2, rx: 3,
+        fill: `color-mix(in oklab, var(--seq-6) ${Math.round(v * 100)}%, var(--surface-2))` }));
+      if (v >= 0.5) g.append(s("text", { x: labelW + j * cell + cell / 2, y: top + i * rh + rh / 2 + 4, "text-anchor": "middle", style: `fill:${v > 0.7 ? "var(--surface-1)" : "var(--text-primary)"};font-size:9px` }, Math.round(v * 100)));
+      hover(g, () => [`${Math.round(v * 100)}% of ${mname(c)} games`, mname(m)]);
+      g.addEventListener("click", () => openMechanic(m)); svg.append(g);
+    });
+  });
+  return svg;
+}
+
+// ---------- Money ----------
+const CAT = ["var(--series-1)", "var(--series-2)", "var(--series-3)", "var(--series-4)", "var(--series-5)", "var(--series-6)", "var(--series-7)"];
+const OTHER = "var(--axis)";
+const SUB_COLOR = (() => { const m = {}; ((AN.money || {}).year_series || []).forEach((sg, i) => { m[sg] = sg === "other" ? OTHER : CAT[i] || OTHER; }); return sg => m[sg] || OTHER; })();
+const FAM_COLOR = (() => { const m = {}; FAMS.forEach((f, i) => { m[f.id] = i < 7 ? CAT[i] : OTHER; }); return id => m[id] || OTHER; })();
+const legendSw = items => h("div", { class: "legend" }, items.map(([label, color, line]) => h("span", {}, h("i", { class: line ? "line" : "", style: `background:${color}` }), label)));
+
+function squarify(items, x, y, w, hgt) {
+  // items: [{value,...}] sorted desc -> rects
+  const total = items.reduce((a, b) => a + b.value, 0), out = [];
+  let rest = items.map(i => ({ ...i, area: i.value / total * w * hgt }));
+  while (rest.length) {
+    const short = Math.min(w, hgt); let row = [], best = Infinity;
+    for (const it of rest) {
+      const r = [...row, it], s2 = r.reduce((a, b) => a + b.area, 0), mx = Math.max(...r.map(z => z.area)), mn = Math.min(...r.map(z => z.area));
+      const worst = Math.max(short * short * mx / (s2 * s2), (s2 * s2) / (short * short * mn));
+      if (worst > best) break; best = worst; row = r;
+    }
+    const s2 = row.reduce((a, b) => a + b.area, 0), thick = s2 / short; let off = 0;
+    for (const it of row) {
+      const len = it.area / thick;
+      out.push(w >= hgt ? { ...it, x, y: y + off, w: thick, h: len } : { ...it, x: x + off, y, w: len, h: thick });
+      off += len;
+    }
+    if (w >= hgt) { x += thick; w -= thick; } else { y += thick; hgt -= thick; }
+    rest = rest.slice(row.length);
+  }
+  return out;
+}
+function treemap(items, { width = 700, height = 340 } = {}) {
+  const svg = s("svg", { class: "svgchart", style: `max-width:${width}px`, viewBox: `0 0 ${width} ${height}` });
+  for (const r of squarify(items.filter(i => i.value > 0).sort((a, b) => b.value - a.value), 0, 0, width, height)) {
+    const g = s("g", { class: "hov", style: "cursor:pointer" });
+    g.append(s("rect", { class: "mark", x: r.x + 1, y: r.y + 1, width: Math.max(0, r.w - 2), height: Math.max(0, r.h - 2), rx: 4, fill: r.color }));
+    if (r.w > 70 && r.h > 34) {
+      g.append(s("text", { x: r.x + 8, y: r.y + 18, style: "fill:#fff;font-size:12px;font-weight:600" }, r.label.length * 7 > r.w ? r.label.slice(0, Math.floor(r.w / 7)) + "…" : r.label));
+      g.append(s("text", { x: r.x + 8, y: r.y + 33, style: "fill:#fff;font-size:11px;opacity:.9" }, r.sub));
+    }
+    hover(g, () => [r.sub, r.label, r.extra || []]);
+    if (r.onclick) g.addEventListener("click", r.onclick);
+    svg.append(g);
+  }
+  return svg;
+}
+function stackedColumns(rows, series, { width = 900, height = 300, fmtv = fmt.usd, colorOf } = {}) {
+  const pad = { l: 56, r: 10, t: 10, b: 30 }, W = width - pad.l - pad.r, H = height - pad.t - pad.b;
+  const totals = rows.map(r => series.reduce((a, k) => a + (r[k] || 0), 0)), mx = Math.max(1, ...totals);
+  const ticks = niceTicks(0, mx, 4); if (ticks[ticks.length - 1] < mx) ticks.push(ticks[ticks.length - 1] + (ticks[1] - ticks[0]));
+  const top = ticks[ticks.length - 1], Y = v => pad.t + H - v / top * H, bw = Math.min(28, W / rows.length - 6);
+  const svg = s("svg", { class: "svgchart", style: `max-width:${width}px`, viewBox: `0 0 ${width} ${height}` });
+  for (const t of ticks) svg.append(s("line", { class: "gridline", x1: pad.l, x2: pad.l + W, y1: Y(t), y2: Y(t) }), s("text", { x: pad.l - 6, y: Y(t) + 4, "text-anchor": "end" }, fmtv(t)));
+  rows.forEach((r, i) => {
+    const cx = pad.l + (i + 0.5) * W / rows.length; let acc = 0;
+    series.forEach((k, si) => {
+      const v = r[k] || 0; if (!v) return;
+      const y0 = Y(acc), y1 = Y(acc + v), isTop = series.slice(si + 1).every(k2 => !(r[k2] > 0));
+      const hh = y0 - y1 - (isTop ? 0 : 2);
+      if (hh > 0.5) svg.append(isTop ? s("path", { d: colPath(cx - bw / 2, y1, bw, hh), fill: colorOf(k) }) : s("rect", { x: cx - bw / 2, y: y1 + 2, width: bw, height: hh, fill: colorOf(k) }));
+      acc += v;
+    });
+    svg.append(s("text", { x: cx, y: height - 12, "text-anchor": "middle" }, String(r.year).slice(2)));
+    const hit = s("rect", { class: "hit", x: cx - W / rows.length / 2, y: pad.t, width: W / rows.length, height: H });
+    hover(hit, () => [fmtv(totals[i]), `${r.year} · ${r.n} games`, series.filter(k => r[k]).map(k => `${k === "other" ? "Other" : mname(k)}: ${fmtv(r[k])}`)]);
+    svg.append(hit);
+  });
+  return svg;
+}
+function lorenzChart(pts, { width = 420, height = 320 } = {}) {
+  const pad = { l: 40, r: 12, t: 12, b: 34 }, W = width - pad.l - pad.r, H = height - pad.t - pad.b;
+  const X = v => pad.l + v * W, Y = v => pad.t + H - v * H;
+  const svg = s("svg", { class: "svgchart", style: `max-width:${width}px`, viewBox: `0 0 ${width} ${height}` });
+  for (const t of [0, .25, .5, .75, 1]) { svg.append(s("line", { class: "gridline", x1: pad.l, x2: pad.l + W, y1: Y(t), y2: Y(t) }), s("text", { x: pad.l - 6, y: Y(t) + 4, "text-anchor": "end" }, Math.round(t * 100) + "%"), s("text", { x: X(t), y: height - 16, "text-anchor": "middle" }, Math.round(t * 100) + "%")); }
+  svg.append(s("line", { x1: X(0), y1: Y(0), x2: X(1), y2: Y(1), stroke: "var(--axis)", "stroke-width": 1 }));
+  const d = pts.map((p, i) => `${i ? "L" : "M"}${X(p[0])},${Y(p[1])}`).join("");
+  svg.append(s("path", { d: d + `L${X(1)},${Y(0)}Z`, fill: "var(--series-2)", opacity: 0.12 }));
+  svg.append(s("path", { d, fill: "none", stroke: "var(--series-2)", "stroke-width": 2 }));
+  svg.append(s("text", { x: pad.l + W, y: height - 2, "text-anchor": "end" }, "share of games (poorest → richest) →"));
+  pts.forEach(p => { const hit = s("rect", { class: "hit", x: X(p[0]) - 5, y: pad.t, width: 10, height: H }); hover(hit, () => [`${Math.round(p[1] * 100)}% of revenue`, `bottom ${Math.round(p[0] * 100)}% of games`, [`top ${Math.round((1 - p[0]) * 100)}% earn ${Math.round((1 - p[1]) * 100)}%`]]); svg.append(hit); });
+  return svg;
+}
+function logScatter(rows, { width = 900, height = 380, x, y, xl, yl, colorOf, label } = {}) {
+  const pad = { l: 56, r: 14, t: 12, b: 36 }, W = width - pad.l - pad.r, H = height - pad.t - pad.b;
+  const xs = rows.map(x), ys = rows.map(y).filter(v => v > 0);
+  const xmin = 0, xmax = Math.max(...xs) * 1.05, ylo = Math.floor(Math.log10(Math.min(...ys))), yhi = Math.ceil(Math.log10(Math.max(...ys)));
+  const X = v => pad.l + (v - xmin) / (xmax - xmin) * W, Y = v => pad.t + H - (Math.log10(v) - ylo) / (yhi - ylo) * H;
+  const svg = s("svg", { class: "svgchart", style: `max-width:${width}px`, viewBox: `0 0 ${width} ${height}` });
+  for (let e = ylo; e <= yhi; e++) svg.append(s("line", { class: "gridline", x1: pad.l, x2: pad.l + W, y1: Y(10 ** e), y2: Y(10 ** e) }), s("text", { x: pad.l - 6, y: Y(10 ** e) + 4, "text-anchor": "end" }, fmt.usd(10 ** e)));
+  for (const t of niceTicks(xmin, xmax, 6)) svg.append(s("text", { x: X(t), y: height - 16, "text-anchor": "middle" }, "$" + t));
+  svg.append(s("text", { x: pad.l + W, y: height - 2, "text-anchor": "end" }, xl), s("text", { x: pad.l + 4, y: pad.t + 10 }, yl));
+  const ordered = [...rows].sort((a, b) => (colorOf(a) === OTHER ? 0 : 1) - (colorOf(b) === OTHER ? 0 : 1));
+  for (const r of ordered) {
+    const yv = y(r); if (!(yv > 0)) continue;
+    const cx = X(x(r)), cy = Y(yv), col = colorOf(r);
+    svg.append(s("circle", { cx, cy, r: col === OTHER ? 2.6 : 3.6, fill: col, opacity: col === OTHER ? 0.45 : 0.85 }));
+    const hit = s("circle", { class: "hit", cx, cy, r: 7 }); hover(hit, () => label(r)); hit.addEventListener("click", () => openGame(r.id)); svg.append(hit);
+  }
+  return svg;
+}
+function upliftBubbles(rows, { width = 1100, height = 440 } = {}) {
+  const pad = { l: 56, r: 20, t: 16, b: 38 }, W = width - pad.l - pad.r, H = height - pad.t - pad.b;
+  const xmax = Math.max(...rows.map(r => r.n)) * 1.05, lx = v => Math.log10(v);
+  const ymin = Math.min(...rows.map(r => r.uplift_x)), ymax = Math.max(...rows.map(r => r.uplift_x));
+  const ylo = Math.min(-0.5, lx(ymin) - 0.05), yhi = Math.max(0.5, lx(ymax) + 0.05);
+  const X = v => pad.l + Math.log10(v) / Math.log10(xmax) * W, Y = v => pad.t + H - (lx(v) - ylo) / (yhi - ylo) * H;
+  const mmax = Math.max(...rows.map(r => r.market)), R = m => 4 + 22 * Math.sqrt(m / mmax);
+  const svg = s("svg", { class: "svgchart", style: `max-width:${width}px`, viewBox: `0 0 ${width} ${height}` });
+  for (const t of [0.33, 0.5, 1, 2, 3, 5].filter(t => lx(t) >= ylo && lx(t) <= yhi)) svg.append(s("line", { class: t === 1 ? "axisline" : "gridline", x1: pad.l, x2: pad.l + W, y1: Y(t), y2: Y(t) }), s("text", { x: pad.l - 6, y: Y(t) + 4, "text-anchor": "end" }, t + "×"));
+  for (const t of [10, 30, 100, 300, 1000].filter(t => t < xmax)) svg.append(s("text", { x: X(t), y: height - 18, "text-anchor": "middle" }, t));
+  svg.append(s("text", { x: pad.l + W, y: height - 2, "text-anchor": "end" }, "games with mechanic (log) →"), s("text", { x: pad.l + 4, y: pad.t + 10 }, "↑ median revenue multiple vs comparable games without it"));
+  const lab = new Set([...rows].sort((a, b) => b.market - a.market).slice(0, 6).concat([...rows].sort((a, b) => b.uplift_x - a.uplift_x).slice(0, 4)).map(r => r.mechanic));
+  for (const r of [...rows].sort((a, b) => b.market - a.market)) {
+    const cx = X(r.n), cy = Y(r.uplift_x), rr = R(r.market), fam = MECH[r.mechanic].family;
+    const g = s("g", { class: "hov", style: "cursor:pointer" });
+    g.append(s("circle", { class: "mark", cx, cy, r: rr, fill: FAM_COLOR(fam), opacity: 0.55, stroke: "var(--surface-1)", "stroke-width": 1.5 }));
+    if (lab.has(r.mechanic)) g.append(s("text", { class: "lbl", x: cx + rr + 4, y: cy + 4 }, mname(r.mechanic)));
+    hover(g, () => [`${r.uplift_x.toFixed(2)}× median revenue`, mname(r.mechanic), [`${famName(fam)}`, `market ${fmt.usd(r.market)} (${fmt.pct(r.market_share)}) · n=${r.n}`, `median ${fmt.usd(r.median_with)} with vs ${fmt.usd(r.median_without)} without`, `$1M+ rate ${fmt.pct(r.million_rate_with)} vs ${fmt.pct(r.million_rate_without)}`]]);
+    g.addEventListener("click", () => openMechanic(r.mechanic)); svg.append(g);
+  }
+  return svg;
+}
+
+function viewMoney() {
+  const el = $("#view-money"), M = AN.money;
+  if (!M) { put(el, h("div", { class: "empty" }, "No money data — re-run export.")); return; }
+  const tiers = M.tiers, totalN = tiers.reduce((a, t) => a + t.n, 0);
+  const tierLabel = t => t.hi >= 1e12 ? `${fmt.usd(t.lo)}+` : `${fmt.usd(t.lo)}–${fmt.usd(t.hi)}`;
+  const million = tiers.filter(t => t.lo >= 1e6).reduce((a, t) => a + t.n, 0);
+  const top1 = M.top1_share;
+  const subItems = M.subgenres.map(sg => ({ value: sg.total, label: mname(sg.subgenre), sub: fmt.usd(sg.total), color: SUB_COLOR(sg.subgenre),
+    extra: [`${sg.n} paid games · median ${fmt.usd(sg.median)}`, `$1M+ rate ${fmt.pct(sg.million_rate)} · $10M+ ${fmt.pct(sg.ten_million_rate)}`, `top 10% of games earn ${fmt.pct(sg.top10_share)}`],
+    onclick: () => { $("#f-sub").value = sg.subgenre; $("#f-sub").dispatchEvent(new Event("change")); switchView("overview"); } }));
+  const mm = M.mechanics.filter(r => !r.mechanic.startsWith("hybrid_"));
+  const paidGames = GAMES.filter(g => g.rev && g.p);
+  const scatterSubs = (M.year_series || []).slice(0, 3);
+  put(el, h("h2", {}, "The money: where roguelike revenue goes"),
+    h("p", { class: "sub" }, `Estimated gross Steam revenue for ${fmt.n(M.n_paid)} paid roguelikes (review-multiplier model; developer net ≈ ${Math.round(M.net_share * 100)}% of gross). Rankings are reliable; individual dollar figures are ±~2×.`),
+    h("div", { class: "grid g4" },
+      h("div", { class: "card" }, h("div", { class: "tile-label" }, "Total gross revenue"), h("div", { class: "hero" }, h("span", { class: "hero-value" }, fmt.usd(M.total))), h("div", { class: "tile-note" }, `≈ ${fmt.usd(M.total * M.net_share)} to developers after Steam's cut`)),
+      tile("Median game earns", fmt.usd(M.median), "half of all paid roguelikes gross less than this"),
+      tile("Games grossing $1M+", fmt.pct(million / totalN), `${million} of ${totalN} games`),
+      tile("Winner-take-most", `Gini ${fmt.f2(M.gini)}`, `top 1% of games take ${fmt.pct(top1)} · top 10% take ${fmt.pct(M.top10_share)}`)),
+    h("div", { class: "grid g21", style: "margin-top:16px" },
+      h("div", { class: "card" }, h("h3", {}, "Revenue by subgenre"), h("div", { class: "muted", style: "margin-bottom:8px" }, "Area = total estimated gross. Click to filter the dashboard to that subgenre."), treemap(subItems, { width: 820, height: 360 })),
+      h("div", { class: "card" }, h("h3", {}, "Concentration (Lorenz curve)"), h("div", { class: "muted" }, "How unequal is roguelike revenue? The further the curve bows from the diagonal, the more a few hits take everything."), lorenzChart(M.lorenz))),
+    h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, "Revenue by release year"), h("div", { class: "muted" }, "Estimated lifetime gross of each year's releases, stacked by subgenre (top 7 + other)."),
+      legendSw(M.year_series.map(k => [k === "other" ? "Other" : mname(k), SUB_COLOR(k)])), stackedColumns(M.by_year, M.year_series, { width: 1100, height: 320, colorOf: SUB_COLOR })),
+    h("div", { class: "grid g2", style: "margin-top:16px" },
+      h("div", { class: "card" }, h("h3", {}, "How many games reach each revenue tier"), hbars(tiers.map(t => ({ label: tierLabel(t), value: t.n, sub: `${fmt.pct(t.n / totalN)} of games`, color: "var(--series-3)" })), { fmtv: fmt.n, width: 560, labelW: 130 })),
+      h("div", { class: "card" }, h("h3", {}, "…and how much of the money each tier takes"), hbars(tiers.map(t => ({ label: tierLabel(t), value: t.total, sub: `${fmt.pct(t.total / M.total)} of all revenue`, color: "var(--series-2)" })), { fmtv: fmt.usd, width: 560, labelW: 130 }))),
+    h("div", { class: "grid g2", style: "margin-top:16px" },
+      h("div", { class: "card" }, h("h3", {}, "Median revenue by launch price"), hbars(M.price_bands.map(b => ({ label: b.hi >= 1000 ? `$${b.lo}+` : `$${b.lo}–${b.hi}`, value: b.median, sub: `n=${b.n} · $1M+ rate ${fmt.pct(b.million_rate)}`, color: "var(--series-7)" })), { fmtv: fmt.usd, width: 560, labelW: 100 })),
+      h("div", { class: "card" }, h("h3", {}, "Odds of a $1M+ game, by launch price"), hbars(M.price_bands.map(b => ({ label: b.hi >= 1000 ? `$${b.lo}+` : `$${b.lo}–${b.hi}`, value: b.million_rate * 100, sub: `n=${b.n}`, color: "var(--series-4)" })), { fmtv: v => v.toFixed(0) + "%", width: 560, labelW: 100 }))),
+    h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, "Which mechanics come with more money?"),
+      h("div", { class: "muted" }, "Each bubble is a mechanic. y = median revenue of games with it ÷ comparable games without it (matched on tag source and documentation depth); size = total market of games using it; color = mechanic family. Associations, not causes."),
+      legendSw(FAMS.slice(0, 7).map(f => [f.name, FAM_COLOR(f.id)]).concat([["Other families", OTHER]])), upliftBubbles(mm)),
+    h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, "Mechanic revenue table"),
+      table([{ key: "name", label: "Mechanic", render: r => h("span", {}, h("i", { style: `display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;background:${FAM_COLOR(MECH[r.mechanic].family)}` }), mname(r.mechanic)), sort: r => mname(r.mechanic) },
+        { key: "uplift_x", label: "Revenue multiple", num: true, render: r => r.uplift_x.toFixed(2) + "×" },
+        { key: "uplift_usd", label: "$ uplift (median game)", num: true, render: r => (r.uplift_usd >= 0 ? "+" : "−") + fmt.usd(Math.abs(r.uplift_usd)) },
+        { key: "median_with", label: "Median with", num: true, render: r => fmt.usd(r.median_with) },
+        { key: "million_rate_with", label: "$1M+ rate with", num: true, render: r => fmt.pct(r.million_rate_with) },
+        { key: "million_rate_without", label: "…comparable without", num: true, render: r => fmt.pct(r.million_rate_without) },
+        { key: "market", label: "Market size", num: true, render: r => fmt.usd(r.market) }, { key: "n", label: "Games", num: true }],
+        mm.map(r => ({ ...r, name: mname(r.mechanic) })), { onRow: r => openMechanic(r.mechanic), initialSort: ["uplift_x", -1] })),
+    h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, "Price vs revenue, every paid game"),
+      legendSw(scatterSubs.map(k => [mname(k), SUB_COLOR(k)]).concat([["Other subgenres", OTHER]])),
+      logScatter(paidGames.map(g => ({ id: g.id, n: g.n, p: g.p, rev: g.rev, sg: g.sg })), { width: 1100, height: 400, x: r => r.p, y: r => r.rev, xl: "launch price →", yl: "↑ estimated gross revenue (log)",
+        colorOf: r => scatterSubs.includes(r.sg) ? SUB_COLOR(r.sg) : OTHER, label: r => [fmt.usd(r.rev), r.n, [`$${r.p} · ${mname(r.sg)}`]] })),
+    h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, "White space: high revenue multiple, few competitors"),
+      h("div", { class: "muted", style: "margin-bottom:8px" }, "Mechanics whose games earn ≥1.8× the median of comparable games, but that fewer than 40 games use. Candidate briefs for a publisher's next greenlight."),
+      hbars(mm.filter(r => r.uplift_x >= 1.8 && r.n < 40).sort((a, b) => b.uplift_x - a.uplift_x).slice(0, 12).map(r => ({ label: mname(r.mechanic), value: r.uplift_x, sub: `${r.n} games · median ${fmt.usd(r.median_with)} · $1M+ ${fmt.pct(r.million_rate_with)}`, color: FAM_COLOR(MECH[r.mechanic].family), onclick: () => openMechanic(r.mechanic) })), { fmtv: v => v.toFixed(1) + "×", width: 900, labelW: 240 })),
+    h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, "Top-grossing roguelikes (estimated)"),
+      hbars(M.top_games.map(g => ({ label: g.n, value: g.rev, color: SUB_COLOR(g.sg), sub: mname(g.sg), onclick: () => openGame(g.id) })), { fmtv: fmt.usd, width: 1000, labelW: 260, rowH: 24 })));
+}
+
+
+function viewIdeas() {
+  const el = $("#view-ideas"), I = AN.auto_ideas || [];
+  const KIND = { opportunity: "var(--series-3)", data: "var(--series-1)", taxonomy: "var(--series-7)", tagging: "var(--series-4)", research: "var(--series-2)" };
+  const kinds = [...new Set(I.map(i => i.kind))];
+  const md = t => { const out = []; t.split(/(\*\*[^*]+\*\*|`[^`]+`)/).forEach(p => out.push(p.startsWith("**") ? h("b", {}, p.slice(2, -2)) : p.startsWith("`") ? h("code", {}, p.slice(1, -1)) : p)); return out; };
+  put(el, h("h2", {}, "What to do next — generated from the data"),
+    h("p", { class: "sub" }, `${I.length} ideas mined from the current dataset on every export (gaps in evidence, fuzzy definitions, auto-tagger blind spots, thin subgenres, market white space, trend bets, outlier case studies). Ranked by value ÷ effort. This is the self-directing half of the workflow: the top ideas become the next loop's work.`),
+    legendSw(kinds.map(k => [k, KIND[k] || OTHER])),
+    h("div", { class: "grid g2" }, I.map((i, n) => h("div", { class: "card tight", style: `border-left:4px solid ${KIND[i.kind] || OTHER}` },
+      h("div", { class: "row", style: "justify-content:space-between" }, h("span", { class: "chip small" }, `A${n + 1} · ${i.kind}`), h("span", { class: "muted" }, `value ${i.value} · effort ${i.effort}`)),
+      h("div", { style: "margin-top:6px" }, md(i.text)), h("div", { class: "muted", style: "font-size:12px;margin-top:4px" }, i.why)))));
+}
 // ---------- wiring ----------
-const VIEWS = { overview: viewOverview, mechanics: viewMechanics, families: viewFamilies, games: viewGames, lab: viewLab, trends: viewTrends, synergy: viewSynergy, method: viewMethod };
+const VIEWS = { ideas: viewIdeas, money: viewMoney, overview: viewOverview, mechanics: viewMechanics, families: viewFamilies, games: viewGames, lab: viewLab, trends: viewTrends, synergy: viewSynergy, method: viewMethod };
 function switchView(v) {
   state.view = v;
   document.querySelectorAll(".tabs button").forEach(b => b.classList.toggle("active", b.dataset.view === v));
   document.querySelectorAll(".view").forEach(s2 => s2.classList.toggle("active", s2.id === "view-" + v));
-  $("#filters").style.display = ["lab", "method", "trends"].includes(v) ? "none" : "";
+  $("#filters").style.display = ["lab", "method", "trends", "money", "ideas"].includes(v) ? "none" : "";
   render(); if (hashView() !== v) history.replaceState(null, "", "#" + v);
 }
 function render() {

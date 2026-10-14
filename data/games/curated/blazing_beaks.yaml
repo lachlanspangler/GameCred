@@ -1,0 +1,55 @@
+appid: 585710
+name: Blazing Beaks
+developer: Applava
+release_year: 2019
+subgenre: hybrid_action_roguelite
+wiki: https://blazingbeaks.fandom.com/
+stats:
+  playable_characters: 10
+  biome_count: 6
+  difficulty_levels: 3
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_shooter: 2
+  twin_stick: 3
+  real_time_action: 3
+  permadeath: 3
+  procgen_levels: 3
+  room_based_floors: 2
+  act_structure: 3
+  boss_gates: 3
+  endless_mode: 2
+  enemy_hp_scaling: 2
+  seeded_runs: 2
+  daily_challenge: 2
+  optional_challenges: 2
+  modular_difficulty: 1
+  turn_escalation: 1
+  character_classes: 3
+  unlock_characters: 2
+  unlock_items: 2
+  achievement_unlocks: 2
+  weapons_variety: 2
+  passive_relics: 2
+  cursed_items: 3
+  double_edged_items: 3
+  push_your_luck: 2
+  shops: 2
+  in_run_currency: 2
+  gambling: 1
+  second_chance: 1
+  local_coop: 2
+  pvp: 2
+  leaderboards: 2
+  mod_support: 2
+  run_mutators: 1
+evidence:
+  cursed_items: 'Wiki ''Artifacts'': carrying artifacts weakens you; each has a risk value, and the summed risk sets how many items the Crow gives in the shop.'
+  push_your_luck: 'Wiki ''Daily Runs'': total carried risk value is the score multiplier; Steam: ''too much greediness can be fatal''.'
+  turn_escalation: 'Wiki ''Bosses'': boss difficulty (1-3 skulls) depends on how early you enter the boss level.'
+  endless_mode: 'Wiki ''Loop'': after the final boss you can loop to the first area with more enemies, more damage and higher shop prices.'
+  seeded_runs: 'Wiki ''Modes'': Story runs can be Normal, Seeded, Daily or Challenges; Easy/Normal/Hard difficulty.'
+  achievement_unlocks: 'Wiki ''Shop'': unlocks come from feats like dying in the shop, stealing from the Eagle 10 times or buying 5 items in a run.'
+  mod_support: 'Steam: character mods let players create and share custom characters.'
+confidence: medium
+curator: wiki-agent

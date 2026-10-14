@@ -31,6 +31,8 @@ mechanics:
   unlock_items: 2
   shop_management: 3
   weapon_stance_swap: 2
+  partial_death_penalty: 3
+  companions_pets: 1
 evidence:
   extraction: The Merchant Pendant lets Will teleport out keeping loot; dying loses most of the backpack.
   inventory_management: Grid backpack with item curses (destroy-adjacent, must-be-on-edge, transform-on-return).
@@ -38,5 +40,6 @@ evidence:
   hub_building: Gold funds new Rynoka shops (blacksmith, witch, bank) that unlock crafting tiers.
   shop_management: 'Night phase: Will sets prices for dungeon loot in his Moonlighter shop, reading customer reactions.'
   weapon_stance_swap: Two weapon sets are equipped and swapped instantly mid-fight.
+  partial_death_penalty: Dying in a dungeon loses the backpack except the items kept in the protected top-row slots.
 confidence: high
 curator: agent

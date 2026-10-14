@@ -33,6 +33,8 @@ mechanics:
   unlock_items: 2
   lore_codex: 1
   early_access_dev: 2
+  companions_pets: 2
+  secret_areas: 2
 evidence:
   in_run_currency: Gold collected in a run funds permanent upgrades, but each death forfeits a portion of it.
   permanent_stat_upgrades: Gold buys permanent hub upgrades that every successive peasant inherits.

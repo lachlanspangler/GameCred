@@ -34,6 +34,8 @@ mechanics:
   early_access_dev: 2
   content_updates: 2
   automation_logistics: 2
+  soft_run_limit: 1
+  run_mutators: 1
 evidence:
   time_pressure: The Queen's Impatience meter fills over time and loses the settlement if maxed.
   passive_relics: Cornerstones picked from offers each season permanently alter settlement rules.

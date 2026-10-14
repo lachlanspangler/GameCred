@@ -1,0 +1,43 @@
+appid: 597170
+name: Clone Drone in the Danger Zone
+developer: Doborog Games
+release_year: 2021
+subgenre: hybrid_action_roguelite
+wiki: https://clone-drone-in-the-danger-zone.fandom.com/
+critic:
+  metacritic: 82
+stats:
+  difficulty_levels: 7
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  melee_combos: 1
+  physics_simulation: 2
+  limb_injuries: 3
+  permadeath: 2
+  second_chance: 2
+  endless_mode: 3
+  short_runs: 1
+  enemy_hp_scaling: 2
+  enemy_variety: 1
+  level_up_choices: 3
+  flat_stat_scaling: 2
+  environmental_hazards: 2
+  optional_challenges: 2
+  unlock_items: 1
+  achievement_unlocks: 1
+  leaderboards: 2
+  online_coop: 2
+  pvp: 2
+  mod_support: 3
+  steam_deck_friendly: 1
+evidence:
+  limb_injuries: "Steam: a voxel slice-em-up where any part of your body can be sliced off; wiki 'Upgrades': Repair appears only after losing an arm or leg."
+  level_up_choices: "Wiki 'Upgrades': each level beaten grants 1 upgrade point spent at the Upgrade Bot on sword, bow, kick, jetpack and more."
+  second_chance: "Wiki 'Upgrades': Extra Lives are clones that take over when you die, up to 10 per game."
+  endless_mode: "Wiki 'Endless Mode': a never-ending series of levels across 7 tiers (Bronze to Insanium); when you die with no clones left your score goes to the leaderboard."
+  optional_challenges: "Wiki 'Challenge Mode': 16 single-player and 12 co-op official challenges award trophies, mounts, upgrades or skins."
+  pvp: "Wiki 'Last Bot Standing': a battle royale of up to 15 players, starting with 4 upgrade points."
+  mod_support: "Wiki 'Challenge Mode': Workshop challenges built in the Level Editor; Steam lists Workshop and level editor."
+confidence: medium
+curator: wiki-agent

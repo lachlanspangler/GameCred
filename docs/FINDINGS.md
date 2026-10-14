@@ -1,12 +1,12 @@
 # GameCred findings
 
-_Auto-generated 2026-10-13 from 1529 roguelikes (343 expert-curated). Associations from observational data, not causal guarantees. Method: METHODOLOGY.md._
+_Auto-generated 2026-10-13 from 2462 roguelikes (392 expert-curated). Associations from observational data, not causal guarantees. Method: METHODOLOGY.md._
 
 ## Headline numbers
 
-- **Model accuracy:** mechanics + subgenre + price/year/pedigree controls cut the error of predicting a game's Success Index from 23.7 to 17.4 points (5-fold CV).
-- **Out-of-time test:** trained on releases ≤ 2021, then ranked 496 unseen 2022+ games with Spearman ρ = 0.45. Of the games it put in the top quartile, **56%** really were hits (chance is 25%).
-- **Tagging reliability:** blind re-tag of 30 games, Cohen's κ = 0.72 (substantial agreement).
+- **Model accuracy:** mechanics + subgenre + price/year/pedigree controls cut the error of predicting a game's Success Index from 23.4 to 16.9 points (5-fold CV).
+- **Out-of-time test:** trained on releases ≤ 2021, then ranked 911 unseen 2022+ games with Spearman ρ = 0.47. Of the games it put in the top quartile, **57%** really were hits (chance is 25%).
+- **Tagging reliability:** blind re-tag of 30 games, Cohen's κ = 0.71 (substantial agreement).
 
 ## What every roguelike needs (table stakes)
 
@@ -16,63 +16,66 @@ _Auto-generated 2026-10-13 from 1529 roguelikes (343 expert-curated). Associatio
 
 These have a positive stratified Δ, and a matched comparison against the 5 most similar games without the mechanic agrees.
 
-- **Multiplicative Scaling**: Δ +12.0 pts (CI +7.4…+16.5), matched +16.6; in 2% of games
-- **Mod Support / Workshop**: Δ +10.2 pts (CI +6.3…+14.0), matched +19.5; in 2% of games
-- **Build Archetypes**: Δ +8.1 pts (CI +4.8…+11.6), matched +16.5; in 6% of games
-- **Controller / Deck Friendly**: Δ +7.9 pts (CI +2.7…+12.3), matched +14.6; in 2% of games
-- **Passive Relics / Trinkets**: Δ +7.8 pts (CI +5.1…+10.6), matched +13.1; in 16% of games
-- **Stealth / Detection**: Δ +7.6 pts (CI +1.2…+13.8), matched +16.5; in 2% of games
-- **Explicit Synergies**: Δ +7.5 pts (CI +4.3…+10.8), matched +15.1; in 12% of games
-- **Item/Card Pool Unlocks**: Δ +7.2 pts (CI +4.5…+10.0), matched +13.3; in 18% of games
-- **Weapon Handling Skill**: Δ +7.2 pts (CI +2.2…+11.7), matched +15.7; in 1% of games
-- **Gambling / Chance Rewards**: Δ +7.1 pts (CI +2.8…+11.6), matched +18.6; in 2% of games
+- **Multiplicative Scaling**: Δ +9.1 pts (CI +4.8…+12.6), matched +12.7; in 1% of games
+- **Passive Relics / Trinkets**: Δ +7.4 pts (CI +5.5…+9.6), matched +11.5; in 14% of games
+- **Dice Mechanics**: Δ +7.4 pts (CI +2.0…+12.1), matched +10.6; in 1% of games
+- **Pre-run Mutators / Challenge Runs**: Δ +6.6 pts (CI +2.1…+10.7), matched +12.9; in 1% of games
+- **Item/Card Pool Unlocks**: Δ +6.6 pts (CI +4.6…+8.6), matched +10.5; in 18% of games
+- **Permanent Stat Upgrades**: Δ +6.4 pts (CI +3.6…+9.1), matched +11.3; in 6% of games
+- **Mod Support / Workshop**: Δ +6.4 pts (CI +3.3…+9.4), matched +14.0; in 2% of games
+- **Projectile Modifiers**: Δ +6.3 pts (CI +0.9…+11.3), matched +10.4; in 1% of games
+- **Build / Combat Phases**: Δ +6.2 pts (CI +0.7…+10.8), matched +7.8; in 1% of games
+- **Seeded Runs**: Δ +6.1 pts (CI +2.2…+9.9), matched +15.9; in 1% of games
 
 ## Red flags
 
-- **Scarce Healing**: Δ -3.0 pts (CI -6.5…+0.6)
-- **Branching Node Map**: Δ -2.0 pts (CI -6.7…+2.3)
-- **Boss Gates**: Δ -1.8 pts (CI -5.5…+1.7)
-- **Crafting**: Δ -1.7 pts (CI -5.0…+1.8)
-- **Online Co-op**: Δ -1.6 pts (CI -4.2…+1.1)
-- **Dodge / Dash with i-frames**: Δ -0.9 pts (CI -4.7…+2.7)
+- **Persistent Shared World**: Δ -8.6 pts (CI -15.1…-2.0)
+- **Auto-battle Resolution**: Δ -6.7 pts (CI -10.3…-3.0)
+- **Online Co-op**: Δ -3.7 pts (CI -5.8…-1.5)
+- **Party / Roster Building**: Δ -1.8 pts (CI -4.5…+1.2)
+- **Scarce Healing**: Δ -1.7 pts (CI -4.4…+1.3)
+- **Crafting**: Δ -1.5 pts (CI -4.2…+1.3)
+- **Starting Loadout Choice**: Δ -0.8 pts (CI -4.1…+2.7)
+- **Dodge / Dash with i-frames**: Δ -0.3 pts (CI -3.3…+2.7)
 
 ## Per-subgenre must-haves
 
-- **Roguelike Deckbuilder** (n=144): must have Acts / Biomes, Item/Card Pool Unlocks, Pick 1 of N Rewards, Item/Card Upgrading, Passive Relics / Trinkets; differentiators: Explicit Synergies. Full rubric: rubrics/hybrid_deckbuilder.md
-- **Survivors-like** (n=61): must have Short Runs (<30 min), Item/Card Pool Unlocks, Explicit Synergies, Build Archetypes, Weapon Variety, Enemy Health/Damage Scaling; differentiators: —. Full rubric: rubrics/hybrid_survivors.md
-- **Action Roguelite** (n=592): must have —; differentiators: Systemic Simulation, Party / Roster Building, NPC Relationships, Mod Support / Workshop, Multiple Endings / True Ending. Full rubric: rubrics/hybrid_action_roguelite.md
-- **Traditional Roguelike** (n=84): must have —; differentiators: —. Full rubric: rubrics/hybrid_traditional.md
-- **Strategy Roguelite** (n=296): must have —; differentiators: Elites / Champions, Wave Survival. Full rubric: rubrics/hybrid_strategy.md
-- **Puzzle Roguelite** (n=45): must have —; differentiators: —. Full rubric: rubrics/hybrid_puzzle.md
-- **Shooter Roguelite** (n=130): must have Weapon Variety; differentiators: Online Co-op, Distinct Characters / Classes, Scarce Healing, Acts / Biomes. Full rubric: rubrics/hybrid_shooter.md
-- **Auto-battler Roguelite** (n=49): must have Party / Roster Building; differentiators: Distinct Characters / Classes. Full rubric: rubrics/hybrid_autobattler.md
-- **Survival Roguelite** (n=77): must have —; differentiators: —. Full rubric: rubrics/hybrid_survival.md
+- **Roguelike Deckbuilder** (n=213): must have Acts / Biomes, Pick 1 of N Rewards, Passive Relics / Trinkets; differentiators: Dice Mechanics, Item/Card Upgrading, Explicit Synergies. Full rubric: rubrics/hybrid_deckbuilder.md
+- **Survivors-like** (n=99): must have Permanent Stat Upgrades, Item/Card Pool Unlocks, Pickup Collection / Magnet, Movement Speed Scaling, Status Effects, Enemy Health/Damage Scaling, Early Access Development; differentiators: Weapon Variety. Full rubric: rubrics/hybrid_survivors.md
+- **Action Roguelite** (n=931): must have —; differentiators: Systemic Simulation, Multiple Endings / True Ending, NPC Relationships, On-hit / On-kill Triggers, Elites / Champions. Full rubric: rubrics/hybrid_action_roguelite.md
+- **Traditional Roguelike** (n=122): must have Permadeath; differentiators: Level-up Choice. Full rubric: rubrics/hybrid_traditional.md
+- **Strategy Roguelite** (n=471): must have —; differentiators: Build Archetypes, Status Effects, Horde Density, Mod Support / Workshop, Elites / Champions. Full rubric: rubrics/hybrid_strategy.md
+- **Puzzle Roguelite** (n=90): must have —; differentiators: —. Full rubric: rubrics/hybrid_puzzle.md
+- **Shooter Roguelite** (n=217): must have Permadeath, First-person; differentiators: Dodge / Dash with i-frames, Horde Density, Scarce Healing. Full rubric: rubrics/hybrid_shooter.md
+- **Auto-battler Roguelite** (n=80): must have —; differentiators: Party / Roster Building. Full rubric: rubrics/hybrid_autobattler.md
+- **Survival Roguelite** (n=121): must have Procedural Levels; differentiators: —. Full rubric: rubrics/hybrid_survival.md
+- **Narrative / Event Roguelite** (n=50): must have Random Events (? nodes); differentiators: —. Full rubric: rubrics/hybrid_narrative.md
 
 ## Design archetypes (data-driven)
 
-- **Item Stacking + Challenge-gated Unlocks + High-variance Loot**: median GSI 91, ρ +0.19, n=11 (e.g. Risk of Rain (2013), Risk of Rain Returns, Risk of Rain 2)
-- **Multiplicative Scaling + Score-target Rounds + Build Archetypes**: median GSI 85, ρ +0.14, n=13 (e.g. Wordatro!, Ballionaire, Nubby's Number Factory)
-- **Learnable Attack Patterns + Multi-phase Bosses + Ascension / Heat Ladder**: median GSI 82, ρ +0.25, n=19 (e.g. The Void Rains Upon Her Heart, Rogue Legacy 2, Returnal)
-- **Room-based Floors + Melee Combos + Ability Slots / Boons**: median GSI 80, ρ +0.01, n=41 (e.g. Little Noah: Scion of Paradise, Spiritfall, SWORN)
-- **Auto-battle Resolution + Adjacency / Grid Placement Effects + Asynchronous Multiplayer**: median GSI 79, ρ +0.09, n=9 (e.g. The Bazaar, Backpack Battles, Super Auto Pets)
-- **Wave Survival + Build / Combat Phases + Twin-stick Shooting**: median GSI 78, ρ +0.01, n=23 (e.g. Wall World, Dome Keeper, Rogue Tower)
-- **Horde Density + Auto-attack (Survivors-like) + Level-up Choice**: median GSI 75, ρ -0.02, n=34 (e.g. Twilight Survivors, Spirit Hunters: Infinite Horde, Bounty of One)
-- **First-person + Procedural Levels + Weapon Variety**: median GSI 74, ρ -0.07, n=60 (e.g. Receiver, STRAFE: Gold Edition, Heavy Bullets)
-- **Deckbuilding + Energy / Mana per Turn + Draw Manipulation**: median GSI 74, ρ -0.03, n=36 (e.g. Vault of the Void, Dawncaster, Pirates Outlaws)
-- **Crafting + Long Runs (>90 min) + Open Procedural World**: median GSI 69, ρ -0.07, n=32 (e.g. UnReal World, Windbound, ADOM (Ancient Domains Of Mystery))
-- **Turn-based + Party / Roster Building + Grid Tactics**: median GSI 68, ρ -0.12, n=47 (e.g. Tharsis, Vambrace: Cold Soul, Overland)
-- **Vehicle / Ship Avatar + Targetable Subsystems + Random Events (? nodes)**: median GSI 67, ρ -0.15, n=18 (e.g. Abandon Ship, Shortest Trip to Earth, HighFleet)
+- **Multiplicative Scaling + Build Archetypes + Ascension / Heat Ladder**: median GSI 95, ρ +0.18, n=12 (e.g. Wordatro!, Nubby's Number Factory, Ballionaire)
+- **Item Stacking + On-hit / On-kill Triggers + Challenge-gated Unlocks**: median GSI 93, ρ +0.16, n=10 (e.g. Risk of Rain (2013), Risk of Rain Returns, Risk of Rain 2)
+- **Room-based Floors + Dodge / Dash with i-frames + Melee Combos**: median GSI 88, ρ +0.10, n=44 (e.g. Dreamscaper, Teenage Mutant Ninja Turtles: Splintered Fate, Spiritfall)
+- **Twin-stick Shooting + Projectile Modifiers + Weapon Handling Skill**: median GSI 86, ρ -0.00, n=26 (e.g. West of Dead, CRYPTARK, SYNTHETIK 2)
+- **Deckbuilding + Energy / Mana per Turn + Turn-based**: median GSI 81, ρ -0.04, n=56 (e.g. Dawncaster, Pirates Outlaws, Card Quest)
+- **Platforming + Movement Kit + Procedural Levels**: median GSI 81, ρ -0.01, n=38 (e.g. Fury Unleashed, GoNNER, Ultros)
+- **Build / Combat Phases + Auto-battle Resolution + Merge Duplicates to Upgrade**: median GSI 80, ρ +0.06, n=23 (e.g. Super Auto Pets, The Bazaar, 9 Kings)
+- **Horde Density + Auto-attack (Survivors-like) + Level-up Choice**: median GSI 80, ρ +0.01, n=35 (e.g. Spirit Hunters: Infinite Horde, Twilight Survivors, Army of Ruin)
+- **First-person + Weapon Variety + Real-time Action**: median GSI 80, ρ -0.08, n=40 (e.g. STRAFE: Gold Edition, Receiver, Eldritch)
+- **Party / Roster Building + Random Events (? nodes) + Vehicle / Ship Avatar**: median GSI 78, ρ -0.18, n=53 (e.g. Abandon Ship, Shortest Trip to Earth, Convoy)
+- **Secrets / Hidden Areas + Cursed Items + Item Identification**: median GSI 78, ρ +0.08, n=23 (e.g. ToeJam & Earl: Back in the Groove!, Pixel Dungeon, Shattered Pixel Dungeon)
+- **Crafting + Inventory / Spatial Inventory + Open Procedural World**: median GSI 74, ρ -0.10, n=32 (e.g. Windbound, UnReal World, NEO Scavenger)
 
 ## Checklists predict the floor, not the ceiling
 
-Biggest **over-performers** (actual far above what their mechanics predict): The Binding of Isaac (95 vs 41), FTL: Faster Than Light (96 vs 48), Don't Starve (92 vs 46), Enter the Gungeon (96 vs 51), Brotato (98 vs 54), Into the Breach (96 vs 52).
+Biggest **over-performers** (actual far above what their mechanics predict): The Binding of Isaac (96 vs 55), FTL: Faster Than Light (97 vs 57), Super Auto Pets (96 vs 55), One Way Heroics (88 vs 49), Don't Starve (93 vs 55), Rogue Legacy (95 vs 57).
 
-Biggest **under-performers** (ticked the boxes, missed): LONE RUIN (13 vs 65), Survivor Mercs (15 vs 55), Card Crawl (16 vs 53), Loot River (34 vs 69), MythForce (38 vs 67), Ravenbound (40 vs 69).
+Biggest **under-performers** (ticked the boxes, missed): LONE RUIN (30 vs 74), Survivor Mercs (31 vs 63), Card Crawl (25 vs 56), Loot River (45 vs 76), Ravenbound (46 vs 76), Dice Legacy (45 vs 71).
 
 So GameCred reduces downside risk: missing fundamentals and red flags are detectable. Breakout originality and execution aren't.
 
 ## Trends
 
-Rising: Early Access Development (+4.2 pp/yr), Explicit Synergies (+3.0 pp/yr), Deckbuilding (+2.0 pp/yr), Pick 1 of N Rewards (+1.7 pp/yr), Horde Density (+1.4 pp/yr), Passive Relics / Trinkets (+1.4 pp/yr).
+Rising: Early Access Development (+4.0 pp/yr), Explicit Synergies (+2.6 pp/yr), Deckbuilding (+2.2 pp/yr), Horde Density (+1.4 pp/yr), Passive Relics / Trinkets (+1.3 pp/yr), Pick 1 of N Rewards (+1.2 pp/yr).
 
-Declining: Permadeath (-3.0 pp/yr), Procedural Levels (-2.9 pp/yr), Shops / Merchants (-1.5 pp/yr), Consumables (-1.4 pp/yr), Scarce Healing (-1.3 pp/yr).
+Declining: Procedural Levels (-2.8 pp/yr), Permadeath (-2.6 pp/yr), Local Co-op (-1.1 pp/yr), Platforming (-0.9 pp/yr), Shops / Merchants (-0.9 pp/yr).

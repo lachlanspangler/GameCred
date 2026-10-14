@@ -1,0 +1,47 @@
+appid: 1699480
+name: KLETKA
+developer: Callback
+release_year: 2026
+subgenre: hybrid_survival
+wiki: https://kletka.wiki.gg/
+stats:
+  enemy_types: 48
+  item_count: 18
+mechanics:
+  hybrid_survival: 3
+  real_time_action: 3
+  fps: 2
+  permadeath: 3
+  procgen_levels: 3
+  seeded_runs: 1
+  act_structure: 2
+  endless_mode: 2
+  time_pressure: 2
+  hunger_clock: 3
+  random_events: 2
+  environmental_hazards: 3
+  loadout_start: 2
+  double_edged_items: 1
+  hp_as_currency: 1
+  inventory_management: 2
+  consumables: 2
+  weapons_variety: 2
+  weapon_durability: 1
+  shops: 1
+  in_run_currency: 1
+  modular_difficulty: 1
+  online_coop: 3
+  leaderboards: 1
+  mod_support: 1
+  early_access_dev: 1
+  steam_deck_friendly: 1
+evidence:
+  hunger_clock: "Wiki main page: you must keep feeding the living elevator fuel and flesh or be eaten alive; Endless Mode stresses keeping it fuelled and repaired."
+  time_pressure: "Wiki 'Samosbor': a near-100% lethal anomaly strikes floors; on the siren you must reach the elevator before the doors shut."
+  random_events: "Wiki 'Curses'/'Anomalies': floors can be cursed (Anti-Gravity, Blight, Flood) or be random special Anomaly floors."
+  loadout_start: "Wiki 'Sentences': each prisoner has 3 crimes granting perks such as +1 equipment slot or +20% max health."
+  environmental_hazards: "Wiki 'Biomes': mines, gas mines, bear traps, tripwires, gas leaks and pitfalls grow deeper in the Residential Block."
+  endless_mode: "Wiki 'Endless Mode': infinite floors in any biome order with a leaderboard, versus the floor-100 Heart of the Gigastructure mode."
+  online_coop: "Steam: co-op for up to 6 players; Early Access from Dec 2024, full release Feb 2026."
+confidence: medium
+curator: wiki-agent

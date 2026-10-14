@@ -42,10 +42,13 @@ mechanics:
   unlock_characters: 2
   traversal_tools: 1
   unkillable_pursuer: 2
+  secret_areas: 3
+  companions_pets: 1
 evidence:
   multiple_endings: Three endings - Hundun, Tiamat-only, and the Cosmic Ocean (7-98) true ending.
   physics_simulation: Liquids (water, lava) flow and interact; explosions deform terrain.
   seeded_runs: Seeded runs selectable from the camp.
   online_coop: Up to 4-player online co-op and arena PvP.
+  secret_areas: Hidden routes (Volcana drill, Sunken City, Cosmic Ocean) and secret items gate the true endings and are a community-discovery pillar.
 confidence: high
 curator: agent

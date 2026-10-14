@@ -20,11 +20,13 @@ mechanics:
   short_runs: 3
   high_variance_loot: 2
   rng_mitigation: 1
+  projectile_modifiers: 3
 evidence:
   pick_one_of_n: The loser of each round picks one of five cards that permanently modify their gun.
   double_edged_items: Most cards pair a buff with a penalty (e.g. more damage but slower reload/ammo).
   item_stacking: Duplicate cards stack, producing extreme builds like dozens of bouncing bullets.
   rng_mitigation: Only the round loser drafts a card, a built-in catch-up mechanic.
   pvp: 1v1 (up to 4-player) local and online duels; there is no PvE mode.
+  projectile_modifiers: Cards change bullet behaviour such as bouncing, homing, spread and explosive shots.
 confidence: medium
 curator: agent

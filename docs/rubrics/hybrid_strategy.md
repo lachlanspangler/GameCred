@@ -1,6 +1,6 @@
 # GameCred rubric — Strategy Roguelite
 
-Sample: 296 games. Hit = Success Index ≥ 58.8; flop ≤ 30.8.
+Sample: 471 games. Hit = Success Index ≥ 62.1; flop ≤ 31.0.
 Associations from observational data; see docs/METHODOLOGY.md.
 
 ## Must have (table stakes)
@@ -11,8 +11,12 @@ Most hits have these, and lacking them raises flop risk.
 ## Differentiators
 Rare but associated with better outcomes.
 
-- **Wave Survival** — Δ +5.2 pts (95% CI -0.2…+10.7, partial +1.7); in 22% of hits; flop ratio 0.45
-- **Elites / Champions** — Δ +7.0 pts (95% CI +0.5…+13.5, partial +0.9); in 11% of hits; flop ratio nan
+- **Horde Density** — Δ +10.1 pts (95% CI +0.0…+18.7, partial +1.3); in 8% of hits; flop ratio 0.64
+- **Mod Support / Workshop** — Δ +9.7 pts (95% CI +2.8…+16.5, partial +1.2); in 10% of hits; flop ratio 0.42
+- **Status Effects** — Δ +10.4 pts (95% CI +3.9…+16.5, partial +1.1); in 18% of hits; flop ratio nan
+- **Elites / Champions** — Δ +7.3 pts (95% CI -0.4…+14.8, partial +1.1); in 11% of hits; flop ratio 0.27
+- **Build Archetypes** — Δ +12.0 pts (95% CI +6.5…+18.0, partial +1.0); in 11% of hits; flop ratio nan
+- **Passive Relics / Trinkets** — Δ +6.8 pts (95% CI +2.4…+11.7, partial +0.4); in 19% of hits; flop ratio 0.11
 
 ## Positive signals
 
@@ -22,21 +26,22 @@ Rare but associated with better outcomes.
 ## Risk reducers
 Lower flop rate even if the average effect is unclear.
 
-- **Status Effects** — Δ +9.9 pts (95% CI +0.9…+18.5, partial +0.8); in 19% of hits; flop ratio 0.66
-- **Hunger / Supply Clock** — Δ +5.0 pts (95% CI -4.3…+13.4, partial +0.7); in 15% of hits; flop ratio nan
-- **Item/Card Pool Unlocks** — Δ +3.7 pts (95% CI -2.9…+9.8, partial +0.5); in 31% of hits; flop ratio 0.41
-- **In-run Currency** — Δ +3.4 pts (95% CI -2.8…+9.5, partial +0.4); in 30% of hits; flop ratio nan
-- **Shops / Merchants** — Δ +1.8 pts (95% CI -5.9…+8.0, partial +0.4); in 28% of hits; flop ratio 0.50
-- **Environmental Interaction** — Δ +5.3 pts (95% CI +0.2…+11.5, partial +0.4); in 14% of hits; flop ratio nan
-- **Level-up Choice** — Δ +5.7 pts (95% CI +0.4…+11.6, partial +0.0); in 9% of hits; flop ratio nan
-- **Consumables** — Δ -0.5 pts (95% CI -7.6…+5.9, partial -0.2); in 15% of hits; flop ratio nan
-- **Branching Node Map** — Δ -5.8 pts (95% CI -15.4…+4.4, partial -0.6); in 14% of hits; flop ratio nan
-- **Party / Roster Building** — Δ -0.9 pts (95% CI -5.1…+3.2, partial -0.8); in 39% of hits; flop ratio 0.69
-- **Acts / Biomes** — Δ -1.6 pts (95% CI -9.1…+7.1, partial -0.8); in 16% of hits; flop ratio nan
+- **Distinct Characters / Classes** — Δ +4.5 pts (95% CI +0.7…+8.4, partial +1.1); in 41% of hits; flop ratio 0.62
+- **Secrets / Hidden Areas** — Δ +6.1 pts (95% CI +0.6…+11.6, partial +1.0); in 10% of hits; flop ratio 0.29
+- **PvP** — Δ +6.2 pts (95% CI -2.2…+13.8, partial +0.6); in 5% of hits; flop ratio 0.31
+- **Inventory / Spatial Inventory** — Δ +4.0 pts (95% CI -3.8…+12.5, partial +0.4); in 6% of hits; flop ratio 0.33
+- **Starting Loadout Choice** — Δ +4.4 pts (95% CI -4.4…+12.6, partial +0.4); in 10% of hits; flop ratio nan
+- **Ultimate / Special Meter** — Δ +4.7 pts (95% CI -1.3…+10.6, partial +0.1); in 9% of hits; flop ratio 0.21
+- **Level-up Choice** — Δ +4.1 pts (95% CI -2.5…+10.1, partial +0.1); in 9% of hits; flop ratio 0.60
+- **Shops / Merchants** — Δ -0.6 pts (95% CI -6.0…+5.5, partial +0.0); in 19% of hits; flop ratio 0.60
+- **Pick 1 of N Rewards** — Δ +1.9 pts (95% CI -4.1…+7.2, partial -0.2); in 10% of hits; flop ratio nan
+- **Consumables** — Δ +0.6 pts (95% CI -6.1…+7.3, partial -0.3); in 11% of hits; flop ratio 0.48
+- **Companions / Pets** — Δ -0.0 pts (95% CI -6.0…+6.3, partial -0.5); in 5% of hits; flop ratio 0.47
+- **Acts / Biomes** — Δ +0.9 pts (95% CI -5.7…+7.3, partial -0.8); in 13% of hits; flop ratio 0.64
 
 ## Red flags
 Associated with worse outcomes in this genre.
 
-- **Scarce Healing** — Δ -10.8 pts (95% CI -20.2…-1.9, partial -0.9); in 12% of hits; flop ratio nan
-- **Boss Gates** — Δ -5.5 pts (95% CI -13.8…+4.2, partial -1.0); in 18% of hits; flop ratio nan
-- **Vehicle / Ship Avatar** — Δ -6.0 pts (95% CI -11.3…-0.4, partial -1.5); in 11% of hits; flop ratio 1.47
+- **Early Access Development** — Δ -1.4 pts (95% CI -5.2…+2.6, partial -0.5); in 20% of hits; flop ratio 1.23
+- **Explicit Synergies** — Δ +2.7 pts (95% CI -2.3…+7.6, partial -0.9); in 14% of hits; flop ratio 0.26
+- **Boss Gates** — Δ -1.5 pts (95% CI -9.3…+5.8, partial -0.9); in 14% of hits; flop ratio nan

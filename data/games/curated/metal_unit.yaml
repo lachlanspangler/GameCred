@@ -27,12 +27,13 @@ mechanics:
   modular_difficulty: 1
   optional_challenges: 2
   early_access_dev: 1
+  ultimate_meter: 1
 evidence:
-  unlock_items: "Steam: on death all equipped items convert into permanent research points used to unlock new items and skills."
-  weapons_variety: "Wiki categories: 25 ranged, 19 melee and 18 sub weapons plus 11 ultimate skills."
-  crafting: "Wiki 'Weapon Forging': combine weapons and materials into stronger weapons at Sun Tail base or any Campsite."
-  healing_scarcity: "Wiki 'Campsite': after a set number of rooms choose to rest (restore HP) or enter the Secret Area, not both."
-  loadout_start: "Wiki category 'Starting Sets': 5 starting equipment sets."
-  assist_mode: "Steam: Assist Mode customises the experience; Challenge Mode stacks odds against you for new rewards."
+  unlock_items: 'Steam: on death all equipped items convert into permanent research points used to unlock new items and skills.'
+  weapons_variety: 'Wiki categories: 25 ranged, 19 melee and 18 sub weapons plus 11 ultimate skills.'
+  crafting: 'Wiki ''Weapon Forging'': combine weapons and materials into stronger weapons at Sun Tail base or any Campsite.'
+  healing_scarcity: 'Wiki ''Campsite'': after a set number of rooms choose to rest (restore HP) or enter the Secret Area, not both.'
+  loadout_start: 'Wiki category ''Starting Sets'': 5 starting equipment sets.'
+  assist_mode: 'Steam: Assist Mode customises the experience; Challenge Mode stacks odds against you for new rewards.'
 confidence: medium
 curator: wiki-agent

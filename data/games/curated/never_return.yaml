@@ -1,0 +1,43 @@
+appid: 1612620
+name: Never Return
+developer: YeMuNetWork
+release_year: 2021
+subgenre: hybrid_action_roguelite
+wiki: https://never-return.fandom.com/
+stats:
+  enemy_types: 40
+  boss_count: 15
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  melee_combos: 1
+  procgen_levels: 3
+  endless_mode: 2
+  enemy_hp_scaling: 1
+  skill_tree_meta: 3
+  build_archetypes: 3
+  synergies: 2
+  weapons_variety: 3
+  active_items: 1
+  card_mods: 3
+  item_rarity: 3
+  high_variance_loot: 2
+  crafting: 2
+  item_upgrading: 2
+  elemental_interactions: 2
+  status_effects: 2
+  optional_challenges: 2
+  boss_gates: 1
+  unlock_items: 1
+  proc_triggers: 3
+evidence:
+  skill_tree_meta: 'Wiki ''Abyssal Knowledge'': circular talent tree, 87 energy crystals (60 from levels, 27 from questline), 500+ perks across 20 paths, unlimited resets.'
+  card_mods: 'Wiki ''Runes'': gear has up to 2-3 rune slots (blacksmith can add more); conditional runes pair with effect runes in the same item.'
+  optional_challenges: 'Wiki ''Crystals'': up to four same-tier crystals summon an Overlord; higher tiers (Origin to Endless) are harder but drop better runes.'
+  endless_mode: 'Wiki ''Artifacts'': the artifact gear slot only unlocks and drops begin in Endless Mode.'
+  item_rarity: 'Wiki ''Armor''/''Crystals'': gear and crystals drop in Green/Blue/Purple/Orange rarities that set stat counts.'
+  crafting: 'Wiki ''Talent Gems'': class talent gems crafted at the soulforge from Lord Items dropped by Rune and Floor Bosses.'
+  elemental_interactions: 'Steam: 200+ jewelry effects, 150+ rune effects and 18000+ elemental combination effects.'
+  proc_triggers: 'Wiki ''Runes'': conditional runes pair with effect runes in the same item to fire effects on trigger conditions.'
+confidence: medium
+curator: wiki-agent

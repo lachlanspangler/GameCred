@@ -29,6 +29,7 @@ mechanics:
   synergies: 2
   party_building: 3
   dice_manipulation: 2
+  turn_rewind: 2
 evidence:
   dice: Each party hero is a custom die; faces are attacks, shields, heals or mana.
   reroll: Two rerolls per turn to lock in desired faces.

@@ -1,5 +1,5 @@
 appid: 516110
-name: "ToeJam & Earl: Back in the Groove!"
+name: 'ToeJam & Earl: Back in the Groove!'
 developer: HumaNature Studios
 release_year: 2019
 subgenre: hybrid_action_roguelite
@@ -19,6 +19,7 @@ mechanics:
   flat_stat_scaling: 1
   high_variance_loot: 2
   double_edged_items: 2
+  secret_areas: 1
 evidence:
   item_identification: Presents are unidentified until opened or identified, and some are harmful.
   double_edged_items: Bad presents such as Total Bummer or Randomizer can wreck a run.

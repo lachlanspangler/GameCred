@@ -16,10 +16,12 @@ mechanics:
   double_edged_items: 2
   character_classes: 1
   stress_sanity: 2
+  dice_placement: 3
 evidence:
   dice: Each crew member rolls dice each week to repair ship events; ones and twos can cause injury.
   double_edged_items: Cannibalism restores food/dice at a heavy morale cost.
   healing_scarcity: Food and crew health are a run-long resource over 10 weeks.
   stress_sanity: Crew stress rises from events and causes debilitating effects when it peaks.
+  dice_placement: Rolled crew dice are assigned to repairs/events with specific value requirements each turn.
 confidence: medium
 curator: agent

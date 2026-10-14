@@ -1,0 +1,40 @@
+appid: 3226530
+name: Tower Dominion
+developer: Parallel 45 Games
+release_year: 2025
+subgenre: hybrid_strategy
+wiki: https://towerdominion.wiki.gg/
+stats:
+  playable_characters: 30
+  difficulty_levels: 4
+mechanics:
+  hybrid_strategy: 3
+  tile_placement_world: 3
+  waves: 3
+  prep_combat_phases: 2
+  auto_attack: 1
+  permadeath: 2
+  pick_one_of_n: 3
+  passive_relics: 2
+  synergies: 2
+  build_archetypes: 2
+  item_upgrading: 2
+  item_rarity: 1
+  loadout_start: 2
+  character_classes: 3
+  unlock_characters: 2
+  achievement_unlocks: 2
+  unlock_items: 1
+  enemy_hp_scaling: 2
+  endless_mode: 2
+  modular_difficulty: 2
+  lore_codex: 1
+evidence:
+  tile_placement_world: "Wiki 'Foes': foes follow paths to HQ that you extend by mapping terrain tiles every other wave; dead-end tiles force Pits."
+  pick_one_of_n: "Wiki 'Buildings': after each wave choose 1 of 3 blueprints in the Reinforcement phase (Frontier modifiers or Doctrines change the count)."
+  passive_relics: "Wiki 'Doctrines': run modifiers from the Reinforcement phase in 3 weighted tiers, plus building Cost/Efficiency doctrines that unlock an Expertise doctrine."
+  character_classes: "Wiki 'Commander': each faction has 10 commanders with 2 Powers; factions add starting blueprints (Iron Dragoons, Lions of Ravelski)."
+  enemy_hp_scaling: "Wiki 'Foes': higher enemy tiers every 10 waves; air, shield and dividing modifiers scale with the campaign; next types revealed 3 waves ahead."
+  endless_mode: "Steam: four difficulty levels plus an endless Frontier Mode with challenge modifiers; heroes earned through achievements."
+confidence: medium
+curator: wiki-agent

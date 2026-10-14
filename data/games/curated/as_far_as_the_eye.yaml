@@ -1,0 +1,40 @@
+appid: 1119700
+name: As Far As The Eye
+developer: Unexpected
+release_year: 2020
+subgenre: hybrid_city_builder
+wiki: https://as-far-as-the-eye.fandom.com/
+critic:
+  metacritic: 70
+stats:
+  playable_characters: 4
+mechanics:
+  hybrid_city_builder: 3
+  hybrid_strategy: 2
+  turn_based: 3
+  permadeath: 2
+  procgen_levels: 2
+  act_structure: 2
+  turn_escalation: 3
+  hunger_clock: 2
+  random_events: 3
+  party_building: 2
+  adjacency_placement: 2
+  skill_tree_meta: 1
+  unlock_characters: 2
+  unlock_items: 1
+  modular_difficulty: 1
+  reroll: 1
+  double_edged_items: 1
+  crafting: 2
+  push_your_luck: 1
+evidence:
+  turn_escalation: "Wiki 'Vagaries': random negative events escalate to major vagaries in the last quarter of each halt and continue until the tribe moves on or is submerged."
+  adjacency_placement: "Wiki 'Proximity Bonus': each building next to the caravan or another building adds a stacking +5% production bonus."
+  party_building: "Wiki 'Pupils'/'Traits': pupils carry positive and negative traits and level trades on a Skill Wheel; one trait reroll per campaign at the Council."
+  unlock_characters: "Wiki 'Tribes'/'End-game score': 4 tribes with different starting pupils, rations and journey length; the score at The Eye unlocks the next tribe and new traits."
+  random_events: "Wiki 'Remains': exploring Remains triggers a random positive or negative effect, which a skilled druid can reverse."
+  hunger_clock: "Wiki 'Tribes'/'Traits': tribes start with a fixed ration stock that pupils consume (Abstemious pupils eat 50% less)."
+  procgen_levels: "Steam: a roguelike turn-based resource-management game of procedural situations, natural events and skill trees."
+confidence: medium
+curator: wiki-agent

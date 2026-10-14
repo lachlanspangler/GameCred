@@ -1,0 +1,44 @@
+appid: 2440380
+name: Megaloot
+developer: axilirate
+release_year: 2024
+subgenre: hybrid_traditional
+wiki: https://megaloot.fandom.com/
+stats:
+  playable_characters: 10
+  item_count: 329
+  enemy_types: 48
+mechanics:
+  hybrid_traditional: 2
+  turn_based: 3
+  inventory_management: 3
+  permadeath: 3
+  act_structure: 1
+  character_classes: 2
+  item_upgrading: 3
+  item_rarity: 3
+  transformations: 3
+  synergies: 3
+  build_archetypes: 2
+  flat_stat_scaling: 2
+  multiplicative_scaling: 1
+  consumables: 2
+  shops: 2
+  in_run_currency: 2
+  status_effects: 1
+  high_variance_loot: 2
+  enemy_variety: 1
+  online_coop: 1
+  pvp: 1
+  mod_support: 1
+  merge_upgrades: 3
+evidence:
+  inventory_management: 'Steam/wiki: an ''Inventory Management Roguelike RPG'' where loot is equipped, consumed in battle for temporary stats, or dismantled for permanent run stats.'
+  item_upgrading: 'Wiki ''Rarity'': two identical items of the same rarity combine into one rarity higher, from Common up to Divine (9 tiers).'
+  transformations: 'Wiki ''Sets'': 67 set pages; equipping set pieces grants set effects, adding a unique set costs Flow and a character is limited to 3 sets.'
+  character_classes: 'Wiki ''Adventurers'': 10 playable adventurers, each with an innate set; Fael and Tyr have different gear slot layouts.'
+  shops: 'Wiki main page: defeat enemies to earn gold spent on new loot items while clearing the tower''s floors.'
+  permadeath: 'Steam: with every new attempt you start from scratch.'
+  merge_upgrades: 'Wiki: two identical items of the same rarity combine into one item a rarity higher.'
+confidence: medium
+curator: wiki-agent

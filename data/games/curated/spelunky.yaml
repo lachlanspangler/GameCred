@@ -42,11 +42,14 @@ mechanics:
   unlock_characters: 1
   traversal_tools: 1
   unkillable_pursuer: 2
+  secret_areas: 3
+  companions_pets: 1
 evidence:
   time_pressure: The Ghost appears after 2.5 minutes on a level and one-shots the player.
   environmental_hazards: Spikes, arrow traps, lava, and boulders are lethal and can be turned on enemies.
   push_your_luck: Robbing shopkeepers or idols trades wealth for powerful, persistent pursuers.
   multiple_endings: Hell route via the Ankh/Book of the Dead to fight Yama is a hidden deeper ending.
   hub_building: Paying the Tunnel Man builds shortcuts to later worlds.
+  secret_areas: Secret path via Udjat Eye, Black Market, City of Gold and Hell is a core exploration/discovery goal.
 confidence: high
 curator: agent

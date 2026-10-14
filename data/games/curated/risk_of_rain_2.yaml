@@ -54,11 +54,21 @@ mechanics:
   run_history: 1
   steam_deck_friendly: 1
   summons_minions: 1
+  proc_triggers: 3
+  run_mutators: 3
+  lifesteal: 2
+  companions_pets: 2
+  temporary_buffs: 2
+  secret_areas: 2
+  luck_stat: 1
+  movement_speed_scaling: 1
 evidence:
   time_pressure: Difficulty climbs continuously with elapsed time, not just stage depth.
   item_stacking: Every item stacks linearly or hyperbolically; proc-chains are the core of builds.
   modular_difficulty: Artifacts are toggleable rule modifiers (e.g. Command, Sacrifice) unlocked via codes.
   double_edged_items: Lunar items trade big upsides for explicit penalties (e.g. Shaped Glass, Gesture of the Drowned).
   ascension_ladder: Eclipse mode adds 8 cumulative difficulty levels per survivor.
+  proc_triggers: Items like Ukulele, AtG Missile and Sticky Bomb fire chance-on-hit effects scaled by proc coefficients, enabling proc chains.
+  run_mutators: Artifacts are selectable rule-changing modifiers (Command, Sacrifice, Swarms) toggled before a run.
 confidence: high
 curator: agent

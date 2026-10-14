@@ -62,6 +62,14 @@ mechanics:
   run_history: 1
   summons_minions: 1
   reroll: 1
+  projectile_modifiers: 3
+  luck_stat: 3
+  companions_pets: 3
+  secret_areas: 3
+  movement_speed_scaling: 2
+  run_mutators: 2
+  boss_rush: 2
+  proc_triggers: 2
 evidence:
   hp_as_currency: Devil Rooms sell items for permanent heart containers.
   transformations: Collecting 3 items of a set (Guppy, Beelzebub, etc.) grants a transformation.
@@ -70,5 +78,9 @@ evidence:
   multiple_endings: 20+ endings gated by alternate final bosses (Mom's Heart, Satan, Lamb, Delirium, Mother, Beast).
   optional_challenges: Challenge rooms, Boss Rush, Hush timers and 45 numbered Challenges.
   summons_minions: Familiars are persistent allied followers with dedicated builds.
+  projectile_modifiers: Tear items change shot behaviour (homing, piercing, spectral, split, Brimstone lasers) and define builds.
+  luck_stat: Luck is an explicit character stat that scales proc chances of many tear effects and drops.
+  companions_pets: Familiars (Brother Bobby, Guardian Angel, etc.) follow Isaac and assist; many items are familiars.
+  secret_areas: Secret and Super Secret rooms, hidden floors and long unlock chains are a central discovery pillar.
 confidence: high
 curator: agent

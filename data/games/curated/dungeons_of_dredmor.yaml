@@ -25,6 +25,7 @@ mechanics:
   item_rarity: 2
   status_effects: 2
   mod_support: 2
+  lifesteal: 1
 evidence:
   loadout_start: Character creation is picking 7 skill trees from a pool of 30+ (e.g. Vampirism, Fleshsmithing).
   crafting: Smithing, Tinkering, Alchemy and Wandcrafting via in-dungeon crafting tools.

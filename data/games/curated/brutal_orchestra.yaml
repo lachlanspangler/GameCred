@@ -1,0 +1,37 @@
+appid: 1734320
+name: Brutal Orchestra
+developer: Talia bob Mair, Nicolás Delgado
+release_year: 2021
+subgenre: hybrid_strategy
+wiki: https://brutalorchestra.wiki.gg/
+mechanics:
+  hybrid_strategy: 3
+  turn_based: 3
+  party_building: 3
+  energy_mana: 3
+  enemy_intents: 2
+  status_effects: 2
+  permadeath: 2
+  act_structure: 3
+  boss_gates: 3
+  elites: 1
+  unlock_characters: 3
+  unlock_items: 3
+  achievement_unlocks: 3
+  loadout_start: 2
+  passive_relics: 2
+  shops: 2
+  in_run_currency: 2
+  hp_as_currency: 1
+  narrative_across_runs: 2
+  ascension_ladder: 1
+  random_events: 1
+evidence:
+  energy_mana: "Wiki 'Mechanics': damaged units generate Pigment in their health colour; abilities cost pigment, wrong colours hurt the caster, over 10 overflows for damage."
+  enemy_intents: "Wiki 'Mechanics': enemies and party members use intent icons to show their upcoming actions each turn."
+  achievement_unlocks: "Wiki 'Items': items are unlocked by completing achievements; Hard Mode adds 98 items and 96 achievements to unlock."
+  unlock_characters: "Wiki 'Fools': party members are unlocked, then picked at run start, found free in the overworld or bought at a fool's board."
+  boss_gates: "Wiki 'Bosses': bosses cap off each area (The Far Shore, The Orpheum, The Garden); mini bosses mid-area reward items."
+  ascension_ladder: "Wiki 'Hard Mode': unlocked via story; adds 1 area, 12 party members, 5 bosses, 22 enemies and is required to finish the story."
+confidence: medium
+curator: wiki-agent

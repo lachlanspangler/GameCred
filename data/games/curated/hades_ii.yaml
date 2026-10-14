@@ -56,6 +56,8 @@ mechanics:
   steam_deck_friendly: 2
   life_sim_hub: 2
   second_chance: 2
+  ultimate_meter: 2
+  companions_pets: 2
 evidence:
   energy_mana: Magick bar fuels Omega (charged) attacks and casts, a new resource layer over Hades 1.
   loadout_start: Arcana cards (grasp-limited) and Nocturnal Arms aspects are chosen pre-run.

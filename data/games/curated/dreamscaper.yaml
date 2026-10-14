@@ -28,6 +28,7 @@ mechanics:
   permanent_stat_upgrades: 2
   early_access_dev: 2
   life_sim_hub: 3
+  ultimate_meter: 1
 evidence:
   npc_relationships: Daytime life-sim sections let Cassidy build relationships with townsfolk, unlocking lucid boosts.
   narrative_across_runs: Story progresses between dream runs in Redhaven during the day.

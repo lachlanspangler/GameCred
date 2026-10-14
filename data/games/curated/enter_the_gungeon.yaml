@@ -56,6 +56,12 @@ mechanics:
   weapon_handling: 2
   corruption_meter: 1
   unkillable_pursuer: 1
+  projectile_modifiers: 3
+  secret_areas: 3
+  companions_pets: 2
+  boss_rush: 2
+  run_mutators: 2
+  luck_stat: 1
 evidence:
   synergies: Hundreds of named gun/item synergies upgrade weapons when specific pairs are held.
   item_rarity: Items and chests are graded D/C/B/A/S with matching chest colours.
@@ -64,5 +70,7 @@ evidence:
   multiple_endings: Each Gungeoneer must kill their Past via the Bullet that Can Kill the Past for a personal ending.
   cursed_items: Curse stat raises Jammed enemy and Lord of the Jammed appearance chances.
   corruption_meter: Curse from cursed items and choices raises Jammed enemy spawns and summons the Lord of the Jammed.
+  projectile_modifiers: Items like Scattershot, Bouncy Bullets and Homing Bullets alter every projectile fired.
+  secret_areas: Blanks and explosives reveal secret rooms, and hidden floors (Oubliette, Abbey) require exploration.
 confidence: high
 curator: agent

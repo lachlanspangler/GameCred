@@ -21,6 +21,7 @@ mechanics:
   build_archetypes: 2
   enemy_hp_scaling: 2
   pickup_magnet_economy: 2
+  movement_speed_scaling: 1
 evidence:
   permanent_stat_upgrades: Souls fund the Oracle's large permanent upgrade system between runs.
   synergies: Hunters combine with abilities through a hunter/ability synergy system.

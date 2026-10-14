@@ -1,0 +1,48 @@
+appid: 711810
+name: Never Split the Party
+developer: Legend Studio
+release_year: 2019
+subgenre: hybrid_action_roguelite
+wiki: https://never-split-the-party.fandom.com/
+stats:
+  item_count: 120
+  enemy_types: 28
+  boss_count: 8
+  biome_count: 5
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_shooter: 2
+  real_time_action: 3
+  online_coop: 3
+  crew_stations: 2
+  permadeath: 2
+  second_chance: 2
+  procgen_levels: 3
+  room_based_floors: 3
+  act_structure: 3
+  boss_gates: 3
+  character_classes: 3
+  weapon_mastery: 1
+  unlock_items: 2
+  achievement_unlocks: 2
+  passive_relics: 3
+  active_items: 2
+  flat_stat_scaling: 3
+  consumables: 2
+  item_identification: 3
+  double_edged_items: 1
+  in_run_currency: 1
+  environmental_hazards: 1
+  optional_challenges: 1
+  pvp: 1
+  mod_support: 2
+evidence:
+  crew_stations: "Wiki 'Roles': Cartographer, Treasurer, Vitalist and Loremaster each reveal map, inventories, health or item info only to players in the same room."
+  item_identification: "Wiki 'Potions': potion colours are randomised every game, so a colour's effect (Vigor or Lethargy, Wealth or Destitute...) must be learned."
+  flat_stat_scaling: "Wiki 'Upgrade Items': items add hearts, +3 to +5 damage, attack rate or shields; Mana Stone doubles reusable item recharge."
+  boss_gates: "Wiki 'Bosses': a boss ends every level and must die before the stairway appears; 5 floors from Wind Realm to the Countess's castle."
+  weapon_mastery: "Wiki 'Classes': classes level to 30 and offer pickable items at levels 5/10/15/20; Countess unlocks when all DLC classes hit 25."
+  achievement_unlocks: "Steam: new upgrades unlocked through a variety of achievements."
+  mod_support: "Wiki main page: Modding and Room Editing Guide pages plus dedicated server support."
+confidence: medium
+curator: wiki-agent

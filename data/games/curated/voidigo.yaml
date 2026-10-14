@@ -1,0 +1,44 @@
+appid: 1304680
+name: Voidigo
+developer: semiwork
+release_year: 2021
+subgenre: hybrid_action_roguelite
+wiki: https://voidigo.fandom.com/
+stats:
+  playable_characters: 5
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_shooter: 2
+  real_time_action: 3
+  twin_stick: 2
+  weapon_handling: 1
+  permadeath: 3
+  procgen_levels: 2
+  act_structure: 2
+  boss_gates: 3
+  endless_mode: 1
+  hub_building: 2
+  unlock_characters: 2
+  loadout_start: 2
+  character_classes: 2
+  weapons_variety: 3
+  passive_relics: 3
+  item_rarity: 2
+  item_upgrading: 2
+  shops: 2
+  in_run_currency: 2
+  hp_as_currency: 1
+  optional_challenges: 2
+  attack_patterns: 2
+  local_coop: 2
+  steam_deck_friendly: 1
+evidence:
+  boss_gates: "Wiki 'Bosses': each world's boss spawns after the second beacon; every beacon must be activated to unlock its full health bar, and it hunts you between rooms."
+  passive_relics: "Wiki 'Powerups': powerups from Loot Vortexes, Jhase's Shop and Challenge Rooms cannot be dropped and may be lost when looping."
+  item_upgrading: "Wiki 'Powerups': most powerups upgrade via Upgrade Bundles or the shop, up to 5 stars, often rising in rarity."
+  hub_building: "Wiki 'Characters': most characters are unlocked by unlocking areas of The Camp, each with their own starting weapons and powerups."
+  hp_as_currency: "Wiki 'Jhase's Shop': a Sell Health interactable trades health for 5 shards, up to three times."
+  weapon_handling: "Wiki 'Weapons': ranged weapons consume ammo; when empty only the melee strike remains."
+  optional_challenges: "Wiki 'Powerups': completing Challenge Rooms awards powerups and weapons."
+confidence: medium
+curator: wiki-agent

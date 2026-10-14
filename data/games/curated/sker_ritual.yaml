@@ -1,0 +1,45 @@
+appid: 1492070
+name: Sker Ritual
+developer: Wales Interactive
+release_year: 2024
+subgenre: hybrid_shooter
+wiki: https://skerritual.fandom.com/
+stats:
+  weapon_count: 26
+  enemy_types: 22
+  boss_count: 10
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  waves: 3
+  horde_density: 2
+  endless_mode: 2
+  permadeath: 1
+  second_chance: 2
+  boss_gates: 2
+  pick_one_of_n: 3
+  reroll: 2
+  talent_slots: 3
+  synergies: 2
+  item_rarity: 2
+  flat_stat_scaling: 2
+  item_upgrading: 2
+  shops: 2
+  in_run_currency: 2
+  weapons_variety: 2
+  weapon_handling: 1
+  elemental_interactions: 1
+  status_effects: 1
+  online_coop: 3
+  leaderboards: 1
+  steam_deck_friendly: 1
+evidence:
+  talent_slots: "Wiki 'Miracles': deity-themed buffs in limited slots (five tier I, three tier II, one tier III, one tier IV); higher tiers need multiple miracles of the same deity."
+  pick_one_of_n: "Wiki 'Miracles': a miracle point every even round lets you pick one of three miracles; points can be spent to refresh the choice."
+  item_rarity: "Wiki 'Miracles': miracles (except tier III) come in Common, Rare, Epic and Legendary rarities."
+  second_chance: "Wiki 'Mechanics': each player starts with one Life Token used at a Revive Coffin; more cost 5000 points except on nightmare."
+  item_upgrading: "Wiki 'Machines'/'Perks': six perks bought from wall machines upgrade through 5 tiers using Bloodwin Vitriol Samples."
+  waves: "Steam/wiki overview: a round-based survival FPS for 1-4 players, akin to Call of Duty: Zombies, with endless waves and bosses."
+confidence: medium
+curator: wiki-agent

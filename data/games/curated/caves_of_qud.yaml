@@ -38,6 +38,8 @@ mechanics:
   limb_injuries: 2
   hunger_clock: 1
   item_upgrading: 1
+  secret_areas: 2
+  companions_pets: 2
 evidence:
   physics_simulation: Liquids mix and flow, temperature and gas spread, and fire propagates through the simulated world.
   in_run_currency: Fresh water (drams) is the trade currency with merchants.

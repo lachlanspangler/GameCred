@@ -41,10 +41,18 @@ mechanics:
   online_coop: 2
   local_coop: 2
   summons_minions: 1
+  proc_triggers: 3
+  run_mutators: 3
+  secret_areas: 2
+  lifesteal: 2
+  companions_pets: 1
+  temporary_buffs: 1
 evidence:
   time_pressure: Difficulty meter rises with elapsed real time, from Very Easy to HAHAHAHA.
   item_stacking: Duplicate items stack (Soldier's Syringe attack speed, etc.).
   modular_difficulty: Artifacts found in stages toggle run modifiers (Honor, Glass, Kin, Command).
   gambling: Shrines and chests consume gold for random item rolls.
+  proc_triggers: Items fire chance-on-hit effects (Ukelele, AtG Missile, Sticky Bomb) that stack into proc chains.
+  run_mutators: Artifacts found in hidden spots are toggled before a run to change the rules (Honor, Command, Glass).
 confidence: high
 curator: agent

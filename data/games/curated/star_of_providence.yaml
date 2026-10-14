@@ -25,6 +25,8 @@ mechanics:
   multiple_endings: 2
   attack_patterns: 3
   consumables: 1
+  projectile_modifiers: 2
+  secret_areas: 2
 evidence:
   weapon_handling: Weapons carry finite ammo; you fall back to a weak infinite peashooter when it runs out.
   combo_meter: Killing without taking damage raises a multiplier that increases debris (currency) drops.

@@ -30,6 +30,8 @@ mechanics:
   item_identification: 2
   hunger_clock: 2
   stealth: 1
+  secret_areas: 2
+  companions_pets: 1
 evidence:
   cursed_items: NetHack-style unidentified and cursed equipment that cannot be removed.
   online_coop: Up to 4-player online co-op (plus split-screen) in a first-person roguelike.

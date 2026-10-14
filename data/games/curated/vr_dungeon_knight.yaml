@@ -1,0 +1,38 @@
+appid: 566860
+name: VR Dungeon Knight
+developer: Blackjard Softworks
+release_year: 2017
+subgenre: hybrid_action_roguelite
+wiki: https://vr-dungeon-knight.fandom.com/
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  fps: 2
+  stealth: 2
+  permadeath: 1
+  procgen_levels: 3
+  room_based_floors: 2
+  boss_gates: 2
+  hub_building: 1
+  permanent_stat_upgrades: 2
+  unlock_items: 2
+  character_classes: 2
+  loadout_start: 2
+  weapons_variety: 2
+  inventory_management: 1
+  consumables: 1
+  shops: 1
+  in_run_currency: 2
+  optional_challenges: 2
+  modular_difficulty: 1
+  online_coop: 2
+  early_access_dev: 1
+evidence:
+  procgen_levels: "Wiki 'Lobby': the Dungeon spawns you in a randomly generated dungeon; weapons picked up there are removed when you return to the lobby."
+  permanent_stat_upgrades: "Wiki 'Chamber of Heroes': level up stats and equip classes in the lobby; 8 classes such as Thief (150 gold)."
+  unlock_items: "Wiki 'Weapon Chamber'/'Marked Weapons': unlock new starting weapons; 3 Marked weapons come from Blackmark chests bought with rare tokens."
+  stealth: "Wiki 'Rewards': a Stealth Kills trial requires 75% of kills to be stealth kills; the Thief class boosts sneaking."
+  optional_challenges: "Wiki 'Rewards': completing a trial (mini boss, vitality and kills, stealth) opens a bonus room of three chests."
+  inventory_management: "Wiki 'Weight': carried weight caps movement speed from full down to 33% when Too Heavy."
+confidence: medium
+curator: wiki-agent

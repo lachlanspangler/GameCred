@@ -27,9 +27,13 @@ mechanics:
   status_effects: 1
   enemy_hp_scaling: 2
   pickup_magnet_economy: 2
+  projectile_modifiers: 3
+  movement_speed_scaling: 2
+  companions_pets: 1
 evidence:
   time_pressure: Survive a 10-minute timer until dawn as enemy waves intensify.
   weapon_handling: Manual aim and reloading guns set it apart from auto-attack survivors games.
   loadout_start: Pick a character and a gun before each run.
+  projectile_modifiers: Upgrade trees add piercing, splitting, ricocheting and extra bullets that reshape every shot.
 confidence: medium
 curator: agent

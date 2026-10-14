@@ -1,0 +1,55 @@
+appid: 1059980
+name: Just King
+developer: VISH
+release_year: 2023
+subgenre: hybrid_autobattler
+wiki: https://just-king.fandom.com/
+stats:
+  playable_characters: 34
+  item_count: 139
+  enemy_types: 12
+  boss_count: 5
+  biome_count: 4
+  difficulty_levels: 3
+mechanics:
+  hybrid_autobattler: 3
+  auto_battler: 3
+  real_time_action: 1
+  party_building: 3
+  permadeath: 3
+  node_map: 3
+  act_structure: 2
+  boss_gates: 3
+  short_runs: 1
+  endless_mode: 2
+  waves: 2
+  elites: 2
+  synergies: 3
+  build_archetypes: 3
+  item_upgrading: 2
+  item_rarity: 2
+  passive_relics: 2
+  consumables: 1
+  shops: 3
+  in_run_currency: 3
+  reroll: 2
+  banish_skip: 1
+  random_events: 2
+  status_effects: 2
+  achievement_unlocks: 2
+  unlock_items: 1
+  assist_mode: 1
+  pvp: 1
+  steam_deck_friendly: 1
+  merge_upgrades: 3
+evidence:
+  node_map: 'Wiki ''Nodes'': each game has 12 nodes climbed bottom-up choosing one per row (combat, elite, random interaction, treasure at #7, boss at #12).'
+  synergies: 'Wiki ''Synergies'': heroes sharing a trait activate it at 2 heroes and enhance it at 4 (Cold, Deep, Frenzy, ...).'
+  reroll: 'Wiki ''Shop'': 3 items and 3 heroes are offered before each node; the Dice restocks, the Lock keeps the shop, the Maw recycles for gold.'
+  elites: 'Wiki ''Nodes'': Elite nodes have 3 denser waves and reward an Epic item.'
+  endless_mode: 'Wiki ''The Game'': after finishing a zone you can LOOP into Endless Mode, which adds Smith-style shops for further item upgrades.'
+  achievement_unlocks: 'Wiki ''Challenges'': feats like ''Rough Start'' (lose to Nanas on node 1) unlock items such as the Dark Pauldron.'
+  pvp: 'Wiki ''Game Modes/Duels'': a Duels mode added in August 2024.'
+  merge_upgrades: Duplicate heroes combine to level up into stronger versions.
+confidence: medium
+curator: wiki-agent

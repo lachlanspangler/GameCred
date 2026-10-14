@@ -33,11 +33,13 @@ mechanics:
   crafting: 1
   leaderboards: 1
   content_updates: 3
+  shared_world_mmo: 3
 evidence:
   permadeath: Character death is permanent and destroys all equipped gear; only vault storage survives.
   extraction: Nexusing (instant escape to hub) to save a character and bank loot in the vault is a core survival tool.
   online_coop: 'Massively multiplayer: dozens of players share each realm and dungeon in real time.'
   unlock_characters: New classes unlock by reaching level thresholds on prerequisite classes.
   permanent_stat_upgrades: Exaltation system grants permanent per-class stat bonuses that carry over to future characters.
+  shared_world_mmo: Massively multiplayer persistent realms where many players fight together around permadeath characters.
 confidence: medium
 curator: agent

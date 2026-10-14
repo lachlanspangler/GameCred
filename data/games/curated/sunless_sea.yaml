@@ -21,6 +21,7 @@ mechanics:
   stress_sanity: 3
   legacy_inheritance: 2
   hybrid_narrative: 3
+  knowledge_progression: 1
 evidence:
   hybrid_survival: Fuel, supplies, crew and terror must be managed on every voyage.
   permadeath: Captain death is permanent; a new captain may inherit a legacy (charts, ship, items).

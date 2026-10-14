@@ -31,6 +31,8 @@ mechanics:
   passive_relics: 2
   unlock_items: 1
   block_shield: 1
+  turn_rewind: 2
+  soft_run_limit: 1
 evidence:
   push_your_luck: The alarm level rises each turn, so looting extra vaults trades against escalating security.
   second_chance: Limited rewinds per campaign undo a turn.

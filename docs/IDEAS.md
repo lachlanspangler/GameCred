@@ -56,3 +56,52 @@ Score = value ÷ effort (each 1–5). Status: `open` · `doing` · `done` · `pa
 | I-041 | Doctor: flag taxonomy steam_tags not present in any game's Steam tags (dead rules) | 3 | 1 | done |
 | I-042 | Inter-rater check: second agent independently re-tags 20 games; report agreement (Cohen's κ) per mechanic | 5 | 2 | done — κ=0.72 on 30 games; docs/IRR.md |
 | I-043 | Baseline-checklist sweep: re-check the 13 most-forgotten mechanics across all curated profiles | 4 | 2 | open |
+
+<!-- AUTO-IDEAS:START -->
+## Auto-generated ideas (rewritten every export by `gamecred/ideas.py`)
+
+Ranked by value ÷ effort. Promote one by copying it into a table above with a new I-### id.
+
+| # | Kind | Idea | V | E | Why |
+|---|---|---|---|---|---|
+| A1 | opportunity | Trend bet: **Pick 1 of N Rewards** is rising (+1.2 pp/yr) and positive (Δ +3.7) | 4 | 1 | momentum + payoff |
+| A2 | opportunity | Trend bet: **Explicit Synergies** is rising (+2.6 pp/yr) and positive (Δ +5.5) | 4 | 1 | momentum + payoff |
+| A3 | opportunity | Trend bet: **Passive Relics / Trinkets** is rising (+1.3 pp/yr) and positive (Δ +7.4) | 4 | 1 | momentum + payoff |
+| A4 | taxonomy | Sharpen the definition of **Permadeath** (κ -0.07); add include/exclude examples | 3 | 1 | raters disagree |
+| A5 | taxonomy | Sharpen the definition of **Run Timer / Time Pressure** (κ 0.21); add include/exclude examples | 3 | 1 | raters disagree |
+| A6 | taxonomy | Sharpen the definition of **Item/Card Pool Unlocks** (κ 0.33); add include/exclude examples | 3 | 1 | raters disagree |
+| A7 | taxonomy | Sharpen the definition of **Pick 1 of N Rewards** (κ 0.16); add include/exclude examples | 3 | 1 | raters disagree |
+| A8 | taxonomy | Sharpen the definition of **Consumables** (κ 0.32); add include/exclude examples | 3 | 1 | raters disagree |
+| A9 | taxonomy | Sharpen the definition of **Grid Tactics** (κ 0.27); add include/exclude examples | 3 | 1 | raters disagree |
+| A10 | taxonomy | Sharpen the definition of **Scarce Healing** (κ -0.04); add include/exclude examples | 3 | 1 | raters disagree |
+| A11 | taxonomy | Sharpen the definition of **Controller / Deck Friendly** (κ 0.19); add include/exclude examples | 3 | 1 | raters disagree |
+| A12 | tagging | Write auto-tag keyword rules for **Acts / Biomes** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
+| A13 | tagging | Write auto-tag keyword rules for **Boss Gates** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
+| A14 | tagging | Write auto-tag keyword rules for **Short Runs (<30 min)** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
+| A15 | tagging | Write auto-tag keyword rules for **Unlockable Characters** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
+| A16 | tagging | Write auto-tag keyword rules for **Pick 1 of N Rewards** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
+| A17 | tagging | Write auto-tag keyword rules for **Starting Loadout Choice** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
+| A18 | tagging | Write auto-tag keyword rules for **Item/Card Upgrading** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
+| A19 | tagging | Write auto-tag keyword rules for **Consumables** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
+| A20 | tagging | Write auto-tag keyword rules for **Status Effects** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
+| A21 | tagging | Write auto-tag keyword rules for **Scarce Healing** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
+| A22 | tagging | Write auto-tag keyword rules for **Optional Challenge Rooms** (recall < 10% vs curated) | 3 | 1 | long-tail games can't be tagged with it |
+| A23 | taxonomy | Promote proposed mechanic `unit_summoning`: cards deploy persistent units (Monster Train, Inscryption, Wildfrost) | 3 | 1 | ≥3 examples cited |
+| A24 | taxonomy | Promote proposed mechanic `lane_positioning`: rows/lanes/front-back determine targeting (Monster Train, Wildfrost, Roguebook) | 3 | 1 | ≥3 examples cited |
+| A25 | taxonomy | Promote proposed mechanic `positional_ranks`: line/rank positions (Darkest Dungeon, Iratus, Shogun Showdown) | 3 | 1 | ≥3 examples cited |
+| A26 | taxonomy | Promote proposed mechanic `day_night_phases`: separate build/prep and combat phases per cycle (The Last Spell, Against the Storm, Don't  | 3 | 1 | ≥3 examples cited |
+| A27 | taxonomy | Promote proposed mechanic `time_loop_world`: hand-built world resets on cycle, chosen progress persists (Ultros, Returnal) | 3 | 1 | ≥3 examples cited |
+| A28 | taxonomy | Promote proposed mechanic `vehicle_or_base_design`: design own ship/base layout as run-long system (Genesis Alpha One, HighFleet, FTL?) | 3 | 1 | ≥3 examples cited |
+| A29 | opportunity | White space: **Pre-run Mutators / Challenge Runs** games earn 4.3× median revenue but only 18 use it; build a design brief | 5 | 2 | high $, low competition |
+| A30 | opportunity | White space: **Multi-phase Bosses** games earn 3.3× median revenue but only 19 use it; build a design brief | 5 | 2 | high $, low competition |
+| A31 | opportunity | White space: **In-run Clock / Day Cycle** games earn 3.3× median revenue but only 21 use it; build a design brief | 5 | 2 | high $, low competition |
+| A32 | opportunity | White space: **Seeded Runs** games earn 2.6× median revenue but only 15 use it; build a design brief | 5 | 2 | high $, low competition |
+| A33 | opportunity | White space: **Codex / Compendium** games earn 2.6× median revenue but only 35 use it; build a design brief | 5 | 2 | high $, low competition |
+| A34 | opportunity | White space: **Companions / Pets** games earn 2.4× median revenue but only 26 use it; build a design brief | 5 | 2 | high $, low competition |
+| A35 | data | Curate 15+ more games featuring **Soft Run Limit** (Δ +6.1 on only n=4) | 4 | 2 | large effect, too few games to trust it |
+| A36 | data | Curate 15+ more games featuring **Heirs / Legacy Inheritance** (Δ +7.4 on only n=8) | 4 | 2 | large effect, too few games to trust it |
+| A37 | data | Curate 15+ more games featuring **Weapon Mastery** (Δ -13.1 on only n=4) | 4 | 2 | large effect, too few games to trust it |
+| A38 | data | Curate 15+ more games featuring **Knowledge Progression** (Δ +7.1 on only n=6) | 4 | 2 | large effect, too few games to trust it |
+| A39 | data | Curate 15+ more games featuring **Banish / Skip** (Δ +7.4 on only n=10) | 4 | 2 | large effect, too few games to trust it |
+| A40 | data | Curate 15+ more games featuring **On-hit / On-kill Triggers** (Δ +9.1 on only n=12) | 4 | 2 | large effect, too few games to trust it |
+<!-- AUTO-IDEAS:END -->

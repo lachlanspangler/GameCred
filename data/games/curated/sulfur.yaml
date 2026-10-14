@@ -23,6 +23,7 @@ mechanics:
   act_structure: 2
   early_access_dev: 3
   high_variance_loot: 2
+  partial_death_penalty: 2
 evidence:
   inventory_management: Tetris-style grid inventory for guns, attachments, food and loot.
   card_mods: Oils and attachments permanently modify individual guns (damage type, fire rate, spread).

@@ -1,0 +1,52 @@
+appid: 541200
+name: GTTOD
+developer: STUDIO Bare Bones
+release_year: 2017
+subgenre: hybrid_shooter
+wiki: https://gttod.wiki.gg/
+stats:
+  enemy_types: 16
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  traversal_tools: 3
+  dodge_iframes: 1
+  permadeath: 2
+  second_chance: 2
+  procgen_levels: 1
+  enemy_hp_scaling: 2
+  elites: 1
+  hub_building: 1
+  permanent_stat_upgrades: 3
+  loadout_start: 3
+  unlock_items: 2
+  modular_difficulty: 3
+  passive_relics: 2
+  cursed_items: 2
+  double_edged_items: 3
+  synergies: 2
+  weapons_variety: 3
+  weapon_handling: 1
+  block_shield: 2
+  crits: 1
+  status_effects: 1
+  elemental_interactions: 1
+  shops: 2
+  in_run_currency: 2
+  gambling: 1
+  random_events: 1
+  mod_support: 2
+  early_access_dev: 2
+  momentum_movement: 2
+  lifesteal: 1
+evidence:
+  permanent_stat_upgrades: 'Wiki ''Aspects'': Jade Vines buy persistent upgrades in Harbor Deep (up to 4 dashes, 8 weapon slots, +25% damage, 3 starting lives).'
+  modular_difficulty: 'Wiki ''Attunements'': optional runes unlocked via Aspects make enemies Buffed or Elite, double hordes, halve ammo or randomize locations.'
+  double_edged_items: 'Wiki ''Curses'': e.g. The Hermit (take 300% damage but heal on kill), The Hierophant (every bullet explodes but empty guns slip away).'
+  loadout_start: 'Wiki ''Starter Cards'': a mandatory starting kit each run (Basic, Gun Game, Gunslinger...), new ones unlocked by levelling up.'
+  in_run_currency: 'Wiki ''Shards'': shards buy and upgrade gear, roll the Grab-A-Gun and K8''s Shop, and reset every time a run ends.'
+  traversal_tools: 'Steam: a fast-paced parkour FPS rogue-like; wiki ''Blessings'' reference wallrunning and movement-ability resets.'
+  second_chance: 'Wiki ''Offerings''/''Aspects'': Extra Life offerings, up to 3 starting lives, and a Death Defiance aspect.'
+confidence: medium
+curator: wiki-agent

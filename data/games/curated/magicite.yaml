@@ -1,0 +1,48 @@
+appid: 268750
+name: Magicite
+developer: Sean Young
+release_year: 2014
+subgenre: hybrid_action_roguelite
+wiki: https://magicite.fandom.com/
+stats:
+  item_count: 136
+  enemy_types: 46
+  boss_count: 12
+  biome_count: 10
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 3
+  dodge_iframes: 1
+  permadeath: 3
+  procgen_levels: 3
+  open_procgen_world: 1
+  time_pressure: 2
+  unkillable_pursuer: 2
+  crafting: 3
+  inventory_management: 1
+  level_up_choices: 2
+  pick_one_of_n: 2
+  unlock_characters: 2
+  unlock_items: 2
+  achievement_unlocks: 2
+  character_classes: 1
+  loadout_start: 2
+  passive_relics: 1
+  consumables: 2
+  in_run_currency: 1
+  dual_resource: 1
+  run_history: 1
+  optional_challenges: 1
+  online_coop: 2
+  second_chance: 1
+evidence:
+  crafting: "Wiki 'Crafting': combine any two items (Wood + Wood = Plank) across Stone/Bone/Ironite/Goldium/Diamondite tiers plus fire/ice/thunder gems."
+  level_up_choices: "Wiki 'Skills': every 5 levels choose 1 of 3 random Warrior/Mage/Ranger skills, up to 3 skills, cooldowns reset per district."
+  unkillable_pursuer: "Wiki 'Bosses': the Scourge and Scourge Guardians (500000 HP, heal 10000/s) spawn after 5 minutes in a biome; run, don't fight."
+  achievement_unlocks: "Wiki 'Skills'/'Bosses': Viking Helm unlocks after 3 warrior skills in one run; Percyl unlocks the Pirate Hat."
+  unlock_characters: "Steam: races, hats and companions unlock through play and change starting items and stats."
+  optional_challenges: "Wiki 'Madman Mode': character mode where the scourge wall spawns 2 seconds after entering each district."
+  second_chance: "Steam/Wiki 'Multiplayer Strategy Guide': permadeath only when the whole party falls; downed teammates can be revived."
+confidence: medium
+curator: wiki-agent

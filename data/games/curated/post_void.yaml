@@ -22,10 +22,12 @@ mechanics:
   healing_scarcity: 2
   unlock_items: 1
   weapons_variety: 1
+  health_drain: 3
 evidence:
   time_pressure: Your health idol drains constantly; only kills refill it, forcing nonstop forward motion.
   pick_one_of_n: After each level you choose one of a few upgrades.
   short_runs: A complete run through all levels takes roughly 10 minutes.
   speedrun_support: 'Built around speed: in-game timer and leaderboards for run times.'
+  health_drain: The health idol drains constantly and only kills refill it, forcing nonstop aggression.
 confidence: medium
 curator: agent

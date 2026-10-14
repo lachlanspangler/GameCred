@@ -22,6 +22,7 @@ mechanics:
   permadeath: 2
   summons_minions: 2
   pickup_magnet_economy: 2
+  movement_speed_scaling: 1
 evidence:
   double_edged_items: The Shady Smuggler sells Illegal Upgrades that break the normal rules for your character.
   weapon_evolution: Auras evolve and mutate into unique effects.

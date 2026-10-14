@@ -29,6 +29,11 @@ mechanics:
   block_shield: 3
   consumables: 1
   adjacency_placement: 3
+  lifesteal: 2
+  merge_upgrades: 2
+  proc_triggers: 2
+  luck_stat: 2
+  temporary_buffs: 2
 evidence:
   inventory_management: Items must physically fit into a grid backpack; adjacency triggers effects.
   weapon_evolution: Specific items placed together combine into recipe items at the start of a round.
