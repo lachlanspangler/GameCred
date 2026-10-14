@@ -549,6 +549,9 @@ function viewOverview() {
         h("div", { class: "card" }, h("h3", {}, `${OUT_LABEL[state.out]} distribution`), histogram(ys, { xlabel: OUT_LABEL[state.out], width: 460, height: 190 })),
         comp.length > 2 ? h("div", { class: "card" }, h("h3", {}, "Complexity curve"), h("div", { class: "muted" }, "Mean Success Index by number of mechanics tagged (precomputed scope)"),
           lineChart(comp.map(c => ({ x: c.lo, xl: `${c.lo}–${c.hi === 200 ? "+" : c.hi - 1}`, y: c.mean, n: c.n })), { width: 460, height: 190, xlabel: "# mechanics" })) : null)),
+    h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, `${OUT_LABEL[state.out]} of every game, by subgenre`),
+      h("div", { class: "muted" }, "Each dot is a game (solid = curated, hover/click those); black bar = median. Shows the spread a publisher actually faces in each genre, not just the average."),
+      stripPlot(HYBRIDS.map((hy, i) => ({ label: mname(hy), color: SUB_COLOR(hy), rows: im.slice.filter(r => r.g.sg === hy) })).filter(g => g.rows.length >= 5).sort((a, b) => quantile(b.rows.map(r => r.y).sort((x, y) => x - y), .5) - quantile(a.rows.map(r => r.y).sort((x, y) => x - y), .5)))),
     h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, "Design score vs actual outcome"),
       h("div", { class: "muted" }, "Each dot is a game. x = Success Index predicted from its mechanics alone (model never saw the game), y = actual. Above the diagonal = beat its design; below = under-delivered. Click a dot."),
       designScatter(im.slice.filter(r => r.g.ds != null), { width: 1100, height: 420 })),
@@ -1074,6 +1077,27 @@ function coNetwork({ size = 760, topN = 48 } = {}) {
     g.addEventListener("click", () => openMechanic(m)); svg.append(g);
   });
   return h("div", {}, legendSw(FAMS.slice(0, 7).map(f => [f.name, FAM_COLOR(f.id)]).concat([["Other families", OTHER]])), svg);
+}
+
+
+function stripPlot(groups, { width = 1100, rowH = 34, labelW = 190 } = {}) {
+  const pad = { t: 6, b: 26 }, height = pad.t + pad.b + groups.length * rowH, W = width - labelW - 20;
+  const X = v => labelW + v / 100 * W;
+  const svg = s("svg", { class: "svgchart", style: `max-width:${width}px`, viewBox: `0 0 ${width} ${height}` });
+  for (const t of [0, 25, 50, 75, 100]) svg.append(s("line", { class: "gridline", x1: X(t), x2: X(t), y1: pad.t, y2: height - pad.b }), s("text", { x: X(t), y: height - 8, "text-anchor": "middle" }, t));
+  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  groups.forEach((gr, i) => {
+    const yc = pad.t + i * rowH + rowH / 2;
+    svg.append(s("text", { class: "lbl", x: labelW - 10, y: yc + 4, "text-anchor": "end" }, `${gr.label} (${gr.rows.length})`));
+    for (const r of gr.rows) {
+      const cx = X(r.y), cy = yc + (rnd() - 0.5) * (rowH - 12), cur = r.g.src === "curated";
+      svg.append(s("circle", { cx, cy, r: cur ? 3.4 : 2.2, fill: gr.color, opacity: cur ? 0.9 : 0.35 }));
+      if (cur) { const hit = s("circle", { class: "hit", cx, cy, r: 6 }); hover(hit, () => [fmt.f1(r.y), r.g.n, [gr.label]]); hit.addEventListener("click", () => openGame(r.g.id)); svg.append(hit); }
+    }
+    const v = gr.rows.map(r => r.y).sort((a, b) => a - b), med = quantile(v, 0.5);
+    svg.append(s("line", { x1: X(med), x2: X(med), y1: yc - rowH / 2 + 3, y2: yc + rowH / 2 - 3, stroke: "var(--text-primary)", "stroke-width": 2.5 }));
+  });
+  return svg;
 }
 
 // ---------- Money ----------
