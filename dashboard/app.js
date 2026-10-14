@@ -578,6 +578,10 @@ function viewMechanics() {
         { key: "flopR", label: "Flop ratio", num: true, render: r => fmt.f2(r.flopR) },
         { key: "verdict", label: "Verdict", render: r => chip(r.verdict, true), sort: r => VERDICT_ORDER.indexOf(r.verdict) },
       ], rows.map(r => ({ ...r, name: mname(r.mid) })), { onRow: r => openMechanic(r.mid), initialSort: ["diff", -1] })),
+    (() => { const q = fieldDeltas("q"), c = fieldDeltas("c"); const pts = Object.keys(q).filter(m => c[m]).map(m => ({ mid: m, dq: q[m].d, dc: c[m].d, n: q[m].n }));
+      return h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, "Do players love it, or does it sell? (quality vs revenue)"),
+        h("div", { class: "muted" }, "Each mechanic's stratified effect on review-quality percentile (x) and revenue percentile (y). Size = games; color = family. Top-right is the sweet spot; top-left sells despite players; bottom-right are cult favourites."),
+        legendSw(FAMS.slice(0, 7).map(f => [f.name, FAM_COLOR(f.id)]).concat([["Other families", OTHER]])), quadrantScatter(pts)); })(),
     h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, "Prevalence vs impact"), h("div", { class: "muted" }, "Top-left: rare and strong (differentiators). Top-right: common and strong (table stakes). Bottom: associated with weaker outcomes."),
       effectScatter(rows, { width: 1100, height: 420, onclick: openMechanic })));
 }
@@ -913,6 +917,12 @@ function viewTrends() {
       h("div", { class: "grid g4" }, tile("Trained on", `≤ ${ho.split_year - 1}`, `${ho.n_train} games`), tile("Tested on", `${ho.split_year}+`, `${ho.n_test} games, unseen`),
         tile("Rank correlation", fmt.f2(ho.spearman), "predicted vs actual Success Index"),
         tile("Top-quartile precision", fmt.pct(ho.top_quartile_precision), `of games predicted top 25%, share that were hits (chance = 25%)`))) : null,
+    (() => { const ys = (AN.money || {}).year_series || []; const years = T.years.filter(y => y >= 2014);
+      const rows = years.map(y => { const r = { year: y, n: 0 }; GAMES.filter(g => g.y === y).forEach(g => { const k = ys.includes(g.sg) ? g.sg : "other"; r[k] = (r[k] || 0) + 1; r.n++; }); return r; });
+      const shares = rows.map(r => { const o = { year: r.year, n: r.n }; ys.forEach(k => o[k] = (r[k] || 0) / (r.n || 1)); return o; });
+      return h("div", { class: "grid g2", style: "margin-bottom:16px" },
+        h("div", { class: "card" }, h("h3", {}, "Roguelike releases per year"), legendSw(ys.map(k => [k === "other" ? "Other" : mname(k), SUB_COLOR(k)])), stackedColumns(rows, ys, { width: 560, height: 300, fmtv: fmt.n, colorOf: SUB_COLOR })),
+        h("div", { class: "card" }, h("h3", {}, "Subgenre mix per year (share of releases)"), legendSw(ys.map(k => [k === "other" ? "Other" : mname(k), SUB_COLOR(k)])), stackedColumns(shares, ys, { width: 560, height: 300, fmtv: v => Math.round(v * 100) + "%", colorOf: SUB_COLOR }))); })(),
     h("h3", {}, "Rising mechanics"), h("div", { class: "grid g4" }, rising.map(card)),
     h("h3", { style: "margin-top:18px" }, "Declining mechanics"), h("div", { class: "grid g4" }, falling.map(card)),
     h("div", { class: "card", style: "margin-top:18px" }, h("h3", {}, "All mechanics — prevalence change per year"),
@@ -958,6 +968,70 @@ function radar(series, { size = 340 } = {}) {
       const hit = s("circle", { class: "hit", cx: p[0], cy: p[1], r: 10 }); hover(hit, () => [fmt.pct(sr.vals[i]), `${sr.label} · ${fams[i].name}`, ["share of family's mechanics (intensity-weighted)"]]); svg.append(hit); });
   }
   return h("div", {}, legendSw(series.map(sr => [sr.label, sr.color, true])), svg);
+}
+
+
+function multiLine(series, { width = 900, height = 340, xlog = false, xfmt = v => v, yfmt = v => fmt.pct(v), xl = "", yl = "", ymax = 1 } = {}) {
+  const pad = { l: 48, r: 16, t: 26, b: 36 }, W = width - pad.l - pad.r, H = height - pad.t - pad.b;
+  const xs = series.flatMap(sr => sr.pts.map(p => p[0])), x0 = Math.min(...xs), x1 = Math.max(...xs);
+  const tx = v => xlog ? Math.log10(v) : v, X = v => pad.l + (tx(v) - tx(x0)) / (tx(x1) - tx(x0) || 1) * W, Y = v => pad.t + H - v / ymax * H;
+  const svg = s("svg", { class: "svgchart", style: `max-width:${width}px`, viewBox: `0 0 ${width} ${height}` });
+  for (const t of [0, .25, .5, .75, 1].map(f => f * ymax)) svg.append(s("line", { class: "gridline", x1: pad.l, x2: pad.l + W, y1: Y(t), y2: Y(t) }), s("text", { x: pad.l - 6, y: Y(t) + 4, "text-anchor": "end" }, yfmt(t)));
+  const ticks = xlog ? [1e4, 1e5, 1e6, 1e7, 1e8].filter(t => t >= x0 && t <= x1) : niceTicks(x0, x1, 8);
+  for (const t of ticks) svg.append(s("text", { x: X(t), y: height - 16, "text-anchor": "middle" }, xfmt(t)));
+  svg.append(s("text", { x: pad.l + W, y: height - 2, "text-anchor": "end" }, xl), s("text", { x: pad.l - 40, y: 12 }, yl));
+  const ends = [];
+  for (const sr of series) {
+    svg.append(s("path", { d: sr.pts.map((p, i) => `${i ? "L" : "M"}${X(p[0])},${Y(p[1])}`).join(""), fill: "none", stroke: sr.color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+    const last = sr.pts[sr.pts.length - 1]; ends.push({ y: Y(last[1]), sr, last });
+  }
+  for (const e of ends) svg.append(s("circle", { cx: X(e.last[0]), cy: e.y, r: 4, fill: e.sr.color, stroke: "var(--surface-1)", "stroke-width": 2 }));
+  // crosshair
+  const cross = s("line", { x1: 0, x2: 0, y1: pad.t, y2: pad.t + H, stroke: "var(--axis)", opacity: 0 }); svg.append(cross);
+  const hit = s("rect", { class: "hit", x: pad.l, y: pad.t, width: W, height: H });
+  hit.addEventListener("pointermove", ev => {
+    const r = svg.getBoundingClientRect(), px = (ev.clientX - r.left) / r.width * width;
+    const near = series[0].pts.reduce((b, p) => Math.abs(X(p[0]) - px) < Math.abs(X(b[0]) - px) ? p : b, series[0].pts[0]);
+    cross.setAttribute("x1", X(near[0])); cross.setAttribute("x2", X(near[0])); cross.setAttribute("opacity", 1);
+    tip(ev, xfmt(near[0]), "", series.map(sr => { const p = sr.pts.find(q => q[0] === near[0]); return `${sr.label}: ${p ? yfmt(p[1]) : "–"}`; }));
+  });
+  hit.addEventListener("pointerleave", () => { untip(); cross.setAttribute("opacity", 0); });
+  svg.append(hit);
+  return h("div", {}, legendSw(series.map(sr => [sr.label, sr.color, true])), svg);
+}
+function quadrantScatter(rows, { width = 1100, height = 460 } = {}) {
+  const pad = { l: 50, r: 20, t: 20, b: 40 }, W = width - pad.l - pad.r, H = height - pad.t - pad.b;
+  const mx = Math.max(6, ...rows.flatMap(r => [Math.abs(r.dq), Math.abs(r.dc)])) * 1.1;
+  const X = v => pad.l + (v + mx) / (2 * mx) * W, Y = v => pad.t + H - (v + mx) / (2 * mx) * H;
+  const svg = s("svg", { class: "svgchart", style: `max-width:${width}px`, viewBox: `0 0 ${width} ${height}` });
+  [["Loved & lucrative", 1, 1], ["Lucrative, not loved", -1, 1], ["Loved, not lucrative", 1, -1], ["Neither", -1, -1]].forEach(([t, sx, sy]) =>
+    svg.append(s("text", { x: sx > 0 ? pad.l + W - 6 : pad.l + 6, y: sy > 0 ? pad.t + 14 : pad.t + H - 6, "text-anchor": sx > 0 ? "end" : "start", style: "font-size:12px;font-weight:600;fill:var(--text-muted)" }, t)));
+  svg.append(s("line", { class: "axisline", x1: X(0), x2: X(0), y1: pad.t, y2: pad.t + H }), s("line", { class: "axisline", x1: pad.l, x2: pad.l + W, y1: Y(0), y2: Y(0) }));
+  for (const t of niceTicks(-mx, mx, 6)) svg.append(s("text", { x: X(t), y: height - 18, "text-anchor": "middle" }, fmt.d1(t)), s("text", { x: pad.l - 6, y: Y(t) + 4, "text-anchor": "end" }, fmt.d1(t)));
+  svg.append(s("text", { x: pad.l + W, y: height - 2, "text-anchor": "end" }, "Δ player-quality percentile →"), s("text", { x: pad.l + 4, y: pad.t - 6 }, "↑ Δ commercial (revenue) percentile"));
+  const lab = new Set([...rows].sort((a, b) => (Math.abs(b.dq) + Math.abs(b.dc)) - (Math.abs(a.dq) + Math.abs(a.dc))).slice(0, 12).map(r => r.mid));
+  for (const r of rows) {
+    const cx = X(r.dq), cy = Y(r.dc), fam = MECH[r.mid].family, g = s("g", { class: "hov", style: "cursor:pointer" });
+    g.append(s("circle", { class: "mark", cx, cy, r: 4 + Math.sqrt(r.n) / 3, fill: FAM_COLOR(fam), opacity: 0.75, stroke: "var(--surface-1)", "stroke-width": 1.5 }));
+    if (lab.has(r.mid)) g.append(s("text", { class: "lbl", x: cx + 8, y: cy + 4 }, mname(r.mid)));
+    hover(g, () => [mname(r.mid), famName(fam), [`quality Δ ${fmt.d1(r.dq)} · revenue Δ ${fmt.d1(r.dc)}`, `n=${r.n}`]]);
+    g.addEventListener("click", () => openMechanic(r.mid)); svg.append(g);
+  }
+  return svg;
+}
+/** Stratified Δ of an arbitrary game field for every mechanic over the current slice (reuses impact() strata logic loosely). */
+function fieldDeltas(field) {
+  const rows = slice().filter(r => r.g[field] != null), out = {};
+  const strat = r => `${r.g.src}${Math.min(2, Math.floor(Object.keys(r.g.m).length / 15))}`;
+  for (const mid of Object.keys(MECH)) {
+    if (mid.startsWith("hybrid_")) continue;
+    const cells = {};
+    for (const r of rows) { const k = strat(r); (cells[k] = cells[k] || [[], []])[has(r.g, mid) ? 0 : 1].push(r.g[field]); }
+    let W = 0, D = 0, n = 0;
+    for (const [a, b] of Object.values(cells)) if (a.length >= 2 && b.length >= 2) { const w = a.length * b.length / (a.length + b.length); W += w; D += w * (mean(a) - mean(b)); n += a.length; }
+    if (W && n >= 15) out[mid] = { d: D / W, n };
+  }
+  return out;
 }
 
 // ---------- Money ----------
@@ -1104,6 +1178,11 @@ function viewMoney() {
     h("div", { class: "grid g21", style: "margin-top:16px" },
       h("div", { class: "card" }, h("h3", {}, "Revenue by subgenre"), h("div", { class: "muted", style: "margin-bottom:8px" }, "Area = total estimated gross. Click to filter the dashboard to that subgenre."), treemap(subItems, { width: 820, height: 360 })),
       h("div", { class: "card" }, h("h3", {}, "Concentration (Lorenz curve)"), h("div", { class: "muted" }, "How unequal is roguelike revenue? The further the curve bows from the diagonal, the more a few hits take everything."), lorenzChart(M.lorenz))),
+    (() => { const thr = [1e4, 2e4, 5e4, 1e5, 2e5, 5e5, 1e6, 2e6, 5e6, 1e7, 2e7, 5e7, 1e8];
+      const ser = M.year_series.filter(k => k !== "other").map(k => { const r = GAMES.filter(g => g.sg === k && g.rev && g.p).map(g => g.rev); return { label: mname(k), color: SUB_COLOR(k), pts: thr.map(t => [t, r.filter(v => v >= t).length / (r.length || 1)]) }; });
+      return h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, "Odds of earning at least $X, by subgenre"),
+        h("div", { class: "muted" }, "Share of paid games in each subgenre whose estimated gross reaches each threshold. Hover for exact odds. This is the risk curve a publisher underwrites."),
+        multiLine(ser, { width: 1100, height: 360, xlog: true, xfmt: fmt.usd, xl: "gross revenue threshold (log) →", yl: "↑ share of games reaching it" })); })(),
     h("div", { class: "card", style: "margin-top:16px" }, h("h3", {}, "Revenue by release year"), h("div", { class: "muted" }, "Estimated lifetime gross of each year's releases, stacked by subgenre (top 7 + other)."),
       legendSw(M.year_series.map(k => [k === "other" ? "Other" : mname(k), SUB_COLOR(k)])), stackedColumns(M.by_year, M.year_series, { width: 1100, height: 320, colorOf: SUB_COLOR })),
     h("div", { class: "grid g2", style: "margin-top:16px" },
