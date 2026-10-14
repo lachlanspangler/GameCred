@@ -1,0 +1,28 @@
+appid: 957960
+name: Inkulinati
+developer: Yaza Games
+release_year: 2024
+subgenre: hybrid_strategy
+critic:
+  metacritic: 78
+mechanics:
+  hybrid_strategy: 3
+  turn_based: 3
+  grid_tactics: 3
+  summons_minions: 3
+  energy_mana: 3
+  environmental_hazards: 2
+  node_map: 2
+  permadeath: 2
+  party_building: 2
+  unlock_items: 2
+  boss_gates: 2
+  random_events: 1
+  pvp: 1
+evidence:
+  summons_minions: Each turn the player spends ink to draw beasts (donkeys, rabbits, snails) onto the manuscript page as units.
+  energy_mana: Ink is a per-turn regenerating resource that gates both summoning and abilities.
+  environmental_hazards: Pushing units into fire, off the page edge or through gaps is a primary kill method.
+  node_map: Journey mode is a roguelite campaign across a map of locations ending in duels with Inkulinati masters.
+confidence: medium
+curator: agent

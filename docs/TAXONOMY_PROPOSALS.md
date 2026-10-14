@@ -116,3 +116,8 @@ run_carryover_on_win, shrinking_zone, raid_mechanics, vr_motion_control, shared_
 - soft_run_limit — run ends by a non-death limit (steps/days), not permadeath (Blue Prince)
 - dice_placement — slot rolled dice into requirement boxes (One Deck Dungeon, Dicey Dungeons)
 - worker_decay — units wear out with use (Dice Legacy)
+
+## From round-3 curator A (2026-10-13) — pending
+- hybrid_narrative — event/text-driven narrative roguelite (WORLD OF HORROR, The Red Lantern, Sunless Sea?, Curious Expedition?) — strong candidate for v4
+- corpse_run — recover gear from previous body (BELOW, LET IT DIE)
+- persistent_shortcuts — shortcuts persist across runs (BELOW)

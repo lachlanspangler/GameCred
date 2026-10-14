@@ -1,0 +1,30 @@
+appid: 1967260
+name: 'Double Dragon Gaiden: Rise Of The Dragons'
+developer: Secret Base
+release_year: 2023
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  melee_combos: 3
+  character_classes: 3
+  unlock_characters: 3
+  weapon_stance_swap: 2
+  local_coop: 2
+  permadeath: 2
+  second_chance: 2
+  boss_gates: 3
+  act_structure: 2
+  turn_escalation: 2
+  pick_one_of_n: 2
+  shops: 2
+  in_run_currency: 2
+  modular_difficulty: 1
+  consumables: 1
+evidence:
+  turn_escalation: Stage order is player-chosen; stages played later get more sections and tougher enemies.
+  weapon_stance_swap: Two-character tag team swapped on the fly mid-fight.
+  unlock_characters: Run cash converts to tokens spent on unlocking more of the roster.
+  pick_one_of_n: Between missions, cash buys one of several randomly offered upgrades.
+confidence: medium
+curator: agent

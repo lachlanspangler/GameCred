@@ -1,0 +1,36 @@
+appid: 366910
+name: The Long Journey Home
+developer: Daedalic Studio West
+release_year: 2017
+subgenre: hybrid_strategy
+critic:
+  metacritic: 68
+mechanics:
+  hybrid_strategy: 3
+  permadeath: 3
+  mid_run_save: 1
+  open_procgen_world: 2
+  node_map: 2
+  long_runs: 3
+  loadout_start: 2
+  party_building: 2
+  random_events: 3
+  hunger_clock: 3
+  healing_scarcity: 2
+  limb_injuries: 1
+  vehicle_combat: 2
+  real_time_action: 1
+  ship_base_design: 1
+  faction_reputation: 2
+  shops: 1
+  in_run_currency: 1
+  lore_codex: 1
+  assist_mode: 1
+evidence:
+  loadout_start: Before launch the player picks 4 crew from a roster of 10, plus a ship and a lander.
+  hunger_clock: Fuel for jumps and hull/lander integrity must be constantly replenished by mining planets with the lander.
+  faction_reputation: Alien species track diplomacy with the crew and change prices, quests and hostility.
+  random_events: Planet surface events resolve via text choices modified by crew skills.
+  assist_mode: Story mode allows saving to soften the default permadeath.
+confidence: medium
+curator: agent

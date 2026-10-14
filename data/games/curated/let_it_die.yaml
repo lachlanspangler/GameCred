@@ -1,0 +1,29 @@
+appid: 794600
+name: LET IT DIE
+developer: Supertrick Games
+release_year: 2018
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  permadeath: 2
+  second_chance: 2
+  weapon_durability: 3
+  consumables: 3
+  crafting: 2
+  unlock_items: 2
+  async_multiplayer: 3
+  pvp: 2
+  act_structure: 2
+  boss_gates: 2
+  in_run_currency: 2
+  shops: 2
+  status_effects: 1
+  content_updates: 2
+evidence:
+  async_multiplayer: Dead fighters become Haters that roam other players' Tower of Barbs.
+  second_chance: Death Metal can be spent to revive a fighter on the spot.
+  weapon_durability: Weapons and armor wear out and break, forcing constant swaps.
+  consumables: Mushrooms and caught critters give heals and temporary buffs.
+confidence: medium
+curator: agent

@@ -1,0 +1,40 @@
+appid: 913740
+name: WORLD OF HORROR
+developer: panstasz
+release_year: 2023
+subgenre: hybrid_survival
+mechanics:
+  hybrid_survival: 3
+  permadeath: 3
+  mid_run_save: 1
+  act_structure: 2
+  boss_gates: 1
+  multiple_endings: 2
+  turn_escalation: 3
+  stress_sanity: 3
+  healing_scarcity: 3
+  turn_based: 3
+  random_events: 3
+  character_classes: 2
+  loadout_start: 2
+  achievement_unlocks: 2
+  unlock_characters: 2
+  unlock_items: 1
+  level_up_choices: 2
+  pick_one_of_n: 2
+  consumables: 2
+  inventory_management: 1
+  shops: 2
+  in_run_currency: 2
+  status_effects: 2
+  hp_as_currency: 2
+  passive_relics: 1
+  early_access_dev: 2
+evidence:
+  turn_escalation: Doom meter rises with time spent and actions taken; reaching 100% ends the run.
+  stress_sanity: Reason is a second health bar; hitting zero ends the run in madness.
+  hp_as_currency: Spells are paid for with Stamina or Reason.
+  loadout_start: Each run pairs a chosen investigator with an Old God whose rules modify the run.
+  act_structure: A run is five mysteries investigated in any order, then the lighthouse finale.
+confidence: medium
+curator: agent

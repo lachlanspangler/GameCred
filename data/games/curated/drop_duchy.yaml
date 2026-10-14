@@ -1,0 +1,33 @@
+appid: 2525310
+name: Drop Duchy
+developer: Sleepy Mill Studio
+release_year: 2025
+subgenre: hybrid_puzzle
+critic:
+  metacritic: 83
+mechanics:
+  hybrid_puzzle: 3
+  hybrid_deckbuilder: 2
+  hybrid_strategy: 2
+  deckbuilding: 3
+  adjacency_placement: 3
+  auto_battler: 2
+  permadeath: 3
+  node_map: 3
+  act_structure: 2
+  boss_gates: 2
+  pick_one_of_n: 2
+  item_upgrading: 2
+  shops: 2
+  in_run_currency: 2
+  random_events: 2
+  unlock_items: 2
+  character_classes: 1
+  synergies: 2
+evidence:
+  adjacency_placement: Falling Tetris-style terrain pieces form a kingdom; buildings scale with adjacent matching terrain (forests, fields, water).
+  auto_battler: Military buildings produce units that automatically fight the enemy units in their row after the drop phase.
+  deckbuilding: The sequence of falling pieces is drawn from a card deck that grows and is upgraded across the run.
+  node_map: Branching map of battles, shops and events per stage, ending in a boss.
+confidence: medium
+curator: agent

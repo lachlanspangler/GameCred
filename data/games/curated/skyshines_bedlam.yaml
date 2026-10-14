@@ -1,0 +1,27 @@
+appid: 367600
+name: Skyshine's BEDLAM
+developer: Skyshine Games
+release_year: 2015
+subgenre: hybrid_strategy
+critic:
+  metacritic: 67
+mechanics:
+  hybrid_strategy: 3
+  turn_based: 3
+  grid_tactics: 3
+  node_map: 3
+  hunger_clock: 3
+  random_events: 3
+  party_building: 2
+  permadeath: 3
+  healing_scarcity: 2
+  loadout_start: 1
+  active_items: 1
+  long_runs: 1
+evidence:
+  hunger_clock: Driving the Dozer across the map consumes fuel and food for the passenger population.
+  node_map: The wasteland is a node map toward Aztec City; each step risks raids and events.
+  permadeath: Units killed in tactical fights are permanently lost and a destroyed Dozer ends the run.
+  active_items: Dozer abilities can be fired into tactical battles from the vehicle.
+confidence: medium
+curator: agent

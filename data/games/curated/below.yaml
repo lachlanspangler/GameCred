@@ -1,0 +1,29 @@
+appid: 250680
+name: BELOW
+developer: Capybara Games
+release_year: 2018
+subgenre: hybrid_survival
+mechanics:
+  hybrid_survival: 3
+  hybrid_action_roguelite: 2
+  permadeath: 3
+  procgen_levels: 3
+  hunger_clock: 3
+  healing_scarcity: 3
+  crafting: 3
+  real_time_action: 3
+  block_shield: 2
+  status_effects: 2
+  consumables: 2
+  inventory_management: 2
+  environmental_hazards: 2
+  weapons_variety: 1
+  assist_mode: 1
+evidence:
+  hunger_clock: Hunger, thirst and cold drain constantly; food and water are scavenged.
+  status_effects: Bleeding wounds must be bandaged or they drain health.
+  crafting: Recipes are discovered by combining found materials.
+  assist_mode: Explore Mode removes survival meters for a combat/exploration-only descent.
+  permadeath: Death spawns a new wanderer; the lantern must be recovered from the previous body.
+confidence: medium
+curator: agent

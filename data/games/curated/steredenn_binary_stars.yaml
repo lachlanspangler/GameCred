@@ -1,0 +1,25 @@
+appid: 347160
+name: 'Steredenn: Binary Stars'
+developer: Pixelnest Studio
+release_year: 2016
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  hybrid_shooter: 2
+  vehicle_combat: 3
+  bullet_hell: 2
+  procgen_levels: 2
+  permadeath: 3
+  short_runs: 2
+  weapons_variety: 3
+  pick_one_of_n: 2
+  boss_gates: 2
+  local_coop: 2
+  daily_challenge: 2
+  leaderboards: 2
+evidence:
+  vehicle_combat: Side-scrolling shoot-em-up piloting a ship.
+  weapons_variety: A large pool of weapons drops during a run.
+  daily_challenge: Daily runs with leaderboards.
+confidence: medium
+curator: agent

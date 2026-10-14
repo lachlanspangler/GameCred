@@ -15,7 +15,7 @@ You are working on GameCred: a living, quantitative database of roguelike game m
 - `data/games/curated/*.yaml` — expert profiles (ground truth)
 - `gamecred/` — pipeline: `discover` → `fetch` → `build` → `export`, plus `doctor` (self-healing)
 - `dashboard/` — static app (`index.html`, `app.js`, `styles.css`, generated `data.js`)
-- `docs/` — WORKFLOW, METHODOLOGY, DIARY, IDEAS, HEALTH (generated), TAXONOMY_PROPOSALS, CURATION_GUIDE, IRR (generated), rubrics/ (generated)
+- `docs/` — WORKFLOW, METHODOLOGY, DIARY, IDEAS, HEALTH, TAXONOMY_PROPOSALS, CURATION_GUIDE; generated each export: FINDINGS, TEXTBOOK, IRR, rubrics/
 
 ## Commands
 `make help` · `make check` · `make all` · `make heal` · `make loop` · `make serve` · `make report`

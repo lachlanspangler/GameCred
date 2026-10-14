@@ -1,0 +1,31 @@
+appid: 1385100
+name: Insurmountable
+developer: ByteRockers' Games
+release_year: 2021
+subgenre: hybrid_survival
+critic:
+  metacritic: 74
+mechanics:
+  hybrid_survival: 3
+  turn_based: 2
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 2
+  random_events: 3
+  hunger_clock: 3
+  stress_sanity: 2
+  day_night_cycle: 2
+  healing_scarcity: 2
+  character_classes: 2
+  unlock_characters: 2
+  consumables: 2
+  inventory_management: 2
+  level_up_choices: 1
+  environmental_hazards: 1
+evidence:
+  hunger_clock: Stamina, body temperature, oxygen and health drain with each hex moved and with altitude and weather.
+  stress_sanity: A sanity meter drops from events and isolation and causes penalties as it falls.
+  random_events: Many hexes trigger text events with choices whose outcomes depend on the climber and items.
+  act_structure: A run is a series of procedurally generated mountains climbed one after another to the summit.
+confidence: medium
+curator: agent

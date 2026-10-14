@@ -1,0 +1,24 @@
+appid: 1946970
+name: Isle of Arrows
+developer: Gridpop
+release_year: 2022
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  tile_placement_world: 2
+  deckbuilding: 2
+  turn_based: 2
+  waves: 3
+  adjacency_placement: 2
+  in_run_currency: 2
+  shops: 2
+  pick_one_of_n: 2
+  unlock_items: 2
+  permadeath: 3
+  short_runs: 2
+evidence:
+  tile_placement_world: 'Each turn a tile is drawn and placed to grow the island: path pieces, towers, flags and gold tiles.'
+  waves: After each placement a wave of enemies walks the path the player has built toward the castle.
+  adjacency_placement: Tile value depends on placement (e.g. towers next to paths, flags extending buildable territory).
+confidence: medium
+curator: agent

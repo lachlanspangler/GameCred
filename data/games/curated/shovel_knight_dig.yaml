@@ -1,0 +1,28 @@
+appid: 1416050
+name: Shovel Knight Dig
+developer: Nitrome
+release_year: 2022
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  platforming: 3
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 3
+  boss_gates: 3
+  time_pressure: 2
+  active_items: 2
+  passive_relics: 2
+  in_run_currency: 2
+  shops: 2
+  healing_scarcity: 2
+  unlock_items: 2
+  leaderboards: 1
+evidence:
+  time_pressure: Lingering too long in a stage brings a descending hazard that forces the player to keep digging down.
+  procgen_levels: Each stage is assembled from handcrafted chunks in a new order every run, with branching choice between next stages.
+  unlock_items: Gems banked at the surface camp buy new relics and accessories that enter future runs.
+  boss_gates: Each zone ends in a boss fight on the way down to Drill Knight.
+confidence: medium
+curator: agent

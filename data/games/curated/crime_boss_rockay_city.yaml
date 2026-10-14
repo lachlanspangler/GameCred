@@ -1,0 +1,23 @@
+appid: 2933080
+name: 'Crime Boss: Rockay City'
+developer: INGAME STUDIOS
+release_year: 2024
+subgenre: hybrid_shooter
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  hybrid_strategy: 1
+  permadeath: 2
+  party_building: 2
+  in_run_currency: 2
+  stealth: 1
+  online_coop: 2
+  unlock_characters: 1
+  long_runs: 2
+evidence:
+  permadeath: In the Baker's Way campaign, hired crew killed on heists are gone for good and Travis Baker's death ends the campaign.
+  hybrid_strategy: Between heists the player expands turf on a Rockay City map and fights rival gangs in turf wars.
+  online_coop: Crime Time and Urban Legends modes offer online co-op heists.
+confidence: medium
+curator: agent

@@ -1,0 +1,26 @@
+appid: 551860
+name: Abandon Ship
+developer: Fireblade Software
+release_year: 2019
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  vehicle_combat: 3
+  destructible_subsystems: 3
+  ship_base_design: 2
+  party_building: 2
+  node_map: 2
+  random_events: 3
+  permadeath: 1
+  real_time_action: 2
+  shops: 2
+  in_run_currency: 2
+  healing_scarcity: 1
+  long_runs: 2
+evidence:
+  destructible_subsystems: Naval battles target specific enemy sections (cannons, sails, crew decks) while managing fires and leaks aboard.
+  ship_base_design: Ships are swapped and refitted with weapon/system slots bought with gold.
+  permadeath: Crew members die permanently; an Ironman option makes the whole campaign permadeath.
+  random_events: Islands on the sea map trigger text events, quests and encounters.
+confidence: medium
+curator: agent

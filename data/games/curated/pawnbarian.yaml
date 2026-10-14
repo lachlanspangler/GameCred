@@ -1,0 +1,27 @@
+appid: 1142080
+name: Pawnbarian
+developer: j4nw
+release_year: 2021
+subgenre: hybrid_puzzle
+mechanics:
+  hybrid_puzzle: 3
+  hybrid_deckbuilder: 2
+  grid_tactics: 3
+  turn_based: 3
+  enemy_intents: 2
+  perfect_information: 2
+  character_classes: 2
+  unlock_characters: 2
+  card_mods: 3
+  shops: 2
+  in_run_currency: 2
+  healing_scarcity: 2
+  permadeath: 3
+  short_runs: 2
+  card_draw: 1
+evidence:
+  grid_tactics: Cards are chess-piece moves (knight, bishop, rook...) played on a chessboard.
+  enemy_intents: Enemy threatened squares are visible before you move.
+  card_mods: Gold buys enchantments added to individual cards between floors.
+confidence: medium
+curator: agent

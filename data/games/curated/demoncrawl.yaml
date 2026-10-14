@@ -1,0 +1,28 @@
+appid: 1141220
+name: DemonCrawl
+developer: Therefore Games
+release_year: 2019
+subgenre: hybrid_puzzle
+mechanics:
+  hybrid_puzzle: 3
+  turn_based: 2
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 2
+  healing_scarcity: 3
+  passive_relics: 2
+  active_items: 2
+  consumables: 2
+  shops: 2
+  in_run_currency: 2
+  loadout_start: 2
+  unlock_items: 2
+  synergies: 1
+  pvp: 1
+evidence:
+  healing_scarcity: Revealing a mine costs a life rather than ending the board, so lives are the run-long resource.
+  loadout_start: Masteries chosen before a quest grant a distinct ability and unlock higher tiers through play.
+  passive_relics: Hundreds of passive, active and consumable items modify the Minesweeper rules (reveal tiles, defuse mines, gain coins).
+  act_structure: Quests chain several Minesweeper stages with stage modifiers, with shops/events between them.
+confidence: medium
+curator: agent
