@@ -174,6 +174,17 @@ def check_dataset(rep: Report):
         lines.append("dead mechanics (0 games): " + ", ".join(dead)); rep.warnings += len(dead)
     if broad:
         lines.append("non-discriminating (>90% of games): " + ", ".join(broad)); rep.warnings += len(broad)
+    import math
+    pairs = [(math.log10(g["units_est"]), math.log10(g["owners_mid"])) for g in games
+             if g.get("units_est") and g.get("owners_mid") and g["units_est"] > 0 and g["owners_mid"] > 0]
+    if len(pairs) > 30:
+        import numpy as np
+        a, b = np.array(pairs).T
+        r = float(np.corrcoef(a, b)[0, 1])
+        ratio = float(np.median(10 ** (a - b)))
+        lines.append(f"revenue model check: log(units est) vs log(SteamSpy owners) r = {r:.2f}, median units/owners = {ratio:.2f} (n={len(pairs)})")
+        if r < 0.6:
+            lines.append("  WARN: review-multiplier units disagree with SteamSpy owners; revisit metrics.boxleiter_multiplier"); rep.warnings += 1
     seen_tags = {t for g in games for t in g.get("steam_tags", [])}
     if len(games) > 200:
         dead_rules = sorted({f"{m.id}:{t}" for m in tax.mechanics.values() for t in m.steam_tags if t not in seen_tags})

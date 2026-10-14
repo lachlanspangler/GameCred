@@ -58,6 +58,6 @@ Note: price enters revenue mechanically (revenue ≈ reviews × price), so the l
 ## 6. Caveats
 1. Observational data, so these are **associations, not causes**. Budget, team pedigree, marketing and timing are unobserved confounders (see I-027).
 2. Survivorship: the universe needs ≥ 50 reviews, so true flops are missing and downside risk is understated.
-3. Revenue is a model estimate, roughly ±2×. Rankings are more reliable than dollar figures.
+3. Revenue is a model estimate, roughly ±2×. Rankings are more reliable than dollar figures. Cross-check: log(units estimate) vs log(SteamSpy owners) r ≈ 0.78. Our units run about 0.5× SteamSpy owners (SteamSpy over-counts bundles and free weekends; the multiplier is conservative). The doctor recomputes this every run.
 4. Auto-tags are noisy. Use the curated or high-confidence scopes for decisions.
 5. Thresholds (table-stakes 50%, flop ratio 0.7, etc.) are conventions, chosen for interpretability. They are not fitted.
