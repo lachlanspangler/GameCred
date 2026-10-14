@@ -1,6 +1,6 @@
 # GameCred rubric — Puzzle Roguelite
 
-Sample: 42 games. Hit = Success Index ≥ 64.5; flop ≤ 28.7.
+Sample: 45 games. Hit = Success Index ≥ 67.0; flop ≤ 30.6.
 Associations from observational data; see docs/METHODOLOGY.md.
 
 ## Must have (table stakes)
@@ -21,7 +21,7 @@ Rare but associated with better outcomes.
 ## Risk reducers
 Lower flop rate even if the average effect is unclear.
 
-- none at current sample size
+- **Turn-based** — Δ -3.5 pts (95% CI -14.6…+9.6); in 58% of hits; flop ratio 0.63
 
 ## Red flags
 Associated with worse outcomes in this genre.

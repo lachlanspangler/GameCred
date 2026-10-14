@@ -645,7 +645,10 @@ function labFromHash() {
   lab.vec = {}; (P.get("m") || "").split(",").filter(Boolean).forEach(kv => { const [k, v] = kv.split(":"); if (MECH[k]) lab.vec[k] = Math.max(1, Math.min(3, +v || 1)); });
   lab.from = "shared link"; return true;
 }
-function labScope() { return (AN.subgenres[lab.sub] && AN.subgenres[lab.sub].ridge) ? AN.subgenres[lab.sub] : AN.scopes.all; }
+// Scoring uses the pooled all-roguelike model (subgenre as covariate): per-subgenre samples are too small for
+// stable mechanic coefficients. Verdict lists (table stakes / red flags) use the subgenre scope when it exists.
+function labScope() { return AN.scopes.all; }
+function labVerdictScope() { return AN.subgenres[lab.sub] || AN.scopes.all; }
 function predict(vec, scopeOverride) {
   const sc = scopeOverride || labScope(), r = sc && sc.ridge; if (!r) return null;
   let y = r.intercept;
@@ -669,23 +672,23 @@ function ncdf(z) { const t = 1 / (1 + 0.2316419 * Math.abs(z)), d = 0.3989423 * 
 
 function viewLab() {
   const el = $("#view-lab");
-  const sc = labScope();
+  const sc = labScope(), vs = labVerdictScope();
   const coef = new Map(((sc.ridge || {}).coefs || []).map(c => [c.feature, c]));
-  const subEff = new Map((sc.mechanics || []).map(r => [r.mechanic, r]));
+  const subEff = new Map((vs.mechanics || []).map(r => [r.mechanic, r]));
   const allGsi = GAMES.filter(g => g.sg === lab.sub && g.gsi != null).map(g => g.gsi).sort((a, b) => a - b);
   const pr = predict(lab.vec);
   const vecFull = { ...lab.vec, [lab.sub]: 3 };
   const comps = similar(vecFull, { k: 25 });
   const compG = comps.map(c => c.g.gsi).filter(v => v != null);
-  const hitT = sc.hit_threshold, flopT = sc.flop_threshold;
+  const hitT = vs.hit_threshold, flopT = vs.flop_threshold;
   const wsum = comps.reduce((a, c) => a + c.sim, 0) || 1;
   const compHit = comps.reduce((a, c) => a + (c.g.gsi >= hitT ? c.sim : 0), 0) / wsum;
   const compFlop = comps.reduce((a, c) => a + (c.g.gsi != null && c.g.gsi <= flopT ? c.sim : 0), 0) / wsum;
   const pctile = pr ? 100 * allGsi.filter(v => v <= pr.y).length / Math.max(1, allGsi.length) : null;
   const pFlop = pr ? ncdf((flopT - pr.y) / pr.rmse) : null, pHit = pr ? 1 - ncdf((hitT - pr.y) / pr.rmse) : null;
-  const stakes = (sc.mechanics || []).filter(r => r.verdict === "table stakes" && !r.mechanic.startsWith("hybrid_"));
+  const stakes = (vs.mechanics || []).filter(r => r.verdict === "table stakes" && !r.mechanic.startsWith("hybrid_"));
   const missing = stakes.filter(r => !lab.vec[r.mechanic]);
-  const flags = (sc.mechanics || []).filter(r => r.verdict === "red flag" && lab.vec[r.mechanic]);
+  const flags = (vs.mechanics || []).filter(r => r.verdict === "red flag" && lab.vec[r.mechanic]);
   const adds = [...coef.values()].filter(c => c.is_mechanic && !lab.vec[c.feature] && c.coef > 0).sort((a, b) => (b.ci_lo > 0) - (a.ci_lo > 0) || b.coef - a.coef).slice(0, 8);
   const hitComps = comps.filter(c => c.g.gsi >= hitT);
   const hitCommon = Object.keys(MECH).filter(m => !m.startsWith("hybrid_") && !lab.vec[m] && hitComps.length >= 3 && hitComps.filter(c => c.g.m[m]).length / hitComps.length >= 0.6);
@@ -713,13 +716,13 @@ function viewLab() {
         const i = lab.vec[mid] || 0, c = coef.get(mid), se = subEff.get(mid);
         const b = h("span", { class: `lab-mech i${i}`, onclick: () => { const n = ((lab.vec[mid] || 0) + 1) % 4; if (n) lab.vec[mid] = n; else delete lab.vec[mid]; viewLab(); } },
           i ? intenDots(i) : null, mname(mid), c ? h("span", { class: "eff" }, fmt.d1(c.coef)) : null);
-        hover(b, () => [mname(mid), MECH[mid].desc, [c ? `partial effect ${fmt.d1(c.coef)} (CI ${fmt.d1(c.ci_lo)}…${fmt.d1(c.ci_hi)})` : "not in model (too rare/common)", se && se.verdict ? `verdict in ${mname(lab.sub)}: ${se.verdict}` : "", "click to cycle: off → present → significant → core"]]);
+        hover(b, () => [mname(mid), MECH[mid].desc, [c ? `partial effect ${fmt.d1(c.coef)} (CI ${fmt.d1(c.ci_lo)}…${fmt.d1(c.ci_hi)})` : "not in model (too rare/common)", se && se.verdict ? `verdict in ${AN.subgenres[lab.sub] ? mname(lab.sub) : "all roguelikes"}: ${se.verdict}${se.diff != null ? ` (Δ ${fmt.d1(se.diff)})` : ""}` : "", "click to cycle: off → present → significant → core"]]);
         return b;
       }));
     return det;
   });
   const out = h("div", { class: "card lab-out" },
-    h("div", { class: "tile-label" }, `Predicted Success Index · ${AN.subgenres[lab.sub] ? mname(lab.sub) + " model" : "all-roguelike model (subgenre as covariate)"} · n=${sc.n}`),
+    h("div", { class: "tile-label" }, `Predicted Success Index · pooled model (n=${sc.n}, subgenre as covariate) · verdicts from ${AN.subgenres[lab.sub] ? mname(lab.sub) + ` (n=${vs.n})` : "all roguelikes"}`),
     h("div", { class: "hero" }, h("span", { class: "hero-value" }, pr ? fmt.f1(pr.y) : "–"), pr ? h("span", { class: "muted" }, `± ${fmt.f1(pr.rmse)} (CV RMSE)`) : null),
     pr ? h("div", { class: "meter", title: `percentile ${Math.round(pctile)}` }, h("div", { style: `width:${pctile}%` })) : null,
     pr ? h("div", { class: "tile-note" }, `${Math.round(pctile)}th percentile of ${allGsi.length} ${mname(lab.sub)} games`) : null,

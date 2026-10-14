@@ -1,6 +1,6 @@
 # GameCred rubric — Traditional Roguelike
 
-Sample: 75 games. Hit = Success Index ≥ 68.8; flop ≤ 31.1.
+Sample: 84 games. Hit = Success Index ≥ 68.6; flop ≤ 31.7.
 Associations from observational data; see docs/METHODOLOGY.md.
 
 ## Must have (table stakes)
@@ -21,7 +21,7 @@ Rare but associated with better outcomes.
 ## Risk reducers
 Lower flop rate even if the average effect is unclear.
 
-- **Permadeath** — Δ -1.9 pts (95% CI -11.4…+8.2, partial +0.0); in 79% of hits; flop ratio 0.69
+- **Distinct Characters / Classes** — Δ -0.3 pts (95% CI -9.3…+8.5, partial +0.1); in 52% of hits; flop ratio 0.70
 
 ## Red flags
 Associated with worse outcomes in this genre.
