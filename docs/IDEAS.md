@@ -27,14 +27,14 @@ Score = value ÷ effort (each 1–5). Status: `open` · `doing` · `done` · `pa
 ## Analysis
 | ID | Idea | V | E | Status |
 |---|---|---|---|---|
-| I-020 | Propensity-score matching per mechanic as a robustness check on ridge | 4 | 3 | open |
+| I-020 | Propensity-score matching per mechanic as a robustness check on ridge | 4 | 3 | done (NN matching on mechanic fingerprint) |
 | I-021 | Gradient-boosted model + SHAP-style attributions for non-linear interactions | 4 | 3 | open |
 | I-022 | Temporal holdout: train on ≤2021 releases, test on 2022+ → honest predictive accuracy | 5 | 2 | done |
 | I-023 | Trend lines: mechanic prevalence by release year (rising/declining mechanics) | 4 | 1 | done |
 | I-024 | Saturation detector: diminishing returns of a mechanic as genre prevalence rises | 3 | 2 | open |
 | I-025 | Mechanic clusters (archetype discovery) via co-occurrence / NMF → "design archetypes" | 4 | 2 | done (NMF k=12) |
 | I-026 | Separate quality vs commercial models in the Lab ("will it sell" vs "will players love it") | 4 | 1 | done |
-| I-027 | Developer-experience covariate (prior titles count, prior success) to reduce confounding | 5 | 3 | open |
+| I-027 | Developer-experience covariate (prior titles count, prior success) to reduce confounding | 5 | 3 | done (within-dataset pedigree) |
 
 ## Dashboard / product
 | ID | Idea | V | E | Status |

@@ -112,6 +112,7 @@ function impact() {
   const hitT = quantile(ys, 0.75), flopT = quantile(ys, 0.25);
   const scope = ridgeScope();
   const rc = new Map(((scope && scope.ridge && scope.ridge.coefs) || []).map(c => [c.feature, c]));
+  const pre = new Map(((scope && scope.mechanics) || []).map(r => [r.mechanic, r]));
   const out = [];
   // Strata: tag source x (optionally) documentation-depth tertile. Curated and well-documented games are both
   // better known and more richly tagged, so comparisons are made within comparable games (see Method).
@@ -139,6 +140,8 @@ function impact() {
     const row = { mid, n1, n0, prev: rows.length ? n1 / rows.length : 0 };
     const c = rc.get(mid);
     row.ridge = c ? c.coef : null; row.rlo = c ? c.ci_lo : null; row.rhi = c ? c.ci_hi : null;
+    const pm = pre.get(mid);
+    if (pm && pm.matched_att != null) { row.matt = pm.matched_att; row.mlo = pm.matched_lo; row.mhi = pm.matched_hi; row.robust = pm.robust; }
     let W = 0, D = 0, V = 0, nEff = 0;
     for (const sk of strataKeys) {
       const [a, b] = cell[sk];
@@ -395,10 +398,11 @@ function openMechanic(mid) {
   openDrawer(
     h("div", { class: "muted" }, `${famName(m.family)} › ${(FAMS.find(f => f.id === m.family).subfamilies.find(sf => sf.id === m.subfamily) || {}).name}`),
     h("h2", {}, m.name), h("p", { class: "sub" }, m.desc),
-    h("div", { class: "grid g4" },
+    h("div", { class: "grid g3" },
       tile("Prevalence", fmt.pct(r.prev), `${r.n1} of ${r.n1 + r.n0} games`),
       tile("Δ " + OUT_LABEL[state.out], fmt.d1(r.diff), r.lo != null ? `95% CI ${fmt.d1(r.lo)} to ${fmt.d1(r.hi)}` : ""),
       tile("Partial effect (ridge)", fmt.d1(r.ridge), r.rlo != null ? `CI ${fmt.d1(r.rlo)} to ${fmt.d1(r.rhi)}` : "not in model"),
+      tile("Matched comparison", fmt.d1(r.matt), r.mlo != null ? `CI ${fmt.d1(r.mlo)} to ${fmt.d1(r.mhi)}${r.robust ? " · robust ✓" : ""}` : "insufficient matches"),
       tile("Verdict", chip(r.verdict), `hit lift ${fmt.f2(r.lift)} · flop ratio ${fmt.f2(r.flopR)}`)),
     (() => { const k = AN.irr && AN.irr.mechanics.find(x => x.mechanic === mid); return k && k.kappa != null ? h("div", { class: "muted", style: "margin-top:8px" }, `Tagging reliability κ = ${fmt.f2(k.kappa)} (blind re-tag of ${AN.irr.n_games} games)${k.kappa < 0.4 ? " — low: definition is fuzzy, interpret with caution" : ""}`) : null; })(),
     h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, `${OUT_LABEL[state.out]}: with vs without`), boxCompare(withG.map(x => x.y), without)),
@@ -562,6 +566,7 @@ function viewMechanics() {
         { key: "m1", label: "Mean with", num: true, render: r => fmt.f1(r.m1) },
         { key: "diff", label: "Δ vs without (95% CI)", num: true, render: r => effectCell(r), title: "Difference stratified by tag source (curated vs auto)", sort: r => r.verdict === "insufficient data" ? null : r.diff },
         { key: "ridge", label: "Ridge Δ", num: true, render: r => fmt.d1(r.ridge), title: "Partial effect, other factors held constant" },
+        { key: "matt", label: "Matched Δ", num: true, render: r => r.matt == null ? "–" : h("span", {}, fmt.d1(r.matt), r.robust ? h("span", { title: "robust: matched comparison agrees and excludes 0", style: "margin-left:4px" }, "✓") : null), title: "vs 5 most similar games without it (precomputed scope)" },
         { key: "lift", label: "Hit lift", num: true, render: r => fmt.f2(r.lift) },
         { key: "flopR", label: "Flop ratio", num: true, render: r => fmt.f2(r.flopR) },
         { key: "verdict", label: "Verdict", render: r => chip(r.verdict, true), sort: r => VERDICT_ORDER.indexOf(r.verdict) },

@@ -1,0 +1,30 @@
+appid: 1229460
+name: Dice Legacy
+developer: DESTINYbit
+release_year: 2021
+subgenre: hybrid_city_builder
+mechanics:
+  hybrid_city_builder: 3
+  hybrid_survival: 1
+  dice: 3
+  dice_manipulation: 2
+  reroll: 2
+  weapon_durability: 2
+  procgen_levels: 2
+  day_night_cycle: 2
+  hunger_clock: 2
+  time_pressure: 2
+  permadeath: 2
+  random_events: 2
+  loadout_start: 2
+  unlock_characters: 2
+  unlock_items: 1
+  optional_challenges: 1
+  speed_controls: 1
+evidence:
+  dice: Settlers are physical dice; the rolled face decides which buildings and jobs each die can perform.
+  weapon_durability: Every die has limited durability and dies after enough uses unless healed or blessed.
+  day_night_cycle: Seasons cycle on the ring-shaped world, and winter brings food and heat pressure.
+  loadout_start: Each run starts with a chosen Ruler whose perks and starting dice shape the settlement; more Rulers unlock through play.
+confidence: medium
+curator: agent

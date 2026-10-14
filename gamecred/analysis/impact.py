@@ -156,6 +156,37 @@ def univariate(d: Design, n_boot: int = 1000, adjust_depth: bool = True) -> list
     return rows
 
 
+def matched_effects(d: Design, k: int = 5) -> dict[str, dict]:
+    """Nearest-neighbour matching per mechanic (robustness check on the stratified Δ).
+
+    Each game WITH mechanic m is compared with its k most similar games WITHOUT m, where similarity is the
+    Hamming distance over all other mechanics (one shared distance matrix; the m column adds a constant)
+    and matches must share tag source. ATT = mean(y_i - mean(y_matches)).
+    """
+    B = d.B.astype(np.float32)
+    # Hamming distance = |a| + |b| - 2 a.b
+    nb = B.sum(axis=1)
+    D = nb[:, None] + nb[None, :] - 2 * (B @ B.T)
+    D[d.strata[:, None] != d.strata[None, :]] = np.inf
+    out = {}
+    for j, mid in enumerate(d.mech_ids):
+        w = d.B[:, j] == 1
+        ti, ci = np.where(w)[0], np.where(~w)[0]
+        if len(ti) < 10 or len(ci) < 20:
+            continue
+        sub = D[np.ix_(ti, ci)]
+        kk = min(k, len(ci))
+        idx = np.argpartition(sub, kk - 1, axis=1)[:, :kk]
+        valid = np.isfinite(np.take_along_axis(sub, idx, axis=1)).all(axis=1)
+        if valid.sum() < 10:
+            continue
+        diffs = d.y[ti[valid]] - d.y[ci[idx[valid]]].mean(axis=1)
+        se = diffs.std(ddof=1) / math.sqrt(len(diffs))
+        out[mid] = {"att": float(diffs.mean()), "lo": float(diffs.mean() - 1.96 * se), "hi": float(diffs.mean() + 1.96 * se),
+                    "n": int(valid.sum())}
+    return out
+
+
 def _covariates(games: list[dict]) -> tuple[np.ndarray, list[str]]:
     tax = load_taxonomy()
     hy = tax.hybrids()
@@ -373,6 +404,15 @@ def run_scope(games: list[dict], outcome: str = "gsi", min_conf: float = 0.0, wi
     uni = univariate(d)
     rid = ridge(d) if with_ridge and len(d.y) >= 60 else None
     classify(uni, rid)
+    if with_synergy:  # main scopes only (cost)
+        me = matched_effects(d)
+        for r in uni:
+            m = me.get(r["mechanic"])
+            if m:
+                r.update({"matched_att": m["att"], "matched_lo": m["lo"], "matched_hi": m["hi"], "matched_n": m["n"]})
+                if r.get("status") == "ok":
+                    same = (r["diff"] > 0) == (m["att"] > 0)
+                    r["robust"] = bool(same and ((m["lo"] > 0) or (m["hi"] < 0)))
     return {"n": len(d.y), "outcome": outcome, "min_conf": min_conf,
             "hit_threshold": float(np.percentile(d.y, 75)), "flop_threshold": float(np.percentile(d.y, 25)),
             "mechanics": uni, "ridge": rid,

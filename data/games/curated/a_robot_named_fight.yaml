@@ -1,0 +1,24 @@
+appid: 603530
+name: A Robot Named Fight!
+developer: Matt Bitner Games
+release_year: 2017
+subgenre: hybrid_metroidvania
+mechanics:
+  hybrid_metroidvania: 3
+  procgen_levels: 3
+  platforming: 3
+  real_time_action: 3
+  permadeath: 3
+  traversal_tools: 2
+  passive_relics: 2
+  weapons_variety: 1
+  unlock_items: 2
+  achievement_unlocks: 2
+  boss_gates: 2
+  high_variance_loot: 2
+evidence:
+  procgen_levels: Each run generates a new Super Metroid-style map, ending at the Megabeast.
+  traversal_tools: Movement upgrades found in the run gate which areas of that map you can reach.
+  achievement_unlocks: New items are added to the pool by completing specific feats.
+confidence: medium
+curator: agent

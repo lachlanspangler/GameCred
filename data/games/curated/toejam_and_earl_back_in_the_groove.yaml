@@ -1,0 +1,28 @@
+appid: 516110
+name: "ToeJam & Earl: Back in the Groove!"
+developer: HumaNature Studios
+release_year: 2019
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  procgen_levels: 3
+  item_identification: 3
+  consumables: 3
+  local_coop: 3
+  online_coop: 2
+  character_classes: 2
+  unlock_characters: 1
+  second_chance: 2
+  permadeath: 1
+  healing_scarcity: 1
+  flat_stat_scaling: 1
+  high_variance_loot: 2
+  double_edged_items: 2
+evidence:
+  item_identification: Presents are unidentified until opened or identified, and some are harmful.
+  double_edged_items: Bad presents such as Total Bummer or Randomizer can wreck a run.
+  procgen_levels: Random mode generates fresh island levels each game; Fixed mode uses set layouts.
+  second_chance: Extra lives keep the run going; the game ends only when all lives are gone.
+confidence: medium
+curator: agent

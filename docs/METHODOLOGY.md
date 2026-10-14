@@ -39,6 +39,7 @@ For each mechanic *m* in a scope (all / high-confidence / curated / per-subgenre
   - *risk reducer:* flop ratio ≤ 0.7
   - *neutral:* otherwise
   - *insufficient data:* n < 10 on either side
+- **Matched comparison (robustness):** each game with *m* is matched to its 5 nearest games without *m* (Hamming distance over all other mechanics, same tag source). ATT = mean outcome gap, with a normal CI. ✓ robust = same sign as Δ and CI excluding 0.
 - **Synergy:** `(m11 − m10) − (m01 − m00)` over the 2×2 cells of a mechanic pair (each cell ≥ 8 games), ranked by |z|. Exploratory, with no multiple-comparison correction.
 - **Family depth:** partial Spearman ρ between the number of significant (≥ 2) mechanics a game has in a family and its GSI, controlling for the game's total tag count (curated games only).
 

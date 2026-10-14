@@ -110,3 +110,9 @@ ship_base_design (from vehicle_or_base_design), automation_logistics, aim_mode_o
 destructible_subsystems, unkillable_pursuer, crew_stations (from vehicle_crew_stations).
 Still pending (1–2 examples): health_drain, momentum_movement, realtime_deck_cycling, sacrifice_healing, indirect_control,
 run_carryover_on_win, shrinking_zone, raid_mechanics, vr_motion_control, shared_world_mmo, random_run_traits.
+
+## From round-3 curator B (2026-10-13) — pending
+- knowledge_progression — progress across runs is mainly player knowledge (Blue Prince, Outer Wilds-likes)
+- soft_run_limit — run ends by a non-death limit (steps/days), not permadeath (Blue Prince)
+- dice_placement — slot rolled dice into requirement boxes (One Deck Dungeon, Dicey Dungeons)
+- worker_decay — units wear out with use (Dice Legacy)

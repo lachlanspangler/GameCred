@@ -1,0 +1,35 @@
+appid: 1569580
+name: Blue Prince
+developer: Dogubomb
+release_year: 2025
+subgenre: hybrid_puzzle
+mechanics:
+  hybrid_puzzle: 3
+  tile_placement_world: 3
+  pick_one_of_n: 3
+  hunger_clock: 3
+  procgen_levels: 2
+  reroll: 2
+  item_rarity: 1
+  in_run_currency: 2
+  shops: 2
+  consumables: 2
+  passive_relics: 1
+  crafting: 1
+  synergies: 2
+  double_edged_items: 2
+  unlock_items: 2
+  item_upgrading: 1
+  narrative_across_runs: 3
+  lore_codex: 2
+  tutorialized_unlocks: 2
+  mid_run_save: 1
+evidence:
+  tile_placement_world: Each day the player drafts room blueprints onto Mount Holly's 5x9 grid, building the house they explore.
+  pick_one_of_n: Opening a door offers three blueprints; gems pay for the pricier rooms.
+  hunger_clock: Every room entered costs a step and the day ends at zero; food rooms and items restore steps.
+  reroll: Dice let the player redraw the current set of blueprint options.
+  narrative_across_runs: The house resets daily, but knowledge, story clues and a few permanent upgrades carry forward toward Room 46 and beyond.
+  double_edged_items: Red rooms such as the Gymnasium or Chapel give benefits but cost steps or coins.
+confidence: high
+curator: agent
