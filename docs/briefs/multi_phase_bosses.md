@@ -21,20 +21,20 @@ _Bosses change behaviour across phases._
 
 ## Pair it with (over-represented in its top earners)
 
-- **Ultimate / Special Meter**: in 50% of top earners (21.3× its rate across curated roguelikes)
-- **Learnable Attack Patterns**: in 83% of top earners (9.4× its rate across curated roguelikes)
-- **Controller / Deck Friendly**: in 83% of top earners (8.6× its rate across curated roguelikes)
-- **Codex / Compendium**: in 67% of top earners (7.3× its rate across curated roguelikes)
-- **Revive / Extra Life**: in 67% of top earners (7.1× its rate across curated roguelikes)
-- **Mid-run Save & Quit**: in 67% of top earners (6.7× its rate across curated roguelikes)
-- **Assist / God Mode**: in 50% of top earners (6.6× its rate across curated roguelikes)
-- **Multiple Endings / True Ending**: in 67% of top earners (6.2× its rate across curated roguelikes)
-- **Ascension / Heat Ladder**: in 67% of top earners (6.0× its rate across curated roguelikes)
-- **Elites / Champions**: in 83% of top earners (5.6× its rate across curated roguelikes)
+- **Ultimate / Special Meter**: in 43% of top earners (18.3× its rate across curated roguelikes)
+- **RNG Mitigation**: in 43% of top earners (15.0× its rate across curated roguelikes)
+- **Learnable Attack Patterns**: in 86% of top earners (9.7× its rate across curated roguelikes)
+- **Controller / Deck Friendly**: in 71% of top earners (7.4× its rate across curated roguelikes)
+- **Ascension / Heat Ladder**: in 71% of top earners (6.4× its rate across curated roguelikes)
+- **Codex / Compendium**: in 57% of top earners (6.3× its rate across curated roguelikes)
+- **Revive / Extra Life**: in 57% of top earners (6.1× its rate across curated roguelikes)
+- **Elites / Champions**: in 86% of top earners (5.8× its rate across curated roguelikes)
+- **Mid-run Save & Quit**: in 57% of top earners (5.8× its rate across curated roguelikes)
+- **Assist / God Mode**: in 43% of top earners (5.7× its rate across curated roguelikes)
 
 ## Where it lives
 
-Action Roguelite (11), Roguevania (3), Strategy Roguelite (2), Roguelike Deckbuilder (2), Shooter Roguelite (1), Traditional Roguelike (1)
+Action Roguelite (12), Roguevania (3), Strategy Roguelite (2), Roguelike Deckbuilder (2), Shooter Roguelite (1), Traditional Roguelike (1)
 
 Typical launch price of the top earners: $24.99
 

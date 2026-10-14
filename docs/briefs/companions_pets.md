@@ -4,7 +4,7 @@ _Autonomous companions or familiars that follow and assist the player (Isaac fam
 
 ## Why this is white space
 
-- 26 paid roguelikes use it (low competition). Their median gross is **$6,704,075**, vs $2,294,283 for comparable games without it: a **2.4× revenue multiple**.
+- 26 paid roguelikes use it (low competition). Their median gross is **$6,704,075**, vs $2,302,467 for comparable games without it: a **2.4× revenue multiple**.
 - 85% of them grossed $1M+, vs 73% of comparable games.
 - Total market for games using it is $610,906,304.
 
@@ -21,7 +21,7 @@ _Autonomous companions or familiars that follow and assist the player (Isaac fam
 
 ## Pair it with (over-represented in its top earners)
 
-- **Luck Stat**: in 50% of top earners (21.3× its rate across curated roguelikes)
+- **Luck Stat**: in 50% of top earners (12.8× its rate across curated roguelikes)
 - **Cursed Items**: in 75% of top earners (7.6× its rate across curated roguelikes)
 - **Secrets / Hidden Areas**: in 62% of top earners (7.3× its rate across curated roguelikes)
 - **Multiple Endings / True Ending**: in 62% of top earners (5.9× its rate across curated roguelikes)

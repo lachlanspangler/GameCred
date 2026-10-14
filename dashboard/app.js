@@ -858,6 +858,9 @@ function viewSynergy() {
     { key: "n_both", label: "n both", num: true }, { key: "mean_both", label: "Mean (both)", num: true, render: r => fmt.f1(r.mean_both) }], list, { initialSort: ["z", list === neg ? 1 : -1] });
   put(el, h("h2", {}, "Mechanic synergies"),
     h("p", { class: "sub" }, `Interaction = (effect of A when B present) − (effect of A when B absent), in Success Index points. Positive = the pair is worth more than the sum of its parts. Exploratory: ranked by |z|, no multiple-comparison correction (scope n=${sc.n}).`),
+    h("div", { class: "card", style: "margin-bottom:16px" }, h("h3", {}, "Mechanic co-occurrence network"),
+      h("div", { class: "muted" }, "The 48 most common mechanics around the circle, grouped by family. A curve joins two mechanics that appear together ≥1.6× more often than chance (≥10 curated games); thicker = stronger. Hover a node to isolate its partners."),
+      h("div", { style: "display:flex;justify-content:center" }, coNetwork())),
     h("div", { class: "grid g2" }, h("div", { class: "card" }, h("h3", {}, "Super-additive pairs"), mk(pos)), h("div", { class: "card" }, h("h3", {}, "Clashing pairs"), mk(neg))));
 }
 
@@ -1039,6 +1042,38 @@ function fieldDeltas(field) {
     if (W && n >= 15) out[mid] = { d: D / W, n };
   }
   return out;
+}
+
+
+function coNetwork({ size = 760, topN = 48 } = {}) {
+  const cur = GAMES.filter(g => g.src === "curated"), N = cur.length;
+  const prev = {}; for (const m of Object.keys(MECH)) if (!m.startsWith("hybrid_")) prev[m] = cur.filter(g => g.m[m]).length / N;
+  const order = FAMS.flatMap(f => f.subfamilies.flatMap(sf => sf.mechanics));
+  const nodes = Object.keys(prev).filter(m => prev[m] >= 0.08).sort((a, b) => prev[b] - prev[a]).slice(0, topN).sort((a, b) => order.indexOf(a) - order.indexOf(b));
+  const cx = size / 2, cy = size / 2, R = size / 2 - 150, pos = {};
+  nodes.forEach((m, i) => { const a = 2 * Math.PI * i / nodes.length - Math.PI / 2; pos[m] = [cx + Math.cos(a) * R, cy + Math.sin(a) * R, a]; });
+  const edges = [];
+  for (let i = 0; i < nodes.length; i++) for (let j = i + 1; j < nodes.length; j++) {
+    const a = nodes[i], b = nodes[j], both = cur.filter(g => g.m[a] && g.m[b]).length;
+    const lift = both / N / (prev[a] * prev[b]); if (both >= 10 && lift >= 1.6) edges.push({ a, b, lift, both });
+  }
+  edges.sort((x, y) => x.lift - y.lift);
+  const svg = s("svg", { class: "svgchart", style: `max-width:${size}px`, viewBox: `0 0 ${size} ${size}` });
+  const eg = s("g"); svg.append(eg);
+  const lines = edges.map(e => { const [x1, y1] = pos[e.a], [x2, y2] = pos[e.b];
+    const p = s("path", { d: `M${x1},${y1} Q${cx},${cy} ${x2},${y2}`, fill: "none", stroke: FAM_COLOR(MECH[e.a].family), "stroke-width": Math.min(4, 0.6 + (e.lift - 1.5)), opacity: Math.min(0.55, 0.12 + (e.lift - 1.5) * 0.12) });
+    eg.append(p); return { e, p }; });
+  nodes.forEach(m => {
+    const [x, y, a] = pos[m], fam = MECH[m].family, g = s("g", { class: "hov", style: "cursor:pointer" });
+    g.append(s("circle", { cx: x, cy: y, r: 4 + prev[m] * 14, fill: FAM_COLOR(fam), stroke: "var(--surface-1)", "stroke-width": 2 }));
+    const deg = a * 180 / Math.PI, flip = Math.cos(a) < 0;
+    g.append(s("text", { class: "lbl", transform: `translate(${x + Math.cos(a) * 14},${y + Math.sin(a) * 14}) rotate(${flip ? deg + 180 : deg})`, "text-anchor": flip ? "end" : "start", style: "font-size:10.5px", "dominant-baseline": "middle" }, mname(m)));
+    g.addEventListener("pointerenter", () => lines.forEach(({ e, p }) => p.setAttribute("opacity", e.a === m || e.b === m ? 0.9 : 0.03)));
+    g.addEventListener("pointerleave", () => lines.forEach(({ e, p }) => p.setAttribute("opacity", Math.min(0.55, 0.12 + (e.lift - 1.5) * 0.12))));
+    hover(g, () => [mname(m), famName(fam), [`in ${fmt.pct(prev[m])} of curated games`, `strongest partners: ${edges.filter(e => e.a === m || e.b === m).sort((x, y) => y.lift - x.lift).slice(0, 4).map(e => mname(e.a === m ? e.b : e.a) + ` ×${e.lift.toFixed(1)}`).join(", ") || "—"}`]]);
+    g.addEventListener("click", () => openMechanic(m)); svg.append(g);
+  });
+  return h("div", {}, legendSw(FAMS.slice(0, 7).map(f => [f.name, FAM_COLOR(f.id)]).concat([["Other families", OTHER]])), svg);
 }
 
 // ---------- Money ----------

@@ -21,6 +21,7 @@ mechanics:
   in_run_currency: 2
   platforming: 1
   rhythm_timing: 3
+  luck_stat: 1
 evidence:
   talent_slots: Equipment occupies fixed slots (head, body, boots, shield, weapon); new finds overwrite.
   room_based_floors: Isaac-style room grids across Norse realms with a boss per realm.

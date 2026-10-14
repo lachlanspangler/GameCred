@@ -66,10 +66,10 @@
 | Ratropolis | 0.53 | 13 | 16 |
 | Night of Full Moon | 0.55 | 16 | 18 |
 | LONE RUIN | 0.56 | 14 | 14 |
+| BPM: BULLETS PER MINUTE | 0.56 | 17 | 22 |
 | Phantom Abyss | 0.57 | 15 | 21 |
 | Dicey Dungeons | 0.57 | 23 | 24 |
 | Halls of Torment | 0.58 | 34 | 26 |
-| BPM: BULLETS PER MINUTE | 0.58 | 16 | 22 |
 | Rogue: Genesia | 0.61 | 32 | 21 |
 | Cobalt Core | 0.62 | 27 | 28 |
 | Ballionaire | 0.62 | 13 | 13 |

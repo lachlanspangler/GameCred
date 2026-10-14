@@ -4,8 +4,8 @@ _An in-run day count or clock structures exploration and forces the climax (Rave
 
 ## Why this is white space
 
-- 21 paid roguelikes use it (low competition). Their median gross is **$5,638,166**, vs $1,319,504 for comparable games without it: a **3.3× revenue multiple**.
-- 81% of them grossed $1M+, vs 57% of comparable games.
+- 21 paid roguelikes use it (low competition). Their median gross is **$5,638,166**, vs $1,468,559 for comparable games without it: a **3.2× revenue multiple**.
+- 81% of them grossed $1M+, vs 59% of comparable games.
 - Total market for games using it is $283,236,234.
 
 ## Proven by
@@ -34,7 +34,7 @@ _An in-run day count or clock structures exploration and forces the climax (Rave
 
 ## Where it lives
 
-Strategy Roguelite (9), Action Roguelite (8), Survival Roguelite (8), Traditional Roguelike (3), Builder Roguelite (2), Shooter Roguelite (1), Auto-battler Roguelite (1), Narrative / Event Roguelite (1), Survivors-like (1)
+Strategy Roguelite (9), Action Roguelite (8), Survival Roguelite (8), Traditional Roguelike (3), Shooter Roguelite (2), Builder Roguelite (2), Auto-battler Roguelite (1), Narrative / Event Roguelite (1), Survivors-like (1)
 
 Typical launch price of the top earners: $19.99
 

@@ -29,6 +29,7 @@ mechanics:
   passive_relics: 2
   time_pressure: 2
   adjacency_placement: 3
+  luck_stat: 1
 evidence:
   inventory_management: Weapons and items are placed into a shaped backpack grid; space and placement constrain the build.
   waves: Brotato-style timed waves with a shop between each.

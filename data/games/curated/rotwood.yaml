@@ -19,6 +19,7 @@ mechanics:
   early_access_dev: 3
   passive_relics: 2
   ascension_ladder: 2
+  weapon_mastery: 2
 evidence:
   crafting: Monster parts from hunts are crafted into armour and weapons at the camp.
   melee_combos: Weapons have light/heavy combo strings and timed 'focus' hits.

@@ -20,10 +20,12 @@ mechanics:
   narrative_across_runs: 2
   local_coop: 3
   day_night_cycle: 3
+  soft_run_limit: 3
 evidence:
   time_pressure: Each hero has a limited number of in-game days before facing Mormo.
   narrative_across_runs: On death, a new Sword of Ditto is chosen 100 years later and the world changes.
   passive_relics: Stickers equipped on the hero grant passive buffs; Toys act as active items.
   day_night_cycle: A countdown of in-game days structures exploration before the Mormo showdown.
+  soft_run_limit: Each hero gets a fixed number of days; when they run out the run ends with the Mormo showdown.
 confidence: medium
 curator: agent

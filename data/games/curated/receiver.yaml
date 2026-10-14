@@ -15,10 +15,12 @@ mechanics:
   short_runs: 2
   loadout_start: 1
   lore_codex: 1
+  knowledge_progression: 3
 evidence:
   weapon_handling: Separate keys to eject magazine, insert rounds, rack slide, toggle safety and check the chamber.
   healing_scarcity: No healing; a single turret or drone hit is usually fatal.
   procgen_levels: The building is assembled from randomly arranged tiles each life.
   lore_codex: The goal is collecting 11 audio tapes in a single life; each tape is a lecture.
+  knowledge_progression: Cross-run progress is the player learning gun handling and tape lessons; nothing mechanical carries over.
 confidence: high
 curator: agent

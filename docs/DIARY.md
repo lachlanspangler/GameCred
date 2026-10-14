@@ -2,6 +2,25 @@
 
 Newest entries first. Automated doctor/loop lines are appended to **Automated log** at the bottom.
 
+## 2026-10-13 — Late night: money, color, recursive ideas
+**Trigger:** the user asked for more creativity, more mechanics, more visualizations and color, and more dollar metrics.
+
+**Changed:**
+- **Mechanics:** taxonomy v4 + v5, now 195 (hybrid_narrative subgenre, projectile modifiers, proc triggers, lifesteal, companions, luck, secrets, mutators, merge upgrades, …), with a v5 retag (+257 tags).
+- **Profiles:** wiki-researched curation (+49 profiles citing wiki pages) → 392 curated.
+- **Money tab:**
+  - KPIs, revenue treemap, Lorenz curve, revenue by year, tier counts vs tier dollars, price bands
+  - Revenue survival curves, $-uplift bubbles, mechanic $ table, price-vs-revenue scatter, white space, top grossers
+- **Charts elsewhere:** Genre-DNA heatmap, quality-vs-revenue quadrant, release mix by year, radar shapes (game drawer + Lab), co-occurrence network.
+- **Lab dollars:** projected revenue, comps' IQR, revenue-tier odds, budget → break-even odds and ROI.
+- **Recursive ideas engine** (gamecred/ideas.py → IDEAS.md auto section + Ideas tab, with a ledger), plus auto design briefs (docs/briefs/).
+
+**Learned:**
+- **Concentration:** the top 1% of roguelikes take 56% of revenue and the top 10% take 89% (Gini 0.92). The median paid roguelike grosses about $57K; 12% reach $1M.
+- **Same fame confound in dollars:** the $1M+ "without" baseline must be like-for-like (strata-reweighted). The naive comparison inflated uplifts ~5×.
+- **Rare stays rare:** the targeted sweep found only ~22 missing tags for 13 under-evidenced mechanics. They need new games curated, not re-tags.
+- **Self-healing caught my generic v5 keywords** ("on hit", "buff", "pet", 0–17% precision) and suppressed them automatically.
+
 ## 2026-10-13 — Night: calibration, depth confound, design score
 **Changed:**
 - Taxonomy v3 (169).

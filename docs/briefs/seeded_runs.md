@@ -4,8 +4,8 @@ _Players can enter/share a seed to replay an identical run._
 
 ## Why this is white space
 
-- 15 paid roguelikes use it (low competition). Their median gross is **$9,128,184**, vs $3,567,522 for comparable games without it: a **2.6× revenue multiple**.
-- 73% of them grossed $1M+, vs 82% of comparable games.
+- 15 paid roguelikes use it (low competition). Their median gross is **$9,128,184**, vs $3,581,019 for comparable games without it: a **2.5× revenue multiple**.
+- 73% of them grossed $1M+, vs 83% of comparable games.
 - Total market for games using it is $561,282,479.
 
 ## Proven by
@@ -21,20 +21,20 @@ _Players can enter/share a seed to replay an identical run._
 
 ## Pair it with (over-represented in its top earners)
 
-- **Speedrun Support**: in 43% of top earners (16.5× its rate across curated roguelikes)
-- **Pre-run Mutators / Challenge Runs**: in 71% of top earners (15.2× its rate across curated roguelikes)
-- **Daily / Weekly Challenge**: in 86% of top earners (12.2× its rate across curated roguelikes)
-- **Multiplicative Scaling**: in 71% of top earners (9.5× its rate across curated roguelikes)
-- **Mod Support / Workshop**: in 86% of top earners (8.7× its rate across curated roguelikes)
-- **Codex / Compendium**: in 71% of top earners (7.8× its rate across curated roguelikes)
-- **Leaderboards**: in 71% of top earners (7.6× its rate across curated roguelikes)
-- **Mid-run Save & Quit**: in 71% of top earners (7.2× its rate across curated roguelikes)
-- **Reroll**: in 57% of top earners (5.9× its rate across curated roguelikes)
-- **Multiple Endings / True Ending**: in 57% of top earners (5.4× its rate across curated roguelikes)
+- **Pre-run Mutators / Challenge Runs**: in 62% of top earners (13.3× its rate across curated roguelikes)
+- **Daily / Weekly Challenge**: in 75% of top earners (10.7× its rate across curated roguelikes)
+- **Multiplicative Scaling**: in 62% of top earners (8.3× its rate across curated roguelikes)
+- **Mod Support / Workshop**: in 75% of top earners (7.6× its rate across curated roguelikes)
+- **Mid-run Save & Quit**: in 75% of top earners (7.6× its rate across curated roguelikes)
+- **Codex / Compendium**: in 62% of top earners (6.9× its rate across curated roguelikes)
+- **Leaderboards**: in 62% of top earners (6.7× its rate across curated roguelikes)
+- **Reroll**: in 62% of top earners (6.5× its rate across curated roguelikes)
+- **Multiple Endings / True Ending**: in 50% of top earners (4.7× its rate across curated roguelikes)
+- **Double-edged Effects**: in 75% of top earners (4.6× its rate across curated roguelikes)
 
 ## Where it lives
 
-Action Roguelite (11), Roguelike Deckbuilder (4), Traditional Roguelike (2), Roguevania (1), Strategy Roguelite (1), Survival Roguelite (1), Survivors-like (1), Puzzle Roguelite (1), Shooter Roguelite (1)
+Action Roguelite (12), Roguelike Deckbuilder (4), Traditional Roguelike (2), Roguevania (1), Strategy Roguelite (1), Survival Roguelite (1), Survivors-like (1), Puzzle Roguelite (1), Shooter Roguelite (1)
 
 Typical launch price of the top earners: $19.99
 

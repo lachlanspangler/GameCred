@@ -51,6 +51,7 @@ mechanics:
   steam_deck_friendly: 2
   shrinking_zone: 3
   ultimate_meter: 3
+  soft_run_limit: 2
 evidence:
   day_night_cycle: Each expedition is Day 1, Day 2, then a Nightlord fight; each day ends with a night boss as the map closes in.
   time_pressure: The Night's Tide circle shrinks on a fixed schedule and drives the whole party toward the day boss.

@@ -4,7 +4,7 @@ _A run can be suspended and resumed later (no save-scumming)._
 
 ## Why this is white space
 
-- 38 paid roguelikes use it (low competition). Their median gross is **$5,384,910**, vs $2,402,947 for comparable games without it: a **2.4× revenue multiple**.
+- 38 paid roguelikes use it (low competition). Their median gross is **$5,384,910**, vs $2,431,952 for comparable games without it: a **2.4× revenue multiple**.
 - 82% of them grossed $1M+, vs 75% of comparable games.
 - Total market for games using it is $1,051,260,840.
 

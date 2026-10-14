@@ -51,6 +51,7 @@ mechanics:
   secret_areas: 3
   run_mutators: 2
   lifesteal: 1
+  knowledge_progression: 2
 evidence:
   physics_simulation: Every pixel is simulated - liquids flow, fire spreads, gases explode, terrain is destructible.
   crafting: Wands are built by arranging spells in slots; spell order, modifiers and triggers define behaviour.

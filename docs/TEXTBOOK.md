@@ -25,7 +25,7 @@ _How a single run is shaped, bounded and repeated._
 
 **Permadeath** (`permadeath`) — Death ends the run and in-run progress resets to a fresh start. Yes — Hades, Slay the Spire. No — checkpoint respawns, or death only costs some currency/gear.
   
-  Δ +0.4 (95% CI -1.8…+2.5) · **neutral** · in 30% of games · tagging κ -0.07 · declining -2.5 pp/yr
+  Δ +0.6 (95% CI -1.5…+2.7) · **neutral** · in 30% of games · tagging κ -0.07 · declining -2.5 pp/yr
   
   Core in: The Binding of Isaac: Rebirth, Risk of Rain 2, Slay the Spire, Slay the Spire 2, Dead Cells · also: Don't Starve, Gunfire Reborn, Enter the Gungeon, Noita
   
@@ -33,13 +33,13 @@ _How a single run is shaped, bounded and repeated._
 
 **Mid-run Save & Quit** (`mid_run_save`) — A run can be suspended and resumed later (no save-scumming).
   
-  Δ +2.1 (95% CI -2.6…+6.1) · **risk reducer** · in 2% of games · tagging κ 0.78
+  Δ +2.1 (95% CI -2.3…+6.2) · **risk reducer** · in 2% of games · tagging κ 0.78
   
   Core in: — · also: PlateUp!, Bad North: Jotunn Edition, Across the Obelisk, Caves of Qud
 
 **Revive / Extra Life** (`second_chance`) — Items or systems that prevent a single death from ending the run.
   
-  Δ -0.4 (95% CI -5.1…+3.9) · **risk reducer** · in 2% of games
+  Δ -0.6 (95% CI -5.2…+3.5) · **risk reducer** · in 2% of games
   
   Core in: For The King, For The King II · also: The Binding of Isaac: Rebirth, Hades, Vampire Survivors, ELDEN RING NIGHTREIGN
   
@@ -47,7 +47,7 @@ _How a single run is shaped, bounded and repeated._
 
 **Extraction / Bank-out** (`extraction`) — Player may leave a run early to keep loot; dying forfeits it.
   
-  Δ +0.2 (95% CI -7.4…+8.3) · **neutral** · in 1% of games · tagging κ 0.65
+  Δ +0.5 (95% CI -7.7…+9.1) · **neutral** · in 1% of games · tagging κ 0.65
   
   Core in: Loop Hero, Moonlighter, Witchfire, ZERO Sievert, Quasimorph · also: Turnip Boy Robs a Bank, Survivor Mercs, Realm of the Mad God Exalt, SULFUR
   
@@ -65,7 +65,7 @@ _How a single run is shaped, bounded and repeated._
   
   effect: insufficient data · in 0% of games
   
-  Core in: Blue Prince · also: DEATHLOOP, Against the Storm, Invisible, Inc.
+  Core in: Blue Prince, The Swords of Ditto: Mormo's Curse · also: ELDEN RING NIGHTREIGN, DEATHLOOP, Atomicrops, Legend of Keepers: Career of a Dungeon Manager
   
   > *Blue Prince*: Each day ends when the step counter runs out, not through death.
 
@@ -81,7 +81,7 @@ _How a single run is shaped, bounded and repeated._
   
   effect: insufficient data · in 0% of games
   
-  Core in: Rogue Legacy, Rogue Legacy 2 · also: Wildermyth, Sunless Sea, The Last Stand: Aftermath, Sunless Skies: Sovereign Edition
+  Core in: Rogue Legacy, Rogue Legacy 2 · also: Mewgenics, Wildermyth, Sunless Sea, The Last Stand: Aftermath
   
   > *Rogue Legacy 2*: Each run picks one of several heirs with random classes and traits.
 
@@ -98,7 +98,7 @@ _How a single run is shaped, bounded and repeated._
 
 **Procedural Levels** (`procgen_levels`) — Level layouts are generated per run.
   
-  Δ +2.2 (95% CI +0.0…+4.3) · **differentiator** · in 15% of games · tagging κ 0.72 · declining -2.7 pp/yr
+  Δ +1.8 (95% CI -0.2…+3.8) · **differentiator** · in 16% of games · tagging κ 0.72 · declining -2.5 pp/yr
   
   Core in: The Binding of Isaac: Rebirth, Dead Cells, Enter the Gungeon, Noita, The Binding of Isaac · also: Against the Storm, Crypt of the NecroDancer, Moonlighter, Descenders
   
@@ -106,7 +106,7 @@ _How a single run is shaped, bounded and repeated._
 
 **Branching Node Map** (`node_map`) — Player chooses a path through a graph of encounter nodes (StS-style map).
   
-  Δ -2.0 (95% CI -6.0…+1.7) · **risk reducer** · in 2% of games · tagging κ 0.81
+  Δ -1.9 (95% CI -5.8…+1.9) · **risk reducer** · in 2% of games · tagging κ 0.81
   
   Core in: Slay the Spire, Slay the Spire 2, Inscryption, FTL: Faster Than Light, Darkest Dungeon II · also: Descenders, Peglin, Haste, Across the Obelisk
   
@@ -114,7 +114,7 @@ _How a single run is shaped, bounded and repeated._
 
 **Room-based Floors** (`room_based_floors`) — Floors composed of discrete rooms cleared one at a time (Isaac/Hades-style).
   
-  Δ +0.5 (95% CI -3.4…+4.1) · **neutral** · in 3% of games · tagging κ 0.84
+  Δ +0.6 (95% CI -3.4…+4.2) · **neutral** · in 3% of games · tagging κ 0.84
   
   Core in: The Binding of Isaac: Rebirth, Hades, Hades II, Enter the Gungeon, The Binding of Isaac · also: Skul: The Hero Slayer, Warm Snow, BlazBlue Entropy Effect, Moonlighter
   
@@ -130,7 +130,7 @@ _How a single run is shaped, bounded and repeated._
 
 **Open Procedural World** (`open_procgen_world`) — Continuous generated world explored freely within a run.
   
-  Δ -3.7 (95% CI -8.2…+1.4) · **risk reducer** · in 2% of games · tagging κ 1.00
+  Δ -4.1 (95% CI -8.9…+0.9) · **risk reducer** · in 2% of games · tagging κ 1.00
   
   Core in: Don't Starve, For The King, Tribes of Midgard, Ravenswatch, For The King II · also: Caves of Qud, Pixel Piracy, One Way Heroics, Wizard with a Gun
   
@@ -138,7 +138,7 @@ _How a single run is shaped, bounded and repeated._
 
 **Seeded Runs** (`seeded_runs`) — Players can enter/share a seed to replay an identical run.
   
-  Δ +6.1 (95% CI +2.2…+9.9) · **differentiator** · in 1% of games · tagging κ 1.00
+  Δ +6.1 (95% CI +2.2…+9.7) · **differentiator** · in 1% of games · tagging κ 1.00
   
   Core in: — · also: The Binding of Isaac: Rebirth, PlateUp!, Crypt of the NecroDancer, Descenders
   
@@ -146,7 +146,7 @@ _How a single run is shaped, bounded and repeated._
 
 **Daily / Weekly Challenge** (`daily_challenge`) — Shared fixed-seed challenge with leaderboard on a schedule.
   
-  Δ +1.5 (95% CI -2.8…+5.8) · **risk reducer** · in 1% of games
+  Δ +1.6 (95% CI -2.7…+5.7) · **risk reducer** · in 1% of games
   
   Core in: — · also: The Binding of Isaac: Rebirth, Slay the Spire, Dead Cells, Against the Storm
   
@@ -165,7 +165,7 @@ _How a single run is shaped, bounded and repeated._
 
 **Acts / Biomes** (`act_structure`) — Run divided into distinct themed stages with escalating difficulty.
   
-  Δ -0.2 (95% CI -2.8…+2.6) · **neutral** · in 8% of games · tagging κ 0.60
+  Δ -0.0 (95% CI -2.7…+2.8) · **neutral** · in 8% of games · tagging κ 0.60
   
   Core in: The Binding of Isaac: Rebirth, Hades, Slay the Spire, Slay the Spire 2, Dead Cells · also: Hades II, Gunfire Reborn, Enter the Gungeon, FTL: Faster Than Light
   
@@ -173,7 +173,7 @@ _How a single run is shaped, bounded and repeated._
 
 **Boss Gates** (`boss_gates`) — Stage ends with a boss that must be defeated to proceed.
   
-  Δ -0.2 (95% CI -2.8…+2.4) · **red flag** · in 13% of games · tagging κ 0.81
+  Δ -1.1 (95% CI -3.4…+1.4) · **red flag** · in 13% of games · tagging κ 0.81
   
   Core in: The Binding of Isaac: Rebirth, Risk of Rain 2, Hades, Slay the Spire, Slay the Spire 2 · also: Balatro, ELDEN RING NIGHTREIGN, Dead Cells, Inscryption
   
@@ -181,7 +181,7 @@ _How a single run is shaped, bounded and repeated._
 
 **Short Runs (<30 min)** (`short_runs`) — A typical full run takes under ~30 minutes.
   
-  Δ +4.8 (95% CI +1.3…+7.9) · **differentiator** · in 3% of games · tagging κ 0.60
+  Δ +4.8 (95% CI +1.5…+8.0) · **differentiator** · in 3% of games · tagging κ 0.60
   
   Core in: Cult of the Lamb, Megabonk, ROUNDS, Super Auto Pets, 20 Minutes Till Dawn · also: Nuclear Throne, Post Void, Downwell, Shotgun King: The Final Checkmate
   
@@ -189,13 +189,13 @@ _How a single run is shaped, bounded and repeated._
 
 **Long Runs (>90 min)** (`long_runs`) — A typical full run takes over ~90 minutes.
   
-  Δ -2.0 (95% CI -6.5…+2.2) · **risk reducer** · in 2% of games · tagging κ 1.00
+  Δ -2.2 (95% CI -6.9…+2.0) · **risk reducer** · in 2% of games · tagging κ 1.00
   
   Core in: Don't Starve, For The King, Stoneshard, Tribes of Midgard, Barony · also: Wildermyth, For The King II, Griftlands, The Last Spell
 
 **Endless Mode** (`endless_mode`) — Run can continue indefinitely past the nominal end.
   
-  Δ +1.2 (95% CI -2.8…+5.2) · **neutral** · in 2% of games · tagging κ 0.84
+  Δ +1.3 (95% CI -3.2…+5.4) · **neutral** · in 2% of games · tagging κ 0.84
   
   Core in: Risk of Rain 2, Clone Drone in the Danger Zone, Crab Champions, Nova Drift, Crimsonland · also: Vampire Survivors, Balatro, Brotato, Don't Starve
   
@@ -203,7 +203,7 @@ _How a single run is shaped, bounded and repeated._
 
 **Run Timer / Time Pressure** (`time_pressure`) — Real elapsed time raises difficulty or causes failure. Yes — RoR2 difficulty clock, survive-N-minutes goals. No — per-turn/step limits (turn_escalation) or optional speedrun timers.
   
-  Δ +1.5 (95% CI -2.3…+5.5) · **neutral** · in 3% of games · tagging κ 0.21
+  Δ +1.6 (95% CI -2.4…+5.7) · **neutral** · in 3% of games · tagging κ 0.21
   
   Core in: Risk of Rain 2, Vampire Survivors, ELDEN RING NIGHTREIGN, Megabonk, Against the Storm · also: Risk of Rain (2013), 20 Minutes Till Dawn, Risk of Rain Returns, Dome Keeper
   
@@ -219,7 +219,7 @@ _How a single run is shaped, bounded and repeated._
 
 **Multiple Endings / True Ending** (`multiple_endings`) — Run outcomes branch into different endings, often a hidden true ending.
   
-  Δ +5.7 (95% CI +2.5…+8.7) · **differentiator** · in 2% of games · tagging κ 0.00
+  Δ +5.7 (95% CI +2.4…+8.7) · **differentiator** · in 2% of games · tagging κ 0.00
   
   Core in: The Binding of Isaac: Rebirth, The Binding of Isaac, Spelunky 2, Sunless Sea, One Step From Eden · also: Sundered: Eldritch Edition, Sunless Skies: Sovereign Edition, Cogmind, Out There: Omega Edition
   
@@ -227,7 +227,7 @@ _How a single run is shaped, bounded and repeated._
 
 **Per-turn Escalation** (`turn_escalation`) — Pressure rises per turn/jump/action rather than real time (FTL rebel fleet, Invisible Inc alarm).
   
-  Δ +3.4 (95% CI -2.4…+8.6) · **risk reducer** · in 1% of games · tagging κ 0.65
+  Δ +3.0 (95% CI -2.4…+8.0) · **risk reducer** · in 1% of games · tagging κ 0.65
   
   Core in: FTL: Faster Than Light, Dungeon of the Endless, WORLD OF HORROR, Invisible, Inc., One Way Heroics · also: dotAGE, Cardboard Town, As Far As The Eye, Overland
   
@@ -235,7 +235,7 @@ _How a single run is shaped, bounded and repeated._
 
 **In-run Clock / Day Cycle** (`day_night_cycle`) — An in-run day count or clock structures exploration and forces the climax (Ravenswatch, Atomicrops).
   
-  Δ -0.8 (95% CI -6.8…+5.0) · **risk reducer** · in 1% of games
+  Δ -1.6 (95% CI -8.2…+4.4) · **risk reducer** · in 1% of games
   
   Core in: ELDEN RING NIGHTREIGN, Don't Starve, DEATHLOOP, PlateUp!, Tribes of Midgard · also: Ravenswatch, Kingdom: New Lands, Atomicrops, Moon Hunters
   
@@ -243,7 +243,7 @@ _How a single run is shaped, bounded and repeated._
 
 **Build / Combat Phases** (`prep_combat_phases`) — Each cycle alternates a preparation/build phase with a combat phase (The Last Spell, Brotato shop).
   
-  Δ +6.1 (95% CI +0.9…+10.9) · **differentiator** · in 1% of games · tagging κ 0.46
+  Δ +6.2 (95% CI +0.7…+11.1) · **risk reducer** · in 1% of games · tagging κ 0.46
   
   Core in: Brotato, Super Auto Pets, PlateUp!, 9 Kings, Dome Keeper · also: Backpack Battles, The Last Spell, God Of Weapons, Orcs Must Die! Deathtrap
   
@@ -258,7 +258,7 @@ _What persists between runs and how it changes future runs._
 
 **Permanent Stat Upgrades** (`permanent_stat_upgrades`) — Currency spent between runs on permanent stat boosts (Rogue Legacy, Hades mirror).
   
-  Δ +2.5 (95% CI -0.4…+5.3) · **neutral** · in 4% of games · tagging κ 0.63 · rising +0.9 pp/yr
+  Δ +2.6 (95% CI -0.1…+5.4) · **neutral** · in 4% of games · tagging κ 0.63 · rising +0.8 pp/yr
   
   Core in: Hades, Vampire Survivors, Deep Rock Galactic: Survivor, HoloCure - Save the Fans!, Soulstone Survivors · also: Lost Castle, Rogue Legacy, Witchfire, Yet Another Zombie Survivors
   
@@ -266,7 +266,7 @@ _What persists between runs and how it changes future runs._
 
 **Meta Skill Tree** (`skill_tree_meta`) — Branching tree of persistent unlocks/talents.
   
-  Δ -0.7 (95% CI -5.3…+3.8) · **risk reducer** · in 1% of games · tagging κ 0.52
+  Δ -0.6 (95% CI -5.0…+3.7) · **risk reducer** · in 1% of games · tagging κ 0.52
   
   Core in: Darkest Dungeon II, Children of Morta, Rogue Legacy, Rogue Legacy 2, Nordic Ashes: Survivors of Ragnarok · also: Sundered: Eldritch Edition, Nightmare Reaper, Immortal Redneck, Fury Unleashed
   
@@ -274,7 +274,7 @@ _What persists between runs and how it changes future runs._
 
 **Hub / Base Building** (`hub_building`) — Player builds or upgrades a persistent hub between runs.
   
-  Δ +0.2 (95% CI -3.7…+3.5) · **neutral** · in 3% of games · tagging κ 1.00
+  Δ +0.3 (95% CI -3.3…+4.1) · **neutral** · in 3% of games · tagging κ 1.00
   
   Core in: Darkest Dungeon, Cult of the Lamb, Against the Storm, Loop Hero, BALL x PIT · also: Moonlighter, Roboquest, Heroes of Hammerwatch, Elin
   
@@ -282,7 +282,7 @@ _What persists between runs and how it changes future runs._
 
 **Life-sim Hub Layer** (`life_sim_hub`) — Non-combat social/farming/management layer between runs (Cult of the Lamb, Atomicrops).
   
-  Δ +3.0 (95% CI -3.1…+9.2) · **neutral** · in 2% of games · tagging κ 1.00
+  Δ +3.5 (95% CI -2.4…+9.3) · **neutral** · in 2% of games · tagging κ 1.00
   
   Core in: Cult of the Lamb, Elin, Dreamscaper, Boyfriend Dungeon, Cuisineer · also: Hades II, Mewgenics, Atomicrops
   
@@ -301,7 +301,7 @@ _What persists between runs and how it changes future runs._
 
 **Item/Card Pool Unlocks** (`unlock_items`) — Play (runs, wins, meta currency) adds new items/cards/relics to the in-run drop pool. Yes — Isaac, StS card unlocks. No — only characters unlock, or only stat upgrades.
   
-  Δ +6.7 (95% CI +4.8…+8.6) · **differentiator** · in 18% of games · tagging κ 0.33
+  Δ +5.4 (95% CI +3.5…+7.3) · **differentiator** · in 20% of games · tagging κ 0.33
   
   Core in: The Binding of Isaac: Rebirth, Risk of Rain 2, Vampire Survivors, Dead Cells, Megabonk · also: Enter the Gungeon, The Binding of Isaac, Halls of Torment, Risk of Rain (2013)
   
@@ -309,7 +309,7 @@ _What persists between runs and how it changes future runs._
 
 **Unlockable Characters** (`unlock_characters`) — New playable characters gained through play.
   
-  Δ +1.5 (95% CI -1.0…+3.9) · **risk reducer** · in 8% of games · tagging κ 0.80 · declining -0.7 pp/yr
+  Δ +1.0 (95% CI -1.5…+3.6) · **risk reducer** · in 9% of games · tagging κ 0.80 · declining -0.7 pp/yr
   
   Core in: The Binding of Isaac: Rebirth, Risk of Rain 2, Vampire Survivors, Brotato, Don't Starve · also: Megabonk, The Binding of Isaac, HoloCure - Save the Fans!, Halls of Torment
   
@@ -317,7 +317,7 @@ _What persists between runs and how it changes future runs._
 
 **Challenge-gated Unlocks** (`achievement_unlocks`) — Specific feats (not currency) unlock content (Isaac/RoR2 achievements).
   
-  Δ +1.8 (95% CI -1.8…+5.0) · **risk reducer** · in 2% of games · tagging κ 0.87
+  Δ +1.9 (95% CI -1.6…+5.1) · **risk reducer** · in 2% of games · tagging κ 0.87
   
   Core in: The Binding of Isaac: Rebirth, Risk of Rain 2, Vampire Survivors, Brotato, Megabonk · also: FTL: Faster Than Light, The Binding of Isaac, Halls of Torment, Risk of Rain (2013)
   
@@ -335,7 +335,7 @@ _What persists between runs and how it changes future runs._
   
   effect: insufficient data · in 0% of games
   
-  Core in: Witchfire, Boyfriend Dungeon · also: Returnal, Never Split the Party
+  Core in: Witchfire, Boyfriend Dungeon · also: Returnal, Rotwood, Never Split the Party
   
   > *Witchfire*: Weapons gain persistent mastery levels and perks through use.
 
@@ -344,7 +344,7 @@ _What persists between runs and how it changes future runs._
 
 **Ascension / Heat Ladder** (`ascension_ladder`) — Stacking post-win difficulty levels (Ascension, Heat, Prestige).
   
-  Δ +4.6 (95% CI +1.1…+8.1) · **differentiator** · in 2% of games · tagging κ 0.53
+  Δ +4.6 (95% CI +0.8…+7.8) · **differentiator** · in 2% of games · tagging κ 0.53
   
   Core in: Slay the Spire, Balatro, Dead Cells, Against the Storm, 20 Minutes Till Dawn · also: Monster Train, Peglin, Rogue Legacy 2, Luck be a Landlord
   
@@ -352,7 +352,7 @@ _What persists between runs and how it changes future runs._
 
 **Modular Difficulty Modifiers** (`modular_difficulty`) — Player toggles individual handicap modifiers for rewards (Hades Pact).
   
-  Δ -3.0 (95% CI -6.8…+1.2) · **risk reducer** · in 1% of games
+  Δ -2.9 (95% CI -6.8…+0.9) · **risk reducer** · in 1% of games
   
   Core in: Risk of Rain 2, Hades, Hades II, Wildfrost, GTTOD · also: Slice & Dice, Shattered Pixel Dungeon, City of Brass, Gunlocked
   
@@ -363,7 +363,7 @@ _What persists between runs and how it changes future runs._
 
 **Story Progresses Across Runs** (`narrative_across_runs`) — Dying advances narrative; NPCs react to runs (Hades).
   
-  Δ +3.6 (95% CI +0.3…+6.6) · **risk reducer** · in 2% of games · tagging κ 0.78
+  Δ +3.5 (95% CI -0.0…+6.7) · **risk reducer** · in 2% of games · tagging κ 0.78
   
   Core in: Hades, Inscryption, Hades II, DEATHLOOP, Children of Morta · also: Blue Prince, Returnal, GNOSIA, Crying Suns
   
@@ -371,7 +371,7 @@ _What persists between runs and how it changes future runs._
 
 **Codex / Compendium** (`lore_codex`) — Collectible encyclopedia of discovered items/enemies.
   
-  Δ +3.2 (95% CI -1.3…+7.5) · **risk reducer** · in 1% of games · tagging κ 0.65
+  Δ +3.2 (95% CI -1.0…+7.4) · **risk reducer** · in 1% of games · tagging κ 0.65
   
   Core in: GNOSIA · also: Risk of Rain 2, Hades, Vampire Survivors, Hades II
   
@@ -379,7 +379,7 @@ _What persists between runs and how it changes future runs._
 
 **NPC Relationships** (`npc_relationships`) — Persistent relationship/affinity meters with characters.
   
-  Δ +4.0 (95% CI -1.1…+9.0) · **neutral** · in 2% of games · tagging κ 1.00
+  Δ +4.3 (95% CI -0.8…+9.2) · **neutral** · in 2% of games · tagging κ 1.00
   
   Core in: Hades, Hades II, Darkest Dungeon II, Wildermyth, Griftlands · also: GNOSIA, Dreamscaper, Boyfriend Dungeon, Cult of the Lamb
   
@@ -389,7 +389,7 @@ _What persists between runs and how it changes future runs._
   
   effect: insufficient data · in 0% of games
   
-  Core in: Blue Prince · also: Don't Starve, DEATHLOOP, Inscryption, Sunless Sea
+  Core in: Blue Prince, Receiver · also: Don't Starve, Noita, DEATHLOOP, Inscryption
   
   > *Blue Prince*: Progress across days is mostly learned clues, puzzle solutions and house rules rather than unlocks.
 
@@ -402,7 +402,7 @@ _How the player's power grows inside a run and how builds form._
 
 **Pick 1 of N Rewards** (`pick_one_of_n`) — Rewards are offered as a small set (usually 2–4) and you take exactly one. Yes — StS card rewards, Hades boons. No — fixed drops, loot you simply pick up, or shops where you can buy several.
   
-  Δ +3.7 (95% CI +0.9…+6.5) · **differentiator** · in 7% of games · tagging κ 0.16 · rising +1.1 pp/yr
+  Δ +3.8 (95% CI +0.9…+6.7) · **differentiator** · in 7% of games · tagging κ 0.16 · rising +1.0 pp/yr
   
   Core in: Hades, Vampire Survivors, Slay the Spire, Slay the Spire 2, Inscryption · also: Hades II, Brotato, Megabonk, Gunfire Reborn
   
@@ -410,7 +410,7 @@ _How the player's power grows inside a run and how builds form._
 
 **Level-up Choice** (`level_up_choices`) — In-run XP leads to level-ups that present upgrade choices.
   
-  Δ +0.6 (95% CI -2.4…+3.6) · **risk reducer** · in 3% of games · tagging κ 0.78
+  Δ +0.7 (95% CI -2.5…+3.5) · **differentiator** · in 3% of games · tagging κ 0.78
   
   Core in: Vampire Survivors, Brotato, Megabonk, Deep Rock Galactic: Survivor, HoloCure - Save the Fans! · also: Clone Drone in the Danger Zone, Halls of Torment, 20 Minutes Till Dawn, BALL x PIT
   
@@ -418,7 +418,7 @@ _How the player's power grows inside a run and how builds form._
 
 **Reroll** (`reroll`) — Spend resource to re-randomize offered choices.
   
-  Δ +3.7 (95% CI -0.7…+7.5) · **risk reducer** · in 2% of games · tagging κ 0.44
+  Δ +3.8 (95% CI -0.4…+8.0) · **risk reducer** · in 2% of games · tagging κ 0.44
   
   Core in: Balatro, Brotato, Super Auto Pets, Backpack Battles, Slice & Dice · also: Hades, Vampire Survivors, Dead Cells, Hades II
   
@@ -434,7 +434,7 @@ _How the player's power grows inside a run and how builds form._
 
 **Starting Loadout Choice** (`loadout_start`) — Pre-run selection of weapon/kit/deck that shapes the run.
   
-  Δ -0.8 (95% CI -4.0…+2.3) · **neutral** · in 4% of games · tagging κ 0.73
+  Δ -0.7 (95% CI -4.4…+2.6) · **neutral** · in 4% of games · tagging κ 0.73
   
   Core in: Hades, Hades II, DEATHLOOP, 20 Minutes Till Dawn, Monster Train · also: Dome Keeper, Into the Breach, Wizard of Legend, Witchfire
   
@@ -445,7 +445,7 @@ _How the player's power grows inside a run and how builds form._
 
 **Flat Stat Increments** (`flat_stat_scaling`) — Upgrades add flat numbers (+5 damage, +10 HP).
   
-  Δ -0.5 (95% CI -5.6…+4.3) · **risk reducer** · in 2% of games · tagging κ 0.37
+  Δ -0.3 (95% CI -5.6…+4.3) · **risk reducer** · in 2% of games · tagging κ 0.37
   
   Core in: Brotato, Super Auto Pets, Rogue Legacy, Never Split the Party · also: The Binding of Isaac: Rebirth, Vampire Survivors, ELDEN RING NIGHTREIGN, Dead Cells
   
@@ -453,7 +453,7 @@ _How the player's power grows inside a run and how builds form._
 
 **Multiplicative Scaling** (`multiplicative_scaling`) — Multipliers compound (xMult, % stacking) enabling exponential builds.
   
-  Δ +9.0 (95% CI +5.0…+12.6) · **differentiator** · in 1% of games · tagging κ 0.84
+  Δ +9.1 (95% CI +5.1…+12.8) · **differentiator** · in 1% of games · tagging κ 0.84
   
   Core in: Balatro, ROUNDS, Crab Champions, Nubby's Number Factory, Ballionaire · also: Wordatro!, The Binding of Isaac: Rebirth, Risk of Rain 2, Slay the Spire
   
@@ -485,7 +485,7 @@ _How the player's power grows inside a run and how builds form._
 
 **Explicit Synergies** (`synergies`) — Designed interactions between items/abilities that multiply effect.
   
-  Δ +5.8 (95% CI +3.6…+8.1) · **differentiator** · in 12% of games · tagging κ 0.87 · rising +2.5 pp/yr
+  Δ +5.0 (95% CI +2.8…+7.3) · **differentiator** · in 13% of games · tagging κ 0.87 · rising +2.3 pp/yr
   
   Core in: The Binding of Isaac: Rebirth, Risk of Rain 2, Hades, Slay the Spire, Slay the Spire 2 · also: Balatro, Hades II, Enter the Gungeon, Noita
   
@@ -505,7 +505,7 @@ _How the player's power grows inside a run and how builds form._
 
 **Build Archetypes** (`build_archetypes`) — Distinct, nameable build strategies emerge (poison build, crit build).
   
-  Δ +5.7 (95% CI +2.7…+8.6) · **differentiator** · in 4% of games · tagging κ 0.62 · rising +0.8 pp/yr
+  Δ +5.8 (95% CI +2.8…+8.6) · **differentiator** · in 4% of games · tagging κ 0.62 · rising +0.7 pp/yr
   
   Core in: Hades, Slay the Spire, Slay the Spire 2, Balatro, Dead Cells · also: Hades II, Brotato, Warm Snow, Crab Champions
   
@@ -516,7 +516,7 @@ _How the player's power grows inside a run and how builds form._
 
 **Item/Card Upgrading** (`item_upgrading`) — Existing items/cards can be improved mid-run (smith, upgrade).
   
-  Δ -0.2 (95% CI -3.3…+2.9) · **red flag** · in 4% of games · tagging κ 0.49
+  Δ -0.1 (95% CI -3.1…+3.1) · **neutral** · in 4% of games · tagging κ 0.49
   
   Core in: FTL: Faster Than Light, Super Auto Pets, Monster Train, Witchfire, The Bazaar · also: Griftlands, Bad North: Jotunn Edition, Across the Obelisk, Monster Train 2
   
@@ -532,7 +532,7 @@ _How the player's power grows inside a run and how builds form._
 
 **Distinct Characters / Classes** (`character_classes`) — Multiple playable characters with different kits.
   
-  Δ +4.4 (95% CI +2.3…+6.7) · **differentiator** · in 17% of games · tagging κ 1.00
+  Δ +3.4 (95% CI +1.2…+5.4) · **differentiator** · in 18% of games · tagging κ 1.00
   
   Core in: Risk of Rain 2, Slay the Spire, Slay the Spire 2, ELDEN RING NIGHTREIGN, Darkest Dungeon · also: Brotato, Megabonk, Gunfire Reborn, Skul: The Hero Slayer
   
@@ -540,7 +540,7 @@ _How the player's power grows inside a run and how builds form._
 
 **Ability Slots / Boons** (`talent_slots`) — Fixed ability slots filled/overwritten by run rewards (Hades boons).
   
-  Δ +0.5 (95% CI -5.6…+6.2) · **neutral** · in 1% of games · tagging κ 0.46
+  Δ +0.5 (95% CI -5.8…+6.4) · **neutral** · in 1% of games · tagging κ 0.46
   
   Core in: Hades, Hades II, Wizard of Legend, Astral Ascent, Sker Ritual · also: SWORN, Teenage Mutant Ninja Turtles: Splintered Fate, Spiritfall, Dandy Ace
   
@@ -564,7 +564,7 @@ _How the player's power grows inside a run and how builds form._
 
 **Party / Roster Building** (`party_building`) — Recruit and manage multiple heroes or units within a run (Darkest Dungeon, Slice & Dice).
   
-  Δ -1.7 (95% CI -4.6…+1.6) · **neutral** · in 5% of games · tagging κ 0.62
+  Δ -1.4 (95% CI -4.4…+1.5) · **red flag** · in 5% of games · tagging κ 0.62
   
   Core in: Darkest Dungeon, Darkest Dungeon II, Wildermyth, Dungeon of the Endless, Chrono Ark · also: The Last Spell, Across the Obelisk, Death Road to Canada, Pixel Piracy
   
@@ -572,7 +572,7 @@ _How the player's power grows inside a run and how builds form._
 
 **Summons / Minions** (`summons_minions`) — Persistent allied units summoned or deployed; builds around them (Monster Train, Rift Wizard).
   
-  Δ +2.9 (95% CI -1.2…+6.4) · **risk reducer** · in 1% of games · tagging κ 0.00
+  Δ +3.0 (95% CI -1.0…+6.6) · **risk reducer** · in 1% of games · tagging κ 0.00
   
   Core in: Monster Train, Monster Train 2, Wildfrost, Iratus: Lord of the Dead, Boneraiser Minions · also: KeeperRL, Inkulinati, Neon Abyss, Crying Suns
   
@@ -580,7 +580,7 @@ _How the player's power grows inside a run and how builds form._
 
 **Companions / Pets** (`companions_pets`) — Autonomous companions or familiars that follow and assist the player (Isaac familiars, Neon Abyss pets).
   
-  Δ +3.1 (95% CI -0.9…+7.4) · **risk reducer** · in 1% of games
+  Δ +3.2 (95% CI -1.0…+7.5) · **risk reducer** · in 1% of games
   
   Core in: The Binding of Isaac: Rebirth, Neon Abyss · also: Risk of Rain 2, Hades II, Don't Starve, Enter the Gungeon
   
@@ -588,7 +588,7 @@ _How the player's power grows inside a run and how builds form._
 
 **Monster Capture / Possession** (`monster_capture`) — Capture, tame or possess enemies to use as allies or forms (Abyss Odyssey, Patch Quest).
   
-  Δ -3.5 (95% CI -9.4…+2.1) · **neutral** · in 2% of games
+  Δ -3.1 (95% CI -9.6…+3.4) · **neutral** · in 2% of games
   
   Core in: Patch Quest, Abyss Odyssey · also: Tangledeep, Elin, Legend of Dungeon
   
@@ -604,7 +604,7 @@ _How the player's power grows inside a run and how builds form._
 
 **Pickup Collection / Magnet** (`pickup_magnet_economy`) — XP/currency drops must be physically collected; pickup radius is an upgradable stat (survivors-likes).
   
-  Δ +0.9 (95% CI -4.0…+4.9) · **risk reducer** · in 1% of games · tagging κ 0.00
+  Δ +1.0 (95% CI -3.9…+5.6) · **risk reducer** · in 1% of games · tagging κ 0.00
   
   Core in: Vampire Survivors, Deep Rock Galactic: Survivor, 20 Minutes Till Dawn · also: Brotato, Megabonk, HoloCure - Save the Fans!, Halls of Torment
   
@@ -628,7 +628,7 @@ _How the player's power grows inside a run and how builds form._
 
 **Projectile Modifiers** (`projectile_modifiers`) — Upgrades change projectile behaviour (pierce, bounce, split, homing, ricochet) — Isaac tears, Gungeon, Nova Drift.
   
-  Δ +6.3 (95% CI +1.4…+11.4) · **differentiator** · in 1% of games · tagging κ 0.00
+  Δ +6.4 (95% CI +0.6…+11.3) · **risk reducer** · in 1% of games · tagging κ 0.00
   
   Core in: The Binding of Isaac: Rebirth, Enter the Gungeon, Noita, The Binding of Isaac, ROUNDS · also: Crab Champions, 20 Minutes Till Dawn, Magicraft, Nova Drift
   
@@ -664,15 +664,15 @@ _How the player's power grows inside a run and how builds form._
 
 **Luck Stat** (`luck_stat`) — An explicit luck stat skews random outcomes (Isaac, Brotato, Vampire Survivors).
   
-  effect: insufficient data · in 0% of games · tagging κ 0.00
+  effect: insufficient data · in 1% of games · tagging κ 0.00
   
-  Core in: The Binding of Isaac: Rebirth, Vampire Survivors, Brotato · also: Megabonk, The Binding of Isaac, Backpack Battles, Rogue: Genesia
+  Core in: The Binding of Isaac: Rebirth, Vampire Survivors, Brotato · also: Megabonk, The Binding of Isaac, Mewgenics, Backpack Battles
   
   > *The Binding of Isaac: Rebirth*: Luck is an explicit character stat that scales proc chances of many tear effects and drops.
 
 **Movement Speed Scaling** (`movement_speed_scaling`) — Move speed is an upgradable stat central to survival or builds (survivors-likes, Isaac).
   
-  Δ +1.8 (95% CI -2.7…+6.4) · **risk reducer** · in 1% of games · tagging κ 0.00
+  Δ +1.9 (95% CI -2.4…+6.3) · **risk reducer** · in 1% of games · tagging κ 0.00
   
   Core in: — · also: The Binding of Isaac: Rebirth, Vampire Survivors, Brotato, Megabonk
 
@@ -685,7 +685,7 @@ _Objects, resources and markets inside a run._
 
 **Passive Relics / Trinkets** (`passive_relics`) — Persistent passive items modifying rules.
   
-  Δ +7.5 (95% CI +5.2…+9.5) · **differentiator** · in 15% of games · tagging κ 0.47 · rising +1.2 pp/yr
+  Δ +6.3 (95% CI +4.3…+8.4) · **differentiator** · in 16% of games · tagging κ 0.47 · rising +1.3 pp/yr
   
   Core in: The Binding of Isaac: Rebirth, Risk of Rain 2, Slay the Spire, Slay the Spire 2, Balatro · also: Brotato, Megabonk, Gunfire Reborn, The Binding of Isaac
   
@@ -693,7 +693,7 @@ _Objects, resources and markets inside a run._
 
 **Active Items** (`active_items`) — Usable items with charges or cooldowns.
   
-  Δ +0.7 (95% CI -2.6…+3.7) · **risk reducer** · in 2% of games · tagging κ 0.52
+  Δ +0.6 (95% CI -2.9…+4.0) · **risk reducer** · in 2% of games · tagging κ 0.52
   
   Core in: The Binding of Isaac: Rebirth, Enter the Gungeon, The Binding of Isaac, Heat Signature · also: Risk of Rain 2, Dead Cells, Realm of the Mad God Exalt, DEATHLOOP
   
@@ -701,7 +701,7 @@ _Objects, resources and markets inside a run._
 
 **Consumables** (`consumables`) — Single-use items spent on use (potions, bombs, scrolls). Yes — StS potions, Isaac pills/cards. No — recharging active items, currency, or permanent passive pickups.
   
-  Δ -3.0 (95% CI -5.9…-0.3) · **neutral** · in 5% of games · tagging κ 0.32 · declining -1.2 pp/yr
+  Δ -3.0 (95% CI -5.8…-0.2) · **neutral** · in 5% of games · tagging κ 0.32 · declining -1.2 pp/yr
   
   Core in: Balatro, Inscryption, Barony, Caves of Qud, Baldi's Basics Plus · also: LET IT DIE, Alina of the Arena, Rampage Knights, Shattered Pixel Dungeon
   
@@ -709,7 +709,7 @@ _Objects, resources and markets inside a run._
 
 **Weapon Variety** (`weapons_variety`) — Many distinct weapons with different behaviours.
   
-  Δ +0.8 (95% CI -2.0…+3.5) · **risk reducer** · in 5% of games · tagging κ 0.71
+  Δ +0.9 (95% CI -1.9…+3.6) · **risk reducer** · in 5% of games · tagging κ 0.71
   
   Core in: Vampire Survivors, ELDEN RING NIGHTREIGN, Dead Cells, Brotato, Gunfire Reborn · also: Enter the Gungeon, Noita, Deep Rock Galactic: Survivor, Crab Champions
   
@@ -717,7 +717,7 @@ _Objects, resources and markets inside a run._
 
 **Rarity Tiers** (`item_rarity`) — Items stratified by rarity with power correlated to rarity.
   
-  Δ +3.1 (95% CI +0.1…+6.2) · **risk reducer** · in 3% of games · tagging κ 0.53
+  Δ +3.2 (95% CI -0.1…+6.4) · **risk reducer** · in 3% of games · tagging κ 0.53
   
   Core in: Risk of Rain 2, ELDEN RING NIGHTREIGN, Brotato, Megabonk, Enter the Gungeon · also: Skul: The Hero Slayer, Hero Siege, Realm of the Mad God Exalt, Crab Champions
   
@@ -725,7 +725,7 @@ _Objects, resources and markets inside a run._
 
 **Cursed Items** (`cursed_items`) — Items with mandatory downsides or that clog inventory/deck.
   
-  Δ -2.0 (95% CI -6.7…+1.9) · **risk reducer** · in 2% of games
+  Δ -1.9 (95% CI -6.2…+2.4) · **risk reducer** · in 2% of games
   
   Core in: Barony, Returnal, Curse of the Dead Gods, Knock on the Coffin Lid, Blazing Beaks · also: Shattered Pixel Dungeon, The Binding of Isaac: Rebirth, Risk of Rain 2, Slay the Spire
   
@@ -736,7 +736,7 @@ _Objects, resources and markets inside a run._
 
 **Shops / Merchants** (`shops`) — Spend in-run currency at shops.
   
-  Δ +1.1 (95% CI -1.1…+3.3) · **risk reducer** · in 13% of games · tagging κ 0.68 · declining -0.8 pp/yr
+  Δ +0.4 (95% CI -1.8…+2.7) · **neutral** · in 14% of games · tagging κ 0.68 · declining -0.8 pp/yr
   
   Core in: Balatro, Brotato, FTL: Faster Than Light, For The King, Super Auto Pets · also: Backpack Battles, Nubby's Number Factory, For The King II, The Bazaar
   
@@ -744,7 +744,7 @@ _Objects, resources and markets inside a run._
 
 **In-run Currency** (`in_run_currency`) — Currency earned and spent within the run (gold, coins).
   
-  Δ +1.3 (95% CI -1.0…+3.7) · **risk reducer** · in 15% of games · tagging κ 0.55 · declining -0.8 pp/yr
+  Δ -0.2 (95% CI -2.5…+2.0) · **neutral** · in 16% of games · tagging κ 0.55 · declining -0.8 pp/yr
   
   Core in: Risk of Rain 2, Balatro, ELDEN RING NIGHTREIGN, Brotato, FTL: Faster Than Light · also: Super Auto Pets, Dome Keeper, Backpack Battles, Rogue Legacy
   
@@ -752,7 +752,7 @@ _Objects, resources and markets inside a run._
 
 **Interest / Economy Management** (`interest_economy`) — Saving currency yields returns; economic planning is core (Balatro, auto-battlers).
   
-  Δ +5.4 (95% CI -2.3…+13.7) · **risk reducer** · in 1% of games · tagging κ 0.47
+  Δ +5.8 (95% CI -1.9…+13.7) · **risk reducer** · in 1% of games · tagging κ 0.47
   
   Core in: Balatro · also: Brotato, Moonlighter, The Bazaar, SNKRX
   
@@ -760,7 +760,7 @@ _Objects, resources and markets inside a run._
 
 **Crafting** (`crafting`) — Combine resources into items.
   
-  Δ -1.2 (95% CI -3.9…+1.5) · **red flag** · in 7% of games · tagging κ 0.47
+  Δ -0.7 (95% CI -3.5…+2.0) · **neutral** · in 7% of games · tagging κ 0.47
   
   Core in: Don't Starve, Noita, Against the Storm, Moonlighter, Tribes of Midgard · also: Elin, Iratus: Lord of the Dead, Rotwood, Magicite
   
@@ -768,7 +768,7 @@ _Objects, resources and markets inside a run._
 
 **Inventory / Spatial Inventory** (`inventory_management`) — Limited or spatial inventory forces item tradeoffs (Backpack Hero).
   
-  Δ +0.9 (95% CI -2.5…+4.5) · **neutral** · in 4% of games · tagging κ 0.76
+  Δ +1.3 (95% CI -1.9…+4.8) · **neutral** · in 4% of games · tagging κ 0.76
   
   Core in: Stoneshard, Moonlighter, Backpack Battles, Barony, The Bazaar · also: ZERO Sievert, White Knuckle, Dicey Dungeons, SULFUR
   
@@ -792,7 +792,7 @@ _Objects, resources and markets inside a run._
 
 **Durability / Breakage** (`weapon_durability`) — Weapons/items degrade or break, forcing swaps (Going Under).
   
-  Δ +1.2 (95% CI -5.8…+7.7) · **risk reducer** · in 1% of games · tagging κ 0.00
+  Δ +1.4 (95% CI -6.2…+7.7) · **risk reducer** · in 1% of games · tagging κ 0.00
   
   Core in: The Last Stand: Aftermath, LET IT DIE, Going Under, Cogmind · also: Stoneshard, Streets of Rogue, ZERO Sievert, SULFUR
   
@@ -802,7 +802,7 @@ _Objects, resources and markets inside a run._
   
   effect: insufficient data · in 1% of games · tagging κ 0.00
   
-  Core in: Never Split the Party, Delver, Shattered Pixel Dungeon, ADOM (Ancient Domains Of Mystery), ToeJam & Earl: Back in the Groove! · also: Shiren the Wanderer: The Tower of Fortune and the Dice of Fate, Pixel Dungeon, Barony, Vagante
+  Core in: Never Split the Party, Delver, Shattered Pixel Dungeon, ADOM (Ancient Domains Of Mystery), ToeJam & Earl: Back in the Groove! · also: Shiren the Wanderer: The Tower of Fortune and the Dice of Fate, Pixel Dungeon, Barony, Caves of Qud
   
   > *Never Split the Party*: Wiki 'Potions': potion colours are randomised every game, so a colour's effect (Vigor or Lethargy, Wealth or Destitute...) must be learned.
 
@@ -818,7 +818,7 @@ _Objects, resources and markets inside a run._
   
   effect: insufficient data · in 0% of games
   
-  Core in: ZERO Sievert, Caves of Qud · also: The Long Journey Home, Stoneshard
+  Core in: ZERO Sievert, Caves of Qud · also: Quasimorph, The Long Journey Home, Stoneshard, Elin
   
   > *ZERO Sievert*: Standing with factions and traders unlocks wares and quests.
 
@@ -832,7 +832,7 @@ _Objects, resources and markets inside a run._
 
 **Automation / Logistics** (`automation_logistics`) — Build conveyors or production chains that run without direct control (PlateUp!, factory roguelites).
   
-  Δ +3.2 (95% CI -3.4…+9.8) · **neutral** · in 1% of games
+  Δ +4.0 (95% CI -2.4…+10.6) · **neutral** · in 1% of games
   
   Core in: PlateUp! · also: Against the Storm
   
@@ -847,7 +847,7 @@ _The moment-to-moment interaction model._
 
 **Real-time Action** (`real_time_action`) — Continuous real-time control of an avatar.
   
-  Δ -1.9 (95% CI -3.4…-0.4) · **red flag** · in 59% of games · tagging κ 1.00 · declining -0.7 pp/yr
+  Δ -1.7 (95% CI -3.3…-0.3) · **neutral** · in 59% of games · tagging κ 1.00 · declining -0.7 pp/yr
   
   Core in: The Binding of Isaac: Rebirth, Risk of Rain 2, Hades, Vampire Survivors, ELDEN RING NIGHTREIGN · also: Dead Cells, Cult of the Lamb, Hades II, Brotato
   
@@ -855,7 +855,7 @@ _The moment-to-moment interaction model._
 
 **Turn-based** (`turn_based`) — Actions resolve in discrete turns.
   
-  Δ +1.3 (95% CI -0.3…+3.0) · **neutral** · in 28% of games · tagging κ 0.93
+  Δ +1.5 (95% CI -0.1…+3.1) · **neutral** · in 28% of games · tagging κ 0.93
   
   Core in: Slay the Spire, Slay the Spire 2, Darkest Dungeon, Inscryption, Mewgenics · also: For The King, Stoneshard, Darkest Dungeon II, Monster Train
   
@@ -863,7 +863,7 @@ _The moment-to-moment interaction model._
 
 **Grid Tactics** (`grid_tactics`) — Turn-based combat where units move on a visible square/hex grid and position matters. Yes — Into the Breach. No — real-time games, lane/rank-only positioning, or grid-free card combat.
   
-  Δ +1.2 (95% CI -4.1…+6.4) · **risk reducer** · in 1% of games · tagging κ 0.27
+  Δ +1.2 (95% CI -4.0…+6.0) · **risk reducer** · in 1% of games · tagging κ 0.27
   
   Core in: Mewgenics, Into the Breach, Wildermyth, The Last Spell, Shotgun King: The Final Checkmate · also: Shogun Showdown, Invisible, Inc., Othercide, StarVaders
   
@@ -871,7 +871,7 @@ _The moment-to-moment interaction model._
 
 **Lanes / Ranks Positioning** (`lanes_ranks`) — Units occupy lanes, rows or rank order that determines targeting (Darkest Dungeon, Monster Train).
   
-  Δ -4.1 (95% CI -10.8…+2.7) · **risk reducer** · in 1% of games · tagging κ 0.63
+  Δ -4.0 (95% CI -11.0…+2.7) · **risk reducer** · in 1% of games · tagging κ 0.63
   
   Core in: Darkest Dungeon, Inscryption, Darkest Dungeon II, Monster Train, Monster Train 2 · also: Iratus: Lord of the Dead, Super Auto Pets, For The King II, Wildfrost
   
@@ -887,7 +887,7 @@ _The moment-to-moment interaction model._
 
 **Auto-attack (Survivors-like)** (`auto_attack`) — Weapons fire automatically; player controls movement.
   
-  Δ -1.8 (95% CI -6.6…+2.9) · **neutral** · in 1% of games · tagging κ 1.00 · rising +0.6 pp/yr
+  Δ -1.7 (95% CI -6.2…+3.0) · **neutral** · in 1% of games · tagging κ 1.00 · rising +0.6 pp/yr
   
   Core in: Vampire Survivors, Brotato, Megabonk, Deep Rock Galactic: Survivor, HoloCure - Save the Fans! · also: Halls of Torment, The Spell Brigade, Yet Another Zombie Survivors, Rogue: Genesia
   
@@ -898,7 +898,7 @@ _The moment-to-moment interaction model._
 
 **Twin-stick Shooting** (`twin_stick`) — Independent move and aim.
   
-  Δ -1.3 (95% CI -5.8…+3.0) · **neutral** · in 1% of games · tagging κ 1.00
+  Δ -1.2 (95% CI -5.6…+3.8) · **neutral** · in 1% of games · tagging κ 1.00
   
   Core in: The Binding of Isaac: Rebirth, Enter the Gungeon, The Binding of Isaac, 20 Minutes Till Dawn, Nuclear Throne · also: Nova Drift, SYNTHETIK: Legion Rising, The Last Stand: Aftermath, Dead Estate
   
@@ -906,7 +906,7 @@ _The moment-to-moment interaction model._
 
 **Bullet Hell Patterns** (`bullet_hell`) — Dense projectile patterns to dodge.
   
-  Δ +1.9 (95% CI -3.0…+6.6) · **risk reducer** · in 1% of games · tagging κ 0.78
+  Δ +1.9 (95% CI -3.4…+6.8) · **risk reducer** · in 1% of games · tagging κ 0.78
   
   Core in: Enter the Gungeon, Realm of the Mad God Exalt, Returnal, Picayune Dreams, Exit the Gungeon · also: Star of Providence, The Void Rains Upon Her Heart, MOTHERGUNSHIP, Nuclear Throne
   
@@ -914,7 +914,7 @@ _The moment-to-moment interaction model._
 
 **Dodge / Dash with i-frames** (`dodge_iframes`) — Evasive move with invulnerability frames.
   
-  Δ -0.1 (95% CI -3.2…+2.9) · **red flag** · in 6% of games · tagging κ 0.67
+  Δ +0.3 (95% CI -2.8…+3.4) · **red flag** · in 6% of games · tagging κ 0.67
   
   Core in: Hades, ELDEN RING NIGHTREIGN, Dead Cells, Hades II, Enter the Gungeon · also: Warm Snow, Returnal, Windblown, Curse of the Dead Gods
   
@@ -922,7 +922,7 @@ _The moment-to-moment interaction model._
 
 **Melee Combos** (`melee_combos`) — Chained melee attacks / combo system.
   
-  Δ -0.3 (95% CI -4.5…+3.7) · **risk reducer** · in 2% of games · tagging κ 1.00
+  Δ -0.2 (95% CI -4.7…+3.9) · **risk reducer** · in 2% of games · tagging κ 1.00
   
   Core in: BlazBlue Entropy Effect, Absolum, Windblown, Rotwood, Mortal Sin · also: Abyss Odyssey, Little Noah: Scion of Paradise, Spiritfall, Double Dragon Gaiden: Rise Of The Dragons
   
@@ -930,7 +930,7 @@ _The moment-to-moment interaction model._
 
 **Platforming** (`platforming`) — Jumping/traversal is a core skill.
   
-  Δ -1.6 (95% CI -4.3…+0.8) · **neutral** · in 10% of games · tagging κ 0.37 · declining -0.9 pp/yr
+  Δ -1.2 (95% CI -3.7…+1.5) · **neutral** · in 10% of games · tagging κ 0.37 · declining -0.9 pp/yr
   
   Core in: Spelunky 2, Rogue Legacy, Spelunky, White Knuckle, Rogue Legacy 2 · also: Dungreed, Downwell, Magicite, Sundered: Eldritch Edition
   
@@ -938,7 +938,7 @@ _The moment-to-moment interaction model._
 
 **First-person** (`fps`) — First-person perspective combat.
   
-  Δ +0.9 (95% CI -3.5…+4.9) · **risk reducer** · in 2% of games · tagging κ 0.84
+  Δ +0.9 (95% CI -3.6…+5.0) · **risk reducer** · in 2% of games · tagging κ 0.84
   
   Core in: Gunfire Reborn, DEATHLOOP, Roboquest, Witchfire, SUPERHOT: MIND CONTROL DELETE · also: Post Void, BPM: BULLETS PER MINUTE, SULFUR, Crime Boss: Rockay City
   
@@ -946,7 +946,7 @@ _The moment-to-moment interaction model._
 
 **Vehicle / Ship Avatar** (`vehicle_combat`) — Piloted ship/vehicle is the combat avatar (FTL, Everspace, Nova Drift).
   
-  Δ -2.0 (95% CI -6.9…+2.5) · **risk reducer** · in 1% of games · tagging κ 1.00
+  Δ -2.0 (95% CI -6.7…+2.8) · **risk reducer** · in 1% of games · tagging κ 1.00
   
   Core in: FTL: Faster Than Light, Nova Drift, EVERSPACE, Sunless Sea, Void Crew · also: HighFleet, Ship of Fools, Crying Suns, Cobalt Core
   
@@ -954,7 +954,7 @@ _The moment-to-moment interaction model._
 
 **Movement Kit** (`traversal_tools`) — Grapple, wall-run, multi-jump etc. central to moment-to-moment play (Roboquest, Phantom Abyss).
   
-  Δ -1.1 (95% CI -6.0…+3.8) · **risk reducer** · in 1% of games · tagging κ 0.87
+  Δ -1.0 (95% CI -5.8…+3.7) · **risk reducer** · in 1% of games · tagging κ 0.87
   
   Core in: Roboquest, White Knuckle, Haste, GTTOD, Phantom Abyss · also: ROBOBEAT, Flinthook, ELDEN RING NIGHTREIGN, Megabonk
   
@@ -970,7 +970,7 @@ _The moment-to-moment interaction model._
 
 **Rhythm Timing** (`rhythm_timing`) — Actions must sync to a musical beat (Crypt of the NecroDancer, BPM).
   
-  Δ +1.4 (95% CI -6.6…+8.3) · **neutral** · in 1% of games · tagging κ 1.00
+  Δ +1.3 (95% CI -5.7…+8.4) · **neutral** · in 1% of games · tagging κ 1.00
   
   Core in: Crypt of the NecroDancer, BPM: BULLETS PER MINUTE, ROBOBEAT
   
@@ -978,7 +978,7 @@ _The moment-to-moment interaction model._
 
 **Stealth / Detection** (`stealth`) — Avoiding detection is a real alternative to fighting (Invisible Inc, Cogmind).
   
-  Δ +0.3 (95% CI -4.9…+5.9) · **neutral** · in 2% of games
+  Δ +0.7 (95% CI -4.6…+6.2) · **neutral** · in 2% of games
   
   Core in: PANICORE, Heat Signature, Invisible, Inc., Colt Canyon · also: DEATHLOOP, Streets of Rogue, Baldi's Basics Plus, HighFleet
   
@@ -986,7 +986,7 @@ _The moment-to-moment interaction model._
 
 **Weapon Handling Skill** (`weapon_handling`) — Manual reload/jamming/heat/ammo recovery as a skill layer (Synthetik, Heavy Bullets).
   
-  Δ +4.4 (95% CI +0.8…+7.8) · **differentiator** · in 1% of games · tagging κ 0.00
+  Δ +4.4 (95% CI +0.6…+8.0) · **risk reducer** · in 1% of games · tagging κ 0.00
   
   Core in: SYNTHETIK: Legion Rising, Receiver, SYNTHETIK 2, Space Beast Terror Fright, Heavy Bullets · also: Enter the Gungeon, 20 Minutes Till Dawn, Nuclear Throne, Downwell
   
@@ -1002,7 +1002,7 @@ _The moment-to-moment interaction model._
 
 **Time Manipulation** (`time_manipulation`) — Time scales with player movement or slow-motion is a core resource (SUPERHOT MCD, OTXO).
   
-  Δ -0.9 (95% CI -6.5…+4.8) · **neutral** · in 2% of games
+  Δ -0.4 (95% CI -5.6…+5.3) · **neutral** · in 2% of games
   
   Core in: SUPERHOT: MIND CONTROL DELETE, OTXO · also: StarVaders, Flinthook
   
@@ -1029,7 +1029,7 @@ _The moment-to-moment interaction model._
 
 **Deckbuilding** (`deckbuilding`) — The player's action set is a deck built over the run.
   
-  Δ +0.4 (95% CI -3.1…+3.7) · **risk reducer** · in 2% of games · tagging κ 0.93 · rising +2.3 pp/yr
+  Δ +0.4 (95% CI -2.8…+3.6) · **risk reducer** · in 2% of games · tagging κ 0.93 · rising +2.3 pp/yr
   
   Core in: Slay the Spire, Slay the Spire 2, Balatro, Inscryption, Monster Train · also: Griftlands, Chrono Ark, Across the Obelisk, Night of Full Moon
   
@@ -1037,7 +1037,7 @@ _The moment-to-moment interaction model._
 
 **Energy / Mana per Turn** (`energy_mana`) — Per-turn action resource limits plays.
   
-  Δ -1.8 (95% CI -5.3…+1.5) · **risk reducer** · in 2% of games · tagging κ 1.00
+  Δ -1.8 (95% CI -5.2…+1.9) · **risk reducer** · in 2% of games · tagging κ 1.00
   
   Core in: Slay the Spire, Slay the Spire 2, Monster Train, Griftlands, Across the Obelisk · also: Night of Full Moon, Monster Train 2, Backpack Hero, Tainted Grail: Conquest
   
@@ -1045,7 +1045,7 @@ _The moment-to-moment interaction model._
 
 **Draw Manipulation** (`card_draw`) — Effects manipulating draw, discard, exhaust, retain.
   
-  Δ -2.0 (95% CI -5.7…+1.5) · **risk reducer** · in 1% of games · tagging κ 0.76
+  Δ -2.0 (95% CI -5.7…+1.8) · **risk reducer** · in 1% of games · tagging κ 0.76
   
   Core in: Slay the Spire, Slay the Spire 2, Griftlands, Vault of the Void, Deck of Ashes · also: Balatro, Inscryption, Monster Train, Chrono Ark
   
@@ -1053,7 +1053,7 @@ _The moment-to-moment interaction model._
 
 **Dice Mechanics** (`dice`) — Dice rolls as primary action resource.
   
-  Δ +7.4 (95% CI +0.1…+14.3) · **risk reducer** · in 1% of games · tagging κ 1.00
+  Δ +7.9 (95% CI +0.1…+14.4) · **risk reducer** · in 1% of games · tagging κ 1.00
   
   Core in: Dicey Dungeons, Astrea: Six-Sided Oracles, Curious Expedition, Curious Expedition 2, Die in the Dungeon · also: Slice & Dice, Tharsis, Dicefolk, Dice Legacy
   
@@ -1112,7 +1112,7 @@ _The moment-to-moment interaction model._
 
 **Status Effects** (`status_effects`) — Damage-over-time/debuffs (poison, burn, bleed, freeze, stun).
   
-  Δ +0.9 (95% CI -1.9…+3.7) · **red flag** · in 5% of games · tagging κ 0.59
+  Δ +0.8 (95% CI -2.1…+3.6) · **risk reducer** · in 5% of games · tagging κ 0.59
   
   Core in: Dead Cells, Darkest Dungeon, Noita, Stoneshard, Darkest Dungeon II · also: Backpack Battles, The Bazaar, Chrono Ark, Across the Obelisk
   
@@ -1120,7 +1120,7 @@ _The moment-to-moment interaction model._
 
 **Elemental Interactions** (`elemental_interactions`) — Elements combine/interact (wet + lightning).
   
-  Δ -0.1 (95% CI -5.5…+4.6) · **risk reducer** · in 1% of games
+  Δ -0.0 (95% CI -5.6…+5.0) · **risk reducer** · in 1% of games
   
   Core in: Noita, Crown Trick · also: Gunfire Reborn, Wizard of Legend, The Spell Brigade, Caves of Qud
   
@@ -1136,7 +1136,7 @@ _The moment-to-moment interaction model._
 
 **Block / Shield / Armor** (`block_shield`) — Temporary or persistent damage mitigation layer.
   
-  Δ -1.6 (95% CI -5.3…+2.0) · **neutral** · in 2% of games · tagging κ 0.51
+  Δ -1.5 (95% CI -5.5…+2.0) · **neutral** · in 2% of games · tagging κ 0.51
   
   Core in: Slay the Spire, Slay the Spire 2, FTL: Faster Than Light, Backpack Battles, Griftlands · also: Across the Obelisk, Backpack Hero, Roguebook, Cobalt Core
   
@@ -1144,7 +1144,7 @@ _The moment-to-moment interaction model._
 
 **Scarce Healing** (`healing_scarcity`) — HP carries between fights and healing is rare or costly, so HP is a run-long resource. Yes — StS, Darkest Dungeon. No — HP refills each room/fight, or regen/lifesteal is plentiful.
   
-  Δ -1.7 (95% CI -4.7…+1.1) · **red flag** · in 5% of games · tagging κ -0.04 · declining -0.7 pp/yr
+  Δ -1.7 (95% CI -4.8…+1.0) · **red flag** · in 5% of games · tagging κ -0.04 · declining -0.6 pp/yr
   
   Core in: Slay the Spire, Slay the Spire 2, Noita, Spelunky 2, Spelunky · also: SUPERHOT: MIND CONTROL DELETE, Hand of Fate, WORLD OF HORROR, SKYHILL
   
@@ -1160,7 +1160,7 @@ _The moment-to-moment interaction model._
 
 **Environmental Interaction** (`environmental_hazards`) — Terrain/objects usable as weapons (push into spikes, explosive barrels).
   
-  Δ +0.2 (95% CI -3.4…+3.8) · **risk reducer** · in 2% of games · tagging κ 0.47
+  Δ +0.2 (95% CI -3.9…+4.0) · **risk reducer** · in 2% of games · tagging κ 0.47
   
   Core in: Noita, Into the Breach, Spelunky 2, Spelunky, Curse of the Dead Gods · also: KLETKA, Orcs Must Die! Deathtrap, Fights in Tight Spaces, Duskers
   
@@ -1183,7 +1183,7 @@ _How opposition is built and scaled._
 
 **Visible Enemy Intents** (`enemy_intents`) — Enemies telegraph next action explicitly (StS intents, ItB).
   
-  Δ +4.4 (95% CI +0.3…+8.1) · **risk reducer** · in 1% of games · tagging κ 0.87
+  Δ +4.4 (95% CI +0.6…+8.1) · **risk reducer** · in 1% of games · tagging κ 0.87
   
   Core in: Slay the Spire, Slay the Spire 2, Inscryption, Into the Breach, Chrono Ark · also: Backpack Hero, Shogun Showdown, Roguebook, Astrea: Six-Sided Oracles
   
@@ -1191,7 +1191,7 @@ _How opposition is built and scaled._
 
 **Learnable Attack Patterns** (`attack_patterns`) — Enemies/bosses use readable, learnable patterns.
   
-  Δ +5.9 (95% CI +2.4…+9.4) · **differentiator** · in 1% of games · tagging κ -0.05
+  Δ +5.9 (95% CI +2.5…+9.1) · **differentiator** · in 1% of games · tagging κ -0.05
   
   Core in: Hades, ELDEN RING NIGHTREIGN, Hades II, Enter the Gungeon, Realm of the Mad God Exalt · also: Crypt of the NecroDancer, Rabbit and Steel, Returnal, Astral Ascent
   
@@ -1199,7 +1199,7 @@ _How opposition is built and scaled._
 
 **Perfect Information** (`perfect_information`) — Little/no hidden randomness in combat outcomes.
   
-  Δ +1.5 (95% CI -5.4…+7.2) · **neutral** · in 1% of games · tagging κ 1.00
+  Δ +1.6 (95% CI -5.5…+7.4) · **neutral** · in 1% of games · tagging κ 1.00
   
   Core in: Into the Breach, Shogun Showdown, Desktop Dungeons, Desktop Dungeons: Rewind · also: Shotgun King: The Final Checkmate, Invisible, Inc., Cobalt Core, Fights in Tight Spaces
   
@@ -1218,7 +1218,7 @@ _How opposition is built and scaled._
 
 **Enemy Health/Damage Scaling** (`enemy_hp_scaling`) — Enemy stats scale with depth/time/loop.
   
-  Δ +4.4 (95% CI +0.4…+8.1) · **differentiator** · in 2% of games · tagging κ -0.09
+  Δ +4.4 (95% CI +0.7…+8.0) · **risk reducer** · in 2% of games · tagging κ -0.09
   
   Core in: Risk of Rain 2, Loop Hero, Crab Champions, Risk of Rain (2013), Risk of Rain Returns · also: Rogue Tower, Vampire Survivors, Slay the Spire, Dead Cells
   
@@ -1226,7 +1226,7 @@ _How opposition is built and scaled._
 
 **Elites / Champions** (`elites`) — Optional/upgraded enemy variants with higher risk & reward.
   
-  Δ +2.7 (95% CI -0.4…+6.0) · **risk reducer** · in 2% of games · tagging κ 0.59
+  Δ +2.7 (95% CI -0.3…+5.8) · **risk reducer** · in 2% of games · tagging κ 0.59
   
   Core in: Risk of Rain 2, Slay the Spire, Slay the Spire 2, Colt Canyon · also: Hades, ELDEN RING NIGHTREIGN, Dead Cells, Cult of the Lamb
   
@@ -1234,7 +1234,7 @@ _How opposition is built and scaled._
 
 **Multi-phase Bosses** (`multi_phase_bosses`) — Bosses change behaviour across phases.
   
-  Δ +4.1 (95% CI -1.2…+8.7) · **risk reducer** · in 1% of games · tagging κ 0.00
+  Δ +4.0 (95% CI -1.2…+8.7) · **risk reducer** · in 1% of games · tagging κ 0.00
   
   Core in: ELDEN RING NIGHTREIGN, FTL: Faster Than Light, Returnal · also: Hades, Dead Cells, Hades II, Enter the Gungeon
   
@@ -1272,7 +1272,7 @@ _How opposition is built and scaled._
 
 **Horde Density** (`horde_density`) — Very high enemy counts on screen.
   
-  Δ -0.0 (95% CI -3.9…+3.7) · **neutral** · in 2% of games · tagging κ 0.89 · rising +0.5 pp/yr
+  Δ +0.0 (95% CI -4.2…+3.8) · **neutral** · in 2% of games · tagging κ 0.89
   
   Core in: Vampire Survivors, Megabonk, Deep Rock Galactic: Survivor, HoloCure - Save the Fans!, Halls of Torment · also: 20 Minutes Till Dawn, Soulstone Survivors, Death Must Die, The Spell Brigade
   
@@ -1280,13 +1280,13 @@ _How opposition is built and scaled._
 
 **Large Enemy Roster** (`enemy_variety`) — Large and diverse enemy set (>50 types).
   
-  Δ +2.1 (95% CI -4.1…+7.9) · **risk reducer** · in 1% of games · tagging κ 0.00
+  Δ +2.2 (95% CI -4.3…+7.7) · **risk reducer** · in 1% of games · tagging κ 0.00
   
   Core in: The Binding of Isaac: Rebirth, Realm of the Mad God Exalt, Caves of Qud, Tales of Maj'Eyal, ADOM (Ancient Domains Of Mystery) · also: Rift Wizard, Shiren the Wanderer: The Tower of Fortune and the Dice of Fate, Rift Wizard 2, ELDEN RING NIGHTREIGN
 
 **Wave Survival** (`waves`) — Combat structured as discrete waves.
   
-  Δ +0.6 (95% CI -2.5…+3.6) · **neutral** · in 7% of games · tagging κ 0.71 · rising +0.6 pp/yr
+  Δ +0.7 (95% CI -2.2…+3.8) · **neutral** · in 7% of games · tagging κ 0.71 · rising +0.6 pp/yr
   
   Core in: Brotato, Monster Train, Dome Keeper, Nova Drift, Dungeon of the Endless · also: The Last Spell, Wall World, Monster Train 2, Atomicrops
   
@@ -1301,7 +1301,7 @@ _Systems that ask the player to gamble or pay a cost for power._
 
 **Double-edged Effects** (`double_edged_items`) — Powerful items/choices with explicit drawbacks.
   
-  Δ +0.3 (95% CI -3.4…+3.9) · **risk reducer** · in 3% of games · tagging κ 1.00
+  Δ +0.4 (95% CI -3.3…+4.0) · **risk reducer** · in 3% of games · tagging κ 1.00
   
   Core in: Risk of Rain 2, Slay the Spire, Brotato, ROUNDS, PlateUp! · also: Returnal, Curse of the Dead Gods, Shotgun King: The Final Checkmate, Sundered: Eldritch Edition
   
@@ -1309,7 +1309,7 @@ _Systems that ask the player to gamble or pay a cost for power._
 
 **Pay with Health** (`hp_as_currency`) — Spend HP/max-HP for power (devil deals, blood magic).
   
-  Δ +2.7 (95% CI -1.8…+6.9) · **risk reducer** · in 1% of games
+  Δ +2.7 (95% CI -1.4…+7.2) · **risk reducer** · in 1% of games
   
   Core in: The Binding of Isaac: Rebirth, The Binding of Isaac, Curse of the Dead Gods, Othercide, Revita · also: Rogue Legacy 2, WORLD OF HORROR, Deck of Ashes, Risk of Rain 2
   
@@ -1317,7 +1317,7 @@ _Systems that ask the player to gamble or pay a cost for power._
 
 **Gambling / Chance Rewards** (`gambling`) — Slot machines, chests with random payout, wagers.
   
-  Δ +4.3 (95% CI +0.1…+8.8) · **risk reducer** · in 1% of games · tagging κ 0.65
+  Δ +4.3 (95% CI -0.5…+8.8) · **risk reducer** · in 1% of games · tagging κ 0.65
   
   Core in: Risk of Rain 2, Luck be a Landlord, Hand of Fate 2 · also: The Binding of Isaac: Rebirth, Megabonk, The Binding of Isaac, HoloCure - Save the Fans!
   
@@ -1325,7 +1325,7 @@ _Systems that ask the player to gamble or pay a cost for power._
 
 **Optional Challenge Rooms** (`optional_challenges`) — Opt-in harder encounters for better rewards.
   
-  Δ +1.8 (95% CI -1.7…+5.2) · **red flag** · in 3% of games · tagging κ 0.53
+  Δ +1.9 (95% CI -1.9…+5.4) · **neutral** · in 3% of games · tagging κ 0.53
   
   Core in: The Binding of Isaac: Rebirth, NEOVERSE, The Void Rains Upon Her Heart · also: Hades, Slay the Spire, ELDEN RING NIGHTREIGN, Dead Cells
   
@@ -1333,7 +1333,7 @@ _Systems that ask the player to gamble or pay a cost for power._
 
 **Push-your-luck** (`push_your_luck`) — Repeated continue/stop decision with escalating risk.
   
-  Δ +4.3 (95% CI +0.1…+8.1) · **risk reducer** · in 1% of games · tagging κ 1.00
+  Δ +4.3 (95% CI -0.3…+7.8) · **risk reducer** · in 1% of games · tagging κ 1.00
   
   Core in: Loop Hero, Invisible, Inc., Dungeons & Degenerate Gamblers · also: Risk of Rain 2, Darkest Dungeon, FTL: Faster Than Light, Spelunky 2
   
@@ -1357,7 +1357,7 @@ _Systems that ask the player to gamble or pay a cost for power._
 
 **Hunger / Supply Clock** (`hunger_clock`) — Food/fuel/supplies drain over time forcing forward progress (Shiren, FTL fuel, Stoneshard).
   
-  Δ -4.1 (95% CI -8.9…-0.1) · **risk reducer** · in 2% of games · tagging κ 0.00 · declining -0.6 pp/yr
+  Δ -4.1 (95% CI -8.2…+0.4) · **risk reducer** · in 2% of games · tagging κ 0.00 · declining -0.6 pp/yr
   
   Core in: Don't Starve, Blue Prince, Hand of Fate, Death Road to Canada, Sunless Sea · also: KLETKA, HighFleet, The Flame in the Flood, SKYHILL
   
@@ -1368,7 +1368,7 @@ _Systems that ask the player to gamble or pay a cost for power._
 
 **Random Events (? nodes)** (`random_events`) — Narrative or mechanical events with branching outcomes.
   
-  Δ +1.4 (95% CI -1.4…+4.3) · **neutral** · in 6% of games · tagging κ 0.57
+  Δ +0.2 (95% CI -2.5…+3.2) · **neutral** · in 7% of games · tagging κ 0.57
   
   Core in: Slay the Spire, Slay the Spire 2, FTL: Faster Than Light, Wildermyth, Griftlands · also: Across the Obelisk, Night of Full Moon, Hand of Fate, Death Road to Canada
   
@@ -1376,7 +1376,7 @@ _Systems that ask the player to gamble or pay a cost for power._
 
 **Secrets / Hidden Areas** (`secret_areas`) — Hidden rooms, secret bosses or unlock puzzles reward exploration and community discovery (Isaac, Noita, Spelunky).
   
-  Δ +2.3 (95% CI -2.3…+6.1) · **risk reducer** · in 1% of games
+  Δ +2.3 (95% CI -1.8…+6.3) · **risk reducer** · in 1% of games
   
   Core in: The Binding of Isaac: Rebirth, Enter the Gungeon, Noita, The Binding of Isaac, Spelunky 2 · also: Blue Prince, Spelunky, Risk of Rain 2, Vampire Survivors
   
@@ -1384,7 +1384,7 @@ _Systems that ask the player to gamble or pay a cost for power._
 
 **Pre-run Mutators / Challenge Runs** (`run_mutators`) — Selectable rule-changing modifiers or named challenge runs before starting (Isaac challenges, Noita modes).
   
-  Δ +6.6 (95% CI +1.5…+11.1) · **differentiator** · in 1% of games · tagging κ 0.00
+  Δ +6.6 (95% CI +1.8…+10.5) · **differentiator** · in 1% of games · tagging κ 0.00
   
   Core in: Risk of Rain 2, Risk of Rain (2013), Risk of Rain Returns · also: The Binding of Isaac: Rebirth, Vampire Survivors, Slay the Spire, Balatro
   
@@ -1392,7 +1392,7 @@ _Systems that ask the player to gamble or pay a cost for power._
 
 **High-variance Loot** (`high_variance_loot`) — Run power depends strongly on random drops.
   
-  Δ +1.6 (95% CI -2.8…+5.6) · **risk reducer** · in 2% of games · tagging κ -0.05
+  Δ +1.6 (95% CI -2.5…+5.6) · **risk reducer** · in 2% of games · tagging κ -0.05
   
   Core in: The Binding of Isaac: Rebirth, Enter the Gungeon, The Binding of Isaac, Hero Siege, Realm of the Mad God Exalt · also: Risk of Rain (2013), Risk of Rain Returns, Neon Abyss, Dwarves: Glory, Death and Loot
   
@@ -1415,7 +1415,7 @@ _Systems that extend life beyond single-player runs._
 
 **Online Co-op** (`online_coop`) — Co-op play over network.
   
-  Δ -3.2 (95% CI -5.4…-0.9) · **red flag** · in 13% of games · tagging κ 0.78 · rising +0.5 pp/yr
+  Δ -2.6 (95% CI -4.8…-0.4) · **red flag** · in 13% of games · tagging κ 0.78
   
   Core in: Risk of Rain 2, ELDEN RING NIGHTREIGN, Gunfire Reborn, Hero Siege, Realm of the Mad God Exalt · also: For The King, Crab Champions, PlateUp!, Roboquest
   
@@ -1423,7 +1423,7 @@ _Systems that extend life beyond single-player runs._
 
 **Local Co-op** (`local_coop`) — Same-screen co-op.
   
-  Δ -0.2 (95% CI -3.0…+2.5) · **neutral** · in 8% of games · tagging κ 0.65 · declining -1.1 pp/yr
+  Δ +0.4 (95% CI -2.2…+3.2) · **neutral** · in 8% of games · tagging κ 0.65 · declining -1.1 pp/yr
   
   Core in: Lost Castle, Ship of Fools, Moon Hunters, Rogue Heroes: Ruins of Tasos, Bounty of One · also: The Swords of Ditto: Mormo's Curse, Space Beast Terror Fright, Alien Hominid Invasion, Legend of Dungeon
   
@@ -1431,7 +1431,7 @@ _Systems that extend life beyond single-player runs._
 
 **PvP** (`pvp`) — Competitive play against other players.
   
-  Δ -1.1 (95% CI -7.5…+4.5) · **risk reducer** · in 1% of games · tagging κ -0.03
+  Δ -1.1 (95% CI -7.1…+4.9) · **risk reducer** · in 1% of games · tagging κ -0.03
   
   Core in: ROUNDS, Crawl · also: Clone Drone in the Danger Zone, Super Auto Pets, DEATHLOOP, LET IT DIE
   
@@ -1463,7 +1463,7 @@ _Systems that extend life beyond single-player runs._
 
 **Persistent Shared World** (`shared_world_mmo`) — Massively multiplayer persistent world around run-based play (Realm of the Mad God).
   
-  Δ -7.3 (95% CI -14.0…-0.2) · **neutral** · in 1% of games
+  Δ -6.6 (95% CI -12.7…-0.2) · **neutral** · in 1% of games
   
   Core in: Realm of the Mad God Exalt
   
@@ -1482,7 +1482,7 @@ _Systems that extend life beyond single-player runs._
 
 **Leaderboards** (`leaderboards`) — Score/time leaderboards.
   
-  Δ -1.4 (95% CI -6.7…+2.9) · **neutral** · in 2% of games · tagging κ 0.65
+  Δ -1.4 (95% CI -6.4…+2.9) · **neutral** · in 2% of games · tagging κ 0.65
   
   Core in: — · also: Megabonk, Clone Drone in the Danger Zone, Crypt of the NecroDancer, Spelunky 2
   
@@ -1490,7 +1490,7 @@ _Systems that extend life beyond single-player runs._
 
 **Mod Support / Workshop** (`mod_support`) — Official modding tools or Steam Workshop.
   
-  Δ +6.4 (95% CI +2.8…+9.4) · **differentiator** · in 2% of games · tagging κ 1.00
+  Δ +6.5 (95% CI +3.1…+9.4) · **differentiator** · in 2% of games · tagging κ 1.00
   
   Core in: The Binding of Isaac: Rebirth, Don't Starve, Noita, Clone Drone in the Danger Zone, Wildermyth · also: Tales of Maj'Eyal, Delver, KeeperRL, Slay the Spire
   
@@ -1506,7 +1506,7 @@ _Systems that extend life beyond single-player runs._
 
 **Major Free Updates** (`content_updates`) — Substantial post-launch free content updates.
   
-  Δ +5.4 (95% CI +1.8…+8.7) · **differentiator** · in 3% of games · tagging κ 0.81
+  Δ +5.5 (95% CI +2.0…+8.5) · **differentiator** · in 3% of games · tagging κ 0.81
   
   Core in: The Binding of Isaac: Rebirth, Risk of Rain 2, Vampire Survivors, Dead Cells, Cult of the Lamb · also: Gunfire Reborn, Hero Siege, Realm of the Mad God Exalt, HoloCure - Save the Fans!
   
@@ -1514,7 +1514,7 @@ _Systems that extend life beyond single-player runs._
 
 **Early Access Development** (`early_access_dev`) — Developed publicly through Early Access.
   
-  Δ -0.9 (95% CI -2.9…+1.1) · **neutral** · in 22% of games · tagging κ 1.00 · rising +4.0 pp/yr
+  Δ -0.6 (95% CI -2.3…+1.4) · **neutral** · in 22% of games · tagging κ 1.00 · rising +4.1 pp/yr
   
   Core in: Stoneshard, Witchfire, Nova Drift, Caves of Qud, Baldi's Basics Plus · also: Tiny Rogues, SULFUR, Windblown, Elin
   
@@ -1529,25 +1529,25 @@ _What other genre the roguelike structure is fused with._
 
 **Roguelike Deckbuilder** (`hybrid_deckbuilder`) — Card battler + roguelike run structure.
   
-  Δ +1.2 (95% CI -1.1…+3.6) · **neutral** · in 11% of games · rising +1.3 pp/yr
+  Δ +1.4 (95% CI -1.0…+3.8) · **neutral** · in 11% of games · rising +1.3 pp/yr
   
   Core in: Slay the Spire, Slay the Spire 2, Balatro, Inscryption, Monster Train · also: Griftlands, Chrono Ark, Across the Obelisk, Dicey Dungeons
 
 **Survivors-like** (`hybrid_survivors`) — Auto-attack horde survival + level-up choices.
   
-  Δ -1.4 (95% CI -4.7…+1.5) · **neutral** · in 5% of games · rising +1.3 pp/yr
+  Δ -2.7 (95% CI -5.9…+0.3) · **neutral** · in 6% of games · rising +1.4 pp/yr
   
   Core in: Vampire Survivors, Brotato, Megabonk, Deep Rock Galactic: Survivor, HoloCure - Save the Fans! · also: Halls of Torment, 20 Minutes Till Dawn, BALL x PIT, Soulstone Survivors
 
 **Action Roguelite** (`hybrid_action_roguelite`) — Real-time action combat + roguelite structure.
   
-  Δ -4.6 (95% CI -7.0…-2.3) · **red flag** · in 12% of games · declining -0.7 pp/yr
+  Δ -4.4 (95% CI -6.8…-1.9) · **red flag** · in 12% of games · declining -0.6 pp/yr
   
   Core in: The Binding of Isaac: Rebirth, Hades, ELDEN RING NIGHTREIGN, Cult of the Lamb, Hades II · also: Enter the Gungeon, Noita, The Binding of Isaac, Skul: The Hero Slayer
 
 **Traditional Roguelike** (`hybrid_traditional`) — Turn-based, tile-based dungeon crawler in the Rogue lineage.
   
-  Δ -1.9 (95% CI -4.6…+1.0) · **neutral** · in 7% of games · declining -1.0 pp/yr
+  Δ -1.4 (95% CI -4.3…+1.5) · **neutral** · in 7% of games · declining -1.0 pp/yr
   
   Core in: Stoneshard, Barony, Caves of Qud, Elin, Quasimorph · also: Tales of Maj'Eyal, Dungeons of Dredmor, Crown Trick, One Way Heroics
 
@@ -1561,7 +1561,7 @@ _What other genre the roguelike structure is fused with._
 
 **Strategy Roguelite** (`hybrid_strategy`) — Tactics/strategy/colony management with run structure.
   
-  Δ +0.3 (95% CI -3.3…+4.4) · **risk reducer** · in 3% of games
+  Δ +0.1 (95% CI -3.4…+4.0) · **risk reducer** · in 3% of games
   
   Core in: Darkest Dungeon, FTL: Faster Than Light, Mewgenics, For The King, PlateUp! · also: Darkest Dungeon II, 9 Kings, Into the Breach, Wildermyth
   
@@ -1569,7 +1569,7 @@ _What other genre the roguelike structure is fused with._
 
 **Puzzle Roguelite** (`hybrid_puzzle`) — Puzzle core with roguelite run structure.
   
-  Δ -2.6 (95% CI -8.8…+3.7) · **neutral** · in 1% of games
+  Δ -2.6 (95% CI -8.8…+3.0) · **neutral** · in 1% of games
   
   Core in: Blue Prince, Nubby's Number Factory, Peglin, Luck be a Landlord, Shotgun King: The Final Checkmate · also: The Legend of Bum-Bo, Ring of Pain, Dungeon Clawler, Drop Duchy
   
@@ -1577,7 +1577,7 @@ _What other genre the roguelike structure is fused with._
 
 **Shooter Roguelite** (`hybrid_shooter`) — 3D shooter core (FPS/TPS/space-sim) with roguelite runs. Top-down/twin-stick shooters are hybrid_action_roguelite with this at 2.
   
-  Δ +2.1 (95% CI -1.0…+5.5) · **risk reducer** · in 2% of games
+  Δ +2.1 (95% CI -1.0…+5.4) · **risk reducer** · in 2% of games
   
   Core in: Risk of Rain 2, Gunfire Reborn, Crab Champions, DEATHLOOP, Roboquest · also: Witchfire, SUPERHOT: MIND CONTROL DELETE, Post Void, EVERSPACE
   
@@ -1591,7 +1591,7 @@ _What other genre the roguelike structure is fused with._
 
 **Builder Roguelite** (`hybrid_city_builder`) — City/base/colony building with run structure.
   
-  Δ +2.0 (95% CI -2.0…+6.0) · **neutral** · in 3% of games
+  Δ +2.2 (95% CI -1.5…+6.4) · **neutral** · in 3% of games
   
   Core in: Against the Storm, Terraformers, dotAGE, Cardboard Town, As Far As The Eye · also: KeeperRL, Dice Legacy, Cult of the Lamb, PlateUp!
   
@@ -1599,7 +1599,7 @@ _What other genre the roguelike structure is fused with._
 
 **Survival Roguelite** (`hybrid_survival`) — Survival resource pressure (hunger, temperature) with runs.
   
-  Δ -4.0 (95% CI -8.4…+0.4) · **risk reducer** · in 1% of games
+  Δ -3.9 (95% CI -8.4…+0.6) · **risk reducer** · in 1% of games
   
   Core in: Don't Starve, Tribes of Midgard, KLETKA, The Flame in the Flood, SKYHILL · also: NEO Scavenger, Curious Expedition, Curious Expedition 2, Card Survival: Tropical Island
   
@@ -1620,7 +1620,7 @@ _Systems that lower friction and widen the audience._
 
 **Assist / God Mode** (`assist_mode`) — Optional difficulty reduction for accessibility.
   
-  Δ -2.0 (95% CI -7.0…+2.7) · **risk reducer** · in 1% of games · tagging κ 0.00
+  Δ -1.9 (95% CI -6.7…+2.6) · **risk reducer** · in 1% of games · tagging κ 0.00
   
   Core in: Rogue Legacy 2 · also: Hades, Dead Cells, Hades II, Sunless Sea
   
@@ -1648,7 +1648,7 @@ _Systems that lower friction and widen the audience._
 
 **Controller / Deck Friendly** (`steam_deck_friendly`) — The full game is playable on a controller (Steam Full Controller Support or Deck Verified/Playable). No — mouse/keyboard only, or partial controller support.
   
-  Δ +4.3 (95% CI +0.4…+7.8) · **risk reducer** · in 2% of games · tagging κ 0.19
+  Δ +4.3 (95% CI +0.3…+7.9) · **risk reducer** · in 2% of games · tagging κ 0.19
   
   Core in: — · also: Hades, Vampire Survivors, ELDEN RING NIGHTREIGN, Dead Cells
 

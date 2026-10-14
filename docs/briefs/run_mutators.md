@@ -4,7 +4,7 @@ _Selectable rule-changing modifiers or named challenge runs before starting (Isa
 
 ## Why this is white space
 
-- 18 paid roguelikes use it (low competition). Their median gross is **$14,549,059**, vs $3,257,121 for comparable games without it: a **4.3× revenue multiple**.
+- 18 paid roguelikes use it (low competition). Their median gross is **$14,549,059**, vs $3,355,708 for comparable games without it: a **4.2× revenue multiple**.
 - 83% of them grossed $1M+, vs 81% of comparable games.
 - Total market for games using it is $802,768,229.
 
@@ -21,9 +21,9 @@ _Selectable rule-changing modifiers or named challenge runs before starting (Isa
 
 ## Pair it with (over-represented in its top earners)
 
-- **Luck Stat**: in 40% of top earners (17.1× its rate across curated roguelikes)
 - **Run History / Stats**: in 40% of top earners (15.4× its rate across curated roguelikes)
 - **Seeded Runs**: in 50% of top earners (12.8× its rate across curated roguelikes)
+- **Luck Stat**: in 40% of top earners (10.2× its rate across curated roguelikes)
 - **Multiplicative Scaling**: in 70% of top earners (9.3× its rate across curated roguelikes)
 - **Codex / Compendium**: in 80% of top earners (8.8× its rate across curated roguelikes)
 - **Daily / Weekly Challenge**: in 60% of top earners (8.5× its rate across curated roguelikes)
@@ -34,7 +34,7 @@ _Selectable rule-changing modifiers or named challenge runs before starting (Isa
 
 ## Where it lives
 
-Action Roguelite (12), Roguelike Deckbuilder (9), Shooter Roguelite (2), Roguevania (2), Traditional Roguelike (2), Survivors-like (1), Builder Roguelite (1), Strategy Roguelite (1)
+Action Roguelite (13), Roguelike Deckbuilder (9), Shooter Roguelite (2), Roguevania (2), Traditional Roguelike (2), Strategy Roguelite (2), Survivors-like (1), Builder Roguelite (1)
 
 Typical launch price of the top earners: $22.49
 

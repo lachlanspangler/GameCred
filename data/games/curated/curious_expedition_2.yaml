@@ -25,6 +25,7 @@ mechanics:
   party_building: 3
   stress_sanity: 3
   consumables: 2
+  faction_reputation: 1
 evidence:
   hybrid_survival: Sanity, food and carrying capacity constrain each expedition.
   dice: Dice-based combat with party members contributing dice.
