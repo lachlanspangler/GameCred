@@ -11,7 +11,7 @@
 #   aliases      alternative ids/names accepted by the validator (self-healing renames)
 #
 # Intensity in game profiles: 1 = present, 2 = significant, 3 = core pillar of the game.
-version: 3
+version: 4
 
 families:
 
@@ -40,6 +40,14 @@ families:
             desc: Player may leave a run early to keep loot; dying forfeits it.
             steam_tags: [Extraction Shooter]
             keywords: [extraction, "extract with", "escape with your loot"]
+          corpse_run:
+            name: Corpse Run / Gear Recovery
+            desc: After death, the next character can return to the previous body to recover lost gear (BELOW, LET IT DIE).
+            keywords: ["recover your", "retrieve your body", "your corpse", "previous body"]
+          soft_run_limit:
+            name: Soft Run Limit
+            desc: A run ends through a non-death limit such as steps, days or turns rather than dying (Blue Prince).
+            keywords: ["run out of steps", "limited days", "each day ends"]
           legacy_inheritance:
             name: Heirs / Legacy Inheritance
             desc: The next run's character is an heir with rolled traits or inherits from the fallen (Rogue Legacy).
@@ -216,6 +224,10 @@ families:
             steam_tags: [Dating Sim, Romance]
             keywords: [relationships, romance, "bond with"]
 
+          knowledge_progression:
+            name: Knowledge Progression
+            desc: Cross-run progress is mainly player knowledge (puzzle solutions, clues), not unlocks (Blue Prince).
+            keywords: ["knowledge is", "learn the secrets", "uncover the mystery", "clues"]
   build_power:
     name: Build & Power Scaling
     desc: How the player's power grows inside a run and how builds form.
@@ -564,6 +576,10 @@ families:
             name: Dice Manipulation
             desc: Change die faces/values beyond simple rerolling (Dicey Dungeons, Slice & Dice).
             keywords: ["dice faces", "change the dice", "manipulate dice", "upgrade your dice"]
+          dice_placement:
+            name: Dice Placement
+            desc: Rolled dice are slotted into requirement boxes on encounters/equipment (One Deck Dungeon, Dicey Dungeons).
+            keywords: ["place dice", "slot dice", "assign dice"]
           dual_resource:
             name: Dual Action Resources
             desc: Two separate spendable combat resources (stamina + mana; momentum + combo).
@@ -837,6 +853,11 @@ families:
             desc: Survival resource pressure (hunger, temperature) with runs.
             steam_tags: [Survival, Open World Survival Craft]
 
+          hybrid_narrative:
+            name: Narrative / Event Roguelite
+            desc: Text events, choices and stat checks are the core loop of each run (WORLD OF HORROR, The Red Lantern, Sunless Sea).
+            steam_tags: [Choose Your Own Adventure, Interactive Fiction, Text-Based]
+            keywords: ["text-based", "choose your own adventure", "narrative roguelite", "story-driven roguelike"]
   qol_accessibility:
     name: Quality of Life & Accessibility
     desc: Systems that lower friction and widen the audience.

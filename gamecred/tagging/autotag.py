@@ -106,5 +106,5 @@ def infer_subgenre(steam_tags: dict[str, int] | None, mechanics: dict[str, dict]
 _HYBRID_PRIORITY = {
     "hybrid_deckbuilder": 9, "hybrid_survivors": 9, "hybrid_autobattler": 8, "hybrid_traditional": 7,
     "hybrid_metroidvania": 6, "hybrid_city_builder": 6, "hybrid_puzzle": 5, "hybrid_shooter": 4,
-    "hybrid_survival": 3, "hybrid_strategy": 2, "hybrid_action_roguelite": 1,
+    "hybrid_survival": 3, "hybrid_narrative": 5, "hybrid_strategy": 2, "hybrid_action_roguelite": 1,
 }

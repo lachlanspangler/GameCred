@@ -122,3 +122,7 @@ run_carryover_on_win, shrinking_zone, raid_mechanics, vr_motion_control, shared_
 - corpse_run — recover gear from previous body (BELOW, LET IT DIE)
 - persistent_shortcuts — shortcuts persist across runs (BELOW)
 - (round-3 C) falling_block_placement (Drop Duchy), minesweeper_deduction (DemonCrawl), heist_planning (Crime Boss), boss_checkpoint_shortcut (Neon Chrome) — single examples, pending
+
+## Decision: taxonomy v4 (2026-10-13) — 5 accepted (169 → 174)
+hybrid_narrative (new subgenre; WORLD OF HORROR, The Red Lantern, Sunless Sea reassigned, old subgenre kept at 2), corpse_run,
+soft_run_limit, knowledge_progression, dice_placement.

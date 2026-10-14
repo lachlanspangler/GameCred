@@ -2,9 +2,9 @@ appid: 1053710
 name: The Red Lantern
 developer: Timberline Studio
 release_year: 2020
-subgenre: hybrid_survival
+subgenre: hybrid_narrative
 mechanics:
-  hybrid_survival: 3
+  hybrid_survival: 2
   permadeath: 2
   party_building: 2
   random_events: 3
@@ -14,6 +14,7 @@ mechanics:
   narrative_across_runs: 3
   unlock_items: 2
   day_night_cycle: 1
+  hybrid_narrative: 3
 evidence:
   party_building: Pick 5 sled dogs from a kennel of 11 before setting out.
   hunger_clock: Food for the musher and dogs is consumed daily; running out ends the journey.

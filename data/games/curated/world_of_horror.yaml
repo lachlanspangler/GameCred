@@ -2,9 +2,9 @@ appid: 913740
 name: WORLD OF HORROR
 developer: panstasz
 release_year: 2023
-subgenre: hybrid_survival
+subgenre: hybrid_narrative
 mechanics:
-  hybrid_survival: 3
+  hybrid_survival: 2
   permadeath: 3
   mid_run_save: 1
   act_structure: 2
@@ -30,6 +30,7 @@ mechanics:
   hp_as_currency: 2
   passive_relics: 1
   early_access_dev: 2
+  hybrid_narrative: 3
 evidence:
   turn_escalation: Doom meter rises with time spent and actions taken; reaching 100% ends the run.
   stress_sanity: Reason is a second health bar; hitting zero ends the run in madness.

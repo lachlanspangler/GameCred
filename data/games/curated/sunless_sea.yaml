@@ -2,9 +2,9 @@ appid: 304650
 name: Sunless Sea
 developer: Failbetter Games
 release_year: 2015
-subgenre: hybrid_survival
+subgenre: hybrid_narrative
 mechanics:
-  hybrid_survival: 3
+  hybrid_survival: 2
   permadeath: 3
   mid_run_save: 2
   open_procgen_world: 2
@@ -20,6 +20,7 @@ mechanics:
   hunger_clock: 3
   stress_sanity: 3
   legacy_inheritance: 2
+  hybrid_narrative: 3
 evidence:
   hybrid_survival: Fuel, supplies, crew and terror must be managed on every voyage.
   permadeath: Captain death is permanent; a new captain may inherit a legacy (charts, ship, items).
