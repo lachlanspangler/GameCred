@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-13T18:55:52",
- "n_games": 318,
+ "generated": "2026-10-13T19:29:12",
+ "n_games": 392,
  "precision": {
   "permadeath": {
    "steam_tag": {
-    "precision": 0.988,
-    "n": 86
+    "precision": 0.99,
+    "n": 101
    },
    "keyword": {
     "precision": 1.0,
-    "n": 19
+    "n": 24
    },
-   "recall": 0.346
+   "recall": 0.335
   },
   "mid_run_save": {
    "keyword": {
@@ -22,10 +22,10 @@
   },
   "second_chance": {
    "keyword": {
-    "precision": 0.333,
-    "n": 3
+    "precision": 0.667,
+    "n": 6
    },
-   "recall": 0.048
+   "recall": 0.108
   },
   "extraction": {
    "steam_tag": {
@@ -36,112 +36,121 @@
     "precision": 0.5,
     "n": 2
    },
-   "recall": 0.357
+   "recall": 0.312
+  },
+  "corpse_run": {
+   "recall": 0.0
+  },
+  "soft_run_limit": {
+   "recall": 0.0
+  },
+  "partial_death_penalty": {
+   "recall": 0.0
   },
   "legacy_inheritance": {
    "keyword": {
-    "precision": 0.667,
-    "n": 3
+    "precision": 0.6,
+    "n": 5
    },
-   "recall": 0.286
+   "recall": 0.375
   },
   "breeding_genetics": {
    "keyword": {
-    "precision": 0.167,
-    "n": 6
+    "precision": 0.143,
+    "n": 7
    },
    "recall": 0.5
   },
   "procgen_levels": {
    "steam_tag": {
-    "precision": 0.669,
-    "n": 148
+    "precision": 0.663,
+    "n": 172
    },
    "keyword": {
-    "precision": 0.722,
-    "n": 36
+    "precision": 0.776,
+    "n": 49
    },
-   "recall": 0.731
+   "recall": 0.727
   },
   "node_map": {
    "keyword": {
-    "precision": 0.0,
-    "n": 3
+    "precision": 0.167,
+    "n": 6
    },
-   "recall": 0.0
+   "recall": 0.018
   },
   "room_based_floors": {
    "keyword": {
-    "precision": 0.333,
-    "n": 3
+    "precision": 0.4,
+    "n": 5
    },
-   "recall": 0.018
+   "recall": 0.031
   },
   "tile_placement_world": {
    "keyword": {
     "precision": 1.0,
     "n": 1
    },
-   "recall": 0.5
+   "recall": 0.2
   },
   "open_procgen_world": {
    "steam_tag": {
-    "precision": 0.31,
-    "n": 58
+    "precision": 0.306,
+    "n": 72
    },
-   "recall": 0.621
+   "recall": 0.595
   },
   "seeded_runs": {
    "keyword": {
-    "precision": 0.5,
-    "n": 4
+    "precision": 0.6,
+    "n": 5
    },
-   "recall": 0.182
+   "recall": 0.2
   },
   "daily_challenge": {
    "keyword": {
-    "precision": 0.364,
-    "n": 11
+    "precision": 0.429,
+    "n": 14
    },
-   "recall": 0.19
+   "recall": 0.222
   },
   "handcrafted_loop_world": {
    "keyword": {
-    "precision": 0.0,
-    "n": 2
+    "precision": 0.4,
+    "n": 5
    },
-   "recall": 0.0
+   "recall": 0.4
   },
   "act_structure": {
    "keyword": {
-    "precision": 0.5,
-    "n": 18
+    "precision": 0.478,
+    "n": 23
    },
-   "recall": 0.052
+   "recall": 0.054
   },
   "boss_gates": {
    "keyword": {
     "precision": 1.0,
-    "n": 10
+    "n": 14
    },
-   "recall": 0.047
+   "recall": 0.056
   },
   "short_runs": {
    "keyword": {
-    "precision": 0.667,
-    "n": 3
+    "precision": 0.545,
+    "n": 11
    },
-   "recall": 0.029
+   "recall": 0.078
   },
   "long_runs": {
    "recall": 0.0
   },
   "endless_mode": {
    "keyword": {
-    "precision": 0.375,
-    "n": 8
+    "precision": 0.583,
+    "n": 12
    },
-   "recall": 0.1
+   "recall": 0.163
   },
   "time_pressure": {
    "steam_tag": {
@@ -152,7 +161,7 @@
     "precision": 0.5,
     "n": 4
    },
-   "recall": 0.053
+   "recall": 0.044
   },
   "minute_spawn_schedule": {
    "keyword": {
@@ -168,51 +177,51 @@
    },
    "keyword": {
     "precision": 1.0,
-    "n": 2
+    "n": 3
    },
-   "recall": 0.091
+   "recall": 0.098
   },
   "turn_escalation": {
    "recall": 0.0
   },
   "day_night_cycle": {
    "keyword": {
-    "precision": 0.5,
-    "n": 2
+    "precision": 0.667,
+    "n": 3
    },
-   "recall": 0.062
+   "recall": 0.095
   },
   "prep_combat_phases": {
    "keyword": {
     "precision": 1.0,
     "n": 1
    },
-   "recall": 0.056
+   "recall": 0.053
   },
   "permanent_stat_upgrades": {
    "keyword": {
-    "precision": 0.714,
-    "n": 21
+    "precision": 0.64,
+    "n": 25
    },
-   "recall": 0.167
+   "recall": 0.158
   },
   "skill_tree_meta": {
    "keyword": {
-    "precision": 0.714,
-    "n": 7
+    "precision": 0.667,
+    "n": 9
    },
-   "recall": 0.172
+   "recall": 0.182
   },
   "hub_building": {
    "steam_tag": {
-    "precision": 0.471,
-    "n": 17
+    "precision": 0.364,
+    "n": 22
    },
    "keyword": {
     "precision": 1.0,
     "n": 1
    },
-   "recall": 0.164
+   "recall": 0.143
   },
   "life_sim_hub": {
    "steam_tag": {
@@ -223,7 +232,7 @@
     "precision": 0.333,
     "n": 3
    },
-   "recall": 0.286
+   "recall": 0.25
   },
   "shop_management": {
    "keyword": {
@@ -234,17 +243,17 @@
   },
   "unlock_items": {
    "keyword": {
-    "precision": 0.699,
-    "n": 73
+    "precision": 0.72,
+    "n": 93
    },
-   "recall": 0.307
+   "recall": 0.324
   },
   "unlock_characters": {
    "keyword": {
-    "precision": 0.9,
-    "n": 10
+    "precision": 0.857,
+    "n": 14
    },
-   "recall": 0.07
+   "recall": 0.078
   },
   "achievement_unlocks": {
    "keyword": {
@@ -255,87 +264,98 @@
   },
   "traversal_unlocks": {
    "keyword": {
-    "precision": 0.067,
-    "n": 15
+    "precision": 0.059,
+    "n": 17
    },
-   "recall": 0.143
+   "recall": 0.125
   },
   "weapon_mastery": {
    "recall": 0.0
   },
   "ascension_ladder": {
    "keyword": {
-    "precision": 0.118,
-    "n": 17
+    "precision": 0.083,
+    "n": 24
    },
-   "recall": 0.053
+   "recall": 0.047
   },
   "modular_difficulty": {
    "keyword": {
-    "precision": 0.095,
-    "n": 21
+    "precision": 0.133,
+    "n": 30
    },
-   "recall": 0.105
+   "recall": 0.114
   },
   "narrative_across_runs": {
    "steam_tag": {
-    "precision": 0.543,
-    "n": 35
+    "precision": 0.542,
+    "n": 48
    },
    "keyword": {
-    "precision": 0.25,
-    "n": 4
+    "precision": 0.143,
+    "n": 7
    },
-   "recall": 0.571
+   "recall": 0.628
   },
   "lore_codex": {
    "keyword": {
-    "precision": 0.333,
-    "n": 3
+    "precision": 0.286,
+    "n": 7
    },
-   "recall": 0.038
+   "recall": 0.057
   },
   "npc_relationships": {
+   "steam_tag": {
+    "precision": 1.0,
+    "n": 1
+   },
    "keyword": {
     "precision": 0.5,
     "n": 8
    },
-   "recall": 0.286
+   "recall": 0.312
+  },
+  "knowledge_progression": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 11
+   },
+   "recall": 0.0
   },
   "pick_one_of_n": {
    "keyword": {
-    "precision": 0.438,
-    "n": 16
+    "precision": 0.44,
+    "n": 25
    },
-   "recall": 0.05
+   "recall": 0.067
   },
   "level_up_choices": {
    "keyword": {
-    "precision": 0.576,
-    "n": 33
+    "precision": 0.512,
+    "n": 43
    },
-   "recall": 0.26
+   "recall": 0.259
   },
   "reroll": {
    "keyword": {
     "precision": 0.5,
     "n": 6
    },
-   "recall": 0.094
+   "recall": 0.077
   },
   "banish_skip": {
    "keyword": {
     "precision": 0.0,
-    "n": 3
+    "n": 5
    },
    "recall": 0.0
   },
   "loadout_start": {
    "keyword": {
-    "precision": 0.455,
-    "n": 11
+    "precision": 0.471,
+    "n": 17
    },
-   "recall": 0.069
+   "recall": 0.08
   },
   "flat_stat_scaling": {
    "keyword": {
@@ -346,80 +366,94 @@
   },
   "multiplicative_scaling": {
    "keyword": {
-    "precision": 1.0,
-    "n": 1
+    "precision": 0.5,
+    "n": 2
    },
-   "recall": 0.037
+   "recall": 0.034
   },
   "item_stacking": {
    "keyword": {
-    "precision": 0.25,
-    "n": 4
+    "precision": 0.143,
+    "n": 7
    },
    "recall": 0.077
   },
   "weapon_evolution": {
    "keyword": {
-    "precision": 0.185,
-    "n": 27
+    "precision": 0.194,
+    "n": 31
    },
-   "recall": 0.385
+   "recall": 0.4
+  },
+  "merge_upgrades": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 2
+   },
+   "recall": 0.0
   },
   "synergies": {
    "keyword": {
-    "precision": 0.865,
-    "n": 37
+    "precision": 0.864,
+    "n": 44
    },
-   "recall": 0.237
+   "recall": 0.247
   },
   "transformations": {
    "recall": 0.0
   },
+  "resource_conversion": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 3
+   },
+   "recall": null
+  },
   "build_archetypes": {
    "keyword": {
-    "precision": 0.549,
-    "n": 51
+    "precision": 0.541,
+    "n": 61
    },
-   "recall": 0.326
+   "recall": 0.347
   },
   "item_upgrading": {
    "keyword": {
-    "precision": 0.259,
-    "n": 27
+    "precision": 0.225,
+    "n": 40
    },
-   "recall": 0.086
+   "recall": 0.092
   },
   "cooldown_reduction": {
    "keyword": {
-    "precision": 0.5,
-    "n": 2
+    "precision": 0.667,
+    "n": 3
    },
-   "recall": 0.091
+   "recall": 0.154
   },
   "character_classes": {
    "steam_tag": {
-    "precision": 0.71,
-    "n": 31
+    "precision": 0.667,
+    "n": 39
    },
    "keyword": {
-    "precision": 0.942,
-    "n": 69
+    "precision": 0.89,
+    "n": 91
    },
-   "recall": 0.486
+   "recall": 0.512
   },
   "talent_slots": {
    "keyword": {
-    "precision": 0.333,
-    "n": 15
+    "precision": 0.278,
+    "n": 18
    },
-   "recall": 0.25
+   "recall": 0.238
   },
   "card_mods": {
    "keyword": {
-    "precision": 0.231,
-    "n": 13
+    "precision": 0.2,
+    "n": 15
    },
-   "recall": 0.333
+   "recall": 0.25
   },
   "weapon_stance_swap": {
    "keyword": {
@@ -431,31 +465,38 @@
   "party_building": {
    "steam_tag": {
     "precision": 1.0,
-    "n": 6
+    "n": 7
    },
    "keyword": {
-    "precision": 0.382,
-    "n": 55
+    "precision": 0.378,
+    "n": 74
    },
-   "recall": 0.614
+   "recall": 0.603
   },
   "summons_minions": {
    "keyword": {
-    "precision": 0.273,
-    "n": 22
+    "precision": 0.25,
+    "n": 28
    },
-   "recall": 0.286
+   "recall": 0.28
+  },
+  "companions_pets": {
+   "keyword": {
+    "precision": 0.169,
+    "n": 59
+   },
+   "recall": 0.37
   },
   "monster_capture": {
    "steam_tag": {
-    "precision": 0.5,
-    "n": 2
+    "precision": 0.333,
+    "n": 3
    },
    "keyword": {
-    "precision": 0.222,
-    "n": 9
+    "precision": 0.125,
+    "n": 16
    },
-   "recall": 0.75
+   "recall": 0.6
   },
   "combo_meter": {
    "keyword": {
@@ -473,108 +514,157 @@
   "spell_programming": {
    "keyword": {
     "precision": 0.0,
-    "n": 3
+    "n": 6
    },
    "recall": 0.0
   },
+  "projectile_modifiers": {
+   "keyword": {
+    "precision": 0.286,
+    "n": 14
+   },
+   "recall": 0.222
+  },
+  "proc_triggers": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 19
+   },
+   "recall": 0.0
+  },
+  "lifesteal": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 2
+   },
+   "recall": 0.0
+  },
+  "temporary_buffs": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 29
+   },
+   "recall": 0.0
+  },
+  "ultimate_meter": {
+   "keyword": {
+    "precision": 0.064,
+    "n": 47
+   },
+   "recall": 0.3
+  },
+  "luck_stat": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 7
+   },
+   "recall": 0.0
+  },
+  "movement_speed_scaling": {
+   "keyword": {
+    "precision": 0.5,
+    "n": 2
+   },
+   "recall": 0.038
+  },
   "passive_relics": {
    "keyword": {
-    "precision": 0.746,
-    "n": 59
+    "precision": 0.722,
+    "n": 79
    },
-   "recall": 0.314
+   "recall": 0.339
   },
   "active_items": {
    "recall": 0.0
   },
   "consumables": {
    "keyword": {
-    "precision": 0.562,
-    "n": 16
+    "precision": 0.69,
+    "n": 29
    },
-   "recall": 0.092
+   "recall": 0.15
   },
   "weapons_variety": {
    "keyword": {
-    "precision": 0.579,
-    "n": 38
+    "precision": 0.617,
+    "n": 47
    },
-   "recall": 0.224
+   "recall": 0.228
   },
   "item_rarity": {
    "steam_tag": {
-    "precision": 0.484,
-    "n": 31
+    "precision": 0.514,
+    "n": 37
    },
    "keyword": {
-    "precision": 0.296,
-    "n": 27
+    "precision": 0.273,
+    "n": 33
    },
-   "recall": 0.365
+   "recall": 0.359
   },
   "cursed_items": {
    "keyword": {
-    "precision": 0.188,
-    "n": 16
+    "precision": 0.25,
+    "n": 20
    },
-   "recall": 0.111
+   "recall": 0.132
   },
   "shops": {
    "keyword": {
-    "precision": 0.714,
-    "n": 28
+    "precision": 0.706,
+    "n": 34
    },
-   "recall": 0.122
+   "recall": 0.117
   },
   "in_run_currency": {
    "keyword": {
-    "precision": 0.769,
-    "n": 26
+    "precision": 0.765,
+    "n": 34
    },
-   "recall": 0.11
+   "recall": 0.116
   },
   "interest_economy": {
    "steam_tag": {
     "precision": 0.0,
-    "n": 2
+    "n": 3
    },
    "recall": 0.0
   },
   "crafting": {
    "steam_tag": {
-    "precision": 0.842,
-    "n": 19
+    "precision": 0.826,
+    "n": 23
    },
    "keyword": {
-    "precision": 0.5,
-    "n": 20
+    "precision": 0.542,
+    "n": 24
    },
-   "recall": 0.542
+   "recall": 0.508
   },
   "inventory_management": {
    "steam_tag": {
-    "precision": 0.875,
-    "n": 8
+    "precision": 0.8,
+    "n": 10
    },
    "keyword": {
-    "precision": 0.667,
-    "n": 3
+    "precision": 0.5,
+    "n": 4
    },
-   "recall": 0.184
+   "recall": 0.164
   },
   "adjacency_placement": {
    "keyword": {
-    "precision": 0.0,
-    "n": 2
+    "precision": 0.333,
+    "n": 3
    },
-   "recall": 0.0
+   "recall": 0.083
   },
   "deck_thinning": {
    "keyword": {
     "precision": 0.5,
     "n": 2
    },
-   "recall": 0.071
+   "recall": 0.067
   },
   "weapon_durability": {
    "recall": 0.0
@@ -582,7 +672,7 @@
   "item_identification": {
    "keyword": {
     "precision": 0.0,
-    "n": 1
+    "n": 2
    },
    "recall": 0.0
   },
@@ -591,17 +681,17 @@
   },
   "faction_reputation": {
    "keyword": {
-    "precision": 0.176,
-    "n": 17
+    "precision": 0.13,
+    "n": 23
    },
-   "recall": 1.0
+   "recall": 0.75
   },
   "ship_base_design": {
    "keyword": {
     "precision": 1.0,
-    "n": 2
+    "n": 3
    },
-   "recall": 0.286
+   "recall": 0.25
   },
   "automation_logistics": {
    "steam_tag": {
@@ -616,137 +706,137 @@
   },
   "real_time_action": {
    "steam_tag": {
-    "precision": 0.963,
-    "n": 188
+    "precision": 0.957,
+    "n": 232
    },
    "keyword": {
-    "precision": 0.2,
-    "n": 15
+    "precision": 0.167,
+    "n": 18
    },
-   "recall": 0.944
+   "recall": 0.93
   },
   "turn_based": {
    "steam_tag": {
-    "precision": 0.932,
-    "n": 103
+    "precision": 0.91,
+    "n": 122
    },
    "keyword": {
     "precision": 1.0,
     "n": 2
    },
-   "recall": 0.933
+   "recall": 0.911
   },
   "grid_tactics": {
    "steam_tag": {
-    "precision": 0.346,
-    "n": 52
+    "precision": 0.328,
+    "n": 64
    },
    "keyword": {
-    "precision": 0.16,
-    "n": 25
+    "precision": 0.161,
+    "n": 31
    },
-   "recall": 0.786
+   "recall": 0.788
   },
   "lanes_ranks": {
    "keyword": {
-    "precision": 0.2,
-    "n": 10
+    "precision": 0.188,
+    "n": 16
    },
-   "recall": 0.143
+   "recall": 0.188
   },
   "auto_battler": {
    "steam_tag": {
-    "precision": 0.286,
-    "n": 7
+    "precision": 0.5,
+    "n": 12
    },
    "keyword": {
-    "precision": 0.333,
-    "n": 3
+    "precision": 0.25,
+    "n": 4
    },
-   "recall": 0.5
+   "recall": 0.636
   },
   "auto_attack": {
    "keyword": {
-    "precision": 0.522,
-    "n": 23
+    "precision": 0.483,
+    "n": 29
    },
-   "recall": 0.375
+   "recall": 0.4
   },
   "twin_stick": {
    "steam_tag": {
-    "precision": 0.404,
-    "n": 57
+    "precision": 0.412,
+    "n": 68
    },
-   "recall": 0.793
+   "recall": 0.824
   },
   "bullet_hell": {
    "steam_tag": {
-    "precision": 0.292,
-    "n": 65
+    "precision": 0.3,
+    "n": 70
    },
-   "recall": 0.792
+   "recall": 0.808
   },
   "dodge_iframes": {
    "steam_tag": {
-    "precision": 0.846,
-    "n": 13
+    "precision": 0.75,
+    "n": 16
    },
    "keyword": {
-    "precision": 0.308,
-    "n": 26
+    "precision": 0.323,
+    "n": 31
    },
-   "recall": 0.339
+   "recall": 0.349
   },
   "melee_combos": {
    "steam_tag": {
-    "precision": 0.522,
-    "n": 46
+    "precision": 0.5,
+    "n": 56
    },
    "keyword": {
-    "precision": 0.103,
-    "n": 29
+    "precision": 0.108,
+    "n": 37
    },
-   "recall": 0.794
+   "recall": 0.78
   },
   "platforming": {
    "steam_tag": {
-    "precision": 0.895,
-    "n": 38
+    "precision": 0.891,
+    "n": 46
    },
    "keyword": {
     "precision": 1.0,
-    "n": 2
+    "n": 4
    },
-   "recall": 0.8
+   "recall": 0.818
   },
   "fps": {
    "steam_tag": {
-    "precision": 0.409,
-    "n": 66
+    "precision": 0.419,
+    "n": 86
    },
    "keyword": {
-    "precision": 0.0,
-    "n": 1
+    "precision": 0.5,
+    "n": 2
    },
    "recall": 1.0
   },
   "vehicle_combat": {
    "steam_tag": {
-    "precision": 0.444,
-    "n": 27
+    "precision": 0.484,
+    "n": 31
    },
    "keyword": {
-    "precision": 0.312,
-    "n": 16
+    "precision": 0.333,
+    "n": 24
    },
-   "recall": 0.895
+   "recall": 0.885
   },
   "traversal_tools": {
    "keyword": {
-    "precision": 0.5,
-    "n": 6
+    "precision": 0.571,
+    "n": 7
    },
-   "recall": 0.188
+   "recall": 0.167
   },
   "parry_counter": {
    "keyword": {
@@ -758,31 +848,31 @@
   "rhythm_timing": {
    "steam_tag": {
     "precision": 1.0,
-    "n": 2
+    "n": 3
    },
    "keyword": {
     "precision": 0.0,
-    "n": 2
+    "n": 3
    },
    "recall": 1.0
   },
   "stealth": {
    "steam_tag": {
-    "precision": 0.889,
-    "n": 9
+    "precision": 0.917,
+    "n": 12
    },
    "keyword": {
-    "precision": 0.167,
-    "n": 6
+    "precision": 0.2,
+    "n": 10
    },
-   "recall": 0.75
+   "recall": 0.765
   },
   "weapon_handling": {
    "keyword": {
-    "precision": 0.222,
-    "n": 9
+    "precision": 0.182,
+    "n": 11
    },
-   "recall": 0.095
+   "recall": 0.08
   },
   "aim_mode_options": {
    "keyword": {
@@ -793,39 +883,49 @@
   },
   "time_manipulation": {
    "steam_tag": {
-    "precision": 0.667,
-    "n": 3
+    "precision": 0.5,
+    "n": 4
    },
    "keyword": {
     "precision": 0.5,
     "n": 2
    },
-   "recall": 1.0
+   "recall": 0.75
+  },
+  "momentum_movement": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 7
+   },
+   "recall": 0.0
+  },
+  "health_drain": {
+   "recall": 0.0
   },
   "deckbuilding": {
    "steam_tag": {
-    "precision": 0.689,
-    "n": 61
+    "precision": 0.645,
+    "n": 76
    },
    "keyword": {
-    "precision": 0.667,
-    "n": 3
+    "precision": 0.75,
+    "n": 4
    },
-   "recall": 0.978
+   "recall": 0.981
   },
   "energy_mana": {
    "keyword": {
-    "precision": 0.111,
-    "n": 9
+    "precision": 0.091,
+    "n": 11
    },
-   "recall": 0.026
+   "recall": 0.023
   },
   "card_draw": {
    "keyword": {
-    "precision": 0.667,
-    "n": 3
+    "precision": 0.5,
+    "n": 4
    },
-   "recall": 0.071
+   "recall": 0.059
   },
   "dice": {
    "steam_tag": {
@@ -833,15 +933,15 @@
     "n": 3
    },
    "keyword": {
-    "precision": 0.462,
-    "n": 13
+    "precision": 0.533,
+    "n": 15
    },
-   "recall": 0.8
+   "recall": 0.833
   },
   "poker_hands": {
    "steam_tag": {
-    "precision": 0.034,
-    "n": 59
+    "precision": 0.027,
+    "n": 73
    },
    "recall": 0.667
   },
@@ -859,105 +959,128 @@
    },
    "recall": 0.0
   },
+  "dice_placement": {
+   "recall": 0.0
+  },
   "dual_resource": {
    "keyword": {
-    "precision": 0.333,
-    "n": 3
+    "precision": 0.2,
+    "n": 5
    },
-   "recall": 0.5
+   "recall": 0.25
+  },
+  "realtime_deck_cycling": {
+   "recall": 0.0
   },
   "status_effects": {
    "keyword": {
-    "precision": 0.409,
-    "n": 22
+    "precision": 0.37,
+    "n": 27
    },
-   "recall": 0.088
+   "recall": 0.083
   },
   "elemental_interactions": {
    "keyword": {
-    "precision": 0.222,
-    "n": 9
+    "precision": 0.273,
+    "n": 11
    },
-   "recall": 0.143
+   "recall": 0.158
   },
   "crits": {
    "keyword": {
     "precision": 1.0,
     "n": 2
    },
-   "recall": 0.074
+   "recall": 0.054
   },
   "block_shield": {
    "keyword": {
-    "precision": 0.258,
-    "n": 31
+    "precision": 0.2,
+    "n": 50
    },
-   "recall": 0.195
+   "recall": 0.2
   },
   "healing_scarcity": {
    "recall": 0.0
   },
   "limb_injuries": {
    "keyword": {
-    "precision": 0.3,
-    "n": 10
+    "precision": 0.385,
+    "n": 13
    },
-   "recall": 0.429
+   "recall": 0.455
   },
   "environmental_hazards": {
    "keyword": {
-    "precision": 0.45,
-    "n": 40
+    "precision": 0.453,
+    "n": 53
    },
-   "recall": 0.462
+   "recall": 0.414
   },
   "physics_simulation": {
    "steam_tag": {
-    "precision": 0.116,
-    "n": 43
+    "precision": 0.088,
+    "n": 57
    },
    "keyword": {
     "precision": 0.429,
     "n": 7
    },
-   "recall": 0.615
+   "recall": 0.571
   },
   "enemy_intents": {
    "keyword": {
     "precision": 1.0,
     "n": 1
    },
-   "recall": 0.037
+   "recall": 0.032
   },
   "attack_patterns": {
    "steam_tag": {
-    "precision": 0.462,
-    "n": 13
+    "precision": 0.375,
+    "n": 16
    },
    "keyword": {
     "precision": 0.5,
     "n": 4
    },
-   "recall": 0.235
+   "recall": 0.229
   },
   "perfect_information": {
    "recall": 0.0
   },
+  "turn_rewind": {
+   "keyword": {
+    "precision": 0.5,
+    "n": 4
+   },
+   "recall": 0.5
+  },
   "enemy_hp_scaling": {
    "keyword": {
     "precision": 0.0,
-    "n": 1
+    "n": 3
    },
    "recall": 0.0
   },
   "elites": {
    "keyword": {
-    "precision": 0.316,
-    "n": 19
+    "precision": 0.25,
+    "n": 28
    },
-   "recall": 0.136
+   "recall": 0.123
   },
   "multi_phase_bosses": {
+   "recall": 0.0
+  },
+  "boss_rush": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 4
+   },
+   "recall": 0.0
+  },
+  "shrinking_zone": {
    "recall": 0.0
   },
   "destructible_subsystems": {
@@ -965,49 +1088,49 @@
   },
   "unkillable_pursuer": {
    "keyword": {
-    "precision": 0.053,
-    "n": 19
+    "precision": 0.087,
+    "n": 23
    },
-   "recall": 0.2
+   "recall": 0.25
   },
   "horde_density": {
    "keyword": {
-    "precision": 0.603,
-    "n": 68
+    "precision": 0.554,
+    "n": 83
    },
-   "recall": 0.719
+   "recall": 0.767
   },
   "enemy_variety": {
    "keyword": {
-    "precision": 0.077,
-    "n": 13
+    "precision": 0.071,
+    "n": 14
    },
-   "recall": 0.077
+   "recall": 0.067
   },
   "waves": {
    "steam_tag": {
-    "precision": 0.909,
-    "n": 11
+    "precision": 0.923,
+    "n": 13
    },
    "keyword": {
-    "precision": 0.267,
-    "n": 15
+    "precision": 0.353,
+    "n": 17
    },
-   "recall": 0.583
+   "recall": 0.6
   },
   "double_edged_items": {
    "keyword": {
     "precision": 0.167,
     "n": 6
    },
-   "recall": 0.022
+   "recall": 0.016
   },
   "hp_as_currency": {
    "keyword": {
-    "precision": 0.444,
-    "n": 9
+    "precision": 0.364,
+    "n": 11
    },
-   "recall": 0.308
+   "recall": 0.235
   },
   "gambling": {
    "steam_tag": {
@@ -1015,106 +1138,120 @@
     "n": 4
    },
    "keyword": {
-    "precision": 1.0,
-    "n": 1
+    "precision": 0.667,
+    "n": 3
    },
-   "recall": 0.111
+   "recall": 0.13
   },
   "optional_challenges": {
    "keyword": {
-    "precision": 0.333,
-    "n": 6
+    "precision": 0.429,
+    "n": 7
    },
-   "recall": 0.036
+   "recall": 0.041
   },
   "push_your_luck": {
    "keyword": {
     "precision": 0.0,
-    "n": 1
+    "n": 2
    },
    "recall": 0.0
   },
   "stress_sanity": {
    "keyword": {
-    "precision": 0.5,
-    "n": 14
+    "precision": 0.529,
+    "n": 17
    },
-   "recall": 0.778
+   "recall": 0.643
   },
   "corruption_meter": {
    "keyword": {
-    "precision": 0.222,
-    "n": 9
+    "precision": 0.182,
+    "n": 11
    },
    "recall": 0.667
   },
   "hunger_clock": {
    "keyword": {
-    "precision": 0.4,
-    "n": 30
+    "precision": 0.486,
+    "n": 35
    },
-   "recall": 0.324
+   "recall": 0.34
   },
   "random_events": {
    "steam_tag": {
-    "precision": 0.529,
-    "n": 34
+    "precision": 0.545,
+    "n": 44
    },
    "keyword": {
-    "precision": 0.727,
-    "n": 11
+    "precision": 0.769,
+    "n": 13
    },
-   "recall": 0.313
+   "recall": 0.309
+  },
+  "secret_areas": {
+   "keyword": {
+    "precision": 0.221,
+    "n": 95
+   },
+   "recall": 0.636
+  },
+  "run_mutators": {
+   "keyword": {
+    "precision": 0.429,
+    "n": 7
+   },
+   "recall": 0.167
   },
   "high_variance_loot": {
    "steam_tag": {
-    "precision": 0.256,
-    "n": 39
+    "precision": 0.292,
+    "n": 48
    },
-   "recall": 0.312
+   "recall": 0.35
   },
   "rng_mitigation": {
    "recall": 0.0
   },
   "online_coop": {
    "steam_tag": {
-    "precision": 0.735,
-    "n": 68
+    "precision": 0.727,
+    "n": 88
    },
    "keyword": {
-    "precision": 0.5,
-    "n": 14
+    "precision": 0.412,
+    "n": 17
    },
-   "recall": 0.919
+   "recall": 0.922
   },
   "local_coop": {
    "steam_tag": {
-    "precision": 0.82,
-    "n": 50
+    "precision": 0.8,
+    "n": 65
    },
    "keyword": {
     "precision": 0.667,
     "n": 3
    },
-   "recall": 0.878
+   "recall": 0.9
   },
   "pvp": {
    "steam_tag": {
-    "precision": 0.444,
-    "n": 9
+    "precision": 0.583,
+    "n": 12
    },
    "keyword": {
-    "precision": 0.667,
-    "n": 3
+    "precision": 0.8,
+    "n": 5
    },
-   "recall": 0.462
+   "recall": 0.458
   },
   "async_multiplayer": {
    "keyword": {
     "precision": 1.0,
     "n": 2
    },
-   "recall": 0.4
+   "recall": 0.333
   },
   "asymmetric_multiplayer": {
    "recall": 0.0
@@ -1126,27 +1263,45 @@
    },
    "recall": 0.0
   },
-  "leaderboards": {
+  "shared_world_mmo": {
    "steam_tag": {
-    "precision": 0.167,
-    "n": 18
+    "precision": 1.0,
+    "n": 1
    },
    "keyword": {
-    "precision": 0.125,
-    "n": 16
+    "precision": 0.0,
+    "n": 1
    },
-   "recall": 0.208
+   "recall": 1.0
+  },
+  "raid_mechanics": {
+   "keyword": {
+    "precision": 0.0,
+    "n": 6
+   },
+   "recall": 0.0
+  },
+  "leaderboards": {
+   "steam_tag": {
+    "precision": 0.182,
+    "n": 22
+   },
+   "keyword": {
+    "precision": 0.143,
+    "n": 21
+   },
+   "recall": 0.189
   },
   "mod_support": {
    "steam_tag": {
-    "precision": 0.467,
-    "n": 15
+    "precision": 0.524,
+    "n": 21
    },
    "keyword": {
-    "precision": 0.333,
-    "n": 12
+    "precision": 0.357,
+    "n": 14
    },
-   "recall": 0.423
+   "recall": 0.41
   },
   "speedrun_support": {
    "recall": 0.0
@@ -1156,103 +1311,118 @@
     "precision": 0.5,
     "n": 10
    },
-   "recall": 0.081
+   "recall": 0.077
   },
   "early_access_dev": {
    "steam_tag": {
-    "precision": 0.816,
-    "n": 49
+    "precision": 0.783,
+    "n": 60
    },
    "keyword": {
-    "precision": 0.571,
-    "n": 7
+    "precision": 0.625,
+    "n": 8
    },
-   "recall": 0.444
+   "recall": 0.473
   },
   "hybrid_deckbuilder": {
    "steam_tag": {
-    "precision": 0.886,
-    "n": 44
+    "precision": 0.904,
+    "n": 52
    },
-   "recall": 0.75
+   "recall": 0.77
   },
   "hybrid_survivors": {
-   "recall": 0.0
+   "keyword": {
+    "precision": 1.0,
+    "n": 21
+   },
+   "recall": 0.488
   },
   "hybrid_action_roguelite": {
    "steam_tag": {
-    "precision": 0.598,
-    "n": 169
+    "precision": 0.617,
+    "n": 201
    },
-   "recall": 0.856
+   "recall": 0.832
   },
   "hybrid_traditional": {
    "steam_tag": {
-    "precision": 0.917,
-    "n": 24
+    "precision": 0.88,
+    "n": 25
    },
-   "recall": 0.786
+   "recall": 0.71
   },
   "hybrid_metroidvania": {
    "steam_tag": {
-    "precision": 0.438,
-    "n": 16
+    "precision": 0.45,
+    "n": 20
    },
-   "recall": 0.875
+   "recall": 0.9
   },
   "hybrid_strategy": {
    "steam_tag": {
-    "precision": 0.402,
-    "n": 132
+    "precision": 0.391,
+    "n": 161
    },
-   "recall": 0.946
+   "recall": 0.94
   },
   "hybrid_puzzle": {
    "steam_tag": {
-    "precision": 0.462,
-    "n": 13
+    "precision": 0.556,
+    "n": 18
    },
-   "recall": 0.316
+   "recall": 0.4
   },
   "hybrid_shooter": {
    "steam_tag": {
-    "precision": 0.646,
-    "n": 65
+    "precision": 0.658,
+    "n": 79
    },
-   "recall": 0.933
+   "recall": 0.897
   },
   "hybrid_autobattler": {
    "steam_tag": {
-    "precision": 0.286,
-    "n": 7
+    "precision": 0.417,
+    "n": 12
    },
-   "recall": 0.286
+   "recall": 0.5
   },
   "hybrid_city_builder": {
    "steam_tag": {
-    "precision": 1.0,
-    "n": 5
+    "precision": 0.889,
+    "n": 9
    },
-   "recall": 0.417
+   "recall": 0.533
   },
   "hybrid_survival": {
    "steam_tag": {
-    "precision": 0.34,
-    "n": 53
+    "precision": 0.338,
+    "n": 68
    },
-   "recall": 0.643
+   "recall": 0.639
+  },
+  "hybrid_narrative": {
+   "steam_tag": {
+    "precision": 0.111,
+    "n": 9
+   },
+   "keyword": {
+    "precision": 0.0,
+    "n": 1
+   },
+   "recall": 0.2
   },
   "assist_mode": {
    "keyword": {
-    "precision": 0.143,
-    "n": 7
+    "precision": 0.2,
+    "n": 10
    },
-   "recall": 0.053
+   "recall": 0.069
   },
   "tutorialized_unlocks": {
    "keyword": {
     "precision": 0.0,
-    "n": 3
+    "n": 4
    },
    "recall": 0.0
   },
@@ -1262,20 +1432,20 @@
   "speed_controls": {
    "keyword": {
     "precision": 0.0,
-    "n": 1
+    "n": 2
    },
    "recall": 0.0
   },
   "steam_deck_friendly": {
    "steam_tag": {
-    "precision": 0.14,
-    "n": 43
+    "precision": 0.143,
+    "n": 49
    },
    "keyword": {
-    "precision": 0.111,
-    "n": 9
+    "precision": 0.214,
+    "n": 14
    },
-   "recall": 0.304
+   "recall": 0.263
   }
  }
 }

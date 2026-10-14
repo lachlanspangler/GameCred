@@ -474,6 +474,11 @@ function openGame(id) {
         h("span", { class: "chip" }, `community pct ${fmt.f1(g.e)}`), Object.entries(g.wc || {}).filter(([, v]) => v > 0).map(([k, v]) => h("span", { class: "chip" }, `wiki ${k.replace(/_/g, " ")}: ${v}`)))) : null,
     Object.keys(g.st || {}).length ? h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, "Design stats"),
       h("div", { class: "row" }, Object.entries(g.st).map(([k, v]) => h("span", { class: "chip" }, `${k.replace(/_/g, " ")}: ${v}`)))) : null,
+    (() => { const peers = GAMES.filter(x => x.sg === g.sg && x.src === "curated" && x.id !== g.id), hits = peers.filter(x => x.gsi >= 75);
+      const avg = list => { const acc = famProfile({}).map(() => 0); list.forEach(x => famProfile(Object.fromEntries(Object.entries(x.m).map(([k, v]) => [k, v[0]]))).forEach((v, i) => acc[i] += v / list.length)); return acc; };
+      return h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, "Design shape vs genre hits"),
+        h("div", { class: "muted" }, `How much of each mechanic family ${g.n} uses, against the average curated ${mname(g.sg)} hit (GSI ≥ 75, n=${hits.length}).`),
+        radar([{ label: g.n, color: "var(--series-1)", vals: famProfile(vec) }].concat(hits.length >= 3 ? [{ label: `${mname(g.sg)} hits`, color: "var(--series-2)", vals: avg(hits) }] : []))); })(),
     h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, `Mechanic fingerprint (${Object.keys(g.m).length})`),
       h("div", { class: "muted", style: "margin-bottom:6px" }, "● ● ● = present / significant / core pillar. Number = slice Δ for that mechanic. Italic = auto-tagged."), fams),
     h("div", { class: "card", style: "margin-top:14px" }, h("h3", {}, "Closest design comps"),
@@ -740,6 +745,9 @@ function viewLab() {
     h("div", { class: "grid g2", style: "margin-top:12px" },
       tile("Comps hit rate", fmt.pct(compHit), `25 nearest designs, similarity-weighted`),
       tile("Comps flop rate", fmt.pct(compFlop), compG.length ? `comp median ${fmt.f1(quantile([...compG].sort((a, b) => a - b), 0.5))}` : "")),
+    (() => { const hitsC = comps.filter(c => c.g.gsi >= hitT).map(c => c.g); if (hitsC.length < 2) return null;
+      const acc = famProfile({}).map(() => 0); hitsC.forEach(x => famProfile(Object.fromEntries(Object.entries(x.m).map(([k, v]) => [k, v[0]]))).forEach((v, i) => acc[i] += v / hitsC.length));
+      return h("div", { style: "margin-top:12px" }, h("h3", {}, "Design shape vs your hit comps"), radar([{ label: "Your design", color: "var(--series-1)", vals: famProfile(lab.vec) }, { label: `Hit comps (n=${hitsC.length})`, color: "var(--series-3)", vals: acc }], { size: 300 })); })(),
     h("h3", { style: "margin-top:16px" }, `Missing table stakes (${missing.length})`),
     missing.length ? h("ul", { class: "list-tight" }, missing.map(r => h("li", {}, h("a", { href: "#", onclick: e => { e.preventDefault(); lab.vec[r.mechanic] = 2; viewLab(); } }, mname(r.mechanic)),
       h("span", { class: "muted" }, ` — in ${fmt.pct(r.prev_in_hits)} of hits, flop ratio ${fmt.f2(r.flop_ratio)}`)))) : h("div", { class: "muted" }, "None — genre fundamentals covered."),
@@ -925,6 +933,27 @@ function heatmapChart(H, { cell = 30, labelW = 210 } = {}) {
     });
   });
   return svg;
+}
+
+
+/** Radar of family depth (share of each family's mechanics present, intensity-weighted). series: [{label, color, vec}] */
+function famProfile(vec) {
+  return FAMS.filter(f => f.id !== "structure_hybrid").map(f => { const ms = f.subfamilies.flatMap(sf => sf.mechanics); return ms.reduce((a, m) => a + (vec[m] || 0), 0) / (ms.length * 3); });
+}
+function radar(series, { size = 340 } = {}) {
+  const fams = FAMS.filter(f => f.id !== "structure_hybrid"), n = fams.length, cx = size / 2, cy = size / 2 + 6, R = size / 2 - 70;
+  const mx = Math.max(0.15, ...series.flatMap(sr => sr.vals)) * 1.1;
+  const pt = (i, v) => [cx + Math.sin(2 * Math.PI * i / n) * R * v / mx, cy - Math.cos(2 * Math.PI * i / n) * R * v / mx];
+  const svg = s("svg", { class: "svgchart", style: `max-width:${size + 120}px`, viewBox: `-60 0 ${size + 120} ${size + 10}` });
+  for (const r of [0.25, 0.5, 0.75, 1]) svg.append(s("polygon", { points: fams.map((_, i) => pt(i, mx * r).join(",")).join(" "), fill: "none", stroke: "var(--grid)" }));
+  fams.forEach((f, i) => { const [x, y] = pt(i, mx * 1.13); svg.append(s("line", { x1: cx, y1: cy, x2: pt(i, mx)[0], y2: pt(i, mx)[1], stroke: "var(--grid)" }), s("text", { class: "lbl", x, y: y + 4, "text-anchor": Math.abs(x - cx) < 10 ? "middle" : x > cx ? "start" : "end", style: "font-size:10.5px" }, f.name.replace(" & ", " & ").split(" ").slice(0, 3).join(" "))); });
+  for (const sr of series) {
+    const pts = sr.vals.map((v, i) => pt(i, v));
+    svg.append(s("polygon", { points: pts.map(p => p.join(",")).join(" "), fill: sr.color, "fill-opacity": 0.14, stroke: sr.color, "stroke-width": 2, "stroke-linejoin": "round" }));
+    pts.forEach((p, i) => { svg.append(s("circle", { cx: p[0], cy: p[1], r: 4, fill: sr.color, stroke: "var(--surface-1)", "stroke-width": 2 }));
+      const hit = s("circle", { class: "hit", cx: p[0], cy: p[1], r: 10 }); hover(hit, () => [fmt.pct(sr.vals[i]), `${sr.label} · ${fams[i].name}`, ["share of family's mechanics (intensity-weighted)"]]); svg.append(hit); });
+  }
+  return h("div", {}, legendSw(series.map(sr => [sr.label, sr.color, true])), svg);
 }
 
 // ---------- Money ----------

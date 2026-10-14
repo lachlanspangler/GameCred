@@ -51,9 +51,10 @@ def generate(games: list[dict], analysis: dict) -> list[dict]:
             add("data", f"Grow curated **{nm(h)}** coverage (only {n} curated)", 3, 2, "thin subgenre")
     # 5. Taxonomy proposals with several examples
     tp = (DOCS_DIR / "TAXONOMY_PROPOSALS.md").read_text() if (DOCS_DIR / "TAXONOMY_PROPOSALS.md").exists() else ""
+    decided = " ".join(re.findall(r"## Decision.*?(?=\n## |\Z)", tp, flags=re.S))
     for line in tp.splitlines():
         mm = re.match(r"- (\w+) — (.*)", line.strip())
-        if mm and mm.group(1) not in tax.mechanics and mm.group(2).count(",") >= 2:
+        if mm and mm.group(1) not in tax.mechanics and mm.group(1) not in decided and mm.group(2).count(",") >= 2:
             add("taxonomy", f"Promote proposed mechanic `{mm.group(1)}`: {mm.group(2)[:90]}", 3, 1, "≥3 examples cited")
     # 6. Market white space: archetypes / mechanics with high revenue multiple but few games
     money = (analysis.get("money") or {}).get("mechanics", [])
