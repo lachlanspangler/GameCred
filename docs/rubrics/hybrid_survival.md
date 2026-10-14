@@ -1,6 +1,6 @@
 # GameCred rubric — Survival Roguelite
 
-Sample: 57 games. Hit = Success Index ≥ 66.5; flop ≤ 23.7.
+Sample: 67 games. Hit = Success Index ≥ 60.2; flop ≤ 24.5.
 Associations from observational data; see docs/METHODOLOGY.md.
 
 ## Must have (table stakes)
@@ -21,8 +21,8 @@ Rare but associated with better outcomes.
 ## Risk reducers
 Lower flop rate even if the average effect is unclear.
 
-- **Real-time Action** — Δ +0.4 pts (95% CI -8.4…+9.5); in 40% of hits; flop ratio 0.54
-- **Procedural Levels** — Δ -2.3 pts (95% CI -12.2…+7.6); in 20% of hits; flop ratio 0.65
+- **Real-time Action** — Δ +0.6 pts (95% CI -8.6…+9.8, partial +0.2); in 41% of hits; flop ratio 0.68
+- **Procedural Levels** — Δ +0.3 pts (95% CI -8.5…+9.7, partial -0.0); in 24% of hits; flop ratio 0.56
 
 ## Red flags
 Associated with worse outcomes in this genre.

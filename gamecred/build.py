@@ -133,10 +133,26 @@ def assemble() -> list[dict]:
         g["commercial_pct"] = None if np.isnan(ci) else round(float(ci), 2)
         g["critic_pct"] = None if np.isnan(ki) else round(float(ki), 2)
         g["gsi"] = None if np.isnan(si) else round(float(si), 2)
+    # Team pedigree (confounder): earlier titles by the same developer within the dataset, and whether one was a hit.
+    by_dev: dict[str, list[dict]] = {}
+    for g in games:
+        for dev in _devs(g.get("developer")):
+            by_dev.setdefault(dev, []).append(g)
+    for g in games:
+        prior = {p["appid"]: p for dev in _devs(g.get("developer")) for p in by_dev.get(dev, [])
+                 if p["appid"] != g["appid"] and p.get("year") and g.get("year") and p["year"] < g["year"]}
+        g["dev_prior_titles"] = len(prior)
+        g["dev_prior_hit"] = any((p.get("gsi") or 0) >= 75 for p in prior.values())
     log.info("assembled %d games (%d curated)", len(games), sum(g["source"] == "curated" for g in games))
     DATASET_PATH.write_text(json.dumps(games))
     write_sqlite(games, tax)
     return games
+
+
+def _devs(s: str | None) -> list[str]:
+    if not s:
+        return []
+    return [re.sub(r"\b(inc|llc|ltd|studios?|games?|entertainment)\b\.?", "", d.lower()).strip(" ,.") for d in re.split(r",|/|&", s) if d.strip()]
 
 
 def _wiki_fields(w: dict | None, curated_url: str | None) -> dict:

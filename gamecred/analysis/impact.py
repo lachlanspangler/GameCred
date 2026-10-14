@@ -168,6 +168,9 @@ def _covariates(games: list[dict]) -> tuple[np.ndarray, list[str]]:
     cols.append([math.log10(g["price"]) if g.get("price") else 0.0 for g in games]); names.append("log10_price")
     cols.append([1.0 if g.get("free") else 0.0 for g in games]); names.append("free_to_play")
     cols.append([1.0 if g.get("early_access") else 0.0 for g in games]); names.append("early_access")
+    # Team pedigree: experienced / previously successful developers confound mechanic effects.
+    cols.append([math.log1p(g.get("dev_prior_titles") or 0) for g in games]); names.append("dev_prior_titles_log")
+    cols.append([1.0 if g.get("dev_prior_hit") else 0.0 for g in games]); names.append("dev_prior_hit")
     # Documentation depth: better-known games get tagged more thoroughly, so the raw tag count is partly a
     # fame proxy. Controlling for it makes mechanic coefficients "given an equally documented game".
     counts = np.array([len(g["mechanics"]) for g in games], dtype=float)
@@ -215,6 +218,9 @@ def ridge(d: Design, n_boot: int = 200, min_prev: float = 0.03) -> dict:
         Zp[:, allnames.index("tag_depth_z")] = 0.0
     if "curated_profile" in allnames:
         Zp[:, allnames.index("curated_profile")] = 1.0
+    for nm in ("dev_prior_titles_log", "dev_prior_hit"):  # design-only score: a first-time team
+        if nm in allnames:
+            Zp[:, allnames.index(nm)] = 0.0
     oof = np.empty(n)
     for k in range(5):
         tr, te = folds != k, folds == k

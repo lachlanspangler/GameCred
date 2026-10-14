@@ -29,7 +29,7 @@ For each mechanic *m* in a scope (all / high-confidence / curated / per-subgenre
 - **Stratification by tag source (important).** Curated games are disproportionately well-known *and* more completely tagged than auto-tagged games, so a naive with/without comparison confounds "has mechanic" with "was curated". Every Δ is therefore computed **within** strata of tag source × documentation depth (tag-count tertile within source; toggle in the dashboard) and combined with Mantel–Haenszel-style weights `w_s = n1·n0/(n1+n0)`. Hit lift and flop ratio are Mantel–Haenszel risk ratios. The ridge model includes a `curated_profile` covariate, and synergy, family-depth and complexity analyses use curated games only. A mechanic with no auto-tag rule is therefore estimated from curated games alone.
 - **Δ (univariate):** mean outcome with *m* − without. 95% CI from 1,000 bootstrap resamples, a normal-approximation p-value from the bootstrap SE, and **Benjamini–Hochberg q-values** across mechanics. The dashboard recomputes Δ live for any filter using Welch's SE.
 - **Cohen's d**, **hit lift** = P(hit | m) / P(hit | ¬m), **flop ratio** = P(flop | m) / P(flop | ¬m).
-- **Ridge partial effect:** GSI regressed on every mechanic with prevalence between 3% and 97%, plus covariates (subgenre dummies, year − 2020, log10 price, F2P, Early Access, curated flag, standardized tag count `tag_depth_z` as a documentation-depth/fame control; covariates barely penalized). λ is chosen by 5-fold CV over {0.3 … 1000}, with 200 bootstrap refits for CIs. A coefficient is "points of GSI for having the mechanic, other things equal".
+- **Ridge partial effect:** GSI regressed on every mechanic with prevalence between 3% and 97%, plus covariates (subgenre dummies, year − 2020, log10 price, F2P, Early Access, curated flag, standardized tag count `tag_depth_z` as a documentation-depth/fame control, team pedigree (`log1p` of the developer's earlier titles in the dataset, and whether one was a hit); covariates barely penalized). λ is chosen by 5-fold CV over {0.3 … 1000}, with 200 bootstrap refits for CIs. A coefficient is "points of GSI for having the mechanic, other things equal".
 - **Verdicts:**
   - Directional verdicts need ≥ 15 games with the mechanic and BH q < 0.10 (or a ridge CI excluding 0)
   - *red flag:* effect CI < 0
@@ -49,6 +49,10 @@ NMF (multiplicative updates, k = 12) on the curated game × mechanic intensity m
 - **Prediction** = ridge intercept + Σ coefficients × features. It uses the subgenre's own model when that subgenre has n ≥ 40, otherwise the all-roguelike model with subgenre as a covariate. The ± band is the CV RMSE. P(hit)/P(flop) assume normal residuals with that RMSE.
 - **Comps:** weighted Jaccard similarity on intensity vectors. Hybrid tags count double, and auto tags with confidence < 0.7 count 0.6. The top 25 comps give a similarity-weighted hit/flop rate.
 - **Missing table stakes / red flags / highest-leverage additions** come from the same scope.
+
+**Design score** (per game) = out-of-fold ridge prediction with fame/pedigree proxies neutralised (average documentation depth, fully tagged, first-time team). It answers "what does this design alone predict?" Actual − design score measures execution, marketing and timing.
+
+Note: price enters revenue mechanically (revenue ≈ reviews × price), so the large price coefficient is partly arithmetic. Treat it as a control, not as pricing advice.
 
 ## 6. Caveats
 1. Observational data, so these are **associations, not causes**. Budget, team pedigree, marketing and timing are unobserved confounders (see I-027).

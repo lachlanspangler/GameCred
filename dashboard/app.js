@@ -654,6 +654,8 @@ function predict(vec, scopeOverride) {
     else if (f === "early_access") x = lab.ea ? 1 : 0;
     else if (f === "curated_profile") x = 1; // a Lab design is fully hand-tagged, like a curated profile
     else if (f === "tag_depth_z") x = 0;     // assume average documentation depth
+    else if (f === "dev_prior_titles_log") x = Math.log1p(lab.priorTitles || 0);
+    else if (f === "dev_prior_hit") x = lab.priorHit ? 1 : 0;
     y += c * x;
   });
   return { y: Math.max(0, Math.min(100, y)), rmse: r.cv_rmse, base: r.baseline_rmse, scopeN: sc.n };
@@ -693,6 +695,8 @@ function viewLab() {
     h("label", {}, "Release year", h("input", { type: "number", min: 2010, max: 2030, value: lab.year, style: "width:90px", onchange: e => { lab.year = +e.target.value; viewLab(); } })),
     h("label", { style: "flex-direction:row;align-items:center;gap:6px" }, h("input", { type: "checkbox", checked: lab.ea, onchange: e => { lab.ea = e.target.checked; viewLab(); } }), "Early Access"),
     h("label", { style: "flex-direction:row;align-items:center;gap:6px" }, h("input", { type: "checkbox", checked: lab.free, onchange: e => { lab.free = e.target.checked; viewLab(); } }), "Free-to-play"),
+    h("label", {}, "Team's prior roguelikes", h("input", { type: "number", min: 0, max: 20, value: lab.priorTitles || 0, style: "width:70px", onchange: e => { lab.priorTitles = +e.target.value; viewLab(); } })),
+    h("label", { style: "flex-direction:row;align-items:center;gap:6px" }, h("input", { type: "checkbox", checked: !!lab.priorHit, onchange: e => { lab.priorHit = e.target.checked; viewLab(); } }), "Team had a prior hit"),
     h("label", {}, "Template", templateSel),
     h("button", { class: "btn secondary", onclick: () => { lab.vec = {}; lab.from = null; viewLab(); } }, "Clear"),
     h("button", { class: "btn", onclick: openDocTagger }, "Paste design doc…"));
