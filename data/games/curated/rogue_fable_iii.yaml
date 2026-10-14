@@ -1,0 +1,37 @@
+appid: 956450
+name: Rogue Fable III
+developer: Pixel Forge Games
+release_year: 2021
+subgenre: hybrid_traditional
+stats:
+  playable_characters: 10
+  run_length_min: 60
+  enemy_types: 200
+  boss_count: 50
+  item_count: 200
+mechanics:
+  hybrid_traditional: 3
+  permadeath: 3
+  procgen_levels: 3
+  act_structure: 2
+  elites: 2
+  knowledge_progression: 2
+  character_classes: 3
+  level_up_choices: 2
+  build_archetypes: 2
+  consumables: 2
+  high_variance_loot: 2
+  turn_based: 3
+  status_effects: 2
+  environmental_hazards: 2
+  elemental_interactions: 2
+  summons_minions: 1
+  enemy_variety: 3
+evidence:
+  knowledge_progression: 'No unlocks: the store page pitches every run as winnable and "a true test of player skill
+    and knowledge".'
+  environmental_hazards: Talents let you blast enemies into pits and electrocute pools of water.
+  character_classes: 10 classes and 8 races with unique talents and twists.
+  elites: 50+ special bosses spawn in vaults or special levels across 13 dungeon branches.
+confidence: medium
+curator: agent

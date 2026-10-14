@@ -1,0 +1,41 @@
+appid: 718670
+name: Cultist Simulator
+developer: Weather Factory
+release_year: 2018
+subgenre: hybrid_narrative
+wiki: https://cultistsimulator.fandom.com/wiki/Cultist_Simulator_Wiki
+critic:
+  metacritic: 71
+mechanics:
+  hybrid_narrative: 3
+  hybrid_strategy: 1
+  permadeath: 3
+  mid_run_save: 2
+  long_runs: 2
+  multiple_endings: 3
+  knowledge_progression: 3
+  unlock_characters: 2
+  lore_codex: 1
+  resource_conversion: 3
+  party_building: 2
+  summons_minions: 1
+  build_archetypes: 2
+  time_pressure: 2
+  hunger_clock: 2
+  stress_sanity: 3
+  healing_scarcity: 2
+  random_events: 2
+  push_your_luck: 1
+  mod_support: 2
+  content_updates: 1
+evidence:
+  knowledge_progression: Nothing mechanical carries over; deciphering what each card/verb combination does is the
+    real progression.
+  stress_sanity: Dread and Fascination cards accumulate and, if they fill the Despair/Visions slots, end the run.
+  time_pressure: Every verb and card decays on a real-time timer (pausable); Seasons tick toward hostile events.
+  unlock_characters: Endings unlock new Legacies (starting characters) such as the Detective and Physician.
+  resource_conversion: Work turns Health into Funds, Dream turns Passion into Lore, rites turn Followers and Influences
+    into ascension progress.
+  multiple_endings: Ascensions via Lantern, Grail, Moth, Forge and others, plus many failure endings.
+confidence: high
+curator: agent

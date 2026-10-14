@@ -1,0 +1,34 @@
+appid: 4027450
+name: 'Dragon Quest Heroes: Torneko''s Mystery Dungeon -Classic HD-'
+developer: Square Enix
+release_year: 2026
+subgenre: hybrid_traditional
+mechanics:
+  hybrid_traditional: 3
+  permadeath: 3
+  mid_run_save: 1
+  procgen_levels: 3
+  act_structure: 1
+  optional_challenges: 1
+  item_identification: 3
+  hunger_clock: 3
+  consumables: 3
+  cursed_items: 2
+  item_upgrading: 2
+  active_items: 2
+  inventory_management: 2
+  high_variance_loot: 2
+  hub_building: 1
+  turn_based: 3
+  status_effects: 2
+  healing_scarcity: 1
+  enemy_variety: 2
+  steam_deck_friendly: 2
+evidence:
+  item_identification: Herbs, scrolls, staffs and rings are unidentified until used or identified, the original
+    Mystery Dungeon formula Torneko's (1993) established.
+  permadeath: Every dive restarts Torneko at level 1; falling in the dungeon loses everything carried.
+  hunger_clock: Fullness drops each step and bread must be found to avoid starving.
+  hub_building: Money banked from dives grows Torneko's shop and home in town between runs.
+confidence: medium
+curator: agent

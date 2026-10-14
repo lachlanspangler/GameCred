@@ -1,0 +1,35 @@
+appid: 551620
+name: Approaching Infinity
+developer: IBOL
+release_year: 2025
+subgenre: hybrid_traditional
+stats:
+  playable_characters: 10
+mechanics:
+  hybrid_traditional: 3
+  permadeath: 2
+  assist_mode: 1
+  open_procgen_world: 3
+  procgen_levels: 2
+  long_runs: 3
+  endless_mode: 2
+  multiple_endings: 2
+  faction_reputation: 3
+  character_classes: 2
+  party_building: 2
+  ship_base_design: 2
+  vehicle_combat: 2
+  crafting: 1
+  shops: 2
+  in_run_currency: 2
+  turn_based: 3
+  random_events: 1
+  early_access_dev: 2
+evidence:
+  faction_reputation: 14 major factions with full questlines; diplomacy, war or trade with each, and 8 races lead
+    to unique faction victories.
+  multiple_endings: '10 ways to win: faction victories plus two hidden ones.'
+  assist_mode: Adventure mode makes death only an inconvenience.
+  party_building: Recruit up to 5 officers of different disciplines.
+confidence: medium
+curator: agent

@@ -4,9 +4,9 @@ _An explicit luck stat skews random outcomes (Isaac, Brotato, Vampire Survivors)
 
 ## Why this is white space
 
-- 15 paid roguelikes use it (low competition). Their median gross is **$9,859,616**, vs $2,431,952 for comparable games without it: a **3.6× revenue multiple**.
-- 93% of them grossed $1M+, vs 74% of comparable games.
-- Total market for games using it is $538,699,963.
+- 17 paid roguelikes use it (low competition). Their median gross is **$9,511,957**, vs $2,415,638 for comparable games without it: a **2.9× revenue multiple**.
+- 88% of them grossed $1M+, vs 74% of comparable games.
+- Total market for games using it is $543,114,244.
 
 ## Proven by
 
@@ -21,20 +21,20 @@ _An explicit luck stat skews random outcomes (Isaac, Brotato, Vampire Survivors)
 
 ## Pair it with (over-represented in its top earners)
 
-- **Item Stacking**: in 56% of top earners (16.4× its rate across curated roguelikes)
-- **RNG Mitigation**: in 44% of top earners (15.5× its rate across curated roguelikes)
-- **Movement Speed Scaling**: in 67% of top earners (10.7× its rate across curated roguelikes)
-- **Projectile Modifiers**: in 44% of top earners (10.0× its rate across curated roguelikes)
-- **Gambling / Chance Rewards**: in 56% of top earners (9.7× its rate across curated roguelikes)
-- **Pre-run Mutators / Challenge Runs**: in 44% of top earners (9.5× its rate across curated roguelikes)
-- **Multiplicative Scaling**: in 56% of top earners (7.4× its rate across curated roguelikes)
-- **Companions / Pets**: in 44% of top earners (6.6× its rate across curated roguelikes)
-- **Secrets / Hidden Areas**: in 56% of top earners (6.5× its rate across curated roguelikes)
-- **Challenge-gated Unlocks**: in 67% of top earners (6.1× its rate across curated roguelikes)
+- **Pre-run Mutators / Challenge Runs**: in 80% of top earners (17.2× its rate across curated roguelikes)
+- **Run History / Stats**: in 40% of top earners (14.9× its rate across curated roguelikes)
+- **RNG Mitigation**: in 40% of top earners (14.9× its rate across curated roguelikes)
+- **On-hit / On-kill Triggers**: in 40% of top earners (12.6× its rate across curated roguelikes)
+- **Item Stacking**: in 40% of top earners (12.6× its rate across curated roguelikes)
+- **Movement Speed Scaling**: in 60% of top earners (10.2× its rate across curated roguelikes)
+- **Gambling / Chance Rewards**: in 60% of top earners (10.2× its rate across curated roguelikes)
+- **Projectile Modifiers**: in 40% of top earners (9.6× its rate across curated roguelikes)
+- **Pay with Health**: in 40% of top earners (9.6× its rate across curated roguelikes)
+- **Companions / Pets**: in 60% of top earners (8.8× its rate across curated roguelikes)
 
 ## Where it lives
 
-Action Roguelite (7), Strategy Roguelite (6), Survivors-like (5), Puzzle Roguelite (3), Shooter Roguelite (2), Auto-battler Roguelite (2), Traditional Roguelike (1), Roguelike Deckbuilder (1), Builder Roguelite (1)
+Survivors-like (5), Action Roguelite (3), Strategy Roguelite (3), Shooter Roguelite (2), Traditional Roguelike (2), Auto-battler Roguelite (1), Puzzle Roguelite (1)
 
 Typical launch price of the top earners: $14.99
 

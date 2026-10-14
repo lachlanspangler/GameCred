@@ -1,0 +1,31 @@
+appid: 1095040
+name: 'Unexplored 2: The Wayfarer''s Legacy'
+developer: Ludomotion
+release_year: 2022
+subgenre: hybrid_narrative
+mechanics:
+  hybrid_narrative: 3
+  hybrid_strategy: 1
+  permadeath: 2
+  legacy_inheritance: 3
+  open_procgen_world: 3
+  procgen_levels: 2
+  long_runs: 2
+  multiple_endings: 1
+  day_night_cycle: 1
+  party_building: 1
+  hub_building: 1
+  random_events: 2
+  inventory_management: 1
+  healing_scarcity: 1
+  turn_based: 1
+  content_updates: 2
+evidence:
+  legacy_inheritance: 'Legacy System: when a wayfarer dies or returns, gear, resources and even skills pass to the
+    next wayfarer in the same persistent world.'
+  permadeath: Individual wayfarers die permanently; failing the final Staff of Yendor quest loses the whole world
+    forever.
+  open_procgen_world: Each world is generated with its own locations, peoples, ruins and layered history.
+  hub_building: Between journeys you choose wayfarers and quests from the Temple in Haven.
+confidence: medium
+curator: agent

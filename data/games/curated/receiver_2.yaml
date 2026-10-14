@@ -1,0 +1,33 @@
+appid: 1129310
+name: Receiver 2
+developer: Wolfire Games
+release_year: 2020
+subgenre: hybrid_shooter
+mechanics:
+  hybrid_shooter: 3
+  fps: 3
+  real_time_action: 3
+  weapon_handling: 3
+  permadeath: 3
+  procgen_levels: 3
+  short_runs: 2
+  healing_scarcity: 3
+  knowledge_progression: 3
+  lore_codex: 2
+  narrative_across_runs: 2
+  ascension_ladder: 2
+  loadout_start: 1
+  weapons_variety: 2
+  stealth: 1
+  high_variance_loot: 1
+evidence:
+  knowledge_progression: Progress is learning each gun's full manual-of-arms and the tape lectures; nothing else
+    carries over.
+  weapon_handling: 'Every step is a separate input: drop/insert magazine, rack slide, press slide lock, check chamber,
+    decock, holster.'
+  ascension_ladder: Collecting the required tapes in a single life promotes you to the next of several ranks, each
+    adding threats and tapes.
+  healing_scarcity: No healing and no HP pool to speak of; one drone or turret hit usually ends the life.
+  lore_codex: Tapes are lectures that form the story and the game's philosophy.
+confidence: high
+curator: agent

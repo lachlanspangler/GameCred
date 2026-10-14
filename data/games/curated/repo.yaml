@@ -1,0 +1,35 @@
+appid: 3241660
+name: R.E.P.O.
+developer: semiwork
+release_year: 2025
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 2
+  real_time_action: 2
+  online_coop: 3
+  procgen_levels: 3
+  score_target_rounds: 3
+  endless_mode: 2
+  permadeath: 2
+  second_chance: 2
+  physics_simulation: 3
+  stealth: 2
+  shops: 3
+  in_run_currency: 3
+  flat_stat_scaling: 2
+  consumables: 2
+  weapons_variety: 1
+  enemy_variety: 1
+  enemy_hp_scaling: 1
+  early_access_dev: 2
+  content_updates: 2
+evidence:
+  score_target_rounds: Each level sets an extraction haul quota of valuables that must be met before the truck can
+    leave.
+  physics_simulation: Every valuable is a physics object; bumps and drops reduce its value, monsters are physics-driven
+    too.
+  shops: Between levels the haul money buys upgrades (strength, stamina, health, range), weapons and health packs.
+  second_chance: Dead teammates can be revived by carrying their head back to the truck or extraction.
+  permadeath: If the whole crew dies the save is lost.
+confidence: medium
+curator: agent

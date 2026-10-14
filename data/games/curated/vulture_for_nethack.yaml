@@ -1,0 +1,60 @@
+appid: 341390
+name: Vulture for NetHack
+developer: DarkArts Studios
+release_year: 2015
+subgenre: hybrid_traditional
+wiki: https://nethackwiki.com/
+stats:
+  playable_characters: 13
+  enemy_types: 380
+mechanics:
+  hybrid_traditional: 3
+  permadeath: 3
+  mid_run_save: 1
+  second_chance: 2
+  procgen_levels: 3
+  long_runs: 3
+  act_structure: 1
+  multiple_endings: 1
+  secret_areas: 2
+  optional_challenges: 1
+  knowledge_progression: 3
+  character_classes: 3
+  item_identification: 3
+  luck_stat: 2
+  hunger_clock: 3
+  consumables: 3
+  cursed_items: 3
+  item_upgrading: 2
+  passive_relics: 2
+  active_items: 2
+  weapons_variety: 2
+  shops: 2
+  in_run_currency: 1
+  inventory_management: 2
+  high_variance_loot: 2
+  turn_based: 3
+  status_effects: 2
+  healing_scarcity: 1
+  companions_pets: 2
+  monster_capture: 2
+  enemy_variety: 3
+  random_events: 1
+  stealth: 1
+  run_history: 1
+  synergies: 1
+  double_edged_items: 1
+evidence:
+  item_identification: Potions, scrolls, wands, rings and amulets appear under randomized names each game; price-identifying,
+    engrave-testing and scrolls of identify are core skills.
+  luck_stat: Hidden Luck value (-13..+13) shifts to-hit, prayer, wishes and many random outcomes; luckstones lock
+    it in.
+  knowledge_progression: No meta-progression at all; NetHack is a full traditional roguelike where only player knowledge
+    (spoilers) carries between games.
+  cursed_items: Blessed/uncursed/cursed (BUC) status on every item; cursed gear cannot be removed and cursed loadstones
+    are infamous.
+  hunger_clock: Nutrition counter forces eating; starvation kills, overeating can choke.
+  monster_capture: Scrolls of taming, magic harps and thrown food tame monsters into pets; polymorph lets you become
+    monsters.
+confidence: high
+curator: agent

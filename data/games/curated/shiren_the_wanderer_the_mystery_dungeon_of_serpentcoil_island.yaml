@@ -1,0 +1,45 @@
+appid: 2178480
+name: 'Shiren the Wanderer: The Mystery Dungeon of Serpentcoil Island'
+developer: Spike Chunsoft
+release_year: 2024
+subgenre: hybrid_traditional
+mechanics:
+  hybrid_traditional: 3
+  permadeath: 3
+  mid_run_save: 2
+  second_chance: 2
+  procgen_levels: 3
+  act_structure: 2
+  boss_gates: 2
+  optional_challenges: 2
+  secret_areas: 1
+  item_identification: 3
+  hunger_clock: 3
+  consumables: 3
+  cursed_items: 2
+  item_upgrading: 3
+  card_mods: 3
+  shops: 3
+  in_run_currency: 2
+  inventory_management: 2
+  active_items: 2
+  high_variance_loot: 2
+  turn_based: 3
+  status_effects: 2
+  healing_scarcity: 1
+  companions_pets: 2
+  enemy_variety: 2
+  environmental_hazards: 1
+  async_multiplayer: 2
+  steam_deck_friendly: 2
+  gambling: 1
+evidence:
+  item_identification: Unidentified pots, scrolls, herbs, staffs and bracelets show placeholder names until used,
+    bought or named by the player.
+  card_mods: Synthesis pots merge weapons/shields so their seals (special abilities) transfer and stack in limited
+    seal slots.
+  hunger_clock: Fullness drains every step; at zero HP drains until you eat an onigiri.
+  async_multiplayer: 'Online rescue: other players can enter your dungeon to revive you after a fall.'
+  shops: In-dungeon shopkeepers price-identify items and can be robbed at great risk.
+confidence: medium
+curator: agent

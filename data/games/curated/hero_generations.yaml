@@ -1,0 +1,24 @@
+appid: 295590
+name: Hero Generations
+developer: Heart Shaped Games
+release_year: 2015
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  hybrid_city_builder: 1
+  permadeath: 2
+  legacy_inheritance: 3
+  breeding_genetics: 2
+  soft_run_limit: 3
+  open_procgen_world: 2
+  procgen_levels: 2
+  turn_based: 3
+  crafting: 1
+  build_archetypes: 1
+evidence:
+  soft_run_limit: Every step on the map costs one year of the hero's lifespan; heroes die of old age.
+  legacy_inheritance: Find a mate and have a child; after death you continue as that child in the same world.
+  breeding_genetics: The chosen mate shapes the child's attributes.
+  hybrid_city_builder: 'Town-building system: build and morph towns that persist for later generations.'
+confidence: medium
+curator: agent

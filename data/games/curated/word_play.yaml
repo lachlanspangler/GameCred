@@ -1,0 +1,36 @@
+appid: 3586660
+name: Word Play
+developer: Game Maker's Toolkit
+release_year: 2025
+subgenre: hybrid_puzzle
+stats:
+  item_count: 150
+  difficulty_levels: 5
+mechanics:
+  hybrid_puzzle: 3
+  deckbuilding: 2
+  poker_hands: 2
+  score_target_rounds: 3
+  permadeath: 2
+  act_structure: 1
+  boss_gates: 2
+  pick_one_of_n: 3
+  passive_relics: 2
+  consumables: 2
+  card_mods: 3
+  deck_thinning: 2
+  synergies: 2
+  multiplicative_scaling: 1
+  build_archetypes: 2
+  turn_based: 1
+  assist_mode: 1
+  mod_support: 1
+  steam_deck_friendly: 2
+evidence:
+  score_target_rounds: Score enough points to clear each round; running out of Plays ends the run.
+  pick_one_of_n: After each cleared round you pick a perk from a small offer drawn from 150+ perks.
+  card_mods: Tiles can be upgraded into Golden, Diamond, Emerald and Potion forms.
+  deck_thinning: Upgrade perks can destroy, discard or duplicate letter tiles in your bag.
+  boss_gates: Special Rounds impose rules that require perfect play.
+confidence: medium
+curator: agent

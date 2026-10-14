@@ -1,0 +1,38 @@
+appid: 1782460
+name: Hell Clock
+developer: Rogue Snail
+release_year: 2025
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 3
+  real_time_action: 3
+  permadeath: 2
+  soft_run_limit: 3
+  time_pressure: 3
+  procgen_levels: 2
+  act_structure: 2
+  boss_gates: 2
+  narrative_across_runs: 2
+  permanent_stat_upgrades: 2
+  ascension_ladder: 2
+  modular_difficulty: 2
+  assist_mode: 2
+  pick_one_of_n: 2
+  passive_relics: 3
+  item_upgrading: 2
+  double_edged_items: 2
+  synergies: 2
+  build_archetypes: 2
+  horde_density: 2
+  twin_stick: 1
+  steam_deck_friendly: 2
+evidence:
+  soft_run_limit: Each descent runs on the Hell Clock; when the timer expires the run ends and you return to the
+    surface.
+  assist_mode: Relaxed Mode removes all time pressure.
+  double_edged_items: Relics can be Corrupted for an equal chance of blessing or bane.
+  modular_difficulty: Endgame Penances let you craft your own challenges; Promises grant Constellation power.
+  passive_relics: Relics infused with the resistance's strength form the core of builds; Imbuing with Tools adds
+    effects.
+confidence: medium
+curator: agent

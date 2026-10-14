@@ -1,0 +1,36 @@
+appid: 335620
+name: 'Star Traders: Frontiers'
+developer: Trese Brothers
+release_year: 2018
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  permadeath: 1
+  mid_run_save: 2
+  open_procgen_world: 3
+  long_runs: 3
+  endless_mode: 2
+  faction_reputation: 3
+  npc_relationships: 2
+  achievement_unlocks: 2
+  character_classes: 3
+  party_building: 3
+  ship_base_design: 3
+  vehicle_combat: 2
+  turn_based: 3
+  shops: 2
+  in_run_currency: 3
+  random_events: 2
+  mod_support: 2
+  leaderboards: 1
+  assist_mode: 1
+evidence:
+  faction_reputation: Standing with each faction gates ports, missions, ranks and whether its patrols attack you;
+    it shifts with every action.
+  npc_relationships: Individual contacts gain trust and unlock better missions, rumors and goods.
+  character_classes: 33 jobs (spy, smuggler, bounty hunter, etc.) for captain and crew with talent trees.
+  ship_base_design: 45 hulls and 350+ components laid out to build your ship.
+  permadeath: Optional character permadeath turns it into a classic roguelike; save slots otherwise allowed.
+  achievement_unlocks: Story and challenge goals unlock extra starting ships and contacts.
+confidence: medium
+curator: agent

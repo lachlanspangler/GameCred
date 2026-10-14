@@ -1,0 +1,25 @@
+appid: 2881650
+name: Content Warning
+developer: Zorro, Wilnyl, Philip, thePetHen, Skog
+release_year: 2024
+subgenre: hybrid_action_roguelite
+mechanics:
+  hybrid_action_roguelite: 2
+  real_time_action: 2
+  online_coop: 3
+  score_target_rounds: 3
+  soft_run_limit: 3
+  day_night_cycle: 2
+  time_pressure: 2
+  shops: 2
+  in_run_currency: 2
+  consumables: 1
+  physics_simulation: 1
+  procgen_levels: 1
+evidence:
+  score_target_rounds: Every 3-day cycle sets a SpookTube view quota; you must hit it to keep your career going.
+  soft_run_limit: The run ends when a quota is missed at the end of the 3 days, not when players die.
+  time_pressure: Each dive into the Old World is limited by oxygen and camera battery.
+  shops: Ad revenue from uploads buys cameras, lights, medical items and props.
+confidence: medium
+curator: agent

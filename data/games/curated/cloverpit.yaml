@@ -1,0 +1,43 @@
+appid: 3314790
+name: CloverPit
+developer: Panik Arcade
+release_year: 2025
+subgenre: hybrid_puzzle
+stats:
+  item_count: 150
+mechanics:
+  hybrid_puzzle: 3
+  permadeath: 2
+  score_target_rounds: 3
+  luck_stat: 3
+  gambling: 3
+  push_your_luck: 2
+  interest_economy: 2
+  passive_relics: 3
+  shops: 2
+  reroll: 2
+  in_run_currency: 3
+  pick_one_of_n: 2
+  synergies: 3
+  multiplicative_scaling: 2
+  build_archetypes: 2
+  double_edged_items: 2
+  high_variance_loot: 2
+  endless_mode: 2
+  seeded_runs: 1
+  unlock_items: 2
+  run_mutators: 1
+  multiple_endings: 2
+  secret_areas: 1
+  turn_based: 1
+  steam_deck_friendly: 2
+evidence:
+  score_target_rounds: Each round ends with a debt payment at the ATM; failing to deposit enough drops you through
+    the trapdoor.
+  luck_stat: Charms and abilities raise Luck, which skews the slot machine toward better symbols and patterns.
+  interest_economy: Coins deposited in the ATM accrue interest between rounds, so saving vs spending on spins is
+    the core tension.
+  double_edged_items: Demonic charms and abilities give big payouts at a cost.
+  multiple_endings: Escape-room secrets and choices lead to different endings.
+confidence: medium
+curator: agent

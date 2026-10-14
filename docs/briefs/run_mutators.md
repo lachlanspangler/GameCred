@@ -4,9 +4,9 @@ _Selectable rule-changing modifiers or named challenge runs before starting (Isa
 
 ## Why this is white space
 
-- 18 paid roguelikes use it (low competition). Their median gross is **$14,549,059**, vs $3,355,708 for comparable games without it: a **4.2× revenue multiple**.
-- 83% of them grossed $1M+, vs 81% of comparable games.
-- Total market for games using it is $802,768,229.
+- 19 paid roguelikes use it (low competition). Their median gross is **$10,427,993**, vs $2,925,966 for comparable games without it: a **3.6× revenue multiple**.
+- 84% of them grossed $1M+, vs 80% of comparable games.
+- Total market for games using it is $807,122,675.
 
 ## Proven by
 
@@ -21,22 +21,22 @@ _Selectable rule-changing modifiers or named challenge runs before starting (Isa
 
 ## Pair it with (over-represented in its top earners)
 
-- **Run History / Stats**: in 40% of top earners (15.4× its rate across curated roguelikes)
-- **Seeded Runs**: in 50% of top earners (12.8× its rate across curated roguelikes)
-- **Luck Stat**: in 40% of top earners (10.2× its rate across curated roguelikes)
-- **Multiplicative Scaling**: in 70% of top earners (9.3× its rate across curated roguelikes)
-- **Codex / Compendium**: in 80% of top earners (8.8× its rate across curated roguelikes)
-- **Daily / Weekly Challenge**: in 60% of top earners (8.5× its rate across curated roguelikes)
-- **Mid-run Save & Quit**: in 70% of top earners (7.1× its rate across curated roguelikes)
-- **Gambling / Chance Rewards**: in 40% of top earners (7.0× its rate across curated roguelikes)
-- **Secrets / Hidden Areas**: in 60% of top earners (7.0× its rate across curated roguelikes)
-- **Reroll**: in 60% of top earners (6.2× its rate across curated roguelikes)
+- **Seeded Runs**: in 45% of top earners (11.6× its rate across curated roguelikes)
+- **Daily / Weekly Challenge**: in 55% of top earners (8.3× its rate across curated roguelikes)
+- **Multiplicative Scaling**: in 64% of top earners (8.1× its rate across curated roguelikes)
+- **Codex / Compendium**: in 73% of top earners (7.8× its rate across curated roguelikes)
+- **Mid-run Save & Quit**: in 64% of top earners (5.9× its rate across curated roguelikes)
+- **Secrets / Hidden Areas**: in 55% of top earners (5.9× its rate across curated roguelikes)
+- **Reroll**: in 55% of top earners (5.9× its rate across curated roguelikes)
+- **Major Free Updates**: in 82% of top earners (5.2× its rate across curated roguelikes)
+- **Mod Support / Workshop**: in 55% of top earners (5.2× its rate across curated roguelikes)
+- **Ascension / Heat Ladder**: in 55% of top earners (5.0× its rate across curated roguelikes)
 
 ## Where it lives
 
-Action Roguelite (13), Roguelike Deckbuilder (9), Shooter Roguelite (2), Roguevania (2), Traditional Roguelike (2), Strategy Roguelite (2), Survivors-like (1), Builder Roguelite (1)
+Action Roguelite (13), Roguelike Deckbuilder (9), Shooter Roguelite (2), Roguevania (2), Traditional Roguelike (2), Strategy Roguelite (2), Survivors-like (1), Builder Roguelite (1), Puzzle Roguelite (1)
 
-Typical launch price of the top earners: $22.49
+Typical launch price of the top earners: $19.99
 
 ## Caveats
 

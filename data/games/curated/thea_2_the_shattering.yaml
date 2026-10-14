@@ -1,0 +1,33 @@
+appid: 606230
+name: 'Thea 2: The Shattering'
+developer: MuHa Games
+release_year: 2019
+subgenre: hybrid_strategy
+mechanics:
+  hybrid_strategy: 3
+  hybrid_survival: 2
+  hybrid_deckbuilder: 1
+  permadeath: 2
+  long_runs: 3
+  open_procgen_world: 3
+  procgen_levels: 2
+  faction_reputation: 2
+  unlock_characters: 2
+  party_building: 3
+  crafting: 3
+  hub_building: 1
+  random_events: 3
+  day_night_cycle: 2
+  turn_based: 3
+  multiple_endings: 1
+  online_coop: 2
+  mod_support: 2
+evidence:
+  faction_reputation: Diplomacy with the world's factions and races; standing decides trade, quests or war.
+  random_events: Most exploration is resolved through branching events and quest chains.
+  hybrid_deckbuilder: Conflicts (combat, mental or spiritual challenges) are card battles using decks drawn from
+    party members and gear.
+  unlock_characters: Gods are unlocked and levelled through play and each grants different starting bonuses.
+  crafting: Gathered materials are combined into equipment, with outputs depending on material quality.
+confidence: medium
+curator: agent

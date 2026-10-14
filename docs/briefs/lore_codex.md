@@ -4,9 +4,9 @@ _Collectible encyclopedia of discovered items/enemies._
 
 ## Why this is white space
 
-- 35 paid roguelikes use it (low competition). Their median gross is **$6,253,060**, vs $2,089,137 for comparable games without it: a **2.5× revenue multiple**.
-- 80% of them grossed $1M+, vs 69% of comparable games.
-- Total market for games using it is $1,056,531,290.
+- 38 paid roguelikes use it (low competition). Their median gross is **$6,272,057**, vs $1,906,811 for comparable games without it: a **2.7× revenue multiple**.
+- 82% of them grossed $1M+, vs 66% of comparable games.
+- Total market for games using it is $1,079,569,748.
 
 ## Proven by
 
@@ -21,22 +21,22 @@ _Collectible encyclopedia of discovered items/enemies._
 
 ## Pair it with (over-represented in its top earners)
 
-- **Pre-run Mutators / Challenge Runs**: in 56% of top earners (11.9× its rate across curated roguelikes)
-- **Secrets / Hidden Areas**: in 56% of top earners (6.5× its rate across curated roguelikes)
-- **Multiplicative Scaling**: in 44% of top earners (5.9× its rate across curated roguelikes)
-- **Multiple Endings / True Ending**: in 61% of top earners (5.7× its rate across curated roguelikes)
-- **Controller / Deck Friendly**: in 50% of top earners (5.2× its rate across curated roguelikes)
-- **Active Items**: in 50% of top earners (5.2× its rate across curated roguelikes)
-- **Mid-run Save & Quit**: in 50% of top earners (5.1× its rate across curated roguelikes)
-- **Reroll**: in 44% of top earners (4.6× its rate across curated roguelikes)
-- **High-variance Loot**: in 44% of top earners (4.4× its rate across curated roguelikes)
-- **Elites / Champions**: in 56% of top earners (3.7× its rate across curated roguelikes)
+- **Pre-run Mutators / Challenge Runs**: in 53% of top earners (11.3× its rate across curated roguelikes)
+- **Secrets / Hidden Areas**: in 53% of top earners (5.7× its rate across curated roguelikes)
+- **Mid-run Save & Quit**: in 58% of top earners (5.4× its rate across curated roguelikes)
+- **Multiplicative Scaling**: in 42% of top earners (5.4× its rate across curated roguelikes)
+- **Multiple Endings / True Ending**: in 58% of top earners (5.0× its rate across curated roguelikes)
+- **Active Items**: in 47% of top earners (4.8× its rate across curated roguelikes)
+- **Reroll**: in 42% of top earners (4.5× its rate across curated roguelikes)
+- **Elites / Champions**: in 53% of top earners (3.7× its rate across curated roguelikes)
+- **Controller / Deck Friendly**: in 42% of top earners (3.7× its rate across curated roguelikes)
+- **High-variance Loot**: in 42% of top earners (3.6× its rate across curated roguelikes)
 
 ## Where it lives
 
-Action Roguelite (22), Shooter Roguelite (7), Strategy Roguelite (7), Survivors-like (6), Roguelike Deckbuilder (5), Traditional Roguelike (3), Roguevania (2), Puzzle Roguelite (2), Narrative / Event Roguelite (2)
+Action Roguelite (22), Shooter Roguelite (8), Strategy Roguelite (7), Survivors-like (6), Roguelike Deckbuilder (5), Narrative / Event Roguelite (3), Traditional Roguelike (3), Roguevania (2), Puzzle Roguelite (2), Builder Roguelite (1)
 
-Typical launch price of the top earners: $23.49
+Typical launch price of the top earners: $21.99
 
 ## Caveats
 

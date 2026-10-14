@@ -1,0 +1,33 @@
+appid: 246110
+name: MASSIVE CHALICE
+developer: Double Fine Productions
+release_year: 2015
+subgenre: hybrid_strategy
+critic:
+  metacritic: 73
+mechanics:
+  hybrid_strategy: 3
+  permadeath: 3
+  long_runs: 3
+  soft_run_limit: 3
+  legacy_inheritance: 3
+  breeding_genetics: 3
+  grid_tactics: 3
+  turn_based: 3
+  character_classes: 2
+  party_building: 3
+  item_upgrading: 1
+  random_events: 2
+  enemy_hp_scaling: 1
+  double_edged_items: 1
+  steam_deck_friendly: 2
+evidence:
+  legacy_inheritance: Heroes age and die; their children inherit traits, and a valiant hero's weapon can become
+    a Bloodline Relic passed to the next of their house.
+  breeding_genetics: Marrying heroes produces children with a randomized mix of both parents' class and gameplay
+    traits.
+  soft_run_limit: The campaign is a fixed 300-year war that ends when the Chalice is charged and the final battle
+    is fought.
+  party_building: Choose which aging heroes deploy and which stay home to raise heirs.
+confidence: medium
+curator: agent

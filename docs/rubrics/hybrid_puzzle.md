@@ -1,6 +1,6 @@
 # GameCred rubric — Puzzle Roguelite
 
-Sample: 90 games. Hit = Success Index ≥ 60.3; flop ≤ 28.2.
+Sample: 94 games. Hit = Success Index ≥ 63.1; flop ≤ 28.4.
 Associations from observational data; see docs/METHODOLOGY.md.
 
 ## Must have (table stakes)
@@ -21,10 +21,9 @@ Rare but associated with better outcomes.
 ## Risk reducers
 Lower flop rate even if the average effect is unclear.
 
-- **Grid Tactics** — Δ +10.9 pts (95% CI +1.5…+20.1, partial +0.3); in 22% of hits; flop ratio 0.47
-- **Procedural Levels** — Δ +4.2 pts (95% CI -2.7…+10.8, partial +0.0); in 35% of hits; flop ratio 0.66
+- **Grid Tactics** — Δ +10.5 pts (95% CI +0.6…+20.3, partial +0.3); in 21% of hits; flop ratio 0.47
 
 ## Red flags
 Associated with worse outcomes in this genre.
 
-- none at current sample size
+- **Consumables** — Δ -14.4 pts (95% CI -21.0…-7.9, partial -0.3); in 29% of hits; flop ratio 2.31

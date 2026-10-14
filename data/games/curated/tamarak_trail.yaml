@@ -1,0 +1,31 @@
+appid: 1591220
+name: Tamarak Trail
+developer: Yarrow Games
+release_year: 2024
+subgenre: hybrid_deckbuilder
+stats:
+  playable_characters: 3
+mechanics:
+  hybrid_deckbuilder: 3
+  deckbuilding: 2
+  dice: 3
+  dice_manipulation: 3
+  card_mods: 2
+  permadeath: 2
+  node_map: 2
+  procgen_levels: 1
+  boss_gates: 2
+  character_classes: 3
+  passive_relics: 2
+  random_events: 2
+  synergies: 2
+  build_archetypes: 1
+  turn_based: 3
+  steam_deck_friendly: 2
+evidence:
+  dice_manipulation: Abilities chain re-rolls and "turning" dice to chosen faces to manipulate each roll.
+  card_mods: 'The "deck" is a customizable dice set: you choose which faces go on your dice.'
+  character_classes: Three classes (Detective, Magician, Tracker) with different dice and abilities.
+  node_map: Pick your path along a randomly generated trail of encounters, mysteries and bosses.
+confidence: medium
+curator: agent

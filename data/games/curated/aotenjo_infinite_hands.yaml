@@ -1,0 +1,35 @@
+appid: 3066570
+name: 'Aotenjo: Infinite Hands'
+developer: XO Cat
+release_year: 2025
+subgenre: hybrid_puzzle
+stats:
+  item_count: 144
+mechanics:
+  hybrid_puzzle: 3
+  hybrid_deckbuilder: 1
+  deckbuilding: 2
+  poker_hands: 3
+  score_target_rounds: 3
+  permadeath: 2
+  act_structure: 1
+  boss_gates: 2
+  passive_relics: 3
+  consumables: 2
+  card_mods: 2
+  shops: 2
+  in_run_currency: 2
+  synergies: 3
+  multiplicative_scaling: 2
+  build_archetypes: 2
+  item_rarity: 1
+  turn_based: 1
+  early_access_dev: 2
+evidence:
+  score_target_rounds: Each level requires reaching a score target with a limited number of Mahjong hands.
+  poker_hands: Score comes from completing Mahjong patterns (100+ yaku drawn from 40 regional rule sets).
+  passive_relics: 144 Artifacts modify scoring rules; Gadgets are single-use tools.
+  card_mods: Special tiles and augments permanently modify individual tiles in the wall.
+  boss_gates: Levels carry malicious "innate threats" that impose scoring handicaps.
+confidence: medium
+curator: agent

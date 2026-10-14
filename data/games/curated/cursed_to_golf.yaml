@@ -1,0 +1,30 @@
+appid: 1726120
+name: Cursed to Golf
+developer: Chuhai Labs
+release_year: 2022
+subgenre: hybrid_puzzle
+critic:
+  metacritic: 80
+mechanics:
+  hybrid_puzzle: 3
+  permadeath: 2
+  soft_run_limit: 3
+  act_structure: 2
+  boss_gates: 2
+  procgen_levels: 1
+  consumables: 3
+  high_variance_loot: 1
+  environmental_hazards: 2
+  secret_areas: 1
+  physics_simulation: 1
+  platforming: 1
+  turn_based: 2
+  steam_deck_friendly: 2
+evidence:
+  soft_run_limit: Each hole gives a par of shots; hitting zero shots before the hole curses you back to the start
+    of Golf Purgatory.
+  consumables: 'Ace Cards are single-use cards that bend shots: freeze water, add shots, rocket ball, mulligan.'
+  boss_gates: Each area of Golf Purgatory ends in a head-to-head boss match.
+  environmental_hazards: TNT and hazards can be triggered by the ball to open routes.
+confidence: medium
+curator: agent

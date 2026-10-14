@@ -4,8 +4,8 @@ _Bosses change behaviour across phases._
 
 ## Why this is white space
 
-- 19 paid roguelikes use it (low competition). Their median gross is **$11,585,045**, vs $2,334,902 for comparable games without it: a **3.3× revenue multiple**.
-- 89% of them grossed $1M+, vs 74% of comparable games.
+- 19 paid roguelikes use it (low competition). Their median gross is **$11,585,045**, vs $2,294,283 for comparable games without it: a **3.7× revenue multiple**.
+- 89% of them grossed $1M+, vs 73% of comparable games.
 - Total market for games using it is $585,797,959.
 
 ## Proven by
@@ -21,16 +21,16 @@ _Bosses change behaviour across phases._
 
 ## Pair it with (over-represented in its top earners)
 
-- **Ultimate / Special Meter**: in 43% of top earners (18.3× its rate across curated roguelikes)
-- **RNG Mitigation**: in 43% of top earners (15.0× its rate across curated roguelikes)
-- **Learnable Attack Patterns**: in 86% of top earners (9.7× its rate across curated roguelikes)
-- **Controller / Deck Friendly**: in 71% of top earners (7.4× its rate across curated roguelikes)
-- **Ascension / Heat Ladder**: in 71% of top earners (6.4× its rate across curated roguelikes)
-- **Codex / Compendium**: in 57% of top earners (6.3× its rate across curated roguelikes)
-- **Revive / Extra Life**: in 57% of top earners (6.1× its rate across curated roguelikes)
-- **Elites / Champions**: in 86% of top earners (5.8× its rate across curated roguelikes)
-- **Mid-run Save & Quit**: in 57% of top earners (5.8× its rate across curated roguelikes)
-- **Assist / God Mode**: in 43% of top earners (5.7× its rate across curated roguelikes)
+- **Ultimate / Special Meter**: in 43% of top earners (19.5× its rate across curated roguelikes)
+- **RNG Mitigation**: in 43% of top earners (15.9× its rate across curated roguelikes)
+- **Learnable Attack Patterns**: in 86% of top earners (10.3× its rate across curated roguelikes)
+- **Ascension / Heat Ladder**: in 71% of top earners (6.5× its rate across curated roguelikes)
+- **Controller / Deck Friendly**: in 71% of top earners (6.2× its rate across curated roguelikes)
+- **Codex / Compendium**: in 57% of top earners (6.2× its rate across curated roguelikes)
+- **Elites / Champions**: in 86% of top earners (6.0× its rate across curated roguelikes)
+- **Revive / Extra Life**: in 57% of top earners (6.0× its rate across curated roguelikes)
+- **Melee Combos**: in 57% of top earners (5.7× its rate across curated roguelikes)
+- **Dodge / Dash with i-frames**: in 86% of top earners (5.6× its rate across curated roguelikes)
 
 ## Where it lives
 

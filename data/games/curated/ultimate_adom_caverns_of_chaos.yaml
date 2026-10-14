@@ -1,0 +1,28 @@
+appid: 1266820
+name: Ultimate ADOM - Caverns of Chaos
+developer: Thomas Biskup
+release_year: 2021
+subgenre: hybrid_traditional
+mechanics:
+  hybrid_traditional: 3
+  permadeath: 3
+  procgen_levels: 3
+  character_classes: 3
+  faction_reputation: 2
+  level_up_choices: 2
+  build_archetypes: 2
+  crafting: 2
+  consumables: 2
+  high_variance_loot: 2
+  turn_based: 3
+  status_effects: 2
+  environmental_hazards: 2
+  enemy_variety: 2
+evidence:
+  faction_reputation: Seven factions vie for control; your chosen allegiance changes NPC reactions and opens different
+    quests.
+  crafting: Grafting and crafting systems let you modify gear and abilities.
+  environmental_hazards: 'Interactive surroundings: topple braziers, push coffins, smash doors or animate them as
+    golems.'
+confidence: medium
+curator: agent
