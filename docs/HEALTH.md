@@ -1,6 +1,6 @@
 # GameCred Health Report
 
-_Generated 2026-10-13 19:29 by `python -m gamecred doctor --fix`_
+_Generated 2026-10-13 19:54 by `python -m gamecred doctor --fix`_
 
 **errors: 0 · fixed: 1 · warnings: 16**
 
@@ -15,7 +15,7 @@ _Generated 2026-10-13 19:29 by `python -m gamecred doctor --fix`_
 
 ## Raw cache
 
-- cache files: steam_app=2080, steam_reviews=2995, steamspy_app=2995, steamspy_tag=9, wiki_cats=405, wiki_site=1792
+- cache files: steam_app=2993, steam_reviews=2995, steamspy_app=2995, steamspy_tag=9, wiki_cats=405, wiki_site=1792
 
 ## Auto-tagger calibration
 
@@ -38,7 +38,7 @@ _Generated 2026-10-13 19:29 by `python -m gamecred doctor --fix`_
 - ultimate_meter/keyword: precision 6% on 47 predictions -> suppressed
 - item_rarity/keyword: precision 27% on 33 predictions -> suppressed
 - cursed_items/keyword: precision 25% on 20 predictions -> suppressed
-- faction_reputation/keyword: precision 13% on 23 predictions -> suppressed
+- faction_reputation/keyword: precision 17% on 23 predictions -> suppressed
 - real_time_action/keyword: precision 17% on 18 predictions -> suppressed
 - grid_tactics/keyword: precision 16% on 31 predictions -> suppressed
 - lanes_ranks/keyword: precision 19% on 16 predictions -> suppressed
@@ -68,10 +68,10 @@ _Generated 2026-10-13 19:29 by `python -m gamecred doctor --fix`_
 ## Dataset
 
 - 2462 games, 392 curated, GSI coverage 100%
-- games with critic score: 272
-- revenue model check: log(units est) vs log(SteamSpy owners) r = 0.81, median units/owners = 0.37 (n=2460)
+- games with critic score: 278
+- revenue model check: log(units est) vs log(SteamSpy owners) r = 0.81, median units/owners = 0.36 (n=2460)
 - taxonomy steam_tags never seen on any game (dead rules): auto_attack:Bullet Heaven, auto_attack:Survivors-like, horde_density:Bullet Heaven, horde_density:Horde, hub_building:Base Building, hub_building:Town Building, hybrid_city_builder:Base Building, hybrid_survivors:Bullet Heaven, hybrid_survivors:Survivors-like, permadeath:Permadeath, push_your_luck:Push Your Luck, pvp:Online PvP, speedrun_support:Speedrun, waves:Wave Defense
-- subgenres: hybrid_action_roguelite=932, hybrid_strategy=471, hybrid_shooter=217, hybrid_deckbuilder=213, hybrid_traditional=122, hybrid_survival=122, hybrid_survivors=99, hybrid_puzzle=90, hybrid_autobattler=80, hybrid_narrative=50, hybrid_city_builder=39, hybrid_metroidvania=27
+- subgenres: hybrid_action_roguelite=934, hybrid_strategy=482, hybrid_shooter=219, hybrid_deckbuilder=213, hybrid_survival=129, hybrid_traditional=126, hybrid_survivors=112, hybrid_puzzle=90, hybrid_autobattler=80, hybrid_city_builder=39, hybrid_metroidvania=28, hybrid_narrative=10
 
 ## Dashboard
 

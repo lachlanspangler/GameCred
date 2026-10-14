@@ -21,20 +21,20 @@ _An explicit luck stat skews random outcomes (Isaac, Brotato, Vampire Survivors)
 
 ## Pair it with (over-represented in its top earners)
 
-- **RNG Mitigation**: in 50% of top earners (17.5× its rate across curated roguelikes)
-- **Item Stacking**: in 50% of top earners (14.8× its rate across curated roguelikes)
-- **Pre-run Mutators / Challenge Runs**: in 50% of top earners (10.7× its rate across curated roguelikes)
-- **Movement Speed Scaling**: in 62% of top earners (10.0× its rate across curated roguelikes)
-- **Gambling / Chance Rewards**: in 50% of top earners (8.7× its rate across curated roguelikes)
-- **Multiplicative Scaling**: in 62% of top earners (8.3× its rate across curated roguelikes)
-- **Controller / Deck Friendly**: in 62% of top earners (6.5× its rate across curated roguelikes)
-- **Secrets / Hidden Areas**: in 50% of top earners (5.8× its rate across curated roguelikes)
-- **Challenge-gated Unlocks**: in 62% of top earners (5.7× its rate across curated roguelikes)
-- **Codex / Compendium**: in 50% of top earners (5.5× its rate across curated roguelikes)
+- **Item Stacking**: in 56% of top earners (16.4× its rate across curated roguelikes)
+- **RNG Mitigation**: in 44% of top earners (15.5× its rate across curated roguelikes)
+- **Movement Speed Scaling**: in 67% of top earners (10.7× its rate across curated roguelikes)
+- **Projectile Modifiers**: in 44% of top earners (10.0× its rate across curated roguelikes)
+- **Gambling / Chance Rewards**: in 56% of top earners (9.7× its rate across curated roguelikes)
+- **Pre-run Mutators / Challenge Runs**: in 44% of top earners (9.5× its rate across curated roguelikes)
+- **Multiplicative Scaling**: in 56% of top earners (7.4× its rate across curated roguelikes)
+- **Companions / Pets**: in 44% of top earners (6.6× its rate across curated roguelikes)
+- **Secrets / Hidden Areas**: in 56% of top earners (6.5× its rate across curated roguelikes)
+- **Challenge-gated Unlocks**: in 67% of top earners (6.1× its rate across curated roguelikes)
 
 ## Where it lives
 
-Strategy Roguelite (6), Action Roguelite (5), Survivors-like (5), Shooter Roguelite (2), Auto-battler Roguelite (2), Puzzle Roguelite (2), Traditional Roguelike (1), Roguelike Deckbuilder (1)
+Action Roguelite (7), Strategy Roguelite (6), Survivors-like (5), Puzzle Roguelite (3), Shooter Roguelite (2), Auto-battler Roguelite (2), Traditional Roguelike (1), Roguelike Deckbuilder (1), Builder Roguelite (1)
 
 Typical launch price of the top earners: $14.99
 

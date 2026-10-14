@@ -21,20 +21,20 @@ _An in-run day count or clock structures exploration and forces the climax (Rave
 
 ## Pair it with (over-represented in its top earners)
 
-- **Revive / Extra Life**: in 55% of top earners (5.8× its rate across curated roguelikes)
-- **Open Procedural World**: in 55% of top earners (5.8× its rate across curated roguelikes)
-- **Long Runs (>90 min)**: in 55% of top earners (4.6× its rate across curated roguelikes)
-- **Major Free Updates**: in 45% of top earners (2.9× its rate across curated roguelikes)
-- **Online Co-op**: in 55% of top earners (2.8× its rate across curated roguelikes)
-- **Rarity Tiers**: in 55% of top earners (2.8× its rate across curated roguelikes)
-- **Item/Card Pool Unlocks**: in 91% of top earners (1.7× its rate across curated roguelikes)
-- **Unlockable Characters**: in 55% of top earners (1.4× its rate across curated roguelikes)
-- **Distinct Characters / Classes**: in 64% of top earners (1.2× its rate across curated roguelikes)
-- **Pick 1 of N Rewards**: in 45% of top earners (1.1× its rate across curated roguelikes)
+- **Per-turn Escalation**: in 42% of top earners (6.7× its rate across curated roguelikes)
+- **Revive / Extra Life**: in 50% of top earners (5.3× its rate across curated roguelikes)
+- **Open Procedural World**: in 50% of top earners (5.3× its rate across curated roguelikes)
+- **Long Runs (>90 min)**: in 50% of top earners (4.2× its rate across curated roguelikes)
+- **Party / Roster Building**: in 42% of top earners (2.8× its rate across curated roguelikes)
+- **Major Free Updates**: in 42% of top earners (2.7× its rate across curated roguelikes)
+- **Online Co-op**: in 50% of top earners (2.6× its rate across curated roguelikes)
+- **Rarity Tiers**: in 50% of top earners (2.6× its rate across curated roguelikes)
+- **Item/Card Pool Unlocks**: in 83% of top earners (1.6× its rate across curated roguelikes)
+- **Unlockable Characters**: in 58% of top earners (1.5× its rate across curated roguelikes)
 
 ## Where it lives
 
-Strategy Roguelite (9), Action Roguelite (8), Survival Roguelite (8), Traditional Roguelike (3), Shooter Roguelite (2), Builder Roguelite (2), Auto-battler Roguelite (1), Narrative / Event Roguelite (1), Survivors-like (1)
+Strategy Roguelite (10), Action Roguelite (9), Survival Roguelite (8), Shooter Roguelite (3), Traditional Roguelike (3), Builder Roguelite (2), Auto-battler Roguelite (1), Narrative / Event Roguelite (1), Survivors-like (1)
 
 Typical launch price of the top earners: $19.99
 

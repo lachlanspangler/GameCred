@@ -21,20 +21,20 @@ _Collectible encyclopedia of discovered items/enemies._
 
 ## Pair it with (over-represented in its top earners)
 
-- **Pre-run Mutators / Challenge Runs**: in 56% of top earners (12.0× its rate across curated roguelikes)
+- **Pre-run Mutators / Challenge Runs**: in 56% of top earners (11.9× its rate across curated roguelikes)
 - **Secrets / Hidden Areas**: in 56% of top earners (6.5× its rate across curated roguelikes)
-- **Multiple Endings / True Ending**: in 62% of top earners (5.9× its rate across curated roguelikes)
-- **Multiplicative Scaling**: in 44% of top earners (5.8× its rate across curated roguelikes)
-- **Mid-run Save & Quit**: in 56% of top earners (5.7× its rate across curated roguelikes)
-- **Reroll**: in 50% of top earners (5.2× its rate across curated roguelikes)
+- **Multiplicative Scaling**: in 44% of top earners (5.9× its rate across curated roguelikes)
+- **Multiple Endings / True Ending**: in 61% of top earners (5.7× its rate across curated roguelikes)
+- **Controller / Deck Friendly**: in 50% of top earners (5.2× its rate across curated roguelikes)
 - **Active Items**: in 50% of top earners (5.2× its rate across curated roguelikes)
-- **Revive / Extra Life**: in 44% of top earners (4.7× its rate across curated roguelikes)
-- **Controller / Deck Friendly**: in 44% of top earners (4.5× its rate across curated roguelikes)
-- **High-variance Loot**: in 44% of top earners (4.3× its rate across curated roguelikes)
+- **Mid-run Save & Quit**: in 50% of top earners (5.1× its rate across curated roguelikes)
+- **Reroll**: in 44% of top earners (4.6× its rate across curated roguelikes)
+- **High-variance Loot**: in 44% of top earners (4.4× its rate across curated roguelikes)
+- **Elites / Champions**: in 56% of top earners (3.7× its rate across curated roguelikes)
 
 ## Where it lives
 
-Action Roguelite (19), Shooter Roguelite (7), Strategy Roguelite (6), Survivors-like (5), Roguelike Deckbuilder (4), Traditional Roguelike (3), Roguevania (2), Puzzle Roguelite (2), Narrative / Event Roguelite (2)
+Action Roguelite (22), Shooter Roguelite (7), Strategy Roguelite (7), Survivors-like (6), Roguelike Deckbuilder (5), Traditional Roguelike (3), Roguevania (2), Puzzle Roguelite (2), Narrative / Event Roguelite (2)
 
 Typical launch price of the top earners: $23.49
 

@@ -36,6 +36,8 @@ Full refresh: `make discover fetch all`. Daily maintenance: `make loop` (self-he
 ## How it works
 `discover` (SteamSpy tags) → `fetch` (Steam store, reviews, SteamSpy; cached + retrying) → `build` (merge curated + auto-tags, compute metrics, SQLite at `data/processed/gamecred.sqlite`) → `export` (analyses → `dashboard/data.js`, rubrics) → `doctor` (validate, repair, calibrate, report to `docs/HEALTH.md`).
 
+**Start here:** [docs/STATUS.md](docs/STATUS.md) (where we are and what is next).
+
 See [docs/WORKFLOW.md](docs/WORKFLOW.md) for the improvement loop and self-healing, [docs/METHODOLOGY.md](docs/METHODOLOGY.md) for every formula and caveat, [docs/DIARY.md](docs/DIARY.md) for the build log, and [docs/IDEAS.md](docs/IDEAS.md) for the roadmap.
 
 ## Honest limits

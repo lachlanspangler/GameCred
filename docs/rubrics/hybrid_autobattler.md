@@ -1,12 +1,12 @@
 # GameCred rubric — Auto-battler Roguelite
 
-Sample: 80 games. Hit = Success Index ≥ 61.4; flop ≤ 24.6.
+Sample: 79 games. Hit = Success Index ≥ 61.8; flop ≤ 25.0.
 Associations from observational data; see docs/METHODOLOGY.md.
 
 ## Must have (table stakes)
 Most hits have these, and lacking them raises flop risk.
 
-- none at current sample size
+- **Explicit Synergies** — Δ +2.4 pts (95% CI -7.2…+11.8, partial +4.0); in 50% of hits; flop ratio 0.46
 
 ## Differentiators
 Rare but associated with better outcomes.
@@ -21,10 +21,11 @@ Rare but associated with better outcomes.
 ## Risk reducers
 Lower flop rate even if the average effect is unclear.
 
-- **Party / Roster Building** — Δ +9.7 pts (95% CI +0.6…+18.6, partial +1.4); in 45% of hits; flop ratio 0.41
-- **Random Events (? nodes)** — Δ +6.0 pts (95% CI -3.3…+14.7, partial +1.2); in 35% of hits; flop ratio 0.70
+- **Random Events (? nodes)** — Δ +8.3 pts (95% CI -0.9…+17.4, partial +7.2); in 35% of hits; flop ratio 0.59
+- **Party / Roster Building** — Δ +6.4 pts (95% CI -3.3…+15.6, partial -1.5); in 45% of hits; flop ratio 0.56
 
 ## Red flags
 Associated with worse outcomes in this genre.
 
-- none at current sample size
+- **Deckbuilding** — Δ -9.2 pts (95% CI -17.7…-0.4, partial -12.6); in 15% of hits; flop ratio 2.03
+- **Item/Card Pool Unlocks** — Δ -6.2 pts (95% CI -15.3…+2.9, partial -13.5); in 20% of hits; flop ratio 1.35

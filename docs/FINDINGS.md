@@ -4,8 +4,8 @@ _Auto-generated 2026-10-13 from 2462 roguelikes (392 expert-curated). Associatio
 
 ## Headline numbers
 
-- **Model accuracy:** mechanics + subgenre + price/year/pedigree controls cut the error of predicting a game's Success Index from 23.4 to 17.4 points (5-fold CV).
-- **Out-of-time test:** trained on releases ≤ 2021, then ranked 1104 unseen 2022+ games with Spearman ρ = 0.46. Of the games it put in the top quartile, **54%** really were hits (chance is 25%).
+- **Model accuracy:** mechanics + subgenre + price/year/pedigree controls cut the error of predicting a game's Success Index from 23.3 to 18.0 points (5-fold CV).
+- **Out-of-time test:** trained on releases ≤ 2021, then ranked 1465 unseen 2022+ games with Spearman ρ = 0.47. Of the games it put in the top quartile, **50%** really were hits (chance is 25%).
 - **Tagging reliability:** blind re-tag of 30 games, Cohen's κ = 0.71 (substantial agreement).
 
 ## What every roguelike needs (table stakes)
@@ -16,36 +16,34 @@ _Auto-generated 2026-10-13 from 2462 roguelikes (392 expert-curated). Associatio
 
 These have a positive stratified Δ, and a matched comparison against the 5 most similar games without the mechanic agrees.
 
-- **Multiplicative Scaling**: Δ +9.1 pts (CI +5.1…+12.8), matched +13.0; in 1% of games
-- **Dice Mechanics**: Δ +7.9 pts (CI +0.1…+14.4), matched +7.3; in 1% of games
-- **Pre-run Mutators / Challenge Runs**: Δ +6.6 pts (CI +1.8…+10.5), matched +13.2; in 1% of games
-- **Mod Support / Workshop**: Δ +6.5 pts (CI +3.1…+9.4), matched +14.2; in 2% of games
-- **Projectile Modifiers**: Δ +6.4 pts (CI +0.6…+11.3), matched +12.9; in 1% of games
-- **Passive Relics / Trinkets**: Δ +6.3 pts (CI +4.3…+8.4), matched +9.4; in 16% of games
-- **Build / Combat Phases**: Δ +6.2 pts (CI +0.7…+11.1), matched +9.6; in 1% of games
-- **Seeded Runs**: Δ +6.1 pts (CI +2.2…+9.7), matched +16.4; in 1% of games
-- **Learnable Attack Patterns**: Δ +5.9 pts (CI +2.5…+9.1), matched +14.2; in 1% of games
-- **Interest / Economy Management**: Δ +5.8 pts (CI -1.9…+13.7), matched +10.5; in 1% of games
+- **Multiplicative Scaling**: Δ +9.1 pts (CI +4.7…+12.6), matched +13.0; in 1% of games
+- **Dice Mechanics**: Δ +8.6 pts (CI +1.0…+15.7), matched +10.1; in 1% of games
+- **Pre-run Mutators / Challenge Runs**: Δ +6.6 pts (CI +1.2…+10.4), matched +13.2; in 1% of games
+- **Mod Support / Workshop**: Δ +6.5 pts (CI +3.4…+9.5), matched +14.2; in 2% of games
+- **Projectile Modifiers**: Δ +6.4 pts (CI +1.2…+11.4), matched +12.9; in 1% of games
+- **Build / Combat Phases**: Δ +6.2 pts (CI +1.1…+10.8), matched +9.6; in 1% of games
+- **Seeded Runs**: Δ +6.1 pts (CI +2.2…+9.9), matched +16.4; in 1% of games
+- **Learnable Attack Patterns**: Δ +5.9 pts (CI +2.6…+9.6), matched +14.2; in 1% of games
+- **Build Archetypes**: Δ +5.7 pts (CI +2.8…+8.5), matched +12.5; in 4% of games
+- **Multiple Endings / True Ending**: Δ +5.7 pts (CI +2.8…+8.7), matched +13.8; in 2% of games
 
 ## Red flags
 
-- **Online Co-op**: Δ -2.6 pts (CI -4.8…-0.4)
-- **Scarce Healing**: Δ -1.7 pts (CI -4.8…+1.0)
-- **Party / Roster Building**: Δ -1.4 pts (CI -4.4…+1.5)
-- **Boss Gates**: Δ -1.1 pts (CI -3.4…+1.4)
-- **Dodge / Dash with i-frames**: Δ +0.3 pts (CI -2.8…+3.4)
+- **Boss Gates**: Δ -3.9 pts (CI -6.4…-1.3)
+- **In-run Currency**: Δ -3.0 pts (CI -5.2…-1.0)
+- **Online Co-op**: Δ -1.1 pts (CI -3.4…+1.1)
 
 ## Per-subgenre must-haves
 
-- **Roguelike Deckbuilder** (n=213): must have Acts / Biomes, Passive Relics / Trinkets; differentiators: Dice Mechanics, Item/Card Upgrading, Explicit Synergies. Full rubric: rubrics/hybrid_deckbuilder.md
-- **Survivors-like** (n=112): must have Item/Card Pool Unlocks, Unlockable Characters, Pickup Collection / Magnet, Movement Speed Scaling, Enemy Health/Damage Scaling; differentiators: Weapon Variety, Status Effects, Wave Survival. Full rubric: rubrics/hybrid_survivors.md
-- **Action Roguelite** (n=933): must have —; differentiators: Systemic Simulation, NPC Relationships, Pick 1 of N Rewards, Mod Support / Workshop, Passive Relics / Trinkets. Full rubric: rubrics/hybrid_action_roguelite.md
-- **Traditional Roguelike** (n=126): must have Permadeath, Turn-based; differentiators: Level-up Choice. Full rubric: rubrics/hybrid_traditional.md
-- **Strategy Roguelite** (n=482): must have —; differentiators: Build Archetypes, Mod Support / Workshop, Status Effects. Full rubric: rubrics/hybrid_strategy.md
+- **Roguelike Deckbuilder** (n=213): must have Acts / Biomes; differentiators: Item/Card Upgrading, Visible Enemy Intents. Full rubric: rubrics/hybrid_deckbuilder.md
+- **Survivors-like** (n=133): must have Unlockable Characters, Pickup Collection / Magnet; differentiators: Party / Roster Building, Status Effects, Weapon Variety, Enemy Health/Damage Scaling. Full rubric: rubrics/hybrid_survivors.md
+- **Action Roguelite** (n=913): must have —; differentiators: NPC Relationships, Mod Support / Workshop, Pick 1 of N Rewards, Major Free Updates, Starting Loadout Choice. Full rubric: rubrics/hybrid_action_roguelite.md
+- **Traditional Roguelike** (n=128): must have Permadeath, Procedural Levels, Turn-based; differentiators: Early Access Development. Full rubric: rubrics/hybrid_traditional.md
+- **Strategy Roguelite** (n=480): must have —; differentiators: —. Full rubric: rubrics/hybrid_strategy.md
 - **Puzzle Roguelite** (n=90): must have —; differentiators: —. Full rubric: rubrics/hybrid_puzzle.md
-- **Shooter Roguelite** (n=219): must have First-person; differentiators: Status Effects, Dodge / Dash with i-frames, Permanent Stat Upgrades. Full rubric: rubrics/hybrid_shooter.md
-- **Auto-battler Roguelite** (n=80): must have —; differentiators: —. Full rubric: rubrics/hybrid_autobattler.md
-- **Survival Roguelite** (n=128): must have Procedural Levels; differentiators: —. Full rubric: rubrics/hybrid_survival.md
+- **Shooter Roguelite** (n=219): must have Permadeath, First-person; differentiators: Dodge / Dash with i-frames. Full rubric: rubrics/hybrid_shooter.md
+- **Auto-battler Roguelite** (n=79): must have Explicit Synergies; differentiators: —. Full rubric: rubrics/hybrid_autobattler.md
+- **Survival Roguelite** (n=128): must have Permadeath, Procedural Levels; differentiators: —. Full rubric: rubrics/hybrid_survival.md
 
 ## Design archetypes (data-driven)
 
@@ -64,14 +62,14 @@ These have a positive stratified Δ, and a matched comparison against the 5 most
 
 ## Checklists predict the floor, not the ceiling
 
-Biggest **over-performers** (actual far above what their mechanics predict): The Binding of Isaac (96 vs 53), FTL: Faster Than Light (97 vs 59), Don't Starve (93 vs 57), Super Auto Pets (96 vs 60), ROUNDS (97 vs 62), Picayune Dreams (89 vs 54).
+Biggest **over-performers** (actual far above what their mechanics predict): The Binding of Isaac (96 vs 58), Crab Champions (98 vs 64), FTL: Faster Than Light (97 vs 63), SNKRX (84 vs 51), Downwell (89 vs 58), Post Void (92 vs 61).
 
-Biggest **under-performers** (ticked the boxes, missed): LONE RUIN (30 vs 80), Survivor Mercs (31 vs 64), Loot River (45 vs 77), Ravenbound (46 vs 78), Card Crawl (25 vs 57), Wizard of Legend 2 (49 vs 75).
+Biggest **under-performers** (ticked the boxes, missed): LONE RUIN (30 vs 79), Ravenbound (46 vs 82), Survivor Mercs (31 vs 67), Loot River (45 vs 80), Card Crawl (26 vs 58), Dice Legacy (46 vs 78).
 
 So GameCred reduces downside risk: missing fundamentals and red flags are detectable. Breakout originality and execution aren't.
 
 ## Trends
 
-Rising: Early Access Development (+4.1 pp/yr), Explicit Synergies (+2.3 pp/yr), Deckbuilding (+2.3 pp/yr), Passive Relics / Trinkets (+1.3 pp/yr), Pick 1 of N Rewards (+1.0 pp/yr), Permanent Stat Upgrades (+0.8 pp/yr).
+Rising: Early Access Development (+4.2 pp/yr), Deckbuilding (+2.3 pp/yr), Explicit Synergies (+2.2 pp/yr), Passive Relics / Trinkets (+1.1 pp/yr), Pick 1 of N Rewards (+0.8 pp/yr), Permanent Stat Upgrades (+0.7 pp/yr).
 
-Declining: Procedural Levels (-2.5 pp/yr), Permadeath (-2.5 pp/yr), Consumables (-1.2 pp/yr), Local Co-op (-1.1 pp/yr), Platforming (-0.9 pp/yr).
+Declining: Procedural Levels (-2.4 pp/yr), Permadeath (-2.4 pp/yr), Consumables (-1.1 pp/yr), Local Co-op (-1.0 pp/yr), Platforming (-1.0 pp/yr).

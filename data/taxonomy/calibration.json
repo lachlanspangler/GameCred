@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T19:29:12",
+ "generated": "2026-10-13T19:54:04",
  "n_games": 392,
  "precision": {
   "permadeath": {
@@ -52,7 +52,7 @@
     "precision": 0.6,
     "n": 5
    },
-   "recall": 0.375
+   "recall": 0.333
   },
   "breeding_genetics": {
    "keyword": {
@@ -681,10 +681,10 @@
   },
   "faction_reputation": {
    "keyword": {
-    "precision": 0.13,
+    "precision": 0.174,
     "n": 23
    },
-   "recall": 0.75
+   "recall": 0.5
   },
   "ship_base_design": {
    "keyword": {

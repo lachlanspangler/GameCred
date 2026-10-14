@@ -34,7 +34,7 @@ _Players can enter/share a seed to replay an identical run._
 
 ## Where it lives
 
-Action Roguelite (12), Roguelike Deckbuilder (4), Traditional Roguelike (2), Roguevania (1), Strategy Roguelite (1), Survival Roguelite (1), Survivors-like (1), Puzzle Roguelite (1), Shooter Roguelite (1)
+Action Roguelite (13), Roguelike Deckbuilder (4), Traditional Roguelike (2), Roguevania (1), Strategy Roguelite (1), Survival Roguelite (1), Survivors-like (1), Puzzle Roguelite (1), Shooter Roguelite (1)
 
 Typical launch price of the top earners: $19.99
 
