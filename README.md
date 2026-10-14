@@ -2,10 +2,10 @@
 
 **A living, quantitative database of roguelike game mechanics.** Games are broken into mechanics, and each mechanic is linked to player reception, estimated revenue and critic scores. The result answers the question publishers fund on vibes: *which mechanics does a game in this genre need, and how risky is this design?*
 
-- **The textbook.** A taxonomy of 155 mechanics in 10 families (`data/taxonomy/mechanics.yaml`): run structure, meta-progression, build & power scaling, items & economy, combat model, enemy design, risk & double-edged design, social & longevity, genre hybrids, QoL.
+- **The textbook.** A taxonomy of 195 mechanics in 10 families (`data/taxonomy/mechanics.yaml`): run structure, meta-progression, build & power scaling, items & economy, combat model, enemy design, risk & double-edged design, social & longevity, genre hybrids, QoL.
 - **The database.** About 3,000 Steam roguelikes (≥ 50 reviews), plus 200+ expert-curated mechanic profiles with evidence lines. The long tail is auto-tagged from Steam tags and store text, and calibrated against the curated set.
 - **The numbers.** For each mechanic and subgenre: its effect on a Success Index (quality + commercial + critic), bootstrap CIs, ridge partial effects that control for co-occurring mechanics, price, year and subgenre, hit lift, flop risk, synergies and trends. Verdicts: *table stakes · differentiator · positive · risk reducer · neutral · red flag*.
-- **The product.** A dashboard (`dashboard/index.html`):
+- **The product.** A dashboard (`dashboard/index.html`) with 10 views: Overview, Mechanics, Families, Games, **Money $**, Design Lab, Trends, Synergies, **Ideas**, Method. Highlights:
   - Overview, Mechanics, Families, Games and Trends views
   - **Design Lab**: tag a design and get a predicted score, risk, nearest comps, missing table stakes, red flags and the highest-leverage additions, plus a copyable pitch report and a share link
 - **Publisher rubrics.** `docs/rubrics/*.md` gives per-subgenre "must have x, y, z" checklists.
