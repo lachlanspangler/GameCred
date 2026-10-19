@@ -4,20 +4,20 @@ _An in-run day count or clock structures exploration and forces the climax (Rave
 
 ## Why this is white space
 
-- 25 paid roguelikes use it (low competition). Their median gross is **$4,785,685**, vs $1,316,526 for comparable games without it: a **2.8× revenue multiple**.
+- 25 paid roguelikes use it (low competition). Their median gross is **$4,788,859**, vs $1,317,010 for comparable games without it: a **2.8× revenue multiple**.
 - 80% of them grossed $1M+, vs 57% of comparable games.
-- Total market for games using it is $307,540,249.
+- Total market for games using it is $307,830,518.
 
 ## Proven by
 
-- **ELDEN RING NIGHTREIGN** (2025, Action Roguelite): ~$126,915,963
-- **Don't Starve** (2013, Survival Roguelite): ~$34,334,471
-- **DEATHLOOP** (2021, Shooter Roguelite): ~$33,240,540
-- **Content Warning** (2024, Action Roguelite): ~$21,604,856
-- **For The King** (2018, Strategy Roguelite): ~$19,305,462
-- **Loop Hero** (2021, Auto-battler Roguelite): ~$9,958,523
-- **Ravenswatch** (2024, Action Roguelite): ~$9,483,705
-- **PlateUp!** (2022, Strategy Roguelite): ~$9,128,184
+- **ELDEN RING NIGHTREIGN** (2025, Action Roguelite): ~$127,025,496
+- **Don't Starve** (2013, Survival Roguelite): ~$34,345,652
+- **DEATHLOOP** (2021, Shooter Roguelite): ~$33,253,606
+- **Content Warning** (2024, Action Roguelite): ~$21,621,336
+- **For The King** (2018, Strategy Roguelite): ~$19,316,457
+- **Loop Hero** (2021, Auto-battler Roguelite): ~$9,963,693
+- **Ravenswatch** (2024, Action Roguelite): ~$9,525,351
+- **PlateUp!** (2022, Strategy Roguelite): ~$9,182,606
 
 ## Pair it with (over-represented in its top earners)
 

@@ -4,20 +4,20 @@ _A secondary meter (stress, sanity, corruption) that causes afflictions as it fi
 
 ## Why this is white space
 
-- 16 paid roguelikes use it (low competition). Their median gross is **$3,297,020**, vs $1,149,943 for comparable games without it: a **3.1× revenue multiple**.
+- 16 paid roguelikes use it (low competition). Their median gross is **$3,298,566**, vs $1,149,943 for comparable games without it: a **3.1× revenue multiple**.
 - 88% of them grossed $1M+, vs 54% of comparable games.
-- Total market for games using it is $234,728,888.
+- Total market for games using it is $234,940,322.
 
 ## Proven by
 
-- **Darkest Dungeon** (2016, Strategy Roguelite): ~$123,336,614
-- **Don't Starve** (2013, Survival Roguelite): ~$34,334,471
-- **Darkest Dungeon II** (2023, Strategy Roguelite): ~$17,929,037
-- **Stoneshard** (2020, Traditional Roguelike): ~$16,263,152
-- **Dwarf Fortress** (2022, Builder Roguelite): ~$15,627,384
-- **Cultist Simulator** (2018, Narrative / Event Roguelite): ~$6,291,053
-- **Sunless Sea** (2015, Narrative / Event Roguelite): ~$5,502,058
-- **Pixel Piracy** (2014, Strategy Roguelite): ~$3,336,920
+- **Darkest Dungeon** (2016, Strategy Roguelite): ~$123,453,030
+- **Don't Starve** (2013, Survival Roguelite): ~$34,345,652
+- **Darkest Dungeon II** (2023, Strategy Roguelite): ~$17,964,008
+- **Stoneshard** (2020, Traditional Roguelike): ~$16,289,006
+- **Dwarf Fortress** (2022, Builder Roguelite): ~$15,633,817
+- **Cultist Simulator** (2018, Narrative / Event Roguelite): ~$6,298,969
+- **Sunless Sea** (2015, Narrative / Event Roguelite): ~$5,504,356
+- **Pixel Piracy** (2014, Strategy Roguelite): ~$3,337,374
 
 ## Pair it with (over-represented in its top earners)
 

@@ -69,3 +69,5 @@ Newest entries first. Automated doctor/loop lines are appended to **Automated lo
 - 2026-10-13 19:54 · loop: OK — 2462 games rebuilt, tests green
 - 2026-10-13 20:09 · doctor --fix: 0 errors, 8 fixed, 16 warnings
 - 2026-10-13 20:10 · loop: OK — 2476 games rebuilt, tests green
+- 2026-10-19 14:07 · doctor --fix: 0 errors, 2 fixed, 16 warnings
+- 2026-10-19 14:08 · loop: OK — 2476 games rebuilt, tests green

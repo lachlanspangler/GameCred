@@ -4,20 +4,20 @@ _Collectible encyclopedia of discovered items/enemies._
 
 ## Why this is white space
 
-- 38 paid roguelikes use it (low competition). Their median gross is **$6,272,057**, vs $1,906,811 for comparable games without it: a **2.7× revenue multiple**.
+- 38 paid roguelikes use it (low competition). Their median gross is **$6,278,076**, vs $1,907,965 for comparable games without it: a **2.7× revenue multiple**.
 - 82% of them grossed $1M+, vs 66% of comparable games.
-- Total market for games using it is $1,079,569,748.
+- Total market for games using it is $1,081,019,336.
 
 ## Proven by
 
-- **The Binding of Isaac: Rebirth** (2014, Action Roguelite): ~$209,793,381
-- **Risk of Rain 2** (2020, Shooter Roguelite): ~$160,915,218
-- **Hades** (2020, Action Roguelite): ~$140,569,042
-- **Slay the Spire** (2019, Roguelike Deckbuilder): ~$120,632,178
-- **Dead Cells** (2018, Roguevania): ~$101,314,008
-- **Hades II** (2025, Action Roguelite): ~$61,459,002
-- **Balatro** (2024, Roguelike Deckbuilder): ~$49,450,429
-- **Enter the Gungeon** (2016, Action Roguelite): ~$40,816,170
+- **The Binding of Isaac: Rebirth** (2014, Action Roguelite): ~$210,277,209
+- **Risk of Rain 2** (2020, Shooter Roguelite): ~$161,264,012
+- **Hades** (2020, Action Roguelite): ~$140,681,981
+- **Slay the Spire** (2019, Roguelike Deckbuilder): ~$120,710,796
+- **Dead Cells** (2018, Roguevania): ~$101,393,177
+- **Hades II** (2025, Action Roguelite): ~$61,542,134
+- **Balatro** (2024, Roguelike Deckbuilder): ~$49,505,832
+- **Enter the Gungeon** (2016, Action Roguelite): ~$40,840,203
 
 ## Pair it with (over-represented in its top earners)
 

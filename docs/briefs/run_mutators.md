@@ -4,20 +4,20 @@ _Selectable rule-changing modifiers or named challenge runs before starting (Isa
 
 ## Why this is white space
 
-- 19 paid roguelikes use it (low competition). Their median gross is **$10,427,993**, vs $2,925,966 for comparable games without it: a **3.6× revenue multiple**.
+- 19 paid roguelikes use it (low competition). Their median gross is **$10,430,715**, vs $2,927,615 for comparable games without it: a **3.6× revenue multiple**.
 - 84% of them grossed $1M+, vs 80% of comparable games.
-- Total market for games using it is $807,122,675.
+- Total market for games using it is $808,315,271.
 
 ## Proven by
 
-- **The Binding of Isaac: Rebirth** (2014, Action Roguelite): ~$209,793,381
-- **Risk of Rain 2** (2020, Shooter Roguelite): ~$160,915,218
-- **Slay the Spire** (2019, Roguelike Deckbuilder): ~$120,632,178
-- **Dead Cells** (2018, Roguevania): ~$101,314,008
-- **Balatro** (2024, Roguelike Deckbuilder): ~$49,450,429
-- **Enter the Gungeon** (2016, Action Roguelite): ~$40,816,170
-- **Noita** (2020, Action Roguelite): ~$32,396,064
-- **Vampire Survivors** (2022, Survivors-like): ~$21,933,138
+- **The Binding of Isaac: Rebirth** (2014, Action Roguelite): ~$210,277,209
+- **Risk of Rain 2** (2020, Shooter Roguelite): ~$161,264,012
+- **Slay the Spire** (2019, Roguelike Deckbuilder): ~$120,710,796
+- **Dead Cells** (2018, Roguevania): ~$101,393,177
+- **Balatro** (2024, Roguelike Deckbuilder): ~$49,505,832
+- **Enter the Gungeon** (2016, Action Roguelite): ~$40,840,203
+- **Noita** (2020, Action Roguelite): ~$32,441,053
+- **Vampire Survivors** (2022, Survivors-like): ~$21,947,547
 
 ## Pair it with (over-represented in its top earners)
 

@@ -4,20 +4,20 @@ _An explicit luck stat skews random outcomes (Isaac, Brotato, Vampire Survivors)
 
 ## Why this is white space
 
-- 17 paid roguelikes use it (low competition). Their median gross is **$9,511,957**, vs $2,415,638 for comparable games without it: a **2.9× revenue multiple**.
+- 17 paid roguelikes use it (low competition). Their median gross is **$9,515,278**, vs $2,416,298 for comparable games without it: a **2.9× revenue multiple**.
 - 88% of them grossed $1M+, vs 74% of comparable games.
-- Total market for games using it is $543,114,244.
+- Total market for games using it is $544,155,619.
 
 ## Proven by
 
-- **The Binding of Isaac: Rebirth** (2014, Action Roguelite): ~$209,793,381
-- **Risk of Rain 2** (2020, Shooter Roguelite): ~$160,915,218
-- **Enter the Gungeon** (2016, Action Roguelite): ~$40,816,170
-- **Mewgenics** (2026, Strategy Roguelite): ~$27,187,225
-- **Vampire Survivors** (2022, Survivors-like): ~$21,933,138
-- **For The King** (2018, Strategy Roguelite): ~$19,305,462
-- **Megabonk** (2025, Survivors-like): ~$17,641,301
-- **Brotato** (2023, Survivors-like): ~$9,859,616
+- **The Binding of Isaac: Rebirth** (2014, Action Roguelite): ~$210,277,209
+- **Risk of Rain 2** (2020, Shooter Roguelite): ~$161,264,012
+- **Enter the Gungeon** (2016, Action Roguelite): ~$40,840,203
+- **Mewgenics** (2026, Strategy Roguelite): ~$27,261,945
+- **Vampire Survivors** (2022, Survivors-like): ~$21,947,547
+- **For The King** (2018, Strategy Roguelite): ~$19,316,457
+- **Megabonk** (2025, Survivors-like): ~$17,662,730
+- **Brotato** (2023, Survivors-like): ~$9,876,413
 
 ## Pair it with (over-represented in its top earners)
 

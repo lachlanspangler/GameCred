@@ -21,9 +21,9 @@ Rare but associated with better outcomes.
 ## Risk reducers
 Lower flop rate even if the average effect is unclear.
 
-- **Grid Tactics** — Δ +10.5 pts (95% CI +0.6…+20.3, partial +0.3); in 21% of hits; flop ratio 0.47
+- **Grid Tactics** — Δ +10.5 pts (95% CI +0.6…+20.2, partial +0.8); in 21% of hits; flop ratio 0.47
 
 ## Red flags
 Associated with worse outcomes in this genre.
 
-- **Consumables** — Δ -14.4 pts (95% CI -21.0…-7.9, partial -0.3); in 29% of hits; flop ratio 2.31
+- **Consumables** — Δ -14.4 pts (95% CI -21.1…-8.1, partial -0.9); in 29% of hits; flop ratio 2.31

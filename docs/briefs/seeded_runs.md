@@ -4,20 +4,20 @@ _Players can enter/share a seed to replay an identical run._
 
 ## Why this is white space
 
-- 16 paid roguelikes use it (low competition). Their median gross is **$8,561,807**, vs $3,510,106 for comparable games without it: a **2.4× revenue multiple**.
+- 16 paid roguelikes use it (low competition). Their median gross is **$8,591,740**, vs $3,512,414 for comparable games without it: a **2.4× revenue multiple**.
 - 75% of them grossed $1M+, vs 81% of comparable games.
-- Total market for games using it is $565,636,926.
+- Total market for games using it is $566,488,594.
 
 ## Proven by
 
-- **The Binding of Isaac: Rebirth** (2014, Action Roguelite): ~$209,793,381
-- **Slay the Spire** (2019, Roguelike Deckbuilder): ~$120,632,178
-- **Dead Cells** (2018, Roguevania): ~$101,314,008
-- **Balatro** (2024, Roguelike Deckbuilder): ~$49,450,429
-- **Noita** (2020, Action Roguelite): ~$32,396,064
-- **Descenders** (2019, Action Roguelite): ~$13,357,455
+- **The Binding of Isaac: Rebirth** (2014, Action Roguelite): ~$210,277,209
+- **Slay the Spire** (2019, Roguelike Deckbuilder): ~$120,710,796
+- **Dead Cells** (2018, Roguevania): ~$101,393,177
+- **Balatro** (2024, Roguelike Deckbuilder): ~$49,505,832
+- **Noita** (2020, Action Roguelite): ~$32,441,053
+- **Descenders** (2019, Action Roguelite): ~$13,384,944
 - **Crypt of the NecroDancer** (2015, Action Roguelite): ~$12,039,485
-- **PlateUp!** (2022, Strategy Roguelite): ~$9,128,184
+- **PlateUp!** (2022, Strategy Roguelite): ~$9,182,606
 
 ## Pair it with (over-represented in its top earners)
 

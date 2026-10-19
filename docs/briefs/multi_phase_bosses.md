@@ -4,20 +4,20 @@ _Bosses change behaviour across phases._
 
 ## Why this is white space
 
-- 19 paid roguelikes use it (low competition). Their median gross is **$11,585,045**, vs $2,294,283 for comparable games without it: a **3.7× revenue multiple**.
+- 19 paid roguelikes use it (low competition). Their median gross is **$11,586,495**, vs $2,293,981 for comparable games without it: a **3.7× revenue multiple**.
 - 89% of them grossed $1M+, vs 73% of comparable games.
-- Total market for games using it is $585,797,959.
+- Total market for games using it is $586,310,556.
 
 ## Proven by
 
-- **Hades** (2020, Action Roguelite): ~$140,569,042
-- **ELDEN RING NIGHTREIGN** (2025, Action Roguelite): ~$126,915,963
-- **Dead Cells** (2018, Roguevania): ~$101,314,008
-- **Hades II** (2025, Action Roguelite): ~$61,459,002
-- **Enter the Gungeon** (2016, Action Roguelite): ~$40,816,170
-- **FTL: Faster Than Light** (2012, Strategy Roguelite): ~$23,869,070
-- **Skul: The Hero Slayer** (2021, Action Roguelite): ~$20,937,893
-- **BlazBlue Entropy Effect** (2024, Action Roguelite): ~$12,172,891
+- **Hades** (2020, Action Roguelite): ~$140,681,981
+- **ELDEN RING NIGHTREIGN** (2025, Action Roguelite): ~$127,025,496
+- **Dead Cells** (2018, Roguevania): ~$101,393,177
+- **Hades II** (2025, Action Roguelite): ~$61,542,134
+- **Enter the Gungeon** (2016, Action Roguelite): ~$40,840,203
+- **FTL: Faster Than Light** (2012, Strategy Roguelite): ~$23,880,855
+- **Skul: The Hero Slayer** (2021, Action Roguelite): ~$20,948,415
+- **BlazBlue Entropy Effect** (2024, Action Roguelite): ~$12,196,639
 
 ## Pair it with (over-represented in its top earners)
 
