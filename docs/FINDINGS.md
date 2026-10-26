@@ -1,6 +1,6 @@
 # GameCred findings
 
-_Auto-generated 2026-10-19 from 2476 roguelikes (417 expert-curated). Associations from observational data, not causal guarantees. Method: METHODOLOGY.md._
+_Auto-generated 2026-10-26 from 2476 roguelikes (417 expert-curated). Associations from observational data, not causal guarantees. Method: METHODOLOGY.md._
 
 ## Headline numbers
 

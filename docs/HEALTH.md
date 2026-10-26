@@ -1,6 +1,6 @@
 # GameCred Health Report
 
-_Generated 2026-10-19 14:07 by `python -m gamecred doctor --fix`_
+_Generated 2026-10-26 12:31 by `python -m gamecred doctor --fix`_
 
 **errors: 0 · fixed: 2 · warnings: 16**
 
@@ -69,7 +69,7 @@ _Generated 2026-10-19 14:07 by `python -m gamecred doctor --fix`_
 
 - 2476 games, 417 curated, GSI coverage 100%
 - games with critic score: 286
-- revenue model check: log(units est) vs log(SteamSpy owners) r = 0.81, median units/owners = 0.35 (n=2474)
+- revenue model check: log(units est) vs log(SteamSpy owners) r = 0.81, median units/owners = 0.36 (n=2474)
 - taxonomy steam_tags never seen on any game (dead rules): auto_attack:Bullet Heaven, auto_attack:Survivors-like, horde_density:Bullet Heaven, horde_density:Horde, hub_building:Base Building, hub_building:Town Building, hybrid_city_builder:Base Building, hybrid_survivors:Bullet Heaven, hybrid_survivors:Survivors-like, permadeath:Permadeath, push_your_luck:Push Your Luck, pvp:Online PvP, speedrun_support:Speedrun, waves:Wave Defense
 - subgenres: hybrid_action_roguelite=917, hybrid_strategy=482, hybrid_shooter=220, hybrid_deckbuilder=213, hybrid_survivors=133, hybrid_traditional=129, hybrid_survival=129, hybrid_puzzle=94, hybrid_autobattler=80, hybrid_city_builder=39, hybrid_metroidvania=28, hybrid_narrative=12
 
